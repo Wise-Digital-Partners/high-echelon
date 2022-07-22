@@ -130,56 +130,6 @@ const Page = ({ data }) => {
               client communication, accuracy, a streamlined workflow, and
               creating a positive experience for our clients.
             </p>
-
-            {/* <SliderMobileCards>
-              <AniLink fade to="/realtors/" className="group">
-                <GatsbyImage
-                  image={data.realEstateAgents.childImageSharp.gatsbyImageData}
-                  alt="Real Estate Agents"
-                  className="mb-5"
-                />
-                <h3 className="text-xl mb-4">Real Estate Agents</h3>
-                <p>
-                  Partner with MacAsh and your primary purchase clients will
-                  receive pre-approvals, appraisals at no cost to the borrower,
-                  and a fast close.
-                </p>
-                <ButtonWithIcon href="/realtors/" text="Learn More" />
-                <div className="bg-primary-400 h-[6px] w-0 group-hover:w-full mt-3 transition-all duration-500 ease-linear"></div>
-              </AniLink>
-
-              <AniLink fade to="/request-rates/" className="group">
-                <GatsbyImage
-                  image={data.homeBuyersOwners.childImageSharp.gatsbyImageData}
-                  alt="Home Buyers And Owners"
-                  className="mb-5"
-                />
-                <h3 className="text-xl mb-4">Home Buyers And Owners</h3>
-                <p>
-                  Ready to buy a home? Are you considering refinancing? MacAsh
-                  find you the best rates.
-                </p>
-                <ButtonWithIcon href="/request-rates/" text="Learn More" />
-                <div className="bg-primary-400 h-[6px] w-0 group-hover:w-full mt-3 transition-all duration-500 ease-linear"></div>
-              </AniLink>
-
-              <AniLink fade to="/va-loans-chicago/" className="group">
-                <GatsbyImage
-                  image={data.veterans.childImageSharp.gatsbyImageData}
-                  alt="Our Valued Veterans"
-                  className="mb-5"
-                />
-                <h3 className="text-xl mb-4">Our Valued Veterans</h3>
-                <p>
-                  Are you a retired or active military member? Wel help youl
-                  secure a no-money-down VA loan, complete a 100% cash-out
-                  refinance, or take advantage of the VA interest rate reduction
-                  loan (VA IRRL).
-                </p>
-                <ButtonWithIcon href="/va-loans-chicago/" text="Learn More" />
-                <div className="bg-primary-400 h-[6px] w-0 group-hover:w-full mt-3 transition-all duration-500 ease-linear"></div>
-              </AniLink>
-            </SliderMobileCards> */}
           </div>
         </div>
       </section>
