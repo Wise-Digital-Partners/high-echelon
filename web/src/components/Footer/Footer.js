@@ -140,10 +140,42 @@ const Footer = ({ hideFooter }) => {
 
             <div className="lg:col-end-13 md:col-span-9 pt-5">
                 <ul class="text-white text-sm float-right flex items-stretch">
-                  <li class = "ml-9">Accounting</li>
-                  <li class = "ml-9">Tax Preparation</li>
-                  <li class = "ml-9">Consulting</li>
-                  <li class = "ml-9">Payroll Management</li>
+                  <li class = "ml-9">
+                    <AniLink
+                        fade
+                        to="/accounting/"
+                        className="font-heading hover:text-primary-400"
+                      >
+                      Accounting
+                    </AniLink>                
+                  </li>
+                  <li class = "ml-9">
+                    <AniLink
+                        fade
+                        to="/tax/"
+                        className="font-heading hover:text-primary-400"
+                      >
+                      Tax Preparation
+                    </AniLink>                
+                  </li>
+                  <li class = "ml-9">
+                    <AniLink
+                        fade
+                        to="/consulting/"
+                        className="font-heading hover:text-primary-400"
+                      >
+                      Consulting
+                    </AniLink>                
+                  </li>
+                  <li class = "ml-9">
+                    <AniLink
+                        fade
+                        to="/payroll/"
+                        className="font-heading hover:text-primary-400"
+                      >
+                      Payroll Management
+                    </AniLink>                
+                  </li>
                 </ul>
             </div>
           </div>
