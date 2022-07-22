@@ -35,7 +35,6 @@ const About = ({ className, headingLevel }) => {
             </p>
             <ButtonGhost
               href="/about/"
-              // className = "text-primary-100 border-b"
               text="Read Our Story"
             />
           </div>
