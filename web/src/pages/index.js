@@ -22,10 +22,7 @@ const Page = ({ data }) => {
       <SearchEngineOptimization
         title="Independent Mortgage Lender Chicago | MacAsh Home Loans"
         description="Apply online. Close in 15 days. It's that easy. Make your dream home a reality with MacAsh, your local independent mortgage broker in Chicago."
-        // openGraphImage={data.openGraphImage.publicURL}
-        // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
-
       <section>
         <Hero
           backgroundImages={data.heroDesktop.childImageSharp.gatsbyImageData}
