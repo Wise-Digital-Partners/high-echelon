@@ -112,6 +112,7 @@ const Page = ({ data }) => {
               </p>
             </div>
             <div className="mb-24 justify-center flex-col items-center">
+            
               <div className="flex mx-100 items-center justify-center flex-col">
                 <div className="flex">
                     <i className="fa fa-check text-primary-100 mr-4 text-2xl"></i>
@@ -198,6 +199,7 @@ const Page = ({ data }) => {
     </Layout>
   );
 };
+
 
 export const query = graphql`
   {
