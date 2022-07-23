@@ -73,8 +73,12 @@ const MainNav = ({
   const navigation = {
     loanPrograms: [
       {
+        name: "Services",
+        href: "home-purchase"
+      },
+      {
         name: "Small Business Consulting",
-        href: "/home-purchase/",
+        href: "/accounting/",
       },
       {
         name: "Account Services",
@@ -190,7 +194,7 @@ const MainNav = ({
                           className="group inline-flex items-center justify-between w-full relative font-body text-xl font-medium text-gray-900 hover:text-gray-900"
                         >
                           <span>{item.name}</span>
-                          <i className="far fa-arrow-right text-xl text-gray-900 group-hover:text-gray-900 relative left-0 group-hover:left-2 transition-all duration-300 ease-linear"></i>
+                          {/* <i className="far fa-arrow-right text-xl text-gray-900 group-hover:text-gray-900 relative left-0 group-hover:left-2 transition-all duration-300 ease-linear"></i> */}
                         </AniLink>
                       </li>
                     ))}
@@ -202,7 +206,7 @@ const MainNav = ({
             <li className="group">
               <AniLink
                 fade
-                to="/home-refinance-chicago/"
+                to="/about/"
                 className={`font-body relative text-[16px] font-semibold pb-8 after:absolute after:bottom-6 after:left-auto hover:after:left-0 after:right-0 hover:after:right-auto after:w-0 hover:after:w-full after:h-1 after:bg-primary-400 after:transition-all after:duration-300 after:ease-linear ${
                   scrolled && "text-gray-900"
                 } ${
@@ -216,7 +220,7 @@ const MainNav = ({
             <li className="group">
               <AniLink
                 fade
-                to="/about/"
+                to="/reviews/"
                 className={`font-body relative text-[16px] font-semibold pb-8 after:absolute after:bottom-6 after:left-auto hover:after:left-0 after:right-0 hover:after:right-auto after:w-0 hover:after:w-full after:h-1 after:bg-primary-400 after:transition-all after:duration-300 after:ease-linear ${
                   scrolled && "text-gray-900"
                 } ${

@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState } from "react";
 import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
@@ -6,12 +6,26 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Layout from "../components/Layout";
 import SearchEngineOptimization from "../components/SEO";
 import Testimonials from "../components/Repeating/Testimonials";
+import Accordian from "../components/Accordion/Accord";
 import ValueProps from "../components/Repeating/ValueProps";
 import About from "../components/Repeating/About";
 import CallToAction from "../components/Repeating/CTA";
 import ButtonSolid from "../components/Button/ButtonSolid";
 
+import OffCanvas from "../components/OffCanvas/OffCanvas";
+// import ButtonSolid from "../Button/ButtonSolid";
+// import ButtonGhost from "../Button/ButtonGhost";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemButton,
+  AccordionItemPanel,
+} from "react-accessible-accordion";
+
+
+
 const Page = ({ data }) => {
+
   return (
     <Layout headerDarkMode={true}>
       <SearchEngineOptimization
@@ -24,7 +38,7 @@ const Page = ({ data }) => {
                     <div className="md:col-start-1 md:col-span-12">
                         <GatsbyImage image={data.accountServicesImage.childImageSharp.gatsbyImageData} />
                     </div>
-                    <div className="md:absolute bg-primary-700 shadow-inner md:col-start-6 md:col-span-7 ml p-12">
+                    <div className="md:absolute bg-primary-700 shadow-inner md:col-start-6 md:col-span-7 p-12">
                         <h2 className="font-light text-4xl text-primary-200">
                             Small Business Accounting Services in Greater Atlanta
                         </h2>
@@ -42,102 +56,210 @@ const Page = ({ data }) => {
             </div>
         </section>
 
-      <section className="mt-80 md:mt-120 mb-20 md:mb-32 pt-16 md:pt-24">
-        <div className="container">
-          <div className="gap-y-8 md:gap-x-10 lg:gap-x-16 items-center">
-            <div className="mb-8">
-              <h3 className="w-2/3 text-primary-700 text-4xl">
-                We are Here To Make Your Business Better
-              </h3>
-              <p className="w-2/3 font-display italic text-xl md:text-base mt-6">
-                Get streamlined end-to-end services for everything from entity
-                formation to accounting, payroll, and taxes. It’s all here, in a
-                single, full-stack solution that simplifies it all.
-              </p>
+        <section className="mt-12">
+            <div className="flex justify-content items-center flex-col mx-88 px-7">
+                <p className="text-4xl font-thin mb-6">The Key To Good Business</p>
+                <p className="text-base font-light leading-7">
+                    When you have a clear understanding of your
+                    financials, you can make smart business decisions
+                    and gain valuable insights that’ll help you plan
+                    for the future. It can mean the difference between
+                    failure and success—you’ll want accurate data, and we deliver.
+                </p>
             </div>
-            <div className="flex mb-5">
-              <AniLink fade to="/va-loans-chicago/" className="flex mr-5 w-1/2">
-                <GatsbyImage
-                  image={
-                    data.smallBusinessConsultingImage.childImageSharp
-                      .gatsbyImageData
-                  }
-                  alt="Small Business Consulting"
-                  className="p-2 rounded-[8px]"
-                />
-                <div className="flex justify-center flex-col py-2 pl-3">
-                  <h3 className="text-lg mb-2 text-primary-700">
-                    Small Business Consulting
-                  </h3>
-                  <p className="text-base">
-                    Need advice or help in navigating the best way to form your
-                    business? Talk with the experts.
-                  </p>
-                </div>
-              </AniLink>
-              <AniLink fade to="/va-loans-chicago/" className="flex mr-5 w-1/2">
-                <GatsbyImage
-                  image={
-                    data.accountServicesImage.childImageSharp.gatsbyImageData
-                  }
-                  alt="Accounting Services"
-                  className="p-2 rounded-[8px]"
-                />
-                <div className="flex justify-center flex-col py-2 pl-3">
-                  <h3 className="text-lg mb-4 text-primary-700">
-                    Accounting Services
-                  </h3>
-                  <p className="text-base">
-                    Receive accurate, secure delivery of monthly, quarterly, and
-                    annual financial statements.
-                  </p>
-                </div>
-              </AniLink>
+            <div className="flex justify-center items-center h-64">
+                <svg
+                    height="3"
+                    viewBox="0 0 1094 3"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                    d="M0 1.5h1094"
+                    stroke="url(#paint0_linear_1129_1425)"
+                    strokeWidth="3"
+                    />
+                    <defs>
+                    <linearGradient
+                        id="paint0_linear_1129_1425"
+                        x1="0"
+                        y1="2.00435"
+                        x2="w-10/12"
+                        y2="1.96651"
+                        gradientUnits="userSpaceOnUse"
+                    >
+                        <stop stopColor="#A2A09D" stopOpacity="0" />
+                        <stop offset=".145833" stopColor="#CB9636" />
+                        <stop offset=".265625" stopColor="#CFA855" />
+                        <stop offset=".427083" stopColor="#FCE4A7" />
+                        <stop offset=".578125" stopColor="#F0D592" />
+                        <stop offset=".713542" stopColor="#CFA855" />
+                        <stop offset=".828125" stopColor="#CB9636" />
+                        <stop offset="1" stopColor="#A7A7A7" stopOpacity="0" />
+                    </linearGradient>
+                    </defs>
+                </svg>
             </div>
-            <div className="flex mb-5">
-              <AniLink fade to="/va-loans-chicago/" className="flex mr-5 w-1/2">
-                <GatsbyImage
-                  image={
-                    data.payrollManagementImage.childImageSharp.gatsbyImageData
-                  }
-                  alt="Small Business Consulting"
-                  className="p-2 rounded-[8px]"
-                />
-                <div className="flex justify-center flex-col py-2 pl-3">
-                  <h3 className="text-lg mb-4 text-primary-700">
-                    Payroll Management
-                  </h3>
-                  <p className="text-base">
-                    Get lightweight, user-friendly, cost-efficient payroll
-                    processing, and hiring/termination automation.
-                  </p>
+        </section>
+
+        <section className="mb-20 md:mb-32 mt-12">
+            <div className="container">
+                <div className="flex items-center">
+                    <div className="flex justify-center flex-col w-1/2">
+                        <div className="">
+                            <p className="text-4xl font-thin mb-6">Our Services & Deliverables</p>
+                            <p className="text-base font-light  mb-6">
+                                You can count on High Echelon to professionally
+                                and accurately handle your small business accounting needs. We will:
+                            </p>
+                            <div className="text-base font-light">
+                                <div className="flex">
+                                    <i className="fa fa-check text-primary-100 mr-3"></i>
+                                    <p className="text-base font-semibold mb-3">Reconcile your bank and credit card statements</p>
+                                </div>
+                                <div className="flex">
+                                    <i className="fa fa-check text-primary-100 mr-3"></i>
+                                    <p className="text-base font-semibold mb-3">Register a new business at the state and federal level</p>
+                                </div>
+                                <div className="flex">
+                                    <i className="fa fa-check text-primary-100 mr-3"></i>
+                                    <p className="text-base font-semibold mb-3">Talk out the pros and cons of different approaches</p>
+                                </div>
+                                <div className="flex">
+                                    <i className="fa fa-check text-primary-100 mr-3"></i>
+                                    <p className="text-base font-semibold mb-3">Advise you on a big purchase or sale that may be on the horizon</p>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <GatsbyImage
+                        image={
+                            data.accountingProfileImage.childImageSharp
+                            .gatsbyImageData
+                        }
+                        alt="Small Business Consulting"
+                        className="rounded-[8px] w-1/2 ml-20"
+                    />
                 </div>
-              </AniLink>
-              <AniLink fade to="/va-loans-chicago/" className="flex mr-5 w-1/2">
-                <GatsbyImage
-                  image={
-                    data.incomeTaxPreparationImage.childImageSharp
-                      .gatsbyImageData
-                  }
-                  alt="Small Business Consulting"
-                  className="p-2 rounded-[8px]"
-                />
-                <div className="flex justify-center flex-col py-2 pl-3">
-                  <h3 className="text-lg mb-4 text-primary-700">
-                    Income Tax Preparation
-                  </h3>
-                  <p className="text-base">
-                    Get propt tax preparation for yourself or your business,
-                    including help with complicated returns.
-                  </p>
-                </div>
-              </AniLink>
             </div>
-          </div>
-        </div>
-      </section>
-      <ValueProps />
-      <Testimonials />
+        </section>
+
+        <section className="mb-20 md:mb-32 mt-12">
+            <div className="container">
+                <div className="flex items-center">
+                    <div className="w-1/2 mr-20">
+                        <GatsbyImage
+                            image={
+                                data.accountingStartImage.childImageSharp
+                                .gatsbyImageData
+                            }
+                            alt="Small Business Consulting"
+                            className="rounded-[8px]"
+                        />
+                    </div>
+                    <div className="flex justify-center flex-col w-1/2">
+                        <div className="">
+                            <p className="text-4xl font-thin mb-6">How To Get Started</p>
+                            <p className="text-base font-light  mb-6">
+                                We begin with an introductory call at no cost to you.
+                                First, we want to understand your goals and align on expectations,
+                                timeline, and outcomes. And from there, we’ll present you with a
+                                proposal outlining a plan and the associated costs.
+                            </p>
+                            <ButtonSolid
+                                className="font-light"
+                                href="/about/"
+                                text="Book a Call"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section className="mb-20 md:mb-32 mt-12">
+            <div className="container">
+                <p className="text-4xl mb-4">Answers To Frequently Asked Questions</p>
+                <Accordian />
+            </div>
+        </section>
+
+        <section className="mb-20 md:mb-32">
+            <div className="container">
+                <div className="gap-y-8 md:gap-x-10 lg:gap-x-16">
+                    <div className="mb-8 flex justify-center items-center flex-col">
+                        <h3 className="text-primary-700 text-4xl font-thin mb-12">
+                            We are Here To Make Your Business Better
+                        </h3>
+                        <p className="w-2/3 italic text-xl md:text-base font-light mb-12">
+                            Get streamlined end-to-end services for everything from entity
+                            formation to accounting, payroll, and taxes. It’s all here, in a
+                            single, full-stack solution that simplifies it all.
+                        </p>
+                    </div>
+                    <div className="flex">
+                        <AniLink fade to="/va-loans-chicago/" className="mr-10 mb-6 w-1/3">
+                            <GatsbyImage
+                            image={
+                                data.accountingStartImage.childImageSharp
+                                .gatsbyImageData
+                            }
+                            alt="Small Business Consulting"
+                            className="mb-6 rounded-[8px] h-60"
+                            />
+                            <div className="justify-center flex-col py-2">
+                                <h3 className="text-lg mb-4 text-primary-700">
+                                    Small Business Consulting
+                                </h3>
+                                <p className="text-base">
+                                    Need advice or help in navigating the best way to form your
+                                    business? Talk with the experts.
+                                </p>
+                            </div>
+                        </AniLink>
+                        <AniLink fade to="/va-loans-chicago/" className="mr-10 mb-6 w-1/3">
+                            <GatsbyImage
+                            image={
+                                data.accountServicesImage.childImageSharp.gatsbyImageData
+                            }
+                            alt="Accounting Services"
+                            className="mb-6 rounded-[8px] h-60"
+                            />
+                            <div className="justify-center flex-col py-2">
+                                <h3 className="text-lg mb-4 text-primary-700">
+                                    Accounting Services
+                                </h3>
+                                <p className="text-base">
+                                    Receive accurate, secure delivery of monthly, quarterly, and
+                                    annual financial statements.
+                                </p>    
+                            </div>
+                        </AniLink>
+                        <AniLink fade to="/va-loans-chicago/" className="mr-10 mb-6 w-1/3 h-60">
+                            <GatsbyImage
+                            image={
+                                data.smallBusinessConsultingImage.childImageSharp
+                                .gatsbyImageData
+                            }
+                            alt="Small Business Consulting"
+                            className="mb-6 rounded-[8px] h-60"
+                            />
+                            <div className="justify-center flex-col py-2">
+                            <h3 className="text-lg mb-4 text-primary-700">
+                                Payroll Management
+                            </h3>
+                            <p className="text-base">
+                                Get lightweight, user-friendly, cost-efficient payroll
+                                processing, and hiring/termination automation.
+                            </p>
+                            </div>
+                        </AniLink>
+                    </div>
+                </div>
+            </div>
+        </section>
+      {/* <ValueProps /> */}
+      {/* <Testimonials /> */}
       <About />
       {/* <RecentBlogPosts /> */}
       <CallToAction />
@@ -147,6 +269,20 @@ const Page = ({ data }) => {
 
 export const query = graphql`
   {
+    accountingProfileImage: file(
+        relativePath: { eq: "3.0 Accounting Services/2.0 Service pages.png" }
+    ) {
+      childImageSharp {
+        gatsbyImageData(layout: CONSTRAINED, width: 560)
+      }
+    }
+    accountingStartImage: file(
+        relativePath: { eq: "home/3.3 Income Tax Prep desktop.jpg" }
+    ) {
+      childImageSharp {
+        gatsbyImageData(layout: CONSTRAINED, width: 560)
+      }
+    }
     openGraphImage: file(
       relativePath: { eq: "open-graph/facebook/Homepage.jpg" }
     ) {

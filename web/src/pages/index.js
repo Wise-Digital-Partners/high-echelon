@@ -8,6 +8,7 @@ import SearchEngineOptimization from "../components/SEO";
 import Hero from "../components/Hero/HeroFullWidth";
 // import SliderMobileCards from "../components/Slider/SliderMobileCards";
 import Testimonials from "../components/Repeating/Testimonials";
+// import Carousel from "../components/Repeating/Carousel";
 import ValueProps from "../components/Repeating/ValueProps";
 import About from "../components/Repeating/About";
 //import RecentBlogPosts from "../components/Repeating/RecentBlogPosts";
@@ -233,11 +234,11 @@ const Page = ({ data }) => {
           </div>
         </div>
       </section>
-      <ValueProps />
-      <Testimonials />
-      <About />
+      {/* <Testimonials /> */}
+      {/* <Carousel /> */}
+      {/* <About /> */}
       {/* <RecentBlogPosts /> */}
-      <CallToAction />
+      {/* <CallToAction /> */}
     </Layout>
   );
 };
