@@ -61,11 +61,7 @@ const MainNav = ({
     }
   `);
 
-  window.onclick = function(e){
-    if(e.target == document.getElementsByClassName(".modal")){
-      document.getElementsByClassName(".modal").style.display = "none"
-    }
-  }
+  
 
   // Define logos based on header style
   let initialLogo = null,

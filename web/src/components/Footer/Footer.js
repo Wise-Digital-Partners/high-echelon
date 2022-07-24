@@ -17,7 +17,11 @@ const Footer = ({ hideFooter }) => {
     setCityDropdownOpen(!cityDropdownOpen);
   };
 
-  const currentWidth = window.innerWidth;
+  const currentWidth = 0;
+  const isBrowser = typeof window !== "undefined"
+  if (isBrowser) {
+    currentWidth = window.innerWidth;
+  }
 
   const data = useStaticQuery(graphql`
     {

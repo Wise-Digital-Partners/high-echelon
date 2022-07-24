@@ -5,9 +5,12 @@ import ButtonGhost from "../Button/ButtonGhost";
 import houseImg from '../../../src/images/bg.png';
 const CTA = ({ heading, headingLevel, subtext, className }) => {
   const HeadingTag = headingLevel || "h2";
-
-  const currentWidth = window.innerWidth;
-
+  const currentWidth = 0;
+  const isBrowser = typeof window !== "undefined"
+  if (isBrowser) {
+    currentWidth = window.innerWidth;
+  }
+ 
   return (
     // <section
     //   className={`bg-cta pt-14 md:pt-20 pb-18 md:pb-10 ${
