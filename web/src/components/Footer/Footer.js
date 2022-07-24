@@ -17,6 +17,8 @@ const Footer = ({ hideFooter }) => {
     setCityDropdownOpen(!cityDropdownOpen);
   };
 
+  const currentWidth = window.innerWidth;
+
   const data = useStaticQuery(graphql`
     {
       logo: file(relativePath: { eq: "global/Logo White.png" }) {
@@ -108,11 +110,31 @@ const Footer = ({ hideFooter }) => {
   return (
     <>
       <footer
-        className={`bg-primary-700 pt-20 lg:pt-20 pb-12 lg:pb-6 ${
+        className={`bg-primary-700 pb-12 lg:pb-6 ${
           hideFooter && "hidden"
         }`}
       >
-        <div className="container">
+        { (currentWidth>=1712) ? 
+          <div className="text-center">
+            <svg width={currentWidth} height="2" viewBox="0 0 1712 2" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-center">
+              <line y1="1.5" x2={currentWidth} y2="1.5" stroke="url(#paint0_linear_1569_821)" stroke-width="3"/>
+              <defs>
+              <linearGradient id="paint0_linear_1569_821" x1="0" y1="3.50435" x2={currentWidth} y2="3.4388" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#A2A09D" stop-opacity="0"/>
+              <stop offset="0.145833" stop-color="#CB9636"/>
+              <stop offset="0.265625" stop-color="#CFA855"/>
+              <stop offset="0.427083" stop-color="#FCE4A7"/>
+              <stop offset="0.578125" stop-color="#F0D592"/>
+              <stop offset="0.713542" stop-color="#CFA855"/>
+              <stop offset="0.828125" stop-color="#CB9636"/>
+              <stop offset="1" stop-color="#A7A7A7" stop-opacity="0"/>
+              </linearGradient>
+              </defs>
+            </svg> 
+          </div>
+          : ''
+        }
+        <div className="container pt-20">
           <div className="grid lg:grid-cols-12 lg:justify-between space-y-16 lg:space-y-0 lg:space-x-8 mb-20 md:mb-16">
             <div className="lg:col-start-1 lg:col-span-3">
               <div className="grid grid-cols-2 md:flex md:flex-col items-end md:items-start">

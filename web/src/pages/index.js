@@ -8,6 +8,7 @@ import SearchEngineOptimization from "../components/SEO";
 import Hero from "../components/Hero/HeroFullWidth";
 // import SliderMobileCards from "../components/Slider/SliderMobileCards";
 import Testimonials from "../components/Repeating/Testimonials";
+import CarouselForm from "../components/Repeating/Carousel";
 // import Carousel from "../components/Repeating/Carousel";
 import ValueProps from "../components/Repeating/ValueProps";
 import About from "../components/Repeating/About";
@@ -44,40 +45,41 @@ const Page = ({ data }) => {
             <ButtonSolid href="/refinance/" text="Book a Call" />
           </div>
         </Hero>
-        <div className="relative top-[-100px] mx-28">
-          <svg
-            width="1094"
-            height="3"
-            viewBox="0 0 1094 3"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 1.5h1094"
-              stroke="url(#paint0_linear_1129_1425)"
-              strokeWidth="3"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear_1129_1425"
-                x1="0"
-                y1="2.00435"
-                x2="w-10/12"
-                y2="1.96651"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#A2A09D" stopOpacity="0" />
-                <stop offset=".145833" stopColor="#CB9636" />
-                <stop offset=".265625" stopColor="#CFA855" />
-                <stop offset=".427083" stopColor="#FCE4A7" />
-                <stop offset=".578125" stopColor="#F0D592" />
-                <stop offset=".713542" stopColor="#CFA855" />
-                <stop offset=".828125" stopColor="#CB9636" />
-                <stop offset="1" stopColor="#A7A7A7" stopOpacity="0" />
-              </linearGradient>
-            </defs>
-          </svg>
-          <div className="absolute container bg-primary-700 pt-10 flex justify-center md:justify-center items-center flex-col rounded-[8px]">
+        <div className="relative top-[-100px] md:mx-28 sm:mx-4 xsm:mx-4 flex justify-center">
+          
+          <div className="absolute container bg-primary-700 flex justify-center md:justify-center items-center flex-col rounded-[8px]">
+            <svg
+              height="3"
+              viewBox="0 0 1094 3"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="mb-10 w-full"
+            >
+              <path
+                d="M0 1.5h1094"
+                stroke="url(#paint0_linear_1129_1425)"
+                strokeWidth="3"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_1129_1425"
+                  x1="0"
+                  y1="2.00435"
+                  x2="w-10/12"
+                  y2="1.96651"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stopColor="#A2A09D" stopOpacity="0" />
+                  <stop offset=".145833" stopColor="#CB9636" />
+                  <stop offset=".265625" stopColor="#CFA855" />
+                  <stop offset=".427083" stopColor="#FCE4A7" />
+                  <stop offset=".578125" stopColor="#F0D592" />
+                  <stop offset=".713542" stopColor="#CFA855" />
+                  <stop offset=".828125" stopColor="#CB9636" />
+                  <stop offset="1" stopColor="#A7A7A7" stopOpacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
             <svg
               width="93"
               height="93"
@@ -122,10 +124,10 @@ const Page = ({ data }) => {
                 </linearGradient>
               </defs>
             </svg>
-            <p className="font-body text-4xl text-white font-body mt-9 mb-6 max-w-[560px] w-3/5 text-center">
+            <p className="font-body text-4xl text-white font-body mt-9 mb-6 max-w-[560px] md:w-3/5 sm:w-full text-center">
               A Small Business CPA Firm Serving Atlanta & Beyond
             </p>
-            <p className="font-body text-sm text-white font-body max-w-[736px] w-2/3 text-center">
+            <p className="font-body text-sm text-white font-body max-w-[736px] md:w-2/3 sm:w-full text-center">
               If you’re looking for a meticulous CPA firm that can simplify your
               books, you’ve come to the right place. At High Echelon, we value
               client communication, accuracy, a streamlined workflow, and
@@ -144,17 +146,17 @@ const Page = ({ data }) => {
         <div className="container">
           <div className="gap-y-8 md:gap-x-10 lg:gap-x-16 items-center">
             <div className="mb-8">
-              <h3 className="w-2/3 text-primary-700 text-4xl">
+              <h3 className="md:w-2/3 sm:w-full text-primary-700 text-4xl">
                 We are Here To Make Your Business Better
               </h3>
-              <p className="w-2/3 font-display italic text-xl md:text-base mt-6">
+              <p className="md:w-2/3 sm:w-full font-display italic text-xl md:text-base mt-6">
                 Get streamlined end-to-end services for everything from entity
                 formation to accounting, payroll, and taxes. It’s all here, in a
                 single, full-stack solution that simplifies it all.
               </p>
             </div>
             <div className="flex mb-5">
-              <AniLink fade to="/va-loans-chicago/" className="flex mr-5 w-1/2">
+              <AniLink fade to="/va-loans-chicago/" className="md:flex mr-5 w-1/2 sm:block">
                 <GatsbyImage
                   image={
                     data.smallBusinessConsultingImage.childImageSharp
@@ -173,7 +175,7 @@ const Page = ({ data }) => {
                   </p>
                 </div>
               </AniLink>
-              <AniLink fade to="/va-loans-chicago/" className="flex mr-5 w-1/2">
+              <AniLink fade to="/va-loans-chicago/" className="md:flex mr-5 w-1/2 sm:block">
                 <GatsbyImage
                   image={
                     data.accountServicesImage.childImageSharp.gatsbyImageData
@@ -193,7 +195,7 @@ const Page = ({ data }) => {
               </AniLink>
             </div>
             <div className="flex mb-5">
-              <AniLink fade to="/va-loans-chicago/" className="flex mr-5 w-1/2">
+              <AniLink fade to="/va-loans-chicago/" className="md:flex mr-5 w-1/2 sm:block">
                 <GatsbyImage
                   image={
                     data.payrollManagementImage.childImageSharp.gatsbyImageData
@@ -211,7 +213,7 @@ const Page = ({ data }) => {
                   </p>
                 </div>
               </AniLink>
-              <AniLink fade to="/va-loans-chicago/" className="flex mr-5 w-1/2">
+              <AniLink fade to="/va-loans-chicago/" className="md:flex mr-5 w-1/2 sm:block">
                 <GatsbyImage
                   image={
                     data.incomeTaxPreparationImage.childImageSharp
@@ -236,9 +238,13 @@ const Page = ({ data }) => {
       </section>
       {/* <Testimonials /> */}
       {/* <Carousel /> */}
-      {/* <About /> */}
+      <section className="mb-20 md:mb-32 2xl:container 2xl:mx-auto 2xl:px-0 py-3 md:px-10 sm:px-2">
+        <p className="text-4xl font-light mb-0 text-center">Our Clients Say Its Best</p>
+        <CarouselForm />
+      </section>
+      <About />
       {/* <RecentBlogPosts /> */}
-      {/* <CallToAction /> */}
+      <CallToAction />
     </Layout>
   );
 };

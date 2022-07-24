@@ -5,6 +5,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 import SearchEngineOptimization from "../components/SEO";
 import Testimonials from "../components/Repeating/Testimonials";
+import CarouselForm from "../components/Repeating/Carousel";
 import ValueProps from "../components/Repeating/ValueProps";
 import CallToAction from "../components/Repeating/CTA";
 import ButtonSolid from "../components/Button/ButtonSolid";
@@ -43,8 +44,8 @@ const Page = ({ data }) => {
 
         <section className="mt-12 mb-20 md:mb-32">
             <div className="container">
-                <div className="flex items-center">
-                    <div className="w-1/2 mr-20">
+                <div className="lg:flex items-center md:block">
+                    <div className="lg:w-1/2 mr-20 mb-8">
                         <GatsbyImage
                             image={
                                 data.quotes.childImageSharp
@@ -54,8 +55,8 @@ const Page = ({ data }) => {
                             className="rounded-[8px]"
                         />
                     </div>
-                    <div className="flex justify-center flex-col w-1/2">
-                        <div className="">
+                    <div className="flex justify-center flex-col lg:w-1/2">
+                        <div className="md:px-4">
                             <p className="text-4xl font-thin mb-6">How To Get Started</p>
                             <p className="text-base font-light  mb-6">
                                 We begin with an introductory call at no cost to you.
@@ -102,29 +103,33 @@ const Page = ({ data }) => {
               </linearGradient>
               </defs>
             </svg>
-            <div className="px-40 mt-28 mb-8 text-center">
-              <p className="text-4xl font-thin mb-6">Our Mission</p>
-              <p className="text-base font-light">
-                High Echelon provides top-quality work with
-                total transparency. We believe accounting doesn’t
-                need to be complicated and that clients should get
-                the experience they deserve, which includes:
-              </p>
-            </div>
-            <div className="mb-24 justify-center flex-col items-center">
-            
-              <div className="flex mx-100 items-center justify-center flex-col">
-                <div className="flex">
-                    <i className="fa fa-check text-primary-100 mr-4 text-2xl"></i>
-                    <p className="text-base font-semibold mb-4">styleName: Body Medium/Medium-Semi-bold;</p>
-                </div>
-                <div className="flex">
-                    <i className="fa fa-check text-primary-100 mr-4 text-2xl"></i>
-                    <p className="text-base font-semibold mb-4">The BEST communication and data flow</p>
-                </div>
-                <div className="flex">
-                    <i className="fa fa-check text-primary-100 mr-4 text-2xl"></i>
-                    <p className="text-base font-semibold mb-4">The BEST accounting, tax, and payroll services</p>
+            <div className="flex justify-center items-center flex-col">
+              <div className="lg:px-40 mt-28 mb-8 text-center max-w-[874px] md:px-20">
+                <p className="text-4xl font-thin mb-6">Our Mission</p>
+                <p className="text-base font-light">
+                  High Echelon provides top-quality work with
+                  total transparency. We believe accounting doesn’t
+                  need to be complicated and that clients should get
+                  the experience they deserve, which includes:
+                </p>
+              </div>
+              <div className="mb-24 justify-center flex-col items-center">
+              
+                <div className="flex mx-100 items-center justify-start flex-col">
+                  <div className="mx-100">
+                    <div className="flex">
+                        <i className="fa fa-check text-primary-100 mr-4 text-2xl"></i>
+                        <p className="text-base font-semibold mb-4">styleName: Body Medium/Medium-Semi-bold;</p>
+                    </div>
+                    <div className="flex">
+                        <i className="fa fa-check text-primary-100 mr-4 text-2xl"></i>
+                        <p className="text-base font-semibold mb-4">The BEST communication and data flow</p>
+                    </div>
+                    <div className="flex">
+                        <i className="fa fa-check text-primary-100 mr-4 text-2xl"></i>
+                        <p className="text-base font-semibold mb-4">The BEST accounting, tax, and payroll services</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -166,8 +171,8 @@ const Page = ({ data }) => {
 
         <section className="mb-20 md:mb-32">
           <div className="container">
-            <div className="px-20 flex">
-              <div className="w-7/12 flex items-start flex-col px-16 mr-30">
+            <div className="lg:px-20 md:px-4 lg:flex sm:block">
+              <div className="lg:w-7/12 flex items-start flex-col lg:px-16 md:px-4 sm:px-2 mr-30 sm:w-full mb-8">
                 <div className="text-4xl text-thin mb-6">Meet Michelle Frank</div>
                 <div className="text-base text-light mb-6">
                   Michelle is sharp and fiercely determined, bringing those attributes
@@ -185,17 +190,24 @@ const Page = ({ data }) => {
                   text="Book a Call"
               />
               </div>
-              <div className="w-5/12">
-                <GatsbyImage
-                  image={data.michellProfileImage.childImageSharp.gatsbyImageData}
-                  alt="Michell Profile"
-                  className="mx-10 md:mx-16 min-w-[96px]"
-                />
+              <div className="lg:w-5/12 sm:w-2/3">
+                <div className="flex justify-center items-center">
+                  <GatsbyImage
+                    image={data.michellProfileImage.childImageSharp.gatsbyImageData}
+                    alt="Michell Profile"
+                    className="mx-10 md:mx-16 min-w-[96px]"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </section>
       {/* <Testimonials /> */}
+      <section className="mb-20 md:mb-32 2xl:container 2xl:mx-auto 2xl:px-0 py-3 px-10">
+        <p className="text-4xl font-light mb-0 text-center">Our Clients Say Its Best</p>
+        <CarouselForm />
+      </section>
+      <CallToAction />
     </Layout>
   );
 };

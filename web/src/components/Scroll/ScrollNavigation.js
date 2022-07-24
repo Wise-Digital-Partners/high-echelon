@@ -9,7 +9,7 @@ const StyledScrollNavigation = styled.div`
       li {
         &.is-current {
           a {
-            ${tw`text-primary-400`}
+            ${tw`text-primary-100`}
           }
         }
       }

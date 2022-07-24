@@ -12,7 +12,7 @@ const StyledSlider = styled.div`
   .slick-next {
     ${tw`text-primary-900 text-xl h-12 w-14 bg-white bg-opacity-30 border border-solid border-primary-900 rounded-3xl transform-none top-auto bottom-0`}
     &:hover {
-      ${tw`bg-primary-400 border-primary-400 text-white`}
+      ${tw`bg-primary-100 border-primary-100 text-white`}
     }
   }
   .slick-prev {
@@ -24,9 +24,9 @@ const StyledSlider = styled.div`
   .slick-dots {
     ${tw`relative mt-10 md:mt-0 md:-top-4 flex! justify-center md:justify-start items-center space-x-3 md:ml-18`}
     li {
-      ${tw`h-4 w-4 rounded-full bg-transparent hover:bg-primary-400 border border-black hover:border-primary-400 mr-0 transition-colors duration-300 ease-linear`}
+      ${tw`h-4 w-4 rounded-full bg-transparent hover:bg-primary-100 border border-black hover:border-primary-100 mr-0 transition-colors duration-300 ease-linear`}
       &.slick-active {
-        ${tw`bg-primary-400 border-primary-400`}
+        ${tw`bg-primary-100 border-primary-100`}
       }
     }
   }

@@ -6,6 +6,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Layout from "../components/Layout";
 import SearchEngineOptimization from "../components/SEO";
 import Testimonials from "../components/Repeating/Testimonials";
+import CarouselForm from "../components/Repeating/Carousel";
 import Accordian from "../components/Accordion/Accord";
 import ValueProps from "../components/Repeating/ValueProps";
 import About from "../components/Repeating/About";
@@ -56,8 +57,8 @@ const Page = ({ data }) => {
             </div>
         </section>
 
-        <section className="mt-12">
-            <div className="flex justify-content items-center flex-col mx-88 px-7">
+        <section className="mt-12 flex justify-content items-center flex-col">
+            <div className="flex justify-content items-center flex-col md:mx-88 md:min-w-120 sm:mx-8 px-7">
                 <p className="text-4xl font-thin mb-6">The Key To Good Business</p>
                 <p className="text-base font-light leading-7">
                     When you have a clear understanding of your
@@ -104,9 +105,9 @@ const Page = ({ data }) => {
 
         <section className="mb-20 md:mb-32 mt-12">
             <div className="container">
-                <div className="flex items-center">
-                    <div className="flex justify-center flex-col w-1/2">
-                        <div className="">
+                <div className="lg:flex items-center md:block">
+                    <div className="flex justify-center flex-col lg:w-1/2 md:w-full md:mb-8 sm:mb-8">
+                        <div className="pl-10">
                             <p className="text-4xl font-thin mb-6">Our Services & Deliverables</p>
                             <p className="text-base font-light  mb-6">
                                 You can count on High Echelon to professionally
@@ -132,22 +133,24 @@ const Page = ({ data }) => {
                             </div>
                         </div>
                     </div>
-                    <GatsbyImage
-                        image={
-                            data.accountingProfileImage.childImageSharp
-                            .gatsbyImageData
-                        }
-                        alt="Small Business Consulting"
-                        className="rounded-[8px] w-1/2 ml-20"
-                    />
+                    <div className="max-w-140">
+                      <GatsbyImage
+                          image={
+                              data.accountingProfileImage.childImageSharp
+                              .gatsbyImageData
+                          }
+                          alt="Small Business Consulting"
+                          className="rounded-[8px] ml-20"
+                      />
+                    </div>
                 </div>
             </div>
         </section>
 
         <section className="mb-20 md:mb-32 mt-12">
             <div className="container">
-                <div className="flex items-center">
-                    <div className="w-1/2 mr-20">
+                <div className="lg:flex items-center md:block">
+                    <div className="lg:w-1/2 md:w-full mr-20 md:mb-8 sm:mb-8">
                         <GatsbyImage
                             image={
                                 data.accountingStartImage.childImageSharp
@@ -157,8 +160,8 @@ const Page = ({ data }) => {
                             className="rounded-[8px]"
                         />
                     </div>
-                    <div className="flex justify-center flex-col w-1/2">
-                        <div className="">
+                    <div className="flex justify-center flex-col lg:w-1/2 md:w-full">
+                        <div className="px-10">
                             <p className="text-4xl font-thin mb-6">How To Get Started</p>
                             <p className="text-base font-light  mb-6">
                                 We begin with an introductory call at no cost to you.
@@ -191,14 +194,15 @@ const Page = ({ data }) => {
                         <h3 className="text-primary-700 text-4xl font-thin mb-12">
                             We are Here To Make Your Business Better
                         </h3>
-                        <p className="w-2/3 italic text-xl md:text-base font-light mb-12">
+                        <p className="md:w-2/3 sm:w-full italic text-xl md:text-base sm:text-base font-light mb-12">
                             Get streamlined end-to-end services for everything from entity
                             formation to accounting, payroll, and taxes. It’s all here, in a
                             single, full-stack solution that simplifies it all.
                         </p>
                     </div>
-                    <div className="flex">
+                    <div className="md:flex sm:block">
                         <AniLink fade to="/va-loans-chicago/" className="mr-10 mb-6 w-1/3">
+                          <div className=" max-w-fit">
                             <GatsbyImage
                             image={
                                 data.accountingStartImage.childImageSharp
@@ -207,6 +211,7 @@ const Page = ({ data }) => {
                             alt="Small Business Consulting"
                             className="mb-6 rounded-[8px] h-60"
                             />
+                          </div>
                             <div className="justify-center flex-col py-2">
                                 <h3 className="text-lg mb-4 text-primary-700">
                                     Small Business Consulting
@@ -218,13 +223,15 @@ const Page = ({ data }) => {
                             </div>
                         </AniLink>
                         <AniLink fade to="/va-loans-chicago/" className="mr-10 mb-6 w-1/3">
+                          <div className="max-w-140">
                             <GatsbyImage
-                            image={
-                                data.accountServicesImage.childImageSharp.gatsbyImageData
-                            }
-                            alt="Accounting Services"
-                            className="mb-6 rounded-[8px] h-60"
-                            />
+                              image={
+                                  data.accountServicesImage.childImageSharp.gatsbyImageData
+                              }
+                              alt="Accounting Services"
+                              className="mb-6 rounded-[8px] h-60 w-full"
+                              />
+                            </div>
                             <div className="justify-center flex-col py-2">
                                 <h3 className="text-lg mb-4 text-primary-700">
                                     Accounting Services
@@ -236,14 +243,16 @@ const Page = ({ data }) => {
                             </div>
                         </AniLink>
                         <AniLink fade to="/va-loans-chicago/" className="mr-10 mb-6 w-1/3 h-60">
+                          <div className="max-w-140">
                             <GatsbyImage
                             image={
                                 data.smallBusinessConsultingImage.childImageSharp
                                 .gatsbyImageData
                             }
                             alt="Small Business Consulting"
-                            className="mb-6 rounded-[8px] h-60"
+                            className="mb-6 rounded-[8px] h-60 max-w-140"
                             />
+                          </div>
                             <div className="justify-center flex-col py-2">
                             <h3 className="text-lg mb-4 text-primary-700">
                                 Payroll Management
@@ -260,6 +269,10 @@ const Page = ({ data }) => {
         </section>
       {/* <ValueProps /> */}
       {/* <Testimonials /> */}
+      <section className="mb-20 md:mb-32 2xl:container 2xl:mx-auto 2xl:px-0 py-3 px-10">
+        <p className="text-4xl font-light mb-0 text-center">Our Clients Say Its Best</p>
+        <CarouselForm />
+      </section>
       <About />
       {/* <RecentBlogPosts /> */}
       <CallToAction />
