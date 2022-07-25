@@ -17,6 +17,10 @@ const isNetlifyProduction = NETLIFY_ENV === "production";
 const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
 
 module.exports = {
+  
+  module.exports = {
+    pathPrefix: "/high-echelon",
+  },
   siteMetadata: {
     siteUrl,
     author: `WISE Digital Partners`,
