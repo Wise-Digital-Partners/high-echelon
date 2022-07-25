@@ -1,12 +1,4 @@
-[build]
-  base = "/"
-  publish = "public"
 
-[[redirects]]
-  from = "/*"
-  to = "index.html"
-  base = "/"
-  
 [[plugins]]
   package = "netlify/plugin-gatsby"
 
