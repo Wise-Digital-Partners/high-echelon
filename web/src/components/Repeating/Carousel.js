@@ -38,7 +38,7 @@ const Carousel = () => {
         <div className="flex items-center justify-center">
             <button
             onClick={movePrev}
-            className="mr-2"
+            className="mr-2 bg-red"
             >
             <i onClick={movePrev} className="fa fa-arrow-circle-left mr-3 text-primary-100 text-4xl"></i>
             </button>
@@ -48,7 +48,7 @@ const Carousel = () => {
                         index==currentIndex ? (
                             <div 
                                 key={index}
-                                className="relative text-primary-700 gap-y-10 py-6 md:px-44 sm:px-4 bg-primary-500">
+                                className="relative text-primary-700 gap-y-10 py-6 px-44 bg-primary-500">
                                 <div className="text-center">
                                     <p className="font-xl font-black mb-1">{resource.name}</p>
                                     <p className="font-lg font-gray-300">{resource.subname}</p>
@@ -80,20 +80,10 @@ const Carousel = () => {
             </div>     
             <button
             onClick={moveNext}
-            className="ml-2"
+            className="ml-2 bg-red"
         >
             <i onClick={moveNext} className="fa fa-arrow-circle-right ml-3 text-primary-100 text-4xl"></i>
             </button>
-        </div>
-        <div className="flex justify-center">
-            {data.map((resource, index) => {
-                return(
-                    index==currentIndex ?
-                        <div className="w-8 h-2 bg-primary-100 mr-2 rounded"></div>
-                    :
-                        <div className="w-2 h-2 bg-primary-100 mr-2 rounded-full"></div>
-                );
-            })}
         </div>
     </div>
   );

@@ -11,28 +11,35 @@ import CallToAction from "../components/Repeating/CTA";
 
 const Page = ({ data }) => {
   return (
-    <Layout headerDarkMode={true}>
+    <Layout headerHasBorder={true}>
       <SearchEngineOptimization
-        title="Independent Mortgage Lender Chicago | MacAsh Home Loans"
-        description="Apply online. Close in 15 days. It's that easy. Make your dream home a reality with MacAsh, your local independent mortgage broker in Chicago."
+        title="MacAsh Reviews | Chicago Mortgage Broker"
+        description="Our testimonials speak for themselves. See why customers like you have much love for MacAsh, your local Chicago area independent mortgage broker."
+        // openGraphImage={data.openGraphImage.publicURL}
+        // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
       <Hero
-        backgroundImages={data.reviewsBack.childImageSharp.gatsbyImageData}
+        backgroundImages={data.heroDesktop.childImageSharp.gatsbyImageData}
         backgroundPosition="0 50%"
         mobileRemoveBackground={true}
+        textMaxWidth="md:max-w-[427px]"
         textAlignment="text-center md:text-left"
         padding="pt-10 md:pt-24 pb-14 md:pb-32"
       >
-        <div className="flex justify-center items-center flex-col text-white">
-          <h1 className="mb-6 text-white">Testimonials</h1>
-          <p className="text-base ">
-            Don’t just take our word for it—hear feedback directly from our clients.
-          </p>
+        <h1>Love For MacAsh</h1>
+        <p className="font-display italic text-xl md:text-2xl">
+          If you're happy, we're happy. That’s why we love hearing from our
+          customers.
+        </p>
 
-          <ButtonSolid href="/review-us/" text="Leave a Review" />
-        </div>
+        <ButtonSolid href="/review-us/" text="Leave a Review" />
       </Hero>
+
+      <GatsbyImage
+        image={data.heroMobile.childImageSharp.gatsbyImageData}
+        className="md:hidden w-full"
+      />
 
       <section className="pt-16 md:pt-28 pb-22 md:pb-32">
         <div className="container">
@@ -47,11 +54,6 @@ const Page = ({ data }) => {
 
 export const query = graphql`
   {
-    reviewsBack: file(relativePath: { eq: "reviews/reviews-back.png" }) {
-      childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
-      }
-    }
     openGraphImage: file(
       relativePath: { eq: "open-graph/facebook/Reviews.jpg" }
     ) {

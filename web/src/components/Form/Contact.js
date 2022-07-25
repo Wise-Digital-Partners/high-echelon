@@ -26,7 +26,7 @@ const StyledForm = styled.div`
   [type="week"],
   select,
   textarea {
-    ${tw`text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear`}
+    ${tw`text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-400 focus:ring-opacity-30 transition-colors duration-300 ease-linear`}
   }
 `;
 
