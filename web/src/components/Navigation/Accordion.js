@@ -21,8 +21,8 @@ const Accordion = ({ title, children }) => {
   return (
     <ul className="submenu-parent text-center overflow-hidden">
       <button
-        className={`font-heading text-3xl text-white hover:text-primary-400 font-medium no-underline focus:outline-none flex justify-center w-full transition-colors duration-300 ease-linear ${
-          setActive && "text-primary-400"
+        className={`font-heading text-3xl text-white hover:text-primary-100 font-medium no-underline focus:outline-none flex justify-center w-full transition-colors duration-300 ease-linear ${
+          setActive && "text-primary-100"
         }`}
         onClick={toggleAccordion}
       >

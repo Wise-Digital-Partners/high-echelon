@@ -26,12 +26,12 @@ const StyledSlider = styled.div`
       ${tw`w-auto h-auto mx-2`}
       &.slick-active {
         button {
-          ${tw`bg-primary-400 w-3 h-3`}
+          ${tw`bg-primary-100 w-3 h-3`}
         }
       }
     }
     button {
-      ${tw`w-2 h-2 bg-primary-400 bg-opacity-20 rounded-full mb-3 transition ease-in duration-300`}
+      ${tw`w-2 h-2 bg-primary-100 bg-opacity-20 rounded-full mb-3 transition ease-in duration-300`}
       &:before {
         ${tw`hidden`}
       }
@@ -44,10 +44,10 @@ const StyledSlider = styled.div`
       ${tw`hidden`}
     }
     i {
-      ${tw`text-primary-400 text-sm transition-all duration-300 ease-linear`}
+      ${tw`text-primary-100 text-sm transition-all duration-300 ease-linear`}
     }
     &:hover {
-      ${tw`bg-primary-400 border-primary-400`}
+      ${tw`bg-primary-100 border-primary-100`}
       i {
         ${tw`text-white`}
       }
