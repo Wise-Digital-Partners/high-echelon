@@ -217,7 +217,7 @@ export const query = graphql`
   {
     aboutProfileImage: file(relativePath: { eq: "6.0 About/1.0 Hero desktop.jpg" }) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED)
+        gatsbyImageData(layout: CONSTRAINED, width: 920)
       }
     }
     michellProfileImage: file(relativePath: { eq: "6.0 About/3.0 Michelle.jpg" }) {

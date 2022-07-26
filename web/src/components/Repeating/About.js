@@ -9,7 +9,7 @@ const About = ({ className, headingLevel }) => {
     {
       team: file(relativePath: { eq: "repeating/about/Michelle B&W.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED, width: 651)
+          gatsbyImageData(layout: CONSTRAINED, width: 1200)
         }
       }
     }
@@ -24,8 +24,8 @@ const About = ({ className, headingLevel }) => {
           <div className="md:col-start-1 md:col-span-10">
             <GatsbyImage image={data.team.childImageSharp.gatsbyImageData} />
           </div>
-          <div className="md:absolute bg-white shadow-inner md:col-start-5 ml-20 md:col-span-9 ml p-24">
-            <HeadingTag className="text-primary-700 text-6xl font-thin mb-10">
+          <div className="md:absolute bg-white shadow-inner md:col-start-5 ml-20 md:col-span-9 ml lg:p-24 md:p-18 sm:p-12">
+            <HeadingTag className="text-primary-700 text-6xl md:text-6xl sm:text-3xl xs:text-5xl font-thin mb-10">
               Who We Are
             </HeadingTag>
             <p className="font-body text-xl md:text-2xl">

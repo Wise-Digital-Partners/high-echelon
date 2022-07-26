@@ -208,7 +208,7 @@ const Page = ({ data }) => {
                   className="p-2 rounded-[8px] mr-3"
                 />
                 <div className="flex justify-center flex-col py-2 pl-3">
-                  <h3 className="text-2xl md:text-2xl mb-4 text-primary-700">
+                  <h3 className="text-2xl mb-4 text-primary-700">
                     Payroll Management
                   </h3>
                   <p className="text-xl">
