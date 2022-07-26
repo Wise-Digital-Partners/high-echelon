@@ -34,20 +34,23 @@ const Page = ({ data }) => {
           padding="pt-10 md:pt-12 pb-14 md:pb-60"
           maxheight=""
         >
-          <p className="font-heading text-white text-mobile-7xl md:text-7xl tracking-wider mb-12 md:mb-4 mt-40">
+          <p className="font-heading text-white text-mobile-7xl md:text-8xl tracking-wider mb-12 md:mb-4 mt-40">
             WE ARE HIGH ECHELON
           </p>
-          <p className="font-body text-lg md:text-xl text-white font-semibold mb-16">
-            We are High Echelon Elevated consulting, payroll, accounting & tax
-            services.
+          <p className="font-body text-2xl md:text-3xl text-white font-medium mb-16">
+            Elevated Consulting, Payroll, Accounting & Tax
+            Services.
           </p>
           <div className="flex justify-center md:justify-center space-x-4 md:space-x-5">
-            <ButtonSolid href="/refinance/" text="Book a Call" />
+            <ButtonSolid href="/refinance/" 
+              text="Book a Call"
+              className="text-xl w-56 h-14" 
+            />
           </div>
         </Hero>
-        <div className="relative top-[-100px] md:mx-28 sm:mx-4 xsm:mx-4 flex justify-center">
+        <div className="relative top-[-100px] mx-34 md:mx-28 sm:mx-4 xsm:mx-4 flex justify-center">
           
-          <div className="absolute container bg-primary-700 flex justify-center md:justify-center items-center flex-col rounded-[8px]">
+          <div className="absolute container bg-primary-700 flex justify-center md:justify-center items-center flex-col rounded-[8px] pb-10">
             <svg
               height="3"
               viewBox="0 0 1094 3"
@@ -124,10 +127,10 @@ const Page = ({ data }) => {
                 </linearGradient>
               </defs>
             </svg>
-            <p className="font-body text-4xl text-white font-body mt-9 mb-6 max-w-[560px] md:w-3/5 sm:w-full text-center">
+            <p className="text-6xl text-white font-thin mt-9 mb-6 max-w-[720px] md:w-3/5 sm:w-full text-center">
               A Small Business CPA Firm Serving Atlanta & Beyond
             </p>
-            <p className="font-body text-sm text-white font-body max-w-[736px] md:w-2/3 sm:w-full text-center">
+            <p className="font-body text-lg text-white font-body max-w-[840px] md:w-9/12 sm:w-full text-center leading-loose">
               If you’re looking for a meticulous CPA firm that can simplify your
               books, you’ve come to the right place. At High Echelon, we value
               client communication, accuracy, a streamlined workflow, and
@@ -146,7 +149,7 @@ const Page = ({ data }) => {
         <div className="container">
           <div className="gap-y-8 md:gap-x-10 lg:gap-x-16 items-center">
             <div className="mb-8">
-              <h3 className="md:w-2/3 sm:w-full text-primary-700 text-4xl">
+              <h3 className="md:w-2/3 sm:w-full text-primary-700 text-5xl font-thin leading-loose">
                 We are Here To Make Your Business Better
               </h3>
               <p className="md:w-2/3 sm:w-full font-display italic text-xl md:text-base mt-6">

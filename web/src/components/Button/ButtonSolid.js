@@ -21,7 +21,7 @@ const Button = ({
 
   return (
     <Tag
-      className={`group relative overflow-hidden min-w-[160px] h-[48px] px-6 rounded-xl inline-flex items-center justify-center text-center font-body font-semibold no-underline whitespace-nowrap ${
+      className={`group relative overflow-hidden min-w-[160px] min-h-[48px] px-6 rounded-[8px] inline-flex items-center justify-center text-center font-body font-semibold no-underline whitespace-nowrap ${
         altStyle
           ? "bg-primary-100 hover:bg-primary-300 text-white hover:text-gray-900"
           : "bg-primary-100 hover:bg-primary-300 text-white hover:text-gray-900"

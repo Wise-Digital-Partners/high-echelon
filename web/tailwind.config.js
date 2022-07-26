@@ -92,6 +92,7 @@ module.exports = {
         "5xl": ["2.5rem", "3.048rem"],
         "6xl": ["3rem", "3.657rem"],
         "7xl": ["3.563rem", "4.063rem"],
+        "8xl": ["4rem", "4.5rem"],
         // "mobile-lg": ["rem", "rem"],
         // "mobile-xl": ["rem", "rem"],
         // "mobile-2xl": ["rem", "rem"],
