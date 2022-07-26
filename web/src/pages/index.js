@@ -243,7 +243,7 @@ const Page = ({ data }) => {
       {/* <Carousel /> */}
       <ValueProps />
       <section className="mb-20 md:mb-32 2xl:container 2xl:mx-auto 2xl:px-0 py-3 md:px-10 sm:px-2">
-        <p className="text-4xl font-light mb-0 text-center">Our Clients Say Its Best</p>
+        <p className="text-6xl font-light mb-0 text-center text-black font-thin">Our Clients Say Its Best</p>
         <CarouselForm />
       </section>
       <About />

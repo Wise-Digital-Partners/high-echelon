@@ -79,8 +79,8 @@ const ValueProps = ({ className, headingLevel, heading }) => {
                   className="md:mx-auto md:mb-2"
                 />
                 <div>
-                  <h3 className="text-primary-200 heading-five mb-2">{content.heading}</h3>
-                  <p className="text-primary-500 text-base mb-0">{content.text}</p>
+                  <h3 className="text-primary-200 heading-five mb-2 text-2xl">{content.heading}</h3>
+                  <p className="text-primary-500 text-xl mb-0">{content.text}</p>
                 </div>
               </div>
               </Background>
