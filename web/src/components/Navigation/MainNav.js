@@ -7,7 +7,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import Burger from "./Burger";
 import OffCanvas from "../OffCanvas/OffCanvas";
 import ButtonSolid from "../Button/ButtonSolid";
-// import ButtonGhost from "../Button/ButtonGhost";
+import ButtonGhost from "../Button/ButtonGhost";
 import {
   Accordion,
   AccordionItem,
@@ -55,17 +55,11 @@ const MainNav = ({
     {
       darkLogo: file(relativePath: { eq: "global/Logo desktop.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED, width: 310, placeholder: NONE)
+          gatsbyImageData(layout: CONSTRAINED, width: 400, placeholder: NONE)
         }
       }
     }
   `);
-
-  window.onclick = function(e){
-    if(e.target == document.getElementsByClassName(".modal")){
-      document.getElementsByClassName(".modal").style.display = "none"
-    }
-  }
 
   // Define logos based on header style
   let initialLogo = null,
@@ -142,14 +136,14 @@ const MainNav = ({
                 <GatsbyImage
                   image={initialLogo}
                   alt="MacAsh Home Loans Logo"
-                  className="h-[64px] md:h-[64px] w-[310px]"
+                  className="h-[84px] md:h-[84px] w-[400px]"
                 />
               </div>
               <div className="lg:hidden">
                 <GatsbyImage
                   image={data.darkLogo.childImageSharp.gatsbyImageData}
                   alt="MacAsh Home Loans Logo"
-                  className="h-[64px] md:h-[64px] w-[310px]"
+                  className="h-[84px] md:h-[84px] w-[400px]"
                 />
               </div>
             </div>
@@ -159,14 +153,14 @@ const MainNav = ({
                 <GatsbyImage
                   image={initialLogo}
                   alt="MacAsh Home Loans Logo"
-                  className="h-[64px] md:h-[64px] w-[310px]"
+                  className="h-[84px] md:h-[84px] w-[400px]"
                 />
               </div>
               <div className="lg:hidden">
                 <GatsbyImage
                   image={data.darkLogo.childImageSharp.gatsbyImageData}
                   alt="MacAsh Home Loans Logo"
-                  className="h-[64px] md:h-[64px] w-[310px]"
+                  className="h-[84px] md:h-[84px] w-[400px]"
                 />
               </div>
             </div>
@@ -175,7 +169,7 @@ const MainNav = ({
         <div className="flex items-center justify-end flex-auto">
           <ul
             id="navigation-desktop"
-            className="hidden lg:flex lg:flex-row lg:space-x-8 lg:items-center lg:justify-end lg:mr-8"
+            className="hidden lg:flex lg:flex-row lg:space-x-8 lg:items-center lg:justify-end"
           >
             <li
               className="relative"
@@ -185,8 +179,8 @@ const MainNav = ({
             >
               <AniLink
                 fade
-                to="/home-purchase/"
-                className={`font-body relative text-base font-semibold pb-8 after:absolute after:bottom-6 after:h-1 after:bg-primary-100 after:transition-all after:duration-300 after:ease-linear ${
+                to="/"
+                className={`font-bold relative text-xl pb-8 after:absolute after:bottom-6 after:h-1 after:bg-primary-100 after:transition-all after:duration-300 after:ease-linear ${
                   subMenuHovering1
                     ? "after:w-full after:left-0 after:right-auto"
                     : "after:w-0 after:left-auto after:right-0"
@@ -226,7 +220,7 @@ const MainNav = ({
               <AniLink
                 fade
                 to="/about/"
-                className={`font-body relative text-base font-semibold pb-8 after:absolute after:bottom-6 after:left-auto hover:after:left-0 after:right-0 hover:after:right-auto after:w-0 hover:after:w-full after:h-1 after:bg-primary-100 after:transition-all after:duration-300 after:ease-linear ${
+                className={`font-body relative text-xl font-bold pb-8 after:absolute after:bottom-6 after:left-auto hover:after:left-0 after:right-0 hover:after:right-auto after:w-0 hover:after:w-full after:h-1 after:bg-primary-100 after:transition-all after:duration-300 after:ease-linear ${
                   scrolled && "text-gray-900"
                 } ${
                   headerLinkColor === "white" ? "text-white" : "text-gray-900"
@@ -240,7 +234,7 @@ const MainNav = ({
               <AniLink
                 fade
                 to="/reviews/"
-                className={`font-body relative text-base font-semibold pb-8 after:absolute after:bottom-6 after:left-auto hover:after:left-0 after:right-0 hover:after:right-auto after:w-0 hover:after:w-full after:h-1 after:bg-primary-100 after:transition-all after:duration-300 after:ease-linear ${
+                className={`font-body mr-4 relative text-xl font-bold pb-8 after:absolute after:bottom-6 after:left-auto hover:after:left-0 after:right-0 hover:after:right-auto after:w-0 hover:after:w-full after:h-1 after:bg-primary-100 after:transition-all after:duration-300 after:ease-linear ${
                   scrolled && "text-gray-900"
                 } ${
                   headerLinkColor === "white" ? "text-white" : "text-gray-900"
@@ -251,11 +245,11 @@ const MainNav = ({
             </li>
 
             <li className="group">
-              <ButtonSolid
+              <ButtonGhost
                 onClick={()=>openContactModal()}
                 text="Contact US"
                 altStyle={true}
-                className="bg-primary-700 min-w-0 text-base"
+                className="bg-primary-700 min-w-0 text-xl w-56 h-14"
               />
             </li>
           </ul>

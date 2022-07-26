@@ -23,8 +23,8 @@ const Button = ({
     <Tag
       className={`group relative overflow-hidden border-b border-primary-100 h-[46px] inline-flex items-center justify-center text-center font-body font-semibold no-underline whitespace-nowrap ${
         altStyle
-          ? "text-primary-100 hover:text-gray-900 bg-white/30 hover:bg-white border-white"
-          : "text-primary-100 hover:text-gray-900 bg-white/30 hover:bg-primary-300 border-gray-900 hover:border-primary-300"
+          ? "text-white hover:text-white bg-primary-700 hover:bg-primary-100 rounded-[8px]"
+          : "text-white hover:text-white bg-primary-700 hover:bg-primary-100 border-[8px] hover:border-primary-300"
       } ${className || ""}`}
       {...(link ? { fade: "true", to: href } : { href: href })}
       target={target}

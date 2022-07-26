@@ -8,7 +8,7 @@ module.exports = {
         DEFAULT: "1rem",
       },
       screens: {
-        DEFAULT: "77rem",
+        DEFAULT: "96rem",
       },
     },
     fontFamily: {
@@ -31,6 +31,16 @@ module.exports = {
           " 0px 0px 16px rgba(106, 188, 68, 0.35), 0px 2px 60px rgba(0, 0, 0, 0.12)",
         "5xl": "0px 4px 6px rgba(0, 0, 0, 0.1)",
         "6xl": "0px 2px 40px rgba(0, 0, 0, 0.2)",
+      },
+      font: {
+        "thin": "100px",
+        "extralight": "200px",
+        "light": "300px",
+        "normal": "400px",
+        "medium": "500px",
+        "semibold": "600px",
+        "extrabold": "700px",
+        "black": "800px",
       },
       colors: {
         gray: {

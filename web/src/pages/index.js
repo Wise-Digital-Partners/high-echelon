@@ -32,7 +32,7 @@ const Page = ({ data }) => {
           mobileRemoveBackground={true}
           textAlignment="text-center"
           padding="pt-10 md:pt-12 pb-14 md:pb-60"
-          maxheight="max-height-[725px]"
+          maxheight=""
         >
           <p className="font-heading text-white text-mobile-7xl md:text-7xl tracking-wider mb-12 md:mb-4 mt-40">
             WE ARE HIGH ECHELON
