@@ -2,6 +2,12 @@
   overflow-x: initial !important;
 }
 
+.container-wide {
+  width: 96rem;
+  padding: 1rem;
+  margin: auto;
+}
+
 a,
 button {
   @apply outline-none transition-all duration-300 ease-linear;

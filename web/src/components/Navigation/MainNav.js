@@ -128,7 +128,7 @@ const MainNav = ({
       aria-label="main-navigation"
       offcanvas-open={offcanvasOpen}
     >
-      <div className="container flex justify-between items-center">
+      <div className="container-wide flex justify-between items-center">
         <div className="flex-auto flex justify-center lg:justify-start">
           <AniLink fade to="/">
             <div className={`${scrolled && "hidden"}`}>

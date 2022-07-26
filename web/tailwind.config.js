@@ -8,7 +8,8 @@ module.exports = {
         DEFAULT: "1rem",
       },
       screens: {
-        DEFAULT: "96rem",
+        DEFAULT: "77rem",
+        wide: "96rem",
       },
     },
     fontFamily: {
