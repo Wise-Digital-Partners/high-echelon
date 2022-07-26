@@ -16,6 +16,7 @@ import About from "../components/Repeating/About";
 import CallToAction from "../components/Repeating/CTA";
 import ButtonSolid from "../components/Button/ButtonSolid";
 import ButtonGhost from "../components/Button/ButtonGhost";
+import ButtonTransparent from "../components/Button/ButtonTransparent";
 // import ButtonWithIcon from "../components/Button/ButtonWithIcon";
 
 const Page = ({ data }) => {

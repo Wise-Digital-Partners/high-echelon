@@ -152,7 +152,7 @@ const Footer = ({ hideFooter }) => {
                 </svg>
                 </AniLink>
                 <div className="flex items-center pl-4 pt-6">
-                  <ul class="text-white text-sm list-none">
+                  <ul class="text-white text-lg list-none">
                     <li>(123) 456-7890</li>
                     <li>email@email.com</li>
                   </ul>
@@ -161,8 +161,8 @@ const Footer = ({ hideFooter }) => {
             </div>
 
             <div className="lg:col-end-13 md:col-span-9 pt-5">
-                <ul class="text-white text-sm float-right flex items-stretch">
-                  <li class = "ml-9">
+                <ul class="text-white text-lg float-right flex items-stretch">
+                  <li class = "ml-10">
                     <AniLink
                         fade
                         to="/accounting/"
@@ -171,7 +171,7 @@ const Footer = ({ hideFooter }) => {
                       Accounting
                     </AniLink>                
                   </li>
-                  <li class = "ml-9">
+                  <li class = "ml-10">
                     <AniLink
                         fade
                         to="/tax/"
@@ -180,7 +180,7 @@ const Footer = ({ hideFooter }) => {
                       Tax Preparation
                     </AniLink>                
                   </li>
-                  <li class = "ml-9">
+                  <li class = "ml-10">
                     <AniLink
                         fade
                         to="/consulting/"
@@ -189,7 +189,7 @@ const Footer = ({ hideFooter }) => {
                       Consulting
                     </AniLink>                
                   </li>
-                  <li class = "ml-9">
+                  <li class = "ml-10">
                     <AniLink
                         fade
                         to="/payroll/"
@@ -203,7 +203,7 @@ const Footer = ({ hideFooter }) => {
           </div>
 
           <div className="flex flex-wrap lg:flex-nowrap flex-col lg:flex-row justify-items-center lg:justify-between lg:items-center lg:pt-4">
-            <div className="lg:flex lg:items-center mb-8 lg:mb-0 text-sm">
+            <div className="lg:flex lg:items-center mb-8 lg:mb-0 text-lg">
               <ul className="flex items-center flex-wrap space-x-4 justify-center lg:justify-start">
                 <li className="text-gray-50">
                   © {getYear()} High Echelon
@@ -289,7 +289,7 @@ const Footer = ({ hideFooter }) => {
                 <div className="text-white">
                   <span className="font-bold tracking-wider">NMLS ID</span>
                   <br />
-                  <span className="text-sm">#2099559</span>
+                  <span className="text-lg">#2099559</span>
                 </div> */}
               </div>
             </div>

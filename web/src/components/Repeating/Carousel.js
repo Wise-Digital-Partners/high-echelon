@@ -88,7 +88,7 @@ const Carousel = () => {
             onClick={moveNext}
             className="ml-2"
         >
-            <i onClick={moveNext} className="fa fa-arrow-circle-right ml-3 text-primary-100 text-4xl"></i>
+            <i onClick={moveNext} className="fa fa-arrow-circle-right ml-3 text-primary-100 text-5xl font-thin"></i>
             </button>
         </div>
         <div className="flex justify-center">
