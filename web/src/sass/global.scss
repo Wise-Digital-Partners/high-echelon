@@ -2,12 +2,6 @@
   overflow-x: initial !important;
 }
 
-.container-wide {
-  width: 96rem;
-  padding: 1rem;
-  margin: auto;
-}
-
 a,
 button {
   @apply outline-none transition-all duration-300 ease-linear;
@@ -22,4 +16,9 @@ button {
       @apply font-normal text-primary-600 mr-3.5;
     }
   }
+}
+
+.container {
+  margin: auto;
+  max-width: 1440px;
 }

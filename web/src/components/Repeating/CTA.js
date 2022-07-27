@@ -1,13 +1,18 @@
 import React from "react";
 
 import ButtonSolid from "../Button/ButtonSolid";
-import ButtonGhost from "../Button/ButtonTransparent";
+import ButtonGhost from "../Button/ButtonGhost";
 import houseImg from '../../../src/images/bg.png';
 const CTA = ({ heading, headingLevel, subtext, className }) => {
   const HeadingTag = headingLevel || "h2";
+  const isBrowser = typeof window !== "undefined";
+  // const currentWidth = 0;
+  // if (isBrowser) {
+  //   const currentWidth = window.innerWidth;
+  // }
 
-  const currentWidth = window.innerWidth;
 
+ 
   return (
     // <section
     //   className={`bg-cta pt-14 md:pt-20 pb-18 md:pb-10 ${
@@ -15,10 +20,10 @@ const CTA = ({ heading, headingLevel, subtext, className }) => {
     //   }`}
     // >
     <section class = "bg-no-repeat bg-cover bg-center md:pb-18 md:pb-10" style={{backgroundImage: `url('${houseImg}')`}}>
-      { (currentWidth>=1712) ? 
+      { (window.innerWidth>=1712) ? 
           <div className="text-center">
-            <svg width={currentWidth} height="2" viewBox="0 0 1712 2" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-center">
-              <line y1="1.5" x2={currentWidth} y2="1.5" stroke="url(#paint0_linear_1569_821)" stroke-width="3"/>
+            <svg width={window.innerWidth} height="2" viewBox="0 0 1712 2" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-center">
+              <line y1="1.5" x2={window.innerWidth} y2="1.5" stroke="url(#paint0_linear_1569_821)" stroke-width="3"/>
               <defs>
               <linearGradient id="paint0_linear_1569_821" x1="0" y1="3.50435" x2="1705.71" y2="3.4388" gradientUnits="userSpaceOnUse">
               <stop stop-color="#A2A09D" stop-opacity="0"/>
@@ -37,12 +42,12 @@ const CTA = ({ heading, headingLevel, subtext, className }) => {
         }
       <div className="container pt-20">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-end md:mb-8">
-          <header className="max-w-4xl text-center md:text-left">          
-            <HeadingTag class = "text-primary-100 text-5xl font-thin">
+          <header className="max-w-2xl text-center md:text-left">          
+            <HeadingTag class = "text-primary-100">
               {heading || ["Get a Free Consultation"]}
             </HeadingTag>
 
-            <p className="font-display leading-normal md:text-2xl text-white md:mb-0">
+            <p className="font-display text-base md:text-base text-white md:mb-0">
               {subtext ||
                 "Work smarter, not harder. Get started with High Echelon, a top small business CPA serving the greater Atlanta area and Georgia, today."}
             </p>
@@ -52,7 +57,7 @@ const CTA = ({ heading, headingLevel, subtext, className }) => {
             <ButtonSolid
                 href="/request-rates/"
                 text="Book a Call"
-                className="w-full md:w-auto text-xl h-15"
+                className="w-full md:w-auto"
               />
           </div>
         </div>

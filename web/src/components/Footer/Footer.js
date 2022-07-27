@@ -11,13 +11,18 @@ const Footer = ({ hideFooter }) => {
     return new Date().getFullYear();
   };
 
+// const currentWidth=0;
+
   const [cityDropdownOpen, setCityDropdownOpen] = useState(false);
 
   const citiesClickHandler = () => {
     setCityDropdownOpen(!cityDropdownOpen);
   };
 
-  const currentWidth = window.innerWidth;
+  // const isBrowser = typeof window !== "undefined"
+  // if (isBrowser) {
+  //   currentWidth = window.innerWidth;
+  // }
 
   const data = useStaticQuery(graphql`
     {
@@ -114,12 +119,12 @@ const Footer = ({ hideFooter }) => {
           hideFooter && "hidden"
         }`}
       >
-        { (currentWidth>=1712) ? 
+        { (window.innerWidth>=1712) ? 
           <div className="text-center">
-            <svg width={currentWidth} height="2" viewBox="0 0 1712 2" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-center">
-              <line y1="1.5" x2={currentWidth} y2="1.5" stroke="url(#paint0_linear_1569_821)" stroke-width="3"/>
+            <svg width={window.innerWidth} height="2" viewBox="0 0 1712 2" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-center">
+              <line y1="1.5" x2={window.innerwidth} y2="1.5" stroke="url(#paint0_linear_1569_821)" stroke-width="3"/>
               <defs>
-              <linearGradient id="paint0_linear_1569_821" x1="0" y1="3.50435" x2={currentWidth} y2="3.4388" gradientUnits="userSpaceOnUse">
+              <linearGradient id="paint0_linear_1569_821" x1="0" y1="3.50435" x2={window.innerwidth} y2="3.4388" gradientUnits="userSpaceOnUse">
               <stop stop-color="#A2A09D" stop-opacity="0"/>
               <stop offset="0.145833" stop-color="#CB9636"/>
               <stop offset="0.265625" stop-color="#CFA855"/>
@@ -152,7 +157,7 @@ const Footer = ({ hideFooter }) => {
                 </svg>
                 </AniLink>
                 <div className="flex items-center pl-4 pt-6">
-                  <ul class="text-white text-lg list-none">
+                  <ul class="text-white text-sm list-none">
                     <li>(123) 456-7890</li>
                     <li>email@email.com</li>
                   </ul>
@@ -161,8 +166,8 @@ const Footer = ({ hideFooter }) => {
             </div>
 
             <div className="lg:col-end-13 md:col-span-9 pt-5">
-                <ul class="text-white text-lg float-right flex items-stretch">
-                  <li class = "ml-10">
+                <ul class="text-white text-sm float-right flex items-stretch">
+                  <li class = "ml-9">
                     <AniLink
                         fade
                         to="/accounting/"
@@ -171,7 +176,7 @@ const Footer = ({ hideFooter }) => {
                       Accounting
                     </AniLink>                
                   </li>
-                  <li class = "ml-10">
+                  <li class = "ml-9">
                     <AniLink
                         fade
                         to="/tax/"
@@ -180,7 +185,7 @@ const Footer = ({ hideFooter }) => {
                       Tax Preparation
                     </AniLink>                
                   </li>
-                  <li class = "ml-10">
+                  <li class = "ml-9">
                     <AniLink
                         fade
                         to="/consulting/"
@@ -189,7 +194,7 @@ const Footer = ({ hideFooter }) => {
                       Consulting
                     </AniLink>                
                   </li>
-                  <li class = "ml-10">
+                  <li class = "ml-9">
                     <AniLink
                         fade
                         to="/payroll/"
@@ -203,7 +208,7 @@ const Footer = ({ hideFooter }) => {
           </div>
 
           <div className="flex flex-wrap lg:flex-nowrap flex-col lg:flex-row justify-items-center lg:justify-between lg:items-center lg:pt-4">
-            <div className="lg:flex lg:items-center mb-8 lg:mb-0 text-lg">
+            <div className="lg:flex lg:items-center mb-8 lg:mb-0 text-sm">
               <ul className="flex items-center flex-wrap space-x-4 justify-center lg:justify-start">
                 <li className="text-gray-50">
                   © {getYear()} High Echelon
@@ -289,7 +294,7 @@ const Footer = ({ hideFooter }) => {
                 <div className="text-white">
                   <span className="font-bold tracking-wider">NMLS ID</span>
                   <br />
-                  <span className="text-lg">#2099559</span>
+                  <span className="text-sm">#2099559</span>
                 </div> */}
               </div>
             </div>

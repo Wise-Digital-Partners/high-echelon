@@ -9,7 +9,6 @@ module.exports = {
       },
       screens: {
         DEFAULT: "77rem",
-        wide: "96rem",
       },
     },
     fontFamily: {
@@ -32,16 +31,6 @@ module.exports = {
           " 0px 0px 16px rgba(106, 188, 68, 0.35), 0px 2px 60px rgba(0, 0, 0, 0.12)",
         "5xl": "0px 4px 6px rgba(0, 0, 0, 0.1)",
         "6xl": "0px 2px 40px rgba(0, 0, 0, 0.2)",
-      },
-      font: {
-        "thin": "100px",
-        "extralight": "200px",
-        "light": "300px",
-        "normal": "400px",
-        "medium": "500px",
-        "semibold": "600px",
-        "extrabold": "700px",
-        "black": "800px",
       },
       colors: {
         gray: {
@@ -93,7 +82,6 @@ module.exports = {
         "5xl": ["2.5rem", "3.048rem"],
         "6xl": ["3rem", "3.657rem"],
         "7xl": ["3.563rem", "4.063rem"],
-        "8xl": ["4rem", "4.5rem"],
         // "mobile-lg": ["rem", "rem"],
         // "mobile-xl": ["rem", "rem"],
         // "mobile-2xl": ["rem", "rem"],

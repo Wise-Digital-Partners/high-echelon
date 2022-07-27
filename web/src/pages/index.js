@@ -15,8 +15,8 @@ import About from "../components/Repeating/About";
 //import RecentBlogPosts from "../components/Repeating/RecentBlogPosts";
 import CallToAction from "../components/Repeating/CTA";
 import ButtonSolid from "../components/Button/ButtonSolid";
+// import ButtonTransparent from "../components/Button/ButtonTransparent";
 import ButtonGhost from "../components/Button/ButtonGhost";
-import ButtonTransparent from "../components/Button/ButtonTransparent";
 // import ButtonWithIcon from "../components/Button/ButtonWithIcon";
 
 const Page = ({ data }) => {
@@ -33,25 +33,21 @@ const Page = ({ data }) => {
           mobileRemoveBackground={true}
           textAlignment="text-center"
           padding="pt-10 md:pt-12 pb-14 md:pb-60"
-          maxheight=""
         >
-          <p className="font-heading text-white text-mobile-7xl md:text-8xl tracking-wider mb-12 md:mb-4 mt-40">
+          <p className="font-heading text-white text-mobile-7xl md:text-7xl tracking-wider mb-12 md:mb-4 mt-40">
             WE ARE HIGH ECHELON
           </p>
-          <p className="font-body text-2xl md:text-3xl text-white font-medium mb-16">
+          <p className="font-body text-lg md:text-xl text-white font-semibold mb-16">
             Elevated Consulting, Payroll, Accounting & Tax
-            Services.
+            Services
           </p>
           <div className="flex justify-center md:justify-center space-x-4 md:space-x-5">
-            <ButtonSolid href="/refinance/" 
-              text="Book a Call"
-              className="text-xl w-56 h-14" 
-            />
+            <ButtonSolid href="/refinance/" text="Book a Call" />
           </div>
         </Hero>
-        <div className="relative top-[-100px] mx-34 md:mx-28 sm:mx-4 xsm:mx-4 flex justify-center">
+        <div className="relative top-[-100px] md:mx-28 sm:mx-4 xsm:mx-4 flex justify-center">
           
-          <div className="absolute container bg-primary-700 flex justify-center md:justify-center items-center flex-col rounded-[8px] pb-10">
+          <div className="absolute container bg-primary-700 flex justify-center md:justify-center items-center flex-col rounded-[8px]">
             <svg
               height="3"
               viewBox="0 0 1094 3"
@@ -128,10 +124,10 @@ const Page = ({ data }) => {
                 </linearGradient>
               </defs>
             </svg>
-            <p className="text-6xl text-white font-thin mt-9 mb-6 max-w-[720px] md:w-3/5 sm:w-full text-center">
+            <p className="font-body text-4xl text-white font-body mt-9 mb-6 max-w-[560px] md:w-3/5 sm:w-full text-center">
               A Small Business CPA Firm Serving Atlanta & Beyond
             </p>
-            <p className="font-body text-lg text-white font-body max-w-[840px] md:w-9/12 sm:w-full text-center leading-loose">
+            <p className="font-body text-sm text-white font-body max-w-[736px] md:w-2/3 sm:w-full text-center">
               If you’re looking for a meticulous CPA firm that can simplify your
               books, you’ve come to the right place. At High Echelon, we value
               client communication, accuracy, a streamlined workflow, and
@@ -146,20 +142,20 @@ const Page = ({ data }) => {
         className="md:hidden w-full"
       /> */}
 
-      <section className="mt-80 md:mt-120 mb-20 md:mb-32 pt-20 md:pt-40">
+      <section className="mt-80 md:mt-120 mb-20 md:mb-32 pt-16 md:pt-24">
         <div className="container">
           <div className="gap-y-8 md:gap-x-10 lg:gap-x-16 items-center">
             <div className="mb-8">
-              <h3 className="md:w-2/3 sm:w-full text-primary-700 text-5xl font-thin leading-loose">
+              <h3 className="md:w-2/3 sm:w-full text-primary-700 text-4xl">
                 We are Here To Make Your Business Better
               </h3>
-              <p className="md:w-2/3 sm:w-full font-display text-xl md:text-xl mt-4">
+              <p className="md:w-2/3 sm:w-full font-display italic text-xl md:text-base mt-6">
                 Get streamlined end-to-end services for everything from entity
                 formation to accounting, payroll, and taxes. It’s all here, in a
                 single, full-stack solution that simplifies it all.
               </p>
             </div>
-            <div className="flex mb-12 mt-12">
+            <div className="flex mb-5">
               <AniLink fade to="/va-loans-chicago/" className="md:flex mr-5 w-1/2 sm:block">
                 <GatsbyImage
                   image={
@@ -167,13 +163,13 @@ const Page = ({ data }) => {
                       .gatsbyImageData
                   }
                   alt="Small Business Consulting"
-                  className="p-2 rounded-[8px] mr-3"
+                  className="p-2 rounded-[8px]"
                 />
                 <div className="flex justify-center flex-col py-2 pl-3">
-                  <h3 className="text-2xl mb-2 text-primary-700">
+                  <h3 className="text-lg mb-2 text-primary-700">
                     Small Business Consulting
                   </h3>
-                  <p className="text-xl">
+                  <p className="text-base">
                     Need advice or help in navigating the best way to form your
                     business? Talk with the experts.
                   </p>
@@ -185,33 +181,33 @@ const Page = ({ data }) => {
                     data.accountServicesImage.childImageSharp.gatsbyImageData
                   }
                   alt="Accounting Services"
-                  className="p-2 rounded-[8px] mr-3"
+                  className="p-2 rounded-[8px]"
                 />
                 <div className="flex justify-center flex-col py-2 pl-3">
-                  <h3 className="text-2xl mb-4 text-primary-700">
+                  <h3 className="text-lg mb-4 text-primary-700">
                     Accounting Services
                   </h3>
-                  <p className="text-xl">
+                  <p className="text-base">
                     Receive accurate, secure delivery of monthly, quarterly, and
                     annual financial statements.
                   </p>
                 </div>
               </AniLink>
             </div>
-            <div className="flex mb-12">
+            <div className="flex mb-5">
               <AniLink fade to="/va-loans-chicago/" className="md:flex mr-5 w-1/2 sm:block">
                 <GatsbyImage
                   image={
                     data.payrollManagementImage.childImageSharp.gatsbyImageData
                   }
                   alt="Small Business Consulting"
-                  className="p-2 rounded-[8px] mr-3"
+                  className="p-2 rounded-[8px]"
                 />
                 <div className="flex justify-center flex-col py-2 pl-3">
-                  <h3 className="text-2xl mb-4 text-primary-700">
+                  <h3 className="text-lg mb-4 text-primary-700">
                     Payroll Management
                   </h3>
-                  <p className="text-xl">
+                  <p className="text-base">
                     Get lightweight, user-friendly, cost-efficient payroll
                     processing, and hiring/termination automation.
                   </p>
@@ -224,13 +220,13 @@ const Page = ({ data }) => {
                       .gatsbyImageData
                   }
                   alt="Small Business Consulting"
-                  className="p-2 rounded-[8px] mr-3"
+                  className="p-2 rounded-[8px]"
                 />
                 <div className="flex justify-center flex-col py-2 pl-3">
-                  <h3 className="text-2xl mb-4 text-primary-700">
+                  <h3 className="text-lg mb-4 text-primary-700">
                     Income Tax Preparation
                   </h3>
-                  <p className="text-xl">
+                  <p className="text-base">
                     Get propt tax preparation for yourself or your business,
                     including help with complicated returns.
                   </p>
@@ -244,7 +240,7 @@ const Page = ({ data }) => {
       {/* <Carousel /> */}
       <ValueProps />
       <section className="mb-20 md:mb-32 2xl:container 2xl:mx-auto 2xl:px-0 py-3 md:px-10 sm:px-2">
-        <p className="text-6xl font-light mb-0 text-center text-black font-thin">Our Clients Say Its Best</p>
+        <p className="text-4xl font-light mb-0 text-center">Our Clients Say Its Best</p>
         <CarouselForm />
       </section>
       <About />

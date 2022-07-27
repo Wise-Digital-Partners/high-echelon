@@ -50,6 +50,21 @@ exports.createPages = async ({ graphql, actions }) => {
   await createBlogPostPages(graphql, actions);
 };
 
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+  if (stage === "build-html") {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /micromodal/,
+            use: loaders.null(),
+          },
+        ],
+      },
+    })
+  }
+}
+
 exports.onCreateWebpackConfig = ({ stage, actions, loaders }) => {
   if (stage === "build-html" || stage === "develop-html") {
     actions.setWebpackConfig({

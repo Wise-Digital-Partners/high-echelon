@@ -58,10 +58,10 @@ const ValueProps = ({ className, headingLevel, heading }) => {
   return (
     <section className={`${className || "bg-primary-700 mb-20 md:mb-32"}`}>
       <div className="container">
-        <header className="md:max-w-2xl md:mx-auto md:text-center pt-60">
-          <HeadingTag className="text-primary-200 font-light text-4xl hidden">{heading || "Why US?"}</HeadingTag>
+        <header className="md:max-w-2xl md:mx-auto md:text-center pt-32">
+          <HeadingTag className="text-primary-200 font-light text-4xl">{heading || "Why US?"}</HeadingTag>
         </header>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-x-10 md:text-center pb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-x-10 md:text-center pb-32">
           {content.map((content, i) => {
             return (
               <Background
@@ -76,11 +76,11 @@ const ValueProps = ({ className, headingLevel, heading }) => {
                 <img
                   src={content.icon}
                   alt={content.heading}
-                  className="md:mx-auto md:mb-4"
+                  className="md:mx-auto md:mb-2"
                 />
                 <div>
-                  <h3 className="text-primary-200 heading-five mb-2 text-2xl">{content.heading}</h3>
-                  <p className="text-primary-500 text-xl mb-0">{content.text}</p>
+                  <h3 className="text-primary-200 heading-five mb-2">{content.heading}</h3>
+                  <p className="text-primary-500 text-base mb-0">{content.text}</p>
                 </div>
               </div>
               </Background>
