@@ -50,8 +50,8 @@ const Carousel = () => {
                                 key={index}
                                 className="relative text-primary-700 gap-y-10 py-6 md:px-44 sm:px-4 bg-primary-500">
                                 <div className="text-center">
-                                    <p className="font-xl font-black mb-1">{resource.name}</p>
-                                    <p className="font-lg font-gray-300">{resource.subname}</p>
+                                    <p className="text-lg font-black mb-1">{resource.name}</p>
+                                    <p className="text-sm font-gray-300">{resource.subname}</p>
                                 </div>
                                 <p className="my-10 px-3 text-typography-body bg-offwhite">
                                     {resource.quote}
@@ -61,7 +61,7 @@ const Carousel = () => {
                                     alt="gray Logo"
                                     className="absolute -bottom-14 -right-7"
                                 />
-                                <div className="flex justify-center h-20">
+                                <div className="flex justify-center h-16">
                                     <img
                                         src={googleLogo}
                                         alt="google Logo"

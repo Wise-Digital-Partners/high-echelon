@@ -9,7 +9,7 @@ const About = ({ className, headingLevel }) => {
     {
       team: file(relativePath: { eq: "repeating/about/Michelle B&W.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED, width: 651)
+          gatsbyImageData(layout: CONSTRAINED, width: 941)
         }
       }
     }
@@ -21,14 +21,14 @@ const About = ({ className, headingLevel }) => {
     <section className={`${className || "mb-20 md:mb-32"}`}>
       <div className="container">
         <div className="relative grid md:grid-cols-12 md:gap-x-10 lg:gap-x-16 gap-y-8 items-center">
-          <div className="md:col-start-1 md:col-span-9">
+          <div className="md:col-start-1 md:col-span-10">
             <GatsbyImage image={data.team.childImageSharp.gatsbyImageData} />
           </div>
-          <div className="md:absolute bg-white shadow-inner md:col-start-6 md:col-span-7 ml p-12">
-            <HeadingTag className="text-primary-700">
+          <div className="md:absolute bg-white shadow-inner md:col-start-6 md:col-span-7 ml p-20">
+            <HeadingTag className="text-primary-700 font-light">
               Who We Are
             </HeadingTag>
-            <p className="font-display text-xl md:text-2xl">
+            <p className="text-base md:text-base">
               CPA Michelle Frank founded High Echelon to help small businesses simplify 
               and streamline their finances so they can focus on growth and success. 
               Accounting doesn’t need to be complicated—we make it easy.
