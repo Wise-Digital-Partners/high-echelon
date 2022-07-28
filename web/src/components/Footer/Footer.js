@@ -119,7 +119,7 @@ const Footer = ({ hideFooter }) => {
           hideFooter && "hidden"
         }`}
       >
-          <div className="text-center">
+          {/* <div className="text-center">
             <svg width="1094" height="2" viewBox="0 0 1712 2" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-center">
               <line y1="1.5" x2="1094" y2="1.5" stroke="url(#paint0_linear_1569_821)" stroke-width="3"/>
               <defs>
@@ -135,7 +135,7 @@ const Footer = ({ hideFooter }) => {
               </linearGradient>
               </defs>
             </svg> 
-          </div>
+          </div> */}
         <div className="container pt-20">
           <div className="grid lg:grid-cols-12 lg:justify-between space-y-16 lg:space-y-0 lg:space-x-8 mb-20 md:mb-16">
             <div className="lg:col-start-1 lg:col-span-3">

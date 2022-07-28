@@ -20,7 +20,7 @@ const CTA = ({ heading, headingLevel, subtext, className }) => {
     //   }`}
     // >
     <section class = "bg-no-repeat bg-cover bg-center md:pb-18 md:pb-10" style={{backgroundImage: `url('${houseImg}')`}}>
-          <div className="text-center">
+          {/* <div className="text-center">
             <svg width="1094" height="2" viewBox="0 0 1712 2" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-center">
               <line y1="1.5" x2="1094" y2="1.5" stroke="url(#paint0_linear_1569_821)" stroke-width="3"/>
               <defs>
@@ -36,7 +36,7 @@ const CTA = ({ heading, headingLevel, subtext, className }) => {
               </linearGradient>
               </defs>
             </svg> 
-          </div>
+          </div> */}
       <div className="container pt-20">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-end md:mb-8">
           <header className="max-w-2xl text-center md:text-left">          
