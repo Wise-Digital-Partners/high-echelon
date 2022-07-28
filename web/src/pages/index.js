@@ -16,7 +16,7 @@ import About from "../components/Repeating/About";
 //import RecentBlogPosts from "../components/Repeating/RecentBlogPosts";
 import CallToAction from "../components/Repeating/CTA";
 import ButtonSolid from "../components/Button/ButtonSolid";
-// import ButtonTransparent from "../components/Button/ButtonTransparent";
+import ButtonSolidGold from "../components/Button/ButtonSolidGold";
 import ButtonGhost from "../components/Button/ButtonGhost";
 // import ButtonWithIcon from "../components/Button/ButtonWithIcon";
 
@@ -43,7 +43,7 @@ const Page = ({ data }) => {
             Services
           </p>
           <div className="flex justify-center md:justify-center space-x-4 md:space-x-5">
-            <ButtonSolid href="/refinance/" text="Book a Call" />
+            <ButtonSolidGold href="/refinance/" text="Book a Call" />
           </div>
         </Hero>
         <div className="relative top-[-100px] md:mx-28 sm:mx-4 xsm:mx-4 flex justify-center">
