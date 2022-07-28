@@ -119,12 +119,11 @@ const Footer = ({ hideFooter }) => {
           hideFooter && "hidden"
         }`}
       >
-        { (window.innerWidth>=1712) ? 
           <div className="text-center">
-            <svg width={window.innerWidth} height="2" viewBox="0 0 1712 2" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-center">
-              <line y1="1.5" x2={window.innerwidth} y2="1.5" stroke="url(#paint0_linear_1569_821)" stroke-width="3"/>
+            <svg width="1094" height="2" viewBox="0 0 1712 2" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-center">
+              <line y1="1.5" x2="1094" y2="1.5" stroke="url(#paint0_linear_1569_821)" stroke-width="3"/>
               <defs>
-              <linearGradient id="paint0_linear_1569_821" x1="0" y1="3.50435" x2={window.innerwidth} y2="3.4388" gradientUnits="userSpaceOnUse">
+              <linearGradient id="paint0_linear_1569_821" x1="0" y1="3.50435" x2="1094" y2="3.4388" gradientUnits="userSpaceOnUse">
               <stop stop-color="#A2A09D" stop-opacity="0"/>
               <stop offset="0.145833" stop-color="#CB9636"/>
               <stop offset="0.265625" stop-color="#CFA855"/>
@@ -137,8 +136,6 @@ const Footer = ({ hideFooter }) => {
               </defs>
             </svg> 
           </div>
-          : ''
-        }
         <div className="container pt-20">
           <div className="grid lg:grid-cols-12 lg:justify-between space-y-16 lg:space-y-0 lg:space-x-8 mb-20 md:mb-16">
             <div className="lg:col-start-1 lg:col-span-3">

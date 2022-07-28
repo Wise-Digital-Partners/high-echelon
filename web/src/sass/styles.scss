@@ -9,3 +9,9 @@
 @import "../sass/modal.scss";
 
 @tailwind utilities;
+
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+}

@@ -149,7 +149,7 @@ const Page = ({ data }) => {
               <h3 className="md:w-2/3 sm:w-full text-primary-700 text-4xl">
                 We are Here To Make Your Business Better
               </h3>
-              <p className="md:w-2/3 sm:w-full font-display italic text-xl md:text-base mt-6">
+              <p className="md:w-2/3 sm:w-full font-display text-xl md:text-base mt-6">
                 Get streamlined end-to-end services for everything from entity
                 formation to accounting, payroll, and taxes. It’s all here, in a
                 single, full-stack solution that simplifies it all.

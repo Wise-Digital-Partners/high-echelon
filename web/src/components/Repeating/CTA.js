@@ -20,10 +20,9 @@ const CTA = ({ heading, headingLevel, subtext, className }) => {
     //   }`}
     // >
     <section class = "bg-no-repeat bg-cover bg-center md:pb-18 md:pb-10" style={{backgroundImage: `url('${houseImg}')`}}>
-      { (window.innerWidth>=1712) ? 
           <div className="text-center">
-            <svg width={window.innerWidth} height="2" viewBox="0 0 1712 2" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-center">
-              <line y1="1.5" x2={window.innerWidth} y2="1.5" stroke="url(#paint0_linear_1569_821)" stroke-width="3"/>
+            <svg width="1094" height="2" viewBox="0 0 1712 2" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-center">
+              <line y1="1.5" x2="1094" y2="1.5" stroke="url(#paint0_linear_1569_821)" stroke-width="3"/>
               <defs>
               <linearGradient id="paint0_linear_1569_821" x1="0" y1="3.50435" x2="1705.71" y2="3.4388" gradientUnits="userSpaceOnUse">
               <stop stop-color="#A2A09D" stop-opacity="0"/>
@@ -38,8 +37,6 @@ const CTA = ({ heading, headingLevel, subtext, className }) => {
               </defs>
             </svg> 
           </div>
-          : ''
-        }
       <div className="container pt-20">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-end md:mb-8">
           <header className="max-w-2xl text-center md:text-left">          
