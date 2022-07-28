@@ -46,7 +46,7 @@ const Page = ({ data }) => {
             <ButtonSolidGold href="/refinance/" text="Book a Call" />
           </div>
         </Hero>
-        <div className="relative top-[-100px] md:mx-28 sm:mx-4 xsm:mx-4 flex justify-center">
+        <div className="relative top-[-100px] md:mx-28 sm:mx-4 mb-20 flex justify-center">
           
           <div className="absolute container bg-primary-700 flex justify-center md:justify-center items-center flex-col rounded-[8px]">
             <svg
@@ -125,11 +125,11 @@ const Page = ({ data }) => {
                 </linearGradient>
               </defs>
             </svg>
-            <p className="font-body text-4xl text-white font-body mt-9 mb-6 max-w-[560px] md:w-3/5 sm:w-full text-center">
+            <p className="font-body text-5xl text-white font-body mt-9 mb-6 max-w-[560px] md:w-3/5 sm:w-full text-center">
               A Small Business CPA Firm Serving Atlanta & Beyond
             </p>
-            <div className="mb-20 flex justify-center">
-              <p className="font-body text-sm text-white font-body max-w-[736px] md:w-2/3 sm:w-full text-center">
+            <div className="mb-20 flex justify-center max-w-[736px] md:w-2/3 sm:w-full ">
+              <p className="font-body text-base text-white font-body text-center leading-[30px]">
                 If you’re looking for a meticulous CPA firm that can simplify your
                 books, you’ve come to the right place. At High Echelon, we value
                 client communication, accuracy, a streamlined workflow, and
@@ -147,7 +147,7 @@ const Page = ({ data }) => {
 
       <section className="mt-80 md:mt-120 mb-20 md:mb-32 pt-16 md:pt-24">
         <div className="container">
-          <div className="gap-y-8 md:gap-x-10 lg:gap-x-16 items-center">
+          <div className="gap-y-8 md:gap-x-10 lg:gap-x-16 items-center mt-8">
             <div className="mb-8">
               <h3 className="md:w-2/3 sm:w-full text-primary-700 text-4xl-x">
                 We are Here To Make Your Business Better
@@ -243,7 +243,7 @@ const Page = ({ data }) => {
       {/* <Carousel /> */}
       <ValueProps />
       <section className="mb-20 md:mb-32 2xl:container 2xl:mx-auto 2xl:px-0 py-3 md:px-10 sm:px-2">
-        <p className="text-4xl font-light mb-0 text-center">Our Clients Say Its Best</p>
+        <p className="text-4xl-x font-light mb-0 text-center">Our Clients Say Its Best</p>
         <CarouselForm />
       </section>
       <About />

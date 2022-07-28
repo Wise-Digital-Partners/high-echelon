@@ -58,15 +58,15 @@ const ValueProps = ({ className, headingLevel, heading }) => {
   return (
     <section className={`${className || "bg-primary-700 mb-20 md:mb-32"}`}>
       <div className="container">
-        <header className="md:max-w-2xl md:mx-auto md:text-center pt-32">
+        {/* <header className="md:max-w-2xl md:mx-auto md:text-center pt-32">
           <HeadingTag className="text-primary-200 font-light text-4xl">{heading || "Why US?"}</HeadingTag>
-        </header>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-x-10 md:text-center pb-32">
+        </header> */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-x-10 md:text-center pt-40">
           {content.map((content, i) => {
             return (
               <Background
                 backgroundImages={content.bg}
-                padding="pt-24 md:pt-18 pb-8 md:pb-10"
+                padding="pt-24 md:pt-18"
                 className={`relative overflow-x-hidden ${className || "mb-24 md:mb-32"}`}
               >
               <div
