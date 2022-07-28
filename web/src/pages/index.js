@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
+import "../sass/global.scss";
 
 import Layout from "../components/Layout";
 import SearchEngineOptimization from "../components/SEO";
@@ -127,26 +128,28 @@ const Page = ({ data }) => {
             <p className="font-body text-4xl text-white font-body mt-9 mb-6 max-w-[560px] md:w-3/5 sm:w-full text-center">
               A Small Business CPA Firm Serving Atlanta & Beyond
             </p>
-            <p className="font-body text-sm text-white font-body max-w-[736px] md:w-2/3 sm:w-full text-center">
-              If you’re looking for a meticulous CPA firm that can simplify your
-              books, you’ve come to the right place. At High Echelon, we value
-              client communication, accuracy, a streamlined workflow, and
-              creating a positive experience for our clients.
-            </p>
+            <div className="mb-20 flex justify-center">
+              <p className="font-body text-sm text-white font-body max-w-[736px] md:w-2/3 sm:w-full text-center">
+                If you’re looking for a meticulous CPA firm that can simplify your
+                books, you’ve come to the right place. At High Echelon, we value
+                client communication, accuracy, a streamlined workflow, and
+                creating a positive experience for our clients.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* <GatsbyImage
+      <GatsbyImage
         image={data.heroMobile.childImageSharp.gatsbyImageData}
         className="md:hidden w-full"
-      /> */}
+      />
 
       <section className="mt-80 md:mt-120 mb-20 md:mb-32 pt-16 md:pt-24">
         <div className="container">
           <div className="gap-y-8 md:gap-x-10 lg:gap-x-16 items-center">
             <div className="mb-8">
-              <h3 className="md:w-2/3 sm:w-full text-primary-700 text-4xl">
+              <h3 className="md:w-2/3 sm:w-full text-primary-700 text-4xl-x">
                 We are Here To Make Your Business Better
               </h3>
               <p className="md:w-2/3 sm:w-full font-display text-xl md:text-base mt-6">
