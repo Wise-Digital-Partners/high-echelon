@@ -262,8 +262,8 @@ const Page = ({ data }) => {
                 single, full-stack solution that simplifies it all.
               </p>
             </div>
-            <div className="block w-full md:flex lg:flex mb-5">
-              <AniLink fade to="/va-loans-chicago/" className="block w-full mr-0 md:flex lg:flex md:mr-5 md:w-1/2 lg:mr-5 lg:w-1/2">
+            <div className="block w-full md:flex lg:flex md:mb-5 mb-4">
+              <AniLink fade to="/" className="block w-full mr-0 md:flex lg:flex md:mr-5 md:w-1/2 lg:mr-5 lg:w-1/2">
                 <GatsbyImage
                   image={
                     data.smallBusinessConsultingImage.childImageSharp
@@ -272,7 +272,7 @@ const Page = ({ data }) => {
                   alt="Small Business Consulting"
                   className="p-2 rounded-[8px] mb-3"
                 />
-                <div className="flex justify-center flex-col py-2 pl-3 mb-6 md:mb-0">
+                <div className="py-2 pl-3 mb-6 md:mb-0">
                   <div className="flex justify-center flex-col mb-4">
                     <h3 className="text-lg mb-4 text-primary-700">
                       Small Business Consulting
@@ -289,45 +289,59 @@ const Page = ({ data }) => {
                   />
                 </div>
               </AniLink>
-              <AniLink fade to="/va-loans-chicago/" className="md:flex mr-5 w-1/2 sm:block">
+              <AniLink fade to="/" className="block w-full mr-0 md:flex lg:flex md:mr-5 md:w-1/2 lg:mr-5 lg:w-1/2">
                 <GatsbyImage
                   image={
                     data.accountServicesImage.childImageSharp.gatsbyImageData
                   }
                   alt="Accounting Services"
-                  className="p-2 rounded-[8px]"
+                  className="p-2 rounded-[8px] mb-3"
                 />
-                <div className="flex justify-center flex-col py-2 pl-3">
-                  <h3 className="text-lg mb-4 text-primary-700">
-                    Accounting Services
-                  </h3>
-                  <p className="text-base">
-                    Receive accurate, secure delivery of monthly, quarterly, and
-                    annual financial statements.
-                  </p>
+                <div className="py-2 pl-3 mb-6 md:mb-0">
+                  <div className="flex justify-center flex-col mb-4">
+                    <h3 className="text-lg mb-4 text-primary-700">
+                      Accounting Services
+                    </h3>
+                    <p className="text-base mb-4">
+                      Receive accurate, secure delivery of monthly, quarterly, and
+                      annual financial statements.
+                    </p>
+                  </div>
+                  <ButtonGhost
+                      href="/"
+                      text="Learn More"
+                      className="lg:hidden md:hidden w-[100px] h-[40px]"
+                  />
                 </div>
               </AniLink>
             </div>
-            <div className="flex mb-5">
-              <AniLink fade to="/va-loans-chicago/" className="md:flex mr-5 w-1/2 sm:block">
+            <div className="block w-full md:flex lg:flex md:mb-5 mb-4">
+              <AniLink fade to="/" className="block w-full mr-0 md:flex lg:flex md:mr-5 md:w-1/2 lg:mr-5 lg:w-1/2">
                 <GatsbyImage
                   image={
                     data.payrollManagementImage.childImageSharp.gatsbyImageData
                   }
                   alt="Small Business Consulting"
-                  className="p-2 rounded-[8px]"
+                  className="p-2 rounded-[8px] mb-3"
                 />
-                <div className="flex justify-center flex-col py-2 pl-3">
-                  <h3 className="text-lg mb-4 text-primary-700">
-                    Payroll Management
-                  </h3>
-                  <p className="text-base">
-                    Get lightweight, user-friendly, cost-efficient payroll
-                    processing, and hiring/termination automation.
-                  </p>
+                <div className="py-2 pl-3 mb-6 md:mb-0">
+                  <div className="flex justify-center flex-col mb-4">
+                    <h3 className="text-lg mb-4 text-primary-700">
+                      Payroll Management
+                    </h3>
+                    <p className="text-base">
+                      Get lightweight, user-friendly, cost-efficient payroll
+                      processing, and hiring/termination automation.
+                    </p>
+                  </div>
+                  <ButtonGhost
+                      href="/"
+                      text="Learn More"
+                      className="lg:hidden md:hidden w-[100px] h-[40px]"
+                  />
                 </div>
               </AniLink>
-              <AniLink fade to="/va-loans-chicago/" className="md:flex mr-5 w-1/2 sm:block">
+              <AniLink fade to="/" className="block w-full mr-0 md:flex lg:flex md:mr-5 md:w-1/2 lg:mr-5 lg:w-1/2">
                 <GatsbyImage
                   image={
                     data.incomeTaxPreparationImage.childImageSharp
@@ -336,14 +350,21 @@ const Page = ({ data }) => {
                   alt="Small Business Consulting"
                   className="p-2 rounded-[8px] mb-3"
                 />
-                <div className="flex justify-center flex-col py-2 pl-3">
-                  <h3 className="text-lg mb-4 text-primary-700">
-                    Income Tax Preparation
-                  </h3>
-                  <p className="text-base">
-                    Get propt tax preparation for yourself or your business,
-                    including help with complicated returns.
-                  </p>
+                <div className="py-2 pl-3 mb-6 md:mb-0">
+                  <div className="flex justify-center flex-col mb-4">
+                    <h3 className="text-lg mb-4 text-primary-700">
+                      Income Tax Preparation
+                    </h3>
+                    <p className="text-base">
+                      Get propt tax preparation for yourself or your business,
+                      including help with complicated returns.
+                    </p>
+                  </div>
+                  <ButtonGhost
+                      href="/"
+                      text="Learn More"
+                      className="lg:hidden md:hidden w-[100px] h-[40px]"
+                  />
                 </div>
               </AniLink>
             </div>
