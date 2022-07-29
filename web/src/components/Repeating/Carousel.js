@@ -2,7 +2,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import grayLogo from "../../images/repeating/testimonials/HESeal.svg";
 import googleLogo from "../../images/reviews/google.png";
-
+import verify from "../../images/home/verify.png";
 // Data
 
 
@@ -38,7 +38,7 @@ const Carousel = () => {
         <div className="flex items-center justify-center">
             <button
             onClick={movePrev}
-            className="mr-2"
+            className="mr-2 hidden md:block"
             >
             <i onClick={movePrev} className="fa fa-arrow-circle-left mr-3 text-primary-100 text-4xl"></i>
             </button>
@@ -48,7 +48,7 @@ const Carousel = () => {
                         index==currentIndex ? (
                             <div 
                                 key={index}
-                                className="relative text-primary-700 gap-y-10 py-6 md:px-44 sm:px-4 bg-primary-500">
+                                className="relative text-primary-700 gap-y-10 py-6 md:px-44 pt-24 md:pt-16 bg-primary-500">
                                 <div className="text-center">
                                     <p className="text-lg font-black mb-1">{resource.name}</p>
                                     <p className="text-sm font-gray-300">{resource.subname}</p>
@@ -56,12 +56,21 @@ const Carousel = () => {
                                 <p className="my-10 px-3 text-typography-body bg-offwhite">
                                     {resource.quote}
                                 </p>
-                                <img
-                                    src={grayLogo}
-                                    alt="gray Logo"
-                                    className="absolute -bottom-14 -right-7"
-                                />
-                                <div className="flex justify-center h-16">
+                                <div className="md:hidden flex justify-center">
+                                    <img
+                                        src={verify}
+                                        alt="verify button"
+                                        className="h-6 w-24"
+                                    />
+                                </div>
+                                <div className="bg-primary-500 p-7 h-32">
+                                    <img
+                                        src={grayLogo}
+                                        alt="gray Logo"
+                                        className="absolute md:-bottom-14 md:-right-7 -bottom-16 -right-16"
+                                    />
+                                </div>
+                                <div className="hidden md:block flex justify-center h-16">
                                     <img
                                         src={googleLogo}
                                         alt="google Logo"
@@ -80,7 +89,7 @@ const Carousel = () => {
             </div>     
             <button
             onClick={moveNext}
-            className="ml-2"
+            className="ml-2 hidden md:block"
         >
             <i onClick={moveNext} className="fa fa-arrow-circle-right ml-3 text-primary-100 text-4xl"></i>
             </button>

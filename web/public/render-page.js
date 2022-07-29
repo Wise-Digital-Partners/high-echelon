@@ -17224,7 +17224,7 @@ const Carousel = () => {
     className: "flex items-center justify-center"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
     onClick: movePrev,
-    className: "mr-2"
+    className: "mr-2 hidden md:block"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("i", {
     onClick: movePrev,
     className: "fa fa-arrow-circle-left mr-3 text-primary-100 text-4xl"
@@ -17255,7 +17255,7 @@ const Carousel = () => {
     }))) : (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null);
   })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
     onClick: moveNext,
-    className: "ml-2"
+    className: "ml-2 hidden md:block"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("i", {
     onClick: moveNext,
     className: "fa fa-arrow-circle-right ml-3 text-primary-100 text-4xl"
@@ -17418,21 +17418,27 @@ const ValueProps = ({
     className: `${className || "bg-primary-700 mb-20 md:mb-32"}`
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
     className: "container"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-    className: "grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-x-10 md:text-center pt-40"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("header", {
+    className: "md:hidden lg:hidden md:max-w-2xl md:mx-auto text-center pt-24 mb-10"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(HeadingTag, {
+    className: "text-primary-200 font-light text-4xl"
+  }, heading || "Why US?")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+    className: "grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-x-10 md:text-center md:pt-40 pt-0"
   }, content.map((content, i) => {
     return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Background_Background__WEBPACK_IMPORTED_MODULE_2__["default"], {
       backgroundImages: content.bg,
-      padding: "pt-24 md:pt-18",
-      className: `relative overflow-x-hidden ${className || "mb-24 md:mb-32"}`
+      padding: "pt-0 md:pt-18",
+      className: `relative overflow-x-hidden ${className || "mb-16 md:mb-32"}`
     }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
       key: i,
-      className: "flex md:block items-start space-x-6 md:space-x-0"
+      className: "flex items-center flex-col md:block items-start space-x-6 md:space-x-0"
     }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
       src: content.icon,
       alt: content.heading,
-      className: "md:mx-auto md:mb-2"
-    }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("h3", {
+      className: "md:mx-auto md:mb-2 mb-3"
+    }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      className: "text-center"
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("h3", {
       className: "text-primary-200 heading-five mb-2"
     }, content.heading), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
       className: "text-primary-500 text-base mb-0"
@@ -17991,66 +17997,90 @@ const Page = ({
   }, "We are Here To Make Your Business Better"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
     className: "md:w-2/3 sm:w-full font-display text-xl md:text-base mt-6"
   }, "Get streamlined end-to-end services for everything from entity formation to accounting, payroll, and taxes. It\u2019s all here, in a single, full-stack solution that simplifies it all.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "flex mb-5"
+    className: "block w-full md:flex lg:flex md:mb-5 mb-4"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
     fade: true,
-    to: "/va-loans-chicago/",
-    className: "md:flex mr-5 w-1/2 sm:block"
+    to: "/",
+    className: "block w-full mr-0 md:flex lg:flex md:mr-5 md:w-1/2 lg:mr-5 lg:w-1/2"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
     image: data.smallBusinessConsultingImage.childImageSharp.gatsbyImageData,
     alt: "Small Business Consulting",
-    className: "p-2 rounded-[8px]"
+    className: "p-2 rounded-[8px] mb-3"
   }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "flex justify-center flex-col py-2 pl-3"
+    className: "py-2 pl-3 mb-6 md:mb-0"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "flex justify-center flex-col mb-4"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h3", {
-    className: "text-lg mb-2 text-primary-700"
+    className: "text-lg mb-4 text-primary-700"
   }, "Small Business Consulting"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base"
-  }, "Need advice or help in navigating the best way to form your business? Talk with the experts."))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    className: "text-base mb-4"
+  }, "Need advice or help in navigating the best way to form your business? Talk with the experts.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_13__["default"], {
+    href: "/",
+    text: "Learn More",
+    className: "lg:hidden md:hidden w-[100px] h-[40px]"
+  }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
     fade: true,
-    to: "/va-loans-chicago/",
-    className: "md:flex mr-5 w-1/2 sm:block"
+    to: "/",
+    className: "block w-full mr-0 md:flex lg:flex md:mr-5 md:w-1/2 lg:mr-5 lg:w-1/2"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
     image: data.accountServicesImage.childImageSharp.gatsbyImageData,
     alt: "Accounting Services",
-    className: "p-2 rounded-[8px]"
+    className: "p-2 rounded-[8px] mb-3"
   }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "flex justify-center flex-col py-2 pl-3"
+    className: "py-2 pl-3 mb-6 md:mb-0"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "flex justify-center flex-col mb-4"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h3", {
     className: "text-lg mb-4 text-primary-700"
   }, "Accounting Services"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base"
-  }, "Receive accurate, secure delivery of monthly, quarterly, and annual financial statements.")))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "flex mb-5"
+    className: "text-base mb-4"
+  }, "Receive accurate, secure delivery of monthly, quarterly, and annual financial statements.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_13__["default"], {
+    href: "/",
+    text: "Learn More",
+    className: "lg:hidden md:hidden w-[100px] h-[40px]"
+  })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "block w-full md:flex lg:flex md:mb-5 mb-4"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
     fade: true,
-    to: "/va-loans-chicago/",
-    className: "md:flex mr-5 w-1/2 sm:block"
+    to: "/",
+    className: "block w-full mr-0 md:flex lg:flex md:mr-5 md:w-1/2 lg:mr-5 lg:w-1/2"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
     image: data.payrollManagementImage.childImageSharp.gatsbyImageData,
     alt: "Small Business Consulting",
-    className: "p-2 rounded-[8px]"
+    className: "p-2 rounded-[8px] mb-3"
   }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "flex justify-center flex-col py-2 pl-3"
+    className: "py-2 pl-3 mb-6 md:mb-0"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "flex justify-center flex-col mb-4"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h3", {
     className: "text-lg mb-4 text-primary-700"
   }, "Payroll Management"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
     className: "text-base"
-  }, "Get lightweight, user-friendly, cost-efficient payroll processing, and hiring/termination automation."))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, "Get lightweight, user-friendly, cost-efficient payroll processing, and hiring/termination automation.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_13__["default"], {
+    href: "/",
+    text: "Learn More",
+    className: "lg:hidden md:hidden w-[100px] h-[40px]"
+  }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
     fade: true,
-    to: "/va-loans-chicago/",
-    className: "md:flex mr-5 w-1/2 sm:block"
+    to: "/",
+    className: "block w-full mr-0 md:flex lg:flex md:mr-5 md:w-1/2 lg:mr-5 lg:w-1/2"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
     image: data.incomeTaxPreparationImage.childImageSharp.gatsbyImageData,
     alt: "Small Business Consulting",
-    className: "p-2 rounded-[8px]"
+    className: "p-2 rounded-[8px] mb-3"
   }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "flex justify-center flex-col py-2 pl-3"
+    className: "py-2 pl-3 mb-6 md:mb-0"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "flex justify-center flex-col mb-4"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h3", {
     className: "text-lg mb-4 text-primary-700"
   }, "Income Tax Preparation"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
     className: "text-base"
-  }, "Get propt tax preparation for yourself or your business, including help with complicated returns."))))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Repeating_ValueProps__WEBPACK_IMPORTED_MODULE_8__["default"], null), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
+  }, "Get propt tax preparation for yourself or your business, including help with complicated returns.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_13__["default"], {
+    href: "/",
+    text: "Learn More",
+    className: "lg:hidden md:hidden w-[100px] h-[40px]"
+  }))))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Repeating_ValueProps__WEBPACK_IMPORTED_MODULE_8__["default"], null), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
     className: "mb-20 md:mb-32 2xl:container 2xl:mx-auto 2xl:px-0 py-3 md:px-10 sm:px-2"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
     className: "text-4xl-x font-light mb-0 text-center"
@@ -18143,7 +18173,7 @@ const Page = ({
   })))));
 };
 
-const query = "1610719801";
+const query = "1406351843";
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Page);
 
 /***/ }),
