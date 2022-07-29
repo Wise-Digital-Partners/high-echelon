@@ -44,7 +44,7 @@ const Page = ({ data }) => {
             <ButtonSolidGold href="/refinance/" text="Book a Call" />
           </div>
         </div>
-        <div className="relative mb-20 flex justify-center">         
+        <div className="relative mb-32 flex justify-center">         
           <div className="container bg-primary-700 flex justify-center md:justify-center items-center flex-col rounded-[8px]">
             <svg
               height="3"
@@ -249,11 +249,11 @@ const Page = ({ data }) => {
         </div>
       </section>
 
-      <section className="lg:mt-80 md:mt-120 mb-20 md:mb-32 pt-16 md:pt-24">
+      <section className="lg:mt-80 md:mt-120 mb-20 md:mb-32 md:pt-24">
         <div className="container">
           <div className="gap-y-8 md:gap-x-10 lg:gap-x-16 items-center mt-8">
             <div className="mb-8">
-              <h3 className="md:w-2/3 sm:w-full text-primary-700 text-4xl-x">
+              <h3 className="md:w-2/3 text-primary-700 text-4xl font-light md:text-4xl-x md:font-normal">
                 We are Here To Make Your Business Better
               </h3>
               <p className="md:w-2/3 sm:w-full font-display text-xl md:text-base mt-6">
@@ -262,24 +262,31 @@ const Page = ({ data }) => {
                 single, full-stack solution that simplifies it all.
               </p>
             </div>
-            <div className="flex mb-5">
-              <AniLink fade to="/va-loans-chicago/" className="md:flex mr-5 w-1/2 sm:block">
+            <div className="block w-full md:flex lg:flex mb-5">
+              <AniLink fade to="/va-loans-chicago/" className="block w-full mr-0 md:flex lg:flex md:mr-5 md:w-1/2 lg:mr-5 lg:w-1/2">
                 <GatsbyImage
                   image={
                     data.smallBusinessConsultingImage.childImageSharp
                       .gatsbyImageData
                   }
                   alt="Small Business Consulting"
-                  className="p-2 rounded-[8px]"
+                  className="p-2 rounded-[8px] mb-3"
                 />
-                <div className="flex justify-center flex-col py-2 pl-3">
-                  <h3 className="text-lg mb-2 text-primary-700">
-                    Small Business Consulting
-                  </h3>
-                  <p className="text-base">
-                    Need advice or help in navigating the best way to form your
-                    business? Talk with the experts.
-                  </p>
+                <div className="flex justify-center flex-col py-2 pl-3 mb-6 md:mb-0">
+                  <div className="flex justify-center flex-col mb-4">
+                    <h3 className="text-lg mb-4 text-primary-700">
+                      Small Business Consulting
+                    </h3>
+                    <p className="text-base mb-4">
+                      Need advice or help in navigating the best way to form your
+                      business? Talk with the experts.
+                    </p>
+                  </div>
+                  <ButtonGhost
+                      href="/"
+                      text="Learn More"
+                      className="lg:hidden md:hidden w-[100px] h-[40px]"
+                  />
                 </div>
               </AniLink>
               <AniLink fade to="/va-loans-chicago/" className="md:flex mr-5 w-1/2 sm:block">
@@ -327,7 +334,7 @@ const Page = ({ data }) => {
                       .gatsbyImageData
                   }
                   alt="Small Business Consulting"
-                  className="p-2 rounded-[8px]"
+                  className="p-2 rounded-[8px] mb-3"
                 />
                 <div className="flex justify-center flex-col py-2 pl-3">
                   <h3 className="text-lg mb-4 text-primary-700">
@@ -399,6 +406,37 @@ export const query = graphql`
         gatsbyImageData(layout: CONSTRAINED, width: 300)
       }
     }
+
+    smallBusinessConsultingMobileImage: file(
+      relativePath: { eq: "1.0 Homepage/3.0 Small Business desktop.jpg" }
+    ) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
+      }
+    }
+    accountServicesMobileImage: file(
+      relativePath: { eq: "1.0 Homepage/3.1 Accounting Services desktop.jpg" }
+    ) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
+      }
+    }
+    payrollManagementMobileImage: file(
+      relativePath: { eq: "1.0 Homepage/3.2 Payroll Management desktop.jpg" }
+    ) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
+      }
+    }
+    incomeTaxPreparationMobileImage: file(
+      relativePath: { eq: "1.0 Homepage/3.3 Income Tax Prep desktop.jpg" }
+    ) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
+      }
+    }
+
+
     heroDesktop: file(relativePath: { eq: "home/1.0 Hero desktop.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
