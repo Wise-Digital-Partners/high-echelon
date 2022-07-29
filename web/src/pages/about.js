@@ -9,7 +9,9 @@ import CarouselForm from "../components/Repeating/Carousel";
 import ValueProps from "../components/Repeating/ValueProps";
 import CallToAction from "../components/Repeating/CTA";
 import ButtonSolid from "../components/Button/ButtonSolid";
+import ButtonSolidGold from "../components/Button/ButtonSolidGold";
 import ButtonGhost from "../components/Button/ButtonGhost";
+
 
 const Page = ({ data }) => {
   return (
@@ -18,21 +20,48 @@ const Page = ({ data }) => {
         title="Independent Mortgage Lender Chicago | MacAsh Home Loans"
         description="Apply online. Close in 15 days. It's that easy. Make your dream home a reality with MacAsh, your local independent mortgage broker in Chicago."
       />
-        <section className="mb-20 md:mb-32 mt-12">
+        <section className="hidden md:block mb-20 md:mb-32 mt-12">
             <div className="container">
                 <div className="relative grid md:grid-cols-12 md:gap-x-10 lg:gap-x-16 gap-y-8 items-center">
-                    <div className="md:col-start-1 md:col-span-12">
+                    <div className="md:col-start-1 md:col-span-10">
                         <GatsbyImage image={data.aboutProfileImage.childImageSharp.gatsbyImageData} />
                     </div>
-                    <div className="md:absolute bg-primary-700 shadow-inner md:col-start-6 md:col-span-7 p-12">
-                        <h2 className="font-light text-4xl text-primary-200">
-                            Small Business Accounting Services in Greater Atlanta
+                    <div className="md:absolute bg-primary-700 shadow-inner md:col-start-6 md:col-span-7 p-20">
+                        <h2 className="font-light text-5xl text-primary-200 mb-6">
+                          About High Echelon
                         </h2>
-                        <p className="font-light font-display text-xl md:text-xl">
-                            You can’t manage a business without accurate financial statements. 
-                            We can get you there.
+                        <p className="font-light text-base text-primary-200">
+                          High Echelon Certified Public Accountants is a nationwide CPA firm based in Atlanta, Georgia.
+                          It was founded by CPA Michelle Frank, who built the type of firm she always wanted to work for
+                          herself—one focused on a great client experience. She maintains the highest standards and ethics
+                          as a CPA and values transparency, so clients always know exactly what they’re getting.
                         </p>
-                        <ButtonSolid
+                        <ButtonSolidGold
+                            className="font-light"
+                            href="/about/"
+                            text="Book a Call"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section className="md:hidden mb-20 md:mb-32 mt-12">
+            <div className="container">
+                <div className="relative grid md:grid-cols-12 lg:gap-x-16 items-center">
+                    <div className="md-hidden">
+                        <GatsbyImage image={data.aboutProfileMobile.childImageSharp.gatsbyImageData} />
+                    </div>
+                    <div className="z-20 mt-[-128px] mx-4 bg-primary-700 shadow-inner py-10 px-6">
+                        <h2 className="text-primary-200 font-light">
+                          About High Echelon
+                        </h2>
+                        <p className="font-light text-base text-primary-200">
+                          High Echelon Certified Public Accountants is a nationwide CPA firm based in Atlanta, Georgia.
+                          It was founded by CPA Michelle Frank, who built the type of firm she always wanted to work for
+                          herself—one focused on a great client experience. She maintains the highest standards and ethics
+                          as a CPA and values transparency, so clients always know exactly what they’re getting.
+                        </p>
+                        <ButtonSolidGold
                             className="font-light"
                             href="/about/"
                             text="Book a Call"
@@ -45,7 +74,7 @@ const Page = ({ data }) => {
         <section className="mt-12 mb-20 md:mb-32">
             <div className="container">
                 <div className="lg:flex items-center md:block">
-                    <div className="lg:w-1/2 mr-20 mb-8">
+                    <div className="hidden md:block lg:w-1/2 mr-0 lg:mr-20 mb-8">
                         <GatsbyImage
                             image={
                                 data.quotes.childImageSharp
@@ -55,14 +84,25 @@ const Page = ({ data }) => {
                             className="rounded-[8px]"
                         />
                     </div>
+                    <div className="md:hidden mb-10">
+                        <GatsbyImage
+                            image={
+                                data.quotesMobile.childImageSharp
+                                .gatsbyImageData
+                            }
+                            alt="Small Business Consulting"
+                            className="rounded-[8px]"
+                        />
+                    </div>
                     <div className="flex justify-center flex-col lg:w-1/2">
                         <div className="md:px-4">
-                            <p className="text-4xl font-thin mb-6">How To Get Started</p>
+                            <p className="text-5xl font-thin mb-6">The Story Behind the Firm</p>
                             <p className="text-base font-light  mb-6">
-                                We begin with an introductory call at no cost to you.
-                                First, we want to understand your goals and align on expectations,
-                                timeline, and outcomes. And from there, we’ll present you with a
-                                proposal outlining a plan and the associated costs.
+                            CPA work is in Michelle’s blood—she follows in the footsteps of her grandfather,
+                            Jerry Fendrick, and father, Bob Fendrick. Both founded CPA firms of their own,
+                            and the family has decades of experience in the industry.<br/>
+                            Michelle named the company after her grandfather’s famous thoroughbred horse,
+                            High Echelon, which won the 1970 Belmont Stakes, one-third of the Triple Crown of Thoroughbred Racing.
                             </p>
                         </div>
                     </div>
@@ -72,40 +112,26 @@ const Page = ({ data }) => {
 
         <section className="mb-20 md:mb-32">
           <div className="container">
-            <svg
-              height="3"
-              viewBox="0 0 1094 3"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-          >
-              <path
-              d="M0 1.5h1094"
-              stroke="url(#paint0_linear_1129_1425)"
-              strokeWidth="3"
-              />
-              <defs>
-              <linearGradient
-                  id="paint0_linear_1129_1425"
-                  x1="0"
-                  y1="2.00435"
-                  x2="w-10/12"
-                  y2="1.96651"
-                  gradientUnits="userSpaceOnUse"
-              >
-                  <stop stopColor="#A2A09D" stopOpacity="0" />
-                  <stop offset=".145833" stopColor="#CB9636" />
-                  <stop offset=".265625" stopColor="#CFA855" />
-                  <stop offset=".427083" stopColor="#FCE4A7" />
-                  <stop offset=".578125" stopColor="#F0D592" />
-                  <stop offset=".713542" stopColor="#CFA855" />
-                  <stop offset=".828125" stopColor="#CB9636" />
-                  <stop offset="1" stopColor="#A7A7A7" stopOpacity="0" />
-              </linearGradient>
-              </defs>
-            </svg>
+            <div className="flex justify-center">
+              <svg width="1197" height="3" viewBox="0 0 1197 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="1.5" x2="1197" y2="1.5" stroke="url(#paint0_linear_1186_1352)" stroke-width="3"/>
+                <defs>
+                <linearGradient id="paint0_linear_1186_1352" x1="0" y1="3.50435" x2="1168.5" y2="3.45905" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#A2A09D" stop-opacity="0"/>
+                <stop offset="0.145833" stop-color="#CB9636"/>
+                <stop offset="0.265625" stop-color="#CFA855"/>
+                <stop offset="0.427083" stop-color="#FCE4A7"/>
+                <stop offset="0.578125" stop-color="#F0D592"/>
+                <stop offset="0.713542" stop-color="#CFA855"/>
+                <stop offset="0.828125" stop-color="#CB9636"/>
+                <stop offset="1" stop-color="#A7A7A7" stop-opacity="0"/>
+                </linearGradient>
+                </defs>
+              </svg>
+            </div>
             <div className="flex justify-center items-center flex-col">
-              <div className="lg:px-40 mt-28 mb-8 text-center max-w-[874px] md:px-20">
-                <p className="text-4xl font-thin mb-6">Our Mission</p>
+              <div className="mt-28 mx-0 text-center lg:px-44 md:px-20">
+                <p className="text-4xl-x font-thin mb-6">Our Mission</p>
                 <p className="text-base font-light">
                   High Echelon provides top-quality work with
                   total transparency. We believe accounting doesn’t
@@ -133,37 +159,23 @@ const Page = ({ data }) => {
                 </div>
               </div>
             </div>
-            <svg
-              height="3"
-              viewBox="0 0 1094 3"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-          >
-              <path
-              d="M0 1.5h1094"
-              stroke="url(#paint0_linear_1129_1425)"
-              strokeWidth="3"
-              />
-              <defs>
-              <linearGradient
-                  id="paint0_linear_1129_1425"
-                  x1="0"
-                  y1="2.00435"
-                  x2="w-10/12"
-                  y2="1.96651"
-                  gradientUnits="userSpaceOnUse"
-              >
-                  <stop stopColor="#A2A09D" stopOpacity="0" />
-                  <stop offset=".145833" stopColor="#CB9636" />
-                  <stop offset=".265625" stopColor="#CFA855" />
-                  <stop offset=".427083" stopColor="#FCE4A7" />
-                  <stop offset=".578125" stopColor="#F0D592" />
-                  <stop offset=".713542" stopColor="#CFA855" />
-                  <stop offset=".828125" stopColor="#CB9636" />
-                  <stop offset="1" stopColor="#A7A7A7" stopOpacity="0" />
-              </linearGradient>
-              </defs>
-            </svg>
+            <div className="flex justify-center">
+              <svg width="1197" height="3" viewBox="0 0 1197 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="1.5" x2="1197" y2="1.5" stroke="url(#paint0_linear_1186_1352)" stroke-width="3"/>
+                <defs>
+                <linearGradient id="paint0_linear_1186_1352" x1="0" y1="3.50435" x2="1168.5" y2="3.45905" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#A2A09D" stop-opacity="0"/>
+                <stop offset="0.145833" stop-color="#CB9636"/>
+                <stop offset="0.265625" stop-color="#CFA855"/>
+                <stop offset="0.427083" stop-color="#FCE4A7"/>
+                <stop offset="0.578125" stop-color="#F0D592"/>
+                <stop offset="0.713542" stop-color="#CFA855"/>
+                <stop offset="0.828125" stop-color="#CB9636"/>
+                <stop offset="1" stop-color="#A7A7A7" stop-opacity="0"/>
+                </linearGradient>
+                </defs>
+              </svg>
+            </div>
           </div>
         </section>
 
@@ -172,19 +184,20 @@ const Page = ({ data }) => {
         <section className="mb-20 md:mb-32">
           <div className="container">
             <div className="lg:px-20 md:px-4 lg:flex sm:block">
-              <div className="lg:w-7/12 flex items-start flex-col lg:px-16 md:px-4 sm:px-2 mr-30 sm:w-full mb-8">
-                <div className="text-4xl text-thin mb-6">Meet Michelle Frank</div>
+              <div className="lg:w-7/12 flex items-start justify-center flex-col lg:px-16 md:px-4 sm:px-2 mr-30 sm:w-full mb-8">
+                <div className="text-5xl text-thin mb-6">Meet Michelle Frank</div>
                 <div className="text-base text-light mb-6">
+                  <p>
                   Michelle is sharp and fiercely determined, bringing those attributes
                   to all elements of the firm and her life. Previously, she was a partner
                   at Fendrick & Associates before joining the team at Peachtree Capital, then
                   later starting her own business, High Echelon.
-
+                  </p><p className="mb-0">
                   Michelle received her undergraduate degree at Emory and post-graduate at Georgia
                   State University. When she isn’t being a top Atlanta CPA, she’s running marathons,
-                  hosting a podcast, and raising three girls.
+                  hosting a podcast, and raising three girls.</p>
                 </div>
-                <ButtonSolid
+                <ButtonSolidGold
                   className="font-light"
                   href="/about/"
                   text="Book a Call"
@@ -204,7 +217,7 @@ const Page = ({ data }) => {
         </section>
       {/* <Testimonials /> */}
       <section className="mb-20 md:mb-32 2xl:container 2xl:mx-auto 2xl:px-0 py-3 px-10">
-        <p className="text-4xl font-light mb-0 text-center">Our Clients Say Its Best</p>
+        <p className="text-4xl-x font-light mb-0 text-center">Our Clients Say Its Best</p>
         <CarouselForm />
       </section>
       <CallToAction />
@@ -217,7 +230,12 @@ export const query = graphql`
   {
     aboutProfileImage: file(relativePath: { eq: "6.0 About/1.0 Hero desktop.jpg" }) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 920)
+        gatsbyImageData(layout: FULL_WIDTH, width: 920)
+      }
+    }
+    aboutProfileMobile: file(relativePath: { eq: "6.0 About/1.0 Hero mobile.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH, width: 920)
       }
     }
     michellProfileImage: file(relativePath: { eq: "6.0 About/3.0 Michelle.jpg" }) {
@@ -248,6 +266,11 @@ export const query = graphql`
     quotes: file(relativePath: { eq: "6.0 About/2.0 story collage static.png" }) {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED, width: 560)
+      }
+    }
+    quotesMobile: file(relativePath: { eq: "6.0 About/2.0 story collage static.png" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
       }
     }
     honesty: file(relativePath: { eq: "7.0 About/4.1 Honesty.svg" }) {
