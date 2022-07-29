@@ -16517,7 +16517,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _public_page_data_sq_d_1650935290_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/1650935290.json */ "./public/page-data/sq/d/1650935290.json");
+/* harmony import */ var _public_page_data_sq_d_3890593176_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/3890593176.json */ "./public/page-data/sq/d/3890593176.json");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _hooks__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../hooks */ "./src/hooks.js");
@@ -16583,24 +16583,28 @@ const MainNav = ({
 
   const node = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)();
   (0,_hooks__WEBPACK_IMPORTED_MODULE_2__.useOnClickOutside)(node, () => setOffcanvasOpen(false));
-  const data = _public_page_data_sq_d_1650935290_json__WEBPACK_IMPORTED_MODULE_0__.data; // Define logos based on header style
+  const data = _public_page_data_sq_d_3890593176_json__WEBPACK_IMPORTED_MODULE_0__.data; // Define logos based on header style
 
   let initialLogo = null,
+      mobileLogo = null,
       // stickyLogo = null,
   className = null;
 
   if (headerStyle === "overlap" || headerStyle === "overlap-hero") {
-    initialLogo = data.darkLogo.childImageSharp.gatsbyImageData; // stickyLogo = data.darkLogo.childImageSharp.gatsbyImageData;
+    initialLogo = data.darkLogo.childImageSharp.gatsbyImageData; // mobileLogo = data.mobileLogo.childImageSharp.gatsbyImageData;
+    // stickyLogo = data.darkLogo.childImageSharp.gatsbyImageData;
 
     className = "absolute";
   } else if (headerDarkMode) {
-    initialLogo = data.darkLogo.childImageSharp.gatsbyImageData; // stickyLogo = data.lightLogo.childImageSharp.gatsbyImageData;
+    initialLogo = data.darkLogo.childImageSharp.gatsbyImageData; // mobileLogo = data.mobileLogo.childImageSharp.gatsbyImageData;
   } else {
-    initialLogo = data.darkLogo.childImageSharp.gatsbyImageData; // stickyLogo = data.darkLogo.childImageSharp.gatsbyImageData;
+    initialLogo = data.darkLogo.childImageSharp.gatsbyImageData; // mobileLogo = data.mobileLogo.childImageSharp.gatsbyImageData;
+    // stickyLogo = data.darkLogo.childImageSharp.gatsbyImageData;
   }
 
   if (offcanvasOpen) {
-    initialLogo = data.darkLogo.childImageSharp.gatsbyImageData; // stickyLogo = data.darkLogo.childImageSharp.gatsbyImageData;
+    initialLogo = data.darkLogo.childImageSharp.gatsbyImageData; // mobileLogo = data.mobileLogo.childImageSharp.gatsbyImageData;
+    // stickyLogo = data.darkLogo.childImageSharp.gatsbyImageData;
   }
 
   const navigation = {
@@ -16634,24 +16638,39 @@ const MainNav = ({
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
     className: "container flex justify-between items-center"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
+    className: "flex items-center lg:hidden"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
+    href: "tel:123-456-7890",
+    className: "text-sm font-semibold text-white hover:text-primary-100"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_8__.jsx)("svg", {
+    width: "20",
+    height: "20",
+    viewBox: "0 0 20 20",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    className: "mr-1.5"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_8__.jsx)("path", {
+    d: "M1.08124.769072L4.33117.019088c.35312-.081249.71561.103122.85936.434365L6.6905 3.95338c.13125.30624.04375.66561-.21562.87498L4.58117 6.37833c1.12498 2.39682 3.09056 4.39057 5.53743 5.53737l1.5499-1.8937c.2125-.25937.5688-.34687.875-.21562l3.4999 1.49992c.3344.1469.5188.5094.4375.8625l-.75 3.25c-.0781.3375-.3781.5812-.7312.5812C6.99674 16 .5 9.51576.5 1.50031c0-.35.240621-.653115.58124-.731238z",
+    fill: "#000000"
+  })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
     className: "flex-auto flex justify-center lg:justify-start"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_8__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
     fade: true,
     to: "/"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
-    className: `${scrolled && "hidden"}`
+    className: `flex justify-between ${scrolled && "hidden"}`
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
-    className: "hidden lg:block"
+    className: "sm:hidden"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_8__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_9__.GatsbyImage, {
     image: initialLogo,
     alt: "MacAsh Home Loans Logo",
-    className: "h-[64px] md:h-[64px] w-[310px]"
+    className: "h-[64px] md:h-[64px] w-[310px] sm:h-[30] sm:w-[200]"
   })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
     className: "lg:hidden"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_8__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_9__.GatsbyImage, {
-    image: data.darkLogo.childImageSharp.gatsbyImageData,
+    image: data.mobileLogo.childImageSharp.gatsbyImageData,
     alt: "MacAsh Home Loans Logo",
-    className: "h-[64px] md:h-[64px] w-[310px]"
+    className: "md:h-[64px] md:w-[310px] sm:h-[30px] sm:w-[200px]"
   }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
     className: `hidden ${scrolled && "!block"}`
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
@@ -16659,15 +16678,15 @@ const MainNav = ({
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_8__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_9__.GatsbyImage, {
     image: initialLogo,
     alt: "MacAsh Home Loans Logo",
-    className: "h-[64px] md:h-[64px] w-[310px]"
+    className: " md:h-[64px] md:w-[310px] sm:h-[30px] sm:w-[200px]"
   })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
     className: "lg:hidden"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_8__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_9__.GatsbyImage, {
-    image: data.darkLogo.childImageSharp.gatsbyImageData,
+    image: initialLogo,
     alt: "MacAsh Home Loans Logo",
-    className: "h-[64px] md:h-[64px] w-[310px]"
+    className: "md:h-[64px] md:w-[310px] sm:h-[30px] sm:w-[200px]"
   }))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
-    className: "flex items-center justify-end flex-auto"
+    className: "flex items-center justify-end"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_8__.jsx)("ul", {
     id: "navigation-desktop",
     className: "hidden lg:flex lg:flex-row lg:space-x-8 lg:items-center lg:justify-end lg:mr-8"
@@ -16930,7 +16949,7 @@ __webpack_require__.r(__webpack_exports__);
 const UtilityNav = () => {
   return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
     id: "utlity-navigation",
-    className: "bg-primary-700 py-1.5"
+    className: " bg-primary-700 py-1.5 "
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
     className: "container"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
@@ -17036,7 +17055,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _public_page_data_sq_d_4222931801_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/4222931801.json */ "./public/page-data/sq/d/4222931801.json");
+/* harmony import */ var _public_page_data_sq_d_863289125_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/863289125.json */ "./public/page-data/sq/d/863289125.json");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
@@ -17052,7 +17071,7 @@ const About = ({
   className,
   headingLevel
 }) => {
-  const data = _public_page_data_sq_d_4222931801_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const data = _public_page_data_sq_d_863289125_json__WEBPACK_IMPORTED_MODULE_0__.data;
   const HeadingTag = headingLevel || "h2";
   return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("section", {
     className: `${className || "mb-20 md:mb-32"}`
@@ -17061,15 +17080,15 @@ const About = ({
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
     className: "relative grid md:grid-cols-12 md:gap-x-10 lg:gap-x-16 gap-y-8 items-center"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-    className: "md:col-start-1 md:col-span-9"
+    className: "md:col-start-1 md:col-span-10"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.GatsbyImage, {
     image: data.team.childImageSharp.gatsbyImageData
   })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-    className: "md:absolute bg-white shadow-inner md:col-start-6 md:col-span-7 ml p-12"
+    className: "md:absolute bg-white shadow-inner md:col-start-6 md:col-span-7 ml p-20"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(HeadingTag, {
-    className: "text-primary-700"
+    className: "text-primary-700 font-light"
   }, "Who We Are"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
-    className: "font-display text-xl md:text-2xl"
+    className: "text-base md:text-base"
   }, "CPA Michelle Frank founded High Echelon to help small businesses simplify and streamline their finances so they can focus on growth and success. Accounting doesn\u2019t need to be complicated\u2014we make it easy."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_2__["default"], {
     href: "/about/",
     text: "Read Our Story"
@@ -17095,8 +17114,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Button_ButtonSolid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Button/ButtonSolid */ "./src/components/Button/ButtonSolid.js");
 /* harmony import */ var _Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Button/ButtonGhost */ "./src/components/Button/ButtonGhost.js");
-/* harmony import */ var _src_images_bg_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../src/images/bg.png */ "./src/images/bg.png");
-/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.esm.js");
+/* harmony import */ var _Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Button/ButtonSolidGold */ "./src/components/Button/ButtonSolidGold.js");
+/* harmony import */ var _src_images_bg_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../src/images/bg.png */ "./src/images/bg.png");
+/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.esm.js");
+
 
 
 
@@ -17120,28 +17141,30 @@ const CTA = ({
     //     className || ""
     //   }`}
     // >
-    (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("section", {
-      class: "bg-no-repeat bg-cover bg-center md:pb-18 md:pb-10",
+    (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("section", {
+      class: "bg-no-repeat bg-cover bg-center md:pb-18 md:pb-18",
       style: {
-        backgroundImage: `url('${_src_images_bg_png__WEBPACK_IMPORTED_MODULE_3__["default"]}')`
+        backgroundImage: `url('${_src_images_bg_png__WEBPACK_IMPORTED_MODULE_4__["default"]}')`
       }
-    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
       className: "container pt-20"
-    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
       className: "flex flex-col md:flex-row justify-between items-center md:items-end md:mb-8"
-    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("header", {
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("header", {
       className: "max-w-2xl text-center md:text-left"
-    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(HeadingTag, {
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)(HeadingTag, {
       class: "text-primary-100"
-    }, heading || ["Get a Free Consultation"]), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+    }, heading || ["Get a Free Consultation"]), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
       className: "font-display text-base md:text-base text-white md:mb-0"
-    }, subtext || "Work smarter, not harder. Get started with High Echelon, a top small business CPA serving the greater Atlanta area and Georgia, today.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+    }, subtext || "Work smarter, not harder. Get started with High Echelon, a top small business CPA serving the greater Atlanta area and Georgia, today.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
       className: "flex items-center space-x-4"
-    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Button_ButtonSolid__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_3__["default"], {
       href: "/request-rates/",
       text: "Book a Call",
       className: "w-full md:w-auto"
-    })))))
+    })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      className: "text-center justify-center flex"
+    }))
   );
 };
 
@@ -17214,9 +17237,9 @@ const Carousel = () => {
     }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
       className: "text-center"
     }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
-      className: "font-xl font-black mb-1"
+      className: "text-lg font-black mb-1"
     }, resource.name), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
-      className: "font-lg font-gray-300"
+      className: "text-sm font-gray-300"
     }, resource.subname)), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
       className: "my-10 px-3 text-typography-body bg-offwhite"
     }, resource.quote), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
@@ -17224,7 +17247,7 @@ const Carousel = () => {
       alt: "gray Logo",
       className: "absolute -bottom-14 -right-7"
     }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-      className: "flex justify-center h-20"
+      className: "flex justify-center h-16"
     }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
       src: _images_reviews_google_png__WEBPACK_IMPORTED_MODULE_2__["default"],
       alt: "google Logo",
@@ -17395,16 +17418,12 @@ const ValueProps = ({
     className: `${className || "bg-primary-700 mb-20 md:mb-32"}`
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
     className: "container"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("header", {
-    className: "md:max-w-2xl md:mx-auto md:text-center pt-32"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(HeadingTag, {
-    className: "text-primary-200 font-light text-4xl"
-  }, heading || "Why US?")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-    className: "grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-x-10 md:text-center pb-32"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+    className: "grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-x-10 md:text-center pt-40"
   }, content.map((content, i) => {
     return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Background_Background__WEBPACK_IMPORTED_MODULE_2__["default"], {
       backgroundImages: content.bg,
-      padding: "pt-24 md:pt-18 pb-8 md:pb-10",
+      padding: "pt-24 md:pt-18",
       className: `relative overflow-x-hidden ${className || "mb-24 md:mb-32"}`
     }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
       key: i,
@@ -17738,9 +17757,9 @@ const Page = ({
     href: "/refinance/",
     text: "Book a Call"
   }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "relative top-[-100px] md:mx-28 sm:mx-4 mb-20 flex justify-center"
+    className: "relative md:top-[-100px] sm:top-0 md:mx-28 sm:mx-4 mb-20 flex justify-center"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "absolute container bg-primary-700 flex justify-center md:justify-center items-center flex-col rounded-[8px]"
+    className: "absolute sm:flex container bg-primary-700 flex justify-center md:justify-center items-center flex-col rounded-[8px]"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
     height: "3",
     viewBox: "0 0 1094 3",
@@ -17839,15 +17858,12 @@ const Page = ({
     className: "mb-20 flex justify-center max-w-[736px] md:w-2/3 sm:w-full "
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
     className: "font-body text-base text-white font-body text-center leading-[30px]"
-  }, "If you\u2019re looking for a meticulous CPA firm that can simplify your books, you\u2019ve come to the right place. At High Echelon, we value client communication, accuracy, a streamlined workflow, and creating a positive experience for our clients."))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
-    image: data.heroMobile.childImageSharp.gatsbyImageData,
-    className: "md:hidden w-full"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
+  }, "If you\u2019re looking for a meticulous CPA firm that can simplify your books, you\u2019ve come to the right place. At High Echelon, we value client communication, accuracy, a streamlined workflow, and creating a positive experience for our clients."))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
     className: "mt-80 md:mt-120 mb-20 md:mb-32 pt-16 md:pt-24"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "container mt-8"
+    className: "container"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "gap-y-8 md:gap-x-10 lg:gap-x-16 items-center"
+    className: "gap-y-8 md:gap-x-10 lg:gap-x-16 items-center mt-8"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
     className: "mb-8"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h3", {
@@ -17917,8 +17933,94 @@ const Page = ({
   }, "Get propt tax preparation for yourself or your business, including help with complicated returns."))))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Repeating_ValueProps__WEBPACK_IMPORTED_MODULE_8__["default"], null), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
     className: "mb-20 md:mb-32 2xl:container 2xl:mx-auto 2xl:px-0 py-3 md:px-10 sm:px-2"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-4xl font-light mb-0 text-center"
-  }, "Our Clients Say Its Best"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Repeating_Carousel__WEBPACK_IMPORTED_MODULE_7__["default"], null)), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Repeating_About__WEBPACK_IMPORTED_MODULE_9__["default"], null), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Repeating_CTA__WEBPACK_IMPORTED_MODULE_10__["default"], null));
+    className: "text-4xl-x font-light mb-0 text-center"
+  }, "Our Clients Say Its Best"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Repeating_Carousel__WEBPACK_IMPORTED_MODULE_7__["default"], null)), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Repeating_About__WEBPACK_IMPORTED_MODULE_9__["default"], null), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
+    className: "w-full",
+    width: "1200",
+    height: "3",
+    viewBox: "0 0 1200 3",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("path", {
+    d: "M0 1.5h1200",
+    stroke: "url(#paint0_linear_1129_1425)",
+    "stroke-width": "3"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("linearGradient", {
+    id: "paint0_linear_1129_1425",
+    x1: "0",
+    y1: "2.00435",
+    x2: "1182.95",
+    y2: "1.96651",
+    gradientUnits: "userSpaceOnUse"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    "stop-color": "#A2A09D",
+    "stop-opacity": "0"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".145833",
+    "stop-color": "#CB9636"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".265625",
+    "stop-color": "#CFA855"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".427083",
+    "stop-color": "#FCE4A7"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".578125",
+    "stop-color": "#F0D592"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".713542",
+    "stop-color": "#CFA855"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".828125",
+    "stop-color": "#CB9636"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: "1",
+    "stop-color": "#A7A7A7",
+    "stop-opacity": "0"
+  })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Repeating_CTA__WEBPACK_IMPORTED_MODULE_10__["default"], null), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
+    className: "w-full",
+    width: "1200",
+    height: "3",
+    viewBox: "0 0 1200 3",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("path", {
+    d: "M0 1.5h1200",
+    stroke: "url(#paint0_linear_1129_1425)",
+    "stroke-width": "3"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("linearGradient", {
+    id: "paint0_linear_1129_1425",
+    x1: "0",
+    y1: "2.00435",
+    x2: "1182.95",
+    y2: "1.96651",
+    gradientUnits: "userSpaceOnUse"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    "stop-color": "#A2A09D",
+    "stop-opacity": "0"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".145833",
+    "stop-color": "#CB9636"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".265625",
+    "stop-color": "#CFA855"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".427083",
+    "stop-color": "#FCE4A7"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".578125",
+    "stop-color": "#F0D592"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".713542",
+    "stop-color": "#CFA855"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".828125",
+    "stop-color": "#CB9636"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: "1",
+    "stop-color": "#A7A7A7",
+    "stop-opacity": "0"
+  })))));
 };
 
 const query = "1821971550";
@@ -68671,7 +68773,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "static/bg-208abb3ab8a7edb078af4434e05f8cf1.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/png;base64,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");
 
 /***/ }),
 
@@ -69871,17 +69973,6 @@ module.exports = [];
 
 /***/ }),
 
-/***/ "./public/page-data/sq/d/1650935290.json":
-/*!***********************************************!*\
-  !*** ./public/page-data/sq/d/1650935290.json ***!
-  \***********************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse('{"data":{"darkLogo":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","images":{"fallback":{"src":"/static/01e8e824bc4f538761f6680a04842f88/ae468/Logo%20desktop.png","srcSet":"/static/01e8e824bc4f538761f6680a04842f88/ae468/Logo%20desktop.png 310w,\\n/static/01e8e824bc4f538761f6680a04842f88/51a17/Logo%20desktop.png 620w","sizes":"(min-width: 310px) 310px, 100vw"},"sources":[{"srcSet":"/static/01e8e824bc4f538761f6680a04842f88/5062f/Logo%20desktop.webp 310w,\\n/static/01e8e824bc4f538761f6680a04842f88/0bd47/Logo%20desktop.webp 620w","type":"image/webp","sizes":"(min-width: 310px) 310px, 100vw"}]},"width":310,"height":64}}}}}');
-
-/***/ }),
-
 /***/ "./public/page-data/sq/d/1791769399.json":
 /*!***********************************************!*\
   !*** ./public/page-data/sq/d/1791769399.json ***!
@@ -69904,14 +69995,14 @@ module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"author":"WISE Dig
 
 /***/ }),
 
-/***/ "./public/page-data/sq/d/4222931801.json":
+/***/ "./public/page-data/sq/d/3890593176.json":
 /*!***********************************************!*\
-  !*** ./public/page-data/sq/d/4222931801.json ***!
+  !*** ./public/page-data/sq/d/3890593176.json ***!
   \***********************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"data":{"team":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#f8f8f8","images":{"fallback":{"src":"/static/96901dd6a07bdf7c8406cbea2da83e20/0b88d/Michelle%20B%26W.png","srcSet":"/static/96901dd6a07bdf7c8406cbea2da83e20/0b88d/Michelle%20B%26W.png 651w,\\n/static/96901dd6a07bdf7c8406cbea2da83e20/6ec72/Michelle%20B%26W.png 768w,\\n/static/96901dd6a07bdf7c8406cbea2da83e20/221ab/Michelle%20B%26W.png 941w","sizes":"(min-width: 651px) 651px, 100vw"},"sources":[{"srcSet":"/static/96901dd6a07bdf7c8406cbea2da83e20/e2353/Michelle%20B%26W.webp 651w,\\n/static/96901dd6a07bdf7c8406cbea2da83e20/cea0f/Michelle%20B%26W.webp 768w,\\n/static/96901dd6a07bdf7c8406cbea2da83e20/d5423/Michelle%20B%26W.webp 941w","type":"image/webp","sizes":"(min-width: 651px) 651px, 100vw"}]},"width":651,"height":401}}}}}');
+module.exports = JSON.parse('{"data":{"darkLogo":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","images":{"fallback":{"src":"/static/01e8e824bc4f538761f6680a04842f88/ae468/Logo%20desktop.png","srcSet":"/static/01e8e824bc4f538761f6680a04842f88/ae468/Logo%20desktop.png 310w,\\n/static/01e8e824bc4f538761f6680a04842f88/51a17/Logo%20desktop.png 620w","sizes":"(min-width: 310px) 310px, 100vw"},"sources":[{"srcSet":"/static/01e8e824bc4f538761f6680a04842f88/5062f/Logo%20desktop.webp 310w,\\n/static/01e8e824bc4f538761f6680a04842f88/0bd47/Logo%20desktop.webp 620w","type":"image/webp","sizes":"(min-width: 310px) 310px, 100vw"}]},"width":310,"height":64}}},"mobileLogo":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","images":{"fallback":{"src":"/static/01e8e824bc4f538761f6680a04842f88/d6e6c/Logo%20desktop.png","srcSet":"/static/01e8e824bc4f538761f6680a04842f88/d6e6c/Logo%20desktop.png 200w,\\n/static/01e8e824bc4f538761f6680a04842f88/51a17/Logo%20desktop.png 620w","sizes":"(min-width: 200px) 200px, 100vw"},"sources":[{"srcSet":"/static/01e8e824bc4f538761f6680a04842f88/70e27/Logo%20desktop.webp 200w,\\n/static/01e8e824bc4f538761f6680a04842f88/0bd47/Logo%20desktop.webp 620w","type":"image/webp","sizes":"(min-width: 200px) 200px, 100vw"}]},"width":200,"height":41}}}}}');
 
 /***/ }),
 
@@ -69923,6 +70014,17 @@ module.exports = JSON.parse('{"data":{"team":{"childImageSharp":{"gatsbyImageDat
 
 "use strict";
 module.exports = JSON.parse('{"data":{"logo":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#486848","images":{"fallback":{"src":"/static/0a0b26f064a9b1ba8592c0f61ee1bbf5/4137c/Logo%20White.png","srcSet":"/static/0a0b26f064a9b1ba8592c0f61ee1bbf5/4137c/Logo%20White.png 119w,\\n/static/0a0b26f064a9b1ba8592c0f61ee1bbf5/36618/Logo%20White.png 186w","sizes":"(min-width: 119px) 119px, 100vw"},"sources":[{"srcSet":"/static/0a0b26f064a9b1ba8592c0f61ee1bbf5/12fa8/Logo%20White.webp 119w,\\n/static/0a0b26f064a9b1ba8592c0f61ee1bbf5/48bde/Logo%20White.webp 186w","type":"image/webp","sizes":"(min-width: 119px) 119px, 100vw"}]},"width":119,"height":70}}},"equalHousingOpportunity":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#486848","images":{"fallback":{"src":"/static/4601aa618ba25ec9254239f4ad764196/251df/Equal-Housing-Logo.png","srcSet":"/static/4601aa618ba25ec9254239f4ad764196/251df/Equal-Housing-Logo.png 52w,\\n/static/4601aa618ba25ec9254239f4ad764196/720da/Equal-Housing-Logo.png 104w","sizes":"(min-width: 52px) 52px, 100vw"},"sources":[{"srcSet":"/static/4601aa618ba25ec9254239f4ad764196/3884a/Equal-Housing-Logo.webp 52w,\\n/static/4601aa618ba25ec9254239f4ad764196/e9d6a/Equal-Housing-Logo.webp 104w","type":"image/webp","sizes":"(min-width: 52px) 52px, 100vw"}]},"width":52,"height":48}}}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/863289125.json":
+/*!**********************************************!*\
+  !*** ./public/page-data/sq/d/863289125.json ***!
+  \**********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"team":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#f8f8f8","images":{"fallback":{"src":"/static/96901dd6a07bdf7c8406cbea2da83e20/221ab/Michelle%20B%26W.png","srcSet":"/static/96901dd6a07bdf7c8406cbea2da83e20/6ec72/Michelle%20B%26W.png 768w,\\n/static/96901dd6a07bdf7c8406cbea2da83e20/221ab/Michelle%20B%26W.png 941w","sizes":"(min-width: 941px) 941px, 100vw"},"sources":[{"srcSet":"/static/96901dd6a07bdf7c8406cbea2da83e20/cea0f/Michelle%20B%26W.webp 768w,\\n/static/96901dd6a07bdf7c8406cbea2da83e20/d5423/Michelle%20B%26W.webp 941w","type":"image/webp","sizes":"(min-width: 941px) 941px, 100vw"}]},"width":941,"height":579}}}}}');
 
 /***/ }),
 
@@ -70014,11 +70116,6 @@ module.exports = JSON.parse('{"data":{"backgroundDesktop":{"childImageSharp":{"g
 /******/ 			if (!module.children) module.children = [];
 /******/ 			return module;
 /******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		__webpack_require__.p = "/";
 /******/ 	})();
 /******/ 	
 /************************************************************************/

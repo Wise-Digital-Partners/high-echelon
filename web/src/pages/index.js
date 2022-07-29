@@ -27,6 +27,26 @@ const Page = ({ data }) => {
         title="Independent Mortgage Lender Chicago | MacAsh Home Loans"
         description="Apply online. Close in 15 days. It's that easy. Make your dream home a reality with MacAsh, your local independent mortgage broker in Chicago."
       />
+      {/* <div className="w-full hidden">
+        <Hero
+          backgroundImages={data.heroMobile.childImageSharp.gatsbyImageData}
+          backgroundPosition="0% 20%"
+          mobileRemoveBackground={true}
+          textAlignment="text-center"
+          padding="pt-10 md:pt-12 pb-14 md:pb-60"
+        >
+          <p className="font-heading text-white text-mobile-7xl md:text-7xl tracking-wider mb-12 md:mb-4 mt-40">
+            WE ARE HIGH ECHELON
+          </p>
+          <p className="font-body text-lg md:text-xl text-white font-semibold mb-16">
+            Elevated Consulting, Payroll, Accounting & Tax
+            Services
+          </p>
+          <div className="flex justify-center md:justify-center space-x-4 md:space-x-5">
+            <ButtonSolidGold href="/refinance/" text="Book a Call" />
+          </div>
+        </Hero>
+      </div> */}
       <section>
         <Hero
           backgroundImages={data.heroDesktop.childImageSharp.gatsbyImageData}
@@ -46,9 +66,9 @@ const Page = ({ data }) => {
             <ButtonSolidGold href="/refinance/" text="Book a Call" />
           </div>
         </Hero>
-        <div className="relative top-[-100px] md:mx-28 sm:mx-4 mb-20 flex justify-center">
+        <div className="relative md:top-[-100px] sm:top-0 md:mx-28 sm:mx-4 mb-20 flex justify-center">
           
-          <div className="absolute container bg-primary-700 flex justify-center md:justify-center items-center flex-col rounded-[8px]">
+          <div className="absolute sm:flex container bg-primary-700 flex justify-center md:justify-center items-center flex-col rounded-[8px]">
             <svg
               height="3"
               viewBox="0 0 1094 3"
@@ -139,11 +159,6 @@ const Page = ({ data }) => {
           </div>
         </div>
       </section>
-
-      <GatsbyImage
-        image={data.heroMobile.childImageSharp.gatsbyImageData}
-        className="md:hidden w-full"
-      />
 
       <section className="mt-80 md:mt-120 mb-20 md:mb-32 pt-16 md:pt-24">
         <div className="container">

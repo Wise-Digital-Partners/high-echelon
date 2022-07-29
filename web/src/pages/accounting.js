@@ -12,6 +12,7 @@ import ValueProps from "../components/Repeating/ValueProps";
 import About from "../components/Repeating/About";
 import CallToAction from "../components/Repeating/CTA";
 import ButtonSolid from "../components/Button/ButtonSolid";
+import ButtonSolidGold from "../components/Button/ButtonSolidGold";
 
 import OffCanvas from "../components/OffCanvas/OffCanvas";
 // import ButtonSolid from "../Button/ButtonSolid";
@@ -39,15 +40,15 @@ const Page = ({ data }) => {
                     <div className="md:col-start-1 md:col-span-12">
                         <GatsbyImage image={data.accountServicesImage.childImageSharp.gatsbyImageData} />
                     </div>
-                    <div className="md:absolute bg-primary-700 shadow-inner md:col-start-6 md:col-span-7 p-12">
+                    <div className="md:absolute bg-primary-700 shadow-inner md:col-start-6 md:col-span-7 p-12 px-20 pt-20">
                         <h2 className="font-light text-4xl text-primary-200">
                             Small Business Accounting Services in Greater Atlanta
                         </h2>
-                        <p className="font-light font-display text-xl md:text-xl">
+                        <p className="font-light text-xl md:text-xl text-primary-200">
                             You can’t manage a business without accurate financial statements. 
                             We can get you there.
                         </p>
-                        <ButtonSolid
+                        <ButtonSolidGold
                             className="font-light"
                             href="/about/"
                             text="Book a Call"

@@ -58,6 +58,12 @@ const MainNav = ({
           gatsbyImageData(layout: CONSTRAINED, width: 310, placeholder: NONE)
         }
       }
+
+      mobileLogo: file(relativePath: {eq: "global/Logo desktop.png" }) {
+        childImageSharp {
+          gatsbyImageData(layout: CONSTRAINED, width: 200, placeholder: NONE)
+        }
+      }
     }
   `);
 
@@ -65,23 +71,27 @@ const MainNav = ({
 
   // Define logos based on header style
   let initialLogo = null,
+      mobileLogo = null,
     // stickyLogo = null,
     className = null;
 
   if (headerStyle === "overlap" || headerStyle === "overlap-hero") {
     initialLogo = data.darkLogo.childImageSharp.gatsbyImageData;
+    // mobileLogo = data.mobileLogo.childImageSharp.gatsbyImageData;
     // stickyLogo = data.darkLogo.childImageSharp.gatsbyImageData;
     className = "absolute";
   } else if (headerDarkMode) {
     initialLogo = data.darkLogo.childImageSharp.gatsbyImageData;
-    // stickyLogo = data.lightLogo.childImageSharp.gatsbyImageData;
+    // mobileLogo = data.mobileLogo.childImageSharp.gatsbyImageData;
   } else {
     initialLogo = data.darkLogo.childImageSharp.gatsbyImageData;
+    // mobileLogo = data.mobileLogo.childImageSharp.gatsbyImageData;
     // stickyLogo = data.darkLogo.childImageSharp.gatsbyImageData;
   }
 
   if (offcanvasOpen) {
     initialLogo = data.darkLogo.childImageSharp.gatsbyImageData;
+    // mobileLogo = data.mobileLogo.childImageSharp.gatsbyImageData;
     // stickyLogo = data.darkLogo.childImageSharp.gatsbyImageData;
   }
 
@@ -131,21 +141,41 @@ const MainNav = ({
       offcanvas-open={offcanvasOpen}
     >
       <div className="container flex justify-between items-center">
+        <div className="flex items-center lg:hidden"> 
+          <a
+            href="tel:123-456-7890"
+            className="text-sm font-semibold text-white hover:text-primary-100"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="mr-1.5"
+            >
+              <path
+                d="M1.08124.769072L4.33117.019088c.35312-.081249.71561.103122.85936.434365L6.6905 3.95338c.13125.30624.04375.66561-.21562.87498L4.58117 6.37833c1.12498 2.39682 3.09056 4.39057 5.53743 5.53737l1.5499-1.8937c.2125-.25937.5688-.34687.875-.21562l3.4999 1.49992c.3344.1469.5188.5094.4375.8625l-.75 3.25c-.0781.3375-.3781.5812-.7312.5812C6.99674 16 .5 9.51576.5 1.50031c0-.35.240621-.653115.58124-.731238z"
+                fill="#000000"
+              />
+            </svg>
+          </a>
+        </div>
         <div className="flex-auto flex justify-center lg:justify-start">
           <AniLink fade to="/">
-            <div className={`${scrolled && "hidden"}`}>
-              <div className="hidden lg:block">
+            <div className={`flex justify-between ${scrolled && "hidden"}`}>
+              <div className="hidden lg:block md:block">
                 <GatsbyImage
                   image={initialLogo}
                   alt="MacAsh Home Loans Logo"
-                  className="h-[64px] md:h-[64px] w-[310px]"
+                  className="h-[64px] md:h-[64px] w-[310px] sm:h-[30] sm:w-[200]"
                 />
               </div>
               <div className="lg:hidden">
                 <GatsbyImage
-                  image={data.darkLogo.childImageSharp.gatsbyImageData}
+                  image={data.mobileLogo.childImageSharp.gatsbyImageData}
                   alt="MacAsh Home Loans Logo"
-                  className="h-[64px] md:h-[64px] w-[310px]"
+                  className="md:h-[64px] md:w-[310px] sm:h-[30px] sm:w-[200px]"
                 />
               </div>
             </div>
@@ -155,20 +185,20 @@ const MainNav = ({
                 <GatsbyImage
                   image={initialLogo}
                   alt="MacAsh Home Loans Logo"
-                  className="h-[64px] md:h-[64px] w-[310px]"
+                  className=" md:h-[64px] md:w-[310px] sm:h-[30px] sm:w-[200px]"
                 />
               </div>
               <div className="lg:hidden">
                 <GatsbyImage
-                  image={data.darkLogo.childImageSharp.gatsbyImageData}
+                  image={initialLogo}
                   alt="MacAsh Home Loans Logo"
-                  className="h-[64px] md:h-[64px] w-[310px]"
+                  className="md:h-[64px] md:w-[310px] sm:h-[30px] sm:w-[200px]"
                 />
               </div>
             </div>
           </AniLink>
         </div>
-        <div className="flex items-center justify-end flex-auto">
+        <div className="flex items-center justify-end">
           <ul
             id="navigation-desktop"
             className="hidden lg:flex lg:flex-row lg:space-x-8 lg:items-center lg:justify-end lg:mr-8"
