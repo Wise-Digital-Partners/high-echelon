@@ -94,9 +94,9 @@ const Page = ({ data }) => {
                             className="rounded-[8px]"
                         />
                     </div>
-                    <div className="flex justify-center flex-col lg:w-1/2">
+                    <div className="block w-full md:flex justify-center flex-col lg:w-1/2">
                         <div className="md:px-4">
-                            <p className="text-5xl font-thin mb-6">The Story Behind the Firm</p>
+                            <p className="text-4xl md:text-5xl font-thin mb-6">The Story Behind the Firm</p>
                             <p className="text-base font-light  mb-6">
                             CPA work is in Michelle’s blood—she follows in the footsteps of her grandfather,
                             Jerry Fendrick, and father, Bob Fendrick. Both founded CPA firms of their own,
@@ -130,8 +130,8 @@ const Page = ({ data }) => {
               </svg>
             </div>
             <div className="flex justify-center items-center flex-col">
-              <div className="mt-28 mx-0 text-center lg:px-44 md:px-20">
-                <p className="text-4xl-x font-thin mb-6">Our Mission</p>
+              <div className="mt-20 md:mt-28 mx-0 text-center lg:px-44 md:px-20">
+                <p className="text-4xl md:text-4xl-x font-thin mb-6">Our Mission</p>
                 <p className="text-base font-light">
                   High Echelon provides top-quality work with
                   total transparency. We believe accounting doesn’t
@@ -139,10 +139,10 @@ const Page = ({ data }) => {
                   the experience they deserve, which includes:
                 </p>
               </div>
-              <div className="mb-24 justify-center flex-col items-center">
+              <div className="mb-20 md:mb-24 justify-center flex-col items-center">
               
                 <div className="flex mx-100 items-center justify-start flex-col">
-                  <div className="mx-100">
+                  <div className="md:mx-100 mx-8">
                     <div className="flex">
                         <i className="fa fa-check text-primary-100 mr-4 text-2xl"></i>
                         <p className="text-base font-semibold mb-4">styleName: Body Medium/Medium-Semi-bold;</p>
@@ -184,8 +184,17 @@ const Page = ({ data }) => {
         <section className="mb-20 md:mb-32">
           <div className="container">
             <div className="lg:px-20 md:px-4 lg:flex sm:block">
+            <div className="md:hidden mb-10">
+                <div className="flex justify-center items-center">
+                  <GatsbyImage
+                    image={data.michellProfileImage.childImageSharp.gatsbyImageData}
+                    alt="Michell Profile"
+                    className="mx-0 md:mx-16 min-w-[96px] w-full"
+                  />
+                </div>
+              </div>
               <div className="lg:w-7/12 flex items-start justify-center flex-col lg:px-16 md:px-4 sm:px-2 mr-30 sm:w-full mb-8">
-                <div className="text-5xl text-thin mb-6">Meet Michelle Frank</div>
+                <div className="text-4xl md:text-5xl text-thin mb-6">Meet Michelle Frank</div>
                 <div className="text-base text-light mb-6">
                   <p>
                   Michelle is sharp and fiercely determined, bringing those attributes
@@ -203,7 +212,7 @@ const Page = ({ data }) => {
                   text="Book a Call"
               />
               </div>
-              <div className="lg:w-5/12 sm:w-2/3">
+              <div className="hidden md:block lg:w-5/12">
                 <div className="flex justify-center items-center">
                   <GatsbyImage
                     image={data.michellProfileImage.childImageSharp.gatsbyImageData}
@@ -216,11 +225,13 @@ const Page = ({ data }) => {
           </div>
         </section>
       {/* <Testimonials /> */}
-      <section className="mb-20 md:mb-32 2xl:container 2xl:mx-auto 2xl:px-0 py-3 px-10">
+      <section className="mb-20 md:mb-32 2xl:container 2xl:mx-auto 2xl:px-0 py-3 md:px-10">
         <p className="text-4xl-x font-light mb-0 text-center">Our Clients Say Its Best</p>
         <CarouselForm />
       </section>
+      <svg className="w-full" width="1200" height="3" viewBox="0 0 1200 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5h1200" stroke="url(#paint0_linear_1129_1425)" stroke-width="3"/><defs><linearGradient id="paint0_linear_1129_1425" x1="0" y1="2.00435" x2="1182.95" y2="1.96651" gradientUnits="userSpaceOnUse"><stop stop-color="#A2A09D" stop-opacity="0"/><stop offset=".145833" stop-color="#FCE4A7"/><stop offset=".265625" stop-color="#CFA855"/><stop offset=".427083" stop-color="#FCE4A7"/><stop offset=".578125" stop-color="#F0D592"/><stop offset=".713542" stop-color="#FCE4A7"/><stop offset=".828125" stop-color="#CB9636"/><stop offset="1" stop-color="#A7A7A7" stop-opacity="0"/></linearGradient></defs></svg>
       <CallToAction />
+      <svg className="w-full" width="1200" height="3" viewBox="0 0 1200 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5h1200" stroke="url(#paint0_linear_1129_1425)" stroke-width="3"/><defs><linearGradient id="paint0_linear_1129_1425" x1="0" y1="2.00435" x2="1182.95" y2="1.96651" gradientUnits="userSpaceOnUse"><stop stop-color="#A2A09D" stop-opacity="0"/><stop offset=".145833" stop-color="#FCE4A7"/><stop offset=".265625" stop-color="#CFA855"/><stop offset=".427083" stop-color="#FCE4A7"/><stop offset=".578125" stop-color="#F0D592"/><stop offset=".713542" stop-color="#FCE4A7"/><stop offset=".828125" stop-color="#CB9636"/><stop offset="1" stop-color="#A7A7A7" stop-opacity="0"/></linearGradient></defs></svg>
     </Layout>
   );
 };

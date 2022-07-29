@@ -34,19 +34,40 @@ const Page = ({ data }) => {
         title="Independent Mortgage Lender Chicago | MacAsh Home Loans"
         description="Apply online. Close in 15 days. It's that easy. Make your dream home a reality with MacAsh, your local independent mortgage broker in Chicago."
       />
-        <section className="mb-20 md:mb-32 mt-12">
+        <section className="hidden md:block mb-20 md:mb-32 mt-12">
             <div className="container">
                 <div className="relative grid md:grid-cols-12 md:gap-x-10 lg:gap-x-16 gap-y-8 items-center">
-                    <div className="md:col-start-1 md:col-span-12">
-                        <GatsbyImage image={data.accountServicesImage.childImageSharp.gatsbyImageData} />
+                    <div className="md:col-start-1 md:col-span-10">
+                        <GatsbyImage image={data.accountingDesktop.childImageSharp.gatsbyImageData} />
                     </div>
-                    <div className="md:absolute bg-primary-700 shadow-inner md:col-start-6 md:col-span-7 p-12 px-20 pt-20">
-                        <h2 className="font-light text-4xl text-primary-200">
-                            Small Business Accounting Services in Greater Atlanta
+                    <div className="md:absolute bg-primary-700 shadow-inner md:col-start-6 md:col-span-7 p-20">
+                        <h2 className="font-light text-5xl text-primary-200 mb-6">
+                          Atlanta Small Business Accounting Services
                         </h2>
-                        <p className="font-light text-xl md:text-xl text-primary-200">
-                            You can’t manage a business without accurate financial statements. 
-                            We can get you there.
+                        <p className="font-light text-base text-primary-200">
+                          You can’t manage a business without accurate financial statements. We can get you there.
+                        </p>
+                        <ButtonSolidGold
+                            className="font-light"
+                            href="/accounting/"
+                            text="Book a Call"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section className="md:hidden mb-20 md:mb-32 mt-12">
+            <div className="container">
+                <div className="relative grid md:grid-cols-12 lg:gap-x-16 items-center">
+                    <div className="md-hidden">
+                        <GatsbyImage image={data.accountingMobile.childImageSharp.gatsbyImageData} />
+                    </div>
+                    <div className="z-20 mt-[-128px] mx-4 bg-primary-700 shadow-inner py-10 px-6">
+                        <h2 className="text-primary-200 font-light text-4xl">
+                          Atlanta Small Business Accounting Services
+                        </h2>
+                        <p className="font-light text-xl text-primary-200">
+                          You can’t manage a business without accurate financial statements. We can get you there.
                         </p>
                         <ButtonSolidGold
                             className="font-light"
@@ -60,8 +81,8 @@ const Page = ({ data }) => {
 
         <section className="mt-12 flex justify-content items-center flex-col">
             <div className="flex justify-content items-center flex-col md:mx-88 md:min-w-120 sm:mx-8 px-7">
-                <p className="text-4xl font-thin mb-6">The Key To Good Business</p>
-                <p className="text-base font-light leading-7">
+                <p className="text-4xl font-thin mb-6 text-center md:text-start">The Key To Good Business</p>
+                <p className="text-xl font-light leading-7 text-center md:text-start mb-10 md:mb-0">
                     When you have a clear understanding of your
                     financials, you can make smart business decisions
                     and gain valuable insights that’ll help you plan
@@ -69,7 +90,7 @@ const Page = ({ data }) => {
                     failure and success—you’ll want accurate data, and we deliver.
                 </p>
             </div>
-            <div className="flex justify-center items-center h-64">
+            <div className="flex justify-center items-center md:h-64">
                 <svg
                     height="3"
                     viewBox="0 0 1094 3"
@@ -134,7 +155,7 @@ const Page = ({ data }) => {
                             </div>
                         </div>
                     </div>
-                    <div className="max-w-140">
+                    {/* <div className="max-w-140">
                       <GatsbyImage
                           image={
                               data.accountingProfileImage.childImageSharp
@@ -143,7 +164,7 @@ const Page = ({ data }) => {
                           alt="Small Business Consulting"
                           className="rounded-[8px] ml-20"
                       />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>
@@ -284,12 +305,27 @@ const Page = ({ data }) => {
 export const query = graphql`
   {
     accountingProfileImage: file(
-        relativePath: { eq: "3.0 Accounting Services/2.0 Service pages.png" }
+        relativePath: { eq: "3.0 Accounting Services/2.0 Service pages.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 560)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
       }
     }
+
+    accountingDesktop: file(
+      relativePath: { eq: "3.0 Accounting Services/1.0 Hero desktop.jpg" }
+  ) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
+    }
+  }
+    accountingMobile: file(
+      relativePath: { eq: "3.0 Accounting Services/1.0 Hero mobile.jpg" }
+  ) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
+    }
+  }
     accountingStartImage: file(
         relativePath: { eq: "home/3.3 Income Tax Prep desktop.jpg" }
     ) {
