@@ -27,27 +27,25 @@ const Page = ({ data }) => {
         title="Independent Mortgage Lender Chicago | MacAsh Home Loans"
         description="Apply online. Close in 15 days. It's that easy. Make your dream home a reality with MacAsh, your local independent mortgage broker in Chicago."
       />
-      {/* <div className="w-full hidden">
-        <Hero
-          backgroundImages={data.heroMobile.childImageSharp.gatsbyImageData}
-          backgroundPosition="0% 20%"
-          mobileRemoveBackground={true}
-          textAlignment="text-center"
-          padding="pt-10 md:pt-12 pb-14 md:pb-60"
-        >
-          <p className="font-heading text-white text-mobile-7xl md:text-7xl tracking-wider mb-12 md:mb-4 mt-40">
+      <section className="w-full lg:hidden md:hidden relative">
+        <GatsbyImage
+          image={data.heroMobile.childImageSharp.gatsbyImageData}
+          className="md:hidden w-full"
+        />
+        <div className="absolute top-0 px-6 pt-32 pb-14 text-center">
+          <p className="font-heading text-white text-5xl tracking-wider mb-6">
             WE ARE HIGH ECHELON
           </p>
-          <p className="font-body text-lg md:text-xl text-white font-semibold mb-16">
+          <p className="font-body text-xl text-white mb-8">
             Elevated Consulting, Payroll, Accounting & Tax
             Services
           </p>
           <div className="flex justify-center md:justify-center space-x-4 md:space-x-5">
             <ButtonSolidGold href="/refinance/" text="Book a Call" />
           </div>
-        </Hero>
-      </div> */}
-      <section>
+        </div>
+      </section>
+      <section className="hidden lg:block md:block">
         <Hero
           backgroundImages={data.heroDesktop.childImageSharp.gatsbyImageData}
           backgroundPosition="0% 20%"
@@ -317,7 +315,7 @@ export const query = graphql`
     }
     heroMobile: file(relativePath: { eq: "home/1.0 Hero mobile.jpg" }) {
       childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
+        gatsbyImageData(layout: CONSTRAINED, width: 390)
       }
     }
     intro: file(relativePath: { eq: "home/2.0 intro.png" }) {

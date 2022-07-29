@@ -6999,8 +6999,8 @@ var plugins = [{
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-manifest/gatsby-ssr */ "./node_modules/gatsby-plugin-manifest/gatsby-ssr.js"),
   options: {
     "plugins": [],
-    "name": "MacAsh Home Loans",
-    "short_name": "MacAsh Home Loans",
+    "name": "High-Echelon",
+    "short_name": "High-Echelon",
     "start_url": "/",
     "background_color": "#6ABC44",
     "theme_color": "#6ABC44",
@@ -16660,7 +16660,7 @@ const MainNav = ({
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
     className: `flex justify-between ${scrolled && "hidden"}`
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
-    className: "sm:hidden"
+    className: "hidden lg:block md:block"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_8__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_9__.GatsbyImage, {
     image: initialLogo,
     alt: "MacAsh Home Loans Logo",
@@ -17741,7 +17741,25 @@ const Page = ({
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_SEO__WEBPACK_IMPORTED_MODULE_4__["default"], {
     title: "Independent Mortgage Lender Chicago | MacAsh Home Loans",
     description: "Apply online. Close in 15 days. It's that easy. Make your dream home a reality with MacAsh, your local independent mortgage broker in Chicago."
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Hero_HeroFullWidth__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
+    className: "w-full lg:hidden md:hidden relative"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
+    image: data.heroMobile.childImageSharp.gatsbyImageData,
+    className: "md:hidden w-full"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "absolute px-6 pt-30 pb-14 text-center"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+    className: "font-heading text-white text-mobile-7xl md:text-7xl tracking-wider mb-6 mt-30"
+  }, "WE ARE HIGH ECHELON"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+    className: "font-body text-lg md:text-xl text-white font-semibold mb-16"
+  }, "Elevated Consulting, Payroll, Accounting & Tax Services"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "flex justify-center md:justify-center space-x-4 md:space-x-5"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_12__["default"], {
+    href: "/refinance/",
+    text: "Book a Call"
+  })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
+    className: "hidden lg:block md:block"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Hero_HeroFullWidth__WEBPACK_IMPORTED_MODULE_5__["default"], {
     backgroundImages: data.heroDesktop.childImageSharp.gatsbyImageData,
     backgroundPosition: "0% 20%",
     mobileRemoveBackground: true,
@@ -18023,7 +18041,7 @@ const Page = ({
   })))));
 };
 
-const query = "1821971550";
+const query = "1610719801";
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Page);
 
 /***/ }),
