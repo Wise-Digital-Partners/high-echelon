@@ -162,7 +162,7 @@ const Footer = ({ hideFooter }) => {
               </div>
             </div>
 
-            <div className="w-full lg:col-end-13 md:pt-5 pt-0 mt-10">
+            <div className="w-full lg:col-end-13 md:col-span-9 md:pt-5 pt-0 mt-10">
                 <ul class="block text-white text-sm md:float-right block md:flex items-stretch">
                   <li class = "md:ml-9 lg:ml-9 text-center mb-6">
                     <AniLink

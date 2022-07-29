@@ -67,7 +67,7 @@ const ValueProps = ({ className, headingLevel, heading }) => {
               <Background
                 backgroundImages={content.bg}
                 padding="pt-0 md:pt-18"
-                className={`relative overflow-x-hidden ${className || "mb-16 md:mb-32"}`}
+                className={`relative overflow-x-hidden ${className || "mb-8 md:mb-32"}`}
               >
               <div
                 key={i}

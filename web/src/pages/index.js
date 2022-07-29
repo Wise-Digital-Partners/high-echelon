@@ -46,38 +46,22 @@ const Page = ({ data }) => {
         </div>
         <div className="relative mb-32 flex justify-center">         
           <div className="container bg-primary-700 flex justify-center md:justify-center items-center flex-col rounded-[8px]">
-            <svg
-              height="3"
-              viewBox="0 0 1094 3"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="mb-10 w-full"
-            >
-              <path
-                d="M0 1.5h1094"
-                stroke="url(#paint0_linear_1129_1425)"
-                strokeWidth="3"
-              />
-              <defs>
-                <linearGradient
-                  id="paint0_linear_1129_1425"
-                  x1="0"
-                  y1="2.00435"
-                  x2="w-10/12"
-                  y2="1.96651"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stopColor="#A2A09D" stopOpacity="0" />
-                  <stop offset=".145833" stopColor="#CB9636" />
-                  <stop offset=".265625" stopColor="#CFA855" />
-                  <stop offset=".427083" stopColor="#FCE4A7" />
-                  <stop offset=".578125" stopColor="#F0D592" />
-                  <stop offset=".713542" stopColor="#CFA855" />
-                  <stop offset=".828125" stopColor="#CB9636" />
-                  <stop offset="1" stopColor="#A7A7A7" stopOpacity="0" />
-                </linearGradient>
-              </defs>
-            </svg>
+          <svg width="324" height="2" viewBox="0 0 324 2" fill="none" xmlns="http://www.w3.org/2000/svg" className="mb-7">
+            <line x1="0.900024" y1="1" x2="323.1" y2="1" stroke="url(#paint0_linear_1192_6745)" stroke-width="2"/>
+            <defs>
+            <linearGradient id="paint0_linear_1192_6745" x1="0.900024" y1="2.50435" x2="315.429" y2="2.50107" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#A2A09D" stop-opacity="0"/>
+            <stop offset="0.145833" stop-color="#CB9636"/>
+            <stop offset="0.265625" stop-color="#CFA855"/>
+            <stop offset="0.427083" stop-color="#FCE4A7"/>
+            <stop offset="0.578125" stop-color="#F0D592"/>
+            <stop offset="0.713542" stop-color="#CFA855"/>
+            <stop offset="0.828125" stop-color="#CB9636"/>
+            <stop offset="1" stop-color="#A7A7A7" stop-opacity="0"/>
+            </linearGradient>
+            </defs>
+          </svg>
+            
             <svg
               width="93"
               height="93"
@@ -158,36 +142,19 @@ const Page = ({ data }) => {
         <div className="relative md:top-[-100px] sm:top-0 md:mx-28 sm:mx-4 mb-20 flex justify-center">
           
           <div className="absolute sm:flex container bg-primary-700 flex justify-center md:justify-center items-center flex-col rounded-[8px]">
-            <svg
-              height="3"
-              viewBox="0 0 1094 3"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="mb-10 w-full"
-            >
-              <path
-                d="M0 1.5h1094"
-                stroke="url(#paint0_linear_1129_1425)"
-                strokeWidth="3"
-              />
+          <svg width="1094" height="3" viewBox="0 0 1094 3" fill="none" xmlns="http://www.w3.org/2000/svg" className="mb-7">
+              <line y1="1.5" x2="1094" y2="1.5" stroke="url(#paint0_linear_1129_1424)" stroke-width="3"/>
               <defs>
-                <linearGradient
-                  id="paint0_linear_1129_1425"
-                  x1="0"
-                  y1="2.00435"
-                  x2="w-10/12"
-                  y2="1.96651"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stopColor="#A2A09D" stopOpacity="0" />
-                  <stop offset=".145833" stopColor="#CB9636" />
-                  <stop offset=".265625" stopColor="#CFA855" />
-                  <stop offset=".427083" stopColor="#FCE4A7" />
-                  <stop offset=".578125" stopColor="#F0D592" />
-                  <stop offset=".713542" stopColor="#CFA855" />
-                  <stop offset=".828125" stopColor="#CB9636" />
-                  <stop offset="1" stopColor="#A7A7A7" stopOpacity="0" />
-                </linearGradient>
+              <linearGradient id="paint0_linear_1129_1424" x1="0" y1="3.50435" x2="1067.95" y2="3.46651" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#A2A09D" stop-opacity="0"/>
+              <stop offset="0.145833" stop-color="#CB9636"/>
+              <stop offset="0.265625" stop-color="#CFA855"/>
+              <stop offset="0.427083" stop-color="#FCE4A7"/>
+              <stop offset="0.578125" stop-color="#F0D592"/>
+              <stop offset="0.713542" stop-color="#CFA855"/>
+              <stop offset="0.828125" stop-color="#CB9636"/>
+              <stop offset="1" stop-color="#A7A7A7" stop-opacity="0"/>
+              </linearGradient>
               </defs>
             </svg>
             <svg
