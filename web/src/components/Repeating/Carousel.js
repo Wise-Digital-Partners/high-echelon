@@ -70,7 +70,7 @@ const Carousel = () => {
                                         className="absolute md:-bottom-14 md:-right-7 -bottom-16 -right-16"
                                     />
                                 </div>
-                                <div className="hidden md:block flex justify-center h-16">
+                                <div className="hidden md:flex justify-center h-16">
                                     <img
                                         src={googleLogo}
                                         alt="google Logo"

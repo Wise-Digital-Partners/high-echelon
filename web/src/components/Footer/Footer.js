@@ -137,10 +137,10 @@ const Footer = ({ hideFooter }) => {
             </svg> 
           </div> */}
         <div className="container pt-20">
-          <div className="grid lg:grid-cols-12 lg:justify-between space-y-16 lg:space-y-0 lg:space-x-8 mb-20 md:mb-16">
+          <div className="grid lg:grid-cols-12 lg:justify-between space-y-16 lg:space-y-0 lg:space-x-8 mb-10 md:mb-16">
             <div className="lg:col-start-1 lg:col-span-3">
-              <div className="grid grid-cols-2 md:flex md:flex-col items-end md:items-start">
-                <AniLink fade to="/">
+              <div className="grid md:grid-cols-2 md:flex md:flex-col items-end md:items-start">
+                <AniLink fade to="/" className="flex justify-center md:block">
                 <svg 
                   width="253" 
                   height="52" 
@@ -153,8 +153,8 @@ const Footer = ({ hideFooter }) => {
                     />
                 </svg>
                 </AniLink>
-                <div className="flex items-center pl-4 pt-6">
-                  <ul class="text-white text-sm list-none">
+                <div className="md:flex md:items-center pl-4 md:pt-6 pt-10">
+                  <ul class="text-white text-sm list-none flex justify-center items-center flex-col md:block">
                     <li>(123) 456-7890</li>
                     <li>email@email.com</li>
                   </ul>
@@ -162,9 +162,9 @@ const Footer = ({ hideFooter }) => {
               </div>
             </div>
 
-            <div className="lg:col-end-13 md:col-span-9 pt-5">
-                <ul class="text-white text-sm float-right flex items-stretch">
-                  <li class = "ml-9">
+            <div className="w-full lg:col-end-13 md:pt-5 pt-0 mt-10">
+                <ul class="block text-white text-sm md:float-right block md:flex items-stretch">
+                  <li class = "md:ml-9 lg:ml-9 text-center mb-6">
                     <AniLink
                         fade
                         to="/accounting/"
@@ -173,7 +173,7 @@ const Footer = ({ hideFooter }) => {
                       Accounting
                     </AniLink>                
                   </li>
-                  <li class = "ml-9">
+                  <li class = "md:ml-9 lg:ml-9 text-center mb-6">
                     <AniLink
                         fade
                         to="/tax/"
@@ -182,7 +182,7 @@ const Footer = ({ hideFooter }) => {
                       Tax Preparation
                     </AniLink>                
                   </li>
-                  <li class = "ml-9">
+                  <li class = "md:ml-9 lg:ml-9 text-center mb-6">
                     <AniLink
                         fade
                         to="/consulting/"
@@ -191,7 +191,7 @@ const Footer = ({ hideFooter }) => {
                       Consulting
                     </AniLink>                
                   </li>
-                  <li class = "ml-9">
+                  <li class = "md:ml-9 lg:ml-9 text-center">
                     <AniLink
                         fade
                         to="/payroll/"
@@ -205,6 +205,46 @@ const Footer = ({ hideFooter }) => {
           </div>
 
           <div className="flex flex-wrap lg:flex-nowrap flex-col lg:flex-row justify-items-center lg:justify-between lg:items-center lg:pt-4">
+            <div className="mb-10 md:hidden">
+              <div className="flex items-center justify-center lg:justify-start space-x-4">
+                <ul className="flex items-center flex-wrap space-x-4 justify-center lg:justify-start">
+                  <li class = "text-3xl">
+                    <a
+                      href="https://www.instagram.com/macashhomeloans/?hl=en"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex justify-center items-center text-white hover:bg-primary-400 transition-colors duration-300 ease-linear"
+                    >
+                      <svg 
+                        width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M9.429 8.969h3.714v1.85c.535-1.064 1.907-2.02 3.968-2.02 3.951 0 4.889 2.118 4.889 6.004V22h-4v-6.312c0-2.213-.535-3.461-1.897-3.461-1.889 0-2.674 1.345-2.674 3.46V22h-4V8.969zM2.57 21.83h4V8.799h-4V21.83zM7.143 4.55a2.529928 2.529928 0 01-.19561.97659A2.5301 2.5301 0 016.39 6.352c-.4836.48062-1.13819.74965-1.82.748-.68061-.00046-1.33369-.2688-1.818-.747a2.548165 2.548165 0 01-.55566-.82657A2.548052 2.548052 0 012 4.55c0-.677.27-1.325.753-1.803.48389-.47884 1.13724-.7473 1.818-.747.682 0 1.336.269 1.819.747.482.478.753 1.126.753 1.803z" fill="#fff"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class = "text-3xl">
+                    <a
+                      href="https://www.facebook.com/MacAshHomeLoans1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex justify-center items-center text-white hover:bg-primary-400 transition-colors duration-300 ease-linear"
+                    >
+                      <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.2124 12.375l.6221-3.98148H8.94471V5.8098c0-1.08925.54338-2.15101 2.28549-2.15101h1.7684V.268984S11.3938 0 9.85953 0C6.65615 0 4.56228 1.90695 4.56228 5.35906v3.03446H1.00146V12.375h3.56082V22h4.38243v-9.625h3.26769z" fill="#fff"/></svg>
+                    </a>
+                  </li>
+                  <li class = "text-3xl">
+                    <a
+                      href="https://www.twitter.com/MacAshHomeLoans1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex justify-center items-center text-white hover:bg-primary-400 transition-colors duration-300 ease-linear"
+                    >
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.643 4.93708c-.835.37-1.732.62-2.675.733.973-.58221 1.701-1.49854 2.048-2.578-.9141.54299-1.9146.92519-2.958 1.13-.7016-.74914-1.6309-1.24568-2.6437-1.41253-1.0127-.16685-2.0522.00532-2.9571.48978-.9048.48446-1.6244 1.25411-2.047 2.18945-.4227.93534-.5247 1.98405-.2902 2.9833a13.228982 13.228982 0 01-5.31856-1.4131 13.228884 13.228884 0 01-4.28343-3.4549c-.4.69-.63 1.49-.63 2.342a4.660012 4.660012 0 002.072 3.878 4.64708 4.64708 0 01-2.11-.583v.06c-.00007 1.07572.37203 2.11842 1.05318 2.95102.68115.8326 1.62939 1.4039 2.68382 1.617-.68621.1857-1.40566.213-2.104.08.2975.9256.877 1.735 1.65737 2.3149.78037.5799 1.72255.9013 2.69463.9191-1.65017 1.2954-3.68811 1.9981-5.786 1.995a9.499752 9.499752 0 01-1.111998-.065c2.129478 1.3692 4.608338 2.0958 7.139998 2.093 8.56999 0 13.25499-7.098 13.25499-13.25402 0-.2-.005-.402-.014-.602a9.470192 9.470192 0 002.323-2.41l.002-.003z" fill="#fff"/></svg>
+                    </a>
+                  </li>
+                
+                </ul>
+              </div>
+            </div>
             <div className="lg:flex lg:items-center mb-8 lg:mb-0 text-sm">
               <ul className="flex items-center flex-wrap space-x-4 justify-center lg:justify-start">
                 <li className="text-gray-50">
@@ -244,7 +284,7 @@ const Footer = ({ hideFooter }) => {
               </ul>
             </div>
 
-            <div>
+            <div className="hidden md:block">
               <div className="flex items-center justify-center lg:justify-start space-x-4">
                 <ul className="flex items-center flex-wrap space-x-4 justify-center lg:justify-start">
                   <li class = "text-3xl">
@@ -282,17 +322,6 @@ const Footer = ({ hideFooter }) => {
                   </li>
                 
                 </ul>
-                {/* <GatsbyImage
-                  image={
-                    data.equalHousingOpportunity.childImageSharp.gatsbyImageData
-                  }
-                  alt="Equal-Housing-Opportunity Logo"
-                />
-                <div className="text-white">
-                  <span className="font-bold tracking-wider">NMLS ID</span>
-                  <br />
-                  <span className="text-sm">#2099559</span>
-                </div> */}
               </div>
             </div>
           </div>

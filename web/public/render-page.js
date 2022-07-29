@@ -17084,11 +17084,11 @@ const About = ({
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.GatsbyImage, {
     image: data.aboutDesktop.childImageSharp.gatsbyImageData
   })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-    className: "md:hidden md:col-start-1 md:col-span-10 relative top-[-128px]"
+    className: "md:hidden md:col-start-1 md:col-span-10"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.GatsbyImage, {
     image: data.aboutMobile.childImageSharp.gatsbyImageData
   })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-    className: "absolute mx-4 md:mt-0 bg-white shadow-inner md:col-start-6 md:col-span-7 ml p-6 py-20 md:p-20"
+    className: "absolute top-[-128px] mx-4 md:mt-0 bg-white shadow-inner md:col-start-6 md:col-span-7 ml p-6 py-20 md:p-20"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(HeadingTag, {
     className: "text-primary-700 font-light"
   }, "Who We Are"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
@@ -17096,7 +17096,9 @@ const About = ({
   }, "CPA Michelle Frank founded High Echelon to help small businesses simplify and streamline their finances so they can focus on growth and success. Accounting doesn\u2019t need to be complicated\u2014we make it easy."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_2__["default"], {
     href: "/about/",
     text: "Read Our Story"
-  })))));
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+    className: "relative"
+  }))));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (About);
