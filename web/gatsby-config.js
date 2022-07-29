@@ -18,7 +18,7 @@ const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
 
 module.exports = {
   
-  pathPrefix: "/high-echelon",
+  pathPrefix: "/",
   siteMetadata: {
     siteUrl,
     author: `WISE Digital Partners`,
@@ -138,8 +138,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `MacAsh Home Loans`,
-        short_name: `MacAsh Home Loans`,
+        name: `High-Echelon`,
+        short_name: `High-Echelon`,
         start_url: `/`,
         background_color: `#6ABC44`,
         theme_color: `#6ABC44`,
