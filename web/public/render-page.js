@@ -17055,7 +17055,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _public_page_data_sq_d_863289125_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/863289125.json */ "./public/page-data/sq/d/863289125.json");
+/* harmony import */ var _public_page_data_sq_d_1739146235_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/1739146235.json */ "./public/page-data/sq/d/1739146235.json");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
@@ -17071,20 +17071,24 @@ const About = ({
   className,
   headingLevel
 }) => {
-  const data = _public_page_data_sq_d_863289125_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const data = _public_page_data_sq_d_1739146235_json__WEBPACK_IMPORTED_MODULE_0__.data;
   const HeadingTag = headingLevel || "h2";
   return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("section", {
     className: `${className || "mb-20 md:mb-32"}`
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-    className: "container"
+    className: "md:container"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
     className: "relative grid md:grid-cols-12 md:gap-x-10 lg:gap-x-16 gap-y-8 items-center"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-    className: "md:col-start-1 md:col-span-10"
+    className: "hidden md:block md:col-start-1 md:col-span-10"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.GatsbyImage, {
-    image: data.team.childImageSharp.gatsbyImageData
+    image: data.aboutDesktop.childImageSharp.gatsbyImageData
   })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-    className: "md:absolute bg-white shadow-inner md:col-start-6 md:col-span-7 ml p-20"
+    className: "md:hidden md:col-start-1 md:col-span-10 relative top-[-128px]"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.GatsbyImage, {
+    image: data.aboutMobile.childImageSharp.gatsbyImageData
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+    className: "absolute mx-4 md:mt-0 bg-white shadow-inner md:col-start-6 md:col-span-7 ml p-6 py-20 md:p-20"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(HeadingTag, {
     className: "text-primary-700 font-light"
   }, "Who We Are"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
@@ -17187,7 +17191,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _images_repeating_testimonials_HESeal_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../images/repeating/testimonials/HESeal.svg */ "./src/images/repeating/testimonials/HESeal.svg");
 /* harmony import */ var _images_reviews_google_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../images/reviews/google.png */ "./src/images/reviews/google.png");
-/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.esm.js");
+/* harmony import */ var _images_home_verify_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../images/home/verify.png */ "./src/images/home/verify.png");
+/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.esm.js");
+
 
 
  // Data
@@ -17218,53 +17224,61 @@ const Carousel = () => {
     setCurrentIndex((currentIndex + 1) % sliderLength);
   };
 
-  return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+  return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
     className: "container"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
     className: "flex items-center justify-center"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
     onClick: movePrev,
     className: "mr-2 hidden md:block"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("i", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("i", {
     onClick: movePrev,
     className: "fa fa-arrow-circle-left mr-3 text-primary-100 text-4xl"
-  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
     className: "my-12 mb-12 flex items-center"
   }, data.map((resource, index) => {
-    return index == currentIndex ? (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+    return index == currentIndex ? (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
       key: index,
-      className: "relative text-primary-700 gap-y-10 py-6 md:px-44 sm:px-4 bg-primary-500"
-    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      className: "relative text-primary-700 gap-y-10 py-6 md:px-44 pt-24 md:pt-16 bg-primary-500"
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
       className: "text-center"
-    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
       className: "text-lg font-black mb-1"
-    }, resource.name), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+    }, resource.name), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
       className: "text-sm font-gray-300"
-    }, resource.subname)), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+    }, resource.subname)), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
       className: "my-10 px-3 text-typography-body bg-offwhite"
-    }, resource.quote), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+    }, resource.quote), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      className: "md:hidden flex justify-center"
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+      src: _images_home_verify_png__WEBPACK_IMPORTED_MODULE_3__["default"],
+      alt: "verify button",
+      className: "h-6 w-24"
+    })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      className: "bg-primary-500 p-7 h-32"
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
       src: _images_repeating_testimonials_HESeal_svg__WEBPACK_IMPORTED_MODULE_1__["default"],
       alt: "gray Logo",
-      className: "absolute -bottom-14 -right-7"
-    }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-      className: "flex justify-center h-16"
-    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+      className: "absolute md:-bottom-14 md:-right-7 -bottom-16 -right-16"
+    })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      className: "hidden md:block flex justify-center h-16"
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
       src: _images_reviews_google_png__WEBPACK_IMPORTED_MODULE_2__["default"],
       alt: "google Logo",
       className: "h-5 w-15"
-    }))) : (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null);
-  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+    }))) : (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null);
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
     onClick: moveNext,
     className: "ml-2 hidden md:block"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("i", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("i", {
     onClick: moveNext,
     className: "fa fa-arrow-circle-right ml-3 text-primary-100 text-4xl"
-  }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+  }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
     className: "flex justify-center"
   }, data.map((resource, index) => {
-    return index == currentIndex ? (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+    return index == currentIndex ? (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
       className: "w-8 h-2 bg-primary-100 mr-2 rounded"
-    }) : (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+    }) : (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
       className: "w-2 h-2 bg-primary-100 mr-2 rounded-full"
     });
   })));
@@ -68942,6 +68956,21 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/images/home/verify.png":
+/*!************************************!*\
+  !*** ./src/images/home/verify.png ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/png;base64,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");
+
+/***/ }),
+
 /***/ "./src/images/repeating/testimonials/HESeal.svg":
 /*!******************************************************!*\
   !*** ./src/images/repeating/testimonials/HESeal.svg ***!
@@ -70123,6 +70152,17 @@ module.exports = [];
 
 /***/ }),
 
+/***/ "./public/page-data/sq/d/1739146235.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/1739146235.json ***!
+  \***********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"aboutDesktop":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#f8f8f8","images":{"fallback":{"src":"/static/96901dd6a07bdf7c8406cbea2da83e20/221ab/Michelle%20B%26W.png","srcSet":"/static/96901dd6a07bdf7c8406cbea2da83e20/6ec72/Michelle%20B%26W.png 768w,\\n/static/96901dd6a07bdf7c8406cbea2da83e20/221ab/Michelle%20B%26W.png 941w","sizes":"(min-width: 941px) 941px, 100vw"},"sources":[{"srcSet":"/static/96901dd6a07bdf7c8406cbea2da83e20/cea0f/Michelle%20B%26W.webp 768w,\\n/static/96901dd6a07bdf7c8406cbea2da83e20/d5423/Michelle%20B%26W.webp 941w","type":"image/webp","sizes":"(min-width: 941px) 941px, 100vw"}]},"width":941,"height":579}}},"aboutMobile":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#f8f8f8","images":{"fallback":{"src":"/static/07dbb8e698dfdd369028ad1a95425b02/0a71b/Michelle%20B%26W%20mobile.jpg","srcSet":"/static/07dbb8e698dfdd369028ad1a95425b02/e0c04/Michelle%20B%26W%20mobile.jpg 768w,\\n/static/07dbb8e698dfdd369028ad1a95425b02/0a71b/Michelle%20B%26W%20mobile.jpg 780w","sizes":"(min-width: 780px) 780px, 100vw"},"sources":[{"srcSet":"/static/07dbb8e698dfdd369028ad1a95425b02/792ff/Michelle%20B%26W%20mobile.webp 768w,\\n/static/07dbb8e698dfdd369028ad1a95425b02/e342e/Michelle%20B%26W%20mobile.webp 780w","type":"image/webp","sizes":"(min-width: 780px) 780px, 100vw"}]},"width":941,"height":1129.2}}}}}');
+
+/***/ }),
+
 /***/ "./public/page-data/sq/d/1791769399.json":
 /*!***********************************************!*\
   !*** ./public/page-data/sq/d/1791769399.json ***!
@@ -70164,17 +70204,6 @@ module.exports = JSON.parse('{"data":{"darkLogo":{"childImageSharp":{"gatsbyImag
 
 "use strict";
 module.exports = JSON.parse('{"data":{"logo":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#486848","images":{"fallback":{"src":"/static/0a0b26f064a9b1ba8592c0f61ee1bbf5/4137c/Logo%20White.png","srcSet":"/static/0a0b26f064a9b1ba8592c0f61ee1bbf5/4137c/Logo%20White.png 119w,\\n/static/0a0b26f064a9b1ba8592c0f61ee1bbf5/36618/Logo%20White.png 186w","sizes":"(min-width: 119px) 119px, 100vw"},"sources":[{"srcSet":"/static/0a0b26f064a9b1ba8592c0f61ee1bbf5/12fa8/Logo%20White.webp 119w,\\n/static/0a0b26f064a9b1ba8592c0f61ee1bbf5/48bde/Logo%20White.webp 186w","type":"image/webp","sizes":"(min-width: 119px) 119px, 100vw"}]},"width":119,"height":70}}},"equalHousingOpportunity":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#486848","images":{"fallback":{"src":"/static/4601aa618ba25ec9254239f4ad764196/251df/Equal-Housing-Logo.png","srcSet":"/static/4601aa618ba25ec9254239f4ad764196/251df/Equal-Housing-Logo.png 52w,\\n/static/4601aa618ba25ec9254239f4ad764196/720da/Equal-Housing-Logo.png 104w","sizes":"(min-width: 52px) 52px, 100vw"},"sources":[{"srcSet":"/static/4601aa618ba25ec9254239f4ad764196/3884a/Equal-Housing-Logo.webp 52w,\\n/static/4601aa618ba25ec9254239f4ad764196/e9d6a/Equal-Housing-Logo.webp 104w","type":"image/webp","sizes":"(min-width: 52px) 52px, 100vw"}]},"width":52,"height":48}}}}}');
-
-/***/ }),
-
-/***/ "./public/page-data/sq/d/863289125.json":
-/*!**********************************************!*\
-  !*** ./public/page-data/sq/d/863289125.json ***!
-  \**********************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse('{"data":{"team":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#f8f8f8","images":{"fallback":{"src":"/static/96901dd6a07bdf7c8406cbea2da83e20/221ab/Michelle%20B%26W.png","srcSet":"/static/96901dd6a07bdf7c8406cbea2da83e20/6ec72/Michelle%20B%26W.png 768w,\\n/static/96901dd6a07bdf7c8406cbea2da83e20/221ab/Michelle%20B%26W.png 941w","sizes":"(min-width: 941px) 941px, 100vw"},"sources":[{"srcSet":"/static/96901dd6a07bdf7c8406cbea2da83e20/cea0f/Michelle%20B%26W.webp 768w,\\n/static/96901dd6a07bdf7c8406cbea2da83e20/d5423/Michelle%20B%26W.webp 941w","type":"image/webp","sizes":"(min-width: 941px) 941px, 100vw"}]},"width":941,"height":579}}}}}');
 
 /***/ }),
 
