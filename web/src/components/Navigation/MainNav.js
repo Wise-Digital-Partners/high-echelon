@@ -238,7 +238,7 @@ const MainNav = ({
                         <AniLink
                           fade
                           to={item.href}
-                          className="group inline-flex items-center justify-between w-full relative text-primary-200 hover:text-primary-100"
+                          className="group inline-flex items-center justify-between w-full relative text-black hover:text-primary-100"
                         >
                           <span>{item.name}</span>
                           {/* <i className="far fa-arrow-right text-xl text-gray-900 group-hover:text-gray-900 relative left-0 group-hover:left-2 transition-all duration-300 ease-linear"></i> */}
@@ -363,6 +363,7 @@ const MainNav = ({
                         onClick={clickHandler}
                         className="text-lg text-primary-200 hover:text-primary-100 no-underline cursor-pointer transition-colors duration-300 ease-linear"
                       >
+                        <i className="fa fa-sign-in mr-2"></i>
                         Client Portal
                       </AniLink>
                     </li>

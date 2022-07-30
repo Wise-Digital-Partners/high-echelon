@@ -24,8 +24,8 @@ const Page = ({ data }) => {
   return (
     <Layout headerDarkMode={true}>
       <SearchEngineOptimization
-        title="Independent Mortgage Lender Chicago | MacAsh Home Loans"
-        description="Apply online. Close in 15 days. It's that easy. Make your dream home a reality with MacAsh, your local independent mortgage broker in Chicago."
+        title="High Echelon"
+        description="Test"
       />
       <section className="w-full lg:hidden md:hidden relative">
         <GatsbyImage
@@ -41,7 +41,7 @@ const Page = ({ data }) => {
             Services
           </p>
           <div className="flex justify-center md:justify-center space-x-4 md:space-x-5">
-            <ButtonSolidGold href="/refinance/" text="Book a Call" />
+            <ButtonSolidGold href="/" text="Book a Call" />
           </div>
         </div>
         <div className="relative mb-32 flex justify-center">         
@@ -214,7 +214,7 @@ const Page = ({ data }) => {
                   alt="Small Business Consulting"
                   className="p-2 rounded-[8px] mb-3"
                 />
-                <div className="py-2 pl-3 mb-6 md:mb-0">
+                <div className="md:flex md:justify-center py-2 pl-3 mb-6 md:mb-0">
                   <div className="flex justify-center flex-col mb-4">
                     <h3 className="text-lg mb-4 text-primary-700">
                       Small Business Consulting
@@ -239,7 +239,7 @@ const Page = ({ data }) => {
                   alt="Accounting Services"
                   className="p-2 rounded-[8px] mb-3"
                 />
-                <div className="py-2 pl-3 mb-6 md:mb-0">
+                <div className="md:flex md:justify-center  py-2 pl-3 mb-6 md:mb-0">
                   <div className="flex justify-center flex-col mb-4">
                     <h3 className="text-lg mb-4 text-primary-700">
                       Accounting Services
@@ -266,7 +266,7 @@ const Page = ({ data }) => {
                   alt="Small Business Consulting"
                   className="p-2 rounded-[8px] mb-3"
                 />
-                <div className="py-2 pl-3 mb-6 md:mb-0">
+                <div className="md:flex md:justify-center  py-2 pl-3 mb-6 md:mb-0">
                   <div className="flex justify-center flex-col mb-4">
                     <h3 className="text-lg mb-4 text-primary-700">
                       Payroll Management
@@ -292,7 +292,7 @@ const Page = ({ data }) => {
                   alt="Small Business Consulting"
                   className="p-2 rounded-[8px] mb-3"
                 />
-                <div className="py-2 pl-3 mb-6 md:mb-0">
+                <div className="md:flex md:justify-center  py-2 pl-3 mb-6 md:mb-0">
                   <div className="flex justify-center flex-col mb-4">
                     <h3 className="text-lg mb-4 text-primary-700">
                       Income Tax Preparation
@@ -345,28 +345,28 @@ export const query = graphql`
       relativePath: { eq: "1.0 Homepage/3.0 Small Business desktop.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 300)
+        gatsbyImageData(layout: CONSTRAINED, width: 360)
       }
     }
     accountServicesImage: file(
       relativePath: { eq: "1.0 Homepage/3.1 Accounting Services desktop.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 300)
+        gatsbyImageData(layout: CONSTRAINED, width: 360)
       }
     }
     payrollManagementImage: file(
       relativePath: { eq: "1.0 Homepage/3.2 Payroll Management desktop.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 300)
+        gatsbyImageData(layout: CONSTRAINED, width: 360)
       }
     }
     incomeTaxPreparationImage: file(
       relativePath: { eq: "1.0 Homepage/3.3 Income Tax Prep desktop.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 300)
+        gatsbyImageData(layout: CONSTRAINED, width: 360)
       }
     }
 

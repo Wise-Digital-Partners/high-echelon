@@ -20,7 +20,7 @@ const Page = ({ data }) => {
         title="Independent Mortgage Lender Chicago | MacAsh Home Loans"
         description="Apply online. Close in 15 days. It's that easy. Make your dream home a reality with MacAsh, your local independent mortgage broker in Chicago."
       />
-        <section className="hidden md:block mb-20 md:mb-32 mt-12">
+        <section className="hidden md:block mb-20 md:mb-32">
             <div className="container">
                 <div className="relative grid md:grid-cols-12 md:gap-x-10 lg:gap-x-16 gap-y-8 items-center">
                     <div className="md:col-start-1 md:col-span-10">
@@ -45,7 +45,7 @@ const Page = ({ data }) => {
                 </div>
             </div>
         </section>
-        <section className="md:hidden mb-20 md:mb-32 mt-12">
+        <section className="md:hidden mb-20 md:mb-32">
             <div className="container">
                 <div className="relative grid md:grid-cols-12 lg:gap-x-16 items-center">
                     <div className="md-hidden">
