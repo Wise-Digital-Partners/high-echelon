@@ -2,7 +2,7 @@ import React from "react";
 
 const UtilityNav = () => {
   return (
-    <div id="utlity-navigation" className=" bg-primary-700 py-1.5 ">
+    <div id="utlity-navigation" className=" bg-primary-700 py-1.5 hidden md:block">
       <div className="container">
         <div className="flex justify-end items-center text-sm text-white">
           <div className="flex justify-between md:justify-end w-full md:w-auto space-x-8">
