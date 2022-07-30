@@ -7,6 +7,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import Burger from "./Burger";
 import OffCanvas from "../OffCanvas/OffCanvas";
 import ButtonSolid from "../Button/ButtonSolid";
+import ButtonSolidGold from "../Button/ButtonSolidGold";
 // import ButtonGhost from "../Button/ButtonGhost";
 import {
   Accordion,
@@ -236,7 +237,7 @@ const MainNav = ({
                         <AniLink
                           fade
                           to={item.href}
-                          className="group inline-flex items-center justify-between w-full relative font-body text-xl font-medium text-gray-900 hover:text-gray-900"
+                          className="group inline-flex items-center justify-between w-full relative font-body text-xl font-medium text-primary-900 hover:text-primary-900"
                         >
                           <span>{item.name}</span>
                           {/* <i className="far fa-arrow-right text-xl text-gray-900 group-hover:text-gray-900 relative left-0 group-hover:left-2 transition-all duration-300 ease-linear"></i> */}
@@ -297,8 +298,8 @@ const MainNav = ({
             />
 
             {/* Mobile Nav */}
-            <OffCanvas offcanvasOpen={offcanvasOpen} id="offcanvas-navigation">
-              <div>
+            <OffCanvas offcanvasOpen={offcanvasOpen} id="offcanvas-navigation" className=" bg-primary-700">
+              <div className="px-7 py-12">
                 <ul id="navigation-mobile" className="mb-12">
                   <Accordion
                     allowZeroExpanded={true}
@@ -307,7 +308,7 @@ const MainNav = ({
                     <li>
                       <AccordionItem uuid={1}>
                         <AccordionItemButton className="flex items-center focus:outline-none">
-                          <p className="font-heading text-3xl text-gray-900 hover:text-gray-900 font-bold no-underline mb-0 transition-colors duration-300 ease-linear">
+                          <p className="text-lg text-primary-200 hover:text-primary-500 no-underline mb-10 transition-colors duration-300 ease-linear">
                             Services
                           </p>
                         </AccordionItemButton>
@@ -319,7 +320,7 @@ const MainNav = ({
                                 <AniLink
                                   fade
                                   to={item.href}
-                                  className="relative block font-body font-semibold text-gray-900 hover:text-gray-900"
+                                  className="relative block text-primary-200 hover:text-primary-500"
                                 >
                                   {item.name}
                                 </AniLink>
@@ -336,7 +337,7 @@ const MainNav = ({
                         to="/about/"
                         onKeyDown={clickHandler}
                         onClick={clickHandler}
-                        className="font-heading text-3xl text-gray-900 hover:text-gray-900 font-bold no-underline transition-colors duration-300 ease-linear"
+                        className="text-lg text-primary-200 hover:text-primary-500 no-underline transition-colors duration-300 ease-linear"
                       >
                         About
                       </AniLink>
@@ -348,7 +349,7 @@ const MainNav = ({
                         to="/reviews/"
                         onKeyDown={clickHandler}
                         onClick={clickHandler}
-                        className="font-heading text-3xl text-gray-900 hover:text-gray-900 font-bold no-underline transition-colors duration-300 ease-linear"
+                        className="text-lg text-primary-200 hover:text-primary-500 no-underline transition-colors duration-300 ease-linear"
                       >
                         Reviews
                       </AniLink>
@@ -359,17 +360,17 @@ const MainNav = ({
                         data-modal-open="modal-contact"
                         onKeyDown={clickHandler}
                         onClick={clickHandler}
-                        className="font-heading text-3xl text-gray-900 hover:text-gray-900 font-bold no-underline cursor-pointer transition-colors duration-300 ease-linear"
+                        className="text-lg text-primary-200 hover:text-primary-500 no-underline cursor-pointer transition-colors duration-300 ease-linear"
                       >
-                        Contact
+                        Client Portal
                       </AniLink>
                     </li>
                   </Accordion>
                 </ul>
 
-                <ButtonSolid
-                  href="/request-rates/"
-                  text="Request Rates"
+                <ButtonSolidGold
+                  href="/Contact US/"
+                  text="Contact"
                   className="w-full"
                 />
               </div>

@@ -81,7 +81,7 @@ const Page = ({ data }) => {
 
         <section className="mt-12 flex justify-content items-center flex-col">
             <div className="flex justify-content items-center flex-col md:mx-88 md:min-w-120 sm:mx-8 px-7">
-                <p className="text-4xl font-thin mb-6 text-center md:text-start">The Key To Good Business</p>
+                <p className="text-4xl-x font-thin mb-6 text-center md:text-start">The Key To Good Business</p>
                 <p className="text-xl font-light leading-7 text-center md:text-start mb-10 md:mb-0">
                     When you have a clear understanding of your
                     financials, you can make smart business decisions
@@ -90,7 +90,7 @@ const Page = ({ data }) => {
                     failure and success—you’ll want accurate data, and we deliver.
                 </p>
             </div>
-            <div className="flex justify-center items-center md:h-64">
+            <div className="flex justify-center items-center md:pt-32 md:pb-32 pb-20">
                 <svg
                     height="3"
                     viewBox="0 0 1094 3"
@@ -128,12 +128,21 @@ const Page = ({ data }) => {
         <section className="mb-20 md:mb-32 mt-12">
             <div className="container">
                 <div className="lg:flex items-center md:block">
+                    <div className="md:hidden md:block w-full mb-8">
+                      <GatsbyImage
+                          image={
+                              data.accountingProfile.childImageSharp.gatsbyImageData
+                          }
+                          alt="Small Business Consulting"
+                          className="rounded-[8px]"
+                      />
+                    </div>
                     <div className="flex justify-center flex-col lg:w-1/2 md:w-full md:mb-8 sm:mb-8">
-                        <div className="pl-10">
-                            <p className="text-4xl font-thin mb-6">Our Services & Deliverables</p>
+                        <div className="md:pl-10 pl-0">
+                            <p className="text-4xl font-thin mb-6">How We Can Help Your Small Business</p>
                             <p className="text-base font-light  mb-6">
-                                You can count on High Echelon to professionally
-                                and accurately handle your small business accounting needs. We will:
+                              At High Echelon, we draw on a long history of best practices to help small you move
+                              forward with confidence. Our small business consulting services include:
                             </p>
                             <div className="text-base font-light">
                                 <div className="flex">
@@ -155,16 +164,15 @@ const Page = ({ data }) => {
                             </div>
                         </div>
                     </div>
-                    {/* <div className="max-w-140">
+                    <div className="hidden md:block md:w-1/2 mr-0 md:mr-20 md:mb-8 mb-8">
                       <GatsbyImage
                           image={
-                              data.accountingProfileImage.childImageSharp
-                              .gatsbyImageData
+                              data.accountingProfile.childImageSharp.gatsbyImageData
                           }
                           alt="Small Business Consulting"
-                          className="rounded-[8px] ml-20"
+                          className="rounded-[8px] w-full"
                       />
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </section>
@@ -172,18 +180,17 @@ const Page = ({ data }) => {
         <section className="mb-20 md:mb-32 mt-12">
             <div className="container">
                 <div className="lg:flex items-center md:block">
-                    <div className="lg:w-1/2 md:w-full mr-20 md:mb-8 sm:mb-8">
+                    <div className="lg:w-1/2 md:w-full mr-0 md:mr-20 md:mb-8 sm:mb-8">
                         <GatsbyImage
                             image={
-                                data.accountingStartImage.childImageSharp
-                                .gatsbyImageData
+                                data.accountingStartImage.childImageSharp.gatsbyImageData
                             }
                             alt="Small Business Consulting"
-                            className="rounded-[8px]"
+                            className="rounded-[8px] w-full"
                         />
                     </div>
-                    <div className="flex justify-center flex-col lg:w-1/2 md:w-full">
-                        <div className="px-10">
+                    <div className="block md:flex justify-center flex-col lg:w-1/2 md:w-full mt-10 md:mt-0">
+                        <div className="px-0 md:px-10">
                             <p className="text-4xl font-thin mb-6">How To Get Started</p>
                             <p className="text-base font-light  mb-6">
                                 We begin with an introductory call at no cost to you.
@@ -191,7 +198,7 @@ const Page = ({ data }) => {
                                 timeline, and outcomes. And from there, we’ll present you with a
                                 proposal outlining a plan and the associated costs.
                             </p>
-                            <ButtonSolid
+                            <ButtonSolidGold
                                 className="font-light"
                                 href="/about/"
                                 text="Book a Call"
@@ -202,12 +209,17 @@ const Page = ({ data }) => {
             </div>
         </section>
 
-        <section className="mb-20 md:mb-32 mt-12">
+        <section className="mb-20 md:mb-32 mt-0 md:mt-12">
             <div className="container">
-                <p className="text-4xl mb-4">Answers To Frequently Asked Questions</p>
+                <p className="text-4xl-x mb-12">Answers To Frequently Asked Questions</p>
                 <Accordian />
             </div>
         </section>
+
+      <section className="mb-20 md:mb-32 2xl:container 2xl:mx-auto 2xl:px-0 py-3 md:px-10">
+        <p className="text-4xl-x font-light mb-0 text-center">Our Clients Say Its Best</p>
+        <CarouselForm />
+      </section>
 
         <section className="mb-20 md:mb-32">
             <div className="container">
@@ -224,14 +236,14 @@ const Page = ({ data }) => {
                     </div>
                     <div className="md:flex sm:block">
                         <AniLink fade to="/va-loans-chicago/" className="mr-10 mb-6 w-1/3">
-                          <div className=" max-w-fit">
+                          <div className=" max-w-140">
                             <GatsbyImage
                             image={
                                 data.accountingStartImage.childImageSharp
                                 .gatsbyImageData
                             }
                             alt="Small Business Consulting"
-                            className="mb-6 rounded-[8px] h-60"
+                            className="mb-6 rounded-[8px] w-full"
                             />
                           </div>
                             <div className="justify-center flex-col py-2">
@@ -291,20 +303,18 @@ const Page = ({ data }) => {
         </section>
       {/* <ValueProps /> */}
       {/* <Testimonials /> */}
-      <section className="mb-20 md:mb-32 2xl:container 2xl:mx-auto 2xl:px-0 py-3 px-10">
-        <p className="text-4xl font-light mb-0 text-center">Our Clients Say Its Best</p>
-        <CarouselForm />
-      </section>
+      
       <About />
-      {/* <RecentBlogPosts /> */}
+      <svg className="w-full" width="1200" height="3" viewBox="0 0 1200 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5h1200" stroke="url(#paint0_linear_1129_1425)" stroke-width="3"/><defs><linearGradient id="paint0_linear_1129_1425" x1="0" y1="2.00435" x2="1182.95" y2="1.96651" gradientUnits="userSpaceOnUse"><stop stop-color="#A2A09D" stop-opacity="0"/><stop offset=".145833" stop-color="#FCE4A7"/><stop offset=".265625" stop-color="#CFA855"/><stop offset=".427083" stop-color="#FCE4A7"/><stop offset=".578125" stop-color="#F0D592"/><stop offset=".713542" stop-color="#FCE4A7"/><stop offset=".828125" stop-color="#CB9636"/><stop offset="1" stop-color="#A7A7A7" stop-opacity="0"/></linearGradient></defs></svg>
       <CallToAction />
+      <svg className="w-full" width="1200" height="3" viewBox="0 0 1200 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5h1200" stroke="url(#paint0_linear_1129_1425)" stroke-width="3"/><defs><linearGradient id="paint0_linear_1129_1425" x1="0" y1="2.00435" x2="1182.95" y2="1.96651" gradientUnits="userSpaceOnUse"><stop stop-color="#A2A09D" stop-opacity="0"/><stop offset=".145833" stop-color="#FCE4A7"/><stop offset=".265625" stop-color="#CFA855"/><stop offset=".427083" stop-color="#FCE4A7"/><stop offset=".578125" stop-color="#F0D592"/><stop offset=".713542" stop-color="#FCE4A7"/><stop offset=".828125" stop-color="#CB9636"/><stop offset="1" stop-color="#A7A7A7" stop-opacity="0"/></linearGradient></defs></svg>
     </Layout>
   );
 };
 
 export const query = graphql`
   {
-    accountingProfileImage: file(
+    accountingProfile: file(
         relativePath: { eq: "3.0 Accounting Services/2.0 Service pages.jpg" }
     ) {
       childImageSharp {
@@ -327,10 +337,10 @@ export const query = graphql`
     }
   }
     accountingStartImage: file(
-        relativePath: { eq: "home/3.3 Income Tax Prep desktop.jpg" }
+        relativePath: { eq: "1.0 Homepage/IncomeTax desktop.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 560)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
       }
     }
     openGraphImage: file(
@@ -347,28 +357,28 @@ export const query = graphql`
       relativePath: { eq: "1.0 Homepage/3.0 Small Business desktop.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 300)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
       }
     }
     accountServicesImage: file(
       relativePath: { eq: "3.0 Accounting Services/1.0 Hero desktop.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 651)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
       }
     }
     payrollManagementImage: file(
       relativePath: { eq: "1.0 Homepage/3.2 Payroll Management desktop.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 300)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
       }
     }
     incomeTaxPreparationImage: file(
-      relativePath: { eq: "1.0 Homepage/3.3 Income Tax Prep desktop.jpg" }
+      relativePath: { eq: "1.0 Homepage/IncomeTax desktop - Copy.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 300)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
       }
     }
     heroDesktop: file(relativePath: { eq: "home/1.0 Hero desktop.jpg" }) {
