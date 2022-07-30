@@ -4,6 +4,7 @@ import {
     AccordionHeader,
     AccordionBody,
 } from "@material-tailwind/react";
+import "../../sass/global.scss"
 
 export default function Example() {
     const [open, setOpen] = useState(0);
@@ -17,7 +18,7 @@ export default function Example() {
     return (
             <Fragment>
                 <Accordion open={open === 1} onClick={() => handleOpen(1)}>
-                    <AccordionHeader className="text-xl">
+                    <AccordionHeader className="text-xl subheader">
                         <p className="my-0  w-11/12 text-left">What expenses can I deduct through my business?</p>
                     </AccordionHeader>
                     <AccordionBody>
@@ -45,7 +46,7 @@ export default function Example() {
                     </AccordionBody>
                 </Accordion>
                 <Accordion open={open === 2} onClick={() => handleOpen(2)}>
-                    <AccordionHeader className="text-xl">
+                    <AccordionHeader className="text-xl subheader">
                         <p className="my-0 w-11/12 text-left">
                             We're not always 8" How do I know whether I need to make estimated
                             tax payments throughout the year?
@@ -60,7 +61,7 @@ export default function Example() {
                     </AccordionBody>
                 </Accordion>
                 <Accordion open={open === 3} onClick={() => handleOpen(3)}>
-                    <AccordionHeader className="text-xl">
+                    <AccordionHeader className="text-xl subheader">
                         <p className="my-0 w-11/12 text-left">
                             When should an LLC become an Scorp?
                         </p>
