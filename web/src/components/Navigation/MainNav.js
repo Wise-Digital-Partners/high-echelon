@@ -8,7 +8,8 @@ import Burger from "./Burger";
 import OffCanvas from "../OffCanvas/OffCanvas";
 import ButtonSolid from "../Button/ButtonSolid";
 import ButtonSolidGold from "../Button/ButtonSolidGold";
-// import ButtonGhost from "../Button/ButtonGhost";
+import ButtonGhost from "../Button/ButtonGhost";
+import ButtonWire from "../Button/ButtonWire";
 import {
   Accordion,
   AccordionItem,
@@ -191,7 +192,7 @@ const MainNav = ({
               </div>
               <div className="lg:hidden">
                 <GatsbyImage
-                  image={initialLogo}
+                  image={data.mobileLogo.childImageSharp.gatsbyImageData}
                   alt="MacAsh Home Loans Logo"
                   className="md:h-[64px] md:w-[310px] sm:h-[30px] sm:w-[200px]"
                 />
@@ -237,7 +238,7 @@ const MainNav = ({
                         <AniLink
                           fade
                           to={item.href}
-                          className="group inline-flex items-center justify-between w-full relative font-body text-xl font-medium text-primary-900 hover:text-primary-900"
+                          className="group inline-flex items-center justify-between w-full relative text-primary-200 hover:text-primary-100"
                         >
                           <span>{item.name}</span>
                           {/* <i className="far fa-arrow-right text-xl text-gray-900 group-hover:text-gray-900 relative left-0 group-hover:left-2 transition-all duration-300 ease-linear"></i> */}
@@ -308,19 +309,19 @@ const MainNav = ({
                     <li>
                       <AccordionItem uuid={1}>
                         <AccordionItemButton className="flex items-center focus:outline-none">
-                          <p className="text-lg text-primary-200 hover:text-primary-500 no-underline mb-10 transition-colors duration-300 ease-linear">
+                          <p className="text-lg text-primary-200 hover:text-primary-100 no-underline mb-4 transition-colors duration-300 ease-linear">
                             Services
                           </p>
                         </AccordionItemButton>
 
                         <AccordionItemPanel className="pt-6">
                           <ul className="flex flex-col space-y-3">
-                            {navigation.loanPrograms.map((item) => (
+                            {navigation.loanPrograms.slice(1).map((item) => (
                               <li key={item.name} className="whitespace-nowrap">
                                 <AniLink
                                   fade
                                   to={item.href}
-                                  className="relative block text-primary-200 hover:text-primary-500"
+                                  className="relative block text-primary-200 hover:text-primary-100"
                                 >
                                   {item.name}
                                 </AniLink>
@@ -337,7 +338,7 @@ const MainNav = ({
                         to="/about/"
                         onKeyDown={clickHandler}
                         onClick={clickHandler}
-                        className="text-lg text-primary-200 hover:text-primary-500 no-underline transition-colors duration-300 ease-linear"
+                        className="text-lg text-primary-200 hover:text-primary-100 no-underline transition-colors duration-300 ease-linear pt-3"
                       >
                         About
                       </AniLink>
@@ -349,7 +350,7 @@ const MainNav = ({
                         to="/reviews/"
                         onKeyDown={clickHandler}
                         onClick={clickHandler}
-                        className="text-lg text-primary-200 hover:text-primary-500 no-underline transition-colors duration-300 ease-linear"
+                        className="text-lg text-primary-200 hover:text-primary-100 no-underline transition-colors duration-300 ease-linear"
                       >
                         Reviews
                       </AniLink>
@@ -360,7 +361,7 @@ const MainNav = ({
                         data-modal-open="modal-contact"
                         onKeyDown={clickHandler}
                         onClick={clickHandler}
-                        className="text-lg text-primary-200 hover:text-primary-500 no-underline cursor-pointer transition-colors duration-300 ease-linear"
+                        className="text-lg text-primary-200 hover:text-primary-100 no-underline cursor-pointer transition-colors duration-300 ease-linear"
                       >
                         Client Portal
                       </AniLink>
@@ -371,7 +372,12 @@ const MainNav = ({
                 <ButtonSolidGold
                   href="/Contact US/"
                   text="Contact"
-                  className="w-full"
+                  className="w-full mb-4 border-1"
+                />
+                <ButtonWire
+                  href="/"
+                  className="w-full text-primary-100"
+                  text="Book a Call"
                 />
               </div>
             </OffCanvas>

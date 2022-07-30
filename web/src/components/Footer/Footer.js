@@ -168,7 +168,7 @@ const Footer = ({ hideFooter }) => {
                     <AniLink
                         fade
                         to="/accounting/"
-                        className="font-heading hover:text-primary-400"
+                        className="font-heading hover:text-primary-100"
                       >
                       Accounting
                     </AniLink>                
@@ -177,7 +177,7 @@ const Footer = ({ hideFooter }) => {
                     <AniLink
                         fade
                         to="/tax/"
-                        className="font-heading hover:text-primary-400"
+                        className="font-heading hover:text-primary-100"
                       >
                       Tax Preparation
                     </AniLink>                
@@ -186,7 +186,7 @@ const Footer = ({ hideFooter }) => {
                     <AniLink
                         fade
                         to="/consulting/"
-                        className="font-heading hover:text-primary-400"
+                        className="font-heading hover:text-primary-100"
                       >
                       Consulting
                     </AniLink>                
@@ -195,7 +195,7 @@ const Footer = ({ hideFooter }) => {
                     <AniLink
                         fade
                         to="/payroll/"
-                        className="font-heading hover:text-primary-400"
+                        className="font-heading hover:text-primary-100"
                       >
                       Payroll Management
                     </AniLink>                
@@ -255,7 +255,7 @@ const Footer = ({ hideFooter }) => {
                   <AniLink
                     fade
                     to="/privacy-policy/"
-                    className="text-gray-50 hover:text-primary-400 no-underline"
+                    className="text-gray-50 hover:text-primary-100 no-underline"
                   >
                     Privacy Policy
                   </AniLink>
@@ -264,7 +264,7 @@ const Footer = ({ hideFooter }) => {
                   <AniLink
                     fade
                     to="/privacy-policy/"
-                    className="text-gray-50 hover:text-primary-400 no-underline"
+                    className="text-gray-50 hover:text-primary-100 no-underline"
                   >
                     Accessibility Statement
                   </AniLink>
@@ -272,7 +272,7 @@ const Footer = ({ hideFooter }) => {
 
                 <li className="w-full md:w-auto mt-6 md:mt-0">
                   <a
-                    className="no-underline text-gray-50 hover:text-primary-400 flex items-center justify-center lg:justify-start space-x-1"
+                    className="no-underline text-gray-50 hover:text-primary-100 flex items-center justify-center lg:justify-start space-x-1"
                     href="https://www.wisedigitalpartners.com/affordable-web-design/"
                     target="_blank"
                     rel="noopener noreferrer"

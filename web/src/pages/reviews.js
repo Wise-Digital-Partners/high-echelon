@@ -5,6 +5,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 import SearchEngineOptimization from "../components/SEO";
 import ButtonSolid from "../components/Button/ButtonSolid";
+import ButtonSolidGold from "../components/Button/ButtonSolidGold";
 import Hero from "../components/Hero/HeroFullWidth";
 import ReviewsGrid from "../components/Reviews/ReviewsGrid";
 import CallToAction from "../components/Repeating/CTA";
@@ -30,7 +31,7 @@ const Page = ({ data }) => {
             Don’t just take our word for it—hear feedback directly from our clients.
           </p>
 
-          <ButtonSolid href="/review-us/" text="Leave a Review" />
+          <ButtonSolidGold href="/review-us/" text="Leave a Review" />
         </div>
       </Hero>
 
@@ -39,8 +40,9 @@ const Page = ({ data }) => {
           <ReviewsGrid gridLayout="masonry" />
         </div>
       </section>
-
+      <svg className="w-full" width="1200" height="3" viewBox="0 0 1200 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5h1200" stroke="url(#paint0_linear_1129_1425)" stroke-width="3"/><defs><linearGradient id="paint0_linear_1129_1425" x1="0" y1="2.00435" x2="1182.95" y2="1.96651" gradientUnits="userSpaceOnUse"><stop stop-color="#A2A09D" stop-opacity="0"/><stop offset=".145833" stop-color="#FCE4A7"/><stop offset=".265625" stop-color="#CFA855"/><stop offset=".427083" stop-color="#FCE4A7"/><stop offset=".578125" stop-color="#F0D592"/><stop offset=".713542" stop-color="#FCE4A7"/><stop offset=".828125" stop-color="#CB9636"/><stop offset="1" stop-color="#A7A7A7" stop-opacity="0"/></linearGradient></defs></svg>
       <CallToAction />
+      <svg className="w-full" width="1200" height="3" viewBox="0 0 1200 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5h1200" stroke="url(#paint0_linear_1129_1425)" stroke-width="3"/><defs><linearGradient id="paint0_linear_1129_1425" x1="0" y1="2.00435" x2="1182.95" y2="1.96651" gradientUnits="userSpaceOnUse"><stop stop-color="#A2A09D" stop-opacity="0"/><stop offset=".145833" stop-color="#FCE4A7"/><stop offset=".265625" stop-color="#CFA855"/><stop offset=".427083" stop-color="#FCE4A7"/><stop offset=".578125" stop-color="#F0D592"/><stop offset=".713542" stop-color="#FCE4A7"/><stop offset=".828125" stop-color="#CB9636"/><stop offset="1" stop-color="#A7A7A7" stop-opacity="0"/></linearGradient></defs></svg>
     </Layout>
   );
 };
