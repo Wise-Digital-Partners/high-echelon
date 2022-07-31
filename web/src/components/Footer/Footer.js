@@ -246,38 +246,38 @@ const Footer = ({ hideFooter }) => {
               </div>
             </div>
             <div className="lg:flex lg:items-center mb-8 lg:mb-0 text-sm">
-              <ul className="flex items-center flex-wrap space-x-4 justify-center lg:justify-start">
+              <ul className="block md:flex md:items-center md:flex-wrap space-x-4 justify-center text-center lg:justify-start">
                 <li className="text-gray-50">
                   © {getYear()} High Echelon
                 </li>
-
-                <li>
-                  <AniLink
-                    fade
-                    to="/privacy-policy/"
-                    className="text-gray-50 hover:text-primary-100 no-underline"
-                  >
-                    Privacy Policy
-                  </AniLink>
-                </li>
-                <li>
-                  <AniLink
-                    fade
-                    to="/privacy-policy/"
-                    className="text-gray-50 hover:text-primary-100 no-underline"
-                  >
-                    Accessibility Statement
-                  </AniLink>
-                </li>
-
-                <li className="w-full md:w-auto mt-6 md:mt-0">
+                <div className="flex justify-center mt-6 md:mt-0">
+                  <li className="mr-3">
+                    <AniLink
+                      fade
+                      to="/privacy-policy/"
+                      className="text-gray-50 hover:text-primary-100 no-underline"
+                    >
+                      Privacy Policy
+                    </AniLink>
+                  </li>
+                  <li>
+                    <AniLink
+                      fade
+                      to="/privacy-policy/"
+                      className="text-gray-50 hover:text-primary-100 no-underline"
+                    >
+                      Accessibility Statement
+                    </AniLink>
+                  </li>
+                </div>
+                <li className="block md:flex w-full md:w-auto mt-6 md:mt-0">
                   <a
                     className="no-underline text-gray-50 hover:text-primary-100 flex items-center justify-center lg:justify-start space-x-1"
                     href="https://www.wisedigitalpartners.com/affordable-web-design/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span>Powered by</span>{" "}
+                    <p className="text-primary-200 mb-0 text-sm">Powered by</p>{" "}
                     <img src={nestLogo} alt="NEST logo" />
                   </a>
                 </li>

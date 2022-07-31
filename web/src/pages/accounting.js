@@ -90,7 +90,7 @@ const Page = ({ data }) => {
                     failure and success—you’ll want accurate data, and we deliver.
                 </p>
             </div>
-            <div className="flex justify-center items-center md:pt-32 md:pb-32 pb-20">
+            <div className="hidden md:block flex justify-center items-center md:pt-32 md:pb-32 pb-20">
                 <svg
                     height="3"
                     viewBox="0 0 1094 3"
@@ -122,6 +122,23 @@ const Page = ({ data }) => {
                     </linearGradient>
                     </defs>
                 </svg>
+            </div>
+            <div className="md:hidden flex justify-center items-center md:pt-32 md:pb-32 pb-20">
+              <svg width="324" height="2" viewBox="0 0 324 2" fill="none" xmlns="http://www.w3.org/2000/svg" className="mb-7">
+                <line x1="0.900024" y1="1" x2="323.1" y2="1" stroke="url(#paint0_linear_1192_6745)" stroke-width="2"/>
+                <defs>
+                  <linearGradient id="paint0_linear_1192_6745" x1="0.900024" y1="2.50435" x2="315.429" y2="2.50107" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#A2A09D" stop-opacity="0"/>
+                  <stop offset="0.145833" stop-color="#CB9636"/>
+                  <stop offset="0.265625" stop-color="#CFA855"/>
+                  <stop offset="0.427083" stop-color="#FCE4A7"/>
+                  <stop offset="0.578125" stop-color="#F0D592"/>
+                  <stop offset="0.713542" stop-color="#CFA855"/>
+                  <stop offset="0.828125" stop-color="#CB9636"/>
+                  <stop offset="1" stop-color="#A7A7A7" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+              </svg>
             </div>
         </section>
 
