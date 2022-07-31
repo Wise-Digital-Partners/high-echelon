@@ -298,7 +298,7 @@ const MainNav = ({
               aria-controls="offcanvas-navigation"
             />
 
-            {/* Mobile Nav */}
+            {/* Mobile Nav  */}
             <OffCanvas offcanvasOpen={offcanvasOpen} id="offcanvas-navigation" className=" bg-primary-700">
               <div className="px-7 py-12">
                 <ul id="navigation-mobile" className="mb-12">
