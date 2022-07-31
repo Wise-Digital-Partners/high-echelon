@@ -299,8 +299,8 @@ const MainNav = ({
             />
 
             {/* Mobile Nav  */}
-            <OffCanvas offcanvasOpen={offcanvasOpen} id="offcanvas-navigation" className=" bg-primary-700">
-              <div className="px-7 py-12">
+            <OffCanvas offcanvasOpen={offcanvasOpen} id="offcanvas-navigation" className="bg-primary-700">
+              <div className="px-7 py-12 bg-primary-700">
                 <ul id="navigation-mobile" className="mb-12">
                   <Accordion
                     allowZeroExpanded={true}
