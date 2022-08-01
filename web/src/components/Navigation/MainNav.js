@@ -127,6 +127,7 @@ const MainNav = ({
       },
     ],
   };
+
   return (
     <nav
       id="main-navigation"
@@ -212,7 +213,7 @@ const MainNav = ({
             >
               <AniLink
                 fade
-                to="/home-purchase/"
+                to="/"
                 className={`font-body relative text-base font-semibold pb-8 after:absolute after:bottom-6 after:h-1 after:bg-primary-100 after:transition-all after:duration-300 after:ease-linear ${
                   subMenuHovering1
                     ? "after:w-full after:left-0 after:right-auto"
@@ -239,7 +240,7 @@ const MainNav = ({
                           to={item.href}
                           className="group inline-flex items-center justify-between w-full relative text-black hover:text-primary-100"
                         >
-                          <span>{item.name}</span>
+                          <p className="mb-0">{item.name}</p>
                           {/* <i className="far fa-arrow-right text-xl text-gray-900 group-hover:text-gray-900 relative left-0 group-hover:left-2 transition-all duration-300 ease-linear"></i> */}
                         </AniLink>
                       </li>
@@ -298,8 +299,8 @@ const MainNav = ({
             />
 
             {/* Mobile Nav  */}
-            <OffCanvas offcanvasOpen={offcanvasOpen} id="offcanvas-navigation" className="bg-primary-700">
-              <div className="px-7 py-12 bg-primary-700">
+            <OffCanvas offcanvasOpen={offcanvasOpen} id="offcanvas-navigation" className=" bg-primary-700">
+              <div className="px-7 py-12">
                 <ul id="navigation-mobile" className="mb-12">
                   <Accordion
                     allowZeroExpanded={true}

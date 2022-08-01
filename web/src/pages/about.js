@@ -145,7 +145,7 @@ const Page = ({ data }) => {
                   <div className="md:mx-100 mx-8">
                     <div className="flex">
                         <i className="fa fa-check text-primary-100 mr-4 text-2xl"></i>
-                        <p className="text-base font-semibold mb-4">styleName: Body Medium/Medium-Semi-bold;</p>
+                        <p className="text-base font-semibold mb-4">The BEST accounting, tax, and payroll services</p>
                     </div>
                     <div className="flex">
                         <i className="fa fa-check text-primary-100 mr-4 text-2xl"></i>
@@ -153,7 +153,7 @@ const Page = ({ data }) => {
                     </div>
                     <div className="flex">
                         <i className="fa fa-check text-primary-100 mr-4 text-2xl"></i>
-                        <p className="text-base font-semibold mb-4">The BEST accounting, tax, and payroll services</p>
+                        <p className="text-base font-semibold mb-4">The BEST automation and security</p>
                     </div>
                   </div>
                 </div>

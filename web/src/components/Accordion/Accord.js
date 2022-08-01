@@ -38,25 +38,23 @@ export default function Example() {
                             <li>Professional services (legal, accounting, etc.)</li>
                             <li>Professional subscriptions</li>
                         </ul>
-                        <p className="mt-4 mb-0">
-                            We're not always in the position that we want to be at. We're
-                            constantly growing. We're constantly making mistakes. We're constantly
-                            trying to express ourselves and actualize our dreams.
-                        </p>
                     </AccordionBody>
                 </Accordion>
                 <Accordion open={open === 2} onClick={() => handleOpen(2)}>
                     <AccordionHeader className="text-xl subheader">
                         <p className="my-0 w-11/12 text-left">
-                            We're not always 8" How do I know whether I need to make estimated
-                            tax payments throughout the year?
+                            How do I know whether I need to make estimated tax payments throughout the year?
                         </p>
                     </AccordionHeader>
                     <AccordionBody>
                         <p className="mb-0">
-                            We're not always in the position that we want to be at. We're
-                            constantly growing. We're constantly making mistakes. We're constantly
-                            trying to express ourselves and actualize our dreams.
+                        Most tax-paying citizens fulfill the estimated tax payment requirement
+                        through the federal and state withholdings that are withheld via payroll. 
+
+                        However, you're not on someone else's payroll when you're self-employed.
+                        The rule is that if you expect to owe more than $1,000 in taxes (earning
+                        roughly $5,000 in self-employment income), you're required to pay estimated taxes.
+
                         </p>
                     </AccordionBody>
                 </Accordion>
@@ -68,9 +66,9 @@ export default function Example() {
                     </AccordionHeader>
                     <AccordionBody>
                         <p className="mb-0">
-                            in the position that we want to be at. We're
-                            constantly growing. We're constantly making mistakes. We're constantly
-                            trying to express ourselves and actualize our dreams.
+                            Tax advisors will tell you it's wise to convert an LLC into an S corp
+                            when the self-employment tax exceeds the tax burden the S corp faces.
+                            In general, if your business has around $40,000 of net income, you should consider converting to an S corp.
                         </p>
                     </AccordionBody>
                 </Accordion>

@@ -45,7 +45,7 @@ const Page = ({ data }) => {
                           Atlanta Small Business Accounting Services
                         </h2>
                         <p className="font-light text-base text-primary-200">
-                          You can’t manage a business without accurate financial statements. We can get you there.
+                          Looking to get started or need to restructure? Need to talk it out? We know the path.
                         </p>
                         <ButtonSolidGold
                             className="font-light"
@@ -67,7 +67,7 @@ const Page = ({ data }) => {
                           Atlanta Small Business Accounting Services
                         </h2>
                         <p className="font-light text-xl text-primary-200">
-                          You can’t manage a business without accurate financial statements. We can get you there.
+                          Looking to get started or need to restructure? Need to talk it out? We know the path.
                         </p>
                         <ButtonSolidGold
                             className="font-light"
@@ -81,13 +81,10 @@ const Page = ({ data }) => {
 
         <section className="mt-12 flex justify-content items-center flex-col">
             <div className="flex justify-content items-center flex-col md:mx-88 md:min-w-120 sm:mx-8 px-7">
-                <p className="text-4xl-x font-thin mb-6 text-center md:text-start">The Key To Good Business</p>
+                <p className="text-4xl-x font-thin mb-6 text-center md:text-start">Get Expert Advice. Make Strategic Moves</p>
                 <p className="text-xl font-light leading-7 text-center md:text-start mb-10 md:mb-0">
-                    When you have a clear understanding of your
-                    financials, you can make smart business decisions
-                    and gain valuable insights that’ll help you plan
-                    for the future. It can mean the difference between
-                    failure and success—you’ll want accurate data, and we deliver.
+                  Are you just getting started? Deciding how to structure your new business is a critical
+                  first step and can have enormous implications. Or are you already operating a business and need to make a shift? Smart advice starts here.
                 </p>
             </div>
             <div className="hidden md:block flex justify-center items-center md:pt-32 md:pb-32 pb-20">
@@ -164,7 +161,7 @@ const Page = ({ data }) => {
                             <div className="text-base font-light">
                                 <div className="flex">
                                     <i className="fa fa-check text-primary-100 mr-3"></i>
-                                    <p className="text-base font-semibold mb-3">Reconcile your bank and credit card statements</p>
+                                    <p className="text-base font-semibold mb-3">Entity formation</p>
                                 </div>
                                 <div className="flex">
                                     <i className="fa fa-check text-primary-100 mr-3"></i>
@@ -243,12 +240,10 @@ const Page = ({ data }) => {
                 <div className="gap-y-8 md:gap-x-10 lg:gap-x-16">
                     <div className="mb-8 flex justify-center items-center flex-col">
                         <h3 className="text-primary-700 text-4xl font-thin mb-12">
-                            We are Here To Make Your Business Better
+                          Streamline Everything. Get The Full Benefit.
                         </h3>
                         <p className="md:w-2/3 sm:w-full italic text-xl md:text-base sm:text-base font-light mb-12">
-                            Get streamlined end-to-end services for everything from entity
-                            formation to accounting, payroll, and taxes. It’s all here, in a
-                            single, full-stack solution that simplifies it all.
+                          Get the best results when you combine our expert advice with end-to-end services that manage your finances in a full-stack solution
                         </p>
                     </div>
                     <div className="md:flex sm:block">
@@ -259,17 +254,16 @@ const Page = ({ data }) => {
                                 data.accountingStartImage.childImageSharp
                                 .gatsbyImageData
                             }
-                            alt="Small Business Consulting"
+                            alt="Accounting Services"
                             className="mb-6 rounded-[8px] w-full"
                             />
                           </div>
                             <div className="justify-center flex-col py-2">
                                 <h3 className="text-lg mb-4 text-primary-700">
-                                    Small Business Consulting
+                                  Accounting Services
                                 </h3>
                                 <p className="text-base">
-                                    Need advice or help in navigating the best way to form your
-                                    business? Talk with the experts.
+                                  Gain a clear understanding of your financials so you can make smart business decisions.
                                 </p>
                             </div>
                         </AniLink>
@@ -279,17 +273,16 @@ const Page = ({ data }) => {
                               image={
                                   data.accountServicesImage.childImageSharp.gatsbyImageData
                               }
-                              alt="Accounting Services"
+                              alt="Payroll Management"
                               className="mb-6 rounded-[8px] h-60 w-full"
                               />
                             </div>
                             <div className="justify-center flex-col py-2">
                                 <h3 className="text-lg mb-4 text-primary-700">
-                                    Accounting Services
+                                  Payroll Management
                                 </h3>
                                 <p className="text-base">
-                                    Receive accurate, secure delivery of monthly, quarterly, and
-                                    annual financial statements.
+                                  Lighten your load with automated payroll processing, hiring, and termination.
                                 </p>    
                             </div>
                         </AniLink>
@@ -300,17 +293,16 @@ const Page = ({ data }) => {
                                 data.smallBusinessConsultingImage.childImageSharp
                                 .gatsbyImageData
                             }
-                            alt="Small Business Consulting"
+                            alt="Income Tax Preparation"
                             className="mb-6 rounded-[8px] h-60 max-w-140"
                             />
                           </div>
                             <div className="justify-center flex-col py-2">
                             <h3 className="text-lg mb-4 text-primary-700">
-                                Payroll Management
+                              Income Tax Preparation
                             </h3>
                             <p className="text-base">
-                                Get lightweight, user-friendly, cost-efficient payroll
-                                processing, and hiring/termination automation.
+                              Remove the stress of taxes with professional tax preparation and an IRS liaison.
                             </p>
                             </div>
                         </AniLink>

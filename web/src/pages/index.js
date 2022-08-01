@@ -298,7 +298,7 @@ const Page = ({ data }) => {
                       Income Tax Preparation
                     </h3>
                     <p className="text-base">
-                      Get propt tax preparation for yourself or your business,
+                      Get prompt tax preparation for yourself or your business,
                       including help with complicated returns.
                     </p>
                   </div>
