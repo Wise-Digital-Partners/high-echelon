@@ -109,7 +109,7 @@ const Header = ({
       {/* <PromoBar /> */}
       <UtilityNav />
       <MainNav
-        // scrolled={scrolled}
+        scrolled={scrolled}
         headerStyle={headerStyle}
         headerLinkColor={headerLinkColor}
         headerHasBorder={headerHasBorder}
