@@ -127,7 +127,6 @@ const MainNav = ({
       },
     ],
   };
-
   return (
     <nav
       id="main-navigation"

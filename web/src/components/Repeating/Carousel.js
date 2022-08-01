@@ -48,7 +48,7 @@ const Carousel = () => {
                         index==currentIndex ? (
                             <div 
                                 key={index}
-                                className="relative text-primary-700 gap-y-10 py-6 md:px-44 pt-24 md:pt-16 bg-primary-500">
+                                className="relative overflow-hidden text-primary-700 gap-y-10 py-6 md:px-44 pt-24 md:pt-16 bg-primary-500">
                                 <div className="text-center">
                                     <p className="text-xl font-black mb-1">{resource.name}</p>
                                     <p className="text-sm font-gray-300">{resource.subname}</p>
