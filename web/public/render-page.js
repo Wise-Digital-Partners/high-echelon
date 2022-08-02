@@ -15929,7 +15929,7 @@ const Footer = ({
     href: "https://www.instagram.com/macashhomeloans/?hl=en",
     target: "_blank",
     rel: "noopener noreferrer",
-    className: "flex justify-center items-center text-white hover:bg-primary-400 transition-colors duration-300 ease-linear"
+    className: "flex justify-center items-center text-white hover:bg-primary-600 transition-colors duration-300 ease-linear"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("svg", {
     width: "24",
     height: "24",
@@ -15947,7 +15947,7 @@ const Footer = ({
     href: "https://www.facebook.com/MacAshHomeLoans1",
     target: "_blank",
     rel: "noopener noreferrer",
-    className: "flex justify-center items-center text-white hover:bg-primary-400 transition-colors duration-300 ease-linear"
+    className: "flex justify-center items-center text-white hover:bg-primary-600 transition-colors duration-300 ease-linear"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("svg", {
     width: "14",
     height: "22",
@@ -15963,7 +15963,7 @@ const Footer = ({
     href: "https://www.twitter.com/MacAshHomeLoans1",
     target: "_blank",
     rel: "noopener noreferrer",
-    className: "flex justify-center items-center text-white hover:bg-primary-400 transition-colors duration-300 ease-linear"
+    className: "flex justify-center items-center text-white hover:bg-primary-600 transition-colors duration-300 ease-linear"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("svg", {
     width: "24",
     height: "24",
@@ -17379,7 +17379,7 @@ const Carousel = () => {
     className: "flex items-center justify-center"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
     onClick: movePrev,
-    className: "mr-2 hidden md:block"
+    className: "mr-2"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("i", {
     onClick: movePrev,
     className: "fa fa-arrow-circle-left mr-3 text-primary-100 text-4xl"
@@ -17402,7 +17402,7 @@ const Carousel = () => {
     }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
       src: _images_home_verify_png__WEBPACK_IMPORTED_MODULE_3__["default"],
       alt: "verify button",
-      className: "h-6 w-24"
+      className: "h-6 w-24 z-5"
     })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
       className: "bg-primary-500 p-7 h-32"
     }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
@@ -17418,7 +17418,7 @@ const Carousel = () => {
     }))) : (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null);
   })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
     onClick: moveNext,
-    className: "ml-2 hidden md:block"
+    className: "ml-2"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("i", {
     onClick: moveNext,
     className: "fa fa-arrow-circle-right ml-3 font-thin text-primary-100 text-4xl"

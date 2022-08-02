@@ -254,7 +254,7 @@ const Footer = ({ hideFooter }) => {
                   <li className="mr-3">
                     <AniLink
                       fade
-                      to="/privacy-policy/"
+                      to="/"
                       className="text-gray-50 hover:text-primary-100 no-underline"
                     >
                       Privacy Policy
@@ -263,7 +263,7 @@ const Footer = ({ hideFooter }) => {
                   <li>
                     <AniLink
                       fade
-                      to="/privacy-policy/"
+                      to="/"
                       className="text-gray-50 hover:text-primary-100 no-underline"
                     >
                       Accessibility Statement

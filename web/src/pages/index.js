@@ -225,7 +225,7 @@ const Page = ({ data }) => {
                     </p>
                   </div>
                   <ButtonGhost
-                      href="/"
+                      href="/consulting/"
                       text="Learn More"
                       className="lg:hidden md:hidden w-[100px] h-[40px]"
                   />
@@ -250,7 +250,7 @@ const Page = ({ data }) => {
                     </p>
                   </div>
                   <ButtonGhost
-                      href="/"
+                      href="/accounting/"
                       text="Learn More"
                       className="lg:hidden md:hidden w-[100px] h-[40px]"
                   />
@@ -277,7 +277,7 @@ const Page = ({ data }) => {
                     </p>
                   </div>
                   <ButtonGhost
-                      href="/"
+                      href="/payroll/"
                       text="Learn More"
                       className="lg:hidden md:hidden w-[100px] h-[40px]"
                   />
@@ -303,7 +303,7 @@ const Page = ({ data }) => {
                     </p>
                   </div>
                   <ButtonGhost
-                      href="/"
+                      href="/tax/"
                       text="Learn More"
                       className="lg:hidden md:hidden w-[100px] h-[40px]"
                   />
