@@ -105,19 +105,19 @@ const MainNav = ({
       },
       {
         name: "Small Business Consulting",
-        href: "/accounting/",
+        href: "/consulting/",
       },
       {
         name: "Account Services",
-        href: "/",
+        href: "/accounting/",
       },
       {
         name: "Payroll Management",
-        href: "/",
+        href: "/payroll/",
       },
       {
         name: "Income Tax Preparation",
-        href: "/",
+        href: "/tax/",
       },
     ],
     about: [

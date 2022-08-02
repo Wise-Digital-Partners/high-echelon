@@ -292,7 +292,7 @@ const Footer = ({ hideFooter }) => {
                       href="https://www.instagram.com/macashhomeloans/?hl=en"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex justify-center items-center text-white hover:bg-primary-400 transition-colors duration-300 ease-linear"
+                      className="flex justify-center items-center text-white hover:bg-primary-600 transition-colors duration-300 ease-linear"
                     >
                       <svg 
                         width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -305,7 +305,7 @@ const Footer = ({ hideFooter }) => {
                       href="https://www.facebook.com/MacAshHomeLoans1"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex justify-center items-center text-white hover:bg-primary-400 transition-colors duration-300 ease-linear"
+                      className="flex justify-center items-center text-white hover:bg-primary-600 transition-colors duration-300 ease-linear"
                     >
                       <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.2124 12.375l.6221-3.98148H8.94471V5.8098c0-1.08925.54338-2.15101 2.28549-2.15101h1.7684V.268984S11.3938 0 9.85953 0C6.65615 0 4.56228 1.90695 4.56228 5.35906v3.03446H1.00146V12.375h3.56082V22h4.38243v-9.625h3.26769z" fill="#fff"/></svg>
                     </a>
@@ -315,7 +315,7 @@ const Footer = ({ hideFooter }) => {
                       href="https://www.twitter.com/MacAshHomeLoans1"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex justify-center items-center text-white hover:bg-primary-400 transition-colors duration-300 ease-linear"
+                      className="flex justify-center items-center text-white hover:bg-primary-600 transition-colors duration-300 ease-linear"
                     >
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.643 4.93708c-.835.37-1.732.62-2.675.733.973-.58221 1.701-1.49854 2.048-2.578-.9141.54299-1.9146.92519-2.958 1.13-.7016-.74914-1.6309-1.24568-2.6437-1.41253-1.0127-.16685-2.0522.00532-2.9571.48978-.9048.48446-1.6244 1.25411-2.047 2.18945-.4227.93534-.5247 1.98405-.2902 2.9833a13.228982 13.228982 0 01-5.31856-1.4131 13.228884 13.228884 0 01-4.28343-3.4549c-.4.69-.63 1.49-.63 2.342a4.660012 4.660012 0 002.072 3.878 4.64708 4.64708 0 01-2.11-.583v.06c-.00007 1.07572.37203 2.11842 1.05318 2.95102.68115.8326 1.62939 1.4039 2.68382 1.617-.68621.1857-1.40566.213-2.104.08.2975.9256.877 1.735 1.65737 2.3149.78037.5799 1.72255.9013 2.69463.9191-1.65017 1.2954-3.68811 1.9981-5.786 1.995a9.499752 9.499752 0 01-1.111998-.065c2.129478 1.3692 4.608338 2.0958 7.139998 2.093 8.56999 0 13.25499-7.098 13.25499-13.25402 0-.2-.005-.402-.014-.602a9.470192 9.470192 0 002.323-2.41l.002-.003z" fill="#fff"/></svg>
                     </a>

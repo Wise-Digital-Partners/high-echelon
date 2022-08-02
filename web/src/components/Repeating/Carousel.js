@@ -19,6 +19,12 @@ const data = [
       name: "RefugioBautista, Elgin, IL",
       subname: "Optional Subheadings",
     },
+    {
+        quote:
+          "There's no contents of this slider. It's a very competitive space but It will be changed soon. I refinanced with him and the entire process was easy, quick, and efficient. I was always kept in the loop from applying to closing and felt like Kevin gave his 100% attention to my loan. Thank you!!",
+        name: "Third Slide, Elgin, IL",
+        subname: "The Last Slider",
+      },
   ];
 
 const Carousel = () => {

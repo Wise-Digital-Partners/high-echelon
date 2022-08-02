@@ -16015,7 +16015,7 @@ const Footer = ({
     href: "https://www.instagram.com/macashhomeloans/?hl=en",
     target: "_blank",
     rel: "noopener noreferrer",
-    className: "flex justify-center items-center text-white hover:bg-primary-400 transition-colors duration-300 ease-linear"
+    className: "flex justify-center items-center text-white hover:bg-primary-600 transition-colors duration-300 ease-linear"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("svg", {
     width: "24",
     height: "24",
@@ -16033,7 +16033,7 @@ const Footer = ({
     href: "https://www.facebook.com/MacAshHomeLoans1",
     target: "_blank",
     rel: "noopener noreferrer",
-    className: "flex justify-center items-center text-white hover:bg-primary-400 transition-colors duration-300 ease-linear"
+    className: "flex justify-center items-center text-white hover:bg-primary-600 transition-colors duration-300 ease-linear"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("svg", {
     width: "14",
     height: "22",
@@ -16049,7 +16049,7 @@ const Footer = ({
     href: "https://www.twitter.com/MacAshHomeLoans1",
     target: "_blank",
     rel: "noopener noreferrer",
-    className: "flex justify-center items-center text-white hover:bg-primary-400 transition-colors duration-300 ease-linear"
+    className: "flex justify-center items-center text-white hover:bg-primary-600 transition-colors duration-300 ease-linear"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("svg", {
     width: "24",
     height: "24",
@@ -16745,16 +16745,16 @@ const MainNav = ({
       href: "/"
     }, {
       name: "Small Business Consulting",
-      href: "/accounting/"
+      href: "/consulting/"
     }, {
       name: "Account Services",
-      href: "/"
+      href: "/accounting/"
     }, {
       name: "Payroll Management",
-      href: "/"
+      href: "/payroll/"
     }, {
       name: "Income Tax Preparation",
-      href: "/"
+      href: "/tax/"
     }],
     about: [{
       name: "About",
@@ -17352,6 +17352,10 @@ const data = [{
   quote: "There's no shortage of lenders and brokers out there. It's a very competitive space but Kevin set the bar high. I refinanced with him and the entire process was easy, quick, and efficient. I was always kept in the loop from applying to closing and felt like Kevin gave his 100% attention to my loan. Thank you!!",
   name: "RefugioBautista, Elgin, IL",
   subname: "Optional Subheadings"
+}, {
+  quote: "There's no contents of this slider. It's a very competitive space but It will be changed soon. I refinanced with him and the entire process was easy, quick, and efficient. I was always kept in the loop from applying to closing and felt like Kevin gave his 100% attention to my loan. Thank you!!",
+  name: "Third Slide, Elgin, IL",
+  subname: "The Last Slider"
 }];
 
 const Carousel = () => {
@@ -17378,7 +17382,7 @@ const Carousel = () => {
     className: "mr-2 hidden md:block"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("i", {
     onClick: movePrev,
-    className: "fa fa-arrow-circle-left mr-3 font-thin text-primary-100 text-4xl"
+    className: "fa fa-arrow-circle-left mr-3 text-primary-100 text-4xl"
   })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
     className: "my-12 mb-12 flex items-center"
   }, data.map((resource, index) => {

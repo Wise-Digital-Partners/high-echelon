@@ -42,10 +42,10 @@ const Page = ({ data }) => {
                     </div>
                     <div className="md:absolute bg-primary-700 shadow-inner md:col-start-6 md:col-span-7 p-20">
                         <h2 className="font-light text-5xl text-primary-200 mb-6">
-                          Small Business Accounting Services in Greater Atlanta
+                          Atlanta Small Business Accounting Services
                         </h2>
                         <p className="font-light text-base text-primary-200">
-                          You can’t manage a business without accurate financial statements. We can get you there.
+                          Looking to get started or need to restructure? Need to talk it out? We know the path.
                         </p>
                         <ButtonSolidGold
                             className="font-light"
@@ -64,10 +64,10 @@ const Page = ({ data }) => {
                     </div>
                     <div className="z-20 mt-[-128px] mx-4 bg-primary-700 shadow-inner py-10 px-6">
                         <h2 className="text-primary-200 font-light text-4xl">
-                          Small Business Accounting Services in Greater Atlanta
+                          Atlanta Small Business Consulting Services
                         </h2>
                         <p className="font-light text-xl text-primary-200">
-                          You can’t manage a business without accurate financial statements. We can get you there.
+                          Looking to get started or need to restructure? Need to talk it out? We know the path.
                         </p>
                         <ButtonSolidGold
                             className="font-light"
@@ -81,11 +81,10 @@ const Page = ({ data }) => {
 
         <section className="mt-12 flex justify-content items-center flex-col">
             <div className="flex justify-content items-center flex-col md:mx-88 md:min-w-120 sm:mx-8 px-7">
-                <p className="text-4xl-x font-thin mb-6 text-center md:text-start">The Key To Good Business</p>
+                <p className="text-4xl-x font-thin mb-6 text-center md:text-start">Get Expert Advice. Make Strategic Moves</p>
                 <p className="text-xl font-light leading-7 text-center md:text-start mb-10 md:mb-0">
-                  When you have a clear understanding of your financials, you can make smart business decisions
-                  and gain valuable insights that’ll help you plan for the future. It can mean the difference
-                  between failure and success—you’ll want accurate data, and we deliver.
+                  Are you just getting started? Deciding how to structure your new business is a critical
+                  first step and can have enormous implications. Or are you already operating a business and need to make a shift? Smart advice starts here.
                 </p>
             </div>
             <div className="hidden md:block flex justify-center items-center md:pt-32 md:pb-32 pb-20">
@@ -154,31 +153,28 @@ const Page = ({ data }) => {
                     </div>
                     <div className="flex justify-center flex-col lg:w-1/2 md:w-full md:mb-8 sm:mb-8">
                         <div className="md:pl-10 pl-0">
-                            <p className="text-4xl font-thin mb-6">Our Services & Deliverables</p>
+                            <p className="text-4xl font-thin mb-6">How We Can Help Your Small Business</p>
                             <p className="text-base font-light  mb-6">
-                              You can count on High Echelon to professionally and accurately handle your small business accounting needs. We will:
+                              At High Echelon, we draw on a long history of best practices to help small you move
+                              forward with confidence. Our small business consulting services include:
                             </p>
                             <div className="text-base font-light">
                                 <div className="flex">
                                     <i className="fa fa-check text-primary-100 mr-3"></i>
-                                    <p className="text-base font-semibold mb-3">Reconcile your bank and credit card statements</p>
+                                    <p className="text-base font-semibold mb-3">Entity formation</p>
                                 </div>
                                 <div className="flex">
                                     <i className="fa fa-check text-primary-100 mr-3"></i>
-                                    <p className="text-base font-semibold mb-3">Prepare your monthly/quarterly/annual financial statements</p>
+                                    <p className="text-base font-semibold mb-3">Register a new business at the state and federal level</p>
                                 </div>
                                 <div className="flex">
                                     <i className="fa fa-check text-primary-100 mr-3"></i>
-                                    <p className="text-base font-semibold mb-3">Provide prompt delivery of financial statements on schedule</p>
+                                    <p className="text-base font-semibold mb-3">Talk out the pros and cons of different approaches</p>
                                 </div>
                                 <div className="flex">
                                     <i className="fa fa-check text-primary-100 mr-3"></i>
-                                    <p className="text-base font-semibold mb-3">File your sales tax (within all 50 states)</p>
+                                    <p className="text-base font-semibold mb-3">Advise you on a big purchase or sale that may be on the horizon</p>
                                 </div> 
-                                <div className="flex">
-                                    <i className="fa fa-check text-primary-100 mr-3"></i>
-                                    <p className="text-base font-semibold mb-3">File your property taxes, including your personal and county filings</p>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -209,24 +205,13 @@ const Page = ({ data }) => {
                     </div>
                     <div className="block md:flex justify-center flex-col lg:w-1/2 md:w-full mt-10 md:mt-0">
                         <div className="px-0 md:px-10">
-                            <p className="text-4xl font-thin mb-6">The Next Level</p>
+                            <p className="text-4xl font-thin mb-6">How To Get Started</p>
                             <p className="text-base font-light  mb-6">
-                              We use the latest tools to ensure your data is streamlined and secure. When you partner with us, you get not only exceptional service but also:
+                                We begin with an introductory call at no cost to you.
+                                First, we want to understand your goals and align on expectations,
+                                timeline, and outcomes. And from there, we’ll present you with a
+                                proposal outlining a plan and the associated costs.
                             </p>
-                            <div className="text-base font-light">
-                                <div className="flex">
-                                    <i className="fa fa-check text-primary-100 mr-3"></i>
-                                    <p className="text-base font-semibold mb-3">Efficient, automated onboarding</p>
-                                </div>
-                                <div className="flex">
-                                    <i className="fa fa-check text-primary-100 mr-3"></i>
-                                    <p className="text-base font-semibold mb-3">Bank integration</p>
-                                </div>
-                                <div className="flex">
-                                    <i className="fa fa-check text-primary-100 mr-3"></i>
-                                    <p className="text-base font-semibold mb-3">Secure, encrypted transmission and storage of your sensitive financial information</p>
-                                </div>
-                              </div>
                             <ButtonSolidGold
                                 className="font-light"
                                 href="/about/"
