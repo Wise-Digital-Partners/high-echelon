@@ -44,7 +44,7 @@ const Carousel = () => {
         <div className="flex items-center justify-center">
             <button
             onClick={movePrev}
-            className="mr-2 hidden md:block"
+            className="mr-2"
             >
             <i onClick={movePrev} className="fa fa-arrow-circle-left mr-3 text-primary-100 text-4xl"></i>
             </button>
@@ -66,7 +66,7 @@ const Carousel = () => {
                                     <img
                                         src={verify}
                                         alt="verify button"
-                                        className="h-6 w-24"
+                                        className="h-6 w-24 z-5"
                                     />
                                 </div>
                                 <div className="bg-primary-500 p-7 h-32">
@@ -95,7 +95,7 @@ const Carousel = () => {
             </div>     
             <button
             onClick={moveNext}
-            className="ml-2 hidden md:block"
+            className="ml-2"
         >
             <i onClick={moveNext} className="fa fa-arrow-circle-right ml-3 font-thin text-primary-100 text-4xl"></i>
             </button>
