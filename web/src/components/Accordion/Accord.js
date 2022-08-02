@@ -22,22 +22,19 @@ export default function Example() {
                         <p className="my-0  w-11/12 text-left text-xl">What expenses can I deduct through my business?</p>
                     </AccordionHeader>
                     <AccordionBody>
-                        <ul>
-                            <p>The most commonly deducted business expenses are:</p>
-                            <li className="text-base">Salaries and employee benefits</li>
-                            <li className="text-base">Office expenses and supplies</li>
-                            <li className="text-base">Advertising</li>
-                            <li className="text-base">Rent or mortgage</li>
-                            <li className="text-base">Rent or mortgage</li>
-                            <li className="text-base">Business insurance</li>
-                            <li className="text-base">Taxes</li>
-                            <li className="text-base">Depreciation</li>
-                            <li className="text-base">Utilities</li>
-                            <li className="text-base">Loan interest payments</li>
-                            <li className="text-base">Repairs and maintenance</li>
-                            <li className="text-base">Professional services (legal, accounting, etc.)</li>
-                            <li className="text-base">Professional subscriptions</li>
-                        </ul>
+                        <p>The most commonly deducted business expenses are:</p>
+                        <li className="text-base">Salaries and employee benefits</li>
+                        <li className="text-base">Office expenses and supplies</li>
+                        <li className="text-base">Advertising</li>
+                        <li className="text-base">Rent or mortgage</li>
+                        <li className="text-base">Business insurance</li>
+                        <li className="text-base">Taxes</li>
+                        <li className="text-base">Depreciation</li>
+                        <li className="text-base">Utilities</li>
+                        <li className="text-base">Loan interest payments</li>
+                        <li className="text-base">Repairs and maintenance</li>
+                        <li className="text-base">Professional services (legal, accounting, etc.)</li>
+                        <li className="text-base">Professional subscriptions</li>
                     </AccordionBody>
                 </Accordion>
                 <Accordion open={open === 2} onClick={() => handleOpen(2)}>

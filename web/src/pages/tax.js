@@ -42,14 +42,15 @@ const Page = ({ data }) => {
                     </div>
                     <div className="md:absolute bg-primary-700 shadow-inner md:col-start-6 md:col-span-7 p-20">
                         <h2 className="font-light text-5xl text-primary-200 mb-6">
-                          Atlanta Small Business Accounting Services
+                            Tax Preparation Services in Greater Atlanta
                         </h2>
                         <p className="font-light text-base text-primary-200">
-                          Looking to get started or need to restructure? Need to talk it out? We know the path.
+                            Ease the stress of taxes with professional tax preparation. 
+                            And if you’re already using us to manage your financial statements and payroll, taxes get even easier!
                         </p>
                         <ButtonSolidGold
                             className="font-light"
-                            href="/accounting/"
+                            href="/tax/"
                             text="Book a Call"
                         />
                     </div>
@@ -64,14 +65,15 @@ const Page = ({ data }) => {
                     </div>
                     <div className="z-20 mt-[-128px] mx-4 bg-primary-700 shadow-inner py-10 px-6">
                         <h2 className="text-primary-200 font-light text-4xl">
-                          Atlanta Small Business Consulting Services
+                            Tax Preparation Services in Greater Atlanta
                         </h2>
                         <p className="font-light text-xl text-primary-200">
-                          Looking to get started or need to restructure? Need to talk it out? We know the path.
+                            Ease the stress of taxes with professional tax preparation. 
+                            And if you’re already using us to manage your financial statements and payroll, taxes get even easier!
                         </p>
                         <ButtonSolidGold
                             className="font-light"
-                            href="/about/"
+                            href="/tax/"
                             text="Book a Call"
                         />
                     </div>
@@ -81,10 +83,11 @@ const Page = ({ data }) => {
 
         <section className="mt-12 flex justify-content items-center flex-col">
             <div className="flex justify-content items-center flex-col md:mx-88 md:min-w-120 sm:mx-8 px-7">
-                <p className="text-4xl-x font-thin mb-6 text-center md:text-start">Get Expert Advice. Make Strategic Moves</p>
+                <p className="text-4xl-x font-thin mb-6 text-center md:text-start">Streamlined Business & Personal Tax Preparation</p>
                 <p className="text-xl font-light leading-7 text-center md:text-start mb-10 md:mb-0">
-                  Are you just getting started? Deciding how to structure your new business is a critical
-                  first step and can have enormous implications. Or are you already operating a business and need to make a shift? Smart advice starts here.
+                    When we do your accounting and payroll, it flows directly into your business tax return and delivers
+                    the data with the highest accuracy. And from there, the relevant information is ported directly
+                    to your personal tax return. It’s fast and efficient, and you’re not paying by the hour.
                 </p>
             </div>
             <div className="hidden md:block flex justify-center items-center md:pt-32 md:pb-32 pb-20">
@@ -153,28 +156,62 @@ const Page = ({ data }) => {
                     </div>
                     <div className="flex justify-center flex-col lg:w-1/2 md:w-full md:mb-8 sm:mb-8">
                         <div className="md:pl-10 pl-0">
-                            <p className="text-4xl font-thin mb-6">How We Can Help Your Small Business</p>
+                            <p className="text-4xl font-thin mb-6">Our Services</p>
                             <p className="text-base font-light  mb-6">
-                              At High Echelon, we draw on a long history of best practices to help small you move
-                              forward with confidence. Our small business consulting services include:
+                                At High Echelon, we prepare your returns and help you handle IRS notices and correspondence.
                             </p>
+                            <p className="text-4xl font-thin mb-6">Business Tax Return Preparation</p>
                             <div className="text-base font-light">
                                 <div className="flex">
                                     <i className="fa fa-check text-primary-100 mr-3"></i>
-                                    <p className="text-base font-semibold mb-3">Entity formation</p>
+                                    <p className="text-base font-semibold mb-3">Corporate</p>
                                 </div>
                                 <div className="flex">
                                     <i className="fa fa-check text-primary-100 mr-3"></i>
-                                    <p className="text-base font-semibold mb-3">Register a new business at the state and federal level</p>
+                                    <p className="text-base font-semibold mb-3">Scorporate</p>
                                 </div>
                                 <div className="flex">
                                     <i className="fa fa-check text-primary-100 mr-3"></i>
-                                    <p className="text-base font-semibold mb-3">Talk out the pros and cons of different approaches</p>
+                                    <p className="text-base font-semibold mb-3">Partnership</p>
                                 </div>
                                 <div className="flex">
                                     <i className="fa fa-check text-primary-100 mr-3"></i>
-                                    <p className="text-base font-semibold mb-3">Advise you on a big purchase or sale that may be on the horizon</p>
+                                    <p className="text-base font-semibold mb-3">Extension filing</p>
+                                </div>
+                                <div className="flex">
+                                    <i className="fa fa-check text-primary-100 mr-3"></i>
+                                    <p className="text-base font-semibold mb-3">Assistance with IRS tax notices</p>
+                                </div>
+                                <div className="flex">
+                                    <i className="fa fa-check text-primary-100 mr-3"></i>
+                                    <p className="text-base font-semibold mb-3">Correspondence with IRS</p>
                                 </div> 
+                            </div>
+                            <p className="text-4xl font-thin mb-6">Individual Tax Returns</p>
+                            <div className="text-base font-light">
+                                <div className="flex">
+                                    <i className="fa fa-check text-primary-100 mr-3"></i>
+                                    <p className="text-base font-semibold mb-3">Individual tax return</p>
+                                </div>
+                                <div className="flex">
+                                    <i className="fa fa-check text-primary-100 mr-3"></i>
+                                    <p className="text-base font-semibold mb-3">Extension filing</p>
+                                </div>
+                                <div className="flex">
+                                    <i className="fa fa-check text-primary-100 mr-3"></i>
+                                    <p className="text-base font-semibold mb-3">Assistance with IRS tax notices</p>
+                                </div>
+                                <div className="flex">
+                                    <i className="fa fa-check text-primary-100 mr-3"></i>
+                                    <p className="text-base font-semibold mb-3">Correspondence with IRS</p>
+                                </div> 
+                            </div>
+                            <p className="text-4xl font-thin mb-6">Estates and Trusts</p>
+                            <div className="text-base font-light">
+                                <div className="flex">
+                                    <i className="fa fa-check text-primary-100 mr-3"></i>
+                                    <p className="text-base font-semibold mb-3">Income tax return for estates and trusts</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -207,11 +244,18 @@ const Page = ({ data }) => {
                         <div className="px-0 md:px-10">
                             <p className="text-4xl font-thin mb-6">How To Get Started</p>
                             <p className="text-base font-light  mb-6">
-                                We begin with an introductory call at no cost to you.
-                                First, we want to understand your goals and align on expectations,
-                                timeline, and outcomes. And from there, we’ll present you with a
-                                proposal outlining a plan and the associated costs.
+                                First, we'll review your prior year's returns and talk to you about
+                                what worked and what didn't work with your previous tax preparer.
+                                We want to answer the question, will there need to be any substantial
+                                changes this time? We're happy to get as involved as you want us to be.
                             </p>
+                            <p>For the next steps, we:</p>
+                            <div>
+                                <li>Give you a draft to review, with questions</li>
+                                <li>Outline changes that we made</li>
+                                <li>Review, then sign off on the filing</li>
+                                <li>Provide you with a secure link for upload</li>
+                            </div>
                             <ButtonSolidGold
                                 className="font-light"
                                 href="/about/"
@@ -247,7 +291,26 @@ const Page = ({ data }) => {
                         </p>
                     </div>
                     <div className="md:flex sm:block">
-                        <AniLink fade to="/va-loans-chicago/" className="mr-10 mb-6 w-1/3">
+                        <AniLink fade to="/payroll/" className="mr-10 mb-6 w-1/3">
+                          <div className="max-w-140">
+                            <GatsbyImage
+                              image={
+                                  data.accountServicesImage.childImageSharp.gatsbyImageData
+                              }
+                              alt="Payroll Management"
+                              className="mb-6 rounded-[8px] h-60 w-full"
+                              />
+                            </div>
+                            <div className="justify-center flex-col py-2">
+                                <h3 className="text-lg mb-4 text-primary-700">
+                                  Payroll Management
+                                </h3>
+                                <p className="text-base">
+                                  Lighten your load with automated payroll processing, hiring, and termination.
+                                </p>    
+                            </div>
+                        </AniLink>
+                        <AniLink fade to="/accounting/" className="mr-10 mb-6 w-1/3">
                           <div className=" max-w-140">
                             <GatsbyImage
                             image={
@@ -267,42 +330,24 @@ const Page = ({ data }) => {
                                 </p>
                             </div>
                         </AniLink>
-                        <AniLink fade to="/va-loans-chicago/" className="mr-10 mb-6 w-1/3">
-                          <div className="max-w-140">
-                            <GatsbyImage
-                              image={
-                                  data.accountServicesImage.childImageSharp.gatsbyImageData
-                              }
-                              alt="Payroll Management"
-                              className="mb-6 rounded-[8px] h-60 w-full"
-                              />
-                            </div>
-                            <div className="justify-center flex-col py-2">
-                                <h3 className="text-lg mb-4 text-primary-700">
-                                  Payroll Management
-                                </h3>
-                                <p className="text-base">
-                                  Lighten your load with automated payroll processing, hiring, and termination.
-                                </p>    
-                            </div>
-                        </AniLink>
-                        <AniLink fade to="/va-loans-chicago/" className="mr-10 mb-6 w-1/3 h-60">
+                        
+                        <AniLink fade to="/consulting/" className="mr-10 mb-6 w-1/3 h-60">
                           <div className="max-w-140">
                             <GatsbyImage
                             image={
                                 data.smallBusinessConsultingImage.childImageSharp
                                 .gatsbyImageData
                             }
-                            alt="Income Tax Preparation"
+                            alt="Small Business Consulting"
                             className="mb-6 rounded-[8px] h-60 max-w-140"
                             />
                           </div>
                             <div className="justify-center flex-col py-2">
                             <h3 className="text-lg mb-4 text-primary-700">
-                              Income Tax Preparation
+                                Small Business Consulting
                             </h3>
                             <p className="text-base">
-                              Remove the stress of taxes with professional tax preparation and an IRS liaison.
+                                Get wise advice on starting a new business or restructuring an existing one.
                             </p>
                             </div>
                         </AniLink>

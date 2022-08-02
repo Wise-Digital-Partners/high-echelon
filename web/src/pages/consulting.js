@@ -31,14 +31,14 @@ const Page = ({ data }) => {
   return (
     <Layout headerDarkMode={true}>
       <SearchEngineOptimization
-        title="Independent Mortgage Lender Chicago | MacAsh Home Loans"
-        description="Apply online. Close in 15 days. It's that easy. Make your dream home a reality with MacAsh, your local independent mortgage broker in Chicago."
+        title="Independent Mortgage Lender Chicago | Echelon Home Loans"
+        description="Apply online. Close in 15 days. It's that easy. Make your dream home a reality with Echelon, your local independent mortgage broker in Chicago."
       />
         <section className="hidden md:block mb-20 md:mb-32 mt-12">
             <div className="container">
                 <div className="relative grid md:grid-cols-12 md:gap-x-10 lg:gap-x-16 gap-y-8 items-center">
                     <div className="md:col-start-1 md:col-span-10">
-                        <GatsbyImage image={data.accountingDesktop.childImageSharp.gatsbyImageData} />
+                        <GatsbyImage image={data.consultingDesktop.childImageSharp.gatsbyImageData} />
                     </div>
                     <div className="md:absolute bg-primary-700 shadow-inner md:col-start-6 md:col-span-7 p-20">
                         <h2 className="font-light text-5xl text-primary-200 mb-6">
@@ -60,7 +60,7 @@ const Page = ({ data }) => {
             <div className="container">
                 <div className="relative grid md:grid-cols-12 lg:gap-x-16 items-center">
                     <div className="md-hidden">
-                        <GatsbyImage image={data.accountingMobile.childImageSharp.gatsbyImageData} />
+                        <GatsbyImage image={data.consultingMobile.childImageSharp.gatsbyImageData} />
                     </div>
                     <div className="z-20 mt-[-128px] mx-4 bg-primary-700 shadow-inner py-10 px-6">
                         <h2 className="text-primary-200 font-light text-4xl">
@@ -145,7 +145,7 @@ const Page = ({ data }) => {
                     <div className="md:hidden md:block w-full mb-8">
                       <GatsbyImage
                           image={
-                              data.accountingProfile.childImageSharp.gatsbyImageData
+                              data.serviceImage.childImageSharp.gatsbyImageData
                           }
                           alt="Small Business Consulting"
                           className="rounded-[8px]"
@@ -181,7 +181,7 @@ const Page = ({ data }) => {
                     <div className="hidden md:block md:w-1/2 mr-0 md:mr-20 md:mb-8 mb-8">
                       <GatsbyImage
                           image={
-                              data.accountingProfile.childImageSharp.gatsbyImageData
+                              data.serviceImage.childImageSharp.gatsbyImageData
                           }
                           alt="Small Business Consulting"
                           className="rounded-[8px] w-full"
@@ -214,7 +214,7 @@ const Page = ({ data }) => {
                             </p>
                             <ButtonSolidGold
                                 className="font-light"
-                                href="/about/"
+                                href="/consulting/"
                                 text="Book a Call"
                             />
                         </div>
@@ -247,7 +247,7 @@ const Page = ({ data }) => {
                         </p>
                     </div>
                     <div className="md:flex sm:block">
-                        <AniLink fade to="/va-loans-chicago/" className="mr-10 mb-6 w-1/3">
+                        <AniLink fade to="/accounting/" className="mr-10 mb-6 w-1/3">
                           <div className=" max-w-140">
                             <GatsbyImage
                             image={
@@ -267,7 +267,7 @@ const Page = ({ data }) => {
                                 </p>
                             </div>
                         </AniLink>
-                        <AniLink fade to="/va-loans-chicago/" className="mr-10 mb-6 w-1/3">
+                        <AniLink fade to="/payroll/" className="mr-10 mb-6 w-1/3">
                           <div className="max-w-140">
                             <GatsbyImage
                               image={
@@ -286,7 +286,7 @@ const Page = ({ data }) => {
                                 </p>    
                             </div>
                         </AniLink>
-                        <AniLink fade to="/va-loans-chicago/" className="mr-10 mb-6 w-1/3 h-60">
+                        <AniLink fade to="/tax/" className="mr-10 mb-6 w-1/3 h-60">
                           <div className="max-w-140">
                             <GatsbyImage
                             image={
@@ -323,23 +323,23 @@ const Page = ({ data }) => {
 
 export const query = graphql`
   {
-    accountingProfile: file(
-        relativePath: { eq: "3.0 Accounting Services/2.0 Service pages.jpg" }
+    serviceImage: file(
+        relativePath: { eq: "2.0 Business Consulting/2.0 Service pages.jpg" }
     ) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
       }
     }
 
-    accountingDesktop: file(
-      relativePath: { eq: "3.0 Accounting Services/1.0 Hero desktop.jpg" }
+    consultingDesktop: file(
+      relativePath: { eq: "2.0 Business Consulting/1.0 Hero desktop.jpg" }
   ) {
     childImageSharp {
       gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
     }
   }
-    accountingMobile: file(
-      relativePath: { eq: "3.0 Accounting Services/1.0 Hero mobile.jpg" }
+    consultingMobile: file(
+      relativePath: { eq: "2.0 Business Consulting/1.0 Hero mobile.jpg" }
   ) {
     childImageSharp {
       gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
@@ -370,7 +370,7 @@ export const query = graphql`
       }
     }
     accountServicesImage: file(
-      relativePath: { eq: "3.0 Accounting Services/1.0 Hero desktop.jpg" }
+      relativePath: { eq: "1.0 Homepage/3.1 Accounting Services desktop.jpg" }
     ) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)

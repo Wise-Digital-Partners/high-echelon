@@ -38,7 +38,7 @@ const Page = ({ data }) => {
             <div className="container">
                 <div className="relative grid md:grid-cols-12 md:gap-x-10 lg:gap-x-16 gap-y-8 items-center">
                     <div className="md:col-start-1 md:col-span-10">
-                        <GatsbyImage image={data.accountingDesktop.childImageSharp.gatsbyImageData} />
+                        <GatsbyImage image={data.payrollDesktop.childImageSharp.gatsbyImageData} />
                     </div>
                     <div className="md:absolute bg-primary-700 shadow-inner md:col-start-6 md:col-span-7 p-20">
                         <h2 className="font-light text-5xl text-primary-200 mb-6">
@@ -331,15 +331,15 @@ export const query = graphql`
       }
     }
 
-    accountingDesktop: file(
-      relativePath: { eq: "3.0 Accounting Services/1.0 Hero desktop.jpg" }
+    payrollDesktop: file(
+      relativePath: { eq: "4.0 Payroll/1.0 Hero desktop.jpg" }
   ) {
     childImageSharp {
       gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
     }
   }
     accountingMobile: file(
-      relativePath: { eq: "3.0 Accounting Services/1.0 Hero mobile.jpg" }
+      relativePath: { eq: "4.0 Payroll/1.0 Hero mobile.jpg" }
   ) {
     childImageSharp {
       gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)

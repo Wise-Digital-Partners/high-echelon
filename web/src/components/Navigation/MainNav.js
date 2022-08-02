@@ -264,7 +264,7 @@ const MainNav = ({
               </AniLink>
             </li>
 
-            <li className="group">
+            {/* <li className="group">
               <AniLink
                 fade
                 to="/reviews/"
@@ -276,7 +276,7 @@ const MainNav = ({
               >
                 Reviews
               </AniLink>
-            </li>
+            </li> */}
 
             <li className="group">
               <ButtonSolid

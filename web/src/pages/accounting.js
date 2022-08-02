@@ -7,7 +7,7 @@ import Layout from "../components/Layout";
 import SearchEngineOptimization from "../components/SEO";
 import Testimonials from "../components/Repeating/Testimonials";
 import CarouselForm from "../components/Repeating/Carousel";
-import Accordian from "../components/Accordion/Accord";
+import Accordian from "../components/Accordion/AccountingAccordion";
 import ValueProps from "../components/Repeating/ValueProps";
 import About from "../components/Repeating/About";
 import CallToAction from "../components/Repeating/CTA";
@@ -31,8 +31,8 @@ const Page = ({ data }) => {
   return (
     <Layout headerDarkMode={true}>
       <SearchEngineOptimization
-        title="Independent Mortgage Lender Chicago | MacAsh Home Loans"
-        description="Apply online. Close in 15 days. It's that easy. Make your dream home a reality with MacAsh, your local independent mortgage broker in Chicago."
+        title="Independent Mortgage Lender Chicago | Echelon Home Loans"
+        description="Apply online. Close in 15 days. It's that easy. Make your dream home a reality with Echelon, your local independent mortgage broker in Chicago."
       />
         <section className="hidden md:block mb-20 md:mb-32 mt-12">
             <div className="container">
@@ -146,7 +146,7 @@ const Page = ({ data }) => {
                     <div className="md:hidden md:block w-full mb-8">
                       <GatsbyImage
                           image={
-                              data.accountingProfile.childImageSharp.gatsbyImageData
+                              data.serviceImage.childImageSharp.gatsbyImageData
                           }
                           alt="Small Business Consulting"
                           className="rounded-[8px]"
@@ -185,7 +185,7 @@ const Page = ({ data }) => {
                     <div className="hidden md:block md:w-1/2 mr-0 md:mr-20 md:mb-8 mb-8">
                       <GatsbyImage
                           image={
-                              data.accountingProfile.childImageSharp.gatsbyImageData
+                              data.serviceImage.childImageSharp.gatsbyImageData
                           }
                           alt="Small Business Consulting"
                           className="rounded-[8px] w-full"
@@ -201,7 +201,7 @@ const Page = ({ data }) => {
                     <div className="lg:w-1/2 md:w-full mr-0 md:mr-20 md:mb-8 sm:mb-8">
                         <GatsbyImage
                             image={
-                                data.accountingStartImage.childImageSharp.gatsbyImageData
+                                data.accountingDesktop.childImageSharp.gatsbyImageData
                             }
                             alt="Small Business Consulting"
                             className="rounded-[8px] w-full"
@@ -262,50 +262,30 @@ const Page = ({ data }) => {
                         </p>
                     </div>
                     <div className="md:flex sm:block">
-                        <AniLink fade to="/va-loans-chicago/" className="mr-10 mb-6 w-1/3">
-                          <div className=" max-w-140">
-                            <GatsbyImage
+                      <AniLink fade to="/payroll/" className="mr-10 mb-6 w-1/3">
+                        <div className="max-w-140">
+                          <GatsbyImage
                             image={
-                                data.accountingStartImage.childImageSharp
-                                .gatsbyImageData
+                                data.accountServicesImage.childImageSharp.gatsbyImageData
                             }
-                            alt="Accounting Services"
-                            className="mb-6 rounded-[8px] w-full"
+                            alt="Payroll Management"
+                            className="mb-6 rounded-[8px] h-60 w-full"
                             />
                           </div>
-                            <div className="justify-center flex-col py-2">
-                                <h3 className="text-lg mb-4 text-primary-700">
-                                  Accounting Services
-                                </h3>
-                                <p className="text-base">
-                                  Gain a clear understanding of your financials so you can make smart business decisions.
-                                </p>
-                            </div>
+                          <div className="justify-center flex-col py-2">
+                              <h3 className="text-lg mb-4 text-primary-700">
+                                Payroll Management
+                              </h3>
+                              <p className="text-base">
+                                Lighten your load with automated payroll processing, hiring, and termination.
+                              </p>    
+                          </div>
                         </AniLink>
-                        <AniLink fade to="/va-loans-chicago/" className="mr-10 mb-6 w-1/3">
-                          <div className="max-w-140">
-                            <GatsbyImage
-                              image={
-                                  data.accountServicesImage.childImageSharp.gatsbyImageData
-                              }
-                              alt="Payroll Management"
-                              className="mb-6 rounded-[8px] h-60 w-full"
-                              />
-                            </div>
-                            <div className="justify-center flex-col py-2">
-                                <h3 className="text-lg mb-4 text-primary-700">
-                                  Payroll Management
-                                </h3>
-                                <p className="text-base">
-                                  Lighten your load with automated payroll processing, hiring, and termination.
-                                </p>    
-                            </div>
-                        </AniLink>
-                        <AniLink fade to="/va-loans-chicago/" className="mr-10 mb-6 w-1/3 h-60">
+                        <AniLink fade to="/tax/" className="mr-10 mb-6 w-1/3 h-60">
                           <div className="max-w-140">
                             <GatsbyImage
                             image={
-                                data.smallBusinessConsultingImage.childImageSharp
+                                data.incomeTaxPreparationImage.childImageSharp
                                 .gatsbyImageData
                             }
                             alt="Income Tax Preparation"
@@ -321,6 +301,27 @@ const Page = ({ data }) => {
                             </p>
                             </div>
                         </AniLink>
+                        <AniLink fade to="/consulting/" className="mr-10 mb-6 w-1/3">
+                          <div className=" max-w-140">
+                            <GatsbyImage
+                            image={
+                                data.consultingImage.childImageSharp
+                                .gatsbyImageData
+                            }
+                            alt="Small Business Consulting"
+                            className="mb-6 rounded-[8px] h-60 max-w-140"
+                            />
+                          </div>
+                            <div className="justify-center flex-col py-2">
+                                <h3 className="text-lg mb-4 text-primary-700">
+                                  Small Business Consulting
+                                </h3>
+                                <p className="text-base">
+                                  Get wise advice on starting a new business or restructuring an existing one.
+                                </p>
+                            </div>
+                        </AniLink>
+                        
                     </div>
                 </div>
             </div>
@@ -338,7 +339,7 @@ const Page = ({ data }) => {
 
 export const query = graphql`
   {
-    accountingProfile: file(
+    serviceImage: file(
         relativePath: { eq: "3.0 Accounting Services/2.0 Service pages.jpg" }
     ) {
       childImageSharp {
@@ -377,7 +378,7 @@ export const query = graphql`
     ) {
       publicURL
     }
-    smallBusinessConsultingImage: file(
+    consultingImage: file(
       relativePath: { eq: "1.0 Homepage/3.0 Small Business desktop.jpg" }
     ) {
       childImageSharp {
@@ -385,7 +386,7 @@ export const query = graphql`
       }
     }
     accountServicesImage: file(
-      relativePath: { eq: "3.0 Accounting Services/1.0 Hero desktop.jpg" }
+      relativePath: { eq: "1.0 Homepage/3.1 Accounting Services desktop.jpg" }
     ) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
@@ -399,7 +400,7 @@ export const query = graphql`
       }
     }
     incomeTaxPreparationImage: file(
-      relativePath: { eq: "1.0 Homepage/IncomeTax desktop - Copy.jpg" }
+      relativePath: { eq: "1.0 Homepage/3.3 Income Tax Prep desktop.jpg" }
     ) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
