@@ -15985,11 +15985,11 @@ const Footer = ({
     className: "mr-3"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
     fade: true,
-    to: "/privacy-policy/",
+    to: "/",
     className: "text-gray-50 hover:text-primary-100 no-underline"
   }, "Privacy Policy")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
     fade: true,
-    to: "/privacy-policy/",
+    to: "/",
     className: "text-gray-50 hover:text-primary-100 no-underline"
   }, "Accessibility Statement"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
     className: "block md:flex w-full md:w-auto mt-6 md:mt-0"
@@ -17379,7 +17379,7 @@ const Carousel = () => {
     className: "flex items-center justify-center"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
     onClick: movePrev,
-    className: "mr-2"
+    className: "mr-0 md:mr-2"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("i", {
     onClick: movePrev,
     className: "fa fa-arrow-circle-left mr-3 text-primary-100 text-4xl"
@@ -17408,7 +17408,7 @@ const Carousel = () => {
     }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
       src: _images_repeating_testimonials_HESeal_svg__WEBPACK_IMPORTED_MODULE_1__["default"],
       alt: "gray Logo",
-      className: "absolute md:-bottom-14 md:-right-7 -bottom-16 -right-16"
+      className: "absolute md:-bottom-14 md:-right-7 -bottom-16 -right-16 w-[220px] h-[220px]"
     })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
       className: "hidden md:flex justify-center h-16"
     }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
@@ -17418,10 +17418,10 @@ const Carousel = () => {
     }))) : (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null);
   })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
     onClick: moveNext,
-    className: "ml-2"
+    className: "ml-0 md:ml-2"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("i", {
     onClick: moveNext,
-    className: "fa fa-arrow-circle-right ml-3 font-thin text-primary-100 text-4xl"
+    className: "fa fa-arrow-right ml-3 font-thin text-primary-100 text-4xl"
   }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
     className: "flex justify-center"
   }, data.map((resource, index) => {
@@ -18177,7 +18177,7 @@ const Page = ({
     alt: "Small Business Consulting",
     className: "p-2 rounded-[8px] mb-3"
   }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "md:flex md:justify-center py-2 pl-3 mb-6 md:mb-0"
+    className: "md:flex md:justify-center py-2 pl-3 mb-6 md:mb-0 max-w-[360px]"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
     className: "flex justify-center flex-col mb-4"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h3", {
@@ -18185,7 +18185,7 @@ const Page = ({
   }, "Small Business Consulting"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
     className: "text-base mb-4"
   }, "Need advice or help in navigating the best way to form your business? Talk with the experts.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_13__["default"], {
-    href: "/",
+    href: "/consulting/",
     text: "Learn More",
     className: "lg:hidden md:hidden w-[100px] h-[40px]"
   }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -18197,7 +18197,7 @@ const Page = ({
     alt: "Accounting Services",
     className: "p-2 rounded-[8px] mb-3"
   }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "md:flex md:justify-center  py-2 pl-3 mb-6 md:mb-0"
+    className: "md:flex md:justify-center  py-2 pl-3 mb-6 md:mb-0 max-w-[360px]"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
     className: "flex justify-center flex-col mb-4"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h3", {
@@ -18205,7 +18205,7 @@ const Page = ({
   }, "Accounting Services"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
     className: "text-base mb-4"
   }, "Receive accurate, secure delivery of monthly, quarterly, and annual financial statements.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_13__["default"], {
-    href: "/",
+    href: "/accounting/",
     text: "Learn More",
     className: "lg:hidden md:hidden w-[100px] h-[40px]"
   })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
@@ -18219,15 +18219,15 @@ const Page = ({
     alt: "Small Business Consulting",
     className: "p-2 rounded-[8px] mb-3"
   }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "md:flex md:justify-center  py-2 pl-3 mb-6 md:mb-0"
+    className: "md:flex md:justify-center  py-2 pl-3 mb-6 md:mb-0 max-w-[360px]"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
     className: "flex justify-center flex-col mb-4"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h3", {
     className: "text-lg mb-4 text-primary-700"
   }, "Payroll Management"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base"
+    className: "text-base mb-4"
   }, "Get lightweight, user-friendly, cost-efficient payroll processing, and hiring/termination automation.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_13__["default"], {
-    href: "/",
+    href: "/payroll/",
     text: "Learn More",
     className: "lg:hidden md:hidden w-[100px] h-[40px]"
   }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -18239,15 +18239,15 @@ const Page = ({
     alt: "Small Business Consulting",
     className: "p-2 rounded-[8px] mb-3"
   }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "md:flex md:justify-center  py-2 pl-3 mb-6 md:mb-0"
+    className: "md:flex md:justify-center  py-2 pl-3 mb-6 md:mb-0 max-w-[360px]"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
     className: "flex justify-center flex-col mb-4"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h3", {
     className: "text-lg mb-4 text-primary-700"
   }, "Income Tax Preparation"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base"
+    className: "text-base mb-4"
   }, "Get prompt tax preparation for yourself or your business, including help with complicated returns.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_13__["default"], {
-    href: "/",
+    href: "/tax/",
     text: "Learn More",
     className: "lg:hidden md:hidden w-[100px] h-[40px]"
   }))))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Repeating_ValueProps__WEBPACK_IMPORTED_MODULE_8__["default"], null), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
