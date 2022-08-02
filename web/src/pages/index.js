@@ -214,7 +214,7 @@ const Page = ({ data }) => {
                   alt="Small Business Consulting"
                   className="p-2 rounded-[8px] mb-3"
                 />
-                <div className="md:flex md:justify-center py-2 pl-3 mb-6 md:mb-0">
+                <div className="md:flex md:justify-center py-2 pl-3 mb-6 md:mb-0 max-w-[360px]">
                   <div className="flex justify-center flex-col mb-4">
                     <h3 className="text-lg mb-4 text-primary-700">
                       Small Business Consulting
@@ -239,7 +239,7 @@ const Page = ({ data }) => {
                   alt="Accounting Services"
                   className="p-2 rounded-[8px] mb-3"
                 />
-                <div className="md:flex md:justify-center  py-2 pl-3 mb-6 md:mb-0">
+                <div className="md:flex md:justify-center  py-2 pl-3 mb-6 md:mb-0 max-w-[360px]">
                   <div className="flex justify-center flex-col mb-4">
                     <h3 className="text-lg mb-4 text-primary-700">
                       Accounting Services
@@ -266,12 +266,12 @@ const Page = ({ data }) => {
                   alt="Small Business Consulting"
                   className="p-2 rounded-[8px] mb-3"
                 />
-                <div className="md:flex md:justify-center  py-2 pl-3 mb-6 md:mb-0">
+                <div className="md:flex md:justify-center  py-2 pl-3 mb-6 md:mb-0 max-w-[360px]">
                   <div className="flex justify-center flex-col mb-4">
                     <h3 className="text-lg mb-4 text-primary-700">
                       Payroll Management
                     </h3>
-                    <p className="text-base">
+                    <p className="text-base mb-4">
                       Get lightweight, user-friendly, cost-efficient payroll
                       processing, and hiring/termination automation.
                     </p>
@@ -292,12 +292,12 @@ const Page = ({ data }) => {
                   alt="Small Business Consulting"
                   className="p-2 rounded-[8px] mb-3"
                 />
-                <div className="md:flex md:justify-center  py-2 pl-3 mb-6 md:mb-0">
+                <div className="md:flex md:justify-center  py-2 pl-3 mb-6 md:mb-0 max-w-[360px]">
                   <div className="flex justify-center flex-col mb-4">
                     <h3 className="text-lg mb-4 text-primary-700">
                       Income Tax Preparation
                     </h3>
-                    <p className="text-base">
+                    <p className="text-base mb-4">
                       Get prompt tax preparation for yourself or your business,
                       including help with complicated returns.
                     </p>
