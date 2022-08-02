@@ -19,30 +19,30 @@ export default function Example() {
             <Fragment>
                 <Accordion open={open === 1} onClick={() => handleOpen(1)}>
                     <AccordionHeader className="text-xl subheader">
-                        <p className="my-0  w-11/12 text-left">What expenses can I deduct through my business?</p>
+                        <p className="my-0  w-11/12 text-left text-xl">What expenses can I deduct through my business?</p>
                     </AccordionHeader>
                     <AccordionBody>
                         <ul>
                             <p>The most commonly deducted business expenses are:</p>
-                            <li>Salaries and employee benefits</li>
-                            <li>Office expenses and supplies</li>
-                            <li>Advertising</li>
-                            <li>Rent or mortgage</li>
-                            <li>Rent or mortgage</li>
-                            <li>Business insurance</li>
-                            <li>Taxes</li>
-                            <li>Depreciation</li>
-                            <li>Utilities</li>
-                            <li>Loan interest payments</li>
-                            <li>Repairs and maintenance</li>
-                            <li>Professional services (legal, accounting, etc.)</li>
-                            <li>Professional subscriptions</li>
+                            <li className="text-base">Salaries and employee benefits</li>
+                            <li className="text-base">Office expenses and supplies</li>
+                            <li className="text-base">Advertising</li>
+                            <li className="text-base">Rent or mortgage</li>
+                            <li className="text-base">Rent or mortgage</li>
+                            <li className="text-base">Business insurance</li>
+                            <li className="text-base">Taxes</li>
+                            <li className="text-base">Depreciation</li>
+                            <li className="text-base">Utilities</li>
+                            <li className="text-base">Loan interest payments</li>
+                            <li className="text-base">Repairs and maintenance</li>
+                            <li className="text-base">Professional services (legal, accounting, etc.)</li>
+                            <li className="text-base">Professional subscriptions</li>
                         </ul>
                     </AccordionBody>
                 </Accordion>
                 <Accordion open={open === 2} onClick={() => handleOpen(2)}>
                     <AccordionHeader className="text-xl subheader">
-                        <p className="my-0 w-11/12 text-left">
+                        <p className="my-0 w-11/12 text-left text-xl">
                             How do I know whether I need to make estimated tax payments throughout the year?
                         </p>
                     </AccordionHeader>
@@ -60,7 +60,7 @@ export default function Example() {
                 </Accordion>
                 <Accordion open={open === 3} onClick={() => handleOpen(3)}>
                     <AccordionHeader className="text-xl subheader">
-                        <p className="my-0 w-11/12 text-left">
+                        <p className="my-0 w-11/12 text-left text-xl">
                             When should an LLC become an Scorp?
                         </p>
                     </AccordionHeader>

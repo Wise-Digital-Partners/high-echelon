@@ -64,7 +64,7 @@ const Page = ({ data }) => {
                     </div>
                     <div className="z-20 mt-[-128px] mx-4 bg-primary-700 shadow-inner py-10 px-6">
                         <h2 className="text-primary-200 font-light text-4xl">
-                          Atlanta Small Business Accounting Services
+                          Atlanta Small Business Consulting Services
                         </h2>
                         <p className="font-light text-xl text-primary-200">
                           Looking to get started or need to restructure? Need to talk it out? We know the path.
@@ -242,7 +242,7 @@ const Page = ({ data }) => {
                         <h3 className="text-primary-700 text-4xl font-thin mb-12">
                           Streamline Everything. Get The Full Benefit.
                         </h3>
-                        <p className="md:w-2/3 sm:w-full italic text-xl md:text-base sm:text-base font-light mb-12">
+                        <p className="md:w-2/3 sm:w-full text-xl md:text-base sm:text-base font-light mb-12">
                           Get the best results when you combine our expert advice with end-to-end services that manage your finances in a full-stack solution
                         </p>
                     </div>

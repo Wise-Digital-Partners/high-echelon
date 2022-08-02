@@ -36,7 +36,7 @@ const ValueProps = ({ className, headingLevel, heading }) => {
     {
       icon: data.icon1.publicURL,
       bg:data.bg1.childImageSharp.gatsbyImageData,
-      heading: "We Care, Deeply",
+      heading: "We Care Deeply",
       text: "Everything we do is done with heart and a strong belief in accuracy, fairness, and work that’s completed properly.",
     },
     {

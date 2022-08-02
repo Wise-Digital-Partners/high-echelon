@@ -91,7 +91,7 @@ const Carousel = () => {
             onClick={moveNext}
             className="ml-2 hidden md:block"
         >
-            <i onClick={moveNext} className="fa fa-arrow-circle-right ml-3 text-primary-100 text-4xl"></i>
+            <i onClick={moveNext} className="fa fa-arrow-circle-right ml-3 font-thin text-primary-100 text-4xl"></i>
             </button>
         </div>
         <div className="flex justify-center">
