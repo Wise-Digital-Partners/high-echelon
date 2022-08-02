@@ -21,15 +21,15 @@ const UtilityNav = () => {
                 />
               </svg>
               <a
-                href="tel:773-501-3997"
+                href="tel:(404)-446-9338"
                 className="text-sm font-semibold text-white hover:text-primary-100"
               >
-                (773) 501-3997
+                (404) 446-9338
               </a>
             </div>
             <div className="flex items-center">
               <a
-                href="https://www.blink.mortgage/app/signup/p/macashhomeloansllc"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm font-semibold text-white hover:text-primary-100"

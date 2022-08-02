@@ -155,7 +155,7 @@ const Footer = ({ hideFooter }) => {
                 </AniLink>
                 <div className="md:flex md:items-center pl-4 md:pt-6 pt-10">
                   <ul class="text-white text-sm list-none flex justify-center items-center flex-col md:block">
-                    <li>(123) 456-7890</li>
+                    <li>(404) 446-9338</li> 
                     <li>email@email.com</li>
                   </ul>
                 </div>
