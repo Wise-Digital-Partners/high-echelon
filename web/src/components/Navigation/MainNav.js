@@ -105,19 +105,19 @@ const MainNav = ({
       },
       {
         name: "Small Business Consulting",
-        href: "/consulting/",
+        href: "/small-business-consulting-services-atlanta/",
       },
       {
         name: "Account Services",
-        href: "/accounting/",
+        href: "/small-business-accounting-services-atlanta/",
       },
       {
         name: "Payroll Management",
-        href: "/payroll/",
+        href: "/payroll-management-services-atlanta/",
       },
       {
         name: "Income Tax Preparation",
-        href: "/tax/",
+        href: "/small-business-tax-preparation-services-atlanta/",
       },
     ],
     about: [

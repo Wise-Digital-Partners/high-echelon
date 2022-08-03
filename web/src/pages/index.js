@@ -202,7 +202,7 @@ const Page = ({ data }) => {
               </p>
             </div>
             <div className="block w-full md:flex lg:flex md:mb-5 mb-4">
-              <AniLink fade to="/consulting/" className="block w-full mr-0 md:flex lg:flex md:mr-5 md:w-1/2 lg:mr-5 lg:w-1/2">
+              <AniLink fade to="/small-business-consulting-services-atlanta/" className="block w-full mr-0 md:flex lg:flex md:mr-5 md:w-1/2 lg:mr-5 lg:w-1/2">
                 <GatsbyImage
                   image={
                     data.smallBusinessConsultingImage.childImageSharp
@@ -222,13 +222,13 @@ const Page = ({ data }) => {
                     </p>
                   </div>
                   <ButtonGhost
-                      href="/consulting/"
+                      href="/small-business-consulting-services-atlanta/"
                       text="Learn More"
                       className="lg:hidden md:hidden w-[100px] h-[40px]"
                   />
                 </div>
               </AniLink>
-              <AniLink fade to="/accounting/" className="block w-full mr-0 md:flex lg:flex md:mr-5 md:w-1/2 lg:mr-5 lg:w-1/2">
+              <AniLink fade to="/small-business-accounting-services-atlanta/" className="block w-full mr-0 md:flex lg:flex md:mr-5 md:w-1/2 lg:mr-5 lg:w-1/2">
                 <GatsbyImage
                   image={
                     data.accountServicesImage.childImageSharp.gatsbyImageData
@@ -247,7 +247,7 @@ const Page = ({ data }) => {
                     </p>
                   </div>
                   <ButtonGhost
-                      href="/accounting/"
+                      href="/small-business-accounting-services-atlanta/"
                       text="Learn More"
                       className="lg:hidden md:hidden w-[100px] h-[40px]"
                   />
@@ -255,7 +255,7 @@ const Page = ({ data }) => {
               </AniLink>
             </div>
             <div className="block w-full md:flex lg:flex md:mb-5 mb-4">
-              <AniLink fade to="/payroll/" className="block w-full mr-0 md:flex lg:flex md:mr-5 md:w-1/2 lg:mr-5 lg:w-1/2">
+              <AniLink fade to="/payroll-management-services-atlanta/" className="block w-full mr-0 md:flex lg:flex md:mr-5 md:w-1/2 lg:mr-5 lg:w-1/2">
                 <GatsbyImage
                   image={
                     data.payrollManagementImage.childImageSharp.gatsbyImageData
@@ -274,13 +274,13 @@ const Page = ({ data }) => {
                     </p>
                   </div>
                   <ButtonGhost
-                      href="/payroll/"
+                      href="/payroll-management-services-atlanta/"
                       text="Learn More"
                       className="lg:hidden md:hidden w-[100px] h-[40px]"
                   />
                 </div>
               </AniLink>
-              <AniLink fade to="/tax/" className="block w-full mr-0 md:flex lg:flex md:mr-5 md:w-1/2 lg:mr-5 lg:w-1/2">
+              <AniLink fade to="/small-business-tax-preparation-services-atlanta/" className="block w-full mr-0 md:flex lg:flex md:mr-5 md:w-1/2 lg:mr-5 lg:w-1/2">
                 <GatsbyImage
                   image={
                     data.incomeTaxPreparationImage.childImageSharp
@@ -300,7 +300,7 @@ const Page = ({ data }) => {
                     </p>
                   </div>
                   <ButtonGhost
-                      href="/tax/"
+                      href="/small-business-tax-preparation-services-atlanta/"
                       text="Learn More"
                       className="lg:hidden md:hidden w-[100px] h-[40px]"
                   />

@@ -274,7 +274,7 @@ const Page = ({ data }) => {
                         </p>
                     </div>
                     <div className="md:flex sm:block">
-                        <AniLink fade to="/accounting/" className="mr-10 mb-6 w-1/3">
+                        <AniLink fade to="/small-business-accounting-services-atlanta/" className="mr-10 mb-6 w-1/3">
                           <div className=" max-w-140">
                             <GatsbyImage
                             image={
@@ -313,7 +313,7 @@ const Page = ({ data }) => {
                                 </p>    
                             </div>
                         </AniLink>
-                        <AniLink fade to="/consulting/" className="mr-10 mb-6 w-1/3 h-60">
+                        <AniLink fade to="/small-business-consulting-services-atlanta/" className="mr-10 mb-6 w-1/3 h-60">
                           <div className="max-w-140">
                             <GatsbyImage
                             image={
@@ -366,7 +366,7 @@ const Page = ({ data }) => {
                     </svg>
                     
                     <a
-                      href="tel:(404) 446-9338"
+                      href="tel:404-446-9338"
                       className="text-sm font-semibold text-primary-100"
                     >
                       (404) 446-9338
