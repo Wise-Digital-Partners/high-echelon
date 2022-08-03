@@ -210,7 +210,7 @@ const Footer = ({ hideFooter }) => {
                 <ul className="flex items-center flex-wrap space-x-4 justify-center lg:justify-start">
                   <li class = "text-3xl">
                     <a
-                      href="https://www.instagram.com/macashhomeloans/?hl=en"
+                      href="https://www.instagram.com"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex justify-center items-center text-white hover:bg-primary-600 transition-colors duration-300 ease-linear"
@@ -223,7 +223,7 @@ const Footer = ({ hideFooter }) => {
                   </li>
                   <li class = "text-3xl">
                     <a
-                      href="https://www.facebook.com/MacAshHomeLoans1"
+                      href="https://www.facebook.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex justify-center items-center text-white hover:bg-primary-600 transition-colors duration-300 ease-linear"
@@ -233,7 +233,7 @@ const Footer = ({ hideFooter }) => {
                   </li>
                   <li class = "text-3xl">
                     <a
-                      href="https://www.twitter.com/MacAshHomeLoans1"
+                      href="https://www.twitter.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex justify-center items-center text-white hover:bg-primary-600 transition-colors duration-300 ease-linear"

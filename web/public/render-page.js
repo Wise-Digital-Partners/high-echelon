@@ -20310,9 +20310,8 @@ exports.vw = vw;
 
 exports.ssrComponents = {
   "component---cache-dev-404-page-js": preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js")),
-  "component---src-pages-index-js": preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js")),
-  "component---src-pages-payroll-js": preferDefault(__webpack_require__(/*! ./src/pages/payroll.js */ "./src/pages/payroll.js")),
-  "component---src-pages-tax-js": preferDefault(__webpack_require__(/*! ./src/pages/tax.js */ "./src/pages/tax.js"))
+  "component---src-pages-consulting-js": preferDefault(__webpack_require__(/*! ./src/pages/consulting.js */ "./src/pages/consulting.js")),
+  "component---src-pages-index-js": preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js"))
   }
 
 
@@ -35839,68 +35838,6 @@ function Example() {
 
 /***/ }),
 
-/***/ "./src/components/Accordion/PayrollAccordion.js":
-/*!******************************************************!*\
-  !*** ./src/components/Accordion/PayrollAccordion.js ***!
-  \******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Example)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _material_tailwind_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-tailwind/react */ "../node_modules/@material-tailwind/react/index.js");
-/* harmony import */ var _material_tailwind_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_tailwind_react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _sass_global_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../sass/global.scss */ "./src/sass/global.scss");
-/* harmony import */ var _sass_global_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_sass_global_scss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.esm.js");
-
-
-
-
-function Example() {
-  const {
-    0: open,
-    1: setOpen
-  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0);
-
-  const handleOpen = value => {
-    setOpen(open === value ? 0 : value);
-  };
-
-  return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_tailwind_react__WEBPACK_IMPORTED_MODULE_1__.Accordion, {
-    open: open === 1,
-    onClick: () => handleOpen(1)
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_tailwind_react__WEBPACK_IMPORTED_MODULE_1__.AccordionHeader, {
-    className: "text-xl subheader"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
-    className: "my-0  w-11/12 text-left text-xl"
-  }, "How many days before payroll is due would the funds need to be available?")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_tailwind_react__WEBPACK_IMPORTED_MODULE_1__.AccordionBody, null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", null, "You\u2019ll need to have the funds available two business days before payroll is due."))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_tailwind_react__WEBPACK_IMPORTED_MODULE_1__.Accordion, {
-    open: open === 2,
-    onClick: () => handleOpen(2)
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_tailwind_react__WEBPACK_IMPORTED_MODULE_1__.AccordionHeader, {
-    className: "text-xl subheader"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
-    className: "my-0 w-11/12 text-left text-xl"
-  }, "When would I need to pay payroll taxes?")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_tailwind_react__WEBPACK_IMPORTED_MODULE_1__.AccordionBody, null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
-    className: "mb-0"
-  }, "It depends on the frequency of payroll being run. The payroll management system provides substantial communications before taxes are due."))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_tailwind_react__WEBPACK_IMPORTED_MODULE_1__.Accordion, {
-    open: open === 3,
-    onClick: () => handleOpen(3)
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_tailwind_react__WEBPACK_IMPORTED_MODULE_1__.AccordionHeader, {
-    className: "text-xl subheader"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
-    className: "my-0 w-11/12 text-left text-xl"
-  }, "Would I be able to pay contractors via direct deposit?")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_tailwind_react__WEBPACK_IMPORTED_MODULE_1__.AccordionBody, null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
-    className: "mb-0"
-  }, "Yes. You can pay contractors via direct deposit within the online payroll management system."))));
-}
-
-/***/ }),
-
 /***/ "./src/components/Background/Background.js":
 /*!*************************************************!*\
   !*** ./src/components/Background/Background.js ***!
@@ -36372,7 +36309,7 @@ const Footer = ({
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
     class: "text-3xl"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("a", {
-    href: "https://www.instagram.com/macashhomeloans/?hl=en",
+    href: "https://www.instagram.com",
     target: "_blank",
     rel: "noopener noreferrer",
     className: "flex justify-center items-center text-white hover:bg-primary-600 transition-colors duration-300 ease-linear"
@@ -36390,7 +36327,7 @@ const Footer = ({
   })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
     class: "text-3xl"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("a", {
-    href: "https://www.facebook.com/MacAshHomeLoans1",
+    href: "https://www.facebook.com/",
     target: "_blank",
     rel: "noopener noreferrer",
     className: "flex justify-center items-center text-white hover:bg-primary-600 transition-colors duration-300 ease-linear"
@@ -36406,7 +36343,7 @@ const Footer = ({
   })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
     class: "text-3xl"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("a", {
-    href: "https://www.twitter.com/MacAshHomeLoans1",
+    href: "https://www.twitter.com/",
     target: "_blank",
     rel: "noopener noreferrer",
     className: "flex justify-center items-center text-white hover:bg-primary-600 transition-colors duration-300 ease-linear"
@@ -37209,7 +37146,7 @@ const MainNav = ({
   };
   return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("nav", {
     id: "main-navigation",
-    className: `py-2 lg:py-2 bg-white shadow-5xl lg:shadow-none w-full transition duration-300 ease-linear ${headerStyle === "overlap" ? "lg:bg-transparent" : "lg:bg-black"} ${headerHasBorder && "lg:border-b lg:border-solid lg:border-gray-300"} ${offcanvasOpen ? "" : ""} ${headerDarkMode && "lg:!bg-white"} ${scrolled && "!fixed !bg-white top-0 left-0 w-full !shadow-5xl z-50"} ${className}`,
+    className: `py-0 lg:py-2 bg-white shadow-5xl lg:shadow-none w-full transition duration-300 ease-linear ${headerStyle === "overlap" ? "lg:bg-transparent" : "lg:bg-black"} ${headerHasBorder && "lg:border-b lg:border-solid lg:border-gray-300"} ${offcanvasOpen ? "" : ""} ${headerDarkMode && "lg:!bg-white"} ${scrolled && "!fixed !bg-white top-0 left-0 w-full !shadow-5xl z-50"} ${className}`,
     role: "navigation",
     "aria-label": "main-navigation",
     "offcanvas-open": offcanvasOpen
@@ -37218,18 +37155,17 @@ const MainNav = ({
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("div", {
     className: "flex items-center lg:hidden"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("a", {
-    href: "tel:123-456-7890",
+    href: "tel:440-469-9338",
     className: "text-sm font-semibold text-white hover:text-primary-100"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("svg", {
     width: "20",
     height: "20",
     viewBox: "0 0 20 20",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
-    className: "mr-1.5"
+    xmlns: "http://www.w3.org/2000/svg"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("path", {
-    d: "M1.08124.769072L4.33117.019088c.35312-.081249.71561.103122.85936.434365L6.6905 3.95338c.13125.30624.04375.66561-.21562.87498L4.58117 6.37833c1.12498 2.39682 3.09056 4.39057 5.53743 5.53737l1.5499-1.8937c.2125-.25937.5688-.34687.875-.21562l3.4999 1.49992c.3344.1469.5188.5094.4375.8625l-.75 3.25c-.0781.3375-.3781.5812-.7312.5812C6.99674 16 .5 9.51576.5 1.50031c0-.35.240621-.653115.58124-.731238z",
-    fill: "#000000"
+    d: "M17.2571 19.75H17.1296C2.39215 18.9025 0.299644 6.4675 0.00714362 2.6725C-0.0164249 2.37744 0.0184601 2.08062 0.1098 1.79906C0.20114 1.5175 0.347139 1.25673 0.539432 1.03169C0.731725 0.80665 0.966533 0.621766 1.2304 0.48763C1.49427 0.353493 1.78201 0.272741 2.07714 0.250001H6.20964C6.51006 0.24971 6.80365 0.339633 7.05237 0.508122C7.30109 0.676611 7.49349 0.915903 7.60464 1.195L8.74464 4C8.85441 4.27266 8.88165 4.57156 8.82298 4.85957C8.76431 5.14758 8.62232 5.412 8.41464 5.62L6.81714 7.2325C7.06668 8.65056 7.74578 9.95775 8.76257 10.9772C9.77935 11.9967 11.0847 12.6792 12.5021 12.9325L14.1296 11.32C14.3408 11.1146 14.6077 10.9759 14.8971 10.9213C15.1865 10.8666 15.4856 10.8983 15.7571 11.0125L18.5846 12.145C18.8595 12.2597 19.0941 12.4536 19.2584 12.702C19.4226 12.9504 19.5093 13.2422 19.5071 13.54V17.5C19.5071 18.0967 19.2701 18.669 18.8481 19.091C18.4262 19.5129 17.8539 19.75 17.2571 19.75ZM2.25714 1.75C2.05823 1.75 1.86747 1.82902 1.72681 1.96967C1.58616 2.11032 1.50714 2.30109 1.50714 2.5V2.56C1.85214 7 4.06464 17.5 17.2121 18.25C17.3107 18.2561 17.4094 18.2427 17.5028 18.2105C17.5961 18.1783 17.6822 18.1281 17.756 18.0626C17.8299 17.9971 17.8901 17.9176 17.9332 17.8288C17.9763 17.74 18.0014 17.6436 18.0071 17.545V13.54L15.1796 12.4075L13.0271 14.545L12.6671 14.5C6.14214 13.6825 5.25714 7.1575 5.25714 7.09L5.21214 6.73L7.34214 4.5775L6.21714 1.75H2.25714Z",
+    fill: "#152636"
   })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("div", {
     className: "flex-auto flex justify-center lg:justify-start"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -37355,7 +37291,7 @@ const MainNav = ({
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("i", {
     className: "fa fa-sign-in mr-2"
   }), "Client Portal")))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)(_Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    href: "/Contact US/",
+    onClick: () => openContactModal(),
     text: "Contact",
     className: "w-full mb-4 border-1"
   }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)(_Button_ButtonWire__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -37366,7 +37302,7 @@ const MainNav = ({
     id: "bottom-right-modal",
     "data-modal-placement": "bottom-right",
     tabindex: "-1",
-    className: "fade hidden overflow-y-auto overflow-x-hidden bg-white fixed top-0 right-0 right-0 z-50 w-1/2 h-modal md:h-full"
+    className: "h-full fade hidden overflow-y-auto overflow-x-hidden bg-white fixed top-0 right-0 right-0 z-50 w-full md:w-1/2 h-modal md:h-full"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("div", {
     className: "relative w-full h-full md:h-auto"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("div", {
@@ -37406,13 +37342,13 @@ const MainNav = ({
   })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("span", {
     className: "sr-only"
   }, "Close modal"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("div", {
-    className: "pb-8 space-y-6 px-20 "
+    className: "pb-8 space-y-6 md:px-20 px-2"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("p", {
     className: "text-4xl text-center my-8"
   }, "Contact Us"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("div", {
-    className: "mb-10 text-black flex"
+    className: "mb-10 text-black md:flex block"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("button", {
-    className: "w-1/2 flex justify-center items-center bg-gray-200 py-2"
+    className: "block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("div", {
     className: "flex justify-center items-center"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("i", {
@@ -37420,7 +37356,7 @@ const MainNav = ({
   }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("p", {
     className: "m-0"
   }, "Book a Call"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("button", {
-    className: "w-1/2 flex justify-center items-center border-black bg-primary-100 py-2 text-white"
+    className: "w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("div", {
     className: "flex justify-center items-center"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("i", {
@@ -37441,9 +37377,9 @@ const MainNav = ({
     required: true,
     className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
   })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("div", {
-    className: "flex"
+    className: "block md:flex"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("div", {
-    className: "mb-5 w-1/2 mr-3"
+    className: "mb-5 w-full md:w-1/2 mr-3"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("label", {
     className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
     htmlFor: "phone-number"
@@ -37454,7 +37390,7 @@ const MainNav = ({
     required: true,
     className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
   })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("div", {
-    className: "mb-5 w-1/2"
+    className: "mb-5 md:w-1/2"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("label", {
     className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
     htmlFor: "email-address"
@@ -37719,6 +37655,29 @@ const CTA = ({
   //   const currentWidth = window.innerWidth;
   // }
 
+  const {
+    0: offcanvasOpen,
+    1: setOffcanvasOpen
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+
+  const handleChange = e => {
+    undefined.setState({
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const clickHandler = () => {
+    setOffcanvasOpen(!offcanvasOpen);
+  };
+
+  const openContactModal = () => {
+    document.getElementById("bottom-right-modal").style.display = "block";
+  };
+
+  const closeContactModal = () => {
+    document.getElementById("bottom-right-modal").style.display = "none";
+  };
+
   return (// <section
     //   className={`bg-cta pt-14 md:pt-20 pb-18 md:pb-10 ${
     //     className || ""
@@ -37742,12 +37701,149 @@ const CTA = ({
     }, subtext || "Work smarter, not harder. Get started with High Echelon, a top small business CPA serving the greater Atlanta area and Georgia, today.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
       className: "block md:flex md:items-center md:space-x-4"
     }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      href: "/",
+      onClick: () => openContactModal(),
       text: "Book a Call",
       className: "w-full md:w-auto mb-28 md:mb-0"
     })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
       className: "text-center justify-center flex"
-    }))
+    }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      id: "bottom-right-modal",
+      "data-modal-placement": "bottom-right",
+      tabindex: "-1",
+      className: "h-full fade hidden overflow-y-auto overflow-x-hidden bg-white fixed top-0 right-0 right-0 z-50 w-full md:w-1/2 h-modal md:h-full"
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      className: "relative w-full h-full md:h-auto"
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      className: " bg-white dark:bg-gray-700"
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      className: "flex justify-between items-center p-5 border-b dark:border-primary-500"
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      className: "flex items-center"
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("svg", {
+      width: "17",
+      height: "16",
+      viewBox: "0 0 17 16",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg",
+      className: "mr-1.5 text-primary-100"
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+      d: "M1.08124.769072L4.33117.019088c.35312-.081249.71561.103122.85936.434365L6.6905 3.95338c.13125.30624.04375.66561-.21562.87498L4.58117 6.37833c1.12498 2.39682 3.09056 4.39057 5.53743 5.53737l1.5499-1.8937c.2125-.25937.5688-.34687.875-.21562l3.4999 1.49992c.3344.1469.5188.5094.4375.8625l-.75 3.25c-.0781.3375-.3781.5812-.7312.5812C6.99674 16 .5 9.51576.5 1.50031c0-.35.240621-.653115.58124-.731238z",
+      fill: "#D2B15E"
+    })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("a", {
+      href: "tel:(404) 446-9338",
+      className: "text-sm font-semibold text-primary-100"
+    }, "(404) 446-9338")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+      type: "button",
+      className: "text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white",
+      "data-modal-toggle": "bottom-right-modal",
+      onClick: () => closeContactModal()
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("svg", {
+      "aria-hidden": "true",
+      className: "w-5 h-5",
+      fill: "currentColor",
+      viewBox: "0 0 20 20",
+      xmlns: "http://www.w3.org/2000/svg"
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+      "fill-rule": "evenodd",
+      d: "M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z",
+      "clip-rule": "evenodd"
+    })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
+      className: "sr-only"
+    }, "Close modal"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      className: "pb-8 space-y-6 md:px-20 px-2"
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
+      className: "text-4xl text-center my-8"
+    }, "Contact Us"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      className: "mb-10 text-black md:flex block"
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+      className: "block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0"
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      className: "flex justify-center items-center"
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("i", {
+      className: "fal fa-calendar mr-2 text-xl"
+    }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
+      className: "m-0"
+    }, "Book a Call"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+      className: "w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white"
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      className: "flex justify-center items-center"
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("i", {
+      class: "fal fa-envelope mr-2 text-xl"
+    }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
+      className: "m-0"
+    }, "Contact Us")))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      className: "mb-8"
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      className: "mb-5"
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
+      className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
+      htmlFor: "first-name"
+    }, "Name"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
+      type: "text",
+      name: "first-name",
+      onChange: () => handleChange(),
+      required: true,
+      className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
+    })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      className: "block md:flex"
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      className: "mb-5 w-full md:w-1/2 mr-3"
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
+      className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
+      htmlFor: "phone-number"
+    }, "Phone Number"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
+      type: "tel",
+      name: "phone-number",
+      onChange: () => handleChange(),
+      required: true,
+      className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
+    })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      className: "mb-5 md:w-1/2"
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
+      className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
+      htmlFor: "email-address"
+    }, "Email Address"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
+      type: "email",
+      name: "email-address",
+      onChange: () => handleChange(),
+      required: true,
+      className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
+    }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      className: "mb-5"
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
+      className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
+      htmlFor: "first-name"
+    }, "What Can We Help You With ?"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("select", {
+      name: "helps",
+      className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+      value: "",
+      disabled: true,
+      selected: true
+    }, "Select Ones ..."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+      value: "0"
+    }, "Accounting"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+      value: "1"
+    }, "Service"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+      value: "2"
+    }, "About"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      className: "mb-5"
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
+      className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
+      htmlFor: "first-name"
+    }, "Message(Optional)"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("textarea", {
+      type: "textarea",
+      name: "message",
+      onChange: () => handleChange(),
+      required: true,
+      rows: "5",
+      className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
+    })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Button_ButtonSolid__WEBPACK_IMPORTED_MODULE_1__["default"] // onClick={()}
+    , {
+      text: "Send",
+      altStyle: true,
+      className: "bg-primary-700 min-w-0 text-base w-1/3"
+    })))))))
   );
 };
 
@@ -38286,6 +38382,598 @@ const useOnClickOutside = (ref, handler) => {
 
 /***/ }),
 
+/***/ "./src/pages/consulting.js":
+/*!*********************************!*\
+  !*** ./src/pages/consulting.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
+/* harmony import */ var gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby-plugin-transition-link/AniLink */ "./node_modules/gatsby-plugin-transition-link/AniLink/index.js");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./src/components/Layout.js");
+/* harmony import */ var _components_SEO__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/SEO */ "./src/components/SEO.js");
+/* harmony import */ var _components_Repeating_Testimonials__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Repeating/Testimonials */ "./src/components/Repeating/Testimonials.js");
+/* harmony import */ var _components_Repeating_Carousel__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Repeating/Carousel */ "./src/components/Repeating/Carousel.js");
+/* harmony import */ var _components_Accordion_Accord__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Accordion/Accord */ "./src/components/Accordion/Accord.js");
+/* harmony import */ var _components_Repeating_ValueProps__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Repeating/ValueProps */ "./src/components/Repeating/ValueProps.js");
+/* harmony import */ var _components_Repeating_About__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Repeating/About */ "./src/components/Repeating/About.js");
+/* harmony import */ var _components_Repeating_CTA__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Repeating/CTA */ "./src/components/Repeating/CTA.js");
+/* harmony import */ var _components_Button_ButtonSolid__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Button/ButtonSolid */ "./src/components/Button/ButtonSolid.js");
+/* harmony import */ var _components_Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/Button/ButtonSolidGold */ "./src/components/Button/ButtonSolidGold.js");
+/* harmony import */ var _components_OffCanvas_OffCanvas__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/OffCanvas/OffCanvas */ "./src/components/OffCanvas/OffCanvas.js");
+/* harmony import */ var react_accessible_accordion__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react-accessible-accordion */ "./node_modules/react-accessible-accordion/dist/es/index.js");
+/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.esm.js");
+
+
+
+
+
+
+
+
+
+
+
+
+
+ // import ButtonSolid from "../Button/ButtonSolid";
+// import ButtonGhost from "../Button/ButtonGhost";
+
+
+
+
+const Page = ({
+  data
+}) => {
+  const {
+    0: offcanvasOpen,
+    1: setOffcanvasOpen
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+
+  const handleChange = e => {
+    undefined.setState({
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const clickHandler = () => {
+    setOffcanvasOpen(!offcanvasOpen);
+  };
+
+  const openContactModal = () => {
+    document.getElementById("bottom-right-modal").style.display = "block";
+  };
+
+  const closeContactModal = () => {
+    document.getElementById("bottom-right-modal").style.display = "none";
+  };
+
+  return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    headerDarkMode: true
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_SEO__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    title: "Independent Mortgage Lender Chicago | Echelon Home Loans",
+    description: "Apply online. Close in 15 days. It's that easy. Make your dream home a reality with Echelon, your local independent mortgage broker in Chicago."
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
+    className: "hidden md:block mb-20 md:mb-32 mt-12"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "container"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "relative grid md:grid-cols-12 md:gap-x-10 lg:gap-x-16 gap-y-8 items-center"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "md:col-start-1 md:col-span-10"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
+    image: data.consultingDesktop.childImageSharp.gatsbyImageData
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "md:absolute bg-primary-700 shadow-inner md:col-start-6 md:col-span-7 p-20"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h2", {
+    className: "font-light text-5xl text-primary-200 mb-6"
+  }, "Atlanta Small Business Accounting Services"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+    className: "font-light text-base text-primary-200"
+  }, "Looking to get started or need to restructure? Need to talk it out? We know the path."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    className: "font-light",
+    onClick: () => openContactModal(),
+    text: "Book a Call"
+  }))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
+    className: "md:hidden mb-20 md:mb-32 mt-12"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "container"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "relative grid md:grid-cols-12 lg:gap-x-16 items-center"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "md-hidden"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
+    image: data.consultingMobile.childImageSharp.gatsbyImageData
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "z-20 mt-[-128px] mx-4 bg-primary-700 shadow-inner py-10 px-6"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h2", {
+    className: "text-primary-200 font-light text-4xl"
+  }, "Atlanta Small Business Consulting Services"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+    className: "font-light text-xl text-primary-200"
+  }, "Looking to get started or need to restructure? Need to talk it out? We know the path."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    className: "font-light",
+    onClick: () => openContactModal(),
+    text: "Book a Call"
+  }))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
+    className: "mt-12 flex justify-content items-center flex-col"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "flex justify-content items-center flex-col md:mx-88 md:min-w-120 sm:mx-8 px-7"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+    className: "text-4xl-x font-thin mb-6 text-center md:text-start"
+  }, "Get Expert Advice. Make Strategic Moves"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+    className: "text-xl font-light leading-7 text-center md:text-start mb-10 md:mb-0"
+  }, "Are you just getting started? Deciding how to structure your new business is a critical first step and can have enormous implications. Or are you already operating a business and need to make a shift? Smart advice starts here.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "hidden md:block flex justify-center items-center md:pt-32 md:pb-32 pb-20"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
+    height: "3",
+    viewBox: "0 0 1094 3",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("path", {
+    d: "M0 1.5h1094",
+    stroke: "url(#paint0_linear_1129_1425)",
+    strokeWidth: "3"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("linearGradient", {
+    id: "paint0_linear_1129_1425",
+    x1: "0",
+    y1: "2.00435",
+    x2: "w-10/12",
+    y2: "1.96651",
+    gradientUnits: "userSpaceOnUse"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    stopColor: "#A2A09D",
+    stopOpacity: "0"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".145833",
+    stopColor: "#CB9636"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".265625",
+    stopColor: "#CFA855"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".427083",
+    stopColor: "#FCE4A7"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".578125",
+    stopColor: "#F0D592"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".713542",
+    stopColor: "#CFA855"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".828125",
+    stopColor: "#CB9636"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: "1",
+    stopColor: "#A7A7A7",
+    stopOpacity: "0"
+  }))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "md:hidden flex justify-center items-center md:pt-32 md:pb-32 pb-20"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
+    width: "324",
+    height: "2",
+    viewBox: "0 0 324 2",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    className: "mb-7"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("line", {
+    x1: "0.900024",
+    y1: "1",
+    x2: "323.1",
+    y2: "1",
+    stroke: "url(#paint0_linear_1192_6745)",
+    "stroke-width": "2"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("linearGradient", {
+    id: "paint0_linear_1192_6745",
+    x1: "0.900024",
+    y1: "2.50435",
+    x2: "315.429",
+    y2: "2.50107",
+    gradientUnits: "userSpaceOnUse"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    "stop-color": "#A2A09D",
+    "stop-opacity": "0"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: "0.145833",
+    "stop-color": "#CB9636"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: "0.265625",
+    "stop-color": "#CFA855"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: "0.427083",
+    "stop-color": "#FCE4A7"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: "0.578125",
+    "stop-color": "#F0D592"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: "0.713542",
+    "stop-color": "#CFA855"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: "0.828125",
+    "stop-color": "#CB9636"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: "1",
+    "stop-color": "#A7A7A7",
+    "stop-opacity": "0"
+  })))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
+    className: "mb-20 md:mb-32 mt-12"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "container"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "lg:flex items-center md:block"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "md:hidden md:block w-full mb-8"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
+    image: data.serviceImage.childImageSharp.gatsbyImageData,
+    alt: "Small Business Consulting",
+    className: "rounded-[8px]"
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "flex justify-center flex-col lg:w-1/2 md:w-full md:mb-8 sm:mb-8"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "md:pl-10 pl-0"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+    className: "text-4xl font-thin mb-6"
+  }, "How We Can Help Your Small Business"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+    className: "text-base font-light  mb-6"
+  }, "At High Echelon, we draw on a long history of best practices to help small you move forward with confidence. Our small business consulting services include:"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "text-base font-light"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "flex"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
+    className: "fa fa-check text-primary-100 mr-3"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+    className: "text-base font-semibold mb-3"
+  }, "Entity formation")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "flex"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
+    className: "fa fa-check text-primary-100 mr-3"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+    className: "text-base font-semibold mb-3"
+  }, "Register a new business at the state and federal level")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "flex"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
+    className: "fa fa-check text-primary-100 mr-3"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+    className: "text-base font-semibold mb-3"
+  }, "Talk out the pros and cons of different approaches")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "flex"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
+    className: "fa fa-check text-primary-100 mr-3"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+    className: "text-base font-semibold mb-3"
+  }, "Advise you on a big purchase or sale that may be on the horizon"))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "hidden md:block md:w-1/2 mr-0 md:mr-20 md:mb-8 mb-8"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
+    image: data.serviceImage.childImageSharp.gatsbyImageData,
+    alt: "Small Business Consulting",
+    className: "rounded-[8px] w-full"
+  }))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
+    className: "mb-20 md:mb-32 mt-12"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "container"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "lg:flex items-center md:block"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "lg:w-1/2 md:w-full mr-0 md:mr-20 md:mb-8 sm:mb-8"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
+    image: data.accountingStartImage.childImageSharp.gatsbyImageData,
+    alt: "Small Business Consulting",
+    className: "rounded-[8px] w-full"
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "block md:flex justify-center flex-col lg:w-1/2 md:w-full mt-10 md:mt-0"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "px-0 md:px-10"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+    className: "text-4xl font-thin mb-6"
+  }, "How To Get Started"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+    className: "text-base font-light  mb-6"
+  }, "We begin with an introductory call at no cost to you. First, we want to understand your goals and align on expectations, timeline, and outcomes. And from there, we\u2019ll present you with a proposal outlining a plan and the associated costs."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    className: "font-light",
+    onClick: () => openContactModal(),
+    text: "Book a Call"
+  })))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
+    className: "mb-20 md:mb-32 mt-0 md:mt-12"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "container"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+    className: "text-4xl-x mb-12"
+  }, "Answers To Frequently Asked Questions"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Accordion_Accord__WEBPACK_IMPORTED_MODULE_6__["default"], null))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
+    className: "mb-20 md:mb-32"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "container"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "gap-y-8 md:gap-x-10 lg:gap-x-16"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "mb-8 flex justify-center items-center flex-col"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h3", {
+    className: "text-primary-700 text-4xl font-thin mb-12"
+  }, "Streamline Everything. Get The Full Benefit."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+    className: "md:w-2/3 sm:w-full text-xl md:text-base sm:text-base font-light mb-12"
+  }, "Get the best results when you combine our expert advice with end-to-end services that manage your finances in a full-stack solution")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "md:flex sm:block"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    fade: true,
+    to: "/accounting/",
+    className: "mr-10 mb-6 w-1/3"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: " max-w-140"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
+    image: data.accountingStartImage.childImageSharp.gatsbyImageData,
+    alt: "Accounting Services",
+    className: "mb-6 rounded-[8px] w-full"
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "justify-center flex-col py-2"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h3", {
+    className: "text-lg mb-4 text-primary-700"
+  }, "Accounting Services"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+    className: "text-base"
+  }, "Gain a clear understanding of your financials so you can make smart business decisions."))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    fade: true,
+    to: "/payroll/",
+    className: "mr-10 mb-6 w-1/3"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "max-w-140"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
+    image: data.accountServicesImage.childImageSharp.gatsbyImageData,
+    alt: "Payroll Management",
+    className: "mb-6 rounded-[8px] h-60 w-full"
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "justify-center flex-col py-2"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h3", {
+    className: "text-lg mb-4 text-primary-700"
+  }, "Payroll Management"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+    className: "text-base"
+  }, "Lighten your load with automated payroll processing, hiring, and termination."))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    fade: true,
+    to: "/tax/",
+    className: "mr-10 mb-6 w-1/3 h-60"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "max-w-140"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
+    image: data.smallBusinessConsultingImage.childImageSharp.gatsbyImageData,
+    alt: "Income Tax Preparation",
+    className: "mb-6 rounded-[8px] h-60 max-w-140"
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "justify-center flex-col py-2"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h3", {
+    className: "text-lg mb-4 text-primary-700"
+  }, "Income Tax Preparation"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+    className: "text-base"
+  }, "Remove the stress of taxes with professional tax preparation and an IRS liaison."))))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Repeating_About__WEBPACK_IMPORTED_MODULE_8__["default"], null), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
+    className: "w-full",
+    width: "1200",
+    height: "3",
+    viewBox: "0 0 1200 3",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("path", {
+    d: "M0 1.5h1200",
+    stroke: "url(#paint0_linear_1129_1425)",
+    "stroke-width": "3"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("linearGradient", {
+    id: "paint0_linear_1129_1425",
+    x1: "0",
+    y1: "2.00435",
+    x2: "1182.95",
+    y2: "1.96651",
+    gradientUnits: "userSpaceOnUse"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    "stop-color": "#A2A09D",
+    "stop-opacity": "0"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".145833",
+    "stop-color": "#FCE4A7"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".265625",
+    "stop-color": "#CFA855"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".427083",
+    "stop-color": "#FCE4A7"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".578125",
+    "stop-color": "#F0D592"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".713542",
+    "stop-color": "#FCE4A7"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".828125",
+    "stop-color": "#CB9636"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: "1",
+    "stop-color": "#A7A7A7",
+    "stop-opacity": "0"
+  })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Repeating_CTA__WEBPACK_IMPORTED_MODULE_9__["default"], null), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
+    className: "w-full",
+    width: "1200",
+    height: "3",
+    viewBox: "0 0 1200 3",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("path", {
+    d: "M0 1.5h1200",
+    stroke: "url(#paint0_linear_1129_1425)",
+    "stroke-width": "3"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("linearGradient", {
+    id: "paint0_linear_1129_1425",
+    x1: "0",
+    y1: "2.00435",
+    x2: "1182.95",
+    y2: "1.96651",
+    gradientUnits: "userSpaceOnUse"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    "stop-color": "#A2A09D",
+    "stop-opacity": "0"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".145833",
+    "stop-color": "#FCE4A7"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".265625",
+    "stop-color": "#CFA855"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".427083",
+    "stop-color": "#FCE4A7"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".578125",
+    "stop-color": "#F0D592"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".713542",
+    "stop-color": "#FCE4A7"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: ".828125",
+    "stop-color": "#CB9636"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+    offset: "1",
+    "stop-color": "#A7A7A7",
+    "stop-opacity": "0"
+  })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    id: "bottom-right-modal",
+    "data-modal-placement": "bottom-right",
+    tabindex: "-1",
+    className: "h-full fade hidden overflow-y-auto overflow-x-hidden bg-white fixed top-0 right-0 right-0 z-50 w-full md:w-1/2 h-modal md:h-full"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "relative w-full h-full md:h-auto"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: " bg-white dark:bg-gray-700"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "flex justify-between items-center p-5 border-b dark:border-primary-500"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "flex items-center"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
+    width: "17",
+    height: "16",
+    viewBox: "0 0 17 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    className: "mr-1.5 text-primary-100"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("path", {
+    d: "M1.08124.769072L4.33117.019088c.35312-.081249.71561.103122.85936.434365L6.6905 3.95338c.13125.30624.04375.66561-.21562.87498L4.58117 6.37833c1.12498 2.39682 3.09056 4.39057 5.53743 5.53737l1.5499-1.8937c.2125-.25937.5688-.34687.875-.21562l3.4999 1.49992c.3344.1469.5188.5094.4375.8625l-.75 3.25c-.0781.3375-.3781.5812-.7312.5812C6.99674 16 .5 9.51576.5 1.50031c0-.35.240621-.653115.58124-.731238z",
+    fill: "#D2B15E"
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("a", {
+    href: "tel:(404) 446-9338",
+    className: "text-sm font-semibold text-primary-100"
+  }, "(404) 446-9338")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("button", {
+    type: "button",
+    className: "text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white",
+    "data-modal-toggle": "bottom-right-modal",
+    onClick: () => closeContactModal()
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
+    "aria-hidden": "true",
+    className: "w-5 h-5",
+    fill: "currentColor",
+    viewBox: "0 0 20 20",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("path", {
+    "fill-rule": "evenodd",
+    d: "M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z",
+    "clip-rule": "evenodd"
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("span", {
+    className: "sr-only"
+  }, "Close modal"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "pb-8 space-y-6 md:px-20 px-2"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+    className: "text-4xl text-center my-8"
+  }, "Contact Us"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "mb-10 text-black md:flex block"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("button", {
+    className: "block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "flex justify-center items-center"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
+    className: "fal fa-calendar mr-2 text-xl"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+    className: "m-0"
+  }, "Book a Call"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("button", {
+    className: "w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "flex justify-center items-center"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
+    class: "fal fa-envelope mr-2 text-xl"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+    className: "m-0"
+  }, "Contact Us")))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "mb-8"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "mb-5"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("label", {
+    className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
+    htmlFor: "first-name"
+  }, "Name"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("input", {
+    type: "text",
+    name: "first-name",
+    onChange: () => handleChange(),
+    required: true,
+    className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "block md:flex"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "mb-5 w-full md:w-1/2 mr-3"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("label", {
+    className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
+    htmlFor: "phone-number"
+  }, "Phone Number"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("input", {
+    type: "tel",
+    name: "phone-number",
+    onChange: () => handleChange(),
+    required: true,
+    className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "mb-5 md:w-1/2"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("label", {
+    className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
+    htmlFor: "email-address"
+  }, "Email Address"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("input", {
+    type: "email",
+    name: "email-address",
+    onChange: () => handleChange(),
+    required: true,
+    className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
+  }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "mb-5"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("label", {
+    className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
+    htmlFor: "first-name"
+  }, "What Can We Help You With ?"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("select", {
+    name: "helps",
+    className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("option", {
+    value: "",
+    disabled: true,
+    selected: true
+  }, "Select Ones ..."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("option", {
+    value: "0"
+  }, "Accounting"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("option", {
+    value: "1"
+  }, "Service"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("option", {
+    value: "2"
+  }, "About"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "mb-5"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("label", {
+    className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
+    htmlFor: "first-name"
+  }, "Message(Optional)"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("textarea", {
+    type: "textarea",
+    name: "message",
+    onChange: () => handleChange(),
+    required: true,
+    rows: "5",
+    className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Button_ButtonSolid__WEBPACK_IMPORTED_MODULE_10__["default"] // onClick={()}
+  , {
+    text: "Send",
+    altStyle: true,
+    className: "bg-primary-700 min-w-0 text-base w-1/3"
+  })))))));
+};
+
+const query = "268632818";
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Page);
+
+/***/ }),
+
 /***/ "./src/pages/index.js":
 /*!****************************!*\
   !*** ./src/pages/index.js ***!
@@ -38339,13 +39027,36 @@ __webpack_require__.r(__webpack_exports__);
 const Page = ({
   data
 }) => {
+  const {
+    0: offcanvasOpen,
+    1: setOffcanvasOpen
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+
+  const handleChange = e => {
+    undefined.setState({
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const clickHandler = () => {
+    setOffcanvasOpen(!offcanvasOpen);
+  };
+
+  const openContactModal = () => {
+    document.getElementById("bottom-right-modal").style.display = "block";
+  };
+
+  const closeContactModal = () => {
+    document.getElementById("bottom-right-modal").style.display = "none";
+  };
+
   return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
     headerDarkMode: true
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_SEO__WEBPACK_IMPORTED_MODULE_4__["default"], {
     title: "High Echelon",
     description: "Test"
   }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
-    className: "w-full lg:hidden md:hidden relative"
+    className: "w-full block lg:hidden md:hidden relative"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
     image: data.heroMobile.childImageSharp.gatsbyImageData,
     className: "md:hidden w-full"
@@ -38358,7 +39069,7 @@ const Page = ({
   }, "Elevated Consulting, Payroll, Accounting & Tax Services"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
     className: "flex justify-center md:justify-center space-x-4 md:space-x-5"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_12__["default"], {
-    href: "/",
+    onClick: () => openContactModal(),
     text: "Book a Call"
   }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
     className: "relative mb-32 flex justify-center"
@@ -38417,10 +39128,10 @@ const Page = ({
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("path", {
-    d: "M78.0267 30.523l-16.334-14.6733c-.3378-.3035-1.208-.5485-1.5115-.2108l-.0172.0666c-.1411.1351-.24.3327-.2884.5021-.1159.4024-.1603.846-.1502 1.2635.0101.3973.0807.7946.2097 1.1707.0605.1764.1392.3478.2209.5152.0423.0867.0857.1735.1331.2572-3.0644 2.7285-8.6566 8.6394-10.28 16.587-.0323.1553-.1049.3015-.2158.4155-1.7434 1.7807-4.1009 2.8757-6.5612 3.0159-3.8226.2198-7.6845.0766-11.4809-.4225l-1.3723-.1795c-.8027-.1038-1.5892-.0443-2.3464.1341-.1351.0313-.2743.0293-.4074-.009-1.2896-.3691-4.9559-1.1102-8.0888 1.1979-1.8594 1.3703-3.026 3.4505-3.7067 5.6214-.4325 1.3784-.6856 2.8102-.8268 4.2461-.0807.8167-.1472 1.6486-.1392 2.4704.0061.5607-.0665 1.1193-.0645 1.6789.001.4043.0555.8067.0656 1.21.009.3711-.0807.7855.0615 1.1404.2571.6443 1.698-.8329 1.8482-1.0608.6121-.9347.716-2.0862.7462-3.1742.0292-1.0799.0918-2.1366.241-3.2085.242-1.7424.6877-3.511 1.6093-5.0265.4316-.7099.9761-1.3573 1.6456-1.8544.3731-.2783.7623-.492 1.1545-.6554.7331-.3045 1.4389.477 1.0396 1.1626-.0585.1009-.1149.2027-.1704.3076-.6867 1.2906-1.1505 2.8203-1.4197 4.6796-.7875 5.444.2228 10.8648 1.1989 16.1072.4386 2.3585.5233 3.7651.7613 6.0429.0111.1523.0151.3015-.0353.4497-.0605.1795-.1674.3428-.2602.5072-.0332.0585-.0665.118-.1008.1765-.0736.0867-.1452.1764-.2077.3005-.0615.121-.0625.2974.0555.363.0453.0252.0988.0282.1502.0302.0252 0 1.6406.0746 1.9985.0504.0877-.006.971-.003 1.1445-.1724.0988-.0968.0907-.2561.0756-.3933-.0252-.2339-.0514-.4668-.0776-.7007-.0626-.5667-.2239-1.1032-.2854-1.6658-.0555-.5001-.1119-.9993-.1714-1.4984-.1573-1.3209-.3247-2.6438-.5677-3.9527-.3832-2.061-.7704-4.1503-1.0467-6.2436-.0746-.5717.4568-1.0416 1.0154-.8974 1.2947.3338 2.8748.6171 4.5032.6171h.0303S36.326 69.9559 36.3674 70.34c.0383.3661-.1694.7764-.0303 1.1082.1543.366 3.509.241 3.6623.0081.1885-.2874-.0898-.6413-.2309-.8833-.2229-.3822-6.8365-13.1941-6.8365-13.1941-.2219-.4437-.0031-.9761.4648-1.1394.4971-.1744.9821-.3933 1.446-.6675.6624-.3913 1.2422-.8753 1.7514-1.4379.2259-.2501.5637-.357.8823-.247 2.2849.7885 7.0543 1.8402 15.1452 2.9503.7421.1019 1.4611.1523 2.1558.1523.2098 0 .4165-.0061.6201-.0172.4135-.0221.7714.2824.836.6918l1.7907 11.26.0908.5687s.0948 1.0013.1311 1.1899c.0383.1996.0333.3841-.0192.5808-.0393.1462-.128.3761-.0494.5223.0656.123.2813.1502.4084.125.7421-.002 1.4853-.005 2.2274-.003.1432 0 .7603.008.8843-.0383.2228-.0827.2007-.3519.121-.5556-.1543-.3963-.4608-.6938-.6957-1.0406l-.2027-.3277c-.0051-.0141-.0111-.0293-.0162-.0434-.1129-.2954-.2198-.5929-.3166-.8944l-1.8987-11.9366c-.0615-.3872.1644-.7523.5284-.8995 1.1475-.4628 2.178-1.1232 3.0815-1.9632l-.0081.0716 4.6857.5546c.5677.0675.8954.6796.6363 1.1888l-3.0321 5.9653-.3327.6554c-.0454.0474-.0918.0938-.1372.1412-.1492.1543-.2944.3126-.4446.4648-.1271.1301-.24.2309-.4064.2662-.0716.0152-.1139.0615-.1422.114-.006.0091-.01.0222-.0141.0332-.008.0242-.0151.0464-.0151.0716 0 .0111-.0061.0162-.0061.0283.0021.362.9922 2.0832 1.4036 2.5047.5304.5445.7704-.0857 1.0084-.5415.1593-.3055.3186-.6111.4779-.9156.1967-.3761.5828-1.1323.5798-1.1353l4.9469-9.7325c.2592-.5102-.0686-1.1223-.6363-1.1898l-5.5044-.6504c-.5687-.0675-.8904-.6756-.6323-1.1868.5062-1.0013.9166-2.1175 1.2201-3.3517.8208-3.3406.6655-7.0654-.4598-11.0695-.0746-.2672-.1412-.5092-.2006-.729-.1412-.5233.253-1.0336.7945-1.0336h9.6599c.2833 0 .5465-.1462.6977-.3861l1.7374-2.779c.2117-.3388.1492-.7805-.1472-1.0477l-.001.0031zM52.9625 54.3398c-8.0546-1.1051-12.0244-2.0298-13.9079-2.5904-.4346-.1291-.6958-.5828-.5597-1.0144.2279-.7179.3973-1.4964.5093-2.3353.0605-.4578-.2904-.8702-.7512-.9085l-.8763-.0716c-.4285-.0353-.8218.2652-.8793.6907-.3448 2.5622-1.331 4.3389-2.9362 5.2887-2.8445 1.6849-7.0523.6181-9.1265-.0847-.3256-.1099-.5455-.4114-.5545-.7552-.0394-1.5115.0171-3.017.2329-4.5063.2269-1.5659.603-2.8263 1.1505-3.8558 1.089-2.0449 2.8768-3.1178 4.7755-2.8677.0353.005 1.3834.1815 1.3834.1815 3.9517.5183 7.9729.6655 11.9518.4396 1.7484-.0998 3.4525-.5868 4.9993-1.3925.5354-.2783 1.1777.0766 1.2009.6796.1755 4.4871 1.7646 8.9127 4.7553 13.2183-.4376-.0172-.8903-.0525-1.3683-.118l.001.002zm10.5341-7.375c-.6312 2.5693-1.9905 5.3684-4.842 6.7034-.4185.1957-.9317.0202-1.1203-.4013-1.7333-3.875-2.1094-7.4475-1.086-10.6349 1.0557-3.2881 3.3931-5.5266 5.081-6.785.4638-.3459 1.1253-.118 1.2796.4396.0766.2783.1603.5758.249.8934 1.0074 3.5806 1.1546 6.8718.4387 9.7838v.001zm1.8099-14.647c-.3599-.0182-.7169-.0585-1.0718-.0877-.6323-.0515-1.2604-.0656-1.8886.1492-.8642.2944-1.6103.9337-2.3484 1.452-.8188.5747-1.5741 1.2735-2.2668 1.9925-1.6456 1.7051-2.9423 3.7469-3.6733 6.0066-.0888.2743-.1694.5516-.241.8299-.2229.8661-1.5075.7633-1.6103-.1251-.1755-1.5044-.1694-3.0139.0211-4.5244.6323-5.0265 3.1914-9.326 5.7425-12.4841.2954-.365.8369-.4014 1.1848-.0857 2.3635 2.1487 4.6575 4.3721 6.9857 6.5592.3832.3599-.6695.3247-.8318.3166l-.0021.001zm5.2897-4.2985l-1.0557 2.2738c-.2379.5112-.9065.6392-1.3138.248-1.4046-1.3491-3.2973-3.1601-4.9873-4.7482-.4194-.3943-.8318-.7996-1.2634-1.1788-.4497-.3952-.9478-.7371-1.3663-1.1676-.1593-.1634-.4225-.4931-.1885-.7018.3045-.2713.6009-.5516.8984-.8319.3721-.3519.7512-.6957 1.1374-1.0305.3126-.2713.7744-.2612 1.0829.0151l6.8607 6.1629c.2693.242.3489.6302.1967.958l-.0011.001zm4.3863 3.9496c-.0555.0867-.1281.1472-.2107.1886-.24.119-.5355.0685-.7936.0665-.4205-.004-.8399-.0091-1.2604-.0091-.601 0-.9993-.6231-.7462-1.1686l.3741-.8067c.2329-.5011.8843-.6352 1.2957-.2652l.6474.5808c.2379.2138 1.0002.6433.9367.9771-.0282.1462-.1633.3136-.242.4366h-.001z",
+    d: "M78.0267 30.523L61.6927 15.8497C61.3549 15.5462 60.4847 15.3012 60.1812 15.6389L60.164 15.7055C60.0229 15.8406 59.924 16.0382 59.8756 16.2076C59.7597 16.61 59.7153 17.0536 59.7254 17.4711C59.7355 17.8684 59.8061 18.2657 59.9351 18.6418C59.9956 18.8182 60.0743 18.9896 60.156 19.157C60.1983 19.2437 60.2417 19.3305 60.2891 19.4142C57.2247 22.1427 51.6325 28.0536 50.0091 36.0012C49.9768 36.1565 49.9042 36.3027 49.7933 36.4167C48.0499 38.1974 45.6924 39.2924 43.2321 39.4326C39.4095 39.6524 35.5476 39.5092 31.7512 39.0101L30.3789 38.8306C29.5762 38.7268 28.7897 38.7863 28.0325 38.9647C27.8974 38.996 27.7582 38.994 27.6251 38.9557C26.3355 38.5866 22.6692 37.8455 19.5363 40.1536C17.6769 41.5239 16.5103 43.6041 15.8296 45.775C15.3971 47.1534 15.144 48.5852 15.0028 50.0211C14.9221 50.8378 14.8556 51.6697 14.8636 52.4915C14.8697 53.0522 14.7971 53.6108 14.7991 54.1704C14.8001 54.5747 14.8546 54.9771 14.8647 55.3804C14.8737 55.7515 14.784 56.1659 14.9262 56.5208C15.1833 57.1651 16.6242 55.6879 16.7744 55.46C17.3865 54.5253 17.4904 53.3738 17.5206 52.2858C17.5498 51.2059 17.6124 50.1492 17.7616 49.0773C18.0036 47.3349 18.4493 45.5663 19.3709 44.0508C19.8025 43.3409 20.347 42.6935 21.0165 42.1964C21.3896 41.9181 21.7788 41.7044 22.171 41.541C22.9041 41.2365 23.6099 42.018 23.2106 42.7036C23.1521 42.8045 23.0957 42.9063 23.0402 43.0112C22.3535 44.3018 21.8897 45.8315 21.6205 47.6908C20.833 53.1348 21.8433 58.5556 22.8194 63.798C23.258 66.1565 23.3427 67.5631 23.5807 69.8409C23.5918 69.9932 23.5958 70.1424 23.5454 70.2906C23.4849 70.4701 23.378 70.6334 23.2852 70.7978C23.252 70.8563 23.2187 70.9158 23.1844 70.9743C23.1108 71.061 23.0392 71.1507 22.9767 71.2748C22.9152 71.3958 22.9142 71.5722 23.0322 71.6378C23.0775 71.663 23.131 71.666 23.1824 71.668C23.2076 71.668 24.823 71.7426 25.1809 71.7184C25.2686 71.7124 26.1519 71.7154 26.3254 71.546C26.4242 71.4492 26.4161 71.2899 26.401 71.1527C26.3758 70.9188 26.3496 70.6859 26.3234 70.452C26.2608 69.8853 26.0995 69.3488 26.038 68.7862C25.9825 68.2861 25.9261 67.7869 25.8666 67.2878C25.7093 65.9669 25.5419 64.644 25.2989 63.3351C24.9157 61.2741 24.5285 59.1848 24.2522 57.0915C24.1776 56.5198 24.709 56.0499 25.2676 56.1941C26.5623 56.5279 28.1424 56.8112 29.7708 56.8112C29.7809 56.8112 29.791 56.8112 29.8011 56.8112C29.8011 56.8112 36.326 69.9559 36.3674 70.34C36.4057 70.7061 36.198 71.1164 36.3371 71.4482C36.4914 71.8142 39.8461 71.6892 39.9994 71.4563C40.1879 71.1689 39.9096 70.815 39.7685 70.573C39.5456 70.1908 32.932 57.3789 32.932 57.3789C32.7101 56.9352 32.9289 56.4028 33.3968 56.2395C33.8939 56.0651 34.3789 55.8462 34.8428 55.572C35.5052 55.1807 36.085 54.6967 36.5942 54.1341C36.8201 53.884 37.1579 53.7771 37.4765 53.8871C39.7614 54.6756 44.5308 55.7273 52.6217 56.8374C53.3638 56.9393 54.0828 56.9897 54.7775 56.9897C54.9873 56.9897 55.194 56.9836 55.3976 56.9725C55.8111 56.9504 56.169 57.2549 56.2336 57.6643L58.0243 68.9243L58.1151 69.493C58.1151 69.493 58.2099 70.4943 58.2462 70.6829C58.2845 70.8825 58.2795 71.067 58.227 71.2637C58.1877 71.4099 58.099 71.6398 58.1776 71.786C58.2432 71.909 58.4589 71.9362 58.586 71.911C59.3281 71.909 60.0713 71.906 60.8134 71.908C60.9566 71.908 61.5737 71.916 61.6977 71.8697C61.9205 71.787 61.8984 71.5178 61.8187 71.3141C61.6644 70.9178 61.3579 70.6203 61.123 70.2735C61.123 70.2735 61.0463 70.1495 60.9203 69.9458C60.9152 69.9317 60.9092 69.9165 60.9041 69.9024C60.7912 69.607 60.6843 69.3095 60.5875 69.008L58.6888 57.0714C58.6273 56.6842 58.8532 56.3191 59.2172 56.1719C60.3647 55.7091 61.3952 55.0487 62.2987 54.2087L62.2906 54.2803L66.9763 54.8349C67.544 54.9024 67.8717 55.5145 67.6126 56.0237L64.5805 61.989L64.2478 62.6444C64.2024 62.6918 64.156 62.7382 64.1106 62.7856C63.9614 62.9399 63.8162 63.0982 63.666 63.2504C63.5389 63.3805 63.426 63.4813 63.2596 63.5166C63.188 63.5318 63.1457 63.5781 63.1174 63.6306C63.1114 63.6397 63.1074 63.6528 63.1033 63.6638C63.0953 63.688 63.0882 63.7102 63.0882 63.7354C63.0882 63.7465 63.0821 63.7516 63.0821 63.7637C63.0842 64.1257 64.0743 65.8469 64.4857 66.2684C65.0161 66.8129 65.2561 66.1827 65.4941 65.7269C65.6534 65.4214 65.8127 65.1158 65.972 64.8113C66.1687 64.4352 66.5548 63.679 66.5518 63.676L71.4987 53.9435C71.7579 53.4333 71.4301 52.8212 70.8624 52.7537L65.358 52.1033C64.7893 52.0358 64.4676 51.4277 64.7257 50.9165C65.2319 49.9152 65.6423 48.799 65.9458 47.5648C66.7666 44.2242 66.6113 40.4994 65.486 36.4953C65.4114 36.2281 65.3448 35.9861 65.2854 35.7663C65.1442 35.243 65.5384 34.7327 66.0799 34.7327H75.7398C76.0231 34.7327 76.2863 34.5865 76.4375 34.3466L78.1749 31.5676C78.3866 31.2288 78.3241 30.7871 78.0277 30.5199L78.0267 30.523ZM52.9625 54.3398C44.9079 53.2347 40.9381 52.31 39.0546 51.7494C38.62 51.6203 38.3588 51.1666 38.4949 50.735C38.7228 50.0171 38.8922 49.2386 39.0042 48.3997C39.0647 47.9419 38.7138 47.5295 38.253 47.4912L37.3767 47.4196C36.9482 47.3843 36.5549 47.6848 36.4974 48.1103C36.1526 50.6725 35.1664 52.4492 33.5612 53.399C30.7167 55.0839 26.5089 54.0171 24.4347 53.3143C24.1091 53.2044 23.8892 52.9029 23.8802 52.5591C23.8408 51.0476 23.8973 49.5421 24.1131 48.0528C24.34 46.4869 24.7161 45.2265 25.2636 44.197C26.3526 42.1521 28.1404 41.0792 30.0391 41.3293C30.0744 41.3343 31.4225 41.5108 31.4225 41.5108C35.3742 42.0291 39.3954 42.1763 43.3743 41.9504C45.1227 41.8506 46.8268 41.3636 48.3736 40.5579C48.909 40.2796 49.5513 40.6345 49.5745 41.2375C49.75 45.7246 51.3391 50.1502 54.3298 54.4558C53.8922 54.4386 53.4395 54.4033 52.9615 54.3378L52.9625 54.3398ZM63.4966 46.9648C62.8654 49.5341 61.5061 52.3332 58.6546 53.6682C58.2361 53.8639 57.7229 53.6884 57.5343 53.2669C55.801 49.3919 55.4249 45.8194 56.4483 42.632C57.504 39.3439 59.8414 37.1054 61.5293 35.847C61.9931 35.5011 62.6546 35.729 62.8089 36.2866C62.8855 36.5649 62.9692 36.8624 63.0579 37.18C64.0653 40.7606 64.2125 44.0518 63.4966 46.9638V46.9648ZM65.3065 32.3178C64.9466 32.2996 64.5896 32.2593 64.2347 32.2301C63.6024 32.1786 62.9743 32.1645 62.3461 32.3793C61.4819 32.6737 60.7358 33.313 59.9977 33.8313C59.1789 34.406 58.4236 35.1048 57.7309 35.8238C56.0853 37.5289 54.7886 39.5707 54.0576 41.8304C53.9688 42.1047 53.8882 42.382 53.8166 42.6603C53.5937 43.5264 52.3091 43.4236 52.2063 42.5352C52.0308 41.0308 52.0369 39.5213 52.2274 38.0108C52.8597 32.9843 55.4188 28.6848 57.9699 25.5267C58.2653 25.1617 58.8068 25.1253 59.1547 25.441C61.5182 27.5897 63.8122 29.8131 66.1404 32.0002C66.5236 32.3601 65.4709 32.3249 65.3086 32.3168L65.3065 32.3178ZM70.5962 28.0193L69.5405 30.2931C69.3026 30.8043 68.634 30.9323 68.2267 30.5411C66.8221 29.192 64.9294 27.381 63.2394 25.7929C62.82 25.3986 62.4076 24.9933 61.976 24.6141C61.5263 24.2189 61.0282 23.877 60.6097 23.4465C60.4504 23.2831 60.1872 22.9534 60.4212 22.7447C60.7257 22.4734 61.0221 22.1931 61.3196 21.9128C61.6917 21.5609 62.0708 21.2171 62.457 20.8823C62.7696 20.611 63.2314 20.6211 63.5399 20.8974L70.4006 27.0603C70.6699 27.3023 70.7495 27.6905 70.5973 28.0183L70.5962 28.0193ZM74.9825 31.9689C74.927 32.0556 74.8544 32.1161 74.7718 32.1575C74.5318 32.2765 74.2363 32.226 73.9782 32.224C73.5577 32.22 73.1383 32.2149 72.7178 32.2149C72.1168 32.2149 71.7185 31.5918 71.9716 31.0463L72.3457 30.2396C72.5786 29.7385 73.23 29.6044 73.6414 29.9744C73.8572 30.168 74.073 30.3616 74.2888 30.5552C74.5267 30.769 75.289 31.1985 75.2255 31.5323C75.1973 31.6785 75.0622 31.8459 74.9835 31.9689H74.9825Z",
     fill: "url(#paint0_linear_1112_665)"
   }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("path", {
-    d: "M46.5493.300186C21.102.300186.398926 21.0033.398926 46.4506S21.102 92.601 46.5493 92.601s46.1505-20.7031 46.1505-46.1504S71.9966.300186 46.5493.300186zm0 89.903014c-24.1253 0-43.75256-19.6272-43.75256-43.7526 0-24.1254 19.62616-43.75159 43.75256-43.75159 24.1264 0 43.7526 19.62719 43.7526 43.75259S70.6747 90.2042 46.5493 90.2042v-.001z",
+    d: "M46.5493 0.300186C21.102 0.300186 0.398926 21.0033 0.398926 46.4506C0.398926 71.8979 21.102 92.601 46.5493 92.601C71.9966 92.601 92.6998 71.8979 92.6998 46.4506C92.6998 21.0033 71.9966 0.300186 46.5493 0.300186ZM46.5493 90.2032C22.424 90.2032 2.79674 70.576 2.79674 46.4506C2.79674 22.3252 22.4229 2.69901 46.5493 2.69901C70.6757 2.69901 90.3019 22.3262 90.3019 46.4516C90.3019 70.577 70.6747 90.2042 46.5493 90.2042V90.2032Z",
     fill: "url(#paint1_linear_1112_665)"
   }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("linearGradient", {
     id: "paint0_linear_1112_665",
@@ -38430,17 +39141,17 @@ const Page = ({
     y2: "71.9196",
     gradientUnits: "userSpaceOnUse"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".239583",
-    stopColor: "#D2B15E"
+    offset: "0.239583",
+    "stop-color": "#D2B15E"
   }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".421875",
-    stopColor: "#CB9636"
+    offset: "0.421875",
+    "stop-color": "#CB9636"
   }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".6875",
-    stopColor: "#D2B15E"
+    offset: "0.6875",
+    "stop-color": "#D2B15E"
   }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
     offset: "1",
-    stopColor: "#CEA045"
+    "stop-color": "#CEA045"
   })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("linearGradient", {
     id: "paint1_linear_1112_665",
     x1: "-1.79871",
@@ -38449,17 +39160,17 @@ const Page = ({
     y2: "92.601",
     gradientUnits: "userSpaceOnUse"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".239583",
-    stopColor: "#D2B15E"
+    offset: "0.239583",
+    "stop-color": "#D2B15E"
   }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".421875",
-    stopColor: "#CB9636"
+    offset: "0.421875",
+    "stop-color": "#CB9636"
   }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".6875",
-    stopColor: "#D2B15E"
+    offset: "0.6875",
+    "stop-color": "#D2B15E"
   }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
     offset: "1",
-    stopColor: "#CEA045"
+    "stop-color": "#CEA045"
   })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
     className: "font-body text-mobile-5xl text-white mt-9 mb-6 max-w-[560px] md:w-3/5 sm:w-full text-center"
   }, "A Small Business CPA Firm Serving Atlanta & Beyond"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
@@ -38481,12 +39192,12 @@ const Page = ({
   }, "Elevated Consulting, Payroll, Accounting & Tax Services"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
     className: "flex justify-center md:justify-center space-x-4 md:space-x-5"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_12__["default"], {
-    href: "/refinance/",
+    onClick: () => openContactModal(),
     text: "Book a Call"
   }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
     className: "relative md:top-[-100px] sm:top-0 md:mx-28 sm:mx-4 mb-20 flex justify-center"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "absolute sm:flex container bg-primary-700 flex justify-center md:justify-center items-center flex-col rounded-[8px]"
+    className: "absolute sm:flex container bg-primary-700 flex justify-center items-center flex-col rounded-[8px]"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
     width: "1094",
     height: "3",
@@ -38599,12 +39310,12 @@ const Page = ({
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h3", {
     className: "md:w-2/3 text-primary-700 text-4xl font-light md:text-4xl-x md:font-normal"
   }, "We are Here To Make Your Business Better"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "md:w-2/3 sm:w-full font-display text-xl md:text-base mt-6"
+    className: "md:w-2/3 sm:w-full text-xl md:text-base mt-6"
   }, "Get streamlined end-to-end services for everything from entity formation to accounting, payroll, and taxes. It\u2019s all here, in a single, full-stack solution that simplifies it all.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
     className: "block w-full md:flex lg:flex md:mb-5 mb-4"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
     fade: true,
-    to: "/",
+    to: "/consulting/",
     className: "block w-full mr-0 md:flex lg:flex md:mr-5 md:w-1/2 lg:mr-5 lg:w-1/2"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
     image: data.smallBusinessConsultingImage.childImageSharp.gatsbyImageData,
@@ -38624,7 +39335,7 @@ const Page = ({
     className: "lg:hidden md:hidden w-[100px] h-[40px]"
   }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
     fade: true,
-    to: "/",
+    to: "/accounting/",
     className: "block w-full mr-0 md:flex lg:flex md:mr-5 md:w-1/2 lg:mr-5 lg:w-1/2"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
     image: data.accountServicesImage.childImageSharp.gatsbyImageData,
@@ -38646,7 +39357,7 @@ const Page = ({
     className: "block w-full md:flex lg:flex md:mb-5 mb-4"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
     fade: true,
-    to: "/",
+    to: "/payroll/",
     className: "block w-full mr-0 md:flex lg:flex md:mr-5 md:w-1/2 lg:mr-5 lg:w-1/2"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
     image: data.payrollManagementImage.childImageSharp.gatsbyImageData,
@@ -38666,7 +39377,7 @@ const Page = ({
     className: "lg:hidden md:hidden w-[100px] h-[40px]"
   }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
     fade: true,
-    to: "/",
+    to: "/tax/",
     className: "block w-full mr-0 md:flex lg:flex md:mr-5 md:w-1/2 lg:mr-5 lg:w-1/2"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
     image: data.incomeTaxPreparationImage.childImageSharp.gatsbyImageData,
@@ -38684,11 +39395,7 @@ const Page = ({
     href: "/tax/",
     text: "Learn More",
     className: "lg:hidden md:hidden w-[100px] h-[40px]"
-  }))))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Repeating_ValueProps__WEBPACK_IMPORTED_MODULE_8__["default"], null), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
-    className: "mb-20 md:mb-32 2xl:container 2xl:mx-auto 2xl:px-0 py-3 md:px-10 sm:px-2"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-4xl-x font-light mb-0 text-center"
-  }, "Our Clients Say Its Best"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Repeating_Carousel__WEBPACK_IMPORTED_MODULE_7__["default"], null)), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Repeating_About__WEBPACK_IMPORTED_MODULE_9__["default"], null), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
+  }))))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Repeating_ValueProps__WEBPACK_IMPORTED_MODULE_8__["default"], null), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Repeating_About__WEBPACK_IMPORTED_MODULE_9__["default"], null), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
     className: "w-full",
     width: "1200",
     height: "3",
@@ -38774,954 +39481,147 @@ const Page = ({
     offset: "1",
     "stop-color": "#A7A7A7",
     "stop-opacity": "0"
-  })))));
+  })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    id: "bottom-right-modal",
+    "data-modal-placement": "bottom-right",
+    tabindex: "-1",
+    className: "h-full fade hidden overflow-y-auto overflow-x-hidden bg-white fixed top-0 right-0 right-0 z-50 w-full md:w-1/2 h-modal md:h-full"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "relative w-full h-full md:h-auto"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: " bg-white dark:bg-gray-700"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "flex justify-between items-center p-5 border-b dark:border-primary-500"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "flex items-center"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
+    width: "17",
+    height: "16",
+    viewBox: "0 0 17 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    className: "mr-1.5 text-primary-100"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("path", {
+    d: "M1.08124.769072L4.33117.019088c.35312-.081249.71561.103122.85936.434365L6.6905 3.95338c.13125.30624.04375.66561-.21562.87498L4.58117 6.37833c1.12498 2.39682 3.09056 4.39057 5.53743 5.53737l1.5499-1.8937c.2125-.25937.5688-.34687.875-.21562l3.4999 1.49992c.3344.1469.5188.5094.4375.8625l-.75 3.25c-.0781.3375-.3781.5812-.7312.5812C6.99674 16 .5 9.51576.5 1.50031c0-.35.240621-.653115.58124-.731238z",
+    fill: "#D2B15E"
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("a", {
+    href: "tel:(404) 446-9338",
+    className: "text-sm font-semibold text-primary-100"
+  }, "(404) 446-9338")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("button", {
+    type: "button",
+    className: "text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white",
+    "data-modal-toggle": "bottom-right-modal",
+    onClick: () => closeContactModal()
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
+    "aria-hidden": "true",
+    className: "w-5 h-5",
+    fill: "currentColor",
+    viewBox: "0 0 20 20",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("path", {
+    "fill-rule": "evenodd",
+    d: "M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z",
+    "clip-rule": "evenodd"
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("span", {
+    className: "sr-only"
+  }, "Close modal"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "pb-8 space-y-6 md:px-20 px-2"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+    className: "text-4xl text-center my-8"
+  }, "Contact Us"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "mb-10 text-black md:flex block"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("button", {
+    className: "block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "flex justify-center items-center"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
+    className: "fal fa-calendar mr-2 text-xl"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+    className: "m-0"
+  }, "Book a Call"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("button", {
+    className: "w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "flex justify-center items-center"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
+    class: "fal fa-envelope mr-2 text-xl"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+    className: "m-0"
+  }, "Contact Us")))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "mb-8"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "mb-5"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("label", {
+    className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
+    htmlFor: "first-name"
+  }, "Name"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("input", {
+    type: "text",
+    name: "first-name",
+    onChange: () => handleChange(),
+    required: true,
+    className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "block md:flex"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "mb-5 w-full md:w-1/2 mr-3"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("label", {
+    className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
+    htmlFor: "phone-number"
+  }, "Phone Number"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("input", {
+    type: "tel",
+    name: "phone-number",
+    onChange: () => handleChange(),
+    required: true,
+    className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "mb-5 md:w-1/2"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("label", {
+    className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
+    htmlFor: "email-address"
+  }, "Email Address"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("input", {
+    type: "email",
+    name: "email-address",
+    onChange: () => handleChange(),
+    required: true,
+    className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
+  }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "mb-5"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("label", {
+    className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
+    htmlFor: "first-name"
+  }, "What Can We Help You With ?"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("select", {
+    name: "helps",
+    className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("option", {
+    value: "",
+    disabled: true,
+    selected: true
+  }, "Select Ones ..."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("option", {
+    value: "0"
+  }, "Accounting"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("option", {
+    value: "1"
+  }, "Service"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("option", {
+    value: "2"
+  }, "About"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "mb-5"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("label", {
+    className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
+    htmlFor: "first-name"
+  }, "Message(Optional)"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("textarea", {
+    type: "textarea",
+    name: "message",
+    onChange: () => handleChange(),
+    required: true,
+    rows: "5",
+    className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Button_ButtonSolid__WEBPACK_IMPORTED_MODULE_11__["default"] // onClick={()}
+  , {
+    text: "Send",
+    altStyle: true,
+    className: "bg-primary-700 min-w-0 text-base w-1/3"
+  })))))));
 };
 
 const query = "2963694990";
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Page);
-
-/***/ }),
-
-/***/ "./src/pages/payroll.js":
-/*!******************************!*\
-  !*** ./src/pages/payroll.js ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
-/* harmony import */ var gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby-plugin-transition-link/AniLink */ "./node_modules/gatsby-plugin-transition-link/AniLink/index.js");
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./src/components/Layout.js");
-/* harmony import */ var _components_SEO__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/SEO */ "./src/components/SEO.js");
-/* harmony import */ var _components_Repeating_Testimonials__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Repeating/Testimonials */ "./src/components/Repeating/Testimonials.js");
-/* harmony import */ var _components_Repeating_Carousel__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Repeating/Carousel */ "./src/components/Repeating/Carousel.js");
-/* harmony import */ var _components_Accordion_PayrollAccordion__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Accordion/PayrollAccordion */ "./src/components/Accordion/PayrollAccordion.js");
-/* harmony import */ var _components_Repeating_ValueProps__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Repeating/ValueProps */ "./src/components/Repeating/ValueProps.js");
-/* harmony import */ var _components_Repeating_About__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Repeating/About */ "./src/components/Repeating/About.js");
-/* harmony import */ var _components_Repeating_CTA__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Repeating/CTA */ "./src/components/Repeating/CTA.js");
-/* harmony import */ var _components_Button_ButtonSolid__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Button/ButtonSolid */ "./src/components/Button/ButtonSolid.js");
-/* harmony import */ var _components_Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/Button/ButtonSolidGold */ "./src/components/Button/ButtonSolidGold.js");
-/* harmony import */ var _components_OffCanvas_OffCanvas__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/OffCanvas/OffCanvas */ "./src/components/OffCanvas/OffCanvas.js");
-/* harmony import */ var react_accessible_accordion__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react-accessible-accordion */ "./node_modules/react-accessible-accordion/dist/es/index.js");
-/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.esm.js");
-
-
-
-
-
-
-
-
-
-
-
-
-
- // import ButtonSolid from "../Button/ButtonSolid";
-// import ButtonGhost from "../Button/ButtonGhost";
-
-
-
-
-const Page = ({
-  data
-}) => {
-  return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    headerDarkMode: true
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_SEO__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    title: "Independent Mortgage Lender Chicago | MacAsh Home Loans",
-    description: "Apply online. Close in 15 days. It's that easy. Make your dream home a reality with MacAsh, your local independent mortgage broker in Chicago."
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
-    className: "hidden md:block mb-20 md:mb-32 mt-12"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "container"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "relative grid md:grid-cols-12 md:gap-x-10 lg:gap-x-16 gap-y-8 items-center"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "md:col-start-1 md:col-span-10"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
-    image: data.payrollDesktop.childImageSharp.gatsbyImageData
-  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "md:absolute bg-primary-700 shadow-inner md:col-start-6 md:col-span-7 p-20"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h2", {
-    className: "font-light text-5xl text-primary-200 mb-6"
-  }, "Payroll Management Services in Greater Atlanta"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "font-light text-base text-primary-200"
-  }, "Payroll doesn't have to be a burden. Let us lighten the load with automated online services, including payroll processing, hiring, and termination"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_11__["default"], {
-    className: "font-light",
-    href: "/accounting/",
-    text: "Book a Call"
-  }))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
-    className: "md:hidden mb-20 md:mb-32 mt-12"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "container"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "relative grid md:grid-cols-12 lg:gap-x-16 items-center"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "md-hidden"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
-    image: data.payrollMobile.childImageSharp.gatsbyImageData
-  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "z-20 mt-[-128px] mx-4 bg-primary-700 shadow-inner py-10 px-6"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h2", {
-    className: "text-primary-200 font-light text-4xl"
-  }, "Payroll Management Services in Greater Atlanta"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "font-light text-xl text-primary-200"
-  }, "Payroll doesn't have to be a burden. Let us lighten the load with automated online services, including payroll processing, hiring, and termination"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_11__["default"], {
-    className: "font-light",
-    href: "/about/",
-    text: "Book a Call"
-  }))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
-    className: "mt-12 flex justify-content items-center flex-col"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "flex justify-content items-center flex-col md:mx-88 md:min-w-120 sm:mx-8 px-7"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-4xl-x font-thin mb-6 text-center md:text-start"
-  }, "Small Business Payroll Made Easy"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-xl font-light leading-7 text-center md:text-start mb-10 md:mb-0"
-  }, "Your payroll will be a breeze\u2014whether you\u2019re starting for the first time or want to transition away from one of the \u2018big box\u2019 providers. We set you up on our top-rated cloud-based payroll management platform, Gusto, and you get direct support from founder Michelle Frank.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "hidden md:block flex justify-center items-center md:pt-32 md:pb-32 pb-20"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
-    height: "3",
-    viewBox: "0 0 1094 3",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("path", {
-    d: "M0 1.5h1094",
-    stroke: "url(#paint0_linear_1129_1425)",
-    strokeWidth: "3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("linearGradient", {
-    id: "paint0_linear_1129_1425",
-    x1: "0",
-    y1: "2.00435",
-    x2: "w-10/12",
-    y2: "1.96651",
-    gradientUnits: "userSpaceOnUse"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    stopColor: "#A2A09D",
-    stopOpacity: "0"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".145833",
-    stopColor: "#CB9636"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".265625",
-    stopColor: "#CFA855"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".427083",
-    stopColor: "#FCE4A7"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".578125",
-    stopColor: "#F0D592"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".713542",
-    stopColor: "#CFA855"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".828125",
-    stopColor: "#CB9636"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: "1",
-    stopColor: "#A7A7A7",
-    stopOpacity: "0"
-  }))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "md:hidden flex justify-center items-center md:pt-32 md:pb-32 pb-20"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
-    width: "324",
-    height: "2",
-    viewBox: "0 0 324 2",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
-    className: "mb-7"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("line", {
-    x1: "0.900024",
-    y1: "1",
-    x2: "323.1",
-    y2: "1",
-    stroke: "url(#paint0_linear_1192_6745)",
-    "stroke-width": "2"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("linearGradient", {
-    id: "paint0_linear_1192_6745",
-    x1: "0.900024",
-    y1: "2.50435",
-    x2: "315.429",
-    y2: "2.50107",
-    gradientUnits: "userSpaceOnUse"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    "stop-color": "#A2A09D",
-    "stop-opacity": "0"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: "0.145833",
-    "stop-color": "#CB9636"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: "0.265625",
-    "stop-color": "#CFA855"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: "0.427083",
-    "stop-color": "#FCE4A7"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: "0.578125",
-    "stop-color": "#F0D592"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: "0.713542",
-    "stop-color": "#CFA855"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: "0.828125",
-    "stop-color": "#CB9636"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: "1",
-    "stop-color": "#A7A7A7",
-    "stop-opacity": "0"
-  })))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
-    className: "mb-20 md:mb-32 mt-12"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "container"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "lg:flex items-center md:block"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "md:hidden md:block w-full mb-8"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
-    image: data.accountingProfile.childImageSharp.gatsbyImageData,
-    alt: "Small Business Consulting",
-    className: "rounded-[8px]"
-  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "flex justify-center flex-col lg:w-1/2 md:w-full md:mb-8 sm:mb-8"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "md:pl-10 pl-0"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-4xl font-thin mb-6"
-  }, "Full-Stack Services"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base font-light  mb-6"
-  }, "You get comprehensive payroll services that\u2019ll keep you on track and ensure you meet deadlines. You\u2019ll easily"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "text-base font-light"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "flex"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
-    className: "fa fa-check text-primary-100 mr-3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base font-semibold mb-3"
-  }, "Process payroll for employees and contractors\u2014check or direct deposit")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "flex"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
-    className: "fa fa-check text-primary-100 mr-3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base font-semibold mb-3"
-  }, "Track and schedule PTO")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "flex"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
-    className: "fa fa-check text-primary-100 mr-3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base font-semibold mb-3"
-  }, "Track payroll benefits and deductions")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "flex"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
-    className: "fa fa-check text-primary-100 mr-3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base font-semibold mb-3"
-  }, "Onboard and offboard new and outgoing employees")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "flex"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
-    className: "fa fa-check text-primary-100 mr-3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base font-semibold mb-3"
-  }, "Get instant year-end W2 and 1099 form processing and filing")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "flex"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
-    className: "fa fa-check text-primary-100 mr-3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base font-semibold mb-3"
-  }, "Process electronic payments of all payroll tax payments")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "flex"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
-    className: "fa fa-check text-primary-100 mr-3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base font-semibold mb-3"
-  }, "Complete electronic filing of all quarterly and annual payroll tax returns\u2014state and federal"))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "hidden md:block md:w-1/2 mr-0 md:mr-20 md:mb-8 mb-8"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
-    image: data.accountingProfile.childImageSharp.gatsbyImageData,
-    alt: "Small Business Consulting",
-    className: "rounded-[8px] w-full"
-  }))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
-    className: "mb-20 md:mb-32 mt-12"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "container"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "lg:flex items-center md:block"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "lg:w-1/2 md:w-full mr-0 md:mr-20 md:mb-8 sm:mb-8"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
-    image: data.accountingStartImage.childImageSharp.gatsbyImageData,
-    alt: "Small Business Consulting",
-    className: "rounded-[8px] w-full"
-  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "block md:flex justify-center flex-col lg:w-1/2 md:w-full mt-10 md:mt-0"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "px-0 md:px-10"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-4xl font-thin mb-6"
-  }, "How To Get Started"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base font-light  mb-6"
-  }, "Onboarding is paperless and can be completed inside a day\u2014we'll show you how easy it is! Additionally, employees have their own portal to enter their information directly. And once you're completely set up, onboarding and offboarding employees take just two minutes."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_11__["default"], {
-    className: "font-light",
-    href: "/about/",
-    text: "Book a Call"
-  })))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
-    className: "mb-20 md:mb-32 mt-0 md:mt-12"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "container"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-4xl-x mb-12"
-  }, "Answers To Frequently Asked Questions"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Accordion_PayrollAccordion__WEBPACK_IMPORTED_MODULE_6__["default"], null))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
-    className: "mb-20 md:mb-32 2xl:container 2xl:mx-auto 2xl:px-0 py-3 md:px-10"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-4xl-x font-light mb-0 text-center"
-  }, "Our Clients Say Its Best"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Repeating_Carousel__WEBPACK_IMPORTED_MODULE_5__["default"], null)), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
-    className: "mb-20 md:mb-32"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "container"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "gap-y-8 md:gap-x-10 lg:gap-x-16"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "mb-8 flex justify-center items-center flex-col"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h3", {
-    className: "text-primary-700 text-4xl font-thin mb-12"
-  }, "Streamline Everything. Get The Full Benefit."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "md:w-2/3 sm:w-full text-xl md:text-base sm:text-base font-light mb-12"
-  }, "Get the best results when you combine our expert advice with end-to-end services that manage your finances in a full-stack solution.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "md:flex sm:block"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    fade: true,
-    to: "/accounting/",
-    className: "mr-10 mb-6 w-1/3"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: " max-w-140"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
-    image: data.accountServicesImage.childImageSharp.gatsbyImageData,
-    alt: "Accounting Services",
-    className: "mb-6 rounded-[8px] h-60 w-full"
-  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "justify-center flex-col py-2"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h3", {
-    className: "text-lg mb-4 text-primary-700"
-  }, "Accounting Services"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base"
-  }, "Gain a clear understanding of your financials so you can make smart business decisions."))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    fade: true,
-    to: "/tax/",
-    className: "mr-10 mb-6 w-1/3"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "max-w-140"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
-    image: data.incomeTaxPreparationImage.childImageSharp.gatsbyImageData,
-    alt: "Income Tax Preparation",
-    className: "mb-6 rounded-[8px] h-60 w-full"
-  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "justify-center flex-col py-2"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h3", {
-    className: "text-lg mb-4 text-primary-700"
-  }, "Income Tax Preparation"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base"
-  }, "Remove the stress of taxes with professional tax preparation and an IRS liaison."))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    fade: true,
-    to: "/consulting/",
-    className: "mr-10 mb-6 w-1/3 h-60"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "max-w-140"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
-    image: data.smallBusinessConsultingImage.childImageSharp.gatsbyImageData,
-    alt: "Small Business Consulting",
-    className: "mb-6 rounded-[8px] h-60 max-w-140"
-  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "justify-center flex-col py-2"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h3", {
-    className: "text-lg mb-4 text-primary-700"
-  }, "Small Business Consulting"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base"
-  }, "Get wise advice on starting a new business or restructuring an existing one."))))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Repeating_About__WEBPACK_IMPORTED_MODULE_8__["default"], null), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
-    className: "w-full",
-    width: "1200",
-    height: "3",
-    viewBox: "0 0 1200 3",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("path", {
-    d: "M0 1.5h1200",
-    stroke: "url(#paint0_linear_1129_1425)",
-    "stroke-width": "3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("linearGradient", {
-    id: "paint0_linear_1129_1425",
-    x1: "0",
-    y1: "2.00435",
-    x2: "1182.95",
-    y2: "1.96651",
-    gradientUnits: "userSpaceOnUse"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    "stop-color": "#A2A09D",
-    "stop-opacity": "0"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".145833",
-    "stop-color": "#FCE4A7"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".265625",
-    "stop-color": "#CFA855"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".427083",
-    "stop-color": "#FCE4A7"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".578125",
-    "stop-color": "#F0D592"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".713542",
-    "stop-color": "#FCE4A7"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".828125",
-    "stop-color": "#CB9636"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: "1",
-    "stop-color": "#A7A7A7",
-    "stop-opacity": "0"
-  })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Repeating_CTA__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    subtext: "Automate your payroll and start saving time immediately with payroll management services from High Echelon, your premier Atlanta, Georgia, CPA."
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
-    className: "w-full",
-    width: "1200",
-    height: "3",
-    viewBox: "0 0 1200 3",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("path", {
-    d: "M0 1.5h1200",
-    stroke: "url(#paint0_linear_1129_1425)",
-    "stroke-width": "3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("linearGradient", {
-    id: "paint0_linear_1129_1425",
-    x1: "0",
-    y1: "2.00435",
-    x2: "1182.95",
-    y2: "1.96651",
-    gradientUnits: "userSpaceOnUse"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    "stop-color": "#A2A09D",
-    "stop-opacity": "0"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".145833",
-    "stop-color": "#FCE4A7"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".265625",
-    "stop-color": "#CFA855"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".427083",
-    "stop-color": "#FCE4A7"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".578125",
-    "stop-color": "#F0D592"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".713542",
-    "stop-color": "#FCE4A7"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".828125",
-    "stop-color": "#CB9636"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: "1",
-    "stop-color": "#A7A7A7",
-    "stop-opacity": "0"
-  })))));
-};
-
-const query = "809611724";
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Page);
-
-/***/ }),
-
-/***/ "./src/pages/tax.js":
-/*!**************************!*\
-  !*** ./src/pages/tax.js ***!
-  \**************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
-/* harmony import */ var gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby-plugin-transition-link/AniLink */ "./node_modules/gatsby-plugin-transition-link/AniLink/index.js");
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./src/components/Layout.js");
-/* harmony import */ var _components_SEO__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/SEO */ "./src/components/SEO.js");
-/* harmony import */ var _components_Repeating_Testimonials__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Repeating/Testimonials */ "./src/components/Repeating/Testimonials.js");
-/* harmony import */ var _components_Repeating_Carousel__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Repeating/Carousel */ "./src/components/Repeating/Carousel.js");
-/* harmony import */ var _components_Accordion_Accord__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Accordion/Accord */ "./src/components/Accordion/Accord.js");
-/* harmony import */ var _components_Repeating_ValueProps__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Repeating/ValueProps */ "./src/components/Repeating/ValueProps.js");
-/* harmony import */ var _components_Repeating_About__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Repeating/About */ "./src/components/Repeating/About.js");
-/* harmony import */ var _components_Repeating_CTA__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Repeating/CTA */ "./src/components/Repeating/CTA.js");
-/* harmony import */ var _components_Button_ButtonSolid__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Button/ButtonSolid */ "./src/components/Button/ButtonSolid.js");
-/* harmony import */ var _components_Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/Button/ButtonSolidGold */ "./src/components/Button/ButtonSolidGold.js");
-/* harmony import */ var _components_OffCanvas_OffCanvas__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/OffCanvas/OffCanvas */ "./src/components/OffCanvas/OffCanvas.js");
-/* harmony import */ var react_accessible_accordion__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react-accessible-accordion */ "./node_modules/react-accessible-accordion/dist/es/index.js");
-/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.esm.js");
-
-
-
-
-
-
-
-
-
-
-
-
-
- // import ButtonSolid from "../Button/ButtonSolid";
-// import ButtonGhost from "../Button/ButtonGhost";
-
-
-
-
-const Page = ({
-  data
-}) => {
-  return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    headerDarkMode: true
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_SEO__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    title: "Independent Mortgage Lender Chicago | MacAsh Home Loans",
-    description: "Apply online. Close in 15 days. It's that easy. Make your dream home a reality with MacAsh, your local independent mortgage broker in Chicago."
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
-    className: "hidden md:block mb-20 md:mb-32 mt-12"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "container"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "relative grid md:grid-cols-12 md:gap-x-10 lg:gap-x-16 gap-y-8 items-center"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "md:col-start-1 md:col-span-10"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
-    image: data.accountingDesktop.childImageSharp.gatsbyImageData
-  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "md:absolute bg-primary-700 shadow-inner md:col-start-6 md:col-span-7 p-20"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h2", {
-    className: "font-light text-5xl text-primary-200 mb-6"
-  }, "Tax Preparation Services in Greater Atlanta"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "font-light text-base text-primary-200"
-  }, "Ease the stress of taxes with professional tax preparation. And if you\u2019re already using us to manage your financial statements and payroll, taxes get even easier!"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_11__["default"], {
-    className: "font-light",
-    href: "/tax/",
-    text: "Book a Call"
-  }))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
-    className: "md:hidden mb-20 md:mb-32 mt-12"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "container"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "relative grid md:grid-cols-12 lg:gap-x-16 items-center"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "md-hidden"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
-    image: data.accountingMobile.childImageSharp.gatsbyImageData
-  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "z-20 mt-[-128px] mx-4 bg-primary-700 shadow-inner py-10 px-6"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h2", {
-    className: "text-primary-200 font-light text-4xl"
-  }, "Tax Preparation Services in Greater Atlanta"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "font-light text-xl text-primary-200"
-  }, "Ease the stress of taxes with professional tax preparation. And if you\u2019re already using us to manage your financial statements and payroll, taxes get even easier!"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_11__["default"], {
-    className: "font-light",
-    href: "/tax/",
-    text: "Book a Call"
-  }))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
-    className: "mt-12 flex justify-content items-center flex-col"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "flex justify-content items-center flex-col md:mx-88 md:min-w-120 sm:mx-8 px-7"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-4xl-x font-thin mb-6 text-center md:text-start"
-  }, "Streamlined Business & Personal Tax Preparation"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-xl font-light leading-7 text-center md:text-start mb-10 md:mb-0"
-  }, "When we do your accounting and payroll, it flows directly into your business tax return and delivers the data with the highest accuracy. And from there, the relevant information is ported directly to your personal tax return. It\u2019s fast and efficient, and you\u2019re not paying by the hour.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "hidden md:block flex justify-center items-center md:pt-32 md:pb-32 pb-20"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
-    height: "3",
-    viewBox: "0 0 1094 3",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("path", {
-    d: "M0 1.5h1094",
-    stroke: "url(#paint0_linear_1129_1425)",
-    strokeWidth: "3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("linearGradient", {
-    id: "paint0_linear_1129_1425",
-    x1: "0",
-    y1: "2.00435",
-    x2: "w-10/12",
-    y2: "1.96651",
-    gradientUnits: "userSpaceOnUse"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    stopColor: "#A2A09D",
-    stopOpacity: "0"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".145833",
-    stopColor: "#CB9636"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".265625",
-    stopColor: "#CFA855"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".427083",
-    stopColor: "#FCE4A7"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".578125",
-    stopColor: "#F0D592"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".713542",
-    stopColor: "#CFA855"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".828125",
-    stopColor: "#CB9636"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: "1",
-    stopColor: "#A7A7A7",
-    stopOpacity: "0"
-  }))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "md:hidden flex justify-center items-center md:pt-32 md:pb-32 pb-20"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
-    width: "324",
-    height: "2",
-    viewBox: "0 0 324 2",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
-    className: "mb-7"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("line", {
-    x1: "0.900024",
-    y1: "1",
-    x2: "323.1",
-    y2: "1",
-    stroke: "url(#paint0_linear_1192_6745)",
-    "stroke-width": "2"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("linearGradient", {
-    id: "paint0_linear_1192_6745",
-    x1: "0.900024",
-    y1: "2.50435",
-    x2: "315.429",
-    y2: "2.50107",
-    gradientUnits: "userSpaceOnUse"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    "stop-color": "#A2A09D",
-    "stop-opacity": "0"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: "0.145833",
-    "stop-color": "#CB9636"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: "0.265625",
-    "stop-color": "#CFA855"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: "0.427083",
-    "stop-color": "#FCE4A7"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: "0.578125",
-    "stop-color": "#F0D592"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: "0.713542",
-    "stop-color": "#CFA855"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: "0.828125",
-    "stop-color": "#CB9636"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: "1",
-    "stop-color": "#A7A7A7",
-    "stop-opacity": "0"
-  })))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
-    className: "mb-20 md:mb-32 mt-12"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "container"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "lg:flex items-center md:block"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "md:hidden md:block w-full mb-8"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
-    image: data.accountingProfile.childImageSharp.gatsbyImageData,
-    alt: "Small Business Consulting",
-    className: "rounded-[8px]"
-  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "flex justify-center flex-col lg:w-1/2 md:w-full md:mb-8 sm:mb-8"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "md:pl-10 pl-0"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-4xl font-thin mb-6"
-  }, "Our Services"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base font-light  mb-6"
-  }, "At High Echelon, we prepare your returns and help you handle IRS notices and correspondence."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-4xl font-thin mb-6"
-  }, "Business Tax Return Preparation"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "text-base font-light"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "flex"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
-    className: "fa fa-check text-primary-100 mr-3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base font-semibold mb-3"
-  }, "Corporate")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "flex"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
-    className: "fa fa-check text-primary-100 mr-3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base font-semibold mb-3"
-  }, "Scorporate")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "flex"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
-    className: "fa fa-check text-primary-100 mr-3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base font-semibold mb-3"
-  }, "Partnership")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "flex"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
-    className: "fa fa-check text-primary-100 mr-3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base font-semibold mb-3"
-  }, "Extension filing")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "flex"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
-    className: "fa fa-check text-primary-100 mr-3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base font-semibold mb-3"
-  }, "Assistance with IRS tax notices")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "flex"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
-    className: "fa fa-check text-primary-100 mr-3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base font-semibold mb-3"
-  }, "Correspondence with IRS"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-4xl font-thin mb-6"
-  }, "Individual Tax Returns"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "text-base font-light"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "flex"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
-    className: "fa fa-check text-primary-100 mr-3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base font-semibold mb-3"
-  }, "Individual tax return")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "flex"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
-    className: "fa fa-check text-primary-100 mr-3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base font-semibold mb-3"
-  }, "Extension filing")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "flex"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
-    className: "fa fa-check text-primary-100 mr-3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base font-semibold mb-3"
-  }, "Assistance with IRS tax notices")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "flex"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
-    className: "fa fa-check text-primary-100 mr-3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base font-semibold mb-3"
-  }, "Correspondence with IRS"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-4xl font-thin mb-6"
-  }, "Estates and Trusts"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "text-base font-light"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "flex"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
-    className: "fa fa-check text-primary-100 mr-3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base font-semibold mb-3"
-  }, "Income tax return for estates and trusts"))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "hidden md:block md:w-1/2 mr-0 md:mr-20 md:mb-8 mb-8"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
-    image: data.accountingProfile.childImageSharp.gatsbyImageData,
-    alt: "Small Business Consulting",
-    className: "rounded-[8px] w-full"
-  }))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
-    className: "mb-20 md:mb-32 mt-12"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "container"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "lg:flex items-center md:block"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "lg:w-1/2 md:w-full mr-0 md:mr-20 md:mb-8 sm:mb-8"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
-    image: data.accountingStartImage.childImageSharp.gatsbyImageData,
-    alt: "Small Business Consulting",
-    className: "rounded-[8px] w-full"
-  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "block md:flex justify-center flex-col lg:w-1/2 md:w-full mt-10 md:mt-0"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "px-0 md:px-10"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-4xl font-thin mb-6"
-  }, "How To Get Started"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base font-light  mb-6"
-  }, "First, we'll review your prior year's returns and talk to you about what worked and what didn't work with your previous tax preparer. We want to answer the question, will there need to be any substantial changes this time? We're happy to get as involved as you want us to be."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", null, "For the next steps, we:"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("li", null, "Give you a draft to review, with questions"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("li", null, "Outline changes that we made"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("li", null, "Review, then sign off on the filing"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("li", null, "Provide you with a secure link for upload")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_11__["default"], {
-    className: "font-light",
-    href: "/about/",
-    text: "Book a Call"
-  })))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
-    className: "mb-20 md:mb-32 mt-0 md:mt-12"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "container"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-4xl-x mb-12"
-  }, "Answers To Frequently Asked Questions"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Accordion_Accord__WEBPACK_IMPORTED_MODULE_6__["default"], null))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
-    className: "mb-20 md:mb-32 2xl:container 2xl:mx-auto 2xl:px-0 py-3 md:px-10"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-4xl-x font-light mb-0 text-center"
-  }, "Our Clients Say Its Best"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Repeating_Carousel__WEBPACK_IMPORTED_MODULE_5__["default"], null)), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
-    className: "mb-20 md:mb-32"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "container"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "gap-y-8 md:gap-x-10 lg:gap-x-16"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "mb-8 flex justify-center items-center flex-col"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h3", {
-    className: "text-primary-700 text-4xl font-thin mb-12"
-  }, "Streamline Everything. Get The Full Benefit."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "md:w-2/3 sm:w-full text-xl md:text-base sm:text-base font-light mb-12"
-  }, "Get the best results when you combine our expert advice with end-to-end services that manage your finances in a full-stack solution")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "md:flex sm:block"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    fade: true,
-    to: "/payroll/",
-    className: "mr-10 mb-6 w-1/3"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "max-w-140"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
-    image: data.accountServicesImage.childImageSharp.gatsbyImageData,
-    alt: "Payroll Management",
-    className: "mb-6 rounded-[8px] h-60 w-full"
-  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "justify-center flex-col py-2"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h3", {
-    className: "text-lg mb-4 text-primary-700"
-  }, "Payroll Management"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base"
-  }, "Lighten your load with automated payroll processing, hiring, and termination."))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    fade: true,
-    to: "/accounting/",
-    className: "mr-10 mb-6 w-1/3"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: " max-w-140"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
-    image: data.accountingStartImage.childImageSharp.gatsbyImageData,
-    alt: "Accounting Services",
-    className: "mb-6 rounded-[8px] w-full"
-  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "justify-center flex-col py-2"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h3", {
-    className: "text-lg mb-4 text-primary-700"
-  }, "Accounting Services"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base"
-  }, "Gain a clear understanding of your financials so you can make smart business decisions."))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    fade: true,
-    to: "/consulting/",
-    className: "mr-10 mb-6 w-1/3 h-60"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "max-w-140"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
-    image: data.smallBusinessConsultingImage.childImageSharp.gatsbyImageData,
-    alt: "Small Business Consulting",
-    className: "mb-6 rounded-[8px] h-60 max-w-140"
-  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "justify-center flex-col py-2"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h3", {
-    className: "text-lg mb-4 text-primary-700"
-  }, "Small Business Consulting"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-    className: "text-base"
-  }, "Get wise advice on starting a new business or restructuring an existing one."))))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Repeating_About__WEBPACK_IMPORTED_MODULE_8__["default"], null), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
-    className: "w-full",
-    width: "1200",
-    height: "3",
-    viewBox: "0 0 1200 3",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("path", {
-    d: "M0 1.5h1200",
-    stroke: "url(#paint0_linear_1129_1425)",
-    "stroke-width": "3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("linearGradient", {
-    id: "paint0_linear_1129_1425",
-    x1: "0",
-    y1: "2.00435",
-    x2: "1182.95",
-    y2: "1.96651",
-    gradientUnits: "userSpaceOnUse"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    "stop-color": "#A2A09D",
-    "stop-opacity": "0"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".145833",
-    "stop-color": "#FCE4A7"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".265625",
-    "stop-color": "#CFA855"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".427083",
-    "stop-color": "#FCE4A7"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".578125",
-    "stop-color": "#F0D592"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".713542",
-    "stop-color": "#FCE4A7"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".828125",
-    "stop-color": "#CB9636"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: "1",
-    "stop-color": "#A7A7A7",
-    "stop-opacity": "0"
-  })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Repeating_CTA__WEBPACK_IMPORTED_MODULE_9__["default"], null), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
-    className: "w-full",
-    width: "1200",
-    height: "3",
-    viewBox: "0 0 1200 3",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("path", {
-    d: "M0 1.5h1200",
-    stroke: "url(#paint0_linear_1129_1425)",
-    "stroke-width": "3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("linearGradient", {
-    id: "paint0_linear_1129_1425",
-    x1: "0",
-    y1: "2.00435",
-    x2: "1182.95",
-    y2: "1.96651",
-    gradientUnits: "userSpaceOnUse"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    "stop-color": "#A2A09D",
-    "stop-opacity": "0"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".145833",
-    "stop-color": "#FCE4A7"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".265625",
-    "stop-color": "#CFA855"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".427083",
-    "stop-color": "#FCE4A7"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".578125",
-    "stop-color": "#F0D592"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".713542",
-    "stop-color": "#FCE4A7"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: ".828125",
-    "stop-color": "#CB9636"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: "1",
-    "stop-color": "#A7A7A7",
-    "stop-opacity": "0"
-  })))));
-};
-
-const query = "1966624328";
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Page);
 
 /***/ }),

@@ -131,7 +131,7 @@ const MainNav = ({
   return (
     <nav
       id="main-navigation"
-      className={`py-2 lg:py-2 bg-white shadow-5xl lg:shadow-none w-full transition duration-300 ease-linear ${
+      className={`py-0 lg:py-2 bg-white shadow-5xl lg:shadow-none w-full transition duration-300 ease-linear ${
         headerStyle === "overlap" ? "lg:bg-transparent" : "lg:bg-black"
       } ${
         headerHasBorder && "lg:border-b lg:border-solid lg:border-gray-300"
@@ -145,10 +145,10 @@ const MainNav = ({
       <div className="container flex justify-between items-center">
         <div className="flex items-center lg:hidden"> 
           <a
-            href="tel:123-456-7890"
+            href="tel:440-469-9338"
             className="text-sm font-semibold text-white hover:text-primary-100"
           >
-            <svg
+            {/* <svg
               width="20"
               height="20"
               viewBox="0 0 20 20"
@@ -160,6 +160,9 @@ const MainNav = ({
                 d="M1.08124.769072L4.33117.019088c.35312-.081249.71561.103122.85936.434365L6.6905 3.95338c.13125.30624.04375.66561-.21562.87498L4.58117 6.37833c1.12498 2.39682 3.09056 4.39057 5.53743 5.53737l1.5499-1.8937c.2125-.25937.5688-.34687.875-.21562l3.4999 1.49992c.3344.1469.5188.5094.4375.8625l-.75 3.25c-.0781.3375-.3781.5812-.7312.5812C6.99674 16 .5 9.51576.5 1.50031c0-.35.240621-.653115.58124-.731238z"
                 fill="#000000"
               />
+            </svg> */}
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.2571 19.75H17.1296C2.39215 18.9025 0.299644 6.4675 0.00714362 2.6725C-0.0164249 2.37744 0.0184601 2.08062 0.1098 1.79906C0.20114 1.5175 0.347139 1.25673 0.539432 1.03169C0.731725 0.80665 0.966533 0.621766 1.2304 0.48763C1.49427 0.353493 1.78201 0.272741 2.07714 0.250001H6.20964C6.51006 0.24971 6.80365 0.339633 7.05237 0.508122C7.30109 0.676611 7.49349 0.915903 7.60464 1.195L8.74464 4C8.85441 4.27266 8.88165 4.57156 8.82298 4.85957C8.76431 5.14758 8.62232 5.412 8.41464 5.62L6.81714 7.2325C7.06668 8.65056 7.74578 9.95775 8.76257 10.9772C9.77935 11.9967 11.0847 12.6792 12.5021 12.9325L14.1296 11.32C14.3408 11.1146 14.6077 10.9759 14.8971 10.9213C15.1865 10.8666 15.4856 10.8983 15.7571 11.0125L18.5846 12.145C18.8595 12.2597 19.0941 12.4536 19.2584 12.702C19.4226 12.9504 19.5093 13.2422 19.5071 13.54V17.5C19.5071 18.0967 19.2701 18.669 18.8481 19.091C18.4262 19.5129 17.8539 19.75 17.2571 19.75ZM2.25714 1.75C2.05823 1.75 1.86747 1.82902 1.72681 1.96967C1.58616 2.11032 1.50714 2.30109 1.50714 2.5V2.56C1.85214 7 4.06464 17.5 17.2121 18.25C17.3107 18.2561 17.4094 18.2427 17.5028 18.2105C17.5961 18.1783 17.6822 18.1281 17.756 18.0626C17.8299 17.9971 17.8901 17.9176 17.9332 17.8288C17.9763 17.74 18.0014 17.6436 18.0071 17.545V13.54L15.1796 12.4075L13.0271 14.545L12.6671 14.5C6.14214 13.6825 5.25714 7.1575 5.25714 7.09L5.21214 6.73L7.34214 4.5775L6.21714 1.75H2.25714Z" fill="#152636"/>
             </svg>
           </a>
         </div>
@@ -384,7 +387,7 @@ const MainNav = ({
             </OffCanvas>
           </div>
         </div>
-          <div id="bottom-right-modal" data-modal-placement="bottom-right" tabindex="-1" className="fade hidden overflow-y-auto overflow-x-hidden bg-white fixed top-0 right-0 right-0 z-50 w-1/2 h-modal md:h-full">
+          <div id="bottom-right-modal" data-modal-placement="bottom-right" tabindex="-1" className="h-full fade hidden overflow-y-auto overflow-x-hidden bg-white fixed top-0 right-0 right-0 z-50 w-full md:w-1/2 h-modal md:h-full">
             <div className="relative w-full h-full md:h-auto">
                 <div className=" bg-white dark:bg-gray-700">
                     <div className="flex justify-between items-center p-5 border-b dark:border-primary-500">
@@ -402,6 +405,7 @@ const MainNav = ({
                             fill="#D2B15E"
                           />
                         </svg>
+                        
                         <a
                           href="tel:(404) 446-9338"
                           className="text-sm font-semibold text-primary-100"
@@ -414,16 +418,16 @@ const MainNav = ({
                           <span className="sr-only">Close modal</span>
                       </button>
                     </div>
-                    <div className="pb-8 space-y-6 px-20 ">
+                    <div className="pb-8 space-y-6 md:px-20 px-2">
                       <p className="text-4xl text-center my-8">Contact Us</p>
-                      <div className="mb-10 text-black flex">
-                        <button className="w-1/2 flex justify-center items-center bg-gray-200 py-2">
+                      <div className="mb-10 text-black md:flex block">
+                        <button className="block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0">
                           <div className="flex justify-center items-center">
                             <i className="fal fa-calendar mr-2 text-xl"></i>
                             <p className="m-0">Book a Call</p>
                           </div>
                         </button>
-                        <button className="w-1/2 flex justify-center items-center border-black bg-primary-100 py-2 text-white">
+                        <button className="w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white">
                           <div className="flex justify-center items-center">
                             <i class="fal fa-envelope mr-2 text-xl"></i>
                             <p className="m-0">Contact Us</p>
@@ -446,8 +450,8 @@ const MainNav = ({
                             className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
                           />
                         </div>
-                        <div className="flex">
-                          <div className="mb-5 w-1/2 mr-3">
+                        <div className="block md:flex">
+                          <div className="mb-5 w-full md:w-1/2 mr-3">
                             <label
                               className="font-body text-sm font-semibold text-gray-900 block mb-1 text-base"
                               htmlFor="phone-number"
@@ -462,7 +466,7 @@ const MainNav = ({
                               className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
                             />
                           </div>
-                          <div className="mb-5 w-1/2">
+                          <div className="mb-5 md:w-1/2">
                             <label
                               className="font-body text-sm font-semibold text-gray-900 block mb-1 text-base"
                               htmlFor="email-address"
