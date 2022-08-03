@@ -360,15 +360,13 @@ const MainNav = ({
                     </li> */}
 
                     <li>
-                      <AniLink
-                        data-modal-open="modal-contact"
-                        onKeyDown={clickHandler}
-                        onClick={clickHandler}
+                      <button
+                        onClick={()=>openContactModal()}
                         className="text-lg text-primary-200 hover:text-primary-100 no-underline cursor-pointer transition-colors duration-300 ease-linear"
                       >
                         <i className="fa fa-sign-in mr-2"></i>
                         Client Portal
-                      </AniLink>
+                      </button>
                     </li>
                   </Accordion>
                 </ul>

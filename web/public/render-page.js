@@ -20310,6 +20310,7 @@ exports.vw = vw;
 
 exports.ssrComponents = {
   "component---cache-dev-404-page-js": preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js")),
+  "component---src-pages-about-js": preferDefault(__webpack_require__(/*! ./src/pages/about.js */ "./src/pages/about.js")),
   "component---src-pages-consulting-js": preferDefault(__webpack_require__(/*! ./src/pages/consulting.js */ "./src/pages/consulting.js")),
   "component---src-pages-index-js": preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js"))
   }
@@ -37284,9 +37285,9 @@ const MainNav = ({
     onClick: clickHandler,
     className: "text-lg text-primary-200 hover:text-primary-100 no-underline transition-colors duration-300 ease-linear pt-3"
   }, "About")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("li", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    "data-modal-open": "modal-contact",
-    onKeyDown: clickHandler,
-    onClick: clickHandler,
+    "data-modal-open": "bottom-right-modal",
+    onKeyDown: () => openContactModal(),
+    onClick: () => openContactModal(),
     className: "text-lg text-primary-200 hover:text-primary-100 no-underline cursor-pointer transition-colors duration-300 ease-linear"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("i", {
     className: "fa fa-sign-in mr-2"
@@ -38382,6 +38383,533 @@ const useOnClickOutside = (ref, handler) => {
 
 /***/ }),
 
+/***/ "./src/pages/about.js":
+/*!****************************!*\
+  !*** ./src/pages/about.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./src/components/Layout.js");
+/* harmony import */ var _components_SEO__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/SEO */ "./src/components/SEO.js");
+/* harmony import */ var _components_Repeating_Testimonials__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Repeating/Testimonials */ "./src/components/Repeating/Testimonials.js");
+/* harmony import */ var _components_Repeating_Carousel__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Repeating/Carousel */ "./src/components/Repeating/Carousel.js");
+/* harmony import */ var _components_Repeating_ValueProps__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Repeating/ValueProps */ "./src/components/Repeating/ValueProps.js");
+/* harmony import */ var _components_Repeating_CTA__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Repeating/CTA */ "./src/components/Repeating/CTA.js");
+/* harmony import */ var _components_Button_ButtonSolid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Button/ButtonSolid */ "./src/components/Button/ButtonSolid.js");
+/* harmony import */ var _components_Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Button/ButtonSolidGold */ "./src/components/Button/ButtonSolidGold.js");
+/* harmony import */ var _components_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Button/ButtonGhost */ "./src/components/Button/ButtonGhost.js");
+/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.esm.js");
+
+
+
+
+
+
+
+
+
+
+
+
+
+const Page = ({
+  data
+}) => {
+  const {
+    0: offcanvasOpen,
+    1: setOffcanvasOpen
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+
+  const handleChange = e => {
+    undefined.setState({
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const clickHandler = () => {
+    setOffcanvasOpen(!offcanvasOpen);
+  };
+
+  const openContactModal = () => {
+    document.getElementById("bottom-right-modal").style.display = "block";
+  };
+
+  const closeContactModal = () => {
+    document.getElementById("bottom-right-modal").style.display = "none";
+  };
+
+  return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    headerDarkMode: true
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)(_components_SEO__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "Independent Mortgage Lender Chicago | MacAsh Home Loans",
+    description: "Apply online. Close in 15 days. It's that easy. Make your dream home a reality with MacAsh, your local independent mortgage broker in Chicago."
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("section", {
+    className: "hidden md:block mb-20 md:mb-32"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "container"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "relative grid md:grid-cols-12 md:gap-x-10 lg:gap-x-16 gap-y-8 items-center"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "md:col-start-1 md:col-span-10"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_11__.GatsbyImage, {
+    image: data.aboutProfileImage.childImageSharp.gatsbyImageData
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "md:absolute bg-primary-700 shadow-inner md:col-start-6 md:col-span-7 p-20"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("h2", {
+    className: "font-light text-5xl text-primary-200 mb-6"
+  }, "About High Echelon"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+    className: "font-light text-base text-primary-200"
+  }, "High Echelon Certified Public Accountants is a nationwide CPA firm based in Atlanta, Georgia. It was founded by CPA Michelle Frank, who built the type of firm she always wanted to work for herself\u2014one focused on a great client experience. She maintains the highest standards and ethics as a CPA and values transparency, so clients always know exactly what they\u2019re getting."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)(_components_Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    className: "font-light",
+    onClick: () => openContactModal(),
+    text: "Book a Call"
+  }))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("section", {
+    className: "md:hidden mb-20 md:mb-32"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "container"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "relative grid md:grid-cols-12 lg:gap-x-16 items-center"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "md-hidden"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_11__.GatsbyImage, {
+    image: data.aboutProfileMobile.childImageSharp.gatsbyImageData
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "z-20 mt-[-128px] mx-4 bg-primary-700 shadow-inner py-10 px-6"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("h2", {
+    className: "text-primary-200 font-light"
+  }, "About High Echelon"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+    className: "font-light text-base text-primary-200"
+  }, "High Echelon Certified Public Accountants is a nationwide CPA firm based in Atlanta, Georgia. It was founded by CPA Michelle Frank, who built the type of firm she always wanted to work for herself\u2014one focused on a great client experience. She maintains the highest standards and ethics as a CPA and values transparency, so clients always know exactly what they\u2019re getting."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)(_components_Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    className: "font-light",
+    onClick: () => openContactModal(),
+    text: "Book a Call"
+  }))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("section", {
+    className: "mt-12 mb-20 md:mb-32"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "container"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "lg:flex items-center md:block"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "hidden md:block lg:w-1/2 mr-0 lg:mr-20 mb-8"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_11__.GatsbyImage, {
+    image: data.quotes.childImageSharp.gatsbyImageData,
+    alt: "Small Business Consulting",
+    className: "rounded-[8px]"
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "md:hidden mb-10"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_11__.GatsbyImage, {
+    image: data.quotesMobile.childImageSharp.gatsbyImageData,
+    alt: "Small Business Consulting",
+    className: "rounded-[8px]"
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "block w-full md:flex justify-center flex-col lg:w-1/2"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "md:px-4"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+    className: "text-4xl md:text-5xl font-thin mb-6"
+  }, "The Story Behind the Firm"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+    className: "text-base font-light  mb-6"
+  }, "CPA work is in Michelle\u2019s blood\u2014she follows in the footsteps of her grandfather, Jerry Fendrick, and father, Bob Fendrick. Both founded CPA firms of their own, and the family has decades of experience in the industry.", (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("br", null), "Michelle named the company after her grandfather\u2019s famous thoroughbred horse, High Echelon, which won the 1970 Belmont Stakes, one-third of the Triple Crown of Thoroughbred Racing.")))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("section", {
+    className: "mb-20 md:mb-32"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "container"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "flex justify-center"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("svg", {
+    width: "1197",
+    height: "3",
+    viewBox: "0 0 1197 3",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("line", {
+    y1: "1.5",
+    x2: "1197",
+    y2: "1.5",
+    stroke: "url(#paint0_linear_1186_1352)",
+    "stroke-width": "3"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("linearGradient", {
+    id: "paint0_linear_1186_1352",
+    x1: "0",
+    y1: "3.50435",
+    x2: "1168.5",
+    y2: "3.45905",
+    gradientUnits: "userSpaceOnUse"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    "stop-color": "#A2A09D",
+    "stop-opacity": "0"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    offset: "0.145833",
+    "stop-color": "#CB9636"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    offset: "0.265625",
+    "stop-color": "#CFA855"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    offset: "0.427083",
+    "stop-color": "#FCE4A7"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    offset: "0.578125",
+    "stop-color": "#F0D592"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    offset: "0.713542",
+    "stop-color": "#CFA855"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    offset: "0.828125",
+    "stop-color": "#CB9636"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    offset: "1",
+    "stop-color": "#A7A7A7",
+    "stop-opacity": "0"
+  }))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "flex justify-center items-center flex-col"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "mt-20 md:mt-28 mx-0 text-center lg:px-44 md:px-20"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+    className: "text-4xl md:text-4xl-x font-thin mb-6"
+  }, "Our Mission"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+    className: "text-base font-light"
+  }, "High Echelon provides top-quality work with total transparency. We believe accounting doesn\u2019t need to be complicated and that clients should get the experience they deserve, which includes:")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "mb-20 md:mb-24 justify-center flex-col items-center"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "flex mx-100 items-center justify-start flex-col"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "md:mx-100 mx-8"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "flex"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("i", {
+    className: "fa fa-check text-primary-100 mr-4 text-2xl"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+    className: "text-base font-semibold mb-4"
+  }, "The BEST accounting, tax, and payroll services")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "flex"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("i", {
+    className: "fa fa-check text-primary-100 mr-4 text-2xl"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+    className: "text-base font-semibold mb-4"
+  }, "The BEST communication and data flow")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "flex"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("i", {
+    className: "fa fa-check text-primary-100 mr-4 text-2xl"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+    className: "text-base font-semibold mb-4"
+  }, "The BEST automation and security")))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "flex justify-center"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("svg", {
+    width: "1197",
+    height: "3",
+    viewBox: "0 0 1197 3",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("line", {
+    y1: "1.5",
+    x2: "1197",
+    y2: "1.5",
+    stroke: "url(#paint0_linear_1186_1352)",
+    "stroke-width": "3"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("linearGradient", {
+    id: "paint0_linear_1186_1352",
+    x1: "0",
+    y1: "3.50435",
+    x2: "1168.5",
+    y2: "3.45905",
+    gradientUnits: "userSpaceOnUse"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    "stop-color": "#A2A09D",
+    "stop-opacity": "0"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    offset: "0.145833",
+    "stop-color": "#CB9636"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    offset: "0.265625",
+    "stop-color": "#CFA855"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    offset: "0.427083",
+    "stop-color": "#FCE4A7"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    offset: "0.578125",
+    "stop-color": "#F0D592"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    offset: "0.713542",
+    "stop-color": "#CFA855"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    offset: "0.828125",
+    "stop-color": "#CB9636"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    offset: "1",
+    "stop-color": "#A7A7A7",
+    "stop-opacity": "0"
+  }))))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)(_components_Repeating_ValueProps__WEBPACK_IMPORTED_MODULE_5__["default"], null), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("section", {
+    className: "mb-20 md:mb-32"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "container"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "lg:px-20 md:px-4 lg:flex sm:block"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "md:hidden mb-10"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "flex justify-center items-center"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_11__.GatsbyImage, {
+    image: data.michellProfileImage.childImageSharp.gatsbyImageData,
+    alt: "Michell Profile",
+    className: "mx-0 md:mx-16 min-w-[96px] w-full"
+  }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "lg:w-7/12 flex items-start justify-center flex-col lg:px-16 md:px-4 sm:px-2 mr-30 sm:w-full mb-8"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "text-4xl md:text-5xl text-thin mb-6"
+  }, "Meet Michelle Frank"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "text-base text-light mb-6"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", null, "Michelle is sharp and fiercely determined, bringing those attributes to all elements of the firm and her life. Previously, she was a partner at Fendrick & Associates before joining the team at Peachtree Capital, then later starting her own business, High Echelon."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+    className: "mb-0"
+  }, "Michelle received her undergraduate degree at Emory and post-graduate at Georgia State University. When she isn\u2019t being a top Atlanta CPA, she\u2019s running marathons, hosting a podcast, and raising three girls.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)(_components_Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    className: "font-light",
+    onClick: () => openContactModal(),
+    text: "Book a Call"
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "hidden md:block lg:w-5/12"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "flex justify-center items-center"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_11__.GatsbyImage, {
+    image: data.michellProfileImage.childImageSharp.gatsbyImageData,
+    alt: "Michell Profile",
+    className: "mx-10 md:mx-16 min-w-[96px]"
+  })))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("svg", {
+    className: "w-full",
+    width: "1200",
+    height: "3",
+    viewBox: "0 0 1200 3",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("path", {
+    d: "M0 1.5h1200",
+    stroke: "url(#paint0_linear_1129_1425)",
+    "stroke-width": "3"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("linearGradient", {
+    id: "paint0_linear_1129_1425",
+    x1: "0",
+    y1: "2.00435",
+    x2: "1182.95",
+    y2: "1.96651",
+    gradientUnits: "userSpaceOnUse"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    "stop-color": "#A2A09D",
+    "stop-opacity": "0"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    offset: ".145833",
+    "stop-color": "#FCE4A7"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    offset: ".265625",
+    "stop-color": "#CFA855"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    offset: ".427083",
+    "stop-color": "#FCE4A7"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    offset: ".578125",
+    "stop-color": "#F0D592"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    offset: ".713542",
+    "stop-color": "#FCE4A7"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    offset: ".828125",
+    "stop-color": "#CB9636"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    offset: "1",
+    "stop-color": "#A7A7A7",
+    "stop-opacity": "0"
+  })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)(_components_Repeating_CTA__WEBPACK_IMPORTED_MODULE_6__["default"], null), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("svg", {
+    className: "w-full",
+    width: "1200",
+    height: "3",
+    viewBox: "0 0 1200 3",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("path", {
+    d: "M0 1.5h1200",
+    stroke: "url(#paint0_linear_1129_1425)",
+    "stroke-width": "3"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("linearGradient", {
+    id: "paint0_linear_1129_1425",
+    x1: "0",
+    y1: "2.00435",
+    x2: "1182.95",
+    y2: "1.96651",
+    gradientUnits: "userSpaceOnUse"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    "stop-color": "#A2A09D",
+    "stop-opacity": "0"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    offset: ".145833",
+    "stop-color": "#FCE4A7"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    offset: ".265625",
+    "stop-color": "#CFA855"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    offset: ".427083",
+    "stop-color": "#FCE4A7"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    offset: ".578125",
+    "stop-color": "#F0D592"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    offset: ".713542",
+    "stop-color": "#FCE4A7"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    offset: ".828125",
+    "stop-color": "#CB9636"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("stop", {
+    offset: "1",
+    "stop-color": "#A7A7A7",
+    "stop-opacity": "0"
+  })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    id: "bottom-right-modal",
+    "data-modal-placement": "bottom-right",
+    tabindex: "-1",
+    className: "h-full fade hidden overflow-y-auto overflow-x-hidden bg-white fixed top-0 right-0 right-0 z-50 w-full md:w-1/2 h-modal md:h-full"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "relative w-full h-full md:h-auto"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: " bg-white dark:bg-gray-700"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "flex justify-between items-center p-5 border-b dark:border-primary-500"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "flex items-center"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("svg", {
+    width: "17",
+    height: "16",
+    viewBox: "0 0 17 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    className: "mr-1.5 text-primary-100"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("path", {
+    d: "M1.08124.769072L4.33117.019088c.35312-.081249.71561.103122.85936.434365L6.6905 3.95338c.13125.30624.04375.66561-.21562.87498L4.58117 6.37833c1.12498 2.39682 3.09056 4.39057 5.53743 5.53737l1.5499-1.8937c.2125-.25937.5688-.34687.875-.21562l3.4999 1.49992c.3344.1469.5188.5094.4375.8625l-.75 3.25c-.0781.3375-.3781.5812-.7312.5812C6.99674 16 .5 9.51576.5 1.50031c0-.35.240621-.653115.58124-.731238z",
+    fill: "#D2B15E"
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("a", {
+    href: "tel:(404) 446-9338",
+    className: "text-sm font-semibold text-primary-100"
+  }, "(404) 446-9338")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("button", {
+    type: "button",
+    className: "text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white",
+    "data-modal-toggle": "bottom-right-modal",
+    onClick: () => closeContactModal()
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("svg", {
+    "aria-hidden": "true",
+    className: "w-5 h-5",
+    fill: "currentColor",
+    viewBox: "0 0 20 20",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("path", {
+    "fill-rule": "evenodd",
+    d: "M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z",
+    "clip-rule": "evenodd"
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("span", {
+    className: "sr-only"
+  }, "Close modal"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "pb-8 space-y-6 md:px-20 px-2"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+    className: "text-4xl text-center my-8"
+  }, "Contact Us"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "mb-10 text-black md:flex block"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("button", {
+    className: "block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "flex justify-center items-center"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("i", {
+    className: "fal fa-calendar mr-2 text-xl"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+    className: "m-0"
+  }, "Book a Call"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("button", {
+    className: "w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "flex justify-center items-center"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("i", {
+    class: "fal fa-envelope mr-2 text-xl"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+    className: "m-0"
+  }, "Contact Us")))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "mb-8"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "mb-5"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("label", {
+    className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
+    htmlFor: "first-name"
+  }, "Name"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("input", {
+    type: "text",
+    name: "first-name",
+    onChange: () => handleChange(),
+    required: true,
+    className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "block md:flex"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "mb-5 w-full md:w-1/2 mr-3"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("label", {
+    className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
+    htmlFor: "phone-number"
+  }, "Phone Number"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("input", {
+    type: "tel",
+    name: "phone-number",
+    onChange: () => handleChange(),
+    required: true,
+    className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "mb-5 md:w-1/2"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("label", {
+    className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
+    htmlFor: "email-address"
+  }, "Email Address"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("input", {
+    type: "email",
+    name: "email-address",
+    onChange: () => handleChange(),
+    required: true,
+    className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
+  }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "mb-5"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("label", {
+    className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
+    htmlFor: "first-name"
+  }, "What Can We Help You With ?"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("select", {
+    name: "helps",
+    className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("option", {
+    value: "",
+    disabled: true,
+    selected: true
+  }, "Select Ones ..."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("option", {
+    value: "0"
+  }, "Accounting"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("option", {
+    value: "1"
+  }, "Service"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("option", {
+    value: "2"
+  }, "About"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    className: "mb-5"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("label", {
+    className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
+    htmlFor: "first-name"
+  }, "Message(Optional)"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)("textarea", {
+    type: "textarea",
+    name: "message",
+    onChange: () => handleChange(),
+    required: true,
+    rows: "5",
+    className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_10__.jsx)(_components_Button_ButtonSolid__WEBPACK_IMPORTED_MODULE_7__["default"] // onClick={()}
+  , {
+    text: "Send",
+    altStyle: true,
+    className: "bg-primary-700 min-w-0 text-base w-1/3"
+  })))))));
+};
+
+const query = "1304386004";
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Page);
+
+/***/ }),
+
 /***/ "./src/pages/consulting.js":
 /*!*********************************!*\
   !*** ./src/pages/consulting.js ***!
@@ -38987,7 +39515,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
+/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
 /* harmony import */ var gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby-plugin-transition-link/AniLink */ "./node_modules/gatsby-plugin-transition-link/AniLink/index.js");
 /* harmony import */ var _sass_global_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../sass/global.scss */ "./src/sass/global.scss");
 /* harmony import */ var _sass_global_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_sass_global_scss__WEBPACK_IMPORTED_MODULE_2__);
@@ -39002,7 +39530,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Button_ButtonSolid__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/Button/ButtonSolid */ "./src/components/Button/ButtonSolid.js");
 /* harmony import */ var _components_Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/Button/ButtonSolidGold */ "./src/components/Button/ButtonSolidGold.js");
 /* harmony import */ var _components_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/Button/ButtonGhost */ "./src/components/Button/ButtonGhost.js");
-/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.esm.js");
+/* harmony import */ var _images_1_0_Homepage_1_0_Homepage_2_0_HE_seal_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../images/1.0 Homepage/1.0 Homepage/2.0 HE seal.png */ "./src/images/1.0 Homepage/1.0 Homepage/2.0 HE seal.png");
+/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.esm.js");
 
 
 
@@ -39016,6 +39545,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
  //import RecentBlogPosts from "../components/Repeating/RecentBlogPosts";
+
 
 
 
@@ -39050,570 +39580,524 @@ const Page = ({
     document.getElementById("bottom-right-modal").style.display = "none";
   };
 
-  return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
     headerDarkMode: true
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_SEO__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(_components_SEO__WEBPACK_IMPORTED_MODULE_4__["default"], {
     title: "High Echelon",
     description: "Test"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("section", {
     className: "w-full block lg:hidden md:hidden relative"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_16__.GatsbyImage, {
     image: data.heroMobile.childImageSharp.gatsbyImageData,
     className: "md:hidden w-full"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "absolute top-0 px-6 pt-32 pb-14 text-center"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
     className: "font-heading text-white text-5xl tracking-wider mb-6"
-  }, "WE ARE HIGH ECHELON"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+  }, "WE ARE HIGH ECHELON"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
     className: "font-body text-xl text-white mb-8"
-  }, "Elevated Consulting, Payroll, Accounting & Tax Services"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }, "Elevated Consulting, Payroll, Accounting & Tax Services"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "flex justify-center md:justify-center space-x-4 md:space-x-5"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_12__["default"], {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(_components_Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_12__["default"], {
     onClick: () => openContactModal(),
     text: "Book a Call"
-  }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "relative mb-32 flex justify-center"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "container bg-primary-700 flex justify-center md:justify-center items-center flex-col rounded-[8px]"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("svg", {
     width: "324",
     height: "2",
     viewBox: "0 0 324 2",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
     className: "mb-7"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("line", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("line", {
     x1: "0.900024",
     y1: "1",
     x2: "323.1",
     y2: "1",
     stroke: "url(#paint0_linear_1192_6745)",
     "stroke-width": "2"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("linearGradient", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("linearGradient", {
     id: "paint0_linear_1192_6745",
     x1: "0.900024",
     y1: "2.50435",
     x2: "315.429",
     y2: "2.50107",
     gradientUnits: "userSpaceOnUse"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     "stop-color": "#A2A09D",
     "stop-opacity": "0"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: "0.145833",
     "stop-color": "#CB9636"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: "0.265625",
     "stop-color": "#CFA855"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: "0.427083",
     "stop-color": "#FCE4A7"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: "0.578125",
     "stop-color": "#F0D592"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: "0.713542",
     "stop-color": "#CFA855"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: "0.828125",
     "stop-color": "#CB9636"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: "1",
     "stop-color": "#A7A7A7",
     "stop-opacity": "0"
-  })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
+  })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("svg", {
     width: "93",
     height: "93",
     viewBox: "0 0 93 93",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("path", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("path", {
     d: "M78.0267 30.523L61.6927 15.8497C61.3549 15.5462 60.4847 15.3012 60.1812 15.6389L60.164 15.7055C60.0229 15.8406 59.924 16.0382 59.8756 16.2076C59.7597 16.61 59.7153 17.0536 59.7254 17.4711C59.7355 17.8684 59.8061 18.2657 59.9351 18.6418C59.9956 18.8182 60.0743 18.9896 60.156 19.157C60.1983 19.2437 60.2417 19.3305 60.2891 19.4142C57.2247 22.1427 51.6325 28.0536 50.0091 36.0012C49.9768 36.1565 49.9042 36.3027 49.7933 36.4167C48.0499 38.1974 45.6924 39.2924 43.2321 39.4326C39.4095 39.6524 35.5476 39.5092 31.7512 39.0101L30.3789 38.8306C29.5762 38.7268 28.7897 38.7863 28.0325 38.9647C27.8974 38.996 27.7582 38.994 27.6251 38.9557C26.3355 38.5866 22.6692 37.8455 19.5363 40.1536C17.6769 41.5239 16.5103 43.6041 15.8296 45.775C15.3971 47.1534 15.144 48.5852 15.0028 50.0211C14.9221 50.8378 14.8556 51.6697 14.8636 52.4915C14.8697 53.0522 14.7971 53.6108 14.7991 54.1704C14.8001 54.5747 14.8546 54.9771 14.8647 55.3804C14.8737 55.7515 14.784 56.1659 14.9262 56.5208C15.1833 57.1651 16.6242 55.6879 16.7744 55.46C17.3865 54.5253 17.4904 53.3738 17.5206 52.2858C17.5498 51.2059 17.6124 50.1492 17.7616 49.0773C18.0036 47.3349 18.4493 45.5663 19.3709 44.0508C19.8025 43.3409 20.347 42.6935 21.0165 42.1964C21.3896 41.9181 21.7788 41.7044 22.171 41.541C22.9041 41.2365 23.6099 42.018 23.2106 42.7036C23.1521 42.8045 23.0957 42.9063 23.0402 43.0112C22.3535 44.3018 21.8897 45.8315 21.6205 47.6908C20.833 53.1348 21.8433 58.5556 22.8194 63.798C23.258 66.1565 23.3427 67.5631 23.5807 69.8409C23.5918 69.9932 23.5958 70.1424 23.5454 70.2906C23.4849 70.4701 23.378 70.6334 23.2852 70.7978C23.252 70.8563 23.2187 70.9158 23.1844 70.9743C23.1108 71.061 23.0392 71.1507 22.9767 71.2748C22.9152 71.3958 22.9142 71.5722 23.0322 71.6378C23.0775 71.663 23.131 71.666 23.1824 71.668C23.2076 71.668 24.823 71.7426 25.1809 71.7184C25.2686 71.7124 26.1519 71.7154 26.3254 71.546C26.4242 71.4492 26.4161 71.2899 26.401 71.1527C26.3758 70.9188 26.3496 70.6859 26.3234 70.452C26.2608 69.8853 26.0995 69.3488 26.038 68.7862C25.9825 68.2861 25.9261 67.7869 25.8666 67.2878C25.7093 65.9669 25.5419 64.644 25.2989 63.3351C24.9157 61.2741 24.5285 59.1848 24.2522 57.0915C24.1776 56.5198 24.709 56.0499 25.2676 56.1941C26.5623 56.5279 28.1424 56.8112 29.7708 56.8112C29.7809 56.8112 29.791 56.8112 29.8011 56.8112C29.8011 56.8112 36.326 69.9559 36.3674 70.34C36.4057 70.7061 36.198 71.1164 36.3371 71.4482C36.4914 71.8142 39.8461 71.6892 39.9994 71.4563C40.1879 71.1689 39.9096 70.815 39.7685 70.573C39.5456 70.1908 32.932 57.3789 32.932 57.3789C32.7101 56.9352 32.9289 56.4028 33.3968 56.2395C33.8939 56.0651 34.3789 55.8462 34.8428 55.572C35.5052 55.1807 36.085 54.6967 36.5942 54.1341C36.8201 53.884 37.1579 53.7771 37.4765 53.8871C39.7614 54.6756 44.5308 55.7273 52.6217 56.8374C53.3638 56.9393 54.0828 56.9897 54.7775 56.9897C54.9873 56.9897 55.194 56.9836 55.3976 56.9725C55.8111 56.9504 56.169 57.2549 56.2336 57.6643L58.0243 68.9243L58.1151 69.493C58.1151 69.493 58.2099 70.4943 58.2462 70.6829C58.2845 70.8825 58.2795 71.067 58.227 71.2637C58.1877 71.4099 58.099 71.6398 58.1776 71.786C58.2432 71.909 58.4589 71.9362 58.586 71.911C59.3281 71.909 60.0713 71.906 60.8134 71.908C60.9566 71.908 61.5737 71.916 61.6977 71.8697C61.9205 71.787 61.8984 71.5178 61.8187 71.3141C61.6644 70.9178 61.3579 70.6203 61.123 70.2735C61.123 70.2735 61.0463 70.1495 60.9203 69.9458C60.9152 69.9317 60.9092 69.9165 60.9041 69.9024C60.7912 69.607 60.6843 69.3095 60.5875 69.008L58.6888 57.0714C58.6273 56.6842 58.8532 56.3191 59.2172 56.1719C60.3647 55.7091 61.3952 55.0487 62.2987 54.2087L62.2906 54.2803L66.9763 54.8349C67.544 54.9024 67.8717 55.5145 67.6126 56.0237L64.5805 61.989L64.2478 62.6444C64.2024 62.6918 64.156 62.7382 64.1106 62.7856C63.9614 62.9399 63.8162 63.0982 63.666 63.2504C63.5389 63.3805 63.426 63.4813 63.2596 63.5166C63.188 63.5318 63.1457 63.5781 63.1174 63.6306C63.1114 63.6397 63.1074 63.6528 63.1033 63.6638C63.0953 63.688 63.0882 63.7102 63.0882 63.7354C63.0882 63.7465 63.0821 63.7516 63.0821 63.7637C63.0842 64.1257 64.0743 65.8469 64.4857 66.2684C65.0161 66.8129 65.2561 66.1827 65.4941 65.7269C65.6534 65.4214 65.8127 65.1158 65.972 64.8113C66.1687 64.4352 66.5548 63.679 66.5518 63.676L71.4987 53.9435C71.7579 53.4333 71.4301 52.8212 70.8624 52.7537L65.358 52.1033C64.7893 52.0358 64.4676 51.4277 64.7257 50.9165C65.2319 49.9152 65.6423 48.799 65.9458 47.5648C66.7666 44.2242 66.6113 40.4994 65.486 36.4953C65.4114 36.2281 65.3448 35.9861 65.2854 35.7663C65.1442 35.243 65.5384 34.7327 66.0799 34.7327H75.7398C76.0231 34.7327 76.2863 34.5865 76.4375 34.3466L78.1749 31.5676C78.3866 31.2288 78.3241 30.7871 78.0277 30.5199L78.0267 30.523ZM52.9625 54.3398C44.9079 53.2347 40.9381 52.31 39.0546 51.7494C38.62 51.6203 38.3588 51.1666 38.4949 50.735C38.7228 50.0171 38.8922 49.2386 39.0042 48.3997C39.0647 47.9419 38.7138 47.5295 38.253 47.4912L37.3767 47.4196C36.9482 47.3843 36.5549 47.6848 36.4974 48.1103C36.1526 50.6725 35.1664 52.4492 33.5612 53.399C30.7167 55.0839 26.5089 54.0171 24.4347 53.3143C24.1091 53.2044 23.8892 52.9029 23.8802 52.5591C23.8408 51.0476 23.8973 49.5421 24.1131 48.0528C24.34 46.4869 24.7161 45.2265 25.2636 44.197C26.3526 42.1521 28.1404 41.0792 30.0391 41.3293C30.0744 41.3343 31.4225 41.5108 31.4225 41.5108C35.3742 42.0291 39.3954 42.1763 43.3743 41.9504C45.1227 41.8506 46.8268 41.3636 48.3736 40.5579C48.909 40.2796 49.5513 40.6345 49.5745 41.2375C49.75 45.7246 51.3391 50.1502 54.3298 54.4558C53.8922 54.4386 53.4395 54.4033 52.9615 54.3378L52.9625 54.3398ZM63.4966 46.9648C62.8654 49.5341 61.5061 52.3332 58.6546 53.6682C58.2361 53.8639 57.7229 53.6884 57.5343 53.2669C55.801 49.3919 55.4249 45.8194 56.4483 42.632C57.504 39.3439 59.8414 37.1054 61.5293 35.847C61.9931 35.5011 62.6546 35.729 62.8089 36.2866C62.8855 36.5649 62.9692 36.8624 63.0579 37.18C64.0653 40.7606 64.2125 44.0518 63.4966 46.9638V46.9648ZM65.3065 32.3178C64.9466 32.2996 64.5896 32.2593 64.2347 32.2301C63.6024 32.1786 62.9743 32.1645 62.3461 32.3793C61.4819 32.6737 60.7358 33.313 59.9977 33.8313C59.1789 34.406 58.4236 35.1048 57.7309 35.8238C56.0853 37.5289 54.7886 39.5707 54.0576 41.8304C53.9688 42.1047 53.8882 42.382 53.8166 42.6603C53.5937 43.5264 52.3091 43.4236 52.2063 42.5352C52.0308 41.0308 52.0369 39.5213 52.2274 38.0108C52.8597 32.9843 55.4188 28.6848 57.9699 25.5267C58.2653 25.1617 58.8068 25.1253 59.1547 25.441C61.5182 27.5897 63.8122 29.8131 66.1404 32.0002C66.5236 32.3601 65.4709 32.3249 65.3086 32.3168L65.3065 32.3178ZM70.5962 28.0193L69.5405 30.2931C69.3026 30.8043 68.634 30.9323 68.2267 30.5411C66.8221 29.192 64.9294 27.381 63.2394 25.7929C62.82 25.3986 62.4076 24.9933 61.976 24.6141C61.5263 24.2189 61.0282 23.877 60.6097 23.4465C60.4504 23.2831 60.1872 22.9534 60.4212 22.7447C60.7257 22.4734 61.0221 22.1931 61.3196 21.9128C61.6917 21.5609 62.0708 21.2171 62.457 20.8823C62.7696 20.611 63.2314 20.6211 63.5399 20.8974L70.4006 27.0603C70.6699 27.3023 70.7495 27.6905 70.5973 28.0183L70.5962 28.0193ZM74.9825 31.9689C74.927 32.0556 74.8544 32.1161 74.7718 32.1575C74.5318 32.2765 74.2363 32.226 73.9782 32.224C73.5577 32.22 73.1383 32.2149 72.7178 32.2149C72.1168 32.2149 71.7185 31.5918 71.9716 31.0463L72.3457 30.2396C72.5786 29.7385 73.23 29.6044 73.6414 29.9744C73.8572 30.168 74.073 30.3616 74.2888 30.5552C74.5267 30.769 75.289 31.1985 75.2255 31.5323C75.1973 31.6785 75.0622 31.8459 74.9835 31.9689H74.9825Z",
     fill: "url(#paint0_linear_1112_665)"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("path", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("path", {
     d: "M46.5493 0.300186C21.102 0.300186 0.398926 21.0033 0.398926 46.4506C0.398926 71.8979 21.102 92.601 46.5493 92.601C71.9966 92.601 92.6998 71.8979 92.6998 46.4506C92.6998 21.0033 71.9966 0.300186 46.5493 0.300186ZM46.5493 90.2032C22.424 90.2032 2.79674 70.576 2.79674 46.4506C2.79674 22.3252 22.4229 2.69901 46.5493 2.69901C70.6757 2.69901 90.3019 22.3262 90.3019 46.4516C90.3019 70.577 70.6747 90.2042 46.5493 90.2042V90.2032Z",
     fill: "url(#paint1_linear_1112_665)"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("linearGradient", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("linearGradient", {
     id: "paint0_linear_1112_665",
     x1: "13.2871",
     y1: "71.9196",
     x2: "75.0241",
     y2: "71.9196",
     gradientUnits: "userSpaceOnUse"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: "0.239583",
     "stop-color": "#D2B15E"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: "0.421875",
     "stop-color": "#CB9636"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: "0.6875",
     "stop-color": "#D2B15E"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: "1",
     "stop-color": "#CEA045"
-  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("linearGradient", {
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("linearGradient", {
     id: "paint1_linear_1112_665",
     x1: "-1.79871",
     y1: "92.601",
     x2: "87.9382",
     y2: "92.601",
     gradientUnits: "userSpaceOnUse"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: "0.239583",
     "stop-color": "#D2B15E"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: "0.421875",
     "stop-color": "#CB9636"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: "0.6875",
     "stop-color": "#D2B15E"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: "1",
     "stop-color": "#CEA045"
-  })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+  })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
     className: "font-body text-mobile-5xl text-white mt-9 mb-6 max-w-[560px] md:w-3/5 sm:w-full text-center"
-  }, "A Small Business CPA Firm Serving Atlanta & Beyond"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }, "A Small Business CPA Firm Serving Atlanta & Beyond"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "mb-20 flex justify-center"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
     className: "font-body text-base text-white text-center leading-[30px]"
-  }, "If you\u2019re looking for a meticulous CPA firm that can simplify your books, you\u2019ve come to the right place. At High Echelon, we value client communication, accuracy, a streamlined workflow, and creating a positive experience for our clients."))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
+  }, "If you\u2019re looking for a meticulous CPA firm that can simplify your books, you\u2019ve come to the right place. At High Echelon, we value client communication, accuracy, a streamlined workflow, and creating a positive experience for our clients."))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("section", {
     className: "hidden lg:block md:block"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Hero_HeroFullWidth__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(_components_Hero_HeroFullWidth__WEBPACK_IMPORTED_MODULE_5__["default"], {
     backgroundImages: data.heroDesktop.childImageSharp.gatsbyImageData,
     backgroundPosition: "0% 20%",
     mobileRemoveBackground: true,
     textAlignment: "text-center",
     padding: "pt-10 md:pt-12 pb-14 md:pb-60"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
     className: "font-heading text-white text-mobile-7xl md:text-7xl tracking-wider mb-12 md:mb-4 mt-40"
-  }, "WE ARE HIGH ECHELON"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+  }, "WE ARE HIGH ECHELON"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
     className: "font-body text-lg md:text-xl text-white font-semibold mb-16"
-  }, "Elevated Consulting, Payroll, Accounting & Tax Services"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }, "Elevated Consulting, Payroll, Accounting & Tax Services"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "flex justify-center md:justify-center space-x-4 md:space-x-5"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_12__["default"], {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(_components_Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_12__["default"], {
     onClick: () => openContactModal(),
     text: "Book a Call"
-  }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "relative md:top-[-100px] sm:top-0 md:mx-28 sm:mx-4 mb-20 flex justify-center"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "absolute sm:flex container bg-primary-700 flex justify-center items-center flex-col rounded-[8px]"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("svg", {
     width: "1094",
     height: "3",
     viewBox: "0 0 1094 3",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
     className: "mb-7"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("line", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("line", {
     y1: "1.5",
     x2: "1094",
     y2: "1.5",
     stroke: "url(#paint0_linear_1129_1424)",
     "stroke-width": "3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("linearGradient", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("linearGradient", {
     id: "paint0_linear_1129_1424",
     x1: "0",
     y1: "3.50435",
     x2: "1067.95",
     y2: "3.46651",
     gradientUnits: "userSpaceOnUse"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     "stop-color": "#A2A09D",
     "stop-opacity": "0"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: "0.145833",
     "stop-color": "#CB9636"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: "0.265625",
     "stop-color": "#CFA855"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: "0.427083",
     "stop-color": "#FCE4A7"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: "0.578125",
     "stop-color": "#F0D592"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: "0.713542",
     "stop-color": "#CFA855"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: "0.828125",
     "stop-color": "#CB9636"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: "1",
     "stop-color": "#A7A7A7",
     "stop-opacity": "0"
-  })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
-    width: "93",
-    height: "93",
-    viewBox: "0 0 93 93",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("path", {
-    d: "M78.0267 30.523L61.6927 15.8497C61.3549 15.5462 60.4847 15.3012 60.1812 15.6389L60.164 15.7055C60.0229 15.8406 59.924 16.0382 59.8756 16.2076C59.7597 16.61 59.7153 17.0536 59.7254 17.4711C59.7355 17.8684 59.8061 18.2657 59.9351 18.6418C59.9956 18.8182 60.0743 18.9896 60.156 19.157C60.1983 19.2437 60.2417 19.3305 60.2891 19.4142C57.2247 22.1427 51.6325 28.0536 50.0091 36.0012C49.9768 36.1565 49.9042 36.3027 49.7933 36.4167C48.0499 38.1974 45.6924 39.2924 43.2321 39.4326C39.4095 39.6524 35.5476 39.5092 31.7512 39.0101L30.3789 38.8306C29.5762 38.7268 28.7897 38.7863 28.0325 38.9647C27.8974 38.996 27.7582 38.994 27.6251 38.9557C26.3355 38.5866 22.6692 37.8455 19.5363 40.1536C17.6769 41.5239 16.5103 43.6041 15.8296 45.775C15.3971 47.1534 15.144 48.5852 15.0028 50.0211C14.9221 50.8378 14.8556 51.6697 14.8636 52.4915C14.8697 53.0522 14.7971 53.6108 14.7991 54.1704C14.8001 54.5747 14.8546 54.9771 14.8647 55.3804C14.8737 55.7515 14.784 56.1659 14.9262 56.5208C15.1833 57.1651 16.6242 55.6879 16.7744 55.46C17.3865 54.5253 17.4904 53.3738 17.5206 52.2858C17.5498 51.2059 17.6124 50.1492 17.7616 49.0773C18.0036 47.3349 18.4493 45.5663 19.3709 44.0508C19.8025 43.3409 20.347 42.6935 21.0165 42.1964C21.3896 41.9181 21.7788 41.7044 22.171 41.541C22.9041 41.2365 23.6099 42.018 23.2106 42.7036C23.1521 42.8045 23.0957 42.9063 23.0402 43.0112C22.3535 44.3018 21.8897 45.8315 21.6205 47.6908C20.833 53.1348 21.8433 58.5556 22.8194 63.798C23.258 66.1565 23.3427 67.5631 23.5807 69.8409C23.5918 69.9932 23.5958 70.1424 23.5454 70.2906C23.4849 70.4701 23.378 70.6334 23.2852 70.7978C23.252 70.8563 23.2187 70.9158 23.1844 70.9743C23.1108 71.061 23.0392 71.1507 22.9767 71.2748C22.9152 71.3958 22.9142 71.5722 23.0322 71.6378C23.0775 71.663 23.131 71.666 23.1824 71.668C23.2076 71.668 24.823 71.7426 25.1809 71.7184C25.2686 71.7124 26.1519 71.7154 26.3254 71.546C26.4242 71.4492 26.4161 71.2899 26.401 71.1527C26.3758 70.9188 26.3496 70.6859 26.3234 70.452C26.2608 69.8853 26.0995 69.3488 26.038 68.7862C25.9825 68.2861 25.9261 67.7869 25.8666 67.2878C25.7093 65.9669 25.5419 64.644 25.2989 63.3351C24.9157 61.2741 24.5285 59.1848 24.2522 57.0915C24.1776 56.5198 24.709 56.0499 25.2676 56.1941C26.5623 56.5279 28.1424 56.8112 29.7708 56.8112C29.7809 56.8112 29.791 56.8112 29.8011 56.8112C29.8011 56.8112 36.326 69.9559 36.3674 70.34C36.4057 70.7061 36.198 71.1164 36.3371 71.4482C36.4914 71.8142 39.8461 71.6892 39.9994 71.4563C40.1879 71.1689 39.9096 70.815 39.7685 70.573C39.5456 70.1908 32.932 57.3789 32.932 57.3789C32.7101 56.9352 32.9289 56.4028 33.3968 56.2395C33.8939 56.0651 34.3789 55.8462 34.8428 55.572C35.5052 55.1807 36.085 54.6967 36.5942 54.1341C36.8201 53.884 37.1579 53.7771 37.4765 53.8871C39.7614 54.6756 44.5308 55.7273 52.6217 56.8374C53.3638 56.9393 54.0828 56.9897 54.7775 56.9897C54.9873 56.9897 55.194 56.9836 55.3976 56.9725C55.8111 56.9504 56.169 57.2549 56.2336 57.6643L58.0243 68.9243L58.1151 69.493C58.1151 69.493 58.2099 70.4943 58.2462 70.6829C58.2845 70.8825 58.2795 71.067 58.227 71.2637C58.1877 71.4099 58.099 71.6398 58.1776 71.786C58.2432 71.909 58.4589 71.9362 58.586 71.911C59.3281 71.909 60.0713 71.906 60.8134 71.908C60.9566 71.908 61.5737 71.916 61.6977 71.8697C61.9205 71.787 61.8984 71.5178 61.8187 71.3141C61.6644 70.9178 61.3579 70.6203 61.123 70.2735C61.123 70.2735 61.0463 70.1495 60.9203 69.9458C60.9152 69.9317 60.9092 69.9165 60.9041 69.9024C60.7912 69.607 60.6843 69.3095 60.5875 69.008L58.6888 57.0714C58.6273 56.6842 58.8532 56.3191 59.2172 56.1719C60.3647 55.7091 61.3952 55.0487 62.2987 54.2087L62.2906 54.2803L66.9763 54.8349C67.544 54.9024 67.8717 55.5145 67.6126 56.0237L64.5805 61.989L64.2478 62.6444C64.2024 62.6918 64.156 62.7382 64.1106 62.7856C63.9614 62.9399 63.8162 63.0982 63.666 63.2504C63.5389 63.3805 63.426 63.4813 63.2596 63.5166C63.188 63.5318 63.1457 63.5781 63.1174 63.6306C63.1114 63.6397 63.1074 63.6528 63.1033 63.6638C63.0953 63.688 63.0882 63.7102 63.0882 63.7354C63.0882 63.7465 63.0821 63.7516 63.0821 63.7637C63.0842 64.1257 64.0743 65.8469 64.4857 66.2684C65.0161 66.8129 65.2561 66.1827 65.4941 65.7269C65.6534 65.4214 65.8127 65.1158 65.972 64.8113C66.1687 64.4352 66.5548 63.679 66.5518 63.676L71.4987 53.9435C71.7579 53.4333 71.4301 52.8212 70.8624 52.7537L65.358 52.1033C64.7893 52.0358 64.4676 51.4277 64.7257 50.9165C65.2319 49.9152 65.6423 48.799 65.9458 47.5648C66.7666 44.2242 66.6113 40.4994 65.486 36.4953C65.4114 36.2281 65.3448 35.9861 65.2854 35.7663C65.1442 35.243 65.5384 34.7327 66.0799 34.7327H75.7398C76.0231 34.7327 76.2863 34.5865 76.4375 34.3466L78.1749 31.5676C78.3866 31.2288 78.3241 30.7871 78.0277 30.5199L78.0267 30.523ZM52.9625 54.3398C44.9079 53.2347 40.9381 52.31 39.0546 51.7494C38.62 51.6203 38.3588 51.1666 38.4949 50.735C38.7228 50.0171 38.8922 49.2386 39.0042 48.3997C39.0647 47.9419 38.7138 47.5295 38.253 47.4912L37.3767 47.4196C36.9482 47.3843 36.5549 47.6848 36.4974 48.1103C36.1526 50.6725 35.1664 52.4492 33.5612 53.399C30.7167 55.0839 26.5089 54.0171 24.4347 53.3143C24.1091 53.2044 23.8892 52.9029 23.8802 52.5591C23.8408 51.0476 23.8973 49.5421 24.1131 48.0528C24.34 46.4869 24.7161 45.2265 25.2636 44.197C26.3526 42.1521 28.1404 41.0792 30.0391 41.3293C30.0744 41.3343 31.4225 41.5108 31.4225 41.5108C35.3742 42.0291 39.3954 42.1763 43.3743 41.9504C45.1227 41.8506 46.8268 41.3636 48.3736 40.5579C48.909 40.2796 49.5513 40.6345 49.5745 41.2375C49.75 45.7246 51.3391 50.1502 54.3298 54.4558C53.8922 54.4386 53.4395 54.4033 52.9615 54.3378L52.9625 54.3398ZM63.4966 46.9648C62.8654 49.5341 61.5061 52.3332 58.6546 53.6682C58.2361 53.8639 57.7229 53.6884 57.5343 53.2669C55.801 49.3919 55.4249 45.8194 56.4483 42.632C57.504 39.3439 59.8414 37.1054 61.5293 35.847C61.9931 35.5011 62.6546 35.729 62.8089 36.2866C62.8855 36.5649 62.9692 36.8624 63.0579 37.18C64.0653 40.7606 64.2125 44.0518 63.4966 46.9638V46.9648ZM65.3065 32.3178C64.9466 32.2996 64.5896 32.2593 64.2347 32.2301C63.6024 32.1786 62.9743 32.1645 62.3461 32.3793C61.4819 32.6737 60.7358 33.313 59.9977 33.8313C59.1789 34.406 58.4236 35.1048 57.7309 35.8238C56.0853 37.5289 54.7886 39.5707 54.0576 41.8304C53.9688 42.1047 53.8882 42.382 53.8166 42.6603C53.5937 43.5264 52.3091 43.4236 52.2063 42.5352C52.0308 41.0308 52.0369 39.5213 52.2274 38.0108C52.8597 32.9843 55.4188 28.6848 57.9699 25.5267C58.2653 25.1617 58.8068 25.1253 59.1547 25.441C61.5182 27.5897 63.8122 29.8131 66.1404 32.0002C66.5236 32.3601 65.4709 32.3249 65.3086 32.3168L65.3065 32.3178ZM70.5962 28.0193L69.5405 30.2931C69.3026 30.8043 68.634 30.9323 68.2267 30.5411C66.8221 29.192 64.9294 27.381 63.2394 25.7929C62.82 25.3986 62.4076 24.9933 61.976 24.6141C61.5263 24.2189 61.0282 23.877 60.6097 23.4465C60.4504 23.2831 60.1872 22.9534 60.4212 22.7447C60.7257 22.4734 61.0221 22.1931 61.3196 21.9128C61.6917 21.5609 62.0708 21.2171 62.457 20.8823C62.7696 20.611 63.2314 20.6211 63.5399 20.8974L70.4006 27.0603C70.6699 27.3023 70.7495 27.6905 70.5973 28.0183L70.5962 28.0193ZM74.9825 31.9689C74.927 32.0556 74.8544 32.1161 74.7718 32.1575C74.5318 32.2765 74.2363 32.226 73.9782 32.224C73.5577 32.22 73.1383 32.2149 72.7178 32.2149C72.1168 32.2149 71.7185 31.5918 71.9716 31.0463L72.3457 30.2396C72.5786 29.7385 73.23 29.6044 73.6414 29.9744C73.8572 30.168 74.073 30.3616 74.2888 30.5552C74.5267 30.769 75.289 31.1985 75.2255 31.5323C75.1973 31.6785 75.0622 31.8459 74.9835 31.9689H74.9825Z",
-    fill: "url(#paint0_linear_1112_665)"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("path", {
-    d: "M46.5493 0.300186C21.102 0.300186 0.398926 21.0033 0.398926 46.4506C0.398926 71.8979 21.102 92.601 46.5493 92.601C71.9966 92.601 92.6998 71.8979 92.6998 46.4506C92.6998 21.0033 71.9966 0.300186 46.5493 0.300186ZM46.5493 90.2032C22.424 90.2032 2.79674 70.576 2.79674 46.4506C2.79674 22.3252 22.4229 2.69901 46.5493 2.69901C70.6757 2.69901 90.3019 22.3262 90.3019 46.4516C90.3019 70.577 70.6747 90.2042 46.5493 90.2042V90.2032Z",
-    fill: "url(#paint1_linear_1112_665)"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("linearGradient", {
-    id: "paint0_linear_1112_665",
-    x1: "13.2871",
-    y1: "71.9196",
-    x2: "75.0241",
-    y2: "71.9196",
-    gradientUnits: "userSpaceOnUse"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: "0.239583",
-    "stop-color": "#D2B15E"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: "0.421875",
-    "stop-color": "#CB9636"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: "0.6875",
-    "stop-color": "#D2B15E"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: "1",
-    "stop-color": "#CEA045"
-  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("linearGradient", {
-    id: "paint1_linear_1112_665",
-    x1: "-1.79871",
-    y1: "92.601",
-    x2: "87.9382",
-    y2: "92.601",
-    gradientUnits: "userSpaceOnUse"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: "0.239583",
-    "stop-color": "#D2B15E"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: "0.421875",
-    "stop-color": "#CB9636"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: "0.6875",
-    "stop-color": "#D2B15E"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
-    offset: "1",
-    "stop-color": "#CEA045"
-  })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+  })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("img", {
+    src: _images_1_0_Homepage_1_0_Homepage_2_0_HE_seal_png__WEBPACK_IMPORTED_MODULE_14__["default"],
+    alt: "mark svg",
+    className: "h-[93px] w-[93px]"
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
     className: "font-body text-5xl text-white font-body mt-9 mb-6 max-w-[560px] md:w-3/5 sm:w-full text-center"
-  }, "A Small Business CPA Firm Serving Atlanta & Beyond"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }, "A Small Business CPA Firm Serving Atlanta & Beyond"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "mb-20 flex justify-center max-w-[736px] md:w-2/3 sm:w-full "
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
     className: "font-body text-base text-white font-body text-center leading-[30px]"
-  }, "If you\u2019re looking for a meticulous CPA firm that can simplify your books, you\u2019ve come to the right place. At High Echelon, we value client communication, accuracy, a streamlined workflow, and creating a positive experience for our clients."))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
+  }, "If you\u2019re looking for a meticulous CPA firm that can simplify your books, you\u2019ve come to the right place. At High Echelon, we value client communication, accuracy, a streamlined workflow, and creating a positive experience for our clients."))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("section", {
     className: "lg:mt-80 md:mt-120 mb-20 md:mb-32 md:pt-24"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "container"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "gap-y-8 md:gap-x-10 lg:gap-x-16 items-center mt-8"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "mb-8"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h3", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("h3", {
     className: "md:w-2/3 text-primary-700 text-4xl font-light md:text-4xl-x md:font-normal"
-  }, "We are Here To Make Your Business Better"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+  }, "We are Here To Make Your Business Better"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
     className: "md:w-2/3 sm:w-full text-xl md:text-base mt-6"
-  }, "Get streamlined end-to-end services for everything from entity formation to accounting, payroll, and taxes. It\u2019s all here, in a single, full-stack solution that simplifies it all.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }, "Get streamlined end-to-end services for everything from entity formation to accounting, payroll, and taxes. It\u2019s all here, in a single, full-stack solution that simplifies it all.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "block w-full md:flex lg:flex md:mb-5 mb-4"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
     fade: true,
     to: "/consulting/",
     className: "block w-full mr-0 md:flex lg:flex md:mr-5 md:w-1/2 lg:mr-5 lg:w-1/2"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_16__.GatsbyImage, {
     image: data.smallBusinessConsultingImage.childImageSharp.gatsbyImageData,
     alt: "Small Business Consulting",
     className: "p-2 rounded-[8px] mb-3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "md:flex md:justify-center py-2 pl-3 mb-6 md:mb-0 max-w-[360px]"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "flex justify-center flex-col mb-4"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h3", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("h3", {
     className: "text-lg mb-4 text-primary-700"
-  }, "Small Business Consulting"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+  }, "Small Business Consulting"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
     className: "text-base mb-4"
-  }, "Need advice or help in navigating the best way to form your business? Talk with the experts.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_13__["default"], {
+  }, "Need advice or help in navigating the best way to form your business? Talk with the experts.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(_components_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_13__["default"], {
     href: "/consulting/",
     text: "Learn More",
     className: "lg:hidden md:hidden w-[100px] h-[40px]"
-  }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
     fade: true,
     to: "/accounting/",
     className: "block w-full mr-0 md:flex lg:flex md:mr-5 md:w-1/2 lg:mr-5 lg:w-1/2"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_16__.GatsbyImage, {
     image: data.accountServicesImage.childImageSharp.gatsbyImageData,
     alt: "Accounting Services",
     className: "p-2 rounded-[8px] mb-3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "md:flex md:justify-center  py-2 pl-3 mb-6 md:mb-0 max-w-[360px]"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "flex justify-center flex-col mb-4"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h3", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("h3", {
     className: "text-lg mb-4 text-primary-700"
-  }, "Accounting Services"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+  }, "Accounting Services"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
     className: "text-base mb-4"
-  }, "Receive accurate, secure delivery of monthly, quarterly, and annual financial statements.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_13__["default"], {
+  }, "Receive accurate, secure delivery of monthly, quarterly, and annual financial statements.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(_components_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_13__["default"], {
     href: "/accounting/",
     text: "Learn More",
     className: "lg:hidden md:hidden w-[100px] h-[40px]"
-  })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "block w-full md:flex lg:flex md:mb-5 mb-4"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
     fade: true,
     to: "/payroll/",
     className: "block w-full mr-0 md:flex lg:flex md:mr-5 md:w-1/2 lg:mr-5 lg:w-1/2"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_16__.GatsbyImage, {
     image: data.payrollManagementImage.childImageSharp.gatsbyImageData,
     alt: "Small Business Consulting",
     className: "p-2 rounded-[8px] mb-3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "md:flex md:justify-center  py-2 pl-3 mb-6 md:mb-0 max-w-[360px]"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "flex justify-center flex-col mb-4"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h3", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("h3", {
     className: "text-lg mb-4 text-primary-700"
-  }, "Payroll Management"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+  }, "Payroll Management"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
     className: "text-base mb-4"
-  }, "Get lightweight, user-friendly, cost-efficient payroll processing, and hiring/termination automation.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_13__["default"], {
+  }, "Get lightweight, user-friendly, cost-efficient payroll processing, and hiring/termination automation.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(_components_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_13__["default"], {
     href: "/payroll/",
     text: "Learn More",
     className: "lg:hidden md:hidden w-[100px] h-[40px]"
-  }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
     fade: true,
     to: "/tax/",
     className: "block w-full mr-0 md:flex lg:flex md:mr-5 md:w-1/2 lg:mr-5 lg:w-1/2"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_15__.GatsbyImage, {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_16__.GatsbyImage, {
     image: data.incomeTaxPreparationImage.childImageSharp.gatsbyImageData,
     alt: "Small Business Consulting",
     className: "p-2 rounded-[8px] mb-3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "md:flex md:justify-center  py-2 pl-3 mb-6 md:mb-0 max-w-[360px]"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "flex justify-center flex-col mb-4"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("h3", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("h3", {
     className: "text-lg mb-4 text-primary-700"
-  }, "Income Tax Preparation"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+  }, "Income Tax Preparation"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
     className: "text-base mb-4"
-  }, "Get prompt tax preparation for yourself or your business, including help with complicated returns.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_13__["default"], {
+  }, "Get prompt tax preparation for yourself or your business, including help with complicated returns.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(_components_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_13__["default"], {
     href: "/tax/",
     text: "Learn More",
     className: "lg:hidden md:hidden w-[100px] h-[40px]"
-  }))))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Repeating_ValueProps__WEBPACK_IMPORTED_MODULE_8__["default"], null), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Repeating_About__WEBPACK_IMPORTED_MODULE_9__["default"], null), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
+  }))))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(_components_Repeating_ValueProps__WEBPACK_IMPORTED_MODULE_8__["default"], null), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(_components_Repeating_About__WEBPACK_IMPORTED_MODULE_9__["default"], null), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("svg", {
     className: "w-full",
     width: "1200",
     height: "3",
     viewBox: "0 0 1200 3",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("path", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("path", {
     d: "M0 1.5h1200",
     stroke: "url(#paint0_linear_1129_1425)",
     "stroke-width": "3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("linearGradient", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("linearGradient", {
     id: "paint0_linear_1129_1425",
     x1: "0",
     y1: "2.00435",
     x2: "1182.95",
     y2: "1.96651",
     gradientUnits: "userSpaceOnUse"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     "stop-color": "#A2A09D",
     "stop-opacity": "0"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: ".145833",
     "stop-color": "#CB9636"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: ".265625",
     "stop-color": "#CFA855"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: ".427083",
     "stop-color": "#FCE4A7"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: ".578125",
     "stop-color": "#F0D592"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: ".713542",
     "stop-color": "#CFA855"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: ".828125",
     "stop-color": "#CB9636"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: "1",
     "stop-color": "#A7A7A7",
     "stop-opacity": "0"
-  })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Repeating_CTA__WEBPACK_IMPORTED_MODULE_10__["default"], null), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
+  })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(_components_Repeating_CTA__WEBPACK_IMPORTED_MODULE_10__["default"], null), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("svg", {
     className: "w-full",
     width: "1200",
     height: "3",
     viewBox: "0 0 1200 3",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("path", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("path", {
     d: "M0 1.5h1200",
     stroke: "url(#paint0_linear_1129_1425)",
     "stroke-width": "3"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("linearGradient", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("defs", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("linearGradient", {
     id: "paint0_linear_1129_1425",
     x1: "0",
     y1: "2.00435",
     x2: "1182.95",
     y2: "1.96651",
     gradientUnits: "userSpaceOnUse"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     "stop-color": "#A2A09D",
     "stop-opacity": "0"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: ".145833",
     "stop-color": "#CB9636"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: ".265625",
     "stop-color": "#CFA855"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: ".427083",
     "stop-color": "#FCE4A7"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: ".578125",
     "stop-color": "#F0D592"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: ".713542",
     "stop-color": "#CFA855"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: ".828125",
     "stop-color": "#CB9636"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("stop", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("stop", {
     offset: "1",
     "stop-color": "#A7A7A7",
     "stop-opacity": "0"
-  })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     id: "bottom-right-modal",
     "data-modal-placement": "bottom-right",
     tabindex: "-1",
     className: "h-full fade hidden overflow-y-auto overflow-x-hidden bg-white fixed top-0 right-0 right-0 z-50 w-full md:w-1/2 h-modal md:h-full"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "relative w-full h-full md:h-auto"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: " bg-white dark:bg-gray-700"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "flex justify-between items-center p-5 border-b dark:border-primary-500"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "flex items-center"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("svg", {
     width: "17",
     height: "16",
     viewBox: "0 0 17 16",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
     className: "mr-1.5 text-primary-100"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("path", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("path", {
     d: "M1.08124.769072L4.33117.019088c.35312-.081249.71561.103122.85936.434365L6.6905 3.95338c.13125.30624.04375.66561-.21562.87498L4.58117 6.37833c1.12498 2.39682 3.09056 4.39057 5.53743 5.53737l1.5499-1.8937c.2125-.25937.5688-.34687.875-.21562l3.4999 1.49992c.3344.1469.5188.5094.4375.8625l-.75 3.25c-.0781.3375-.3781.5812-.7312.5812C6.99674 16 .5 9.51576.5 1.50031c0-.35.240621-.653115.58124-.731238z",
     fill: "#D2B15E"
-  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("a", {
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("a", {
     href: "tel:(404) 446-9338",
     className: "text-sm font-semibold text-primary-100"
-  }, "(404) 446-9338")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("button", {
+  }, "(404) 446-9338")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("button", {
     type: "button",
     className: "text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white",
     "data-modal-toggle": "bottom-right-modal",
     onClick: () => closeContactModal()
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("svg", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("svg", {
     "aria-hidden": "true",
     className: "w-5 h-5",
     fill: "currentColor",
     viewBox: "0 0 20 20",
     xmlns: "http://www.w3.org/2000/svg"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("path", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("path", {
     "fill-rule": "evenodd",
     d: "M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z",
     "clip-rule": "evenodd"
-  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("span", {
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
     className: "sr-only"
-  }, "Close modal"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }, "Close modal"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "pb-8 space-y-6 md:px-20 px-2"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
     className: "text-4xl text-center my-8"
-  }, "Contact Us"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }, "Contact Us"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "mb-10 text-black md:flex block"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("button", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("button", {
     className: "block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "flex justify-center items-center"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("i", {
     className: "fal fa-calendar mr-2 text-xl"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
     className: "m-0"
-  }, "Book a Call"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("button", {
+  }, "Book a Call"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("button", {
     className: "w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "flex justify-center items-center"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("i", {
     class: "fal fa-envelope mr-2 text-xl"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
     className: "m-0"
-  }, "Contact Us")))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }, "Contact Us")))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "mb-8"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "mb-5"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("label", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("label", {
     className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
     htmlFor: "first-name"
-  }, "Name"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("input", {
+  }, "Name"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("input", {
     type: "text",
     name: "first-name",
     onChange: () => handleChange(),
     required: true,
     className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
-  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "block md:flex"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "mb-5 w-full md:w-1/2 mr-3"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("label", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("label", {
     className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
     htmlFor: "phone-number"
-  }, "Phone Number"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("input", {
+  }, "Phone Number"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("input", {
     type: "tel",
     name: "phone-number",
     onChange: () => handleChange(),
     required: true,
     className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
-  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "mb-5 md:w-1/2"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("label", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("label", {
     className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
     htmlFor: "email-address"
-  }, "Email Address"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("input", {
+  }, "Email Address"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("input", {
     type: "email",
     name: "email-address",
     onChange: () => handleChange(),
     required: true,
     className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
-  }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "mb-5"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("label", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("label", {
     className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
     htmlFor: "first-name"
-  }, "What Can We Help You With ?"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("select", {
+  }, "What Can We Help You With ?"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("select", {
     name: "helps",
     className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("option", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("option", {
     value: "",
     disabled: true,
     selected: true
-  }, "Select Ones ..."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("option", {
+  }, "Select Ones ..."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("option", {
     value: "0"
-  }, "Accounting"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("option", {
+  }, "Accounting"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("option", {
     value: "1"
-  }, "Service"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("option", {
+  }, "Service"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("option", {
     value: "2"
-  }, "About"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+  }, "About"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "mb-5"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("label", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("label", {
     className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
     htmlFor: "first-name"
-  }, "Message(Optional)"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("textarea", {
+  }, "Message(Optional)"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("textarea", {
     type: "textarea",
     name: "message",
     onChange: () => handleChange(),
     required: true,
     rows: "5",
     className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
-  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Button_ButtonSolid__WEBPACK_IMPORTED_MODULE_11__["default"] // onClick={()}
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(_components_Button_ButtonSolid__WEBPACK_IMPORTED_MODULE_11__["default"] // onClick={()}
   , {
     text: "Send",
     altStyle: true,
@@ -90357,6 +90841,21 @@ __webpack_require__.r(__webpack_exports__);
 function y(){return(y=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e}).apply(this,arguments)}var v=function(e,t){for(var n=[e[0]],r=0,o=t.length;r<o;r+=1)n.push(t[r],e[r+1]);return n},g=function(t){return null!==t&&"object"==typeof t&&"[object Object]"===(t.toString?t.toString():Object.prototype.toString.call(t))&&!(0,react_is__WEBPACK_IMPORTED_MODULE_0__.typeOf)(t)},S=Object.freeze([]),w=Object.freeze({});function E(e){return"function"==typeof e}function b(e){return true&&"string"==typeof e&&e||e.displayName||e.name||"Component"}function _(e){return e&&"string"==typeof e.styledComponentId}var N="undefined"!=typeof process&&(({}).REACT_APP_SC_ATTR||({}).SC_ATTR)||"data-styled",A="5.3.5",C="undefined"!=typeof window&&"HTMLElement"in window,I=Boolean("boolean"==typeof SC_DISABLE_SPEEDY?SC_DISABLE_SPEEDY:"undefined"!=typeof process&&void 0!==({}).REACT_APP_SC_DISABLE_SPEEDY&&""!==({}).REACT_APP_SC_DISABLE_SPEEDY?"false"!==({}).REACT_APP_SC_DISABLE_SPEEDY&&({}).REACT_APP_SC_DISABLE_SPEEDY:"undefined"!=typeof process&&void 0!==({}).SC_DISABLE_SPEEDY&&""!==({}).SC_DISABLE_SPEEDY?"false"!==({}).SC_DISABLE_SPEEDY&&({}).SC_DISABLE_SPEEDY:"production"!=="development"),P={},O= true?{1:"Cannot create styled-component for component: %s.\n\n",2:"Can't collect styles once you've consumed a `ServerStyleSheet`'s styles! `ServerStyleSheet` is a one off instance for each server-side render cycle.\n\n- Are you trying to reuse it across renders?\n- Are you accidentally calling collectStyles twice?\n\n",3:"Streaming SSR is only supported in a Node.js environment; Please do not try to call this method in the browser.\n\n",4:"The `StyleSheetManager` expects a valid target or sheet prop!\n\n- Does this error occur on the client and is your target falsy?\n- Does this error occur on the server and is the sheet falsy?\n\n",5:"The clone method cannot be used on the client!\n\n- Are you running in a client-like environment on the server?\n- Are you trying to run SSR on the client?\n\n",6:"Trying to insert a new style tag, but the given Node is unmounted!\n\n- Are you using a custom target that isn't mounted?\n- Does your document not have a valid head element?\n- Have you accidentally removed a style tag manually?\n\n",7:'ThemeProvider: Please return an object from your "theme" prop function, e.g.\n\n```js\ntheme={() => ({})}\n```\n\n',8:'ThemeProvider: Please make your "theme" prop an object.\n\n',9:"Missing document `<head>`\n\n",10:"Cannot find a StyleSheet instance. Usually this happens if there are multiple copies of styled-components loaded at once. Check out this issue for how to troubleshoot and fix the common cases where this situation can happen: https://github.com/styled-components/styled-components/issues/1941#issuecomment-417862021\n\n",11:"_This error was replaced with a dev-time warning, it will be deleted for v4 final._ [createGlobalStyle] received children which will not be rendered. Please use the component without passing children elements.\n\n",12:"It seems you are interpolating a keyframe declaration (%s) into an untagged string. This was supported in styled-components v3, but is not longer supported in v4 as keyframes are now injected on-demand. Please wrap your string in the css\\`\\` helper which ensures the styles are injected correctly. See https://www.styled-components.com/docs/api#css\n\n",13:"%s is not a styled component and cannot be referred to via component selector. See https://www.styled-components.com/docs/advanced#referring-to-other-components for more details.\n\n",14:'ThemeProvider: "theme" prop is required.\n\n',15:"A stylis plugin has been supplied that is not named. We need a name for each plugin to be able to prevent styling collisions between different stylis configurations within the same app. Before you pass your plugin to `<StyleSheetManager stylisPlugins={[]}>`, please make sure each plugin is uniquely-named, e.g.\n\n```js\nObject.defineProperty(importedPlugin, 'name', { value: 'some-unique-name' });\n```\n\n",16:"Reached the limit of how many styled components may be created at group %s.\nYou may only create up to 1,073,741,824 components. If you're creating components dynamically,\nas for instance in your render method then you may be running into this limitation.\n\n",17:"CSSStyleSheet could not be found on HTMLStyleElement.\nHas styled-components' style tag been unmounted or altered by another script?\n"}:0;function R(){for(var e=arguments.length<=0?void 0:arguments[0],t=[],n=1,r=arguments.length;n<r;n+=1)t.push(n<0||arguments.length<=n?void 0:arguments[n]);return t.forEach((function(t){e=e.replace(/%[a-z]/,t)})),e}function D(e){for(var t=arguments.length,n=new Array(t>1?t-1:0),r=1;r<t;r++)n[r-1]=arguments[r];throw false?0:new Error(R.apply(void 0,[O[e]].concat(n)).trim())}var j=function(){function e(e){this.groupSizes=new Uint32Array(512),this.length=512,this.tag=e}var t=e.prototype;return t.indexOfGroup=function(e){for(var t=0,n=0;n<e;n++)t+=this.groupSizes[n];return t},t.insertRules=function(e,t){if(e>=this.groupSizes.length){for(var n=this.groupSizes,r=n.length,o=r;e>=o;)(o<<=1)<0&&D(16,""+e);this.groupSizes=new Uint32Array(o),this.groupSizes.set(n),this.length=o;for(var s=r;s<o;s++)this.groupSizes[s]=0}for(var i=this.indexOfGroup(e+1),a=0,c=t.length;a<c;a++)this.tag.insertRule(i,t[a])&&(this.groupSizes[e]++,i++)},t.clearGroup=function(e){if(e<this.length){var t=this.groupSizes[e],n=this.indexOfGroup(e),r=n+t;this.groupSizes[e]=0;for(var o=n;o<r;o++)this.tag.deleteRule(n)}},t.getGroup=function(e){var t="";if(e>=this.length||0===this.groupSizes[e])return t;for(var n=this.groupSizes[e],r=this.indexOfGroup(e),o=r+n,s=r;s<o;s++)t+=this.tag.getRule(s)+"/*!sc*/\n";return t},e}(),T=new Map,x=new Map,k=1,V=function(e){if(T.has(e))return T.get(e);for(;x.has(k);)k++;var t=k++;return true&&((0|t)<0||t>1<<30)&&D(16,""+t),T.set(e,t),x.set(t,e),t},z=function(e){return x.get(e)},B=function(e,t){t>=k&&(k=t+1),T.set(e,t),x.set(t,e)},M="style["+N+'][data-styled-version="5.3.5"]',G=new RegExp("^"+N+'\\.g(\\d+)\\[id="([\\w\\d-]+)"\\].*?"([^"]*)'),L=function(e,t,n){for(var r,o=n.split(","),s=0,i=o.length;s<i;s++)(r=o[s])&&e.registerName(t,r)},F=function(e,t){for(var n=(t.textContent||"").split("/*!sc*/\n"),r=[],o=0,s=n.length;o<s;o++){var i=n[o].trim();if(i){var a=i.match(G);if(a){var c=0|parseInt(a[1],10),u=a[2];0!==c&&(B(u,c),L(e,u,a[3]),e.getTag().insertRules(c,r)),r.length=0}else r.push(i)}}},Y=function(){return"undefined"!=typeof window&&void 0!==window.__webpack_nonce__?window.__webpack_nonce__:null},q=function(e){var t=document.head,n=e||t,r=document.createElement("style"),o=function(e){for(var t=e.childNodes,n=t.length;n>=0;n--){var r=t[n];if(r&&1===r.nodeType&&r.hasAttribute(N))return r}}(n),s=void 0!==o?o.nextSibling:null;r.setAttribute(N,"active"),r.setAttribute("data-styled-version","5.3.5");var i=Y();return i&&r.setAttribute("nonce",i),n.insertBefore(r,s),r},H=function(){function e(e){var t=this.element=q(e);t.appendChild(document.createTextNode("")),this.sheet=function(e){if(e.sheet)return e.sheet;for(var t=document.styleSheets,n=0,r=t.length;n<r;n++){var o=t[n];if(o.ownerNode===e)return o}D(17)}(t),this.length=0}var t=e.prototype;return t.insertRule=function(e,t){try{return this.sheet.insertRule(t,e),this.length++,!0}catch(e){return!1}},t.deleteRule=function(e){this.sheet.deleteRule(e),this.length--},t.getRule=function(e){var t=this.sheet.cssRules[e];return void 0!==t&&"string"==typeof t.cssText?t.cssText:""},e}(),$=function(){function e(e){var t=this.element=q(e);this.nodes=t.childNodes,this.length=0}var t=e.prototype;return t.insertRule=function(e,t){if(e<=this.length&&e>=0){var n=document.createTextNode(t),r=this.nodes[e];return this.element.insertBefore(n,r||null),this.length++,!0}return!1},t.deleteRule=function(e){this.element.removeChild(this.nodes[e]),this.length--},t.getRule=function(e){return e<this.length?this.nodes[e].textContent:""},e}(),W=function(){function e(e){this.rules=[],this.length=0}var t=e.prototype;return t.insertRule=function(e,t){return e<=this.length&&(this.rules.splice(e,0,t),this.length++,!0)},t.deleteRule=function(e){this.rules.splice(e,1),this.length--},t.getRule=function(e){return e<this.length?this.rules[e]:""},e}(),U=C,J={isServer:!C,useCSSOMInjection:!I},X=function(){function e(e,t,n){void 0===e&&(e=w),void 0===t&&(t={}),this.options=y({},J,{},e),this.gs=t,this.names=new Map(n),this.server=!!e.isServer,!this.server&&C&&U&&(U=!1,function(e){for(var t=document.querySelectorAll(M),n=0,r=t.length;n<r;n++){var o=t[n];o&&"active"!==o.getAttribute(N)&&(F(e,o),o.parentNode&&o.parentNode.removeChild(o))}}(this))}e.registerId=function(e){return V(e)};var t=e.prototype;return t.reconstructWithOptions=function(t,n){return void 0===n&&(n=!0),new e(y({},this.options,{},t),this.gs,n&&this.names||void 0)},t.allocateGSInstance=function(e){return this.gs[e]=(this.gs[e]||0)+1},t.getTag=function(){return this.tag||(this.tag=(n=(t=this.options).isServer,r=t.useCSSOMInjection,o=t.target,e=n?new W(o):r?new H(o):new $(o),new j(e)));var e,t,n,r,o},t.hasNameForId=function(e,t){return this.names.has(e)&&this.names.get(e).has(t)},t.registerName=function(e,t){if(V(e),this.names.has(e))this.names.get(e).add(t);else{var n=new Set;n.add(t),this.names.set(e,n)}},t.insertRules=function(e,t,n){this.registerName(e,t),this.getTag().insertRules(V(e),n)},t.clearNames=function(e){this.names.has(e)&&this.names.get(e).clear()},t.clearRules=function(e){this.getTag().clearGroup(V(e)),this.clearNames(e)},t.clearTag=function(){this.tag=void 0},t.toString=function(){return function(e){for(var t=e.getTag(),n=t.length,r="",o=0;o<n;o++){var s=z(o);if(void 0!==s){var i=e.names.get(s),a=t.getGroup(o);if(i&&a&&i.size){var c=N+".g"+o+'[id="'+s+'"]',u="";void 0!==i&&i.forEach((function(e){e.length>0&&(u+=e+",")})),r+=""+a+c+'{content:"'+u+'"}/*!sc*/\n'}}}return r}(this)},e}(),Z=/(a)(d)/gi,K=function(e){return String.fromCharCode(e+(e>25?39:97))};function Q(e){var t,n="";for(t=Math.abs(e);t>52;t=t/52|0)n=K(t%52)+n;return(K(t%52)+n).replace(Z,"$1-$2")}var ee=function(e,t){for(var n=t.length;n;)e=33*e^t.charCodeAt(--n);return e},te=function(e){return ee(5381,e)};function ne(e){for(var t=0;t<e.length;t+=1){var n=e[t];if(E(n)&&!_(n))return!1}return!0}var re=te("5.3.5"),oe=function(){function e(e,t,n){this.rules=e,this.staticRulesId="",this.isStatic= false&&0,this.componentId=t,this.baseHash=ee(re,t),this.baseStyle=n,X.registerId(t)}return e.prototype.generateAndInjectStyles=function(e,t,n){var r=this.componentId,o=[];if(this.baseStyle&&o.push(this.baseStyle.generateAndInjectStyles(e,t,n)),this.isStatic&&!n.hash)if(this.staticRulesId&&t.hasNameForId(r,this.staticRulesId))o.push(this.staticRulesId);else{var s=_e(this.rules,e,t,n).join(""),i=Q(ee(this.baseHash,s)>>>0);if(!t.hasNameForId(r,i)){var a=n(s,"."+i,void 0,r);t.insertRules(r,i,a)}o.push(i),this.staticRulesId=i}else{for(var c=this.rules.length,u=ee(this.baseHash,n.hash),l="",d=0;d<c;d++){var h=this.rules[d];if("string"==typeof h)l+=h, true&&(u=ee(u,h+d));else if(h){var p=_e(h,e,t,n),f=Array.isArray(p)?p.join(""):p;u=ee(u,f+d),l+=f}}if(l){var m=Q(u>>>0);if(!t.hasNameForId(r,m)){var y=n(l,"."+m,void 0,r);t.insertRules(r,m,y)}o.push(m)}}return o.join(" ")},e}(),se=/^\s*\/\/.*$/gm,ie=[":","[",".","#"];function ae(e){var t,n,r,o,s=void 0===e?w:e,i=s.options,a=void 0===i?w:i,c=s.plugins,u=void 0===c?S:c,l=new _emotion_stylis__WEBPACK_IMPORTED_MODULE_3__["default"](a),d=[],p=function(e){function t(t){if(t)try{e(t+"}")}catch(e){}}return function(n,r,o,s,i,a,c,u,l,d){switch(n){case 1:if(0===l&&64===r.charCodeAt(0))return e(r+";"),"";break;case 2:if(0===u)return r+"/*|*/";break;case 3:switch(u){case 102:case 112:return e(o[0]+r),"";default:return r+(0===d?"/*|*/":"")}case-2:r.split("/*|*/}").forEach(t)}}}((function(e){d.push(e)})),f=function(e,r,s){return 0===r&&-1!==ie.indexOf(s[n.length])||s.match(o)?e:"."+t};function m(e,s,i,a){void 0===a&&(a="&");var c=e.replace(se,""),u=s&&i?i+" "+s+" { "+c+" }":c;return t=a,n=s,r=new RegExp("\\"+n+"\\b","g"),o=new RegExp("(\\"+n+"\\b){2,}"),l(i||!s?"":s,u)}return l.use([].concat(u,[function(e,t,o){2===e&&o.length&&o[0].lastIndexOf(n)>0&&(o[0]=o[0].replace(r,f))},p,function(e){if(-2===e){var t=d;return d=[],t}}])),m.hash=u.length?u.reduce((function(e,t){return t.name||D(15),ee(e,t.name)}),5381).toString():"",m}var ce=react__WEBPACK_IMPORTED_MODULE_1___default().createContext(),ue=ce.Consumer,le=react__WEBPACK_IMPORTED_MODULE_1___default().createContext(),de=(le.Consumer,new X),he=ae();function pe(){return (0,react__WEBPACK_IMPORTED_MODULE_1__.useContext)(ce)||de}function fe(){return (0,react__WEBPACK_IMPORTED_MODULE_1__.useContext)(le)||he}function me(e){var t=(0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(e.stylisPlugins),n=t[0],s=t[1],c=pe(),u=(0,react__WEBPACK_IMPORTED_MODULE_1__.useMemo)((function(){var t=c;return e.sheet?t=e.sheet:e.target&&(t=t.reconstructWithOptions({target:e.target},!1)),e.disableCSSOMInjection&&(t=t.reconstructWithOptions({useCSSOMInjection:!1})),t}),[e.disableCSSOMInjection,e.sheet,e.target]),l=(0,react__WEBPACK_IMPORTED_MODULE_1__.useMemo)((function(){return ae({options:{prefix:!e.disableVendorPrefixes},plugins:n})}),[e.disableVendorPrefixes,n]);return (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)((function(){shallowequal__WEBPACK_IMPORTED_MODULE_2___default()(n,e.stylisPlugins)||s(e.stylisPlugins)}),[e.stylisPlugins]),react__WEBPACK_IMPORTED_MODULE_1___default().createElement(ce.Provider,{value:u},react__WEBPACK_IMPORTED_MODULE_1___default().createElement(le.Provider,{value:l}, true?react__WEBPACK_IMPORTED_MODULE_1___default().Children.only(e.children):0))}var ye=function(){function e(e,t){var n=this;this.inject=function(e,t){void 0===t&&(t=he);var r=n.name+t.hash;e.hasNameForId(n.id,r)||e.insertRules(n.id,r,t(n.rules,r,"@keyframes"))},this.toString=function(){return D(12,String(n.name))},this.name=e,this.id="sc-keyframes-"+e,this.rules=t}return e.prototype.getName=function(e){return void 0===e&&(e=he),this.name+e.hash},e}(),ve=/([A-Z])/,ge=/([A-Z])/g,Se=/^ms-/,we=function(e){return"-"+e.toLowerCase()};function Ee(e){return ve.test(e)?e.replace(ge,we).replace(Se,"-ms-"):e}var be=function(e){return null==e||!1===e||""===e};function _e(e,n,r,o){if(Array.isArray(e)){for(var s,i=[],a=0,c=e.length;a<c;a+=1)""!==(s=_e(e[a],n,r,o))&&(Array.isArray(s)?i.push.apply(i,s):i.push(s));return i}if(be(e))return"";if(_(e))return"."+e.styledComponentId;if(E(e)){if("function"!=typeof(l=e)||l.prototype&&l.prototype.isReactComponent||!n)return e;var u=e(n);return true&&(0,react_is__WEBPACK_IMPORTED_MODULE_0__.isElement)(u)&&console.warn(b(e)+" is not a styled component and cannot be referred to via component selector. See https://www.styled-components.com/docs/advanced#referring-to-other-components for more details."),_e(u,n,r,o)}var l;return e instanceof ye?r?(e.inject(r,o),e.getName(o)):e:g(e)?function e(t,n){var r,o,s=[];for(var i in t)t.hasOwnProperty(i)&&!be(t[i])&&(Array.isArray(t[i])&&t[i].isCss||E(t[i])?s.push(Ee(i)+":",t[i],";"):g(t[i])?s.push.apply(s,e(t[i],i)):s.push(Ee(i)+": "+(r=i,null==(o=t[i])||"boolean"==typeof o||""===o?"":"number"!=typeof o||0===o||r in _emotion_unitless__WEBPACK_IMPORTED_MODULE_4__["default"]?String(o).trim():o+"px")+";"));return n?[n+" {"].concat(s,["}"]):s}(e):e.toString()}var Ne=function(e){return Array.isArray(e)&&(e.isCss=!0),e};function Ae(e){for(var t=arguments.length,n=new Array(t>1?t-1:0),r=1;r<t;r++)n[r-1]=arguments[r];return E(e)||g(e)?Ne(_e(v(S,[e].concat(n)))):0===n.length&&1===e.length&&"string"==typeof e[0]?e:Ne(_e(v(e,n)))}var Ce=/invalid hook call/i,Ie=new Set,Pe=function(e,t){if(true){var n="The component "+e+(t?' with the id of "'+t+'"':"")+" has been created dynamically.\nYou may see this warning because you've called styled inside another component.\nTo resolve this only create new StyledComponents outside of any render method and function component.",r=console.error;try{var o=!0;console.error=function(e){if(Ce.test(e))o=!1,Ie.delete(n);else{for(var t=arguments.length,s=new Array(t>1?t-1:0),i=1;i<t;i++)s[i-1]=arguments[i];r.apply(void 0,[e].concat(s))}},(0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)(),o&&!Ie.has(n)&&(console.warn(n),Ie.add(n))}catch(e){Ce.test(e.message)&&Ie.delete(n)}finally{console.error=r}}},Oe=function(e,t,n){return void 0===n&&(n=w),e.theme!==n.theme&&e.theme||t||n.theme},Re=/[!"#$%&'()*+,./:;<=>?@[\\\]^`{|}~-]+/g,De=/(^-|-$)/g;function je(e){return e.replace(Re,"-").replace(De,"")}var Te=function(e){return Q(te(e)>>>0)};function xe(e){return"string"==typeof e&&( false||e.charAt(0)===e.charAt(0).toLowerCase())}var ke=function(e){return"function"==typeof e||"object"==typeof e&&null!==e&&!Array.isArray(e)},Ve=function(e){return"__proto__"!==e&&"constructor"!==e&&"prototype"!==e};function ze(e,t,n){var r=e[n];ke(t)&&ke(r)?Be(r,t):e[n]=t}function Be(e){for(var t=arguments.length,n=new Array(t>1?t-1:0),r=1;r<t;r++)n[r-1]=arguments[r];for(var o=0,s=n;o<s.length;o++){var i=s[o];if(ke(i))for(var a in i)Ve(a)&&ze(e,i[a],a)}return e}var Me=react__WEBPACK_IMPORTED_MODULE_1___default().createContext(),Ge=Me.Consumer;function Le(e){var t=(0,react__WEBPACK_IMPORTED_MODULE_1__.useContext)(Me),n=(0,react__WEBPACK_IMPORTED_MODULE_1__.useMemo)((function(){return function(e,t){if(!e)return D(14);if(E(e)){var n=e(t);return false||null!==n&&!Array.isArray(n)&&"object"==typeof n?n:D(7)}return Array.isArray(e)||"object"!=typeof e?D(8):t?y({},t,{},e):e}(e.theme,t)}),[e.theme,t]);return e.children?react__WEBPACK_IMPORTED_MODULE_1___default().createElement(Me.Provider,{value:n},e.children):null}var Fe={};function Ye(e,t,n){var o=_(e),i=!xe(e),a=t.attrs,c=void 0===a?S:a,d=t.componentId,h=void 0===d?function(e,t){var n="string"!=typeof e?"sc":je(e);Fe[n]=(Fe[n]||0)+1;var r=n+"-"+Te("5.3.5"+n+Fe[n]);return t?t+"-"+r:r}(t.displayName,t.parentComponentId):d,p=t.displayName,v=void 0===p?function(e){return xe(e)?"styled."+e:"Styled("+b(e)+")"}(e):p,g=t.displayName&&t.componentId?je(t.displayName)+"-"+t.componentId:t.componentId||h,N=o&&e.attrs?Array.prototype.concat(e.attrs,c).filter(Boolean):c,A=t.shouldForwardProp;o&&e.shouldForwardProp&&(A=t.shouldForwardProp?function(n,r,o){return e.shouldForwardProp(n,r,o)&&t.shouldForwardProp(n,r,o)}:e.shouldForwardProp);var C,I=new oe(n,g,o?e.componentStyle:void 0),P=I.isStatic&&0===c.length,O=function(e,t){return function(e,t,n,r){var o=e.attrs,i=e.componentStyle,a=e.defaultProps,c=e.foldedComponentIds,d=e.shouldForwardProp,h=e.styledComponentId,p=e.target; true&&(0,react__WEBPACK_IMPORTED_MODULE_1__.useDebugValue)(h);var m=function(e,t,n){void 0===e&&(e=w);var r=y({},t,{theme:e}),o={};return n.forEach((function(e){var t,n,s,i=e;for(t in E(i)&&(i=i(r)),i)r[t]=o[t]="className"===t?(n=o[t],s=i[t],n&&s?n+" "+s:n||s):i[t]})),[r,o]}(Oe(t,(0,react__WEBPACK_IMPORTED_MODULE_1__.useContext)(Me),a)||w,t,o),v=m[0],g=m[1],S=function(e,t,n,r){var o=pe(),s=fe(),i=t?e.generateAndInjectStyles(w,o,s):e.generateAndInjectStyles(n,o,s);return true&&(0,react__WEBPACK_IMPORTED_MODULE_1__.useDebugValue)(i), true&&!t&&r&&r(i),i}(i,r,v, true?e.warnTooManyClasses:0),b=n,_=g.$as||t.$as||g.as||t.as||p,N=xe(_),A=g!==t?y({},t,{},g):t,C={};for(var I in A)"$"!==I[0]&&"as"!==I&&("forwardedAs"===I?C.as=A[I]:(d?d(I,_emotion_is_prop_valid__WEBPACK_IMPORTED_MODULE_5__["default"],_):!N||(0,_emotion_is_prop_valid__WEBPACK_IMPORTED_MODULE_5__["default"])(I))&&(C[I]=A[I]));return t.style&&g.style!==t.style&&(C.style=y({},t.style,{},g.style)),C.className=Array.prototype.concat(c,h,S!==h?S:null,t.className,g.className).filter(Boolean).join(" "),C.ref=b,(0,react__WEBPACK_IMPORTED_MODULE_1__.createElement)(_,C)}(C,e,t,P)};return O.displayName=v,(C=react__WEBPACK_IMPORTED_MODULE_1___default().forwardRef(O)).attrs=N,C.componentStyle=I,C.displayName=v,C.shouldForwardProp=A,C.foldedComponentIds=o?Array.prototype.concat(e.foldedComponentIds,e.styledComponentId):S,C.styledComponentId=g,C.target=o?e.target:e,C.withComponent=function(e){var r=t.componentId,o=function(e,t){if(null==e)return{};var n,r,o={},s=Object.keys(e);for(r=0;r<s.length;r++)n=s[r],t.indexOf(n)>=0||(o[n]=e[n]);return o}(t,["componentId"]),s=r&&r+"-"+(xe(e)?e:je(b(e)));return Ye(e,y({},o,{attrs:N,componentId:s}),n)},Object.defineProperty(C,"defaultProps",{get:function(){return this._foldedDefaultProps},set:function(t){this._foldedDefaultProps=o?Be({},e.defaultProps,t):t}}), true&&(Pe(v,g),C.warnTooManyClasses=function(e,t){var n={},r=!1;return function(o){if(!r&&(n[o]=!0,Object.keys(n).length>=200)){var s=t?' with the id of "'+t+'"':"";console.warn("Over 200 classes were generated for component "+e+s+".\nConsider using the attrs method, together with a style object for frequently changed styles.\nExample:\n  const Component = styled.div.attrs(props => ({\n    style: {\n      background: props.background,\n    },\n  }))`width: 100%;`\n\n  <Component />"),r=!0,n={}}}}(v,g)),C.toString=function(){return"."+C.styledComponentId},i&&hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_6___default()(C,e,{attrs:!0,componentStyle:!0,displayName:!0,foldedComponentIds:!0,shouldForwardProp:!0,styledComponentId:!0,target:!0,withComponent:!0}),C}var qe=function(e){return function e(t,r,o){if(void 0===o&&(o=w),!(0,react_is__WEBPACK_IMPORTED_MODULE_0__.isValidElementType)(r))return D(1,String(r));var s=function(){return t(r,o,Ae.apply(void 0,arguments))};return s.withConfig=function(n){return e(t,r,y({},o,{},n))},s.attrs=function(n){return e(t,r,y({},o,{attrs:Array.prototype.concat(o.attrs,n).filter(Boolean)}))},s}(Ye,e)};["a","abbr","address","area","article","aside","audio","b","base","bdi","bdo","big","blockquote","body","br","button","canvas","caption","cite","code","col","colgroup","data","datalist","dd","del","details","dfn","dialog","div","dl","dt","em","embed","fieldset","figcaption","figure","footer","form","h1","h2","h3","h4","h5","h6","head","header","hgroup","hr","html","i","iframe","img","input","ins","kbd","keygen","label","legend","li","link","main","map","mark","marquee","menu","menuitem","meta","meter","nav","noscript","object","ol","optgroup","option","output","p","param","picture","pre","progress","q","rp","rt","ruby","s","samp","script","section","select","small","source","span","strong","style","sub","summary","sup","table","tbody","td","textarea","tfoot","th","thead","time","title","tr","track","u","ul","var","video","wbr","circle","clipPath","defs","ellipse","foreignObject","g","image","line","linearGradient","marker","mask","path","pattern","polygon","polyline","radialGradient","rect","stop","svg","text","textPath","tspan"].forEach((function(e){qe[e]=qe(e)}));var He=function(){function e(e,t){this.rules=e,this.componentId=t,this.isStatic=ne(e),X.registerId(this.componentId+1)}var t=e.prototype;return t.createStyles=function(e,t,n,r){var o=r(_e(this.rules,t,n,r).join(""),""),s=this.componentId+e;n.insertRules(s,s,o)},t.removeStyles=function(e,t){t.clearRules(this.componentId+e)},t.renderStyles=function(e,t,n,r){e>2&&X.registerId(this.componentId+e),this.removeStyles(e,n),this.createStyles(e,t,n,r)},e}();function $e(e){for(var t=arguments.length,n=new Array(t>1?t-1:0),o=1;o<t;o++)n[o-1]=arguments[o];var i=Ae.apply(void 0,[e].concat(n)),a="sc-global-"+Te(JSON.stringify(i)),u=new He(i,a);function l(e){var t=pe(),n=fe(),o=(0,react__WEBPACK_IMPORTED_MODULE_1__.useContext)(Me),u=(0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)(t.allocateGSInstance(a)).current;return true&&react__WEBPACK_IMPORTED_MODULE_1___default().Children.count(e.children)&&console.warn("The global style component "+a+" was given child JSX. createGlobalStyle does not render children."), true&&i.some((function(e){return"string"==typeof e&&-1!==e.indexOf("@import")}))&&console.warn("Please do not use @import CSS syntax in createGlobalStyle at this time, as the CSSOM APIs we use in production do not handle it well. Instead, we recommend using a library such as react-helmet to inject a typical <link> meta tag to the stylesheet, or simply embedding it manually in your index.html <head> section for a simpler app."),t.server&&d(u,e,t,o,n),null}function d(e,t,n,r,o){if(u.isStatic)u.renderStyles(e,P,n,o);else{var s=y({},t,{theme:Oe(t,r,l.defaultProps)});u.renderStyles(e,s,n,o)}}return true&&Pe(a),react__WEBPACK_IMPORTED_MODULE_1___default().memo(l)}function We(e){ true&&"undefined"!=typeof navigator&&"ReactNative"===navigator.product&&console.warn("`keyframes` cannot be used on ReactNative, only on the web. To do animation in ReactNative please use Animated.");for(var t=arguments.length,n=new Array(t>1?t-1:0),r=1;r<t;r++)n[r-1]=arguments[r];var o=Ae.apply(void 0,[e].concat(n)).join(""),s=Te(o);return new ye(s,o)}var Ue=/^\s*<\/[a-z]/i,Je=function(){function e(){var e=this;this._emitSheetCSS=function(){var t=e.instance.toString();if(!t)return"";var n=Y();return"<style "+[n&&'nonce="'+n+'"',N+'="true"','data-styled-version="5.3.5"'].filter(Boolean).join(" ")+">"+t+"</style>"},this.getStyleTags=function(){return e.sealed?D(2):e._emitSheetCSS()},this.getStyleElement=function(){var t;if(e.sealed)return D(2);var n=((t={})[N]="",t["data-styled-version"]="5.3.5",t.dangerouslySetInnerHTML={__html:e.instance.toString()},t),o=Y();return o&&(n.nonce=o),[react__WEBPACK_IMPORTED_MODULE_1___default().createElement("style",y({},n,{key:"sc-0-0"}))]},this.seal=function(){e.sealed=!0},this.instance=new X({isServer:!0}),this.sealed=!1}var t=e.prototype;return t.collectStyles=function(e){return this.sealed?D(2):react__WEBPACK_IMPORTED_MODULE_1___default().createElement(me,{sheet:this.instance},e)},t.interleaveWithNodeStream=function(e){if(C)return D(3);if(this.sealed)return D(2);this.seal();var t=__webpack_require__(/*! stream */ "stream"),n=(t.Readable,t.Transform),r=e,o=this.instance,s=this._emitSheetCSS,i=new n({transform:function(e,t,n){var r=e.toString(),i=s();if(o.clearTag(),Ue.test(r)){var a=r.indexOf(">")+1,c=r.slice(0,a),u=r.slice(a);this.push(c+i+u)}else this.push(i+r);n()}});return r.on("error",(function(e){i.emit("error",e)})),r.pipe(i)},e}(),Xe=function(e){var t=react__WEBPACK_IMPORTED_MODULE_1___default().forwardRef((function(t,n){var o=(0,react__WEBPACK_IMPORTED_MODULE_1__.useContext)(Me),i=e.defaultProps,a=Oe(t,o,i);return true&&void 0===a&&console.warn('[withTheme] You are not using a ThemeProvider nor passing a theme prop or a theme in defaultProps in component class "'+b(e)+'"'),react__WEBPACK_IMPORTED_MODULE_1___default().createElement(e,y({},t,{theme:a,ref:n}))}));return hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_6___default()(t,e),t.displayName="WithTheme("+b(e)+")",t},Ze=function(){return (0,react__WEBPACK_IMPORTED_MODULE_1__.useContext)(Me)},Ke={StyleSheet:X,masterSheet:de}; true&&"undefined"!=typeof navigator&&"ReactNative"===navigator.product&&console.warn("It looks like you've imported 'styled-components' on React Native.\nPerhaps you're looking to import 'styled-components/native'?\nRead more about this at https://www.styled-components.com/docs/basics#react-native"), true&&"undefined"!=typeof window&&(window["__styled-components-init__"]=window["__styled-components-init__"]||0,1===window["__styled-components-init__"]&&console.warn("It looks like there are several instances of 'styled-components' initialized in this application. This may cause dynamic styles to not render properly, errors during the rehydration process, a missing theme prop, and makes your application bigger without good reason.\n\nSee https://s-c.sh/2BAXzed for more info."),window["__styled-components-init__"]+=1);/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (qe);
 //# sourceMappingURL=styled-components.esm.js.map
 
+
+/***/ }),
+
+/***/ "./src/images/1.0 Homepage/1.0 Homepage/2.0 HE seal.png":
+/*!**************************************************************!*\
+  !*** ./src/images/1.0 Homepage/1.0 Homepage/2.0 HE seal.png ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/png;base64,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");
 
 /***/ }),
 
