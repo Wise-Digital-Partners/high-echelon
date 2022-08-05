@@ -16910,7 +16910,7 @@ const MainNav = ({
     text: "Contact",
     className: "w-full mb-4 border-1"
   }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)(_Button_ButtonWire__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    href: "/",
+    onClick: () => openContactModal(),
     className: "w-full text-primary-100",
     text: "Book a Call"
   }))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("div", {
@@ -17131,144 +17131,7 @@ const UtilityNav = () => {
     target: "_blank",
     rel: "noopener noreferrer",
     className: "text-sm font-semibold text-white hover:text-primary-100"
-  }, "Client Portal"))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-    id: "bottom-right-modal",
-    "data-modal-placement": "bottom-right",
-    tabindex: "-1",
-    className: "h-full fade hidden overflow-y-auto overflow-x-hidden bg-white fixed top-0 right-0 right-0 z-50 w-full md:w-1/2 h-modal md:h-full"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-    className: "relative w-full h-full md:h-auto"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-    className: " bg-white dark:bg-gray-700"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-    className: "flex justify-between items-center p-5 border-b dark:border-primary-500"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-    className: "flex items-center"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("svg", {
-    width: "17",
-    height: "16",
-    viewBox: "0 0 17 16",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
-    className: "mr-1.5 text-primary-100"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
-    d: "M1.08124.769072L4.33117.019088c.35312-.081249.71561.103122.85936.434365L6.6905 3.95338c.13125.30624.04375.66561-.21562.87498L4.58117 6.37833c1.12498 2.39682 3.09056 4.39057 5.53743 5.53737l1.5499-1.8937c.2125-.25937.5688-.34687.875-.21562l3.4999 1.49992c.3344.1469.5188.5094.4375.8625l-.75 3.25c-.0781.3375-.3781.5812-.7312.5812C6.99674 16 .5 9.51576.5 1.50031c0-.35.240621-.653115.58124-.731238z",
-    fill: "#D2B15E"
-  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-    href: "tel:(404) 446-9338",
-    className: "text-sm font-semibold text-primary-100"
-  }, "(404) 446-9338")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
-    type: "button",
-    className: "text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white",
-    "data-modal-toggle": "bottom-right-modal",
-    onClick: () => closeContactModal()
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("svg", {
-    "aria-hidden": "true",
-    className: "w-5 h-5",
-    fill: "currentColor",
-    viewBox: "0 0 20 20",
-    xmlns: "http://www.w3.org/2000/svg"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
-    "fill-rule": "evenodd",
-    d: "M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z",
-    "clip-rule": "evenodd"
-  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
-    className: "sr-only"
-  }, "Close modal"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-    className: "pb-8 space-y-6 md:px-20 px-2"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
-    className: "text-4xl text-center my-8"
-  }, "Contact Us"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-    className: "mb-10 text-black md:flex block"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
-    className: "block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-    className: "flex justify-center items-center"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("i", {
-    className: "fal fa-calendar mr-2 text-xl"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
-    className: "m-0"
-  }, "Book a Call"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
-    className: "w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-    className: "flex justify-center items-center"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("i", {
-    class: "fal fa-envelope mr-2 text-xl"
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
-    className: "m-0"
-  }, "Contact Us")))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-    className: "mb-8"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-    className: "mb-5"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
-    className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
-    htmlFor: "first-name"
-  }, "Name"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
-    type: "text",
-    name: "first-name",
-    onChange: () => handleChange(),
-    required: true,
-    className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
-  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-    className: "block md:flex"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-    className: "mb-5 w-full md:w-1/2 mr-3"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
-    className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
-    htmlFor: "phone-number"
-  }, "Phone Number"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
-    type: "tel",
-    name: "phone-number",
-    onChange: () => handleChange(),
-    required: true,
-    className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
-  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-    className: "mb-5 md:w-1/2"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
-    className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
-    htmlFor: "email-address"
-  }, "Email Address"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
-    type: "email",
-    name: "email-address",
-    onChange: () => handleChange(),
-    required: true,
-    className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
-  }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-    className: "mb-5"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
-    className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
-    htmlFor: "first-name"
-  }, "What Can We Help You With ?"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("select", {
-    name: "helps",
-    className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("option", {
-    value: "",
-    disabled: true,
-    selected: true
-  }, "Select Ones ..."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("option", {
-    value: "0"
-  }, "Accounting"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("option", {
-    value: "1"
-  }, "Service"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("option", {
-    value: "2"
-  }, "About"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-    className: "mb-5"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
-    className: "font-body text-sm font-semibold text-gray-900 block mb-1 text-base",
-    htmlFor: "first-name"
-  }, "Message(Optional)"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("textarea", {
-    type: "textarea",
-    name: "message",
-    onChange: () => handleChange(),
-    required: true,
-    rows: "5",
-    className: "text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
-  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Button_ButtonSolid__WEBPACK_IMPORTED_MODULE_1__["default"] // onClick={()}
-  , {
-    text: "Send",
-    altStyle: true,
-    className: "bg-primary-700 min-w-0 text-base w-1/3"
-  })))))));
+  }, "Client Portal"))))));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (UtilityNav);

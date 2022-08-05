@@ -57,7 +57,7 @@ const UtilityNav = () => {
           </div>
         </div>
       </div>
-      <div id="bottom-right-modal" data-modal-placement="bottom-right" tabindex="-1" className="h-full fade hidden overflow-y-auto overflow-x-hidden bg-white fixed top-0 right-0 right-0 z-50 w-full md:w-1/2 h-modal md:h-full">
+      {/* <div id="bottom-right-modal" data-modal-placement="bottom-right" tabindex="-1" className="h-full fade hidden overflow-y-auto overflow-x-hidden bg-white fixed top-0 right-0 right-0 z-50 w-full md:w-1/2 h-modal md:h-full">
         <div className="relative w-full h-full md:h-auto">
             <div className=" bg-white dark:bg-gray-700">
                 <div className="flex justify-between items-center p-5 border-b dark:border-primary-500">
@@ -193,7 +193,7 @@ const UtilityNav = () => {
                 </div>
             </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

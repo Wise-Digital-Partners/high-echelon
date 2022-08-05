@@ -289,6 +289,7 @@ const MainNav = ({
                 className="bg-primary-700 min-w-0 text-base"
               />
             </li>
+            
           </ul>
 
           <div className="lg:hidden" ref={node}>
@@ -377,7 +378,7 @@ const MainNav = ({
                   className="w-full mb-4 border-1"
                 />
                 <ButtonWire
-                  href="/"
+                  onClick={()=>openContactModal()}
                   className="w-full text-primary-100"
                   text="Book a Call"
                 />

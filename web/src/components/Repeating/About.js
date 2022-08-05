@@ -37,9 +37,9 @@ const About = ({ className, headingLevel }) => {
               Who We Are
             </HeadingTag>
             <p className="text-base md:text-base">
-              CPA Michelle Frank founded High Echelon to help small businesses simplify 
+              Michelle Frank CPA founded High Echelon to help small businesses simplify 
               and streamline their finances so they can focus on growth and success. 
-              Accounting doesn’t need to be complicated—we make it easy.
+              Accounting doesn’t need to be complicated; we make it easy.
             </p>
             <ButtonGhost
               href="/about/"

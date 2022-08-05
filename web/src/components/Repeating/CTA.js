@@ -45,7 +45,7 @@ const CTA = ({ heading, headingLevel, subtext, className }) => {
 
             <p className="text-base md:text-base text-white md:mb-0">
               {subtext ||
-                "Work smarter, not harder. Get started with High Echelon, a top small business CPA serving the greater Atlanta area and Georgia, today."}
+                "Work smarter, not harder. Get started with High Echelon, a top small business CPA firm serving the greater Atlanta area and Georgia, today."}
             </p>
           </header>
 

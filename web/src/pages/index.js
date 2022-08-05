@@ -41,8 +41,8 @@ const Page = ({ data }) => {
   return (
     <Layout headerDarkMode={true}>
       <SearchEngineOptimization
-        title="High Echelon"
-        description="Test"
+        title="Small Business CPA Atlanta | High Echelon"
+        description="High Echelon is a small business CPA firm serving Atlanta & beyond specializing in small businesses here to simplify your books. Learn more here!"
       />
       <section className="w-full block lg:hidden md:hidden relative">
         <GatsbyImage
@@ -196,9 +196,7 @@ const Page = ({ data }) => {
                 We are Here To Make Your Business Better
               </h3>
               <p className="md:w-2/3 sm:w-full text-xl md:text-base mt-6">
-                Get streamlined end-to-end services for everything from entity
-                formation to accounting, payroll, and taxes. It’s all here, in a
-                single, full-stack solution that simplifies it all.
+                Get streamlined, end-to-end services for everything from your busines entity formation to accounting, payroll, and income tax needs.
               </p>
             </div>
             <div className="block w-full md:flex lg:flex md:mb-5 mb-4">
@@ -217,8 +215,8 @@ const Page = ({ data }) => {
                       Small Business Consulting
                     </h3>
                     <p className="text-base mb-4">
-                      Need advice or help in navigating the best way to form your
-                      business? Talk with the experts.
+                      Need advice or help in navigating the best way to form your business?
+                      The small business consulting experts at High Echelon are here to help.
                     </p>
                   </div>
                   <ButtonGhost
@@ -242,8 +240,7 @@ const Page = ({ data }) => {
                       Accounting Services
                     </h3>
                     <p className="text-base mb-4">
-                      Receive accurate, secure delivery of monthly, quarterly, and
-                      annual financial statements.
+                      Preparation of monthly, quarterly, or anual financial statements for your business.
                     </p>
                   </div>
                   <ButtonGhost
@@ -269,8 +266,7 @@ const Page = ({ data }) => {
                       Payroll Management
                     </h3>
                     <p className="text-base mb-4">
-                      Get lightweight, user-friendly, cost-efficient payroll
-                      processing, and hiring/termination automation.
+                      Get lightweight, cost-efficient payroll processing, complete with automated hiring and termination of employees.
                     </p>
                   </div>
                   <ButtonGhost
@@ -292,11 +288,10 @@ const Page = ({ data }) => {
                 <div className="md:flex md:justify-center  py-2 pl-3 mb-6 md:mb-0 max-w-[360px]">
                   <div className="flex justify-center flex-col mb-4">
                     <h3 className="text-lg mb-4 text-primary-700">
-                      Income Tax Preparation
+                      Tax Preparation
                     </h3>
                     <p className="text-base mb-4">
-                      Get prompt tax preparation for yourself or your business,
-                      including help with complicated returns.
+                      Get tax preparation for yourself or your business.
                     </p>
                   </div>
                   <ButtonGhost
