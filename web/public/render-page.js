@@ -14,7 +14,8 @@
 
 exports.ssrComponents = {
   "component---cache-dev-404-page-js": preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js")),
-  "component---src-pages-index-js": preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js"))
+  "component---src-pages-index-js": preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js")),
+  "component---src-pages-privacy-policy-js": preferDefault(__webpack_require__(/*! ./src/pages/privacy-policy.js */ "./src/pages/privacy-policy.js"))
   }
 
 
@@ -15887,7 +15888,7 @@ const Footer = ({
     className: "md:flex md:items-center pl-4 md:pt-6 pt-10"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("ul", {
     class: "text-white text-sm list-none flex justify-center items-center flex-col md:block"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", null, "(404) 446-9338"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", null, "email@email.com"))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", null, "(404) 446-9338"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", null, "info@highecheloncpa.com"))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
     className: "w-full lg:col-end-13 md:col-span-9 md:pt-5 pt-0 mt-10"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("ul", {
     class: "block text-white text-sm md:float-right block md:flex items-stretch"
@@ -15895,27 +15896,27 @@ const Footer = ({
     class: "md:ml-9 lg:ml-9 text-center mb-6"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
     fade: true,
-    to: "/accounting/",
+    to: "/small-business-consulting-services-atlanta/",
+    className: "font-heading hover:text-primary-100"
+  }, "Small Business Consulting")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
+    class: "md:ml-9 lg:ml-9 text-center mb-6"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    fade: true,
+    to: "/small-business-accounting-services-atlanta/",
     className: "font-heading hover:text-primary-100"
   }, "Accounting")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
     class: "md:ml-9 lg:ml-9 text-center mb-6"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
     fade: true,
-    to: "/tax/",
+    to: "/payroll-management-services-atlanta/",
     className: "font-heading hover:text-primary-100"
-  }, "Tax Preparation")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
-    class: "md:ml-9 lg:ml-9 text-center mb-6"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    fade: true,
-    to: "/consulting/",
-    className: "font-heading hover:text-primary-100"
-  }, "Consulting")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
+  }, "Payroll Management")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
     class: "md:ml-9 lg:ml-9 text-center"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
     fade: true,
-    to: "/payroll/",
+    to: "/small-business-tax-preparation-services-atlanta/",
     className: "font-heading hover:text-primary-100"
-  }, "Payroll Management"))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+  }, "Tax Preparation"))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
     className: "flex flex-wrap lg:flex-nowrap flex-col lg:flex-row justify-items-center lg:justify-between lg:items-center lg:pt-4"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
     className: "mb-10 md:hidden"
@@ -15985,17 +15986,17 @@ const Footer = ({
     className: "mr-3"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
     fade: true,
-    to: "/",
+    to: "/privacy-policy/",
     className: "text-gray-50 hover:text-primary-100 no-underline"
   }, "Privacy Policy")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
     fade: true,
-    to: "/",
+    to: "/privacy-policy/",
     className: "text-gray-50 hover:text-primary-100 no-underline"
   }, "Accessibility Statement"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
     className: "block md:flex w-full md:w-auto mt-6 md:mt-0"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("a", {
     className: "no-underline text-gray-50 hover:text-primary-100 flex items-center justify-center lg:justify-start space-x-1",
-    href: "https://www.wisedigitalpartners.com/affordable-web-design/",
+    href: "https://www.wisedigitalpartners.com/nest-by-wise/",
     target: "_blank",
     rel: "noopener noreferrer"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
@@ -16012,7 +16013,7 @@ const Footer = ({
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
     class: "text-3xl"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("a", {
-    href: "https://www.instagram.com/macashhomeloans/?hl=en",
+    href: "https://www.instagram.com/",
     target: "_blank",
     rel: "noopener noreferrer",
     className: "flex justify-center items-center text-white hover:bg-primary-600 transition-colors duration-300 ease-linear"
@@ -16030,7 +16031,7 @@ const Footer = ({
   })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
     class: "text-3xl"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("a", {
-    href: "https://www.facebook.com/MacAshHomeLoans1",
+    href: "https://www.facebook.com/",
     target: "_blank",
     rel: "noopener noreferrer",
     className: "flex justify-center items-center text-white hover:bg-primary-600 transition-colors duration-300 ease-linear"
@@ -16046,7 +16047,7 @@ const Footer = ({
   })))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
     class: "text-3xl"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("a", {
-    href: "https://www.twitter.com/MacAshHomeLoans1",
+    href: "https://www.twitter.com/",
     target: "_blank",
     rel: "noopener noreferrer",
     className: "flex justify-center items-center text-white hover:bg-primary-600 transition-colors duration-300 ease-linear"
@@ -18324,7 +18325,7 @@ const Page = ({
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_16__.GatsbyImage, {
     image: data.smallBusinessConsultingImage.childImageSharp.gatsbyImageData,
     alt: "Small Business Consulting",
-    className: "p-2 rounded-[8px] mb-3"
+    className: "p-2 rounded-[8px] mb-3 md:max-w-[240px] w-full"
   }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "md:flex md:justify-center py-2 pl-3 mb-6 md:mb-0 max-w-[360px]"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
@@ -18344,7 +18345,7 @@ const Page = ({
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_16__.GatsbyImage, {
     image: data.accountServicesImage.childImageSharp.gatsbyImageData,
     alt: "Accounting Services",
-    className: "p-2 rounded-[8px] mb-3"
+    className: "p-2 rounded-[8px] mb-3 md:max-w-[240px] w-full"
   }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "md:flex md:justify-center  py-2 pl-3 mb-6 md:mb-0 max-w-[360px]"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
@@ -18366,7 +18367,7 @@ const Page = ({
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_16__.GatsbyImage, {
     image: data.payrollManagementImage.childImageSharp.gatsbyImageData,
     alt: "Small Business Consulting",
-    className: "p-2 rounded-[8px] mb-3"
+    className: "p-2 rounded-[8px] mb-3 md:max-w-[240px] w-full"
   }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "md:flex md:justify-center  py-2 pl-3 mb-6 md:mb-0 max-w-[360px]"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
@@ -18386,7 +18387,7 @@ const Page = ({
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_16__.GatsbyImage, {
     image: data.incomeTaxPreparationImage.childImageSharp.gatsbyImageData,
     alt: "Small Business Consulting",
-    className: "p-2 rounded-[8px] mb-3"
+    className: "p-2 rounded-[8px] mb-3 md:max-w-[240px] w-full"
   }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "md:flex md:justify-center  py-2 pl-3 mb-6 md:mb-0 max-w-[360px]"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
@@ -18626,6 +18627,43 @@ const Page = ({
 };
 
 const query = "2963694990";
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Page);
+
+/***/ }),
+
+/***/ "./src/pages/privacy-policy.js":
+/*!*************************************!*\
+  !*** ./src/pages/privacy-policy.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./src/components/Layout.js");
+/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.esm.js");
+
+
+
+
+const Page = () => {
+  return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    headerDarkMode: true
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("section", {
+    className: "pt-12 md:pt-16 pb-20 md:pb-32"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+    className: "container"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", null, "Privacy Policy"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "Protecting your private information is our priority. This Statement of Privacy applies to https://highecheloncpa.com/, and High Echelon P.C. and governs data collection and usage. For the purposes of this Privacy Policy, unless otherwise noted, all references to High Echelon P.C. include https://highecheloncpa.com/. The High Echelon P.C. website is a general informational site. By using the High Echelon P.C. website, you consent to the data practices described in this statement."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", null, "Collection of your Personal Information"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "In order to better provide you with products and services offered, High Echelon P.C. may collect personally identifiable information, such as your:"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "- First and Last Name", (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", null), "- E-mail Address", (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", null), "- Phone Number"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "We do not collect any personal information about you unless you voluntarily provide it to us. However, you may be required to provide certain personal information to us when you elect to use certain products or services. These may include: (a) registering for an account; (b) entering a sweepstakes or contest sponsored by us or one of our partners; (c) signing up for special offers from selected third parties; (d) sending us an email message; (e) submitting your credit card or other payment information when ordering and purchasing products and services. To wit, we will use your information for, but not limited to, communicating with you in relation to services and/or products you have requested from us. We also may gather additional personal or non-personal information in the future."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", null, "Use of your Personal Information "), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "High Echelon P.C. collects and uses your personal information to operate and deliver the services you have requested."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "High Echelon P.C. may also use your personally identifiable information to inform you of other products or services available from High Echelon P.C. and its affiliates."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", null, "Sharing Information with Third Parties"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "High Echelon P.C. does not sell, rent or lease its customer lists to third parties."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "High Echelon P.C. may share data with trusted partners to help perform statistical analysis, send you email or postal mail, provide customer support, or arrange for deliveries. All such third parties are prohibited from using your personal information except to provide these services to High Echelon P.C., and they are required to maintain the confidentiality of your information."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "High Echelon P.C. may disclose your personal information, without notice, if required to do so by law or in the good faith belief that such action is necessary to: (a) conform to the edicts of the law or comply with legal process served on High Echelon P.C. or the site; (b) protect and defend the rights or property of High Echelon P.C. and/or (c) act under exigent circumstances to protect the personal safety of users of High Echelon P.C., or the public."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", null, "Automatically Collected Information"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "Information about your computer hardware and software may be automatically collected by High Echelon P.C. This information can include: your IP address, browser type, domain names, access times and referring website addresses. This information is used for the operation of the service, to maintain quality of the service, and to provide general statistics regarding use of the High Echelon P.C. website."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", null, "Use of Cookies"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "The High Echelon P.C. website may use \"cookies\" to help you personalize your online experience. A cookie is a text file that is placed on your hard disk by a web page server. Cookies cannot be used to run programs or deliver viruses to your computer. Cookies are uniquely assigned to you, and can only be read by a web server in the domain that issued the cookie to you."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "One of the primary purposes of cookies is to provide a convenience feature to save you time. The purpose of a cookie is to tell the Web server that you have returned to a specific page. For example, if you personalize High Echelon P.C. pages, or register with MacAsh Home Loans site or services, a cookie helps High Echelon P.C. to recall your specific information on subsequent visits. This simplifies the process of recording your personal information, such as billing addresses, shipping addresses, and so on. When you return to the same High Echelon P.C. website, the information you previously provided can be retrieved, so you can easily use the High Echelon P.C. features that you customized."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "You have the ability to accept or decline cookies. Most Web browsers automatically accept cookies, but you can usually modify your browser setting to decline cookies if you prefer. If you choose to decline cookies, you may not be able to fully experience the interactive features of the High Echelon P.C. services or websites you visit."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", null, "Links"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "This website contains links to other sites. Please be aware that we are not responsible for the content or privacy practices of such other sites. We encourage our users to be aware when they leave our site and to read the privacy statements of any other site that collects personally identifiable information."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", null, "Right to Deletion"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "Subject to certain exceptions set out below, on receipt of a verifiable request from you, we will:"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("ul", {
+    className: "list-disc ml-6"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "Delete your personal information from our records; and ")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "Direct any service providers to delete your personal information from their records."))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "Please note that we may not be able to comply with requests to delete your personal information if it is necessary to:"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("ul", {
+    className: "list-disc ml-6"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "Complete the transaction for which the personal information was collected, fulfill the terms of a written warranty or product recall conducted in accordance with federal law, provide a good or service requested by you, or reasonably anticipated within the context of our ongoing business relationship with you, or otherwise perform a contract between you and us;")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "Detect security incidents, protect against malicious, deceptive, fraudulent, or illegal activity; or prosecute those responsible for that activity;")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "Debug to identify and repair errors that impair existing intended functionality;")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "Exercise free speech, ensure the right of another consumer to exercise his or her right of free speech, or exercise another right provided for by law;")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "Comply with the California Electronic Communications Privacy Act;")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "Engage in public or peer-reviewed scientific, historical, or statistical research in the public interest that adheres to all other applicable ethics and privacy laws, when our deletion of the information is likely to render impossible or seriously impair the achievement of such research, provided we have obtained your informed consent;")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "Enable solely internal uses that are reasonably aligned with your expectations based on your relationship with us;")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "Comply with an existing legal obligation; or ")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "Otherwise use your personal information, internally, in a lawful manner that is compatible with the context in which you provided the information."))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", null, "Children Under Thirteen"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "High Echelon P.C. does not knowingly collect personally identifiable information from children under the age of thirteen. If you are under the age of thirteen, you must ask your parent or guardian for permission to use this website."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", null, "E-mail Communications"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "From time to time, High Echelon P.C. may contact you via email for the purpose of providing announcements, promotional offers, alerts, confirmations, surveys, and/or other general communication. In order to improve our Services, we may receive a notification when you open an email from High Echelon P.C. or click on a link therein."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "If you would like to stop receiving marketing or promotional communications via email from High Echelon P.C. and Supply Co., you may opt out of such communications by clicking on the UNSUBSCRIBE button."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", null, "Changes to this Statement"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "High Echelon P.C. reserves the right to change this Privacy Policy from time to time. We will notify you about significant changes in the way we treat personal information by sending a notice to the primary email address specified in your account, by placing a prominent notice on our website, and/or by updating any privacy information. Your continued use of the website and/or Services available after such modifications will constitute your: (a) acknowledgment of the modified Privacy Policy; and (b) agreement to abide and be bound by that Policy."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", null, "Contact Information"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "High Echelon P.C. welcomes your questions or comments regarding this Statement of Privacy. If you believe that High Echelon P.C. has not adhered to this Statement, please contact High Echelon P.C. at:"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "High Echelon P.C. "), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "Email Address: info@highecheloncpa.com", (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", null)), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", null, "Effective as of August 01, 2022 "))));
+};
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Page);
 
 /***/ }),

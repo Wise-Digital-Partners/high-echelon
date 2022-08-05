@@ -254,7 +254,7 @@ const Footer = ({ hideFooter }) => {
                   <li className="mr-3">
                     <AniLink
                       fade
-                      to="/"
+                      to="/privacy-policy/"
                       className="text-gray-50 hover:text-primary-100 no-underline"
                     >
                       Privacy Policy
@@ -263,7 +263,7 @@ const Footer = ({ hideFooter }) => {
                   <li>
                     <AniLink
                       fade
-                      to="/"
+                      to="/privacy-policy/"
                       className="text-gray-50 hover:text-primary-100 no-underline"
                     >
                       Accessibility Statement
@@ -273,7 +273,7 @@ const Footer = ({ hideFooter }) => {
                 <li className="block md:flex w-full md:w-auto mt-6 md:mt-0">
                   <a
                     className="no-underline text-gray-50 hover:text-primary-100 flex items-center justify-center lg:justify-start space-x-1"
-                    href="https://www.wisedigitalpartners.com/affordable-web-design/"
+                    href="https://www.wisedigitalpartners.com/nest-by-wise/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
