@@ -33,8 +33,8 @@ const Page = ({ data }) => {
   return (
     <Layout headerDarkMode={true}>
       <SearchEngineOptimization
-        title="Independent Mortgage Lender Chicago | MacAsh Home Loans"
-        description="Apply online. Close in 15 days. It's that easy. Make your dream home a reality with MacAsh, your local independent mortgage broker in Chicago."
+        title="About Us | Small Business CPA Firm | Atlanta | High Echelon"
+        description="High Echelon is a nationwide CPA firm based in Atlanta, Georgia. Learn more about us and our focus on small businesses here!"
       />
         <section className="hidden md:block mb-20 md:mb-32">
             <div className="container">
