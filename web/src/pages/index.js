@@ -472,28 +472,28 @@ export const query = graphql`
       relativePath: { eq: "1.0 Homepage/3.0 Small Business desktop.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 360)
+        gatsbyImageData(layout: CONSTRAINED, width: 240)
       }
     }
     accountServicesImage: file(
       relativePath: { eq: "1.0 Homepage/3.1 Accounting Services desktop.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 360)
+        gatsbyImageData(layout: CONSTRAINED, width: 240)
       }
     }
     payrollManagementImage: file(
       relativePath: { eq: "1.0 Homepage/3.2 Payroll Management desktop.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 360)
+        gatsbyImageData(layout: CONSTRAINED, width: 240)
       }
     }
     incomeTaxPreparationImage: file(
       relativePath: { eq: "1.0 Homepage/3.3 Income Tax Prep desktop.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 360)
+        gatsbyImageData(layout: CONSTRAINED, width: 240)
       }
     }
 

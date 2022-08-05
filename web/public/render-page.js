@@ -17246,7 +17246,7 @@ const About = ({
     className: "text-primary-700 font-light"
   }, "Who We Are"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
     className: "text-base md:text-base"
-  }, "CPA Michelle Frank founded High Echelon to help small businesses simplify and streamline their finances so they can focus on growth and success. Accounting doesn\u2019t need to be complicated\u2014we make it easy."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, "Michelle Frank CPA founded High Echelon to help small businesses simplify and streamline their finances so they can focus on growth and success. Accounting doesn\u2019t need to be complicated; we make it easy."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_2__["default"], {
     href: "/about/",
     text: "Read Our Story"
   })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
@@ -17338,7 +17338,7 @@ const CTA = ({
       class: "text-primary-100 text-4xl-x mb-3 font-light"
     }, heading || ["Get a Free Consultation"]), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
       className: "text-base md:text-base text-white md:mb-0"
-    }, subtext || "Work smarter, not harder. Get started with High Echelon, a top small business CPA serving the greater Atlanta area and Georgia, today.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+    }, subtext || "Work smarter, not harder. Get started with High Echelon, a top small business CPA firm serving the greater Atlanta area and Georgia, today.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
       className: "block md:flex md:items-center md:space-x-4"
     }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_3__["default"], {
       onClick: () => openContactModal(),
@@ -18103,8 +18103,8 @@ const Page = ({
   return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
     headerDarkMode: true
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(_components_SEO__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    title: "High Echelon",
-    description: "Test"
+    title: "Small Business CPA Atlanta | High Echelon",
+    description: "High Echelon is a small business CPA firm serving Atlanta & beyond specializing in small businesses here to simplify your books. Learn more here!"
   }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("section", {
     className: "w-full block lg:hidden md:hidden relative"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_16__.GatsbyImage, {
@@ -18315,7 +18315,7 @@ const Page = ({
     className: "md:w-2/3 text-primary-700 text-4xl font-light md:text-4xl-x md:font-normal"
   }, "We are Here To Make Your Business Better"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
     className: "md:w-2/3 sm:w-full text-xl md:text-base mt-6"
-  }, "Get streamlined end-to-end services for everything from entity formation to accounting, payroll, and taxes. It\u2019s all here, in a single, full-stack solution that simplifies it all.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
+  }, "Get streamlined, end-to-end services for everything from your busines entity formation to accounting, payroll, and income tax needs.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "block w-full md:flex lg:flex md:mb-5 mb-4"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
     fade: true,
@@ -18333,7 +18333,7 @@ const Page = ({
     className: "text-lg mb-4 text-primary-700"
   }, "Small Business Consulting"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
     className: "text-base mb-4"
-  }, "Need advice or help in navigating the best way to form your business? Talk with the experts.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(_components_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_13__["default"], {
+  }, "Need advice or help in navigating the best way to form your business? The small business consulting experts at High Echelon are here to help.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(_components_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_13__["default"], {
     href: "/small-business-consulting-services-atlanta/",
     text: "Learn More",
     className: "lg:hidden md:hidden w-[100px] h-[40px]"
@@ -18353,7 +18353,7 @@ const Page = ({
     className: "text-lg mb-4 text-primary-700"
   }, "Accounting Services"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
     className: "text-base mb-4"
-  }, "Receive accurate, secure delivery of monthly, quarterly, and annual financial statements.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(_components_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_13__["default"], {
+  }, "Preparation of monthly, quarterly, or anual financial statements for your business.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(_components_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_13__["default"], {
     href: "/small-business-accounting-services-atlanta/",
     text: "Learn More",
     className: "lg:hidden md:hidden w-[100px] h-[40px]"
@@ -18375,7 +18375,7 @@ const Page = ({
     className: "text-lg mb-4 text-primary-700"
   }, "Payroll Management"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
     className: "text-base mb-4"
-  }, "Get lightweight, user-friendly, cost-efficient payroll processing, and hiring/termination automation.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(_components_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_13__["default"], {
+  }, "Get lightweight, cost-efficient payroll processing, complete with automated hiring and termination of employees.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(_components_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_13__["default"], {
     href: "/payroll-management-services-atlanta/",
     text: "Learn More",
     className: "lg:hidden md:hidden w-[100px] h-[40px]"
@@ -18393,9 +18393,9 @@ const Page = ({
     className: "flex justify-center flex-col mb-4"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("h3", {
     className: "text-lg mb-4 text-primary-700"
-  }, "Income Tax Preparation"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
+  }, "Tax Preparation"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
     className: "text-base mb-4"
-  }, "Get prompt tax preparation for yourself or your business, including help with complicated returns.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(_components_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_13__["default"], {
+  }, "Get tax preparation for yourself or your business.")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)(_components_Button_ButtonGhost__WEBPACK_IMPORTED_MODULE_13__["default"], {
     href: "/small-business-tax-preparation-services-atlanta/",
     text: "Learn More",
     className: "lg:hidden md:hidden w-[100px] h-[40px]"
