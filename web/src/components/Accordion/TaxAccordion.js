@@ -67,7 +67,7 @@ export default function Example() {
                         </p>
                     </AccordionBody>
                 </Accordion>
-                <Accordion open={open === 4} onClick={() => handleOpen(4)}>
+                <Accordion open={open === 5} onClick={() => handleOpen(4)}>
                     <AccordionHeader className="text-xl subheader">
                         <p className="my-0 w-11/12 text-left text-xl">
                             What are the tax implications of selling my home?

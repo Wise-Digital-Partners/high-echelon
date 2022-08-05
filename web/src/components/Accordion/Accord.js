@@ -58,7 +58,7 @@ export default function Example() {
                 <Accordion open={open === 3} onClick={() => handleOpen(3)}>
                     <AccordionHeader className="text-xl subheader">
                         <p className="my-0 w-11/12 text-left text-xl">
-                            When should an LLC become an Scorp?
+                            When should an LLC become an S corp?
                         </p>
                     </AccordionHeader>
                     <AccordionBody>

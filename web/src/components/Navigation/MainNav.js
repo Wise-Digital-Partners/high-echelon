@@ -362,11 +362,12 @@ const MainNav = ({
 
                     <li>
                       <button
-                        onClick={()=>openContactModal()}
                         className="text-lg text-primary-200 hover:text-primary-100 no-underline cursor-pointer transition-colors duration-300 ease-linear"
                       >
+                        <a href="https://highecheloncpa.smartvault.com">
                         <i className="fa fa-sign-in mr-2"></i>
                         Client Portal
+                        </a>
                       </button>
                     </li>
                   </Accordion>

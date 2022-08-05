@@ -46,8 +46,8 @@ const Page = ({ data }) => {
   return (
     <Layout headerDarkMode={true}>
       <SearchEngineOptimization
-        title="Independent Mortgage Lender Chicago | MacAsh Home Loans"
-        description="Apply online. Close in 15 days. It's that easy. Make your dream home a reality with MacAsh, your local independent mortgage broker in Chicago."
+        title="Small Business Tax Preparation Services Atlanta | CPA Firm"
+        description="Ease the stress of taxes with our Atlanta based small business tax preparation services. We prepare your returns & help handle IRS notices and correspondence."
       />
         <section className="hidden md:block mb-20 md:mb-32 mt-12">
             <div className="container">
@@ -97,12 +97,12 @@ const Page = ({ data }) => {
         </section>
 
         <section className="mt-12 flex justify-content items-center flex-col">
-            <div className="flex justify-content items-center flex-col md:mx-88 md:min-w-120 sm:mx-8 px-7">
+            <div className="flex justify-content items-center flex-col md:mx-70 md:min-w-120 sm:mx-8 px-7">
                 <p className="text-4xl-x font-thin mb-6 text-center md:text-start">Streamlined Business & Personal Tax Preparation</p>
                 <p className="text-xl font-light leading-7 text-center md:text-start mb-10 md:mb-0">
                     When we do your accounting and payroll, it flows directly into your business tax return and delivers
-                    the data with the highest accuracy. And from there, the relevant information is ported directly
-                    to your personal tax return. It’s fast and efficient, and you’re not paying by the hour.
+                    the data with the highest accuracy. And from there, the relevant information is imported directly
+                    to your personal tax return.
                 </p>
             </div>
             <div className="hidden md:block flex justify-center items-center md:pt-32 md:pb-32 pb-20">
@@ -159,7 +159,7 @@ const Page = ({ data }) => {
 
         <section className="mb-20 md:mb-32 mt-12">
             <div className="container">
-                <div className="lg:flex items-center md:block">
+                <div className="lg:flex items-start md:block">
                     <div className="md:hidden md:block w-full mb-8">
                       <GatsbyImage
                           image={
@@ -183,7 +183,7 @@ const Page = ({ data }) => {
                                 </div>
                                 <div className="flex">
                                     <i className="fa fa-check text-primary-100 mr-3"></i>
-                                    <p className="text-base font-semibold mb-3">Scorporate</p>
+                                    <p className="text-base font-semibold mb-3">S corporate</p>
                                 </div>
                                 <div className="flex">
                                     <i className="fa fa-check text-primary-100 mr-3"></i>
@@ -204,10 +204,6 @@ const Page = ({ data }) => {
                             </div>
                             <p className="text-4xl font-thin mb-6">Individual Tax Returns</p>
                             <div className="text-base font-light">
-                                <div className="flex">
-                                    <i className="fa fa-check text-primary-100 mr-3"></i>
-                                    <p className="text-base font-semibold mb-3">Individual tax return</p>
-                                </div>
                                 <div className="flex">
                                     <i className="fa fa-check text-primary-100 mr-3"></i>
                                     <p className="text-base font-semibold mb-3">Extension filing</p>
@@ -259,10 +255,10 @@ const Page = ({ data }) => {
                         <div className="px-0 md:px-10">
                             <p className="text-4xl font-thin mb-6">How To Get Started</p>
                             <p className="text-base font-light  mb-6">
-                                First, we'll review your prior year's returns and talk to you about
-                                what worked and what didn't work with your previous tax preparer.
-                                We want to answer the question, will there need to be any substantial
-                                changes this time? We're happy to get as involved as you want us to be.
+                              First, we'll review your prior year tax return(s) and discuss any questions or concerns you might have.
+                              Next, we will discuss any significant changes that might've occurred during the most recent tax year,
+                              and give you an idea of how that change might (or might not) affect your income taxes. And finally,
+                              we will prepare a proposal denoting the scope of work and then once you sign we will get started.
                             </p>
                             <p>For the next steps, we:</p>
                             <div>

@@ -47,8 +47,8 @@ const Page = ({ data }) => {
   return (
     <Layout headerDarkMode={true}>
       <SearchEngineOptimization
-        title="Independent Mortgage Lender Chicago | Echelon Home Loans"
-        description="Apply online. Close in 15 days. It's that easy. Make your dream home a reality with Echelon, your local independent mortgage broker in Chicago."
+        title="Small Business Consulting Services Atlanta | CPA"
+        description=" Deciding how to structure your business is a critical first step & can have huge implications. Our Atlanta based small business consulting services can help!"
       />
         <section className="hidden md:block mb-20 md:mb-32 mt-12">
             <div className="container">
@@ -58,10 +58,10 @@ const Page = ({ data }) => {
                     </div>
                     <div className="md:absolute bg-primary-700 shadow-inner md:col-start-6 md:col-span-7 p-20">
                         <h2 className="font-light text-5xl text-primary-200 mb-6">
-                          Atlanta Small Business Accounting Services
+                          Atlanta Small Business Consulting Services
                         </h2>
                         <p className="font-light text-base text-primary-200">
-                          Looking to get started or need to restructure? Need to talk it out? We know the path.
+                          Looking to get started with forming a business, or need to restructure an already existing business?
                         </p>
                         <ButtonSolidGold
                             className="font-light"
@@ -83,7 +83,7 @@ const Page = ({ data }) => {
                           Atlanta Small Business Consulting Services
                         </h2>
                         <p className="font-light text-xl text-primary-200">
-                          Looking to get started or need to restructure? Need to talk it out? We know the path.
+                          Looking to get started with forming a business, or need to restructure an already existing business?
                         </p>
                         <ButtonSolidGold
                             className="font-light"
@@ -97,7 +97,8 @@ const Page = ({ data }) => {
 
         <section className="mt-12 flex justify-content items-center flex-col">
             <div className="flex justify-content items-center flex-col md:mx-88 md:min-w-120 sm:mx-8 px-7">
-                <p className="text-4xl-x font-thin mb-6 text-center md:text-start">Get Expert Advice. Make Strategic Moves</p>
+                <p className="text-4xl-x font-thin mb-6 text-center md:text-start">Get Expert Advice.</p>
+                <p className="text-4xl-x font-thin mb-6 text-center md:text-start">Make Strategic Moves.</p>
                 <p className="text-xl font-light leading-7 text-center md:text-start mb-10 md:mb-0">
                   Are you just getting started? Deciding how to structure your new business is a critical
                   first step and can have enormous implications. Or are you already operating a business and need to make a shift? Smart advice starts here.
@@ -169,7 +170,8 @@ const Page = ({ data }) => {
                     </div>
                     <div className="flex justify-center flex-col lg:w-1/2 md:w-full md:mb-8 sm:mb-8">
                         <div className="md:pl-10 pl-0">
-                            <p className="text-4xl font-thin mb-6">How We Can Help Your Small Business</p>
+                            <p className="text-4xl font-thin">How We Can Help Your</p>
+                            <p className="text-4xl pl-20 font-thin mb-6"> Small Business</p>
                             <p className="text-base font-light  mb-6">
                               At High Echelon, we draw on a long history of best practices to help small you move
                               forward with confidence. Our small business consulting services include:
@@ -177,11 +179,7 @@ const Page = ({ data }) => {
                             <div className="text-base font-light">
                                 <div className="flex">
                                     <i className="fa fa-check text-primary-100 mr-3"></i>
-                                    <p className="text-base font-semibold mb-3">Entity formation</p>
-                                </div>
-                                <div className="flex">
-                                    <i className="fa fa-check text-primary-100 mr-3"></i>
-                                    <p className="text-base font-semibold mb-3">Register a new business at the state and federal level</p>
+                                    <p className="text-base font-semibold mb-3">Entity Entity formation</p>
                                 </div>
                                 <div className="flex">
                                     <i className="fa fa-check text-primary-100 mr-3"></i>
@@ -213,7 +211,7 @@ const Page = ({ data }) => {
                     <div className="lg:w-1/2 md:w-full mr-0 md:mr-20 md:mb-8 sm:mb-8">
                         <GatsbyImage
                             image={
-                                data.accountingStartImage.childImageSharp.gatsbyImageData
+                                data.incomeTaxImage.childImageSharp.gatsbyImageData
                             }
                             alt="Small Business Consulting"
                             className="rounded-[8px] w-full"
@@ -263,15 +261,15 @@ const Page = ({ data }) => {
                         </p>
                     </div>
                     <div className="md:flex sm:block">
-                        <AniLink fade to="/accounting/" className="mr-10 mb-6 w-1/3">
+                        <AniLink fade to="/small-business-accounting-services-atlanta/" className="mr-10 mb-6 w-1/3">
                           <div className=" max-w-140">
                             <GatsbyImage
                             image={
-                                data.accountingStartImage.childImageSharp
+                                data.accountServicesImage.childImageSharp
                                 .gatsbyImageData
                             }
                             alt="Accounting Services"
-                            className="mb-6 rounded-[8px] w-full"
+                            className="mb-6 rounded-[8px] h-60 max-w-140"
                             />
                           </div>
                             <div className="justify-center flex-col py-2">
@@ -283,14 +281,14 @@ const Page = ({ data }) => {
                                 </p>
                             </div>
                         </AniLink>
-                        <AniLink fade to="/payroll/" className="mr-10 mb-6 w-1/3">
+                        <AniLink fade to="/payroll-management-services-atlanta/" className="mr-10 mb-6 w-1/3">
                           <div className="max-w-140">
                             <GatsbyImage
                               image={
-                                  data.accountServicesImage.childImageSharp.gatsbyImageData
+                                  data.payrollManagementImage.childImageSharp.gatsbyImageData
                               }
                               alt="Payroll Management"
-                              className="mb-6 rounded-[8px] h-60 w-full"
+                              className="mb-6 rounded-[8px] h-60 max-w-140"
                               />
                             </div>
                             <div className="justify-center flex-col py-2">
@@ -302,20 +300,20 @@ const Page = ({ data }) => {
                                 </p>    
                             </div>
                         </AniLink>
-                        <AniLink fade to="/tax/" className="mr-10 mb-6 w-1/3 h-60">
+                        <AniLink fade to="/small-business-tax-preparation-services-atlanta/" className="mr-10 mb-6 w-1/3 h-60">
                           <div className="max-w-140">
                             <GatsbyImage
                             image={
-                                data.smallBusinessConsultingImage.childImageSharp
+                                data.incomeTaxImage.childImageSharp
                                 .gatsbyImageData
                             }
-                            alt="Income Tax Preparation"
+                            alt="Tax Preparation"
                             className="mb-6 rounded-[8px] h-60 max-w-140"
                             />
                           </div>
                             <div className="justify-center flex-col py-2">
                             <h3 className="text-lg mb-4 text-primary-700">
-                              Income Tax Preparation
+                              Tax Preparation
                             </h3>
                             <p className="text-base">
                               Remove the stress of taxes with professional tax preparation and an IRS liaison.
@@ -499,7 +497,7 @@ export const query = graphql`
       gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
     }
   }
-    accountingStartImage: file(
+    incomeTaxImage: file(
         relativePath: { eq: "1.0 Homepage/IncomeTax desktop.jpg" }
     ) {
       childImageSharp {

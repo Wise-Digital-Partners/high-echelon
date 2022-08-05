@@ -46,7 +46,7 @@ const UtilityNav = () => {
             </div>
             <div className="flex items-center">
               <a
-                onClick={()=>openContactModal()}
+                href="https://highecheloncpa.smartvault.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm font-semibold text-white hover:text-primary-100"
