@@ -46,8 +46,9 @@ const Page = ({ data }) => {
   return (
     <Layout headerDarkMode={true}>
       <SearchEngineOptimization
-        title="Independent Mortgage Lender Chicago | Echelon Home Loans"
-        description="Apply online. Close in 15 days. It's that easy. Make your dream home a reality with Echelon, your local independent mortgage broker in Chicago."
+        title="Small Business Accounting Services Atlanta | High Echelon"
+        description="With High Echelon accounting services you can count on us to professionally and accurately handle your small business accounting needs in Atlanta. Learn more.
+        "
       />
         <section className="hidden md:block mb-20 md:mb-32 mt-12">
             <div className="container">
@@ -277,11 +278,11 @@ const Page = ({ data }) => {
                         </p>
                     </div>
                     <div className="md:flex sm:block">
-                      <AniLink fade to="/payroll/" className="mr-10 mb-6 w-1/3">
+                      <AniLink fade to="/payroll-management-services-atlanta/" className="mr-10 mb-6 w-1/3">
                         <div className="max-w-140">
                           <GatsbyImage
                             image={
-                                data.accountServicesImage.childImageSharp.gatsbyImageData
+                                data.payrollManagementImage.childImageSharp.gatsbyImageData
                             }
                             alt="Payroll Management"
                             className="mb-6 rounded-[8px] h-60 w-full"
@@ -296,11 +297,11 @@ const Page = ({ data }) => {
                               </p>    
                           </div>
                         </AniLink>
-                        <AniLink fade to="/tax/" className="mr-10 mb-6 w-1/3 h-60">
+                        <AniLink fade to="/small-business-tax-preparation-services-atlanta/" className="mr-10 mb-6 w-1/3 h-60">
                           <div className="max-w-140">
                             <GatsbyImage
                             image={
-                                data.incomeTaxPreparationImage.childImageSharp
+                                data.taxImage.childImageSharp
                                 .gatsbyImageData
                             }
                             alt="Income Tax Preparation"
@@ -316,7 +317,7 @@ const Page = ({ data }) => {
                             </p>
                             </div>
                         </AniLink>
-                        <AniLink fade to="/consulting/" className="mr-10 mb-6 w-1/3">
+                        <AniLink fade to="/small-business-consulting-services-atlanta/" className="mr-10 mb-6 w-1/3">
                           <div className=" max-w-140">
                             <GatsbyImage
                             image={
@@ -384,8 +385,10 @@ const Page = ({ data }) => {
                   <div className="mb-10 text-black md:flex block">
                     <button className="block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0">
                       <div className="flex justify-center items-center">
+                      <a href="https://calendly.com/michellehighechelon/30min">
                         <i className="fal fa-calendar mr-2 text-xl"></i>
                         <p className="m-0">Book a Call</p>
+                      </a>
                       </div>
                     </button>
                     <button className="w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white">
@@ -551,8 +554,8 @@ export const query = graphql`
         gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
       }
     }
-    incomeTaxPreparationImage: file(
-      relativePath: { eq: "1.0 Homepage/3.3 Income Tax Prep desktop.jpg" }
+    taxImage: file(
+      relativePath: { eq: "1.0 Homepage/tax desktop.jpg" }
     ) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)

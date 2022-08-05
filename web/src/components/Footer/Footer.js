@@ -205,7 +205,7 @@ const Footer = ({ hideFooter }) => {
           </div>
 
           <div className="flex flex-wrap lg:flex-nowrap flex-col lg:flex-row justify-items-center lg:justify-between lg:items-center lg:pt-4">
-            <div className="mb-10 md:hidden">
+            {/* <div className="mb-10 md:hidden">
               <div className="flex items-center justify-center lg:justify-start space-x-4">
                 <ul className="flex items-center flex-wrap space-x-4 justify-center lg:justify-start">
                   <li class = "text-3xl">
@@ -244,7 +244,7 @@ const Footer = ({ hideFooter }) => {
                 
                 </ul>
               </div>
-            </div>
+            </div> */}
             <div className="lg:flex lg:items-center mb-8 lg:mb-0 text-sm">
               <ul className="block md:flex md:items-center md:flex-wrap space-x-4 justify-center text-center lg:justify-start">
                 <li className="text-gray-50">
@@ -284,7 +284,7 @@ const Footer = ({ hideFooter }) => {
               </ul>
             </div>
 
-            <div className="hidden md:block">
+            {/* <div className="hidden md:block">
               <div className="flex items-center justify-center lg:justify-start space-x-4">
                 <ul className="flex items-center flex-wrap space-x-4 justify-center lg:justify-start">
                   <li class = "text-3xl">
@@ -323,7 +323,7 @@ const Footer = ({ hideFooter }) => {
                 
                 </ul>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </footer>

@@ -282,8 +282,10 @@ Michelle named the company after her grandfather Jerry Fendrick's Thoroughbred h
                   <div className="mb-10 text-black md:flex block">
                     <button className="block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0">
                       <div className="flex justify-center items-center">
+                      <a href="https://calendly.com/michellehighechelon/30min">
                         <i className="fal fa-calendar mr-2 text-xl"></i>
                         <p className="m-0">Book a Call</p>
+                      </a>
                       </div>
                     </button>
                     <button className="w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white">

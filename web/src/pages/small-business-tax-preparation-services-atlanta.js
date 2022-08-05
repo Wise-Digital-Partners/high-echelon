@@ -245,7 +245,7 @@ const Page = ({ data }) => {
                     <div className="lg:w-1/2 md:w-full mr-0 md:mr-20 md:mb-8 sm:mb-8">
                         <GatsbyImage
                             image={
-                                data.accountingStartImage.childImageSharp.gatsbyImageData
+                                data.taxImage.childImageSharp.gatsbyImageData
                             }
                             alt="Small Business Consulting"
                             className="rounded-[8px] w-full"
@@ -302,7 +302,7 @@ const Page = ({ data }) => {
                         </p>
                     </div>
                     <div className="md:flex sm:block">
-                        <AniLink fade to="/payroll/" className="mr-10 mb-6 w-1/3">
+                        <AniLink fade to="/payroll-management-services-atlanta/" className="mr-10 mb-6 w-1/3">
                           <div className="max-w-140">
                             <GatsbyImage
                               image={
@@ -321,7 +321,7 @@ const Page = ({ data }) => {
                                 </p>    
                             </div>
                         </AniLink>
-                        <AniLink fade to="/accounting/" className="mr-10 mb-6 w-1/3">
+                        <AniLink fade to="/small-business-accounting-services-atlanta/" className="mr-10 mb-6 w-1/3">
                           <div className=" max-w-140">
                             <GatsbyImage
                             image={
@@ -342,7 +342,7 @@ const Page = ({ data }) => {
                             </div>
                         </AniLink>
                         
-                        <AniLink fade to="/consulting/" className="mr-10 mb-6 w-1/3 h-60">
+                        <AniLink fade to="/small-business-consulting-services-atlanta/" className="mr-10 mb-6 w-1/3 h-60">
                           <div className="max-w-140">
                             <GatsbyImage
                             image={
@@ -411,8 +411,10 @@ const Page = ({ data }) => {
                   <div className="mb-10 text-black md:flex block">
                     <button className="block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0">
                       <div className="flex justify-center items-center">
+                      <a href="https://calendly.com/michellehighechelon/30min">
                         <i className="fal fa-calendar mr-2 text-xl"></i>
                         <p className="m-0">Book a Call</p>
+                      </a>
                       </div>
                     </button>
                     <button className="w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white">
@@ -578,8 +580,8 @@ export const query = graphql`
         gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
       }
     }
-    incomeTaxPreparationImage: file(
-      relativePath: { eq: "1.0 Homepage/IncomeTax desktop - Copy.jpg" }
+    taxImage: file(
+      relativePath: { eq: "1.0 Homepage/tax desktop.jpg" }
     ) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)

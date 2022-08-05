@@ -102,7 +102,7 @@ const Page = ({ data }) => {
             </p>
             <div className="mb-20 flex justify-center">
               <p className="font-body text-base text-white text-center leading-[30px]">
-                If you’re looking for a meticulous CPA firm that can simplify your
+                If you’re looking for a modern CPA firm that can simplify your
                 books, you’ve come to the right place. At High Echelon, we value
                 client communication, accuracy, a streamlined workflow, and
                 creating a positive experience for our clients.
@@ -178,7 +178,7 @@ const Page = ({ data }) => {
             </p>
             <div className="mb-20 flex justify-center max-w-[736px] md:w-2/3 sm:w-full ">
               <p className="font-body text-base text-white font-body text-center leading-[30px]">
-                If you’re looking for a meticulous CPA firm that can simplify your
+                If you’re looking for a modern CPA firm that can simplify your
                 books, you’ve come to the right place. At High Echelon, we value
                 client communication, accuracy, a streamlined workflow, and
                 creating a positive experience for our clients.
@@ -351,8 +351,10 @@ const Page = ({ data }) => {
                   <div className="mb-10 text-black md:flex block">
                     <button className="block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0">
                       <div className="flex justify-center items-center">
+                      <a href="https://calendly.com/michellehighechelon/30min">
                         <i className="fal fa-calendar mr-2 text-xl"></i>
                         <p className="m-0">Book a Call</p>
+                      </a>
                       </div>
                     </button>
                     <button className="w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white">
