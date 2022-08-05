@@ -156,7 +156,7 @@ const Footer = ({ hideFooter }) => {
                 <div className="md:flex md:items-center pl-4 md:pt-6 pt-10">
                   <ul class="text-white text-sm list-none flex justify-center items-center flex-col md:block">
                     <li>(404) 446-9338</li> 
-                    <li>email@email.com</li>
+                    <li>info@highecheloncpa.com</li>
                   </ul>
                 </div>
               </div>
@@ -167,7 +167,16 @@ const Footer = ({ hideFooter }) => {
                   <li class = "md:ml-9 lg:ml-9 text-center mb-6">
                     <AniLink
                         fade
-                        to="/accounting/"
+                        to="/small-business-consulting-services-atlanta/"
+                        className="font-heading hover:text-primary-100"
+                      >
+                      Small Business Consulting
+                    </AniLink>                
+                  </li>
+                  <li class = "md:ml-9 lg:ml-9 text-center mb-6">
+                    <AniLink
+                        fade
+                        to="/small-business-accounting-services-atlanta/"
                         className="font-heading hover:text-primary-100"
                       >
                       Accounting
@@ -176,28 +185,19 @@ const Footer = ({ hideFooter }) => {
                   <li class = "md:ml-9 lg:ml-9 text-center mb-6">
                     <AniLink
                         fade
-                        to="/tax/"
+                        to="/payroll-management-services-atlanta/"
                         className="font-heading hover:text-primary-100"
                       >
-                      Tax Preparation
-                    </AniLink>                
-                  </li>
-                  <li class = "md:ml-9 lg:ml-9 text-center mb-6">
-                    <AniLink
-                        fade
-                        to="/consulting/"
-                        className="font-heading hover:text-primary-100"
-                      >
-                      Consulting
+                      Payroll Management
                     </AniLink>                
                   </li>
                   <li class = "md:ml-9 lg:ml-9 text-center">
                     <AniLink
                         fade
-                        to="/payroll/"
+                        to="/small-business-tax-preparation-services-atlanta/"
                         className="font-heading hover:text-primary-100"
                       >
-                      Payroll Management
+                      Tax Preparation
                     </AniLink>                
                   </li>
                 </ul>
@@ -289,7 +289,7 @@ const Footer = ({ hideFooter }) => {
                 <ul className="flex items-center flex-wrap space-x-4 justify-center lg:justify-start">
                   <li class = "text-3xl">
                     <a
-                      href="https://www.instagram.com/macashhomeloans/?hl=en"
+                      href="https://www.instagram.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex justify-center items-center text-white hover:bg-primary-600 transition-colors duration-300 ease-linear"
@@ -302,7 +302,7 @@ const Footer = ({ hideFooter }) => {
                   </li>
                   <li class = "text-3xl">
                     <a
-                      href="https://www.facebook.com/MacAshHomeLoans1"
+                      href="https://www.facebook.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex justify-center items-center text-white hover:bg-primary-600 transition-colors duration-300 ease-linear"
@@ -312,7 +312,7 @@ const Footer = ({ hideFooter }) => {
                   </li>
                   <li class = "text-3xl">
                     <a
-                      href="https://www.twitter.com/MacAshHomeLoans1"
+                      href="https://www.twitter.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex justify-center items-center text-white hover:bg-primary-600 transition-colors duration-300 ease-linear"

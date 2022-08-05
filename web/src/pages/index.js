@@ -207,7 +207,7 @@ const Page = ({ data }) => {
                       .gatsbyImageData
                   }
                   alt="Small Business Consulting"
-                  className="p-2 rounded-[8px] mb-3"
+                  className="p-2 rounded-[8px] mb-3 md:max-w-[240px] w-full"
                 />
                 <div className="md:flex md:justify-center py-2 pl-3 mb-6 md:mb-0 max-w-[360px]">
                   <div className="flex justify-center flex-col mb-4">
@@ -232,7 +232,7 @@ const Page = ({ data }) => {
                     data.accountServicesImage.childImageSharp.gatsbyImageData
                   }
                   alt="Accounting Services"
-                  className="p-2 rounded-[8px] mb-3"
+                  className="p-2 rounded-[8px] mb-3 md:max-w-[240px] w-full"
                 />
                 <div className="md:flex md:justify-center  py-2 pl-3 mb-6 md:mb-0 max-w-[360px]">
                   <div className="flex justify-center flex-col mb-4">
@@ -258,7 +258,7 @@ const Page = ({ data }) => {
                     data.payrollManagementImage.childImageSharp.gatsbyImageData
                   }
                   alt="Small Business Consulting"
-                  className="p-2 rounded-[8px] mb-3"
+                  className="p-2 rounded-[8px] mb-3 md:max-w-[240px] w-full"
                 />
                 <div className="md:flex md:justify-center  py-2 pl-3 mb-6 md:mb-0 max-w-[360px]">
                   <div className="flex justify-center flex-col mb-4">
@@ -283,7 +283,7 @@ const Page = ({ data }) => {
                       .gatsbyImageData
                   }
                   alt="Small Business Consulting"
-                  className="p-2 rounded-[8px] mb-3"
+                  className="p-2 rounded-[8px] mb-3 md:max-w-[240px] w-full"
                 />
                 <div className="md:flex md:justify-center  py-2 pl-3 mb-6 md:mb-0 max-w-[360px]">
                   <div className="flex justify-center flex-col mb-4">
@@ -472,28 +472,28 @@ export const query = graphql`
       relativePath: { eq: "1.0 Homepage/3.0 Small Business desktop.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 240)
+        gatsbyImageData(layout: CONSTRAINED, width: 360)
       }
     }
     accountServicesImage: file(
       relativePath: { eq: "1.0 Homepage/3.1 Accounting Services desktop.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 240)
+        gatsbyImageData(layout: CONSTRAINED, width: 360)
       }
     }
     payrollManagementImage: file(
       relativePath: { eq: "1.0 Homepage/3.2 Payroll Management desktop.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 240)
+        gatsbyImageData(layout: CONSTRAINED, width: 360)
       }
     }
     incomeTaxPreparationImage: file(
       relativePath: { eq: "1.0 Homepage/3.3 Income Tax Prep desktop.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 240)
+        gatsbyImageData(layout: CONSTRAINED, width: 360)
       }
     }
 
