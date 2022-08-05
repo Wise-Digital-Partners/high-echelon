@@ -108,7 +108,7 @@ const MainNav = ({
         href: "/small-business-consulting-services-atlanta/",
       },
       {
-        name: "Account Services",
+        name: "Accounting Services",
         href: "/small-business-accounting-services-atlanta/",
       },
       {
@@ -284,7 +284,7 @@ const MainNav = ({
             <li className="group">
               <ButtonSolid
                 onClick={()=>openContactModal()}
-                text="Contact US"
+                text="Contact Us"
                 altStyle={true}
                 className="bg-primary-700 min-w-0 text-base"
               />
