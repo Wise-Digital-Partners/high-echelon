@@ -47,8 +47,8 @@ const Page = ({ data }) => {
                           About High Echelon
                         </h2>
                         <p className="font-light text-base text-primary-200">
-                          High Echelon Certified Public Accountants is a nationwide CPA firm based in Atlanta, Georgia.
-                          It was founded by CPA Michelle Frank, who built the type of firm she always wanted to work for
+                          High Echelon, P.C. is a nationwide CPA firm based in Atlanta, Georgia.
+                          It was founded by Michelle Frank, who built the type of firm she always wanted to work for
                           herself—one focused on a great client experience. She maintains the highest standards and ethics
                           as a CPA and values transparency, so clients always know exactly what they’re getting.
                         </p>
@@ -72,7 +72,7 @@ const Page = ({ data }) => {
                           About High Echelon
                         </h2>
                         <p className="font-light text-base text-primary-200">
-                          High Echelon Certified Public Accountants is a nationwide CPA firm based in Atlanta, Georgia.
+                          High Echelon, P.C. is a nationwide CPA firm based in Atlanta, Georgia.
                           It was founded by CPA Michelle Frank, who built the type of firm she always wanted to work for
                           herself—one focused on a great client experience. She maintains the highest standards and ethics
                           as a CPA and values transparency, so clients always know exactly what they’re getting.
@@ -114,11 +114,9 @@ const Page = ({ data }) => {
                         <div className="md:px-4">
                             <p className="text-4xl md:text-5xl font-thin mb-6">The Story Behind the Firm</p>
                             <p className="text-base font-light  mb-6">
-                            CPA work is in Michelle’s blood—she follows in the footsteps of her grandfather,
-                            Jerry Fendrick, and father, Bob Fendrick. Both founded CPA firms of their own,
-                            and the family has decades of experience in the industry.<br/>
-                            Michelle named the company after her grandfather’s famous thoroughbred horse,
-                            High Echelon, which won the 1970 Belmont Stakes, one-third of the Triple Crown of Thoroughbred Racing.
+                            CPA work is in Michelle’s blood. She follows in the footsteps of her father, Robert 'Bob' Fendrick, who owned and managed his own public accounting firm, Fendrick & Associates, for 25 years.<br /><br />
+
+Michelle named the company after her grandfather Jerry Fendrick's Thoroughbred horse, High Echelon.  High Echelon won the 1970 Belmont Stakes, one-third of the Triple Crown of Thoroughbred Racing.
                             </p>
                         </div>
                     </div>
@@ -215,7 +213,7 @@ const Page = ({ data }) => {
                   <p>
                   Michelle is sharp and fiercely determined, bringing those attributes
                   to all elements of the firm and her life. Previously, she was a partner
-                  at Fendrick & Associates before joining the team at Peachtree Capital, then
+                  at Fendrick & Associates before joining the team at Peachtree Capital (PeachCap), then
                   later starting her own business, High Echelon.
                   </p><p className="mb-0">
                   Michelle received her undergraduate degree at Emory and post-graduate at Georgia
