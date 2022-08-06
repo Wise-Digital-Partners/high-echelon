@@ -43,6 +43,8 @@ const Page = ({ data }) => {
     document.getElementById("bottom-right-modal").style.display = "none"; 
   }
 
+  const [bookCall, setBookCall] = useState(0);
+
   return (
     <Layout headerDarkMode={true}>
       <SearchEngineOptimization
@@ -349,6 +351,7 @@ const Page = ({ data }) => {
       <svg className="w-full" width="1200" height="3" viewBox="0 0 1200 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5h1200" stroke="url(#paint0_linear_1129_1425)" stroke-width="3"/><defs><linearGradient id="paint0_linear_1129_1425" x1="0" y1="2.00435" x2="1182.95" y2="1.96651" gradientUnits="userSpaceOnUse"><stop stop-color="#A2A09D" stop-opacity="0"/><stop offset=".145833" stop-color="#FCE4A7"/><stop offset=".265625" stop-color="#CFA855"/><stop offset=".427083" stop-color="#FCE4A7"/><stop offset=".578125" stop-color="#F0D592"/><stop offset=".713542" stop-color="#FCE4A7"/><stop offset=".828125" stop-color="#CB9636"/><stop offset="1" stop-color="#A7A7A7" stop-opacity="0"/></linearGradient></defs></svg>
       <CallToAction />
       <svg className="w-full" width="1200" height="3" viewBox="0 0 1200 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5h1200" stroke="url(#paint0_linear_1129_1425)" stroke-width="3"/><defs><linearGradient id="paint0_linear_1129_1425" x1="0" y1="2.00435" x2="1182.95" y2="1.96651" gradientUnits="userSpaceOnUse"><stop stop-color="#A2A09D" stop-opacity="0"/><stop offset=".145833" stop-color="#FCE4A7"/><stop offset=".265625" stop-color="#CFA855"/><stop offset=".427083" stop-color="#FCE4A7"/><stop offset=".578125" stop-color="#F0D592"/><stop offset=".713542" stop-color="#FCE4A7"/><stop offset=".828125" stop-color="#CB9636"/><stop offset="1" stop-color="#A7A7A7" stop-opacity="0"/></linearGradient></defs></svg>
+      
       <div id="bottom-right-modal" data-modal-placement="bottom-right" tabindex="-1" className="h-full fade hidden overflow-y-auto overflow-x-hidden bg-white fixed top-0 right-0 right-0 z-50 w-full md:w-1/2 h-modal md:h-full">
         <div className="relative w-full h-full md:h-auto">
             <div className=" bg-white dark:bg-gray-700">
@@ -383,106 +386,110 @@ const Page = ({ data }) => {
                 <div className="pb-8 space-y-6 md:px-20 px-2">
                   <p className="text-4xl text-center my-8">Contact Us</p>
                   <div className="mb-10 text-black md:flex block">
-                    <button className="block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0">
+                    <button className="block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0" onClick={()=>setBookCall(1)}>
                       <div className="flex justify-center items-center">
-                      <a href="https://calendly.com/michellehighechelon/30min">
                         <i className="fal fa-calendar mr-2 text-xl"></i>
                         <p className="m-0">Book a Call</p>
-                      </a>
                       </div>
                     </button>
-                    <button className="w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white">
+                    <button className="w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white" onClick={()=>setBookCall(0)}>
                       <div className="flex justify-center items-center">
                         <i class="fal fa-envelope mr-2 text-xl"></i>
                         <p className="m-0">Contact Us</p>
                       </div>
                     </button>
                   </div>
-                  <div className="mb-8">
-                    <div className="mb-5">
-                      <label
-                        className="font-body text-sm font-semibold text-gray-900 block mb-1 text-base"
-                        htmlFor="first-name"
-                      >
-                        Name
-                      </label>
-                      <input
-                        type="text"
-                        name="first-name"
-                        onChange={()=>handleChange()}
-                        required={true}
-                        className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
-                      />
-                    </div>
-                    <div className="block md:flex">
-                      <div className="mb-5 w-full md:w-1/2 mr-3">
+                  { bookCall==0 ?
+                    <div className="mb-8">
+                      <div className="mb-5">
                         <label
                           className="font-body text-sm font-semibold text-gray-900 block mb-1 text-base"
-                          htmlFor="phone-number"
+                          htmlFor="first-name"
                         >
-                          Phone Number
+                          Name
                         </label>
                         <input
-                          type="tel"
-                          name="phone-number"
+                          type="text"
+                          name="first-name"
                           onChange={()=>handleChange()}
                           required={true}
                           className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
                         />
                       </div>
-                      <div className="mb-5 md:w-1/2">
+                      <div className="block md:flex">
+                        <div className="mb-5 w-full md:w-1/2 mr-3">
+                          <label
+                            className="font-body text-sm font-semibold text-gray-900 block mb-1 text-base"
+                            htmlFor="phone-number"
+                          >
+                            Phone Number
+                          </label>
+                          <input
+                            type="tel"
+                            name="phone-number"
+                            onChange={()=>handleChange()}
+                            required={true}
+                            className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
+                          />
+                        </div>
+                        <div className="mb-5 md:w-1/2">
+                          <label
+                            className="font-body text-sm font-semibold text-gray-900 block mb-1 text-base"
+                            htmlFor="email-address"
+                          >
+                            Email Address
+                          </label>
+                          <input
+                            type="email"
+                            name="email-address"
+                            onChange={()=>handleChange()}
+                            required={true}
+                            className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
+                          />
+                        </div>
+                      </div>
+                      <div className="mb-5">
                         <label
                           className="font-body text-sm font-semibold text-gray-900 block mb-1 text-base"
-                          htmlFor="email-address"
+                          htmlFor="first-name"
                         >
-                          Email Address
+                          What Can We Help You With ?
                         </label>
-                        <input
-                          type="email"
-                          name="email-address"
+                        <select name="helps" className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear">
+                          <option value="" disabled selected>Select Ones ...</option>
+                          <option value="0">Accounting</option>
+                          <option value="1">Service</option>
+                          <option value="2">About</option>
+                        </select>
+                      </div>
+                      <div className="mb-5">
+                        <label
+                          className="font-body text-sm font-semibold text-gray-900 block mb-1 text-base"
+                          htmlFor="first-name"
+                        >
+                          Message(Optional)
+                        </label>
+                        <textarea
+                          type="textarea"
+                          name="message"
                           onChange={()=>handleChange()}
                           required={true}
+                          rows="5"
                           className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
                         />
                       </div>
-                    </div>
-                    <div className="mb-5">
-                      <label
-                        className="font-body text-sm font-semibold text-gray-900 block mb-1 text-base"
-                        htmlFor="first-name"
-                      >
-                        What Can We Help You With ?
-                      </label>
-                      <select name="helps" className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear">
-                        <option value="" disabled selected>Select Ones ...</option>
-                        <option value="0">Accounting</option>
-                        <option value="1">Service</option>
-                        <option value="2">About</option>
-                      </select>
-                    </div>
-                    <div className="mb-5">
-                      <label
-                        className="font-body text-sm font-semibold text-gray-900 block mb-1 text-base"
-                        htmlFor="first-name"
-                      >
-                        Message(Optional)
-                      </label>
-                      <textarea
-                        type="textarea"
-                        name="message"
-                        onChange={()=>handleChange()}
-                        required={true}
-                        rows="5"
-                        className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
+                      <ButtonSolid
+                        // onClick={()}
+                        text="Send"
+                        altStyle={true}
+                        className="bg-primary-700 min-w-0 text-base w-1/3"
                       />
                     </div>
-                    <ButtonSolid
-                      // onClick={()}
-                      text="Send"
-                      altStyle={true}
-                      className="bg-primary-700 min-w-0 text-base w-1/3"
-                    />
-                  </div>
+                  : 
+                    <div className="mb-8">
+                      <iframe src="https://calendly.com/michellehighechelon/30min" className="w-full h-full overflow-hidden min-h-[1200px]"></iframe>
+                    </div>
+                  }
                         
                 </div>
             </div>

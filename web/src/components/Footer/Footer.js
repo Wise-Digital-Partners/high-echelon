@@ -251,7 +251,7 @@ const Footer = ({ hideFooter }) => {
                   © {getYear()} High Echelon
                 </li>
                 <div className="flex justify-center mt-6 md:mt-0">
-                  <li className="mr-3">
+                  <li className="">
                     <AniLink
                       fade
                       to="/privacy-policy/"
@@ -260,7 +260,7 @@ const Footer = ({ hideFooter }) => {
                       Privacy Policy
                     </AniLink>
                   </li>
-                  <li>
+                  {/* <li>
                     <AniLink
                       fade
                       to="/privacy-policy/"
@@ -268,7 +268,7 @@ const Footer = ({ hideFooter }) => {
                     >
                       Accessibility Statement
                     </AniLink>
-                  </li>
+                  </li> */}
                 </div>
                 <li className="block md:flex w-full md:w-auto mt-6 md:mt-0">
                   <a
