@@ -37189,7 +37189,7 @@ const MainNav = ({
     className: "w-full mb-4 border-1"
   }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)(_Button_ButtonWire__WEBPACK_IMPORTED_MODULE_9__["default"], {
     onClick: () => openContactModal(),
-    className: "w-full text-primary-100",
+    className: "w-full text-primary-100 mb-4",
     text: "Book a Call"
   }))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("div", {
     id: "bottom-right-modal",
@@ -37241,7 +37241,7 @@ const MainNav = ({
   }, "Contact Us"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("div", {
     className: "mb-10 text-black md:flex block"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("button", {
-    className: "block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0",
+    className: bookCall == 1 ? "w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white mb-3 md:mb-0" : "block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0",
     onClick: () => setBookCall(1)
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("div", {
     className: "flex justify-center items-center"
@@ -37250,7 +37250,7 @@ const MainNav = ({
   }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("p", {
     className: "m-0"
   }, "Book a Call"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("button", {
-    className: "w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white",
+    className: bookCall == 0 ? "w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white mb-3 md:mb-0" : "block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0",
     onClick: () => setBookCall(0)
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("div", {
     className: "flex justify-center items-center"
@@ -37685,7 +37685,7 @@ const CTA = ({
     }, "Contact Us"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
       className: "mb-10 text-black md:flex block"
     }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
-      className: "block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0",
+      className: bookCall == 1 ? "w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white mb-3 md:mb-0" : "block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0",
       onClick: () => setBookCall(1)
     }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
       className: "flex justify-center items-center"
@@ -37694,7 +37694,7 @@ const CTA = ({
     }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
       className: "m-0"
     }, "Book a Call"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
-      className: "w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white",
+      className: bookCall == 0 ? "w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white mb-3 md:mb-0" : "block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0",
       onClick: () => setBookCall(0)
     }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
       className: "flex justify-center items-center"
@@ -38835,7 +38835,7 @@ const Page = ({
   }, "Contact Us"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "mb-10 text-black md:flex block"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("button", {
-    className: "block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0",
+    className: bookCall == 1 ? "w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white mb-3 md:mb-0" : "block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0",
     onClick: () => setBookCall(1)
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "flex justify-center items-center"
@@ -38844,7 +38844,7 @@ const Page = ({
   }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
     className: "m-0"
   }, "Book a Call"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("button", {
-    className: "w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white",
+    className: bookCall == 0 ? "w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white mb-3 md:mb-0" : "block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0",
     onClick: () => setBookCall(0)
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
     className: "flex justify-center items-center"
@@ -39436,7 +39436,7 @@ const Page = ({
   }, "Contact Us"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
     className: "mb-10 text-black md:flex block"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("button", {
-    className: "block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0",
+    className: bookCall == 1 ? "w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white mb-3 md:mb-0" : "block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0",
     onClick: () => setBookCall(1)
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
     className: "flex justify-center items-center"
@@ -39445,7 +39445,7 @@ const Page = ({
   }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
     className: "m-0"
   }, "Book a Call"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("button", {
-    className: "w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white",
+    className: bookCall == 0 ? "w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white mb-3 md:mb-0" : "block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0",
     onClick: () => setBookCall(0)
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
     className: "flex justify-center items-center"

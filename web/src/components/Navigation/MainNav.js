@@ -174,14 +174,14 @@ const MainNav = ({
               <div className="hidden lg:block md:block">
                 <GatsbyImage
                   image={initialLogo}
-                  alt="MacAsh Home Loans Logo"
+                  alt="High Echelon P.C. Logo"
                   className="h-[64px] md:h-[64px] w-[310px] sm:h-[30] sm:w-[200]"
                 />
               </div>
               <div className="lg:hidden">
                 <GatsbyImage
                   image={data.mobileLogo.childImageSharp.gatsbyImageData}
-                  alt="MacAsh Home Loans Logo"
+                  alt="High Echelon P.C. Logo"
                   className="md:h-[64px] md:w-[310px] sm:h-[30px] sm:w-[200px]"
                 />
               </div>
@@ -191,14 +191,14 @@ const MainNav = ({
               <div className="hidden lg:block">
                 <GatsbyImage
                   image={initialLogo}
-                  alt="MacAsh Home Loans Logo"
+                  alt="High Echelon P.C. Logo"
                   className=" md:h-[64px] md:w-[310px] sm:h-[30px] sm:w-[200px]"
                 />
               </div>
               <div className="lg:hidden">
                 <GatsbyImage
                   image={data.mobileLogo.childImageSharp.gatsbyImageData}
-                  alt="MacAsh Home Loans Logo"
+                  alt="High Echelon P.C. Logo"
                   className="md:h-[64px] md:w-[310px] sm:h-[30px] sm:w-[200px]"
                 />
               </div>
