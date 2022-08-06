@@ -155,8 +155,8 @@ const Footer = ({ hideFooter }) => {
                 </AniLink>
                 <div className="md:flex md:items-center pl-4 md:pt-6 pt-10">
                   <ul class="text-white text-sm list-none flex justify-center items-center flex-col md:block">
-                    <li>(404) 446-9338</li> 
-                    <li>info@highecheloncpa.com</li>
+                    <li><a href="tel:404-446-9338" className="hover:text-primary-100">(404) 446-9338</a></li> 
+                    <li><a href="mailto:info@highecheloncpa.com" className="hover:text-primary-100">info@highecheloncpa.com</a></li>
                   </ul>
                 </div>
               </div>

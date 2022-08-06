@@ -266,7 +266,7 @@ Michelle named the company after her grandfather Jerry Fendrick's Thoroughbred h
                     </svg>
                     
                     <a
-                      href="tel:(404) 446-9338"
+                      href="tel:404-446-9338"
                       className="text-sm font-semibold text-primary-100"
                     >
                       (404) 446-9338

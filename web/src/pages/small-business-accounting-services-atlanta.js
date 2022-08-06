@@ -369,7 +369,7 @@ const Page = ({ data }) => {
                     </svg>
                     
                     <a
-                      href="tel:(404) 446-9338"
+                      href="tel:404-446-9338"
                       className="text-sm font-semibold text-primary-100"
                     >
                       (404) 446-9338

@@ -279,7 +279,7 @@ const Page = ({ data }) => {
               <AniLink fade to="/small-business-tax-preparation-services-atlanta/" className="block w-full mr-0 md:flex lg:flex md:mr-5 md:w-1/2 lg:mr-5 lg:w-1/2">
                 <GatsbyImage
                   image={
-                    data.incomeTaxPreparationImage.childImageSharp
+                    data.taxImage.childImageSharp
                       .gatsbyImageData
                   }
                   alt="Small Business Consulting"
@@ -335,7 +335,7 @@ const Page = ({ data }) => {
                     </svg>
                     
                     <a
-                      href="tel:(404) 446-9338"
+                      href="tel:404-446-9338"
                       className="text-sm font-semibold text-primary-100"
                     >
                       (404) 446-9338
@@ -491,8 +491,8 @@ export const query = graphql`
         gatsbyImageData(layout: CONSTRAINED, width: 360)
       }
     }
-    incomeTaxPreparationImage: file(
-      relativePath: { eq: "1.0 Homepage/3.3 Income Tax Prep desktop.jpg" }
+    taxImage: file(
+      relativePath: { eq: "1.0 Homepage/tax desktop.jpg" }
     ) {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED, width: 360)
