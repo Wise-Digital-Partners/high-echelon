@@ -13,22 +13,23 @@ const CTA = ({ heading, headingLevel, subtext, className }) => {
   // }
 
     const [offcanvasOpen, setOffcanvasOpen] = useState(false);
-    const handleChange = (e) => {
-      this.setState({ [e.target.name]: e.target.value });
-    };
+    // const handleChange = (e) => {
+    //   this.setState({ [e.target.name]: e.target.value });
+    // };
   
     const clickHandler = () => {
       setOffcanvasOpen(!offcanvasOpen);
-    };
-    const openContactModal = () => {
       document.getElementById("bottom-right-modal").style.display = "block";
-    }
+    };
+    // const openContactModal = () => {
+    //   document.getElementById("bottom-right-modal").style.display = "block";
+    // }
   
-    const closeContactModal = () => {
-      document.getElementById("bottom-right-modal").style.display = "none"; 
-    }
+    // const closeContactModal = () => {
+    //   document.getElementById("bottom-right-modal").style.display = "none"; 
+    // }
 
-    const [bookCall, setBookCall] = useState(0);
+    // const [bookCall, setBookCall] = useState(0);
  
   return (
     // <section
@@ -52,18 +53,25 @@ const CTA = ({ heading, headingLevel, subtext, className }) => {
           </header>
 
           <div className="block md:flex md:items-center md:space-x-4">
-            <ButtonSolidGold
+            {/* <ButtonSolidGold
                 onClick={()=>openContactModal()} 
                 text="Book a Call"
                 className="w-full md:w-auto mb-28 md:mb-0"
-              />
+              /> */}
+              <ButtonSolidGold
+                  data-modal-open="bottom-right-modal"
+                  onKeyDown={clickHandler}
+                  onClick={clickHandler}
+                  className="w-full text-primary-100 mb-4"
+                  text="Book a Call"
+                />
           </div>
         </div>
       
       </div>
       <div className="text-center justify-center flex">
       </div>
-      <div id="bottom-right-modal" data-modal-placement="bottom-right" tabindex="-1" className="h-full fade hidden overflow-y-auto overflow-x-hidden bg-white fixed top-0 right-0 right-0 z-50 w-full md:w-1/2 h-modal md:h-full">
+      {/* <div id="bottom-right-modal" data-modal-placement="bottom-right" tabindex="-1" className="h-full fade hidden overflow-y-auto overflow-x-hidden bg-white fixed top-0 right-0 right-0 z-50 w-full md:w-1/2 h-modal md:h-full">
         <div className="relative w-full h-full md:h-auto">
             <div className=" bg-white dark:bg-gray-700">
                 <div className="flex justify-between items-center p-5 border-b dark:border-primary-500">
@@ -205,7 +213,7 @@ const CTA = ({ heading, headingLevel, subtext, className }) => {
                 </div>
             </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -13,20 +13,21 @@ import CallToAction from "../components/Repeating/CTA";
 const Page = ({ data }) => {
 
   const [offcanvasOpen, setOffcanvasOpen] = useState(false);
-  const handleChange = (e) => {
-    this.setState({ [e.target.name]: e.target.value });
-  };
+  // const handleChange = (e) => {
+  //   this.setState({ [e.target.name]: e.target.value });
+  // };
 
   const clickHandler = () => {
     setOffcanvasOpen(!offcanvasOpen);
-  };
-  const openContactModal = () => {
     document.getElementById("bottom-right-modal").style.display = "block";
-  }
+  };
+  // const openContactModal = () => {
+  //   document.getElementById("bottom-right-modal").style.display = "block";
+  // }
 
-  const closeContactModal = () => {
-    document.getElementById("bottom-right-modal").style.display = "none"; 
-  }
+  // const closeContactModal = () => {
+  //   document.getElementById("bottom-right-modal").style.display = "none"; 
+  // }
   return (
     <Layout headerDarkMode={true}>
       <SearchEngineOptimization

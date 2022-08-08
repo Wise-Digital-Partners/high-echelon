@@ -29,22 +29,29 @@ import {
 const Page = ({ data }) => {
 
   const [offcanvasOpen, setOffcanvasOpen] = useState(false);
-  const handleChange = (e) => {
-    this.setState({ [e.target.name]: e.target.value });
-  };
+  // const handleChange = (e) => {
+  //   this.setState({ [e.target.name]: e.target.value });
+  // };
 
   const clickHandler = () => {
     setOffcanvasOpen(!offcanvasOpen);
-  };
-  const openContactModal = () => {
     document.getElementById("bottom-right-modal").style.display = "block";
-  }
+  };
 
-  const closeContactModal = () => {
-    document.getElementById("bottom-right-modal").style.display = "none"; 
-  }
+  const clickHandlers = () => {
+    setOffcanvasOpen(!offcanvasOpen);
+    document.getElementById("bottom-right-modal").style.display = "block";
 
-  const [bookCall, setBookCall] = useState(0);
+  };
+  // const openContactModal = () => {
+  //   document.getElementById("bottom-right-modal").style.display = "block";
+  // }
+
+  // const closeContactModal = () => {
+  //   document.getElementById("bottom-right-modal").style.display = "none"; 
+  // }
+
+  // const [bookCall, setBookCall] = useState(0);
 
   return (
     <Layout headerDarkMode={true}>
@@ -67,10 +74,16 @@ const Page = ({ data }) => {
                             including payroll processing, hiring, and termination.
                             We set you up on our top-rated cloud-based payroll management platform, Gusto, and you get direct support from High Echelon.
                         </p>
-                        <ButtonSolidGold
+                        {/* <ButtonSolidGold
                             className="font-light"
                             onClick={()=>openContactModal()}
                             text="Book a Call"
+                        /> */}
+                        <ButtonSolidGold
+                          data-modal-open="bottom-right-modal"
+                          onKeyDown={clickHandler}
+                          onClick={clickHandler}
+                          text="Book a Call"
                         />
                     </div>
                 </div>
@@ -90,10 +103,16 @@ const Page = ({ data }) => {
                             Payroll doesn't have to be a burden. Let us lighten the load with automated online services, including payroll processing, hiring, and termination.
                             We set you up on our top-rated cloud-based payroll management platform, Gusto, and you get direct support from High Echelon.
                         </p>
-                        <ButtonSolidGold
+                        {/* <ButtonSolidGold
                             className="font-light"
                             onClick={()=>openContactModal()}
                             text="Book a Call"
+                        /> */}
+                        <ButtonSolidGold
+                          data-modal-open="bottom-right-modal"
+                          onKeyDown={clickHandler}
+                          onClick={clickHandler}
+                          text="Book a Call"
                         />
                     </div>
                 </div>
@@ -243,10 +262,16 @@ const Page = ({ data }) => {
                                 employees have their own portal to enter their information directly. And once you're completely set up,
                                 onboarding and offboarding employees take just two minutes.
                             </p>
-                            <ButtonSolidGold
+                            {/* <ButtonSolidGold
                                 className="font-light"
                                 onClick={()=>openContactModal()}
                                 text="Book a Call"
+                            /> */}
+                            <ButtonSolidGold
+                              data-modal-open="bottom-right-modal"
+                              onKeyDown={clickHandler}
+                              onClick={clickHandler}
+                              text="Book a Call"
                             />
                         </div>
                     </div>
@@ -351,7 +376,7 @@ const Page = ({ data }) => {
       />
       <svg className="w-full" width="1200" height="3" viewBox="0 0 1200 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5h1200" stroke="url(#paint0_linear_1129_1425)" stroke-width="3"/><defs><linearGradient id="paint0_linear_1129_1425" x1="0" y1="2.00435" x2="1182.95" y2="1.96651" gradientUnits="userSpaceOnUse"><stop stop-color="#A2A09D" stop-opacity="0"/><stop offset=".145833" stop-color="#FCE4A7"/><stop offset=".265625" stop-color="#CFA855"/><stop offset=".427083" stop-color="#FCE4A7"/><stop offset=".578125" stop-color="#F0D592"/><stop offset=".713542" stop-color="#FCE4A7"/><stop offset=".828125" stop-color="#CB9636"/><stop offset="1" stop-color="#A7A7A7" stop-opacity="0"/></linearGradient></defs></svg>
       
-      <div id="bottom-right-modal" data-modal-placement="bottom-right" tabindex="-1" className="h-full fade hidden overflow-y-auto overflow-x-hidden bg-white fixed top-0 right-0 right-0 z-50 w-full md:w-1/2 h-modal md:h-full">
+      {/* <div id="bottom-right-modal" data-modal-placement="bottom-right" tabindex="-1" className="h-full fade hidden overflow-y-auto overflow-x-hidden bg-white fixed top-0 right-0 right-0 z-50 w-full md:w-1/2 h-modal md:h-full">
         <div className="relative w-full h-full md:h-auto">
             <div className=" bg-white dark:bg-gray-700">
                 <div className="flex justify-between items-center p-5 border-b dark:border-primary-500">
@@ -493,7 +518,7 @@ const Page = ({ data }) => {
                 </div>
             </div>
         </div>
-      </div>
+      </div> */}
     </Layout>
   );
 };

@@ -35,19 +35,16 @@ const MainNav = ({
   // handle click of navigation items
   const clickHandler = () => {
     setOffcanvasOpen(!offcanvasOpen);
-  };
-
-  const handleChange = (e) => {
-    this.setState({ [e.target.name]: e.target.value });
-  };
-
-  const openContactModal = () => {
     document.getElementById("bottom-right-modal").style.display = "block";
-  }
+  };
 
-  const closeContactModal = () => {
-    document.getElementById("bottom-right-modal").style.display = "none"; 
-  }
+  // const openContactModal = () => {
+  //   document.getElementById("bottom-right-modal").style.display = "block";
+  // }
+
+  // const closeContactModal = () => {
+  //   document.getElementById("bottom-right-modal").style.display = "none"; 
+  // }
 
   const [bookCall, setBookCall] = useState(0);
   
@@ -285,12 +282,24 @@ const MainNav = ({
 
             <li className="group">
               <ButtonSolid
-                onClick={()=>openContactModal()}
+                onClick={clickHandler}
+                onKeyDown={clickHandler}
+                data-modal-open="bottom-right-modal"
                 text="Contact Us"
                 altStyle={true}
                 className="bg-primary-700 min-w-0 text-base"
               />
             </li>
+            {/* <li>
+              <AniLink
+                data-modal-open="bottom-right-modal"
+                onKeyDown={clickHandler}
+                onClick={clickHandler}
+                className="font-heading text-3xl text-primary-100 hover:text-primary-700 font-bold no-underline cursor-pointer transition-colors duration-300 ease-linear"
+              >
+                Contact
+              </AniLink>
+            </li> */}
             
           </ul>
 
@@ -376,20 +385,34 @@ const MainNav = ({
                 </ul>
 
                 <ButtonSolidGold
-                  onClick={()=>openContactModal()}
+                  data-modal-open="bottom-right-modal"
+                  onKeyDown={clickHandler}
+                  onClick={clickHandler}
                   text="Contact"
                   className="w-full mb-4 border-1"
                 />
                 <ButtonWire
-                  onClick={()=>openContactModal()}
+                  data-modal-open="bottom-right-modal"
+                  onKeyDown={clickHandler}
+                  onClick={clickHandler}
                   className="w-full text-primary-100 mb-4"
                   text="Book a Call"
                 />
+                {/* <li>
+                  <AniLink
+                    data-modal-open="modal-contact"
+                    onKeyDown={clickHandler}
+                    onClick={clickHandler}
+                    className="font-heading text-3xl text-primary-100 hover:text-primary-700 font-bold no-underline cursor-pointer transition-colors duration-300 ease-linear"
+                  >
+                    Contact
+                  </AniLink>
+                </li> */}
               </div>
             </OffCanvas>
           </div>
         </div>
-        <div id="bottom-right-modal" data-modal-placement="bottom-right" tabindex="-1" className="h-full fade hidden overflow-y-auto overflow-x-hidden bg-white fixed top-0 right-0 right-0 z-50 w-full md:w-1/2 h-modal md:h-full">
+        {/* <div id="bottom-right-modal" data-modal-placement="bottom-right" tabindex="-1" className="h-full fade hidden overflow-y-auto overflow-x-hidden bg-white fixed top-0 right-0 right-0 z-50 w-full md:w-1/2 h-modal md:h-full">
           <div className="relative w-full h-full md:h-auto">
               <div className=" bg-white dark:bg-gray-700">
                   <div className="flex justify-between items-center p-5 border-b dark:border-primary-500">
@@ -531,7 +554,7 @@ const MainNav = ({
                   </div>
               </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </nav>
   );
