@@ -94,7 +94,7 @@ const Page = () => {
             One of the primary purposes of cookies is to provide a convenience
             feature to save you time. The purpose of a cookie is to tell the Web
             server that you have returned to a specific page. For example, if
-            you personalize High Echelon P.C. pages, or register with MacAsh
+            you personalize High Echelon P.C. pages, or register with High Echelon
             Home Loans site or services, a cookie helps High Echelon P.C. to
             recall your specific information on subsequent visits. This
             simplifies the process of recording your personal information, such
