@@ -242,7 +242,7 @@ const Page = ({ data }) => {
                       Accounting Services
                     </h3>
                     <p className="text-base mb-4">
-                      Preparation of monthly, quarterly, or anual financial statements for your business.
+                      Preparation of monthly, quarterly, or annual financial statements for your business.
                     </p>
                   </div>
                   <ButtonGhost
