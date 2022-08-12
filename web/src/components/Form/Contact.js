@@ -34,19 +34,19 @@ const StyledForm = styled.div`
 
 
 // export default class Form extends Component {
-  const Form = () => {
+//  const Form = () => {
   // constructor(props) {
   //   super(props);
   //   this.state = { isValidated: false };
   // }
 
-  const [name, setName] = useState();
-  const [number, setNumber] = useState();
-  const [email, setEmail] = useState();
-  const [service, setService] = useState();
-  const [message, setMessage] = useState();
+//  const [name, setName] = useState();
+//  const [number, setNumber] = useState();
+//  const [email, setEmail] = useState();
+//  const [service, setService] = useState();
+//  const [message, setMessage] = useState();
   
-  const [bookCall, setBookCall] = useState(1);
+//  const [bookCall, setBookCall] = useState(1);
   // const [isValidated, setIsValidated] = useState(false);
 
   // const handleChange = (e) => {
@@ -83,8 +83,8 @@ const StyledForm = styled.div`
       .catch((error) => alert(error));
   }; */
 
-  return (
-    <StyledForm>
+ // return (
+  //  <StyledForm>
       {/* <div id="contact-form-ajax-response"></div>
       <form
         name="Contact"
@@ -274,7 +274,7 @@ const StyledForm = styled.div`
                             >
                               What Can We Help You With ?
                             </label>
-                            <select name="helps" onChange={e=>setService(e.target.value)} className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear">
+                            <select name="service" className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear">
                               <option value="0" disabled selected>Select Ones ...</option>
                               <option value="Consulting">Consulting</option>
                               <option value="Accounting">Accounting</option>
@@ -316,7 +316,7 @@ const StyledForm = styled.div`
                       
               </div>
 
-    </StyledForm>
+//   </StyledForm>
   );
 }
 
