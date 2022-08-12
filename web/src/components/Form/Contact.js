@@ -215,9 +215,7 @@ const StyledForm = styled.div`
                     <form
                       name="Contact"
                       method="post"
-                      action=""
                       data-netlify="true"
-                      /*onSubmit={handleSubmit} */
                     >
                       {/* <input type="hidden" name="form-name" value="Contact" />
                       <div hidden>
@@ -307,7 +305,7 @@ const StyledForm = styled.div`
                             />
                           </div>
                           <ButtonSolid
-                            // onClick={()}
+                            type="submit"
                             text="Send"
                             altStyle={true}
                             className="bg-primary-700 min-w-0 text-base w-1/3"
