@@ -214,16 +214,10 @@ const StyledForm = styled.div`
                     <div id="contact-form-ajax-response"></div>
                     <form
                       name="contact-form"
-                      method="post"
+                      method="POST"
                       data-netlify="true"
                     >
-                      {/* <input type="hidden" name="form-name" value="Contact" />
-                      <div hidden>
-                        <label>
-                          Don’t fill this out:{" "}
-                          <input name="bot-field" onChange={()=>handleChange()} />
-                        </label>
-                      </div> */}
+                     
             <input type="hidden" name="form-name" value="contact-form" />
                         <div className="mb-8">
                           <div className="mb-5">
@@ -286,6 +280,7 @@ const StyledForm = styled.div`
                               <option value="Accounting">Accounting</option>
                               <option value="Payroll">Payroll</option>
                               <option value="Tax">Income Tax Prep</option>
+                              <option value="Other">Other</option>
                             </select>
                           </div>
                           <div className="mb-5">
