@@ -56,7 +56,7 @@ const StyledForm = styled.div`
   // useEffect = (() =>{
     
   // }, [bookCall])
-  const handleSubmit = (e) => {
+ /* const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
     fetch("/", {
@@ -81,7 +81,7 @@ const StyledForm = styled.div`
         })
       )
       .catch((error) => alert(error));
-  };
+  }; */
 
   return (
     <StyledForm>
