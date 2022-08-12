@@ -85,8 +85,8 @@ const StyledForm = styled.div`
 
  // return (
   //  <StyledForm>
-      {/* <div id="contact-form-ajax-response"></div>
-      <form
+    //  { <div id="contact-form-ajax-response"></div>
+    /*  <form
         name="Contact"
         method="post"
         action=""
@@ -190,7 +190,7 @@ const StyledForm = styled.div`
         </div>
 
         <ButtonSolid type="submit" text="Send Message" />
-      </form> */}
+      </form> }*/
 
 
               <div className="pb-8 space-y-6 md:px-20 px-2">
@@ -317,7 +317,7 @@ const StyledForm = styled.div`
               </div>
 
 //   </StyledForm>
-  );
-}
+//  );
+//}
 
 export default Form;
