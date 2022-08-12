@@ -218,7 +218,7 @@ const StyledForm = styled.div`
                       data-netlify="true"
                     >
                      
-            <input type="hidden" name="form-name" value="contact-form" />
+          
                         <div className="mb-8">
                           <div className="mb-5">
                             <label
@@ -230,7 +230,7 @@ const StyledForm = styled.div`
                             <input
                               type="text"
                               name="first-name"
-                              onChange={e=>setName(e.target.value)}
+                             
                               required={true}
                               className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
                             />
@@ -246,7 +246,7 @@ const StyledForm = styled.div`
                               <input
                                 type="tel"
                                 name="phone-number"
-                                onChange={e=>setNumber(e.target.value)}
+                              
                                 required={true}
                                 className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
                               />
@@ -261,7 +261,7 @@ const StyledForm = styled.div`
                               <input
                                 type="email"
                                 name="email-address"
-                                onChange={e=>setEmail(e.target.value)}
+                               
                                 required={true}
                                 className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
                               />
@@ -293,7 +293,7 @@ const StyledForm = styled.div`
                             <textarea
                               type="textarea"
                               name="message"
-                              onChange={e=>setMessage(e.target.value)}
+                             
                               required={true}
                               rows="5"
                               className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
