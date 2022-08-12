@@ -224,7 +224,7 @@ const StyledForm = styled.div`
                           <input name="bot-field" onChange={()=>handleChange()} />
                         </label>
                       </div> */}
-            
+            <input type="hidden" name="form-name" value="contact-form" />
                         <div className="mb-8">
                           <div className="mb-5">
                             <label
