@@ -1,6 +1,7 @@
 import React from "react";
 
 import Layout from "../components/Layout";
+import ButtonSolid from "../Button/ButtonSolid";
 
 const Page = () => {
   return (
