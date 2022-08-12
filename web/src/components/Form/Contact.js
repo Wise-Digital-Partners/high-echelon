@@ -217,8 +217,7 @@ const StyledForm = styled.div`
                       method="post"
                       action=""
                       data-netlify="true"
-                      data-netlify-honeypot="bot-field"
-                      onSubmit={handleSubmit}
+                      /*onSubmit={handleSubmit} */
                     >
                       {/* <input type="hidden" name="form-name" value="Contact" />
                       <div hidden>
@@ -285,9 +284,10 @@ const StyledForm = styled.div`
                             </label>
                             <select name="helps" onChange={e=>setService(e.target.value)} className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear">
                               <option value="0" disabled selected>Select Ones ...</option>
-                              <option value="1">Accounting</option>
-                              <option value="2">Service</option>
-                              <option value="3">About</option>
+                              <option value="Consulting">Consulting</option>
+                              <option value="Accounting">Accounting</option>
+                              <option value="Payroll">Payroll</option>
+                              <option value="Tax">Income Tax Prep</option>
                             </select>
                           </div>
                           <div className="mb-5">
