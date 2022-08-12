@@ -213,7 +213,7 @@ const StyledForm = styled.div`
                   <>
                     <div id="contact-form-ajax-response"></div>
                     <form
-                      name="Contact"
+                      name="contact-form"
                       method="post"
                       data-netlify="true"
                     >
