@@ -1,6 +1,7 @@
 import React from "react";
 
 import Layout from "../components/Layout";
+import Contact from "../Form/Contact";
 
 const Page = () => {
   return (
@@ -250,6 +251,7 @@ const Page = () => {
           <p>Effective as of August 01, 2022 </p>
         </div>
       </section>
+      <Contact />
     </Layout>
   );
 };
