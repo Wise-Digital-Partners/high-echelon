@@ -1,7 +1,7 @@
 import React from "react";
 
 import Layout from "../components/Layout";
-import ButtonSolid from "../components/Button/ButtonSolid";
+
 
 const Page = () => {
   return (
@@ -251,101 +251,7 @@ const Page = () => {
           <p>Effective as of August 01, 2022 </p>
         </div>
       </section>
-   <form
-                      name="contact-form"
-                      method="POST"
-                      data-netlify="true"
-                    >
-                     
-          
-                        <div className="mb-8">
-                          <div className="mb-5">
-                            <label
-                              className="font-body text-sm font-semibold text-gray-900 block mb-1 text-base"
-                              htmlFor="first-name"
-                            >
-                              Name
-                            </label>
-                            <input
-                              type="text"
-                              name="first-name"
-                             
-                              required={true}
-                              className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
-                            />
-                          </div>
-                          <div className="block md:flex">
-                            <div className="mb-5 w-full md:w-1/2 mr-3">
-                              <label
-                                className="font-body text-sm font-semibold text-gray-900 block mb-1 text-base"
-                                htmlFor="phone-number"
-                              >
-                                Phone Number
-                              </label>
-                              <input
-                                type="tel"
-                                name="phone-number"
-                              
-                                required={true}
-                                className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
-                              />
-                            </div>
-                            <div className="mb-5 md:w-1/2">
-                              <label
-                                className="font-body text-sm font-semibold text-gray-900 block mb-1 text-base"
-                                htmlFor="email-address"
-                              >
-                                Email Address
-                              </label>
-                              <input
-                                type="email"
-                                name="email-address"
-                               
-                                required={true}
-                                className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
-                              />
-                            </div>
-                          </div>
-                          <div className="mb-5">
-                            <label
-                              className="font-body text-sm font-semibold text-gray-900 block mb-1 text-base"
-                              htmlFor="first-name"
-                            >
-                              What Can We Help You With ?
-                            </label>
-                            <select name="helps" onChange={e=>setService(e.target.value)} className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear">
-                              <option value="0" disabled selected>Select Ones ...</option>
-                              <option value="Consulting">Consulting</option>
-                              <option value="Accounting">Accounting</option>
-                              <option value="Payroll">Payroll</option>
-                              <option value="Tax">Income Tax Prep</option>
-                              <option value="Other">Other</option>
-                            </select>
-                          </div>
-                          <div className="mb-5">
-                            <label
-                              className="font-body text-sm font-semibold text-gray-900 block mb-1 text-base"
-                              htmlFor="first-name"
-                            >
-                              Message(Optional)
-                            </label>
-                            <textarea
-                              type="textarea"
-                              name="message"
-                             
-                              required={true}
-                              rows="5"
-                              className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
-                            />
-                          </div>
-                          <ButtonSolid
-                            type="submit"
-                            text="Send"
-                            altStyle={true}
-                            className="bg-primary-700 min-w-0 text-base w-1/3"
-                          />
-                        </div>
-                    </form>
+   
     </Layout>
   );
 };
