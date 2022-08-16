@@ -34,19 +34,19 @@ const StyledForm = styled.div`
 
 
 // export default class Form extends Component {
-//  const Form = () => {
+  const Form = () => {
   // constructor(props) {
   //   super(props);
   //   this.state = { isValidated: false };
   // }
 
-//  const [name, setName] = useState();
-//  const [number, setNumber] = useState();
-//  const [email, setEmail] = useState();
-//  const [service, setService] = useState();
-//  const [message, setMessage] = useState();
+  const [name, setName] = useState();
+  const [number, setNumber] = useState();
+  const [email, setEmail] = useState();
+  const [service, setService] = useState();
+  const [message, setMessage] = useState();
   
-//  const [bookCall, setBookCall] = useState(1);
+  const [bookCall, setBookCall] = useState(1);
   // const [isValidated, setIsValidated] = useState(false);
 
   // const handleChange = (e) => {
@@ -56,7 +56,7 @@ const StyledForm = styled.div`
   // useEffect = (() =>{
     
   // }, [bookCall])
- /* const handleSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
     fetch("/", {
@@ -81,12 +81,12 @@ const StyledForm = styled.div`
         })
       )
       .catch((error) => alert(error));
-  }; */
+  };
 
- // return (
-  //  <StyledForm>
-    //  { <div id="contact-form-ajax-response"></div>
-    /*  <form
+  return (
+    <StyledForm>
+      {/* <div id="contact-form-ajax-response"></div>
+      <form
         name="Contact"
         method="post"
         action=""
@@ -190,7 +190,7 @@ const StyledForm = styled.div`
         </div>
 
         <ButtonSolid type="submit" text="Send Message" />
-      </form> }*/
+      </form> */}
 
 
               <div className="pb-8 space-y-6 md:px-20 px-2">
@@ -213,12 +213,20 @@ const StyledForm = styled.div`
                   <>
                     <div id="contact-form-ajax-response"></div>
                     <form
-                      name="contact-form"
-                      method="POST"
+                      name="contact-us-form"
+                      method="post"
+                      action=""
                       data-netlify="true"
+                      onSubmit={handleSubmit}
                     >
-                     
-          
+                      {/* <input type="hidden" name="form-name" value="Contact" />
+                      <div hidden>
+                        <label>
+                          Don’t fill this out:{" "}
+                          <input name="bot-field" onChange={()=>handleChange()} />
+                        </label>
+                      </div> */}
+            
                         <div className="mb-8">
                           <div className="mb-5">
                             <label
@@ -230,7 +238,7 @@ const StyledForm = styled.div`
                             <input
                               type="text"
                               name="first-name"
-                             
+                              onChange={e=>setName(e.target.value)}
                               required={true}
                               className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
                             />
@@ -246,7 +254,7 @@ const StyledForm = styled.div`
                               <input
                                 type="tel"
                                 name="phone-number"
-                              
+                                onChange={e=>setNumber(e.target.value)}
                                 required={true}
                                 className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
                               />
@@ -261,7 +269,7 @@ const StyledForm = styled.div`
                               <input
                                 type="email"
                                 name="email-address"
-                               
+                                onChange={e=>setEmail(e.target.value)}
                                 required={true}
                                 className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
                               />
@@ -274,7 +282,7 @@ const StyledForm = styled.div`
                             >
                               What Can We Help You With ?
                             </label>
-                            <select name="service" className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear">
+                            <select name="helps" onChange={e=>setService(e.target.value)} className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear">
                               <option value="0" disabled selected>Select Ones ...</option>
                               <option value="Consulting">Consulting</option>
                               <option value="Accounting">Accounting</option>
@@ -293,14 +301,14 @@ const StyledForm = styled.div`
                             <textarea
                               type="textarea"
                               name="message"
-                             
+                              onChange={e=>setMessage(e.target.value)}
                               required={true}
                               rows="5"
                               className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
                             />
                           </div>
                           <ButtonSolid
-                            type="submit"
+                            // onClick={()}
                             text="Send"
                             altStyle={true}
                             className="bg-primary-700 min-w-0 text-base w-1/3"
@@ -316,8 +324,8 @@ const StyledForm = styled.div`
                       
               </div>
 
-//   </StyledForm>
-//  );
-//}
+    </StyledForm>
+  );
+}
 
 export default Form;
