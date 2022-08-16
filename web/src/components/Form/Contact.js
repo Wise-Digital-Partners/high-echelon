@@ -283,7 +283,7 @@ const StyledForm = styled.div`
                             >
                               What Can We Help You With ?
                             </label>
-                            <select name="helps" /*onChange={e=>setService(e.target.value)} */ className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear">
+                            <select name="service-option" /*onChange={e=>setService(e.target.value)} */ className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear">
                               <option value="0" disabled selected>Select Ones ...</option>
                               <option value="Consulting">Consulting</option>
                               <option value="Accounting">Accounting</option>
