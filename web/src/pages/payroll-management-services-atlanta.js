@@ -534,7 +534,7 @@ export const query = graphql`
     }
     
     payrollProfile: file(
-        relativePath: { eq: "4.0 Payroll/2.0 How can we help.jpg" }
+        relativePath: { eq: "4.0 Payroll/2.0 How we can help.jpg" }
     ) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
