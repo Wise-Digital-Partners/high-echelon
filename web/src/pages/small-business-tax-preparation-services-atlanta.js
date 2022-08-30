@@ -244,7 +244,7 @@ const Page = ({ data }) => {
                     <div className="hidden md:block md:w-1/2 mr-0 md:mr-20 md:mb-8 mb-8">
                       <GatsbyImage
                           image={
-                              data.serviceImage.childImageSharp.gatsbyImageData
+                              data.taxPrepImage.childImageSharp.gatsbyImageData
                           }
                           alt="Small Business Consulting"
                           className="rounded-[8px] w-full"
@@ -553,6 +553,14 @@ export const query = graphql`
         gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
       }
     }
+    
+    taxPrepImage: file(
+      relativePath: { eq: "5.0 Sm Business Tax Prep/2.0 How we can help.jpg" }
+  ) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
+    }
+  }
 
     incomeTaxDesktop: file(
       relativePath: { eq: "5.0 Sm Business Tax Prep/1.0 Hero desktop.jpg" }
