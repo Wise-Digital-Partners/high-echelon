@@ -542,7 +542,7 @@ export const query = graphql`
       publicURL
     }
     smallBusinessConsultingImage: file(
-      relativePath: { eq: "1.0 Homepage/3.0 How to get started.jpg" }
+      relativePath: { eq: "2.0 Business Consulting/3.0 How to get started.jpg" }
     ) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
