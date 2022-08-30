@@ -503,7 +503,7 @@ const Page = ({ data }) => {
 export const query = graphql`
   {
     serviceImage: file(
-        relativePath: { eq: "2.0 Business Consulting/2.0 Service pages.jpg" }
+        relativePath: { eq: "2.0 Business Consulting/2.0 How we can help.jpg" }
     ) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
@@ -542,7 +542,7 @@ export const query = graphql`
       publicURL
     }
     smallBusinessConsultingImage: file(
-      relativePath: { eq: "1.0 Homepage/3.0 Small Business desktop.jpg" }
+      relativePath: { eq: "1.0 Homepage/3.0 How to get started.jpg" }
     ) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
