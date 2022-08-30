@@ -232,7 +232,7 @@ const Page = ({ data }) => {
                     <div className="lg:w-1/2 md:w-full mr-0 md:mr-20 md:mb-8 sm:mb-8">
                         <GatsbyImage
                             image={
-                                data.accountingDesktop.childImageSharp.gatsbyImageData
+                                data.accountingGetStarted.childImageSharp.gatsbyImageData
                             }
                             alt="Small Business Consulting"
                             className="rounded-[8px] w-full"
@@ -530,6 +530,13 @@ export const query = graphql`
 
     accountingDesktop: file(
       relativePath: { eq: "3.0 Accounting Services/1.0 Hero desktop.jpg" }
+  ) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
+    }
+  }
+  accountingGetStarted: file(
+      relativePath: { eq: "3.0 Accounting Services/3.0 How to get started.jpg" }
   ) {
     childImageSharp {
       gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
