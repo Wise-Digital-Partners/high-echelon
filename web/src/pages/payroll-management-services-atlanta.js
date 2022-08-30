@@ -232,7 +232,7 @@ const Page = ({ data }) => {
                     <div className="hidden md:block md:w-1/2 mr-0 md:mr-20 md:mb-8 mb-8">
                       <GatsbyImage
                           image={
-                              data.accountingProfile.childImageSharp.gatsbyImageData
+                              data.payrollProfile.childImageSharp.gatsbyImageData
                           }
                           alt="Small Business Consulting"
                           className="rounded-[8px] w-full"
@@ -248,7 +248,7 @@ const Page = ({ data }) => {
                     <div className="lg:w-1/2 md:w-full mr-0 md:mr-20 md:mb-8 sm:mb-8">
                         <GatsbyImage
                             image={
-                                data.taxImage.childImageSharp.gatsbyImageData
+                                data.payrollImage.childImageSharp.gatsbyImageData
                             }
                             alt="Small Business Consulting"
                             className="rounded-[8px] w-full"
@@ -527,6 +527,22 @@ export const query = graphql`
   {
     accountingProfile: file(
         relativePath: { eq: "3.0 Accounting Services/2.0 Service pages.jpg" }
+    ) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
+      }
+    }
+    
+    payrollProfile: file(
+        relativePath: { eq: "4.0 Accounting Services/2.0 How can we help.jpg" }
+    ) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
+      }
+    }
+    
+    payrollImage: file(
+        relativePath: { eq: "4.0 Accounting Services/3.0 How to get started.jpg" }
     ) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
