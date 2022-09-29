@@ -7,12 +7,12 @@ import ButtonGhost from "../Button/ButtonGhost";
 const About = ({ className, headingLevel }) => {
   const data = useStaticQuery(graphql`
     {
-      aboutDesktop: file(relativePath: { eq: "repeating/about/Michelle B&W.png" }) {
+      aboutDesktop: file(relativePath: { eq: "repeating/about/michelle-frank-desktop.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED, width: 941)
         }
       }
-      aboutMobile: file(relativePath: { eq: "repeating/about/Michelle B&W mobile.jpg" }) {
+      aboutMobile: file(relativePath: { eq: "repeating/about/michelle-frank-mobile.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED, width: 941)
         }
