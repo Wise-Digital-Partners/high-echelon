@@ -381,6 +381,16 @@ const MainNav = ({
                         </a>
                       </button>
                     </li>
+                    <li>
+                      <button
+                        className="text-lg text-primary-200 hover:text-primary-100 no-underline cursor-pointer transition-colors duration-300 ease-linear"
+                      >
+                        <a href="https://app02.us.bill.com/p/highecheloncpa">
+                        <i className="fa fa-sign-in mr-2"></i>
+                        Pay Your Invoice
+                        </a>
+                      </button>
+                    </li>
                   </Accordion>
                 </ul>
 
