@@ -54,6 +54,16 @@ const UtilityNav = () => {
                 Client Portal
               </a>
             </div>
+            <div className="flex items-center">
+              <a
+                href="https://app02.us.bill.com/p/highecheloncpa"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-semibold text-white hover:text-primary-100"
+              >
+                Pay Your Invoice
+              </a>
+            </div>
           </div>
         </div>
       </div>
