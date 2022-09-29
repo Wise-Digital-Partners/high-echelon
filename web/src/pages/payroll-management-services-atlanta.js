@@ -581,14 +581,14 @@ export const query = graphql`
       publicURL
     }
     smallBusinessConsultingImage: file(
-      relativePath: { eq: "1.0 Homepage/3.0 Small Business desktop.jpg" }
+      relativePath: { eq: "1.0 Homepage/2.0 Business Consulting.png" }
     ) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
       }
     }
     accountServicesImage: file(
-      relativePath: { eq: "1.0 Homepage/3.1 Accounting Services desktop.jpg" }
+      relativePath: { eq: "1.0 Homepage/2.0 Accounting.png" }
     ) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
