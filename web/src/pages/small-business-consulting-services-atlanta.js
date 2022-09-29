@@ -549,7 +549,7 @@ export const query = graphql`
       }
     }
     accountServicesImage: file(
-      relativePath: { eq: "1.0 Homepage/3.1 Accounting Services desktop.jpg" }
+      relativePath: { eq: "1.0 Homepage/2.0 Accounting.png" }
     ) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
