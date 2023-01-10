@@ -1,10 +1,10 @@
 {
   "root": true,
   "project": {
-    "name": "MacAsh Home Loans"
+    "name": "High Echelon"
   },
   "api": {
-    "projectId": "p2ef4aje",
+    "projectId": "04s29mvf",
     "dataset": "production"
   },
   "plugins": [
