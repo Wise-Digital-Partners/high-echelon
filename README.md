@@ -1,4 +1,4 @@
-# MacAsh Home Loans
+# High Echelon
 
 _Fully customizable blog template with a React.js front-end._
 
