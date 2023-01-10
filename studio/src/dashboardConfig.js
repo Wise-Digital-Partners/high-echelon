@@ -13,16 +13,16 @@ export default {
               sites: [
                 {
                   buildHookId:
-                    "6154a15032a9a209e3adf5ae",
+                    "63bdf1786db87e09e94e33d8",
                   title: "Sanity Studio",
-                  name: "macash-home-loans-studio",
-                  apiId: "8e75f63d-32fb-4460-b60f-cc2309d1ef3b",
+                  name: "high-echelon-cms",
+                  apiId: "8cfcae62-549a-47f9-9ae0-168625d76dac",
                 },
                 {
-                  buildHookId: "6154a150d5ca3f00aac18ea2",
-                  title: "Blog Website",
-                  name: "macash-home-loans",
-                  apiId: "b4b5c3c2-7d8c-489f-912a-97e685d67b41",
+                  buildHookId: "63bdf1eb4d4f84089d5ee9ed",
+                  title: "Website",
+                  name: "high-echelon",
+                  apiId: "7de97307-b99d-412a-8ab5-a738a3c8eac6",
                 },
               ],
             },
