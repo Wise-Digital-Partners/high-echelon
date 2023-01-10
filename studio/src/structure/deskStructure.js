@@ -1,6 +1,19 @@
 import S from "@sanity/desk-tool/structure-builder";
 import { MdSettings } from "react-icons/md";
 import { MdPerson, MdDescription, MdLocalOffer } from "react-icons/md";
+import {
+  FcDocument,
+  FcReading,
+  FcStart,
+  FcGlobe,
+  FcRating,
+  FcList,
+  FcAudioFile,
+  FcSalesPerformance,
+  FcConferenceCall,
+  FcGoogle,
+  FcTemplate,
+} from "react-icons/fc";
 import IframePreview from "../previews/IframePreview";
 
 // Web preview configuration
@@ -68,6 +81,19 @@ export default () =>
         .icon(MdLocalOffer)
         .schemaType("category")
         .child(S.documentTypeList("category").title("Categories")),
+      S.listItem()
+        .title("Review Platforms")
+        .icon(FcGoogle)
+        .schemaType("reviewPlatform")
+        .child(S.documentTypeList("reviewPlatform").title("Review Platforms")),
+      S.listItem()
+        .title("Reviews")
+        .icon(FcRating)
+        .schemaType("review")
+        .child(S.documentTypeList("review").title("Reviews")),
+
+        
+        
       // `S.documentTypeListItems()` returns an array of all the document types
       // defined in schema.js. We filter out those that we have
       // defined the structure above.

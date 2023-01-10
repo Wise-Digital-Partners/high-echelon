@@ -49,14 +49,14 @@ const Page = ({ data }) => {
               Don’t just take our word for it—hear feedback directly from our clients.
             </p>
 
-            <ButtonSolidGold href="/reviews/" text="Leave a Review" />
+            <ButtonSolidGold href="/review-us/" text="Leave a Review" />
           </div>
         </Hero>
       </section>
       <section className="block md:hidden bg-primary-700 px-4">
         
           <div className="flex justify-center items-center flex-col text-white pt-10 pb-14">
-            <h1 className="mb-6 text-white">Testimonials</h1>
+            <h1 className="mb-6 font-light text-white">Testimonials</h1>
             <p className="text-base text-center">
               Don’t just take our word for it—hear feedback directly from our clients.
             </p>
@@ -70,9 +70,9 @@ const Page = ({ data }) => {
           <ReviewsGrid gridLayout="masonry" />
         </div>
       </section>
-      <svg className="w-full" width="1200" height="3" viewBox="0 0 1200 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5h1200" stroke="url(#paint0_linear_1129_1425)" stroke-width="3"/><defs><linearGradient id="paint0_linear_1129_1425" x1="0" y1="2.00435" x2="1182.95" y2="1.96651" gradientUnits="userSpaceOnUse"><stop stop-color="#A2A09D" stop-opacity="0"/><stop offset=".145833" stop-color="#FCE4A7"/><stop offset=".265625" stop-color="#CFA855"/><stop offset=".427083" stop-color="#FCE4A7"/><stop offset=".578125" stop-color="#F0D592"/><stop offset=".713542" stop-color="#FCE4A7"/><stop offset=".828125" stop-color="#CB9636"/><stop offset="1" stop-color="#A7A7A7" stop-opacity="0"/></linearGradient></defs></svg>
+      <svg className="w-full" width="1200" height="3" viewBox="0 0 1200 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5h1200" stroke="url(#paint0_linear_1129_1425)" stroke-width="3" /><defs><linearGradient id="paint0_linear_1129_1425" x1="0" y1="2.00435" x2="1182.95" y2="1.96651" gradientUnits="userSpaceOnUse"><stop stop-color="#A2A09D" stop-opacity="0" /><stop offset=".145833" stop-color="#FCE4A7" /><stop offset=".265625" stop-color="#CFA855" /><stop offset=".427083" stop-color="#FCE4A7" /><stop offset=".578125" stop-color="#F0D592" /><stop offset=".713542" stop-color="#FCE4A7" /><stop offset=".828125" stop-color="#CB9636" /><stop offset="1" stop-color="#A7A7A7" stop-opacity="0" /></linearGradient></defs></svg>
       <CallToAction />
-      <svg className="w-full" width="1200" height="3" viewBox="0 0 1200 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5h1200" stroke="url(#paint0_linear_1129_1425)" stroke-width="3"/><defs><linearGradient id="paint0_linear_1129_1425" x1="0" y1="2.00435" x2="1182.95" y2="1.96651" gradientUnits="userSpaceOnUse"><stop stop-color="#A2A09D" stop-opacity="0"/><stop offset=".145833" stop-color="#FCE4A7"/><stop offset=".265625" stop-color="#CFA855"/><stop offset=".427083" stop-color="#FCE4A7"/><stop offset=".578125" stop-color="#F0D592"/><stop offset=".713542" stop-color="#FCE4A7"/><stop offset=".828125" stop-color="#CB9636"/><stop offset="1" stop-color="#A7A7A7" stop-opacity="0"/></linearGradient></defs></svg>
+      <svg className="w-full" width="1200" height="3" viewBox="0 0 1200 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5h1200" stroke="url(#paint0_linear_1129_1425)" stroke-width="3" /><defs><linearGradient id="paint0_linear_1129_1425" x1="0" y1="2.00435" x2="1182.95" y2="1.96651" gradientUnits="userSpaceOnUse"><stop stop-color="#A2A09D" stop-opacity="0" /><stop offset=".145833" stop-color="#FCE4A7" /><stop offset=".265625" stop-color="#CFA855" /><stop offset=".427083" stop-color="#FCE4A7" /><stop offset=".578125" stop-color="#F0D592" /><stop offset=".713542" stop-color="#FCE4A7" /><stop offset=".828125" stop-color="#CB9636" /><stop offset="1" stop-color="#A7A7A7" stop-opacity="0" /></linearGradient></defs></svg>
       
       {/* <div id="bottom-right-modal" data-modal-placement="bottom-right" tabindex="-1" className="h-full fade hidden overflow-y-auto overflow-x-hidden bg-white fixed top-0 right-0 right-0 z-50 w-full md:w-1/2 h-modal md:h-full">
         <div className="relative w-full h-full md:h-auto">
