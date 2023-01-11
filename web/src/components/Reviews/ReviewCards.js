@@ -1,133 +1,87 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
-import styled from "@emotion/styled";
 
-const ReviewCards = ({ gridLayout }) => {
-  const StyledReviewCards = styled.div`
-    .masonry-item {
-      @media (min-width: 768px) {
-        width: calc(50% - 1.5rem);
-      }
-      @media (min-width: 1024px) {
-        width: calc(50% - 2.5rem);
-      }
-    }
-  `;
+import { mapEdgesToNodes } from "../../lib/helpers";
+
+const ReviewCards = () => {
   const data = useStaticQuery(graphql`
     {
       yelp: file(relativePath: { eq: "reviews/yelp.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, width: 70)
+          gatsbyImageData(layout: FIXED, width: 74)
         }
       }
       google: file(relativePath: { eq: "reviews/google.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, width: 86)
+          gatsbyImageData(layout: FIXED, width: 85)
         }
       }
       facebook: file(relativePath: { eq: "reviews/facebook.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, width: 110)
+          gatsbyImageData(layout: FIXED, width: 123)
         }
       }
-      zillow: file(relativePath: { eq: "reviews/zillow.png" }) {
-        childImageSharp {
-          gatsbyImageData(layout: FIXED, width: 88)
+reviews: allSanityReview(sort: { fields: [date], order: DESC }) {
+        edges {
+          node {
+            review
+            name
+            platform {
+              title
+            }
+          }
         }
-      }
-      headshot: file(relativePath: { eq: "reviews/user.svg" }) {
-        publicURL
       }
     }
   `);
 
-  let gridItemClass = null;
-
-  if (gridLayout === "masonry") {
-    gridItemClass = "masonry-item";
-  } else {
-    gridItemClass = "grid-item";
-  }
-
-  const reviews = [
-    {
-      name: "User Name",
-      platform: data.google.childImageSharp.gatsbyImageData,
-      quote:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus",
-    },
-    {
-      name: "User Name",
-      platform: data.facebook.childImageSharp.gatsbyImageData,
-      quote:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor entum facilisis leo, vel fringilla",
-    },
-    {
-      name: "User Name",
-      platform: data.facebook.childImageSharp.gatsbyImageData,
-      quote:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis mentum facilisis fringilla.",
-    },
-    {
-      name: "User Name",
-      platform: data.yelp.childImageSharp.gatsbyImageData,
-      quote:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor entum facilisis leo, vel fringilla",
-    },
-    {
-      name: "User Name",
-      platform: data.yelp.childImageSharp.gatsbyImageData,
-      quote:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis mentum facilisis fringilla.",
-    },
-    {
-      name: "User Name",
-      platform: data.google.childImageSharp.gatsbyImageData,
-      quote:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus",
-    },
-  ];
+  const reviewNodes = (data || {}).reviews ? mapEdgesToNodes(data.reviews) : [];
 
   return (
-    <StyledReviewCards>
-      {reviews.map((review, i) => {
+    <>
+      {reviewNodes.map((review, i) => {
         return (
           <div
-            className={`w-full bg-white shadow-2xl rounded-lg mb-8 md:mb-10 p-6 md:py-8 md:px-7 md:mx-3 lg:mx-5 ${gridItemClass}`}
+            className="break-inside w-full bg-black rounded-lg mb-8 md:mb-10 py-8 md:py-12 px-6 md:px-8"
             key={i}
           >
             <div className="flex justify-between items-center mb-5">
               <div className="flex items-center">
-                <img
-                  className="rounded-full"
-                  src={review.headshot || data.headshot.publicURL}
-                  alt="User Headshot"
-                  width="40"
-                />
                 <div className="ml-3.5">
-                  <span className="font-semibold text-gray-600">
+                  <span className="text-primary-50 font-bold">
                     {review.name}
                   </span>
                 </div>
               </div>
-              <div className="hidden md:block">
+
+              {review.platform.title === "Google" && (
                 <GatsbyImage
-                  image={review.platform}
-                  alt="Social platform logo"
+                  image={data.google.childImageSharp.gatsbyImageData}
                 />
-              </div>
+              )}
+
+              {review.platform.title === "Yelp" && (
+                <GatsbyImage
+                  image={data.yelp.childImageSharp.gatsbyImageData}
+                />
+              )}
+
+              {review.platform.title === "Facebook" && (
+                <GatsbyImage
+                  image={data.facebook.childImageSharp.gatsbyImageData}
+                />
+              )}
             </div>
             <blockquote>
-              <q className="block mb-6 md:mb-0 before:hidden">{review.quote}</q>
+              <q className="block mb-0 font-normal before:hidden">
+                {review.review}
+              </q>
             </blockquote>
-            <div className="block md:hidden">
-              <GatsbyImage image={review.platform} alt="Social platform logo" />
-            </div>
           </div>
         );
       })}
-    </StyledReviewCards>
+    </>
   );
 };
 

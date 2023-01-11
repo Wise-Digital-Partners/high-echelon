@@ -15,7 +15,6 @@
 exports.ssrComponents = {
   "component---cache-dev-404-page-js": preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js")),
   "component---src-pages-index-js": preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js")),
-  "component---src-pages-review-us-js": preferDefault(__webpack_require__(/*! ./src/pages/review-us.js */ "./src/pages/review-us.js")),
   "component---src-pages-reviews-js": preferDefault(__webpack_require__(/*! ./src/pages/reviews.js */ "./src/pages/reviews.js"))
   }
 
@@ -6955,6 +6954,138 @@ module.exports = factory(
 
 /***/ }),
 
+/***/ "./node_modules/date-fns/esm/_lib/requiredArgs/index.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/date-fns/esm/_lib/requiredArgs/index.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ requiredArgs)
+/* harmony export */ });
+function requiredArgs(required, args) {
+  if (args.length < required) {
+    throw new TypeError(required + ' argument' + (required > 1 ? 's' : '') + ' required, but only ' + args.length + ' present');
+  }
+}
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/isFuture/index.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/date-fns/esm/isFuture/index.js ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ isFuture)
+/* harmony export */ });
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+/* harmony import */ var _lib_requiredArgs_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_lib/requiredArgs/index.js */ "./node_modules/date-fns/esm/_lib/requiredArgs/index.js");
+
+
+/**
+ * @name isFuture
+ * @category Common Helpers
+ * @summary Is the given date in the future?
+ * @pure false
+ *
+ * @description
+ * Is the given date in the future?
+ *
+ * > ⚠️ Please note that this function is not present in the FP submodule as
+ * > it uses `Date.now()` internally hence impure and can't be safely curried.
+ *
+ * @param {Date|Number} date - the date to check
+ * @returns {Boolean} the date is in the future
+ * @throws {TypeError} 1 argument required
+ *
+ * @example
+ * // If today is 6 October 2014, is 31 December 2014 in the future?
+ * const result = isFuture(new Date(2014, 11, 31))
+ * //=> true
+ */
+
+function isFuture(dirtyDate) {
+  (0,_lib_requiredArgs_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(1, arguments);
+  return (0,_toDate_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(dirtyDate).getTime() > Date.now();
+}
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/toDate/index.js":
+/*!***************************************************!*\
+  !*** ./node_modules/date-fns/esm/toDate/index.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ toDate)
+/* harmony export */ });
+/* harmony import */ var _lib_requiredArgs_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_lib/requiredArgs/index.js */ "./node_modules/date-fns/esm/_lib/requiredArgs/index.js");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+
+/**
+ * @name toDate
+ * @category Common Helpers
+ * @summary Convert the given argument to an instance of Date.
+ *
+ * @description
+ * Convert the given argument to an instance of Date.
+ *
+ * If the argument is an instance of Date, the function returns its clone.
+ *
+ * If the argument is a number, it is treated as a timestamp.
+ *
+ * If the argument is none of the above, the function returns Invalid Date.
+ *
+ * **Note**: *all* Date arguments passed to any *date-fns* function is processed by `toDate`.
+ *
+ * @param {Date|Number} argument - the value to convert
+ * @returns {Date} the parsed date in the local time zone
+ * @throws {TypeError} 1 argument required
+ *
+ * @example
+ * // Clone the date:
+ * const result = toDate(new Date(2014, 1, 11, 11, 30, 30))
+ * //=> Tue Feb 11 2014 11:30:30
+ *
+ * @example
+ * // Convert the timestamp to date:
+ * const result = toDate(1392098430000)
+ * //=> Tue Feb 11 2014 11:30:30
+ */
+
+function toDate(argument) {
+  (0,_lib_requiredArgs_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(1, arguments);
+  var argStr = Object.prototype.toString.call(argument); // Clone the date
+
+  if (argument instanceof Date || _typeof(argument) === 'object' && argStr === '[object Date]') {
+    // Prevent the date to lose the milliseconds when passed to new Date() in IE10
+    return new Date(argument.getTime());
+  } else if (typeof argument === 'number' || argStr === '[object Number]') {
+    return new Date(argument);
+  } else {
+    if ((typeof argument === 'string' || argStr === '[object String]') && typeof console !== 'undefined') {
+      // eslint-disable-next-line no-console
+      console.warn("Starting with v2.0.0-beta.1 date-fns doesn't accept strings as date arguments. Please use `parseISO` to parse strings. See: https://github.com/date-fns/date-fns/blob/master/docs/upgradeGuide.md#string-arguments"); // eslint-disable-next-line no-console
+
+      console.warn(new Error().stack);
+    }
+
+    return new Date(NaN);
+  }
+}
+
+/***/ }),
+
 /***/ "./node_modules/decode-uri-component/index.js":
 /*!****************************************************!*\
   !*** ./node_modules/decode-uri-component/index.js ***!
@@ -10411,7 +10542,7 @@ var plugins = [{
   plugin: __webpack_require__(/*! ./node_modules/gatsby-source-sanity/gatsby-ssr */ "./node_modules/gatsby-source-sanity/gatsby-ssr.js"),
   options: {
     "plugins": [],
-    "projectId": "p2ef4aje",
+    "projectId": "04s29mvf",
     "dataset": "production",
     "watchMode": true,
     "overlayDrafts": true
@@ -18996,7 +19127,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _public_page_data_sq_d_3890593176_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/3890593176.json */ "./public/page-data/sq/d/3890593176.json");
+/* harmony import */ var _public_page_data_sq_d_3441712063_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/3441712063.json */ "./public/page-data/sq/d/3441712063.json");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _hooks__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../hooks */ "./src/hooks.js");
@@ -19042,6 +19173,13 @@ const MainNav = ({
   // const [modalState, setModalState] = useState(false);
   const isHoveringSubMenu1 = () => setSubMenuHovering1(true);
   const notHoveringSubMenu1 = () => setSubMenuHovering1(false);
+  const {
+    0: subMenuHovering2,
+    1: setSubMenuHovering2
+  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
+  // const [modalState, setModalState] = useState(false);
+  const isHoveringSubMenu2 = () => setSubMenuHovering2(true);
+  const notHoveringSubMenu2 = () => setSubMenuHovering2(false);
 
   // handle click of navigation items
   const clickHandler = () => {
@@ -19065,7 +19203,7 @@ const MainNav = ({
   // close offcanvas onclick outside
   const node = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)();
   (0,_hooks__WEBPACK_IMPORTED_MODULE_2__.useOnClickOutside)(node, () => setOffcanvasOpen(false));
-  const data = _public_page_data_sq_d_3890593176_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const data = _public_page_data_sq_d_3441712063_json__WEBPACK_IMPORTED_MODULE_0__.data;
 
   // Define logos based on header style
   let initialLogo = null,
@@ -19112,6 +19250,9 @@ const MainNav = ({
     about: [{
       name: "About",
       href: "/about/"
+    }, {
+      name: "Reviews",
+      href: "/reviews/"
     }]
   };
   return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("nav", {
@@ -19197,12 +19338,27 @@ const MainNav = ({
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("p", {
     className: "mb-0"
   }, item.name)))))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("li", {
-    className: "group"
+    className: "relative",
+    role: "presentation",
+    onMouseEnter: isHoveringSubMenu2,
+    onMouseLeave: notHoveringSubMenu2
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
     fade: true,
     to: "/about/",
-    className: `font-body relative text-base font-semibold pb-8 after:absolute after:bottom-6 after:left-auto hover:after:left-0 after:right-0 hover:after:right-auto after:w-0 hover:after:w-full after:h-1 after:bg-primary-100 after:transition-all after:duration-300 after:ease-linear ${scrolled && "text-gray-900"} ${headerLinkColor === "white" ? "text-white" : "text-gray-900"} ${headerDarkMode && "lg:!text-gray-900"}`
-  }, "About")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("li", {
+    className: `font-body relative text-base font-semibold pb-8 after:absolute after:bottom-6 after:h-1 after:bg-primary-100 after:transition-all after:duration-300 after:ease-linear ${subMenuHovering2 ? "after:w-full after:left-0 after:right-auto" : "after:w-0 after:left-auto after:right-0"} ${scrolled && "text-gray-900"} ${headerLinkColor === "white" ? "text-gray-900" : "text-white"} ${headerDarkMode && "lg:!text-gray-900"}`
+  }, "About"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("div", {
+    className: `absolute top-0 bg-white shadow-3xl w-auto transform -translate-x-8 p-10 z-10 transition-all duration-300 ease-linear ${subMenuHovering2 ? " visible translate-y-14 opacity-100" : "invisible translate-y-20 opacity-0"}`
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("div", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("ul", {
+    className: "flex flex-col space-y-5"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("li", {
+    className: "whitespace-nowrap"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    fade: true,
+    to: "/reviews/",
+    className: "group inline-flex items-center justify-between w-full relative text-black hover:text-primary-100"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("p", {
+    className: "mb-0"
+  }, "Reviews"))))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("li", {
     className: "group"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)(_Button_ButtonSolid__WEBPACK_IMPORTED_MODULE_6__["default"], {
     onClick: clickHandler,
@@ -19249,13 +19405,24 @@ const MainNav = ({
     fade: true,
     to: item.href,
     className: "relative block text-primary-200 hover:text-primary-100"
-  }, item.name))))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("li", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, item.name))))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("li", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_accessible_accordion__WEBPACK_IMPORTED_MODULE_10__.AccordionItem, {
+    uuid: 2
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_accessible_accordion__WEBPACK_IMPORTED_MODULE_10__.AccordionItemButton, {
+    className: "flex items-center focus:outline-none"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("p", {
+    className: "text-lg text-primary-200 hover:text-primary-100 no-underline mb-4 transition-colors duration-300 ease-linear"
+  }, "About")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_accessible_accordion__WEBPACK_IMPORTED_MODULE_10__.AccordionItemPanel, {
+    className: "pt-6"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("ul", {
+    className: "flex flex-col space-y-3"
+  }, navigation.about.slice(0).map(item => (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("li", {
+    key: item.name,
+    className: "whitespace-nowrap"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)(gatsby_plugin_transition_link_AniLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
     fade: true,
-    to: "/about/",
-    onKeyDown: clickHandler,
-    onClick: clickHandler,
-    className: "text-lg text-primary-200 hover:text-primary-100 no-underline transition-colors duration-300 ease-linear pt-3"
-  }, "About")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("li", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("button", {
+    to: item.href,
+    className: "relative block text-primary-200 hover:text-primary-100"
+  }, item.name))))))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("li", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("button", {
     className: "text-lg text-primary-200 hover:text-primary-100 no-underline cursor-pointer transition-colors duration-300 ease-linear"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_11__.jsx)("a", {
     href: "https://highecheloncpa.smartvault.com"
@@ -19870,92 +20037,41 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @emotion/styled/base */ "./node_modules/@emotion/styled/base/dist/emotion-styled-base.esm.js");
-/* harmony import */ var _public_page_data_sq_d_3740177093_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../public/page-data/sq/d/3740177093.json */ "./public/page-data/sq/d/3740177093.json");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _public_page_data_sq_d_3386229893_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/3386229893.json */ "./public/page-data/sq/d/3386229893.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
+/* harmony import */ var _lib_helpers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../lib/helpers */ "./src/lib/helpers.js");
 /* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.esm.js");
 
-function _EMOTION_STRINGIFIED_CSS_ERROR__() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 
 
 
 
-const ReviewCards = ({
-  gridLayout
-}) => {
-  const StyledReviewCards = /*#__PURE__*/(0,_emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__["default"])("div",  false ? 0 : {
-    target: "e1n9cc250",
-    label: "StyledReviewCards"
-  })( false ? 0 : {
-    name: "1dky2ap",
-    styles: ".masonry-item{@media (min-width: 768px){width:calc(50% - 1.5rem);}@media (min-width: 1024px){width:calc(50% - 2.5rem);}}",
-    map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcQmFzXFxEb2N1bWVudHNcXFdJU0VfRElHSVRBTF9QQVJUTkVSU1xccmVwb3NcXGhpZ2gtZWNoZWxvblxcd2ViXFxzcmNcXGNvbXBvbmVudHNcXFJldmlld3NcXFJldmlld0NhcmRzLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQU1zQyIsImZpbGUiOiJDOlxcVXNlcnNcXEJhc1xcRG9jdW1lbnRzXFxXSVNFX0RJR0lUQUxfUEFSVE5FUlNcXHJlcG9zXFxoaWdoLWVjaGVsb25cXHdlYlxcc3JjXFxjb21wb25lbnRzXFxSZXZpZXdzXFxSZXZpZXdDYXJkcy5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIjtcclxuaW1wb3J0IHsgdXNlU3RhdGljUXVlcnksIGdyYXBocWwgfSBmcm9tIFwiZ2F0c2J5XCI7XHJcbmltcG9ydCB7IEdhdHNieUltYWdlIH0gZnJvbSBcImdhdHNieS1wbHVnaW4taW1hZ2VcIjtcclxuaW1wb3J0IHN0eWxlZCBmcm9tIFwiQGVtb3Rpb24vc3R5bGVkXCI7XHJcblxyXG5jb25zdCBSZXZpZXdDYXJkcyA9ICh7IGdyaWRMYXlvdXQgfSkgPT4ge1xyXG4gIGNvbnN0IFN0eWxlZFJldmlld0NhcmRzID0gc3R5bGVkLmRpdmBcclxuICAgIC5tYXNvbnJ5LWl0ZW0ge1xyXG4gICAgICBAbWVkaWEgKG1pbi13aWR0aDogNzY4cHgpIHtcclxuICAgICAgICB3aWR0aDogY2FsYyg1MCUgLSAxLjVyZW0pO1xyXG4gICAgICB9XHJcbiAgICAgIEBtZWRpYSAobWluLXdpZHRoOiAxMDI0cHgpIHtcclxuICAgICAgICB3aWR0aDogY2FsYyg1MCUgLSAyLjVyZW0pO1xyXG4gICAgICB9XHJcbiAgICB9XHJcbiAgYDtcclxuICBjb25zdCBkYXRhID0gdXNlU3RhdGljUXVlcnkoZ3JhcGhxbGBcclxuICAgIHtcclxuICAgICAgeWVscDogZmlsZShyZWxhdGl2ZVBhdGg6IHsgZXE6IFwicmV2aWV3cy95ZWxwLnBuZ1wiIH0pIHtcclxuICAgICAgICBjaGlsZEltYWdlU2hhcnAge1xyXG4gICAgICAgICAgZ2F0c2J5SW1hZ2VEYXRhKGxheW91dDogRklYRUQsIHdpZHRoOiA3MClcclxuICAgICAgICB9XHJcbiAgICAgIH1cclxuICAgICAgZ29vZ2xlOiBmaWxlKHJlbGF0aXZlUGF0aDogeyBlcTogXCJyZXZpZXdzL2dvb2dsZS5wbmdcIiB9KSB7XHJcbiAgICAgICAgY2hpbGRJbWFnZVNoYXJwIHtcclxuICAgICAgICAgIGdhdHNieUltYWdlRGF0YShsYXlvdXQ6IEZJWEVELCB3aWR0aDogODYpXHJcbiAgICAgICAgfVxyXG4gICAgICB9XHJcbiAgICAgIGZhY2Vib29rOiBmaWxlKHJlbGF0aXZlUGF0aDogeyBlcTogXCJyZXZpZXdzL2ZhY2Vib29rLnBuZ1wiIH0pIHtcclxuICAgICAgICBjaGlsZEltYWdlU2hhcnAge1xyXG4gICAgICAgICAgZ2F0c2J5SW1hZ2VEYXRhKGxheW91dDogRklYRUQsIHdpZHRoOiAxMTApXHJcbiAgICAgICAgfVxyXG4gICAgICB9XHJcbiAgICAgIHppbGxvdzogZmlsZShyZWxhdGl2ZVBhdGg6IHsgZXE6IFwicmV2aWV3cy96aWxsb3cucG5nXCIgfSkge1xyXG4gICAgICAgIGNoaWxkSW1hZ2VTaGFycCB7XHJcbiAgICAgICAgICBnYXRzYnlJbWFnZURhdGEobGF5b3V0OiBGSVhFRCwgd2lkdGg6IDg4KVxyXG4gICAgICAgIH1cclxuICAgICAgfVxyXG4gICAgICBoZWFkc2hvdDogZmlsZShyZWxhdGl2ZVBhdGg6IHsgZXE6IFwicmV2aWV3cy91c2VyLnN2Z1wiIH0pIHtcclxuICAgICAgICBwdWJsaWNVUkxcclxuICAgICAgfVxyXG4gICAgfVxyXG4gIGApO1xyXG5cclxuICBsZXQgZ3JpZEl0ZW1DbGFzcyA9IG51bGw7XHJcblxyXG4gIGlmIChncmlkTGF5b3V0ID09PSBcIm1hc29ucnlcIikge1xyXG4gICAgZ3JpZEl0ZW1DbGFzcyA9IFwibWFzb25yeS1pdGVtXCI7XHJcbiAgfSBlbHNlIHtcclxuICAgIGdyaWRJdGVtQ2xhc3MgPSBcImdyaWQtaXRlbVwiO1xyXG4gIH1cclxuXHJcbiAgY29uc3QgcmV2aWV3cyA9IFtcclxuICAgIHtcclxuICAgICAgbmFtZTogXCJVc2VyIE5hbWVcIixcclxuICAgICAgcGxhdGZvcm06IGRhdGEuZ29vZ2xlLmNoaWxkSW1hZ2VTaGFycC5nYXRzYnlJbWFnZURhdGEsXHJcbiAgICAgIHF1b3RlOlxyXG4gICAgICAgIFwiTG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdCB1dCBhbGlxdWFtLCBwdXJ1cyBzaXQgYW1ldCBsdWN0dXMgdmVuZW5hdGlzLCBsZWN0dXMgbWFnbmEgZnJpbmdpbGxhIHVybmEsIHBvcnR0aXRvciByaG9uY3VzIGRvbG9yIHB1cnVzIG5vbiBlbmltIHByYWVzZW50IGVsZW1lbnR1bSBmYWNpbGlzaXMgbGVvLCB2ZWwgZnJpbmdpbGxhIGVzdCB1bGxhbWNvcnBlciBlZ2V0IG51bGxhIGZhY2lsaXNpIGV0aWFtIGRpZ25pc3NpbSBkaWFtIHF1aXMgZW5pbSBsb2JvcnRpcyBzY2VsZXJpc3F1ZSBmZXJtZW50dW0gZHVpIGZhdWNpYnVzIGluIG9ybmFyZSBxdWFtIHZpdmVycmEgb3JjaSBzYWdpdHRpcyBldSB2b2x1dHBhdCBvZGlvIGZhY2lsaXNpcyBtYXVyaXMgc2l0IGFtZXQgbWFzc2Egdml0YWUgdG9ydG9yIGNvbmRpbWVudHVtIGxhY2luaWEgcXVpcyB2ZWwgZXJvcyBkb25lYyBhYyBvZGlvIHRlbXBvciBvcmNpIGRhcGlidXMgdWx0cmljZXMgaW4gaWFjdWxpcyBudW5jIHNlZCBhdWd1ZSBsYWN1c1wiLFxyXG4gICAgfSxcclxuICAgIHtcclxuICAgICAgbmFtZTogXCJVc2VyIE5hbWVcIixcclxuICAgICAgcGxhdGZvcm06IGRhdGEuZmFjZWJvb2suY2hpbGRJbWFnZVNoYXJwLmdhdHNieUltYWdlRGF0YSxcclxuICAgICAgcXVvdGU6XHJcbiAgICAgICAgXCJMb3JlbSBpcHN1bSBkb2xvciBzaXQgYW1ldCwgY29uc2VjdGV0dXIgYWRpcGlzY2luZyBlbGl0IHV0IGFsaXF1YW0sIHB1cnVzIHNpdCBhbWV0IGx1Y3R1cyB2ZW5lbmF0aXMsIGxlY3R1cyBtYWduYSBmcmluZ2lsbGEgdXJuYSwgcG9ydHRpdG9yIGVudHVtIGZhY2lsaXNpcyBsZW8sIHZlbCBmcmluZ2lsbGFcIixcclxuICAgIH0sXHJcbiAgICB7XHJcbiAgICAgIG5hbWU6IFwiVXNlciBOYW1lXCIsXHJcbiAgICAgIHBsYXRmb3JtOiBkYXRhLmZhY2Vib29rLmNoaWxkSW1hZ2VTaGFycC5nYXRzYnlJbWFnZURhdGEsXHJcbiAgICAgIHF1b3RlOlxyXG4gICAgICAgIFwiTG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdCB1dCBhbGlxdWFtLCBwdXJ1cyBzaXQgYW1ldCBsdWN0dXMgdmVuZW5hdGlzLCBsZWN0dXMgbWFnbmEgZnJpbmdpbGxhIHVybmEsIHBvcnR0aXRvciByaG9uY3VzIGRvbG9yIHB1cnVzIG5vbiBlbmltIHByYWVzZW50IGVsZW1lbnR1bSBmYWNpbGlzaXMgbGVvLCB2ZWwgZnJpbmdpbGxhIGVzdCB1bGxhbWNvcnBlciBlZ2V0IG51bGxhIGZhY2lsaXNpIGV0aWFtIGRpZ25pc3NpbSBkaWFtIHF1aXMgbWVudHVtIGZhY2lsaXNpcyBmcmluZ2lsbGEuXCIsXHJcbiAgICB9LFxyXG4gICAge1xyXG4gICAgICBuYW1lOiBcIlVzZXIgTmFtZVwiLFxyXG4gICAgICBwbGF0Zm9ybTogZGF0YS55ZWxwLmNoaWxkSW1hZ2VTaGFycC5nYXRzYnlJbWFnZURhdGEsXHJcbiAgICAgIHF1b3RlOlxyXG4gICAgICAgIFwiTG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdCB1dCBhbGlxdWFtLCBwdXJ1cyBzaXQgYW1ldCBsdWN0dXMgdmVuZW5hdGlzLCBsZWN0dXMgbWFnbmEgZnJpbmdpbGxhIHVybmEsIHBvcnR0aXRvciBlbnR1bSBmYWNpbGlzaXMgbGVvLCB2ZWwgZnJpbmdpbGxhXCIsXHJcbiAgICB9LFxyXG4gICAge1xyXG4gICAgICBuYW1lOiBcIlVzZXIgTmFtZVwiLFxyXG4gICAgICBwbGF0Zm9ybTogZGF0YS55ZWxwLmNoaWxkSW1hZ2VTaGFycC5nYXRzYnlJbWFnZURhdGEsXHJcbiAgICAgIHF1b3RlOlxyXG4gICAgICAgIFwiTG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdCB1dCBhbGlxdWFtLCBwdXJ1cyBzaXQgYW1ldCBsdWN0dXMgdmVuZW5hdGlzLCBsZWN0dXMgbWFnbmEgZnJpbmdpbGxhIHVybmEsIHBvcnR0aXRvciByaG9uY3VzIGRvbG9yIHB1cnVzIG5vbiBlbmltIHByYWVzZW50IGVsZW1lbnR1bSBmYWNpbGlzaXMgbGVvLCB2ZWwgZnJpbmdpbGxhIGVzdCB1bGxhbWNvcnBlciBlZ2V0IG51bGxhIGZhY2lsaXNpIGV0aWFtIGRpZ25pc3NpbSBkaWFtIHF1aXMgbWVudHVtIGZhY2lsaXNpcyBmcmluZ2lsbGEuXCIsXHJcbiAgICB9LFxyXG4gICAge1xyXG4gICAgICBuYW1lOiBcIlVzZXIgTmFtZVwiLFxyXG4gICAgICBwbGF0Zm9ybTogZGF0YS5nb29nbGUuY2hpbGRJbWFnZVNoYXJwLmdhdHNieUltYWdlRGF0YSxcclxuICAgICAgcXVvdGU6XHJcbiAgICAgICAgXCJMb3JlbSBpcHN1bSBkb2xvciBzaXQgYW1ldCwgY29uc2VjdGV0dXIgYWRpcGlzY2luZyBlbGl0IHV0IGFsaXF1YW0sIHB1cnVzIHNpdCBhbWV0IGx1Y3R1cyB2ZW5lbmF0aXMsIGxlY3R1cyBtYWduYSBmcmluZ2lsbGEgdXJuYSwgcG9ydHRpdG9yIHJob25jdXMgZG9sb3IgcHVydXMgbm9uIGVuaW0gcHJhZXNlbnQgZWxlbWVudHVtIGZhY2lsaXNpcyBsZW8sIHZlbCBmcmluZ2lsbGEgZXN0IHVsbGFtY29ycGVyIGVnZXQgbnVsbGEgZmFjaWxpc2kgZXRpYW0gZGlnbmlzc2ltIGRpYW0gcXVpcyBlbmltIGxvYm9ydGlzIHNjZWxlcmlzcXVlIGZlcm1lbnR1bSBkdWkgZmF1Y2lidXMgaW4gb3JuYXJlIHF1YW0gdml2ZXJyYSBvcmNpIHNhZ2l0dGlzIGV1IHZvbHV0cGF0IG9kaW8gZmFjaWxpc2lzIG1hdXJpcyBzaXQgYW1ldCBtYXNzYSB2aXRhZSB0b3J0b3IgY29uZGltZW50dW0gbGFjaW5pYSBxdWlzIHZlbCBlcm9zIGRvbmVjIGFjIG9kaW8gdGVtcG9yIG9yY2kgZGFwaWJ1cyB1bHRyaWNlcyBpbiBpYWN1bGlzIG51bmMgc2VkIGF1Z3VlIGxhY3VzXCIsXHJcbiAgICB9LFxyXG4gIF07XHJcblxyXG4gIHJldHVybiAoXHJcbiAgICA8U3R5bGVkUmV2aWV3Q2FyZHM+XHJcbiAgICAgIHtyZXZpZXdzLm1hcCgocmV2aWV3LCBpKSA9PiB7XHJcbiAgICAgICAgcmV0dXJuIChcclxuICAgICAgICAgIDxkaXZcclxuICAgICAgICAgICAgY2xhc3NOYW1lPXtgdy1mdWxsIGJnLXdoaXRlIHNoYWRvdy0yeGwgcm91bmRlZC1sZyBtYi04IG1kOm1iLTEwIHAtNiBtZDpweS04IG1kOnB4LTcgbWQ6bXgtMyBsZzpteC01ICR7Z3JpZEl0ZW1DbGFzc31gfVxyXG4gICAgICAgICAgICBrZXk9e2l9XHJcbiAgICAgICAgICA+XHJcbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBqdXN0aWZ5LWJldHdlZW4gaXRlbXMtY2VudGVyIG1iLTVcIj5cclxuICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXggaXRlbXMtY2VudGVyXCI+XHJcbiAgICAgICAgICAgICAgICA8aW1nXHJcbiAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT1cInJvdW5kZWQtZnVsbFwiXHJcbiAgICAgICAgICAgICAgICAgIHNyYz17cmV2aWV3LmhlYWRzaG90IHx8IGRhdGEuaGVhZHNob3QucHVibGljVVJMfVxyXG4gICAgICAgICAgICAgICAgICBhbHQ9XCJVc2VyIEhlYWRzaG90XCJcclxuICAgICAgICAgICAgICAgICAgd2lkdGg9XCI0MFwiXHJcbiAgICAgICAgICAgICAgICAvPlxyXG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtbC0zLjVcIj5cclxuICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwiZm9udC1zZW1pYm9sZCB0ZXh0LWdyYXktNjAwXCI+XHJcbiAgICAgICAgICAgICAgICAgICAge3Jldmlldy5uYW1lfVxyXG4gICAgICAgICAgICAgICAgICA8L3NwYW4+XHJcbiAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImhpZGRlbiBtZDpibG9ja1wiPlxyXG4gICAgICAgICAgICAgICAgPEdhdHNieUltYWdlXHJcbiAgICAgICAgICAgICAgICAgIGltYWdlPXtyZXZpZXcucGxhdGZvcm19XHJcbiAgICAgICAgICAgICAgICAgIGFsdD1cIlNvY2lhbCBwbGF0Zm9ybSBsb2dvXCJcclxuICAgICAgICAgICAgICAgIC8+XHJcbiAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICA8YmxvY2txdW90ZT5cclxuICAgICAgICAgICAgICA8cSBjbGFzc05hbWU9XCJibG9jayBtYi02IG1kOm1iLTAgYmVmb3JlOmhpZGRlblwiPntyZXZpZXcucXVvdGV9PC9xPlxyXG4gICAgICAgICAgICA8L2Jsb2NrcXVvdGU+XHJcbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYmxvY2sgbWQ6aGlkZGVuXCI+XHJcbiAgICAgICAgICAgICAgPEdhdHNieUltYWdlIGltYWdlPXtyZXZpZXcucGxhdGZvcm19IGFsdD1cIlNvY2lhbCBwbGF0Zm9ybSBsb2dvXCIgLz5cclxuICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICApO1xyXG4gICAgICB9KX1cclxuICAgIDwvU3R5bGVkUmV2aWV3Q2FyZHM+XHJcbiAgKTtcclxufTtcclxuXHJcbmV4cG9ydCBkZWZhdWx0IFJldmlld0NhcmRzO1xyXG4iXX0= */",
-    toString: _EMOTION_STRINGIFIED_CSS_ERROR__
-  });
-  const data = _public_page_data_sq_d_3740177093_json__WEBPACK_IMPORTED_MODULE_1__.data;
-  let gridItemClass = null;
-  if (gridLayout === "masonry") {
-    gridItemClass = "masonry-item";
-  } else {
-    gridItemClass = "grid-item";
-  }
-  const reviews = [{
-    name: "User Name",
-    platform: data.google.childImageSharp.gatsbyImageData,
-    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus"
-  }, {
-    name: "User Name",
-    platform: data.facebook.childImageSharp.gatsbyImageData,
-    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor entum facilisis leo, vel fringilla"
-  }, {
-    name: "User Name",
-    platform: data.facebook.childImageSharp.gatsbyImageData,
-    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis mentum facilisis fringilla."
-  }, {
-    name: "User Name",
-    platform: data.yelp.childImageSharp.gatsbyImageData,
-    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor entum facilisis leo, vel fringilla"
-  }, {
-    name: "User Name",
-    platform: data.yelp.childImageSharp.gatsbyImageData,
-    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis mentum facilisis fringilla."
-  }, {
-    name: "User Name",
-    platform: data.google.childImageSharp.gatsbyImageData,
-    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus"
-  }];
-  return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(StyledReviewCards, null, reviews.map((review, i) => {
+const ReviewCards = () => {
+  const data = _public_page_data_sq_d_3386229893_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const reviewNodes = (data || {}).reviews ? (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_2__.mapEdgesToNodes)(data.reviews) : [];
+  return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null, reviewNodes.map((review, i) => {
     return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-      className: `w-full bg-white shadow-2xl rounded-lg mb-8 md:mb-10 p-6 md:py-8 md:px-7 md:mx-3 lg:mx-5 ${gridItemClass}`,
+      className: "break-inside w-full bg-black rounded-lg mb-8 md:mb-10 py-8 md:py-12 px-6 md:px-8",
       key: i
     }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
       className: "flex justify-between items-center mb-5"
     }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
       className: "flex items-center"
-    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
-      className: "rounded-full",
-      src: review.headshot || data.headshot.publicURL,
-      alt: "User Headshot",
-      width: "40"
-    }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
       className: "ml-3.5"
     }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
-      className: "font-semibold text-gray-600"
-    }, review.name))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-      className: "hidden md:block"
-    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.GatsbyImage, {
-      image: review.platform,
-      alt: "Social platform logo"
-    }))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("blockquote", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("q", {
-      className: "block mb-6 md:mb-0 before:hidden"
-    }, review.quote)), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-      className: "block md:hidden"
-    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.GatsbyImage, {
-      image: review.platform,
-      alt: "Social platform logo"
-    })));
+      className: "text-primary-50 font-bold"
+    }, review.name))), review.platform.title === "Google" && (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.GatsbyImage, {
+      image: data.google.childImageSharp.gatsbyImageData
+    }), review.platform.title === "Yelp" && (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.GatsbyImage, {
+      image: data.yelp.childImageSharp.gatsbyImageData
+    }), review.platform.title === "Facebook" && (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.GatsbyImage, {
+      image: data.facebook.childImageSharp.gatsbyImageData
+    })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("blockquote", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("q", {
+      className: "block mb-0 font-normal before:hidden"
+    }, review.review)));
   }));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ReviewCards);
@@ -20241,6 +20357,71 @@ const useOnClickOutside = (ref, handler) => {
     };
   }, [ref, handler]);
 };
+
+/***/ }),
+
+/***/ "./src/lib/helpers.js":
+/*!****************************!*\
+  !*** ./src/lib/helpers.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "buildImageObj": () => (/* binding */ buildImageObj),
+/* harmony export */   "cn": () => (/* binding */ cn),
+/* harmony export */   "filterOutDocsPublishedInTheFuture": () => (/* binding */ filterOutDocsPublishedInTheFuture),
+/* harmony export */   "filterOutDocsWithoutSlugs": () => (/* binding */ filterOutDocsWithoutSlugs),
+/* harmony export */   "getBlogUrl": () => (/* binding */ getBlogUrl),
+/* harmony export */   "mapEdgesToNodes": () => (/* binding */ mapEdgesToNodes),
+/* harmony export */   "toPlainText": () => (/* binding */ toPlainText)
+/* harmony export */ });
+/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! date-fns */ "./node_modules/date-fns/esm/isFuture/index.js");
+
+function cn(...args) {
+  return args.filter(Boolean).join(" ");
+}
+function mapEdgesToNodes(data) {
+  if (!data.edges) return [];
+  return data.edges.map(edge => edge.node);
+}
+function filterOutDocsWithoutSlugs({
+  slug
+}) {
+  return (slug || {}).current;
+}
+function filterOutDocsPublishedInTheFuture({
+  publishedAt
+}) {
+  return !(0,date_fns__WEBPACK_IMPORTED_MODULE_0__["default"])(new Date(publishedAt));
+}
+function getBlogUrl(publishedAt, slug) {
+  return `/${slug.current || slug}/`;
+}
+function buildImageObj(source = {
+  asset: {}
+}) {
+  const imageObj = {
+    asset: {
+      _ref: source.asset._ref || source.asset._id
+    }
+  };
+  if (source.crop) imageObj.crop = source.crop;
+  if (source.hotspot) imageObj.hotspot = source.hotspot;
+  return imageObj;
+}
+function toPlainText(blocks) {
+  if (!blocks) {
+    return "";
+  }
+  return blocks.map(block => {
+    if (block._type !== "block" || !block.children) {
+      return "";
+    }
+    return block.children.map(child => child.text).join("");
+  }).join("\n\n");
+}
 
 /***/ }),
 
@@ -20716,56 +20897,6 @@ const query = "3772179899";
 
 /***/ }),
 
-/***/ "./src/pages/review-us.js":
-/*!********************************!*\
-  !*** ./src/pages/review-us.js ***!
-  \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./src/components/Layout.js");
-/* harmony import */ var _components_SEO__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/SEO */ "./src/components/SEO.js");
-/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.esm.js");
-
-
-
-
-const Page = ({
-  data
-}) => {
-  return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    headerHasBorder: true
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_SEO__WEBPACK_IMPORTED_MODULE_2__["default"]
-  // title=""
-  // description=""
-  , {
-    openGraphImage: data.openGraphImage.publicURL,
-    twitterOpenGraphImage: data.twitterOpenGraphImage.publicURL
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("section", {
-    className: "pt-16 md:pt-20 pb-22 md:pb-32 bg-gray-50"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-    className: "container"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-    className: "max-w-3xl mx-auto"
-  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("iframe", {
-    src: "https://high-echelon-platform.flywheelsites.com/",
-    title: "Reviews Platform",
-    width: "100%",
-    height: "1500px",
-    border: "0"
-  })))));
-};
-const query = "2177663515";
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Page);
-
-/***/ }),
-
 /***/ "./src/pages/reviews.js":
 /*!******************************!*\
   !*** ./src/pages/reviews.js ***!
@@ -20846,7 +20977,7 @@ const Page = ({
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
     className: "flex justify-center items-center flex-col text-white pt-10 pb-14"
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_8__.jsx)("h1", {
-    className: "mb-6 text-white"
+    className: "mb-6 font-light text-white"
   }, "Testimonials"), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_8__.jsx)("p", {
     className: "text-base text-center"
   }, "Don\u2019t just take our word for it\u2014hear feedback directly from our clients."), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_Button_ButtonSolidGold__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -77245,6 +77376,28 @@ module.exports = JSON.parse('{"data":{"aboutDesktop":{"childImageSharp":{"gatsby
 
 /***/ }),
 
+/***/ "./public/page-data/sq/d/3386229893.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/3386229893.json ***!
+  \***********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"yelp":{"childImageSharp":{"gatsbyImageData":{"layout":"fixed","backgroundColor":"#486848","images":{"fallback":{"src":"/static/a63ff9a7d56bc5abd1e036cb5073c34c/622c6/yelp.png","srcSet":"/static/a63ff9a7d56bc5abd1e036cb5073c34c/622c6/yelp.png 74w,\\n/static/a63ff9a7d56bc5abd1e036cb5073c34c/65d23/yelp.png 148w","sizes":"74px"},"sources":[{"srcSet":"/static/a63ff9a7d56bc5abd1e036cb5073c34c/c86f6/yelp.webp 74w,\\n/static/a63ff9a7d56bc5abd1e036cb5073c34c/aff8f/yelp.webp 148w","type":"image/webp","sizes":"74px"}]},"width":74,"height":36}}},"google":{"childImageSharp":{"gatsbyImageData":{"layout":"fixed","backgroundColor":"#080808","images":{"fallback":{"src":"/static/7016f193f4f9e65e1911227a8228a09e/60253/google.png","srcSet":"/static/7016f193f4f9e65e1911227a8228a09e/60253/google.png 85w","sizes":"85px"},"sources":[{"srcSet":"/static/7016f193f4f9e65e1911227a8228a09e/f61c2/google.webp 85w","type":"image/webp","sizes":"85px"}]},"width":85,"height":27}}},"facebook":{"childImageSharp":{"gatsbyImageData":{"layout":"fixed","backgroundColor":"#080808","images":{"fallback":{"src":"/static/ea89aa78ad04fadf088e630b3dd656b2/2f2d7/facebook.png","srcSet":"/static/ea89aa78ad04fadf088e630b3dd656b2/2f2d7/facebook.png 123w,\\n/static/ea89aa78ad04fadf088e630b3dd656b2/a416c/facebook.png 246w","sizes":"123px"},"sources":[{"srcSet":"/static/ea89aa78ad04fadf088e630b3dd656b2/cd887/facebook.webp 123w,\\n/static/ea89aa78ad04fadf088e630b3dd656b2/b0493/facebook.webp 246w","type":"image/webp","sizes":"123px"}]},"width":123,"height":24}}},"reviews":{"edges":[{"node":{"review":"Michelle is the consummate professional. She has been absolutely instrumental and a true advisor in all of our business accounting needs. She is super responsive, highly competent and trustworthy. Highly recommend Michelle and High Echelon!","name":"Avi Bogart","platform":{"title":"Google"}}},{"node":{"review":"\\"Michelle is highly driven, ethical, and delivers when promised. When trusting someone with your personal or business finances, I want character as much as experience and business knowledge.  Michelle carries high levels of those qualities, which will serve us all well now and in the future.\\n\\"","name":"Eric ","platform":{"title":"Google"}}}]}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/3441712063.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/3441712063.json ***!
+  \***********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"darkLogo":{"childImageSharp":{"gatsbyImageData":{"layout":"fullWidth","images":{"fallback":{"src":"/static/01e8e824bc4f538761f6680a04842f88/51a17/Logo%20desktop.png","srcSet":"/static/01e8e824bc4f538761f6680a04842f88/51a17/Logo%20desktop.png 620w","sizes":"100vw"},"sources":[{"srcSet":"/static/01e8e824bc4f538761f6680a04842f88/0bd47/Logo%20desktop.webp 620w","type":"image/webp","sizes":"100vw"}]},"width":1,"height":0.2064516129032258}}},"mobileLogo":{"childImageSharp":{"gatsbyImageData":{"layout":"fullWidth","images":{"fallback":{"src":"/static/01e8e824bc4f538761f6680a04842f88/51a17/Logo%20desktop.png","srcSet":"/static/01e8e824bc4f538761f6680a04842f88/51a17/Logo%20desktop.png 620w","sizes":"100vw"},"sources":[{"srcSet":"/static/01e8e824bc4f538761f6680a04842f88/0bd47/Logo%20desktop.webp 620w","type":"image/webp","sizes":"100vw"}]},"width":1,"height":0.2064516129032258}}}}}');
+
+/***/ }),
+
 /***/ "./public/page-data/sq/d/3481234916.json":
 /*!***********************************************!*\
   !*** ./public/page-data/sq/d/3481234916.json ***!
@@ -77252,29 +77405,7 @@ module.exports = JSON.parse('{"data":{"aboutDesktop":{"childImageSharp":{"gatsby
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"author":"WISE Digital Partners","siteUrl":"https://high-echelon.netlify.app"}}}}');
-
-/***/ }),
-
-/***/ "./public/page-data/sq/d/3740177093.json":
-/*!***********************************************!*\
-  !*** ./public/page-data/sq/d/3740177093.json ***!
-  \***********************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse('{"data":{"yelp":{"childImageSharp":{"gatsbyImageData":{"layout":"fixed","backgroundColor":"#486848","images":{"fallback":{"src":"/static/a63ff9a7d56bc5abd1e036cb5073c34c/4d99b/yelp.png","srcSet":"/static/a63ff9a7d56bc5abd1e036cb5073c34c/4d99b/yelp.png 70w,\\n/static/a63ff9a7d56bc5abd1e036cb5073c34c/f6365/yelp.png 140w","sizes":"70px"},"sources":[{"srcSet":"/static/a63ff9a7d56bc5abd1e036cb5073c34c/4b6f9/yelp.webp 70w,\\n/static/a63ff9a7d56bc5abd1e036cb5073c34c/1fcf5/yelp.webp 140w","type":"image/webp","sizes":"70px"}]},"width":70,"height":34}}},"google":{"childImageSharp":{"gatsbyImageData":{"layout":"fixed","backgroundColor":"#080808","images":{"fallback":{"src":"/static/7016f193f4f9e65e1911227a8228a09e/7e36d/google.png","srcSet":"/static/7016f193f4f9e65e1911227a8228a09e/7e36d/google.png 86w","sizes":"86px"},"sources":[{"srcSet":"/static/7016f193f4f9e65e1911227a8228a09e/c7874/google.webp 86w","type":"image/webp","sizes":"86px"}]},"width":86,"height":27}}},"facebook":{"childImageSharp":{"gatsbyImageData":{"layout":"fixed","backgroundColor":"#080808","images":{"fallback":{"src":"/static/ea89aa78ad04fadf088e630b3dd656b2/2f15c/facebook.png","srcSet":"/static/ea89aa78ad04fadf088e630b3dd656b2/2f15c/facebook.png 110w,\\n/static/ea89aa78ad04fadf088e630b3dd656b2/b124b/facebook.png 220w","sizes":"110px"},"sources":[{"srcSet":"/static/ea89aa78ad04fadf088e630b3dd656b2/860e4/facebook.webp 110w,\\n/static/ea89aa78ad04fadf088e630b3dd656b2/08917/facebook.webp 220w","type":"image/webp","sizes":"110px"}]},"width":110,"height":21}}},"zillow":{"childImageSharp":{"gatsbyImageData":{"layout":"fixed","backgroundColor":"#0868f8","images":{"fallback":{"src":"/static/161585689d733bd8e4f13cdb9c748476/d8224/zillow.png","srcSet":"/static/161585689d733bd8e4f13cdb9c748476/d8224/zillow.png 88w,\\n/static/161585689d733bd8e4f13cdb9c748476/17ab4/zillow.png 176w","sizes":"88px"},"sources":[{"srcSet":"/static/161585689d733bd8e4f13cdb9c748476/fc4fa/zillow.webp 88w,\\n/static/161585689d733bd8e4f13cdb9c748476/3b9fc/zillow.webp 176w","type":"image/webp","sizes":"88px"}]},"width":88,"height":18}}},"headshot":{"publicURL":"/static/65ed34a4f78729a5910580eabf053c91/user.svg"}}}');
-
-/***/ }),
-
-/***/ "./public/page-data/sq/d/3890593176.json":
-/*!***********************************************!*\
-  !*** ./public/page-data/sq/d/3890593176.json ***!
-  \***********************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse('{"data":{"darkLogo":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","images":{"fallback":{"src":"/static/01e8e824bc4f538761f6680a04842f88/ae468/Logo%20desktop.png","srcSet":"/static/01e8e824bc4f538761f6680a04842f88/ae468/Logo%20desktop.png 310w,\\n/static/01e8e824bc4f538761f6680a04842f88/51a17/Logo%20desktop.png 620w","sizes":"(min-width: 310px) 310px, 100vw"},"sources":[{"srcSet":"/static/01e8e824bc4f538761f6680a04842f88/5062f/Logo%20desktop.webp 310w,\\n/static/01e8e824bc4f538761f6680a04842f88/0bd47/Logo%20desktop.webp 620w","type":"image/webp","sizes":"(min-width: 310px) 310px, 100vw"}]},"width":310,"height":64}}},"mobileLogo":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","images":{"fallback":{"src":"/static/01e8e824bc4f538761f6680a04842f88/d6e6c/Logo%20desktop.png","srcSet":"/static/01e8e824bc4f538761f6680a04842f88/d6e6c/Logo%20desktop.png 200w,\\n/static/01e8e824bc4f538761f6680a04842f88/51a17/Logo%20desktop.png 620w","sizes":"(min-width: 200px) 200px, 100vw"},"sources":[{"srcSet":"/static/01e8e824bc4f538761f6680a04842f88/70e27/Logo%20desktop.webp 200w,\\n/static/01e8e824bc4f538761f6680a04842f88/0bd47/Logo%20desktop.webp 620w","type":"image/webp","sizes":"(min-width: 200px) 200px, 100vw"}]},"width":200,"height":41}}}}}');
+module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"author":"WISE Digital Partners","siteUrl":"https://highecheloncpa.com"}}}}');
 
 /***/ }),
 

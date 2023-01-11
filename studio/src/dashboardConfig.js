@@ -32,12 +32,12 @@ export default {
           {
             title: "GitHub repo",
             value:
-              "https://github.com/hamletavetisian/macash-home-loans",
+              "https://github.com/Wise-Digital-Partners/high-echelon",
             category: "Code",
           },
           {
             title: "Frontend",
-            value: "https://macash-home-loans.netlify.app",
+            value: "https://high-echelon.netlify.app",
             category: "apps",
           },
         ],
