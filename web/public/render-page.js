@@ -20037,7 +20037,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _public_page_data_sq_d_3386229893_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/3386229893.json */ "./public/page-data/sq/d/3386229893.json");
+/* harmony import */ var _public_page_data_sq_d_2204183170_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/2204183170.json */ "./public/page-data/sq/d/2204183170.json");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
@@ -20048,22 +20048,40 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const ReviewCards = () => {
-  const data = _public_page_data_sq_d_3386229893_json__WEBPACK_IMPORTED_MODULE_0__.data;
+const ReviewCards = ({
+  gridLayout
+}) => {
+  const data = _public_page_data_sq_d_2204183170_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  let gridItemClass = null;
+  if (gridLayout === "masonry") {
+    gridItemClass = "masonry-item";
+  } else {
+    gridItemClass = "grid-item";
+  }
   const reviewNodes = (data || {}).reviews ? (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_2__.mapEdgesToNodes)(data.reviews) : [];
   return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null, reviewNodes.map((review, i) => {
     return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-      className: "break-inside w-full bg-black rounded-lg mb-8 md:mb-10 py-8 md:py-12 px-6 md:px-8",
+      className: `w-full bg-white shadow-2xl rounded-lg mb-8 md:mb-10 p-6 md:py-8 md:px-7 md:mx-3 lg:mx-5 ${gridItemClass}`,
       key: i
     }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
       className: "flex justify-between items-center mb-5"
     }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
       className: "flex items-center"
-    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+      className: "rounded-full",
+      src: review.headshot || data.headshot.publicURL,
+      alt: "User Headshot",
+      width: "40"
+    }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
       className: "ml-3.5"
     }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
-      className: "text-primary-50 font-bold"
-    }, review.name))), review.platform.title === "Google" && (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.GatsbyImage, {
+      className: "text-gray-900 font-semibold"
+    }, review.name))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      className: "hidden md:block"
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.GatsbyImage, {
+      image: review.platform,
+      alt: "Social platform logo"
+    })), review.platform.title === "Google" && (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.GatsbyImage, {
       image: data.google.childImageSharp.gatsbyImageData
     }), review.platform.title === "Yelp" && (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.GatsbyImage, {
       image: data.yelp.childImageSharp.gatsbyImageData
@@ -77376,14 +77394,14 @@ module.exports = JSON.parse('{"data":{"aboutDesktop":{"childImageSharp":{"gatsby
 
 /***/ }),
 
-/***/ "./public/page-data/sq/d/3386229893.json":
+/***/ "./public/page-data/sq/d/2204183170.json":
 /*!***********************************************!*\
-  !*** ./public/page-data/sq/d/3386229893.json ***!
+  !*** ./public/page-data/sq/d/2204183170.json ***!
   \***********************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"data":{"yelp":{"childImageSharp":{"gatsbyImageData":{"layout":"fixed","backgroundColor":"#486848","images":{"fallback":{"src":"/static/a63ff9a7d56bc5abd1e036cb5073c34c/622c6/yelp.png","srcSet":"/static/a63ff9a7d56bc5abd1e036cb5073c34c/622c6/yelp.png 74w,\\n/static/a63ff9a7d56bc5abd1e036cb5073c34c/65d23/yelp.png 148w","sizes":"74px"},"sources":[{"srcSet":"/static/a63ff9a7d56bc5abd1e036cb5073c34c/c86f6/yelp.webp 74w,\\n/static/a63ff9a7d56bc5abd1e036cb5073c34c/aff8f/yelp.webp 148w","type":"image/webp","sizes":"74px"}]},"width":74,"height":36}}},"google":{"childImageSharp":{"gatsbyImageData":{"layout":"fixed","backgroundColor":"#080808","images":{"fallback":{"src":"/static/7016f193f4f9e65e1911227a8228a09e/60253/google.png","srcSet":"/static/7016f193f4f9e65e1911227a8228a09e/60253/google.png 85w","sizes":"85px"},"sources":[{"srcSet":"/static/7016f193f4f9e65e1911227a8228a09e/f61c2/google.webp 85w","type":"image/webp","sizes":"85px"}]},"width":85,"height":27}}},"facebook":{"childImageSharp":{"gatsbyImageData":{"layout":"fixed","backgroundColor":"#080808","images":{"fallback":{"src":"/static/ea89aa78ad04fadf088e630b3dd656b2/2f2d7/facebook.png","srcSet":"/static/ea89aa78ad04fadf088e630b3dd656b2/2f2d7/facebook.png 123w,\\n/static/ea89aa78ad04fadf088e630b3dd656b2/a416c/facebook.png 246w","sizes":"123px"},"sources":[{"srcSet":"/static/ea89aa78ad04fadf088e630b3dd656b2/cd887/facebook.webp 123w,\\n/static/ea89aa78ad04fadf088e630b3dd656b2/b0493/facebook.webp 246w","type":"image/webp","sizes":"123px"}]},"width":123,"height":24}}},"reviews":{"edges":[{"node":{"review":"Michelle is the consummate professional. She has been absolutely instrumental and a true advisor in all of our business accounting needs. She is super responsive, highly competent and trustworthy. Highly recommend Michelle and High Echelon!","name":"Avi Bogart","platform":{"title":"Google"}}},{"node":{"review":"\\"Michelle is highly driven, ethical, and delivers when promised. When trusting someone with your personal or business finances, I want character as much as experience and business knowledge.  Michelle carries high levels of those qualities, which will serve us all well now and in the future.\\n\\"","name":"Eric ","platform":{"title":"Google"}}}]}}}');
+module.exports = JSON.parse('{"data":{"yelp":{"childImageSharp":{"gatsbyImageData":{"layout":"fixed","backgroundColor":"#486848","images":{"fallback":{"src":"/static/a63ff9a7d56bc5abd1e036cb5073c34c/4889c/yelp.png","srcSet":"/static/a63ff9a7d56bc5abd1e036cb5073c34c/4889c/yelp.png 123w,\\n/static/a63ff9a7d56bc5abd1e036cb5073c34c/2c50d/yelp.png 246w","sizes":"123px"},"sources":[{"srcSet":"/static/a63ff9a7d56bc5abd1e036cb5073c34c/1f846/yelp.webp 123w,\\n/static/a63ff9a7d56bc5abd1e036cb5073c34c/547fa/yelp.webp 246w","type":"image/webp","sizes":"123px"}]},"width":123,"height":60}}},"google":{"childImageSharp":{"gatsbyImageData":{"layout":"fixed","backgroundColor":"#080808","images":{"fallback":{"src":"/static/7016f193f4f9e65e1911227a8228a09e/f6126/google.png","srcSet":"/static/7016f193f4f9e65e1911227a8228a09e/f6126/google.png 123w","sizes":"123px"},"sources":[{"srcSet":"/static/7016f193f4f9e65e1911227a8228a09e/3ae6c/google.webp 123w","type":"image/webp","sizes":"123px"}]},"width":123,"height":39}}},"facebook":{"childImageSharp":{"gatsbyImageData":{"layout":"fullWidth","backgroundColor":"#080808","images":{"fallback":{"src":"/static/ea89aa78ad04fadf088e630b3dd656b2/73987/facebook.png","srcSet":"/static/ea89aa78ad04fadf088e630b3dd656b2/73987/facebook.png 256w","sizes":"100vw"},"sources":[{"srcSet":"/static/ea89aa78ad04fadf088e630b3dd656b2/58cfc/facebook.webp 256w","type":"image/webp","sizes":"100vw"}]},"width":1,"height":0.1953125}}},"headshot":{"publicURL":"/static/65ed34a4f78729a5910580eabf053c91/user.svg"},"reviews":{"edges":[{"node":{"review":"Michelle is the consummate professional. She has been absolutely instrumental and a true advisor in all of our business accounting needs. She is super responsive, highly competent and trustworthy. Highly recommend Michelle and High Echelon!","name":"Avi Bogart","platform":{"title":"Google"}}},{"node":{"review":"\\"Michelle is highly driven, ethical, and delivers when promised. When trusting someone with your personal or business finances, I want character as much as experience and business knowledge.  Michelle carries high levels of those qualities, which will serve us all well now and in the future.\\n\\"","name":"Eric ","platform":{"title":"Google"}}}]}}}');
 
 /***/ }),
 

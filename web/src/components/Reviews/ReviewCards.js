@@ -4,23 +4,26 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 import { mapEdgesToNodes } from "../../lib/helpers";
 
-const ReviewCards = () => {
+const ReviewCards = ({ gridLayout }) => {
   const data = useStaticQuery(graphql`
     {
       yelp: file(relativePath: { eq: "reviews/yelp.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, width: 74)
+          gatsbyImageData(layout: FIXED, width: 123)
         }
       }
       google: file(relativePath: { eq: "reviews/google.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, width: 85)
+          gatsbyImageData(layout: FIXED, width: 123)
         }
       }
       facebook: file(relativePath: { eq: "reviews/facebook.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, width: 123)
+          gatsbyImageData(layout: FULL_WIDTH, width: 123)
         }
+      }
+            headshot: file(relativePath: { eq: "reviews/user.svg" }) {
+        publicURL
       }
 reviews: allSanityReview(sort: { fields: [date], order: DESC }) {
         edges {
@@ -36,6 +39,15 @@ reviews: allSanityReview(sort: { fields: [date], order: DESC }) {
     }
   `);
 
+  let gridItemClass = null;
+
+  if (gridLayout === "masonry") {
+    gridItemClass = "masonry-item";
+  } else {
+    gridItemClass = "grid-item";
+  }
+
+
   const reviewNodes = (data || {}).reviews ? mapEdgesToNodes(data.reviews) : [];
 
   return (
@@ -43,16 +55,28 @@ reviews: allSanityReview(sort: { fields: [date], order: DESC }) {
       {reviewNodes.map((review, i) => {
         return (
           <div
-            className="break-inside w-full bg-black rounded-lg mb-8 md:mb-10 py-8 md:py-12 px-6 md:px-8"
+            className={`w-full bg-white shadow-2xl rounded-lg mb-8 md:mb-10 p-6 md:py-8 md:px-7 md:mx-3 lg:mx-5 ${gridItemClass}`}
             key={i}
           >
             <div className="flex justify-between items-center mb-5">
               <div className="flex items-center">
+                <img
+                  className="rounded-full"
+                  src={review.headshot || data.headshot.publicURL}
+                  alt="User Headshot"
+                  width="40"
+                />
                 <div className="ml-3.5">
-                  <span className="text-primary-50 font-bold">
+                  <span className="text-gray-900 font-semibold">
                     {review.name}
                   </span>
                 </div>
+              </div>
+              <div className="hidden md:block">
+                <GatsbyImage
+                  image={review.platform}
+                  alt="Social platform logo"
+                />
               </div>
 
               {review.platform.title === "Google" && (
