@@ -1,0 +1,7 @@
+{
+    "search.useIgnoreFiles": false,
+    "search.exclude": {
+        "**/dist/static": true,
+        "**/public": true
+    }
+}

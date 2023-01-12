@@ -56,16 +56,7 @@ export default () =>
   S.list()
     .title("Content")
     .items([
-      S.listItem()
-        .title("Settings")
-        .icon(MdSettings)
-        .child(
-          S.editor()
-            .id("siteSettings")
-            .schemaType("siteSettings")
-            .documentId("siteSettings")
-        ),
-      S.divider(),
+
       S.listItem()
         .title("Blog posts")
         .icon(MdDescription)
@@ -97,10 +88,10 @@ export default () =>
       // `S.documentTypeListItems()` returns an array of all the document types
       // defined in schema.js. We filter out those that we have
       // defined the structure above.
-      ...S.documentTypeListItems().filter(
-        (listItem) =>
-          !["category", "author", "post", "siteSettings"].includes(
-            listItem.getId()
-          )
-      ),
+      // ...S.documentTypeListItems().filter(
+      //   (listItem) =>
+      //     !["category", "author", "post", "siteSettings"].includes(
+      //       listItem.getId()
+      //     )
+      // ),
     ]);

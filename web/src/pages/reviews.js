@@ -31,8 +31,8 @@ const Page = ({ data }) => {
   return (
     <Layout headerDarkMode={true}>
       <SearchEngineOptimization
-        title="Independent Mortgage Lender Chicago | MacAsh Home Loans"
-        description="Apply online. Close in 15 days. It's that easy. Make your dream home a reality with MacAsh, your local independent mortgage broker in Chicago."
+        title=""
+        description=""
       />
 
       <section className="hidden md:block">
@@ -44,7 +44,7 @@ const Page = ({ data }) => {
           padding="pt-0 md:pt-10 md:pt-24 pb-0 md:pb-14 md:pb-32"
         >
           <div className="flex justify-center items-center flex-col text-white">
-            <h1 className="mb-6 text-white">Testimonials</h1>
+            <h1 className="mb-6 text-white font-light">Testimonials</h1>
             <p className="text-base ">
               Don’t just take our word for it—hear feedback directly from our clients.
             </p>
