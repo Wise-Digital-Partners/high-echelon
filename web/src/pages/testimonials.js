@@ -4,49 +4,54 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
 import SearchEngineOptimization from "../components/SEO";
-import ButtonSolid from "../components/Button/ButtonSolid";
+import ButtonSolidGold from "../components/Button/ButtonSolidGold";
+import Hero from "../components/Hero/HeroFullWidth";
 import ReviewCards from "../components/Reviews/ReviewCards";
 import CallToAction from "../components/Repeating/CTA";
 
 const Page = ({ data }) => {
     return (
-        <Layout>
+      <Layout headerDarkMode={true}>
             <SearchEngineOptimization
-                title="Client Testimonials | Colorado Lawyer | JBP"
-                description="We value your feedback. Share your experience with Jorgensen Brownell & Pepin, P.C. by leaving a review."
+                title="Reviews | High Echelon CPA"
                 openGraphImage={data.openGraphImage.publicURL}
                 twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
             />
 
-            <section className="relative py-16 md:py-32">
-                <div className="absolute top-0 left-0 w-full h-full">
-                    <GatsbyImage
-                        image={data.hero.childImageSharp.gatsbyImageData}
-                        className="h-full"
-                    />
-                </div>
+        <section className="hidden md:block">
+          <Hero
+            backgroundImages={data.reviewsBack.childImageSharp.gatsbyImageData}
+            backgroundPosition="0 50%"
+            mobileRemoveBackground={true}
+            textAlignment="text-center md:text-left"
+            padding="pt-0 md:pt-10 md:pt-24 pb-0 md:pb-14 md:pb-32"
+          >
+            <div className="flex justify-center items-center flex-col text-white">
+              <h1 className="mb-6 text-white font-light">Testimonials</h1>
+              <p className="text-base ">
+                Don’t just take our word for it—hear feedback directly from our clients.
+              </p>
 
-                <div className="container relative">
-                    <header className="md:max-w-[640px]">
-                        <h1>Testimonials</h1>
-                        <p>
-                            We’ve helped thousands of people just like you. Here’s what our
-                            clients say about their experience working with our team.
-                        </p>
+              <ButtonSolidGold href="/review-us/" text="Leave a Review" />
+            </div>
+          </Hero>
+        </section>
+        <section className="block md:hidden bg-primary-700 px-4">
 
-                        <ButtonSolid
-                            altStyle={3}
-                            href="/review-us/"
-                            text="Leave a Review"
-                        />
-                    </header>
-                </div>
-            </section>
+          <div className="flex justify-center items-center flex-col text-white pt-10 pb-14">
+            <h1 className="mb-6 font-light text-white">Testimonials</h1>
+            <p className="text-base text-center">
+              Don’t just take our word for it—hear feedback directly from our clients.
+            </p>
+
+            <ButtonSolidGold href="/reviews/" text="Leave a Review" />
+          </div>
+        </section>
 
             <section className="pt-16 md:pt-20 pb-20 md:pb-32">
                 <div className="container">
                     <div >
-                        <ReviewCards className="md:col-count-2" />
+                        <ReviewCards class="grid" />
                     </div>
                 </div>
             </section>
@@ -58,6 +63,12 @@ const Page = ({ data }) => {
 
 export const query = graphql`
   {
+
+    reviewsBack: file(relativePath: { eq: "reviews/reviews-back.png" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
+      }
+    }
     openGraphImage: file(
       relativePath: { eq: "open-graph/facebook/Reviews.jpg" }
     ) {

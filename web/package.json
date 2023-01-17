@@ -16,6 +16,7 @@
   "devDependencies": {
     "@emotion/react": "^11.1.5",
     "@fortawesome/fontawesome-pro": "^5.15.2",
+    "@material-tailwind/react": "^1.2.5",
     "@netlify/plugin-gatsby": "^1.0.3",
     "@tailwindcss/forms": "^0.3.3",
     "core-js": "^3.15.2",
@@ -37,6 +38,7 @@
     "gatsby-plugin-sharp": "^3.8.0",
     "gatsby-plugin-styled-components": "^4.8.0",
     "gatsby-source-filesystem": "^3.8.0",
+    "gatsby-source-google-spreadsheets": "^3.0.8",
     "gatsby-source-sanity": "^7.0.7",
     "gatsby-transformer-sharp": "^3.8.0",
     "gbimage-bridge": "^0.1.1",

@@ -146,6 +146,13 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-source-google-spreadsheets",
+      options: {
+        spreadsheetId: "1GhXouQnpRZqc9k8i4vqlbVh3Mwr6JcfM-7G4ENgeE5A",
+        credentials: require("./google-api.credentials.json"),
+      },
+    },
+    {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: "GTM-W4329MC",

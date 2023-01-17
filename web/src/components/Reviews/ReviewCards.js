@@ -4,49 +4,42 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 import { mapEdgesToNodes } from "../../lib/helpers";
 
-const ReviewCards = ({ gridLayout }) => {
+const ReviewCards = () => {
   const data = useStaticQuery(graphql`
     {
-      yelp: file(relativePath: { eq: "reviews/yelp.png" }) {
-        childImageSharp {
-          gatsbyImageData(layout: FIXED, width: 123)
-        }
-      }
+
       google: file(relativePath: { eq: "reviews/google.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, width: 123)
+          gatsbyImageData(layout: FIXED, width: 85)
         }
       }
       facebook: file(relativePath: { eq: "reviews/facebook.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH, width: 123)
+          gatsbyImageData(layout: FIXED, width: 104)
         }
       }
-            headshot: file(relativePath: { eq: "reviews/user.svg" }) {
+      defaultProfilePicture: file(
+        relativePath: { eq: "reviews/user.svg" }
+      ) {
         publicURL
       }
-reviews: allSanityReview(sort: { fields: [date], order: DESC }) {
+      fivestars: file(relativePath: { eq: "reviews/five-stars.svg" }) {
+        publicURL
+      }
+      reviews: allGoogleReviewsSheet(sort: { fields: date, order: DESC }) {
         edges {
           node {
+            date
+            profilePicture
+            firstName
+            lastName
             review
-            name
-            platform {
-              title
-            }
+            platform
           }
         }
       }
     }
   `);
-
-  let gridItemClass = null;
-
-  if (gridLayout === "masonry") {
-    gridItemClass = "masonry-item";
-  } else {
-    gridItemClass = "grid-item";
-  }
-
 
   const reviewNodes = (data || {}).reviews ? mapEdgesToNodes(data.reviews) : [];
 
@@ -54,54 +47,66 @@ reviews: allSanityReview(sort: { fields: [date], order: DESC }) {
     <>
       {reviewNodes.map((review, i) => {
         return (
+          <div className="grid col-span-6">
           <div
-            className={`w-full bg-white shadow-2xl rounded-lg mb-8 md:mb-10 p-6 md:py-8 md:px-7 md:mx-3 lg:mx-5 ${gridItemClass}`}
+            className="mb-6 w-full break-inside-avoid rounded-lg bg-white py-8 px-6 shadow-5xl md:mb-10 md:p-8"
             key={i}
           >
-            <div className="flex justify-between items-center mb-5">
-              <div className="flex items-center">
-                <img
-                  className="rounded-full"
-                  src={review.headshot || data.headshot.publicURL}
-                  alt="User Headshot"
-                  width="40"
-                />
-                <div className="ml-3.5">
-                  <span className="text-gray-900 font-semibold">
-                    {review.name}
+            <div className="mb-4 flex items-center justify-between">
+              <div className="flex items-center space-x-2">
+                {review.profilePicture && review.profilePicture.asset ? (
+                  <div className="mb-2 inline-flex justify-center rounded-full border border-white">
+                    <GatsbyImage
+                      image={review.profilePicture.asset.gatsbyImageData}
+                      alt={`${review.firstName} profile headshot`}
+                      loading="lazy"
+                      width={40}
+                      height={40}
+                      className="z-0 rounded-full"
+                    />
+                  </div>
+                ) : (
+                  <img
+                    src={data.defaultProfilePicture.publicURL}
+                    width="40"
+                    alt="Default profile headshot"
+                  />
+                )}
+
+                <div>
+                  <span className="pl-2 font-bold text-typography-heading">
+                    {`${review.firstName} ${review.lastName}`}
                   </span>
                 </div>
               </div>
-              <div className="hidden md:block">
-                <GatsbyImage
-                  image={review.platform}
-                  alt="Social platform logo"
-                />
-              </div>
-
-              {review.platform.title === "Google" && (
-                <GatsbyImage
-                  image={data.google.childImageSharp.gatsbyImageData}
-                />
-              )}
-
-              {review.platform.title === "Yelp" && (
-                <GatsbyImage
-                  image={data.yelp.childImageSharp.gatsbyImageData}
-                />
-              )}
-
-              {review.platform.title === "Facebook" && (
-                <GatsbyImage
-                  image={data.facebook.childImageSharp.gatsbyImageData}
-                />
-              )}
             </div>
             <blockquote>
-              <q className="block mb-0 font-normal before:hidden">
+              <q className="mb-6 block font-normal before:hidden">
                 {review.review}
               </q>
             </blockquote>
+
+            {review.platform === "Google" && (
+              <GatsbyImage
+                image={data.google.childImageSharp.gatsbyImageData}
+                loading="lazy"
+              />
+            )}
+
+            {review.platform === "Yelp" && (
+              <GatsbyImage
+                image={data.yelp.childImageSharp.gatsbyImageData}
+                loading="lazy"
+              />
+            )}
+
+            {review.platform === "Facebook" && (
+              <GatsbyImage
+                image={data.facebook.childImageSharp.gatsbyImageData}
+                loading="lazy"
+              />
+            )}
+          </div>
           </div>
         );
       })}

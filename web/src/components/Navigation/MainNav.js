@@ -131,7 +131,7 @@ const MainNav = ({
       },
       {
         name: "Reviews",
-        href: "/reviews/",
+        href: "/testimonials/",
       },
     ],
   };
