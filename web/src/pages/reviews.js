@@ -45,7 +45,7 @@ const Page = ({ data }) => {
             Don’t just take our word for it—hear feedback directly from our clients.
           </p>
 
-          <ButtonSolidGold href="/reviews/" text="Leave a Review" />
+          <ButtonSolidGold href="/review-us/" text="Leave a Review" />
         </div>
       </section>
 
