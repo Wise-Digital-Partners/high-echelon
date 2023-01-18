@@ -10,8 +10,10 @@ import category from "./documents/category";
 import post from "./documents/post";
 import youtube from './documents/youtube';
 import review from "./documents/review";
+import siteSettings from "./documents/siteSettings";
 import reviewPlatform from "./documents/reviewPlatform";
-
+import testimonial from "./documents/testimonial";
+import testimonialCategory from "./documents/testimonialCategory";
 // Object types
 import bodyPortableText from "./objects/bodyPortableText";
 import bioPortableText from "./objects/bioPortableText";
@@ -38,6 +40,9 @@ export default createSchema({
     excerptPortableText,
     review,
     reviewPlatform,
+    testimonial,
+    testimonialCategory,
+    siteSettings,
 
 
     // When added to this list, object types can be used as

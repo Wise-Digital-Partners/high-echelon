@@ -83,6 +83,22 @@ export default () =>
         .schemaType("review")
         .child(S.documentTypeList("review").title("Reviews")),
 
+      S.listItem()
+        .title("Testimonials")
+        .icon(FcRating)
+        .schemaType("testimonial")
+        .child(S.documentTypeList("testimonial").title("Testimonials")),
+
+      S.listItem()
+        .title("Testimonial Categories")
+        .icon(FcList)
+        .schemaType("testimonialCategory")
+        .child(
+          S.documentTypeList("testimonialCategory").title(
+            "Testimonial Categories"
+          )
+        ),
+
         
         
       // `S.documentTypeListItems()` returns an array of all the document types
