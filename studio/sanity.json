@@ -7,23 +7,7 @@
     "projectId": "04s29mvf",
     "dataset": "production"
   },
-    "__experimental_spaces": [
-      {
-        "name": "production",
-        "title": "Production",
-        "default": true,
-        "api": {
-          "dataset": "production"
-        }
-      },
-      {
-        "name": "staging",
-        "title": "Staging",
-        "api": {
-          "dataset": "staging"
-        }
-      }
-    ],
+
   "plugins": [
     "@sanity/base",
     "@sanity/components",

@@ -79,7 +79,7 @@ export default () =>
         .child(S.documentTypeList("reviewPlatform").title("Review Platforms")),
       S.listItem()
         .title("Reviews")
-        .icon(FcRating)
+        .icon(FcTemplate)
         .schemaType("review")
         .child(S.documentTypeList("review").title("Reviews")),
 
