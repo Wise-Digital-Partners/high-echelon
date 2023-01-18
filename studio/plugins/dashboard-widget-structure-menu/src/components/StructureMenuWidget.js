@@ -4,6 +4,17 @@ import FileIcon from "part:@sanity/base/file-icon";
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./StructureMenuWidget.css";
+import sanityClient from "part:@sanity/base/client";
+
+const client = sanityClient.withConfig({ apiVersion: `2022-04-01` });
+
+let dataset = "";
+
+if (client.config().dataset === "staging") {
+  dataset = "staging";
+} else {
+  dataset = "production";
+}
 
 function getIconComponent(item) {
   if (item.icon) return item.icon;

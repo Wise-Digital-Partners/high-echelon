@@ -19,7 +19,16 @@ import bodyPortableText from "./objects/bodyPortableText";
 import bioPortableText from "./objects/bioPortableText";
 import excerptPortableText from "./objects/excerptPortableText";
 import mainImage from "./objects/mainImage";
+import iframe from "./objects/iframe";
+// Object types
+import accordion from "./objects/accordion";
+import valueProp from "./objects/valueProp";
 import reviews from "./objects/reviews";
+
+import navLinks from "./objects/navLinks";
+import list from "./objects/list";
+import videoObject from "./objects/videoObject";
+import link from "./objects/link";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -44,8 +53,15 @@ export default createSchema({
     testimonialCategory,
     siteSettings,
 
-
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
+    iframe,
+    accordion,
+    valueProp,
+    navLinks,
+    list,
+    link,
+    videoObject,
+    reviews,
   ]),
 });
