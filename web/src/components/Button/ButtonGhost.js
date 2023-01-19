@@ -24,7 +24,7 @@ const Button = ({
       className={`group relative overflow-hidden border-b border-primary-100 h-[46px] inline-flex items-center justify-center text-center font-body font-semibold no-underline whitespace-nowrap ${
         // altStyle
         //   ? "text-primary-100 hover:text-primary-600 bg-white/30 hover:bg-white border-white"
-          "text-primary-100 hover:text-primary-600 bg-white/30 border-primary-100 hover:border-primary-600"
+        "text-primary-100 hover:text-primary-600 bg-white/30 border-primary-100 hover:border-primary-600"
       } ${className || ""}`}
       {...(link ? { fade: "true", to: href } : { href: href })}
       target={target}
@@ -32,7 +32,7 @@ const Button = ({
       data-modal-open={modal}
       onClick={onClick}
       type={type}
-      alt-style={true}
+      alt-style="true"
     >
       {text}
       {icon && (

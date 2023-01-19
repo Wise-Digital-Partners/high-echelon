@@ -29,7 +29,7 @@ const Button = ({
       rel={rel}
       onClick={onClick}
       type={type}
-      alt-style={true}
+      alt-style="true"
     >
       <div>{text}</div>
 

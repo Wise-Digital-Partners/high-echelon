@@ -1,13 +1,12 @@
-import React from "react";
 import { graphql } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
+import React from "react";
 
-import Layout from "../components/Layout";
-import SearchEngineOptimization from "../components/SEO";
 import ButtonSolidGold from "../components/Button/ButtonSolidGold";
 import Hero from "../components/Hero/HeroFullWidth";
-import ReviewCards from "../components/Reviews/ReviewCards";
+import Layout from "../components/Layout";
 import CallToAction from "../components/Repeating/CTA";
+import ReviewCards from "../components/Reviews/ReviewCards";
+import SearchEngineOptimization from "../components/SEO";
 
 const Page = ({ data }) => {
   return (
@@ -30,7 +29,8 @@ const Page = ({ data }) => {
           <div className="flex justify-center items-center flex-col text-white">
             <h1 className="mb-6 text-white font-light">Testimonials</h1>
             <p className="text-base ">
-              Don’t just take our word for it—hear feedback directly from our clients.
+              Don’t just take our word for it—hear feedback directly from our
+              clients.
             </p>
 
             <ButtonSolidGold href="/review-us/" text="Leave a Review" />
@@ -38,11 +38,11 @@ const Page = ({ data }) => {
         </Hero>
       </section>
       <section className="block md:hidden bg-primary-700 px-4">
-
         <div className="flex justify-center items-center flex-col text-white pt-10 pb-14">
           <h1 className="mb-6 font-light text-white">Testimonials</h1>
           <p className="text-base text-center">
-            Don’t just take our word for it—hear feedback directly from our clients.
+            Don’t just take our word for it—hear feedback directly from our
+            clients.
           </p>
 
           <ButtonSolidGold href="/review-us/" text="Leave a Review" />
@@ -51,7 +51,7 @@ const Page = ({ data }) => {
 
       <section className="pt-16 md:pt-20 pb-20 md:pb-32">
         <div className="container">
-          <div >
+          <div>
             <ReviewCards className="md:col-count-2" />
           </div>
         </div>
@@ -64,7 +64,6 @@ const Page = ({ data }) => {
 
 export const query = graphql`
   {
-
     reviewsBack: file(relativePath: { eq: "reviews/reviews-back.png" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)

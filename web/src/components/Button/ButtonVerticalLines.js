@@ -27,7 +27,7 @@ const Button = ({
       data-modal-open={modal}
       onClick={onClick}
       type={type}
-      alt-style={true}
+      alt-style="true"
     >
       <div className="relative py-1 px-1.5">
         <span className="absolute w-full group-hover:w-0 top-0 left-0 group-hover:left-auto right-auto group-hover:right-0 bg-primary-400 h-px transition-all duration-500 ease-in-out"></span>

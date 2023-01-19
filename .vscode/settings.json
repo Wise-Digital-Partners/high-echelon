@@ -3,5 +3,7 @@
     "search.exclude": {
         "**/dist/static": true,
         "**/public": true
-    }
+    },
+    "eslint.alwaysShowStatus": true,
+    "eslint.codeActionsOnSave.mode": "problems"
 }

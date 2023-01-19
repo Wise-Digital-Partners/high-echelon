@@ -1,25 +1,14 @@
-import React, {useState} from "react";
-import ButtonSolid from "../Button/ButtonSolid";
+import React from "react";
 
 const UtilityNav = () => {
+  // const [offcanvasOpen, setOffcanvasOpen] = useState(false);
 
-  const [offcanvasOpen, setOffcanvasOpen] = useState(false);
-  const handleChange = (e) => {
-    this.setState({ [e.target.name]: e.target.value });
-  };
 
-  const clickHandler = () => {
-    setOffcanvasOpen(!offcanvasOpen);
-  };
-  const openContactModal = () => {
-    document.getElementById("bottom-right-modal").style.display = "block";
-  }
-
-  const closeContactModal = () => {
-    document.getElementById("bottom-right-modal").style.display = "none"; 
-  }
   return (
-    <div id="utlity-navigation" className=" bg-primary-700 py-1.5 hidden md:block">
+    <div
+      id="utlity-navigation"
+      className=" bg-primary-700 py-1.5 hidden md:block"
+    >
       <div className="container">
         <div className="flex justify-end items-center text-sm text-white">
           <div className="flex justify-between md:justify-end w-full md:w-auto space-x-8">
