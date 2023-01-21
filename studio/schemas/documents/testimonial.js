@@ -1,18 +1,50 @@
+import reviewPlatforms from "../objects/reviewPlatforms";
+
 export default {
   title: "Testimonials",
-  name: "testimonial",
+  name: "testimonials",
   type: "document",
 
   fields: [
     {
-      title: "Testimonial",
-      name: "testimonial",
-      type: "text",
+      title: "Date",
+      name: "date",
+      type: "date",
+      validation: (Rule) => Rule.required(),
     },
     {
       title: "Name",
       name: "name",
       type: "string",
+    },
+    {
+      title: "Profile Picture",
+      name: "profilePicture",
+      type: "image",
+    },
+    {
+      title: "Business Name / Title",
+      name: "businessNameTitle",
+      type: "string",
+    },
+    {
+      title: "Stars",
+      name: "stars",
+      type: "number",
+      validation: (Rule) => Rule.min(1).max(5).integer().required(),
+    },
+    {
+      title: "Review",
+      name: "review",
+      type: "text",
+    },
+    {
+      title: "Platform",
+      name: "platform",
+      type: "string",
+      options: {
+        list: [...reviewPlatforms],
+      },
     },
     {
       title: "Make this testimonial featured",
@@ -28,9 +60,6 @@ export default {
         {
           title: "Reference to Testimonial Categories",
           type: "reference",
-          options: {
-            disableNew: true,
-          },
           to: {
             type: "testimonialCategory",
           },
@@ -53,13 +82,15 @@ export default {
   ],
   preview: {
     select: {
-      title: "testimonial",
-      category0: "categories.0.title",
+      title: "name",
+      review: "review",
+      media: "profilePicture",
     },
-    prepare({ title = "No title", category0 }) {
+    prepare({ title = "No title", review, media }) {
       return {
         title,
-        subtitle: category0,
+        subtitle: review,
+        media,
       };
     },
   },

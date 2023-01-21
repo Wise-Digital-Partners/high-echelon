@@ -86,8 +86,8 @@ export default () =>
       S.listItem()
         .title("Testimonials")
         .icon(FcRating)
-        .schemaType("testimonial")
-        .child(S.documentTypeList("testimonial").title("Testimonials")),
+        .schemaType("testimonials")
+        .child(S.documentTypeList("testimonials").title("Testimonials")),
 
       S.listItem()
         .title("Testimonial Categories")
