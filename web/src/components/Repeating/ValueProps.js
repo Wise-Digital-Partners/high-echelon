@@ -2,16 +2,17 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Background from "../Background/Background";
 
+
 const ValueProps = ({ className, headingLevel, heading }) => {
   const data = useStaticQuery(graphql`
     {
-      icon1: file(relativePath: { eq: "repeating/value-props/01-heart.svg" }) {
+      icon1: file(relativePath: { eq: "repeating/why-us/01-heart.svg" }) {
         publicURL
       }
-      icon2: file(relativePath: { eq: "repeating/value-props/02-Technology.svg" }) {
+      icon2: file(relativePath: { eq: "repeating/why-us/02-Technology.svg" }) {
         publicURL
       }
-      icon3: file(relativePath: { eq: "repeating/value-props/03-Billing.svg" }) {
+      icon3: file(relativePath: { eq: "repeating/why-us/03-Billing.svg" }) {
         publicURL
       }
       bg1: file(relativePath: { eq: "repeating/value-props/Ellipse9.png" }) {
@@ -58,10 +59,10 @@ const ValueProps = ({ className, headingLevel, heading }) => {
   return (
     <section className={`${className || "bg-primary-700 mb-20 md:mb-32"}`}>
       <div className="container">
-        <header className="md:hidden lg:hidden md:max-w-2xl md:mx-auto text-center pt-24 mb-10">
-          <HeadingTag className="text-primary-200 font-light text-4xl">{heading || "Why US?"}</HeadingTag>
+        <header className=" md:max-w-2xl md:mx-auto text-center pt-24 mb-10">
+          <HeadingTag className="text-primary-200 font-light text-4xl pb-5 lg:pb-0">{heading || "Why US?"}</HeadingTag>
         </header>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-x-10 md:text-center md:pt-40 pt-0">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-x-10 md:text-center ">
           {content.map((content, i) => {
             return (
               <Background
@@ -71,7 +72,7 @@ const ValueProps = ({ className, headingLevel, heading }) => {
               >
               <div
                 key={i}
-                className="flex items-center flex-col md:block items-start space-x-6 md:space-x-0"
+                className="flex flex-col md:block items-center space-x-6 md:space-x-0"
               >
                 <img
                   src={content.icon}

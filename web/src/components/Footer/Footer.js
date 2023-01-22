@@ -121,17 +121,17 @@ const Footer = ({ hideFooter }) => {
       >
           {/* <div className="text-center">
             <svg width="1094" height="2" viewBox="0 0 1712 2" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-center">
-              <line y1="1.5" x2="1094" y2="1.5" stroke="url(#paint0_linear_1569_821)" stroke-width="3"/>
+              <line y1="1.5" x2="1094" y2="1.5" stroke="url(#paint0_linear_1569_821)" strokeWidth="3"/>
               <defs>
               <linearGradient id="paint0_linear_1569_821" x1="0" y1="3.50435" x2="1094" y2="3.4388" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#A2A09D" stop-opacity="0"/>
-              <stop offset="0.145833" stop-color="#CB9636"/>
-              <stop offset="0.265625" stop-color="#CFA855"/>
-              <stop offset="0.427083" stop-color="#FCE4A7"/>
-              <stop offset="0.578125" stop-color="#F0D592"/>
-              <stop offset="0.713542" stop-color="#CFA855"/>
-              <stop offset="0.828125" stop-color="#CB9636"/>
-              <stop offset="1" stop-color="#A7A7A7" stop-opacity="0"/>
+              <stop stopColor="#A2A09D" stopOpacity="0"/>
+              <stop offset="0.145833" stopColor="#CB9636"/>
+              <stop offset="0.265625" stopColor="#CFA855"/>
+              <stop offset="0.427083" stopColor="#FCE4A7"/>
+              <stop offset="0.578125" stopColor="#F0D592"/>
+              <stop offset="0.713542" stopColor="#CFA855"/>
+              <stop offset="0.828125" stopColor="#CB9636"/>
+              <stop offset="1" stopColor="#A7A7A7" stopOpacity="0"/>
               </linearGradient>
               </defs>
             </svg> 
@@ -154,7 +154,7 @@ const Footer = ({ hideFooter }) => {
                 </svg>
                 </AniLink>
                 <div className="md:flex md:items-center pl-4 md:pt-6 pt-10">
-                  <ul class="text-white text-sm list-none flex justify-center items-center flex-col md:block">
+                  <ul className="text-white text-sm list-none flex justify-center items-center flex-col md:block">
                     <li><a href="tel:404-446-9338" className="hover:text-primary-100">(404) 446-9338</a></li> 
                     <li><a href="mailto:info@highecheloncpa.com" className="hover:text-primary-100">info@highecheloncpa.com</a></li>
                   </ul>
@@ -163,7 +163,7 @@ const Footer = ({ hideFooter }) => {
             </div>
 
             <div className="w-full lg:col-end-13 md:col-span-9 md:pt-5 pt-0 mt-10">
-                <ul class="block text-white text-sm md:float-right block md:flex items-stretch">
+                <ul className="block text-white text-sm md:float-right block md:flex items-stretch">
                   <li class = "md:ml-9 lg:ml-9 text-center mb-6">
                     <AniLink
                         fade
@@ -217,7 +217,7 @@ const Footer = ({ hideFooter }) => {
                     >
                       <svg 
                         width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M9.429 8.969h3.714v1.85c.535-1.064 1.907-2.02 3.968-2.02 3.951 0 4.889 2.118 4.889 6.004V22h-4v-6.312c0-2.213-.535-3.461-1.897-3.461-1.889 0-2.674 1.345-2.674 3.46V22h-4V8.969zM2.57 21.83h4V8.799h-4V21.83zM7.143 4.55a2.529928 2.529928 0 01-.19561.97659A2.5301 2.5301 0 016.39 6.352c-.4836.48062-1.13819.74965-1.82.748-.68061-.00046-1.33369-.2688-1.818-.747a2.548165 2.548165 0 01-.55566-.82657A2.548052 2.548052 0 012 4.55c0-.677.27-1.325.753-1.803.48389-.47884 1.13724-.7473 1.818-.747.682 0 1.336.269 1.819.747.482.478.753 1.126.753 1.803z" fill="#fff"/>
+                          <path fillRule="evenodd" clipRule="evenodd" d="M9.429 8.969h3.714v1.85c.535-1.064 1.907-2.02 3.968-2.02 3.951 0 4.889 2.118 4.889 6.004V22h-4v-6.312c0-2.213-.535-3.461-1.897-3.461-1.889 0-2.674 1.345-2.674 3.46V22h-4V8.969zM2.57 21.83h4V8.799h-4V21.83zM7.143 4.55a2.529928 2.529928 0 01-.19561.97659A2.5301 2.5301 0 016.39 6.352c-.4836.48062-1.13819.74965-1.82.748-.68061-.00046-1.33369-.2688-1.818-.747a2.548165 2.548165 0 01-.55566-.82657A2.548052 2.548052 0 012 4.55c0-.677.27-1.325.753-1.803.48389-.47884 1.13724-.7473 1.818-.747.682 0 1.336.269 1.819.747.482.478.753 1.126.753 1.803z" fill="#fff"/>
                       </svg>
                     </a>
                   </li>
@@ -296,7 +296,7 @@ const Footer = ({ hideFooter }) => {
                     >
                       <svg 
                         width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M9.429 8.969h3.714v1.85c.535-1.064 1.907-2.02 3.968-2.02 3.951 0 4.889 2.118 4.889 6.004V22h-4v-6.312c0-2.213-.535-3.461-1.897-3.461-1.889 0-2.674 1.345-2.674 3.46V22h-4V8.969zM2.57 21.83h4V8.799h-4V21.83zM7.143 4.55a2.529928 2.529928 0 01-.19561.97659A2.5301 2.5301 0 016.39 6.352c-.4836.48062-1.13819.74965-1.82.748-.68061-.00046-1.33369-.2688-1.818-.747a2.548165 2.548165 0 01-.55566-.82657A2.548052 2.548052 0 012 4.55c0-.677.27-1.325.753-1.803.48389-.47884 1.13724-.7473 1.818-.747.682 0 1.336.269 1.819.747.482.478.753 1.126.753 1.803z" fill="#fff"/>
+                          <path fillRule="evenodd" clipRule="evenodd" d="M9.429 8.969h3.714v1.85c.535-1.064 1.907-2.02 3.968-2.02 3.951 0 4.889 2.118 4.889 6.004V22h-4v-6.312c0-2.213-.535-3.461-1.897-3.461-1.889 0-2.674 1.345-2.674 3.46V22h-4V8.969zM2.57 21.83h4V8.799h-4V21.83zM7.143 4.55a2.529928 2.529928 0 01-.19561.97659A2.5301 2.5301 0 016.39 6.352c-.4836.48062-1.13819.74965-1.82.748-.68061-.00046-1.33369-.2688-1.818-.747a2.548165 2.548165 0 01-.55566-.82657A2.548052 2.548052 0 012 4.55c0-.677.27-1.325.753-1.803.48389-.47884 1.13724-.7473 1.818-.747.682 0 1.336.269 1.819.747.482.478.753 1.126.753 1.803z" fill="#fff"/>
                       </svg>
                     </a>
                   </li>

@@ -1,132 +1,150 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image";
 import styled from "@emotion/styled";
 import tw from "twin.macro";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-import Background from "../Background/Background";
+import { mapEdgesToNodes } from "../../lib/helpers";
 import Slider from "../Slider/SliderStandard";
 
 const StyledSlider = styled.div`
-  .slick-prev,
-  .slick-next {
-    ${tw`text-primary-900 text-xl h-12 w-14 bg-white bg-opacity-30 border border-solid border-primary-900 rounded-3xl transform-none top-auto bottom-0`}
-    &:hover {
-      ${tw`bg-primary-100 border-primary-100 text-white`}
-    }
+  .slick-arrow {
+    ${tw`w-16 h-16 rounded-full bg-primary-100 hover:bg-primary-700 flex items-center justify-center text-white hover:text-white text-3xl no-underline`}
   }
   .slick-prev {
-    ${tw``}
+    ${tw`md:-left-10 lg:-left-44 xl:-left-48`}
   }
   .slick-next {
-    ${tw`left-36`}
+    ${tw`md:-right-10 lg:-right-44 xl:-right-48`}
   }
   .slick-dots {
-    ${tw`relative mt-10 md:mt-0 md:-top-4 flex! justify-center md:justify-start items-center space-x-3 md:ml-18`}
+    ${tw`relative mt-7 md:mt-0 justify-center items-center space-x-3 !flex`}
     li {
-      ${tw`h-4 w-4 rounded-full bg-transparent hover:bg-primary-100 border border-black hover:border-primary-100 mr-0 transition-colors duration-300 ease-linear`}
+      ${tw`h-1 bg-primary-100/30 hover:bg-primary-500 mr-0 flex-1 transition-colors duration-300 ease-linear`}
       &.slick-active {
-        ${tw`bg-primary-100 border-primary-100`}
+        ${tw`bg-primary-100`}
       }
     }
   }
 `;
 
-const Testimonial = ({ className, headingLevel }) => {
+const Testimonial = ({ className, category }) => {
   const data = useStaticQuery(graphql`
     {
-      backgroundDesktop: file(
-        relativePath: { eq: "repeating/testimonials/Background Desktop.jpg" }
-      ) {
+      yelp: file(relativePath: { eq: "repeating/testimonials/Yelp-alt.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(layout: FIXED, width: 74)
         }
       }
-      backgroundMobile: file(
-        relativePath: { eq: "repeating/testimonials/Background Mobile.jpg" }
-      ) {
+      google: file(relativePath: { eq: "repeating/testimonials/google.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(layout: FIXED, width: 85)
         }
       }
-      zillow: file(relativePath: { eq: "repeating/testimonials/zillow.png" }) {
+      facebook: file(
+        relativePath: { eq: "repeating/testimonials/Facebook.png" }
+      ) {
         childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED, width: 86)
+          gatsbyImageData(layout: FIXED, width: 123)
+        }
+      }
+      testimonials: allSanityTestimonials(
+        sort: { fields: [order], order: ASC }
+      ) {
+        edges {
+          node {
+            id
+            review
+            name
+            businessNameTitle
+            featured
+            platform
+            categories {
+              title
+            }
+          }
         }
       }
     }
   `);
+  let testimonialsNodes = [];
 
-  const testimonials = [
-    {
-      quote:
-        "Communication, respect, and responsiveness are very important to me and I cannot say enough about Kevin and MacAsh when it comes to these attributes. I highly recommend them not only for this but for the superior rates he was able to secure me. Great communication every step of the way via email, call, and text.",
-      name: "jsilva125, Chicago, Illinois",
-      platform: data.zillow.childImageSharp.gatsbyImageData,
-    },
-    {
-      quote:
-        "There's no shortage of lenders and brokers out there. It's a very competitive space but Kevin set the bar high. I refinanced with him and the entire process was easy, quick, and efficient. I was always kept in the loop from applying to closing and felt like Kevin gave his 100% attention to my loan. Thank you!!",
-      name: "RefugioBautista, Elgin, IL",
-      platform: data.zillow.childImageSharp.gatsbyImageData,
-    },
-  ];
-
-  const HeadingTag = headingLevel || "h2";
-
-  const backgroundImages = [
-    getImage(data.backgroundDesktop.childImageSharp.gatsbyImageData),
-    {
-      ...getImage(data.backgroundMobile.childImageSharp.gatsbyImageData),
-      media: `(max-width: 767px)`,
-    },
-  ];
-
+  category && Array.isArray(category) && category.length > 0
+    ? (testimonialsNodes = (data || {}).testimonials
+      ? mapEdgesToNodes(data.testimonials).filter((array) =>
+        category.some((filterArray) =>
+          array.categories.some((item) => item.title === filterArray.title)
+        )
+      )
+      : [])
+    : category && category.length > 0
+      ? (testimonialsNodes = (data || {}).testimonials
+        ? mapEdgesToNodes(data.testimonials).filter((items) =>
+          items.categories.find((item) => item.title === category)
+        )
+        : [])
+      : (testimonialsNodes = (data || {}).testimonials
+        ? mapEdgesToNodes(data.testimonials).filter((items) => items.featured)
+        : []);
   return (
-    <Background
-      backgroundImages={backgroundImages}
-      mobileRemoveBackground={true}
-      padding="pt-24 md:pt-18 pb-8 md:pb-10"
-      className={`relative overflow-x-hidden ${className || "mb-24 md:mb-32"}`}
-    >
-      <div className="md:hidden -mx-4">
-        <GatsbyImage
-          image={data.backgroundMobile.childImageSharp.gatsbyImageData}
-        />
-      </div>
+    <section className={`pb-20 md:pb-32 ${className}`}>
+      <div className="container">
+        <div className="rounded-4xl bg-primary-700 px-6 pt-12 pb-8 text-center md:px-20 md:pt-20 md:pb-10 lg:px-40">
+          <StyledSlider className="relative">
+            <Slider>
+              {testimonialsNodes.slice(0, 6).map((testimonial, i) => {
+                return (
+                  <div key={i}>
+                    <blockquote className="mx-auto md:max-w-[720px] md:px-8">
+                      <footer className="mb-10">
+                        <div>
+                          <cite className="not-italic">
+                            <div className="heading-three mb-0 text-white">
+                              {testimonial.name}
+                            </div>
+                            {testimonial.businessNameTitle && (
+                              <div className="text-sm font-medium uppercase tracking-wide text-primary-100">
+                                {testimonial.businessNameTitle}
+                              </div>
+                            )}
+                          </cite>
+                        </div>
+                      </footer>
 
-      <div className="-mt-56 md:mt-0 z-10 relative">
-        <header className="mb-6 md:mb-8 max-w-[190px] md:max-w-full">
-          <HeadingTag>Why We Do What We Do</HeadingTag>
-        </header>
+                      <q className="mb-10 text-white/95 before:hidden">
+                        {testimonial.review}
+                      </q>
 
-        <StyledSlider className="relative">
-          <Slider>
-            {testimonials.map((testimonial, i) => {
-              return (
-                <div key={i}>
-                  <blockquote className="md:max-w-[529px] md:w-3/4 bg-white md:bg-transparent rounded-xl md:rounded-none p-8 md:p-0 shadow-6xl md:shadow-none">
-                    <q className="md:text-xl md:font-medium">
-                      {testimonial.quote}
-                    </q>
-                    <footer className="mt-6 md:mb-16 mx-auto">
-                      <div>
-                        <cite className="not-italic flex flex-col md:flex-row items-start md:items-center justify-start md:justify-between">
-                          <div className="md:text-primary-800 font-bold uppercase mb-3 md:mb-0">
-                            <span>{testimonial.name}</span>
-                          </div>
-                          <GatsbyImage image={testimonial.platform} />
-                        </cite>
+                      <div className="mb-14 flex justify-center">
+                        {testimonial.platform === "Google" && (
+                          <GatsbyImage
+                            image={data.google.childImageSharp.gatsbyImageData}
+                          />
+                        )}
+
+                        {testimonial.platform === "Yelp" && (
+                          <GatsbyImage
+                            image={data.yelp.childImageSharp.gatsbyImageData}
+                          />
+                        )}
+
+                        {testimonial.platform === "Facebook" && (
+                          <GatsbyImage
+                            image={
+                              data.facebook.childImageSharp.gatsbyImageData
+                            }
+                          />
+                        )}
                       </div>
-                    </footer>
-                  </blockquote>
-                </div>
-              );
-            })}
-          </Slider>
-        </StyledSlider>
+                    </blockquote>
+                  </div>
+                );
+              })}
+            </Slider>
+          </StyledSlider>
+        </div>
       </div>
-    </Background>
+    </section>
   );
 };
 

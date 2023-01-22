@@ -38,7 +38,7 @@ const Page = ({ data }) => {
       <SearchEngineOptimization
         title="About Us | Small Business CPA Firm | Atlanta | High Echelon"
         description="High Echelon is a nationwide CPA firm based in Atlanta, Georgia. Learn more about us and our focus on small businesses here!"
-      />
+      /><Testimonials/>
         <section className="hidden md:block mb-20 md:mb-32">
             <div className="container">
                 <div className="relative grid md:grid-cols-12 md:gap-x-10 lg:gap-x-16 gap-y-8 items-center">
@@ -143,17 +143,17 @@ Michelle named the company after her grandfather Jerry Fendrick's Thoroughbred h
           <div className="container">
             <div className="flex justify-center">
               <svg width="1197" height="3" viewBox="0 0 1197 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line y1="1.5" x2="1197" y2="1.5" stroke="url(#paint0_linear_1186_1352)" stroke-width="3"/>
+                <line y1="1.5" x2="1197" y2="1.5" stroke="url(#paint0_linear_1186_1352)" strokeWidth="3"/>
                 <defs>
                 <linearGradient id="paint0_linear_1186_1352" x1="0" y1="3.50435" x2="1168.5" y2="3.45905" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#A2A09D" stop-opacity="0"/>
-                <stop offset="0.145833" stop-color="#CB9636"/>
-                <stop offset="0.265625" stop-color="#CFA855"/>
-                <stop offset="0.427083" stop-color="#FCE4A7"/>
-                <stop offset="0.578125" stop-color="#F0D592"/>
-                <stop offset="0.713542" stop-color="#CFA855"/>
-                <stop offset="0.828125" stop-color="#CB9636"/>
-                <stop offset="1" stop-color="#A7A7A7" stop-opacity="0"/>
+                <stop stopColor="#A2A09D" stopOpacity="0"/>
+                <stop offset="0.145833" stopColor="#CB9636"/>
+                <stop offset="0.265625" stopColor="#CFA855"/>
+                <stop offset="0.427083" stopColor="#FCE4A7"/>
+                <stop offset="0.578125" stopColor="#F0D592"/>
+                <stop offset="0.713542" stopColor="#CFA855"/>
+                <stop offset="0.828125" stopColor="#CB9636"/>
+                <stop offset="1" stopColor="#A7A7A7" stopOpacity="0"/>
                 </linearGradient>
                 </defs>
               </svg>
@@ -190,17 +190,17 @@ Michelle named the company after her grandfather Jerry Fendrick's Thoroughbred h
             </div>
             <div className="flex justify-center">
               <svg width="1197" height="3" viewBox="0 0 1197 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line y1="1.5" x2="1197" y2="1.5" stroke="url(#paint0_linear_1186_1352)" stroke-width="3"/>
+                <line y1="1.5" x2="1197" y2="1.5" stroke="url(#paint0_linear_1186_1352)" strokeWidth="3"/>
                 <defs>
                 <linearGradient id="paint0_linear_1186_1352" x1="0" y1="3.50435" x2="1168.5" y2="3.45905" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#A2A09D" stop-opacity="0"/>
-                <stop offset="0.145833" stop-color="#CB9636"/>
-                <stop offset="0.265625" stop-color="#CFA855"/>
-                <stop offset="0.427083" stop-color="#FCE4A7"/>
-                <stop offset="0.578125" stop-color="#F0D592"/>
-                <stop offset="0.713542" stop-color="#CFA855"/>
-                <stop offset="0.828125" stop-color="#CB9636"/>
-                <stop offset="1" stop-color="#A7A7A7" stop-opacity="0"/>
+                <stop stopColor="#A2A09D" stopOpacity="0"/>
+                <stop offset="0.145833" stopColor="#CB9636"/>
+                <stop offset="0.265625" stopColor="#CFA855"/>
+                <stop offset="0.427083" stopColor="#FCE4A7"/>
+                <stop offset="0.578125" stopColor="#F0D592"/>
+                <stop offset="0.713542" stopColor="#CFA855"/>
+                <stop offset="0.828125" stopColor="#CB9636"/>
+                <stop offset="1" stopColor="#A7A7A7" stopOpacity="0"/>
                 </linearGradient>
                 </defs>
               </svg>
@@ -257,160 +257,70 @@ Michelle named the company after her grandfather Jerry Fendrick's Thoroughbred h
                 </div>
               </div>
             </div>
+          <div className="pt-14 lg:px-20 md:px-4 lg:flex sm:block flex-row-reverse">
+            <div className="md:hidden mb-10">
+              <div className="flex justify-center items-center">
+                <GatsbyImage
+                  image={
+                    data.robertProfileImage.childImageSharp.gatsbyImageData
+                  }
+                  imgClassName="rounded-lg"
+                  alt="Robert Profile"
+                  className="mx-0 md:mx-16 min-w-[96px] w-full rounded-xl"
+                />
+              </div>
+            </div>
+            <div className="lg:w-7/12 flex items-start justify-center flex-col lg:px-16 md:px-4 sm:px-2 mr-30 sm:w-full mb-8">
+              <div className="text-4xl md:text-5xl text-thin mb-6">
+                Meet Robert Fendrick
+              </div>
+              <div className="text-base text-light mb-1.5">
+                <p>
+                  Robert "Bob " Fendrick comes to High Echelon with over 50 years of experience in the public accounting industry. He has a wide breadth of knowledge in all business matters, both nationally and internationally. He is a business consultant and an expert in payroll, accounting, and taxation matters. The majority of his career was spent as the founder and CEO of his own accounting firm, Fendrick & Associates. He joins High Echelon in an advisory role.
+                </p>
+                <p>
+                  Bob is a 1970 graduate of Miami University in Oxford, Ohio, with a Bachelor of Science in accounting. He was admitted to the State Board of Accountancy in New York in 1973 and has been an active CPA in Georgia since 1989. He spent the first part of his career in Manhattan working for Arthur Andersen. When he moved to Georgia, he went to work for an Atlanta-based chemical company as the European Controller and lived in Rome, Italy, for three years. Upon returning to Atlanta and prior to starting Fendrick & Associates, he was a founding member of Novartis (Ciba Vision Care), and then he helped start up an additional vision company. Bob founded Fendrick & Associates in 1987 and spent 30 years running his own public accounting firm before selling it.
+                </p>
+                <p>
+                  When Bob isn't in a CPA role, he can be found either playing bridge or tennis. He is a national champion and Grand Life Master of the American Contract Bridge League and has won numerous city and state championships in his ALTA and USTA tennis leagues. Bob is a father to two daughters, Michelle and Laura, and grandfather to five granddaughters. He and his wife, Judy, have been married for 25 years and reside in Marietta, Georgia.
+                </p>
+              </div>
+              {/* <ButtonSolidGold
+                  className="font-light"
+                  onClick={()=>openContactModal()}
+                  text="Book a Call"
+              /> */}
+              <ButtonSolidGold
+                data-modal-open="bottom-right-modal"
+                onKeyDown={clickHandler}
+                onClick={clickHandler}
+                text="Book a Call"
+              />
+            </div>
+            <div className="hidden md:block lg:w-5/12">
+              <div className="flex justify-center items-center">
+                <GatsbyImage
+                  image={
+                    data.robertProfileImage.childImageSharp.gatsbyImageData
+                  }
+                  alt="Robert Profile"
+                  className="mx-10 md:mx-16 min-w-[96px]"
+                />
+              </div>
+            </div>
           </div>
+          </div>         
         </section>
       {/* <Testimonials /> */}
       {/* <section className="mb-20 md:mb-32 2xl:container 2xl:mx-auto 2xl:px-0 py-3 md:px-10">
         <p className="text-4xl-x font-light mb-0 text-center">Our Clients Say Its Best</p>
         <CarouselForm />
       </section> */}
-      <svg className="w-full" width="1200" height="3" viewBox="0 0 1200 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5h1200" stroke="url(#paint0_linear_1129_1425)" stroke-width="3"/><defs><linearGradient id="paint0_linear_1129_1425" x1="0" y1="2.00435" x2="1182.95" y2="1.96651" gradientUnits="userSpaceOnUse"><stop stop-color="#A2A09D" stop-opacity="0"/><stop offset=".145833" stop-color="#FCE4A7"/><stop offset=".265625" stop-color="#CFA855"/><stop offset=".427083" stop-color="#FCE4A7"/><stop offset=".578125" stop-color="#F0D592"/><stop offset=".713542" stop-color="#FCE4A7"/><stop offset=".828125" stop-color="#CB9636"/><stop offset="1" stop-color="#A7A7A7" stop-opacity="0"/></linearGradient></defs></svg>
+      <svg className="w-full" width="1200" height="3" viewBox="0 0 1200 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5h1200" stroke="url(#paint0_linear_1129_1425)" strokeWidth="3"/><defs><linearGradient id="paint0_linear_1129_1425" x1="0" y1="2.00435" x2="1182.95" y2="1.96651" gradientUnits="userSpaceOnUse"><stop stopColor="#A2A09D" stopOpacity="0"/><stop offset=".145833" stopColor="#FCE4A7"/><stop offset=".265625" stopColor="#CFA855"/><stop offset=".427083" stopColor="#FCE4A7"/><stop offset=".578125" stopColor="#F0D592"/><stop offset=".713542" stopColor="#FCE4A7"/><stop offset=".828125" stopColor="#CB9636"/><stop offset="1" stopColor="#A7A7A7" stopOpacity="0"/></linearGradient></defs></svg>
       <CallToAction />
-      <svg className="w-full" width="1200" height="3" viewBox="0 0 1200 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5h1200" stroke="url(#paint0_linear_1129_1425)" stroke-width="3"/><defs><linearGradient id="paint0_linear_1129_1425" x1="0" y1="2.00435" x2="1182.95" y2="1.96651" gradientUnits="userSpaceOnUse"><stop stop-color="#A2A09D" stop-opacity="0"/><stop offset=".145833" stop-color="#FCE4A7"/><stop offset=".265625" stop-color="#CFA855"/><stop offset=".427083" stop-color="#FCE4A7"/><stop offset=".578125" stop-color="#F0D592"/><stop offset=".713542" stop-color="#FCE4A7"/><stop offset=".828125" stop-color="#CB9636"/><stop offset="1" stop-color="#A7A7A7" stop-opacity="0"/></linearGradient></defs></svg>
+      <svg className="w-full" width="1200" height="3" viewBox="0 0 1200 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5h1200" stroke="url(#paint0_linear_1129_1425)" strokeWidth="3"/><defs><linearGradient id="paint0_linear_1129_1425" x1="0" y1="2.00435" x2="1182.95" y2="1.96651" gradientUnits="userSpaceOnUse"><stop stopColor="#A2A09D" stopOpacity="0"/><stop offset=".145833" stopColor="#FCE4A7"/><stop offset=".265625" stopColor="#CFA855"/><stop offset=".427083" stopColor="#FCE4A7"/><stop offset=".578125" stopColor="#F0D592"/><stop offset=".713542" stopColor="#FCE4A7"/><stop offset=".828125" stopColor="#CB9636"/><stop offset="1" stopColor="#A7A7A7" stopOpacity="0"/></linearGradient></defs></svg>
       
-      {/* <div id="bottom-right-modal" data-modal-placement="bottom-right" tabindex="-1" className="h-full fade hidden overflow-y-auto overflow-x-hidden bg-white fixed top-0 right-0 right-0 z-50 w-full md:w-1/2 h-modal md:h-full">
-        <div className="relative w-full h-full md:h-auto">
-            <div className=" bg-white dark:bg-gray-700">
-                <div className="flex justify-between items-center p-5 border-b dark:border-primary-500">
-                  <div className="flex items-center">
-                    <svg
-                      width="17"
-                      height="16"
-                      viewBox="0 0 17 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="mr-1.5 text-primary-100"
-                    >
-                      <path
-                        d="M1.08124.769072L4.33117.019088c.35312-.081249.71561.103122.85936.434365L6.6905 3.95338c.13125.30624.04375.66561-.21562.87498L4.58117 6.37833c1.12498 2.39682 3.09056 4.39057 5.53743 5.53737l1.5499-1.8937c.2125-.25937.5688-.34687.875-.21562l3.4999 1.49992c.3344.1469.5188.5094.4375.8625l-.75 3.25c-.0781.3375-.3781.5812-.7312.5812C6.99674 16 .5 9.51576.5 1.50031c0-.35.240621-.653115.58124-.731238z"
-                        fill="#D2B15E"
-                      />
-                    </svg>
-                    
-                    <a
-                      href="tel:404-446-9338"
-                      className="text-sm font-semibold text-primary-100"
-                    >
-                      (404) 446-9338
-                    </a>
-                  </div>
-                  <button type="button" className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="bottom-right-modal" onClick={()=>closeContactModal()}>
-                      <svg aria-hidden="true" className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                      <span className="sr-only">Close modal</span>
-                  </button>
-                </div>
-                <div className="pb-8 space-y-6 md:px-20 px-2">
-                  <p className="text-4xl text-center my-8">Contact Us</p>
-                  <div className="mb-10 text-black md:flex block">
-                    <button className={bookCall==1 ? "w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white mb-3 md:mb-0" : "block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0"} onClick={()=>setBookCall(1)}>
-                      <div className="flex justify-center items-center">
-                        <i className="fal fa-calendar mr-2 text-xl"></i>
-                        <p className="m-0">Book a Call</p>
-                      </div>
-                    </button>
-                    <button className={bookCall==0 ? "w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white mb-3 md:mb-0" : "block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0"} onClick={()=>setBookCall(0)}>
-                      <div className="flex justify-center items-center">
-                        <i class="fal fa-envelope mr-2 text-xl"></i>
-                        <p className="m-0">Contact Us</p>
-                      </div>
-                    </button>
-                  </div>
-                  { bookCall==0 ?
-                    <div className="mb-8">
-                      <div className="mb-5">
-                        <label
-                          className="font-body text-sm font-semibold text-gray-900 block mb-1 text-base"
-                          htmlFor="first-name"
-                        >
-                          Name
-                        </label>
-                        <input
-                          type="text"
-                          name="first-name"
-                          onChange={()=>handleChange()}
-                          required={true}
-                          className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
-                        />
-                      </div>
-                      <div className="block md:flex">
-                        <div className="mb-5 w-full md:w-1/2 mr-3">
-                          <label
-                            className="font-body text-sm font-semibold text-gray-900 block mb-1 text-base"
-                            htmlFor="phone-number"
-                          >
-                            Phone Number
-                          </label>
-                          <input
-                            type="tel"
-                            name="phone-number"
-                            onChange={()=>handleChange()}
-                            required={true}
-                            className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
-                          />
-                        </div>
-                        <div className="mb-5 md:w-1/2">
-                          <label
-                            className="font-body text-sm font-semibold text-gray-900 block mb-1 text-base"
-                            htmlFor="email-address"
-                          >
-                            Email Address
-                          </label>
-                          <input
-                            type="email"
-                            name="email-address"
-                            onChange={()=>handleChange()}
-                            required={true}
-                            className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
-                          />
-                        </div>
-                      </div>
-                      <div className="mb-5">
-                        <label
-                          className="font-body text-sm font-semibold text-gray-900 block mb-1 text-base"
-                          htmlFor="first-name"
-                        >
-                          What Can We Help You With ?
-                        </label>
-                        <select name="helps" className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear">
-                          <option value="" disabled selected>Select Ones ...</option>
-                          <option value="0">Accounting</option>
-                          <option value="1">Service</option>
-                          <option value="2">About</option>
-                        </select>
-                      </div>
-                      <div className="mb-5">
-                        <label
-                          className="font-body text-sm font-semibold text-gray-900 block mb-1 text-base"
-                          htmlFor="first-name"
-                        >
-                          Message(Optional)
-                        </label>
-                        <textarea
-                          type="textarea"
-                          name="message"
-                          onChange={()=>handleChange()}
-                          required={true}
-                          rows="5"
-                          className="text-sm w-full bg-white px-4 py-2.5 border border-solid border-gray-200 rounded-sm focus:border-transparent focus:outline-none focus:ring-3 focus:ring-primary-100 focus:ring-opacity-30 transition-colors duration-300 ease-linear"
-                        />
-                      </div>
-                      <ButtonSolid
-                        // onClick={()}
-                        text="Send"
-                        altStyle={true}
-                        className="bg-primary-700 min-w-0 text-base w-1/3"
-                      />
-                    </div>
-                  : 
-                    <div className="mb-8">
-                      <iframe src="https://calendly.com/michellehighechelon/30min" className="w-full h-full overflow-hidden min-h-[1200px]"></iframe>
-                    </div>
-                  }
-                        
-                </div>
-            </div>
-        </div>
-      </div> */}
+
     </Layout>
   );
 };
@@ -429,6 +339,13 @@ export const query = graphql`
       }
     }
     michellProfileImage: file(relativePath: { eq: "6.0 About/3.0 Michelle.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: CONSTRAINED, width: 920)
+      }
+    }   
+    robertProfileImage: file(
+      relativePath: { eq: "6.0 About/Robert Fendrick.jpg" }
+    ) {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED, width: 920)
       }

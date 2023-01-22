@@ -204,7 +204,7 @@ const StyledForm = styled.div`
                   </button>
                   <button className={bookCall==0 ? "w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white mb-3 md:mb-0" : "block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0"} onClick={()=>setBookCall(0)}>
                     <div className="flex justify-center items-center">
-                      <i class="fal fa-envelope mr-2 text-xl"></i>
+                      <i className="fal fa-envelope mr-2 text-xl"></i>
                       <p className="m-0">Contact Us</p>
                     </div>
                   </button>
