@@ -39,3 +39,12 @@ button a {
   justify-content: center;
 }
 
+.slick-dots {
+    transition: all 1s ease;
+    width: 138px ;
+    margin: 0 auto;
+}
+.slick-dots .slick-active {
+    width: 8px !important;
+    margin: 0 auto;
+}

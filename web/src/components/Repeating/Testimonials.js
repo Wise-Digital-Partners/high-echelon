@@ -18,14 +18,16 @@ const StyledSlider = styled.div`
     ${tw`md:-right-10 lg:-right-44 xl:-right-48`}
   }
   .slick-dots {
-    ${tw`relative mt-7 md:mt-0 justify-center items-center space-x-3 !flex`}
+    ${tw`relative mt-7 md:mt-0 justify-center items-center space-x-3 !flex transition-all duration-[260ms] ease`}
     li {
-      ${tw`h-1 bg-primary-100/30 hover:bg-primary-500 mr-0 flex-1 transition-colors duration-300 ease-linear`}
+      ${tw`h-1  rounded-[8px] bg-primary-100/30 hover:bg-primary-500 mr-0 flex-1 transition-colors duration-300 ease-linear`}
       &.slick-active {
         ${tw`bg-primary-100`}
       }
     }
   }
+
+
 `;
 
 const Testimonial = ({ className, category }) => {
@@ -42,7 +44,7 @@ const Testimonial = ({ className, category }) => {
         }
       }
       facebook: file(
-        relativePath: { eq: "repeating/testimonials/Facebook.png" }
+        relativePath: { eq: "repeating/testimonials/facebook.png" }
       ) {
         childImageSharp {
           gatsbyImageData(layout: FIXED, width: 123)

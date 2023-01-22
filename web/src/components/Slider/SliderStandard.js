@@ -3,7 +3,8 @@ import React, { useRef, useEffect } from "react";
 import Slick from "react-slick";
 import styled from "@emotion/styled";
 // import tw from "twin.macro";
-
+import arrowPrev from "../../images/repeating/testimonials/arrow-left.svg";
+import arrowNext from "../../images/repeating/testimonials/arrow-right.svg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -12,6 +13,9 @@ const StyledSlider = styled.div`
   .slick-slider {
     position: inherit;
   }
+
+
+
 `;
 
 const Slider = ({ slideIndex, children }) => {
@@ -29,7 +33,7 @@ const Slider = ({ slideIndex, children }) => {
         className="group !flex items-center justify-center slick-prev"
         aria-label="Previous Slide"
       >
-        <i className="far fa-arrow-left"></i>
+        <img className="group-hover:scale-150 scale-100 ease transition-all duration-300" src={arrowPrev}></img>
       </button>
     );
   }
@@ -42,7 +46,8 @@ const Slider = ({ slideIndex, children }) => {
         className="group !flex items-center justify-center slick-next"
         aria-label="Next Slide"
       >
-        <i className="far fa-arrow-right"></i>
+        <img className="group-hover:scale-150 scale-100 ease transition-all duration-300" src={arrowNext}></img>
+        {/* <i className="far fa-arrow-right text-primary-100"></i> */}
       </button>
     );
   }
