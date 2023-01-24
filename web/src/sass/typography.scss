@@ -14,7 +14,7 @@ h6,
 .heading-four,
 .heading-five,
 .heading-six {
-  @apply font-heading font-bold text-primary-800;
+  @apply font-heading font-bold text-secondary-400;
 }
 
 h1,
@@ -24,7 +24,7 @@ h1,
 
 h2,
 .heading-two {
-  @apply text-mobile-5xl md:text-5xl mb-5;
+  @apply text-mobile-5xl md:text-4xl mb-5;
 }
 
 h3,

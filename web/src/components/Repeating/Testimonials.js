@@ -9,7 +9,7 @@ import Slider from "../Slider/SliderStandard";
 
 const StyledSlider = styled.div`
   .slick-arrow {
-    ${tw`w-16 h-16 rounded-full bg-primary-100 hover:bg-primary-700 flex items-center justify-center text-white hover:text-white text-3xl no-underline`}
+    ${tw`w-16 h-16 rounded-full bg-primary-100 hover:bg-secondary-400 flex items-center justify-center text-white hover:text-white text-3xl no-underline`}
   }
   .slick-prev {
     ${tw`md:-left-10 lg:-left-44 xl:-left-48`}
@@ -17,22 +17,26 @@ const StyledSlider = styled.div`
   .slick-next {
     ${tw`md:-right-10 lg:-right-44 xl:-right-48`}
   }
-  .slick-dots {
-    ${tw`relative mt-7 md:mt-0 justify-center items-center space-x-3 !flex transition-all duration-[260ms] ease`}
-    li {
-      ${tw`h-1  rounded-[8px] bg-primary-100/30 hover:bg-primary-500 mr-0 flex-1 transition-colors duration-300 ease-linear`}
-      &.slick-active {
-        ${tw`bg-primary-100`}
-      }
-    }
-  }
-
 
 `;
 
 const Testimonial = ({ className, category }) => {
   const data = useStaticQuery(graphql`
     {
+      desktopBg: file(
+        relativePath: { eq: "common/0.0_repeating_testimonial_desktop.jpg" }
+      ) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
+      mobileBg: file(
+        relativePath: { eq: "common/0.0_repeating_testimonial-bkg-mobile.jpg" }
+      ) {
+        childImageSharp {
+          gatsbyImageData(layout: FIXED, width: 74)
+        }
+      }
       yelp: file(relativePath: { eq: "repeating/testimonials/Yelp-alt.png" }) {
         childImageSharp {
           gatsbyImageData(layout: FIXED, width: 74)
@@ -73,77 +77,86 @@ const Testimonial = ({ className, category }) => {
 
   category && Array.isArray(category) && category.length > 0
     ? (testimonialsNodes = (data || {}).testimonials
-      ? mapEdgesToNodes(data.testimonials).filter((array) =>
-        category.some((filterArray) =>
-          array.categories.some((item) => item.title === filterArray.title)
-        )
-      )
-      : [])
-    : category && category.length > 0
-      ? (testimonialsNodes = (data || {}).testimonials
-        ? mapEdgesToNodes(data.testimonials).filter((items) =>
-          items.categories.find((item) => item.title === category)
-        )
+        ? mapEdgesToNodes(data.testimonials).filter((array) =>
+            category.some((filterArray) =>
+              array.categories.some((item) => item.title === filterArray.title)
+            )
+          )
         : [])
-      : (testimonialsNodes = (data || {}).testimonials
+    : category && category.length > 0
+    ? (testimonialsNodes = (data || {}).testimonials
+        ? mapEdgesToNodes(data.testimonials).filter((items) =>
+            items.categories.find((item) => item.title === category)
+          )
+        : [])
+    : (testimonialsNodes = (data || {}).testimonials
         ? mapEdgesToNodes(data.testimonials).filter((items) => items.featured)
         : []);
   return (
     <section className={`pb-20 md:pb-32 ${className}`}>
-      <div className="container">
-        <div className="rounded-4xl bg-primary-700 px-6 pt-12 pb-8 text-center md:px-20 md:pt-20 md:pb-10 lg:px-40">
-          <StyledSlider className="relative">
-            <Slider>
-              {testimonialsNodes.slice(0, 6).map((testimonial, i) => {
-                return (
-                  <div key={i}>
-                    <blockquote className="mx-auto md:max-w-[720px] md:px-8">
-                      <footer className="mb-10">
-                        <div>
-                          <cite className="not-italic">
-                            <div className="heading-three mb-0 text-white">
-                              {testimonial.name}
-                            </div>
-                            {testimonial.businessNameTitle && (
-                              <div className="text-sm font-medium uppercase tracking-wide text-primary-100">
-                                {testimonial.businessNameTitle}
+
+      <div className="container relative">
+        <div>
+          <div className="px-20 absolute left-0 top-0 mx-auto w-full h-full">
+            <GatsbyImage className="w-full" image={data.desktopBg.childImageSharp.gatsbyImageData} />
+          </div>
+          <div className="rounded-4xl bg-transparent  pt-6 pb-8 text-center  md:pt-12 md:pb-10 ">
+            <StyledSlider className="relative">
+              <Slider className="relative">
+                {testimonialsNodes.slice(0, 6).map((testimonial, i) => {
+                  return (
+                    <div key={i}>
+                      <blockquote className="mx-auto md:max-w-[720px] md:px-8">
+                        <footer className="mb-5">
+                          <div>
+                            <cite className="not-italic">
+                              <div className="heading-three mb-0 text-gray-800">
+                                {testimonial.name}
                               </div>
-                            )}
-                          </cite>
+                              {/* {testimonial.businessNameTitle && (
+                                  <div className="text-sm font-medium uppercase tracking-wide text-primary-100">
+                                    {testimonial.businessNameTitle}
+                                  </div>
+                                )} */}
+                            </cite>
+                          </div>
+                        </footer>
+                        <q className="text-body font-normal mb-1.5 text-black/95 before:hidden">
+                          {testimonial.review}
+                        </q>
+
+                        <div className="mb-14 flex justify-center">
+                          {testimonial.platform === "Google" && (
+                            <GatsbyImage
+                              image={
+                                data.google.childImageSharp.gatsbyImageData
+                              }
+                            />
+                          )}
+
+                          {testimonial.platform === "Yelp" && (
+                            <GatsbyImage
+                              image={
+                                data.yelp.childImageSharp.gatsbyImageData
+                              }
+                            />
+                          )}
+
+                          {testimonial.platform === "Facebook" && (
+                            <GatsbyImage
+                              image={
+                                data.facebook.childImageSharp.gatsbyImageData
+                              }
+                            />
+                          )}
                         </div>
-                      </footer>
-
-                      <q className="mb-10 text-white/95 before:hidden">
-                        {testimonial.review}
-                      </q>
-
-                      <div className="mb-14 flex justify-center">
-                        {testimonial.platform === "Google" && (
-                          <GatsbyImage
-                            image={data.google.childImageSharp.gatsbyImageData}
-                          />
-                        )}
-
-                        {testimonial.platform === "Yelp" && (
-                          <GatsbyImage
-                            image={data.yelp.childImageSharp.gatsbyImageData}
-                          />
-                        )}
-
-                        {testimonial.platform === "Facebook" && (
-                          <GatsbyImage
-                            image={
-                              data.facebook.childImageSharp.gatsbyImageData
-                            }
-                          />
-                        )}
-                      </div>
-                    </blockquote>
-                  </div>
-                );
-              })}
-            </Slider>
-          </StyledSlider>
+                      </blockquote>
+                    </div>
+                  );
+                })}
+              </Slider>
+            </StyledSlider>
+          </div>
         </div>
       </div>
     </section>

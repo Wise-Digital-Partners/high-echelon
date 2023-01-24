@@ -59,8 +59,8 @@ const Page = ({ data }) => {
                     <div className="md:col-start-1 md:col-span-10">
                         <GatsbyImage image={data.consultingDesktop.childImageSharp.gatsbyImageData} />
                     </div>
-                    <div className="md:absolute bg-primary-700 shadow-inner md:col-start-6 md:col-span-7 p-20">
-                        <h2 className="font-light text-5xl text-primary-200 mb-6">
+                    <div className="md:absolute bg-secondary-400 shadow-inner md:col-start-6 md:col-span-7 p-20">
+                        <h2 className="font-light text-4xl text-primary-200 mb-6">
                           Atlanta Small Business Consulting Services
                         </h2>
                         <p className="font-light text-base text-primary-200">
@@ -87,7 +87,7 @@ const Page = ({ data }) => {
                     <div className="md-hidden">
                         <GatsbyImage image={data.consultingMobile.childImageSharp.gatsbyImageData} />
                     </div>
-                    <div className="z-20 mt-[-128px] mx-4 bg-primary-700 shadow-inner py-10 px-6">
+                    <div className="z-20 mt-[-128px] mx-4 bg-secondary-400 shadow-inner py-10 px-6">
                         <h2 className="text-primary-200 font-light text-4xl">
                           Atlanta Small Business Consulting Services
                         </h2>
@@ -483,7 +483,7 @@ const Page = ({ data }) => {
                         // onClick={()}
                         text="Send"
                         altStyle={true}
-                        className="bg-primary-700 min-w-0 text-base w-1/3"
+                        className="bg-secondary-400 min-w-0 text-base w-1/3"
                       />
                     </div>
                   : 

@@ -62,7 +62,7 @@ const Modal = ({ slideIndex, slides }) => {
             >
               <SliderTeamMembers slideIndex={slideIndex} slides={slides} />
               <i
-                className="fal fa-times absolute top-0 right-0 mr-8 mt-8 text-gray-900 hover:text-primary-800 text-2xl cursor-pointer transition-colors duration-300 ease-linear"
+                className="fal fa-times absolute top-0 right-0 mr-8 mt-8 text-gray-900 hover:text-secondary-400 text-2xl cursor-pointer transition-colors duration-300 ease-linear"
                 data-modal-close
               ></i>
             </div>

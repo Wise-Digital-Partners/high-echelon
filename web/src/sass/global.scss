@@ -13,7 +13,7 @@ button {
     &:before {
       content: "\f00c";
       font-family: "Font Awesome 5 Pro";
-      @apply font-normal text-primary-600 mr-3.5;
+      @apply font-normal text-primary-400 mr-3.5;
     }
   }
 }
@@ -24,7 +24,7 @@ button {
 }
 
 span {
-  @apply text-primary-100 w-6 h-6 ;
+  @apply text-primary-100 w-6 h-6;
   width: 32px !important;
   height: 32px !important;
 }
@@ -38,13 +38,67 @@ button a {
   align-items: center;
   justify-content: center;
 }
+.scale-up-hor-center {
+  animation: scale-up-hor-center 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) reverse both;
+}
+@-webkit-keyframes "scale-up-hor-center" {
+  0% {
+    transform: scaleX(0.4);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes "scale-up-hor-center" {
+  0% {
+    transform: scaleX(0.4);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 
-.slick-dots {
-    transition: all 1s ease;
-    width: 138px ;
-    margin: 0 auto;
+.slick-dots li {
+  margin: 0 auto !important;
+  display: flex !important;
+  height: auto
 }
-.slick-dots .slick-active {
-    width: 8px !important;
-    margin: 0 auto;
+.slick-dots li button:before {
+    color: #000;
+    content: "";
+    font-size: 6px;
+    height: 20px;
+    left: 0;
+    line-height: 20px;
+    opacity: .25;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 20px;
+    display: none;
 }
+.slick-dots li button {
+  padding: 0;
+  border: 0;
+  color: transparent;
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  outline: none;
+  margin: 0 auto !important;
+  background-color: #CCCCCC;
+  border-radius: 999px;
+  width: 25px;
+  height: 20px;
+}
+.slick-dots li.slick-active button{
+  background-color:#CEA13C ;
+}
+
+.slick-dots li button::before {
+  display: none !important;
+}
+.slick-dots li.slick-active button::before {
+  transform: scaleX(1);
+}
+

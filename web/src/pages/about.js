@@ -45,8 +45,8 @@ const Page = ({ data }) => {
                     <div className="md:col-start-1 md:col-span-10">
                         <GatsbyImage image={data.aboutProfileImage.childImageSharp.gatsbyImageData} />
                     </div>
-                    <div className="md:absolute bg-primary-700 shadow-inner md:col-start-6 md:col-span-7 p-20">
-                        <h2 className="font-light text-5xl text-primary-200 mb-6">
+                    <div className="md:absolute bg-secondary-400 shadow-inner md:col-start-6 md:col-span-7 p-20">
+                        <h2 className="font-light text-4xl text-primary-200 mb-6">
                           About High Echelon
                         </h2>
                         <p className="font-light text-base text-primary-200">
@@ -76,7 +76,7 @@ const Page = ({ data }) => {
                     <div className="md-hidden">
                         <GatsbyImage image={data.aboutProfileMobile.childImageSharp.gatsbyImageData} />
                     </div>
-                    <div className="z-20 mt-[-128px] mx-4 bg-primary-700 shadow-inner py-10 px-6">
+                    <div className="z-20 mt-[-128px] mx-4 bg-secondary-400 shadow-inner py-10 px-6">
                         <h2 className="text-primary-200 font-light">
                           About High Echelon
                         </h2>
@@ -127,7 +127,7 @@ const Page = ({ data }) => {
                     </div>
                     <div className="block w-full md:flex justify-center flex-col lg:w-1/2">
                         <div className="md:px-4">
-                            <p className="text-4xl md:text-5xl font-thin mb-6">The Story Behind the Firm</p>
+                            <p className="text-4xl md:text-4xl font-thin mb-6">The Story Behind the Firm</p>
                             <p className="text-base font-light  mb-6">
                             CPA work is in Michelle’s blood. She follows in the footsteps of her father, Robert 'Bob' Fendrick, who owned and managed his own public accounting firm, Fendrick & Associates, for 25 years.<br /><br />
 
@@ -223,7 +223,7 @@ Michelle named the company after her grandfather Jerry Fendrick's Thoroughbred h
                 </div>
               </div>
               <div className="lg:w-7/12 flex items-start justify-center flex-col lg:px-16 md:px-4 sm:px-2 mr-30 sm:w-full mb-8">
-                <div className="text-4xl md:text-5xl text-thin mb-6">Meet Michelle Frank</div>
+                <div className="text-4xl md:text-4xl text-thin mb-6">Meet Michelle Frank</div>
                 <div className="text-base text-light mb-6">
                   <p>
                   Michelle is sharp and fiercely determined, bringing those attributes
@@ -271,7 +271,7 @@ Michelle named the company after her grandfather Jerry Fendrick's Thoroughbred h
               </div>
             </div>
             <div className="lg:w-7/12 flex items-start justify-center flex-col lg:px-16 md:px-4 sm:px-2 mr-30 sm:w-full mb-8">
-              <div className="text-4xl md:text-5xl text-thin mb-6">
+              <div className="text-4xl md:text-4xl text-thin mb-6">
                 Meet Robert Fendrick
               </div>
               <div className="text-base text-light mb-1.5">

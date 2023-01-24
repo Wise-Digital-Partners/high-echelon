@@ -19,7 +19,7 @@ const UtilityNav = () => {
     document.getElementById("bottom-right-modal").style.display = "none"; 
   }
   return (
-    <div id="utlity-navigation" className=" bg-primary-700 py-1.5 hidden md:block">
+    <div id="utlity-navigation" className=" bg-secondary-400 py-1.5 hidden md:block">
       <div className="container">
         <div className="flex justify-end items-center text-sm text-white">
           <div className="flex justify-between md:justify-end w-full md:w-auto space-x-8">
@@ -196,7 +196,7 @@ const UtilityNav = () => {
                       // onClick={()}
                       text="Send"
                       altStyle={true}
-                      className="bg-primary-700 min-w-0 text-base w-1/3"
+                      className="bg-secondary-400 min-w-0 text-base w-1/3"
                     />
                   </div>
                         

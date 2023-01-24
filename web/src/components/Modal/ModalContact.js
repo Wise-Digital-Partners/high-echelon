@@ -66,7 +66,7 @@ const closeContactModal = () => {
             <div className="flex justify-between items-center pt-12 pb-4 md:py-4 px-5 border-b border-black-20">
               <a
                 href="tel:773-501-3997"
-                className="text-gray-900 hover:text-primary-100 hover:text-primary-600 font-medium"
+                className="text-gray-900 hover:text-primary-100 hover:text-primary-400 font-medium"
               >
                 <i className="fas fa-phone-alt mr-1"></i> (773) 501-3997
               </a>

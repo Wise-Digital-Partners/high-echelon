@@ -155,7 +155,7 @@ return(
                     // onClick={()}
                     text="Send"
                     altStyle={true}
-                    className="bg-primary-700 min-w-0 text-base w-1/3"
+                    className="bg-secondary-400 min-w-0 text-base w-1/3"
                   />
                 </div>
               : 

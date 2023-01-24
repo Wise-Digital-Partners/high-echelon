@@ -115,27 +115,11 @@ const Footer = ({ hideFooter }) => {
   return (
     <>
       <footer
-        className={`bg-primary-700 pb-12 lg:pb-6 ${
+        className={`bg-secondary-400 pb-12 lg:pb-6 ${
           hideFooter && "hidden"
         }`}
       >
-          {/* <div className="text-center">
-            <svg width="1094" height="2" viewBox="0 0 1712 2" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-center">
-              <line y1="1.5" x2="1094" y2="1.5" stroke="url(#paint0_linear_1569_821)" strokeWidth="3"/>
-              <defs>
-              <linearGradient id="paint0_linear_1569_821" x1="0" y1="3.50435" x2="1094" y2="3.4388" gradientUnits="userSpaceOnUse">
-              <stop stopColor="#A2A09D" stopOpacity="0"/>
-              <stop offset="0.145833" stopColor="#CB9636"/>
-              <stop offset="0.265625" stopColor="#CFA855"/>
-              <stop offset="0.427083" stopColor="#FCE4A7"/>
-              <stop offset="0.578125" stopColor="#F0D592"/>
-              <stop offset="0.713542" stopColor="#CFA855"/>
-              <stop offset="0.828125" stopColor="#CB9636"/>
-              <stop offset="1" stopColor="#A7A7A7" stopOpacity="0"/>
-              </linearGradient>
-              </defs>
-            </svg> 
-          </div> */}
+
         <div className="container pt-20">
           <div className="grid lg:grid-cols-12 lg:justify-between space-y-16 lg:space-y-0 lg:space-x-8 mb-10 md:mb-16">
             <div className="lg:col-start-1 lg:col-span-3">
@@ -163,7 +147,7 @@ const Footer = ({ hideFooter }) => {
             </div>
 
             <div className="w-full lg:col-end-13 md:col-span-9 md:pt-5 pt-0 mt-10">
-                <ul className="block text-white text-sm md:float-right block md:flex items-stretch">
+                <ul className="block text-white text-sm md:float-right md:flex items-stretch">
                   <li class = "md:ml-9 lg:ml-9 text-center mb-6">
                     <AniLink
                         fade

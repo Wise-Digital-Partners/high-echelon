@@ -42,12 +42,12 @@ const Page = ({ data }) => {
   // const [bookCall, setBookCall] = useState(0);
 
   return (
-    <Layout headerDarkMode={true}>
+    <Layout className="bg-secondary-400" headerDarkMode={true}>
       <SearchEngineOptimization
         title="Small Business CPA Atlanta | High Echelon"
         description="High Echelon is a small business CPA firm serving Atlanta & beyond specializing in small businesses here to simplify your books. Learn more here!"
       />
-      <section className="w-full block lg:hidden md:hidden relative">
+      <section className="bg-white w-full block lg:hidden md:hidden relative">
         <GatsbyImage
           image={data.heroMobile.childImageSharp.gatsbyImageData}
           className="md:hidden w-full"
@@ -71,7 +71,7 @@ const Page = ({ data }) => {
           </div>
         </div>
         <div className="relative mb-32 flex justify-center">
-          <div className="container bg-primary-700 flex justify-center md:justify-center items-center flex-col rounded-[8px]">
+          <div className="container bg-secondary-400 flex justify-center md:justify-center items-center flex-col rounded-[8px]">
             <svg width="324" height="2" viewBox="0 0 324 2" fill="none" xmlns="http://www.w3.org/2000/svg" className="mb-7">
               <line x1="0.900024" y1="1" x2="323.1" y2="1" stroke="url(#paint0_linear_1192_6745)" strokeWidth="2" />
               <defs>
@@ -146,7 +146,7 @@ const Page = ({ data }) => {
         </Hero>
         <div className="relative md:top-[-100px] sm:top-0 md:mx-28 sm:mx-4 mb-20 flex justify-center">
 
-          <div className="absolute sm:flex container bg-primary-700 flex justify-center items-center flex-col rounded-[8px]">
+          <div className="absolute sm:flex container bg-secondary-400 flex justify-center items-center flex-col rounded-[8px]">
             <svg width="1094" height="3" viewBox="0 0 1094 3" fill="none" xmlns="http://www.w3.org/2000/svg" className="mb-7">
               <line y1="1.5" x2="1094" y2="1.5" stroke="url(#paint0_linear_1129_1424)" strokeWidth="3" />
               <defs>
@@ -323,7 +323,7 @@ const Page = ({ data }) => {
                   />
                 </div>
               </AniLink>
-              <AniLink fade to="/small-business-tax-preparation-services-atlanta/" className=" block w-full mr-0 md:flex lg:flex md:mr-5 md:w-1/2 lg:mr-5 lg:w-1/2">
+              <AniLink fade to="/cyber-security-data-protection-atlanta/" className=" block w-full mr-0 md:flex lg:flex md:mr-5 md:w-1/2 lg:mr-5 lg:w-1/2">
                 <GatsbyImage
                   image={
                     data.cyberServicesImage.childImageSharp
@@ -342,7 +342,7 @@ const Page = ({ data }) => {
                     </p>
                   </div>
                   <ButtonGhost
-                    href="/small-business-tax-preparation-services-atlanta/"
+                    href="/cyber-security-data-protection-atlanta/"
                     text="Learn More"
                     className="lg:hidden md:hidden w-[100px] h-[40px]"
                   />
@@ -493,7 +493,7 @@ const Page = ({ data }) => {
                         // onClick={()}
                         text="Send"
                         altStyle={true}
-                        className="bg-primary-700 min-w-0 text-base w-1/3"
+                        className="bg-secondary-400 min-w-0 text-base w-1/3"
                       />
                     </div>
                   : 

@@ -57,7 +57,7 @@ const ValueProps = ({ className, headingLevel, heading }) => {
   const HeadingTag = headingLevel || "h2";
 
   return (
-    <section className={`${className || "bg-primary-700 mb-20 md:mb-32"}`}>
+    <section className={`${className || "bg-secondary-400 mb-20 md:mb-32"}`}>
       <div className="container">
         <header className=" md:max-w-2xl md:mx-auto text-center pt-24 mb-10">
           <HeadingTag className="text-primary-200 font-light text-4xl pb-5 lg:pb-0">{heading || "Why US?"}</HeadingTag>

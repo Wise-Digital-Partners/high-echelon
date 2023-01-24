@@ -59,8 +59,8 @@ const Page = ({ data }) => {
                     <div className="md:col-start-1 md:col-span-10">
                         <GatsbyImage image={data.accountingDesktop.childImageSharp.gatsbyImageData} />
                     </div>
-                    <div className="md:absolute bg-primary-700 shadow-inner md:col-start-6 md:col-span-7 p-20">
-                        <h2 className="font-light text-5xl text-primary-200 mb-6">
+                    <div className="md:absolute bg-secondary-400 shadow-inner md:col-start-6 md:col-span-7 p-20">
+                        <h2 className="font-light text-4xl text-primary-200 mb-6">
                           Small Business Accounting Services in Greater Atlanta
                         </h2>
                         <p className="font-light text-base text-primary-200">
@@ -87,7 +87,7 @@ const Page = ({ data }) => {
                     <div className="md-hidden">
                         <GatsbyImage image={data.accountingMobile.childImageSharp.gatsbyImageData} />
                     </div>
-                    <div className="z-20 mt-[-128px] mx-4 bg-primary-700 shadow-inner py-10 px-6">
+                    <div className="z-20 mt-[-128px] mx-4 bg-secondary-400 shadow-inner py-10 px-6">
                         <h2 className="text-primary-200 font-light text-4xl">
                           Small Business Accounting Services in Greater Atlanta
                         </h2>
@@ -119,7 +119,7 @@ const Page = ({ data }) => {
                   between failure and success—you’ll want accurate data, and we deliver.
                 </p>
             </div>
-            <div className="hidden md:block flex justify-center items-center md:pt-32 md:pb-32 pb-20">
+            <div className="hidden md:block justify-center items-center md:pt-32 md:pb-32 pb-20">
                 <svg
                     height="3"
                     viewBox="0 0 1094 3"
@@ -174,7 +174,7 @@ const Page = ({ data }) => {
         <section className="mb-20 md:mb-32 mt-12">
             <div className="container">
                 <div className="lg:flex items-center md:block">
-                    <div className="md:hidden md:block w-full mb-8">
+                    <div className="md:hidden w-full mb-8">
                       <GatsbyImage
                           image={
                               data.serviceImage.childImageSharp.gatsbyImageData
@@ -308,15 +308,16 @@ const Page = ({ data }) => {
                             alt="Payroll Management"
                             className="mb-6 rounded-[8px] h-60 w-full"
                             />
+                  <div className="justify-center flex-col py-2">
+                    <h3 className="text-lg mb-4 text-primary-700">
+                      Payroll Management
+                    </h3>
+                    <p className="text-base">
+                      Lighten your load with automated payroll processing, hiring, and termination.
+                    </p>
+                  </div>
                           </div>
-                          <div className="justify-center flex-col py-2">
-                              <h3 className="text-lg mb-4 text-primary-700">
-                                Payroll Management
-                              </h3>
-                              <p className="text-base">
-                                Lighten your load with automated payroll processing, hiring, and termination.
-                              </p>    
-                          </div>
+
                         </AniLink>
                         <AniLink fade to="/small-business-tax-preparation-services-atlanta/" className="mr-10 mb-6 w-1/3 h-60">
                           <div className="max-w-140">
@@ -501,7 +502,7 @@ const Page = ({ data }) => {
                         // onClick={()}
                         text="Send"
                         altStyle={true}
-                        className="bg-primary-700 min-w-0 text-base w-1/3"
+                        className="bg-secondary-400 min-w-0 text-base w-1/3"
                       />
                     </div>
                   : 

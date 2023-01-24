@@ -37,7 +37,7 @@ const CTA = ({ heading, headingLevel, subtext, className }) => {
     //     className || ""
     //   }`}
     // >
-    <section class = "bg-no-repeat bg-cover bg-center md:pb-18 md:pb-18" style={{backgroundImage: `url('${houseImg}')`}}>
+    <section class = "bg-no-repeat bg-cover bg-center md:pb-18" style={{backgroundImage: `url('${houseImg}')`}}>
       
       <div className="container pt-20">
         <div className="flex flex-col md:flex-row md:justify-between items-start md:items-end md:mb-8">
@@ -201,7 +201,7 @@ const CTA = ({ heading, headingLevel, subtext, className }) => {
                         // onClick={()}
                         text="Send"
                         altStyle={true}
-                        className="bg-primary-700 min-w-0 text-base w-1/3"
+                        className="bg-secondary-400 min-w-0 text-base w-1/3"
                       />
                     </div>
                   : 

@@ -122,6 +122,14 @@ const MainNav = ({
       {
         name: "Income Tax Preparation",
         href: "/small-business-tax-preparation-services-atlanta/",
+      },      
+      {
+        name: "Business Coaching & Advisory Services",
+        href: "/business-coaching-advisory-services-atlanta/",
+      },
+      {
+        name: "Cybersecurity & Data Protection",
+        href: "/cyber-security-data-protection-atlanta/",
       },
     ],
     about: [
@@ -327,7 +335,7 @@ const MainNav = ({
                 data-modal-open="bottom-right-modal"
                 text="Contact Us"
                 altStyle={true}
-                className="bg-primary-700 min-w-0 text-base"
+                className="bg-secondary-400 min-w-0 text-base"
               />
             </li>
             {/* <li>
@@ -354,7 +362,7 @@ const MainNav = ({
             />
 
             {/* Mobile Nav  */}
-            <OffCanvas offcanvasOpen={offcanvasOpen} id="offcanvas-navigation" className=" bg-primary-700">
+            <OffCanvas offcanvasOpen={offcanvasOpen} id="offcanvas-navigation" className=" bg-secondary-400">
               <div className="px-7 py-12">
                 <ul id="navigation-mobile" className="mb-12">
                   <Accordion
@@ -618,7 +626,7 @@ const MainNav = ({
                           // onClick={()}
                           text="Send"
                           altStyle={true}
-                          className="bg-primary-700 min-w-0 text-base w-1/3"
+                          className="bg-secondary-400 min-w-0 text-base w-1/3"
                         />
                       </div>
                     : 
