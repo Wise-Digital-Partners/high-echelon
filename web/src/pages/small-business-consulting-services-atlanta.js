@@ -8,7 +8,7 @@ import SearchEngineOptimization from "../components/SEO";
 import Testimonials from "../components/Repeating/Testimonials";
 import CarouselForm from "../components/Repeating/Carousel";
 import Accordian from "../components/Accordion/Accord";
-import ValueProps from "../components/Repeating/ValueProps";
+import Portfolio from "../components/Repeating/Portfolio";
 import About from "../components/Repeating/About";
 import CallToAction from "../components/Repeating/CTA";
 import ButtonSolid from "../components/Button/ButtonSolid";
@@ -111,10 +111,10 @@ const Page = ({ data }) => {
         </section>
 
         <section className="mt-12 flex justify-content items-center flex-col">
-            <div className="flex justify-content items-center flex-col md:mx-88 md:min-w-120 sm:mx-8 px-7">
+            <div className="flex justify-content items-center flex-col md:mx-24 md:min-w-120 sm:mx-8 px-7">
                 <p className="text-4xl-x font-thin mb-6 text-center md:text-start">Get Expert Advice.</p>
                 <p className="text-4xl-x font-thin mb-6 text-center md:text-start">Make Strategic Moves.</p>
-                <p className="text-xl font-light leading-7 text-center md:text-start mb-10 md:mb-0">
+                <p className="text-xl md:w-[760px] font-light leading-7 text-center md:text-start mb-10 md:mb-0">
                   Are you just getting started? Deciding how to structure your new business is a critical
                   first step and can have enormous implications. Or are you already operating a business and need to make a shift? Smart advice starts here.
                 </p>
@@ -171,182 +171,9 @@ const Page = ({ data }) => {
             </div>
         </section>
 
-        <section className="mb-20 md:mb-32 mt-12">
-            <div className="container">
-                <div className="lg:flex items-center md:block">
-                    <div className="md:hidden md:block w-full mb-8">
-                      <GatsbyImage
-                          image={
-                              data.serviceImage.childImageSharp.gatsbyImageData
-                          }
-                          alt="Small Business Consulting"
-                          className="rounded-[8px]"
-                      />
-                    </div>
-                    <div className="flex justify-center flex-col lg:w-1/2 md:w-full md:mb-8 sm:mb-8">
-                        <div className="md:pl-10 pl-0">
-                            <p className="text-4xl font-thin">How We Can Help Your</p>
-                            <p className="text-4xl pl-20 font-thin mb-6"> Small Business</p>
-                            <p className="text-base font-light  mb-6">
-                              At High Echelon, we draw on a long history of best practices to help small you move
-                              forward with confidence. Our small business consulting services include:
-                            </p>
-                            <div className="text-base font-light">
-                                <div className="flex">
-                                    <i className="fa fa-check text-primary-100 mr-3"></i>
-                                    <p className="text-base font-semibold mb-3">Entity Entity formation</p>
-                                </div>
-                                <div className="flex">
-                                    <i className="fa fa-check text-primary-100 mr-3"></i>
-                                    <p className="text-base font-semibold mb-3">Talk out the pros and cons of different approaches</p>
-                                </div>
-                                <div className="flex">
-                                    <i className="fa fa-check text-primary-100 mr-3"></i>
-                                    <p className="text-base font-semibold mb-3">Advise you on a big purchase or sale that may be on the horizon</p>
-                                </div> 
-                            </div>
-                        </div>
-                    </div>
-                    <div className="hidden md:block md:w-1/2 mr-0 md:mr-20 md:mb-8 mb-8">
-                      <GatsbyImage
-                          image={
-                              data.serviceImage.childImageSharp.gatsbyImageData
-                          }
-                          alt="Small Business Consulting"
-                          className="rounded-[8px] w-full"
-                      />
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section className="mb-20 md:mb-32 mt-12">
-            <div className="container">
-                <div className="lg:flex items-center md:block">
-                    <div className="lg:w-1/2 md:w-full mr-0 md:mr-20 md:mb-8 sm:mb-8">
-                        <GatsbyImage
-                            image={
-                                data.smallBusinessConsultingImage.childImageSharp.gatsbyImageData
-                            }
-                            alt="Small Business Consulting"
-                            className="rounded-[8px] w-full"
-                        />
-                    </div>
-                    <div className="block md:flex justify-center flex-col lg:w-1/2 md:w-full mt-10 md:mt-0">
-                        <div className="px-0 md:px-10">
-                            <p className="text-4xl font-thin mb-6">How To Get Started</p>
-                            <p className="text-base font-light  mb-6">
-                                We begin with an introductory call at no cost to you.
-                                First, we want to understand your goals and align on expectations,
-                                timeline, and outcomes. And from there, we’ll present you with a
-                                proposal outlining a plan and the associated costs.
-                            </p>
-                            {/* <ButtonSolidGold
-                                className="font-light"
-                                onClick={()=>openContactModal()}
-                                text="Book a Call"
-                            /> */}
-                            <ButtonSolidGold
-                              data-modal-open="bottom-right-modal"
-                              onKeyDown={clickHandler}
-                              onClick={clickHandler}
-                              text="Book a Call"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section className="mb-20 md:mb-32 mt-0 md:mt-12">
-            <div className="container">
-                <p className="text-4xl-x mb-12">Answers To Frequently Asked Questions</p>
-                <Accordian />
-            </div>
-        </section>
-
-      {/* <section className="mb-20 md:mb-32 2xl:container 2xl:mx-auto 2xl:px-0 py-3 md:px-10">
-        <p className="text-4xl-x font-light mb-0 text-center">Our Clients Say Its Best</p>
-        <CarouselForm />
-      </section> */}
-
-        <section className="mb-20 md:mb-32">
-            <div className="container">
-                <div className="gap-y-8 md:gap-x-10 lg:gap-x-16">
-                    <div className="mb-8 flex justify-center items-center flex-col">
-                        <h3 className="text-primary-700 text-4xl font-thin mb-12">
-                          Streamline Everything. Get The Full Benefit.
-                        </h3>
-                        <p className="md:w-2/3 sm:w-full text-xl md:text-base sm:text-base font-light mb-12">
-                          Get the best results when you combine our expert advice with end-to-end services that manage your finances in a full-stack solution
-                        </p>
-                    </div>
-                    <div className="md:flex sm:block">
-                        <AniLink fade to="/small-business-accounting-services-atlanta/" className="mr-10 mb-6 w-1/3">
-                          <div className=" max-w-140">
-                            <GatsbyImage
-                            image={
-                                data.accountServicesImage.childImageSharp
-                                .gatsbyImageData
-                            }
-                            alt="Accounting Services"
-                            className="mb-6 rounded-[8px] h-60 max-w-140"
-                            />
-                          </div>
-                            <div className="justify-center flex-col py-2">
-                                <h3 className="text-lg mb-4 text-primary-700">
-                                  Accounting Services
-                                </h3>
-                                <p className="text-base">
-                                  Gain a clear understanding of your financials so you can make smart business decisions.
-                                </p>
-                            </div>
-                        </AniLink>
-                        <AniLink fade to="/payroll-management-services-atlanta/" className="mr-10 mb-6 w-1/3">
-                          <div className="max-w-140">
-                            <GatsbyImage
-                              image={
-                                  data.payrollManagementImage.childImageSharp.gatsbyImageData
-                              }
-                              alt="Payroll Management"
-                              className="mb-6 rounded-[8px] h-60 max-w-140"
-                              />
-                            </div>
-                            <div className="justify-center flex-col py-2">
-                                <h3 className="text-lg mb-4 text-primary-700">
-                                  Payroll Management
-                                </h3>
-                                <p className="text-base">
-                                  Lighten your load with automated payroll processing, hiring, and termination.
-                                </p>    
-                            </div>
-                        </AniLink>
-                        <AniLink fade to="/small-business-tax-preparation-services-atlanta/" className="mr-10 mb-6 w-1/3 h-60">
-                          <div className="max-w-140">
-                            <GatsbyImage
-                            image={
-                                data.taxImage.childImageSharp
-                                .gatsbyImageData
-                            }
-                            alt="Tax Preparation"
-                            className="mb-6 rounded-[8px] h-60 max-w-140"
-                            />
-                          </div>
-                            <div className="justify-center flex-col py-2">
-                            <h3 className="text-lg mb-4 text-primary-700">
-                              Tax Preparation
-                            </h3>
-                            <p className="text-base">
-                              Remove the stress of taxes with professional tax preparation and an IRS liaison.
-                            </p>
-                            </div>
-                        </AniLink>
-                    </div>
-                </div>
-            </div>
-        </section>
-      {/* <ValueProps /> */}
-      {/* <Testimonials /> */}
+      <Testimonials />
+      <Portfolio />
       
       <About />
       <svg className="w-full" width="1200" height="3" viewBox="0 0 1200 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5h1200" stroke="url(#paint0_linear_1129_1425)" strokeWidth="3"/><defs><linearGradient id="paint0_linear_1129_1425" x1="0" y1="2.00435" x2="1182.95" y2="1.96651" gradientUnits="userSpaceOnUse"><stop stopColor="#A2A09D" stopOpacity="0"/><stop offset=".145833" stopColor="#FCE4A7"/><stop offset=".265625" stopColor="#CFA855"/><stop offset=".427083" stopColor="#FCE4A7"/><stop offset=".578125" stopColor="#F0D592"/><stop offset=".713542" stopColor="#FCE4A7"/><stop offset=".828125" stopColor="#CB9636"/><stop offset="1" stopColor="#A7A7A7" stopOpacity="0"/></linearGradient></defs></svg>

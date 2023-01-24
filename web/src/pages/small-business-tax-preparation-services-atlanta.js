@@ -8,7 +8,7 @@ import SearchEngineOptimization from "../components/SEO";
 import Testimonials from "../components/Repeating/Testimonials";
 import CarouselForm from "../components/Repeating/Carousel";
 import Accordian from "../components/Accordion/TaxAccordion";
-import ValueProps from "../components/Repeating/ValueProps";
+import Portfolio from "../components/Repeating/Portfolio";
 import About from "../components/Repeating/About";
 import CallToAction from "../components/Repeating/CTA";
 import ButtonSolid from "../components/Button/ButtonSolid";
@@ -114,7 +114,7 @@ const Page = ({ data }) => {
         <section className="mt-12 flex justify-content items-center flex-col">
             <div className="flex justify-content items-center flex-col md:mx-70 md:min-w-120 sm:mx-8 px-7">
                 <p className="text-4xl-x font-thin mb-6 text-center md:text-start">Streamlined Business & Personal Tax Preparation</p>
-                <p className="text-xl font-light leading-7 text-center md:text-start mb-10 md:mb-0">
+                <p className="text-xl md:w-[760px] font-light leading-7 text-center md:text-start mb-10 md:mb-0">
                     When we do your accounting and payroll, it flows directly into your business tax return and delivers
                     the data with the highest accuracy. And from there, the relevant information is imported directly
                     to your personal tax return.
@@ -311,84 +311,9 @@ const Page = ({ data }) => {
         <CarouselForm />
       </section> */}
 
-        <section className="mb-20 md:mb-32">
-            <div className="container">
-                <div className="gap-y-8 md:gap-x-10 lg:gap-x-16">
-                    <div className="mb-8 flex justify-center items-center flex-col">
-                        <h3 className="text-primary-700 text-4xl font-thin mb-12">
-                          Streamline Everything. Get The Full Benefit.
-                        </h3>
-                        <p className="md:w-2/3 sm:w-full text-xl md:text-base sm:text-base font-light mb-12">
-                          Get the best results when you combine our expert advice with end-to-end services that manage your finances in a full-stack solution
-                        </p>
-                    </div>
-                    <div className="md:flex sm:block">
-                        <AniLink fade to="/payroll-management-services-atlanta/" className="mr-10 mb-6 w-1/3">
-                          <div className="max-w-140">
-                            <GatsbyImage
-                              image={
-                                  data.payrollManagementImage.childImageSharp.gatsbyImageData
-                              }
-                              alt="Payroll Management"
-                              className="mb-6 rounded-[8px] h-60 w-full"
-                              />
-                            </div>
-                            <div className="justify-center flex-col py-2">
-                                <h3 className="text-lg mb-4 text-primary-700">
-                                  Payroll Management
-                                </h3>
-                                <p className="text-base">
-                                  Lighten your load with automated payroll processing, hiring, and termination.
-                                </p>    
-                            </div>
-                        </AniLink>
-                        <AniLink fade to="/small-business-accounting-services-atlanta/" className="mr-10 mb-6 w-1/3">
-                          <div className=" max-w-140">
-                            <GatsbyImage
-                            image={
-                                data.accountServicesImage.childImageSharp
-                                .gatsbyImageData
-                            }
-                            alt="Accounting Services"
-                            className="mb-6 rounded-[8px] h-60 w-full"
-                            />
-                          </div>
-                            <div className="justify-center flex-col py-2">
-                                <h3 className="text-lg mb-4 text-primary-700">
-                                  Accounting Services
-                                </h3>
-                                <p className="text-base">
-                                  Gain a clear understanding of your financials so you can make smart business decisions.
-                                </p>
-                            </div>
-                        </AniLink>
-                        
-                        <AniLink fade to="/small-business-consulting-services-atlanta/" className="mr-10 mb-6 w-1/3 h-60">
-                          <div className="max-w-140">
-                            <GatsbyImage
-                            image={
-                                data.smallBusinessConsultingImage.childImageSharp
-                                .gatsbyImageData
-                            }
-                            alt="Small Business Consulting"
-                            className="mb-6 rounded-[8px] h-60 max-w-140"
-                            />
-                          </div>
-                            <div className="justify-center flex-col py-2">
-                            <h3 className="text-lg mb-4 text-primary-700">
-                                Small Business Consulting
-                            </h3>
-                            <p className="text-base">
-                                Get wise advice on starting a new business or restructuring an existing one.
-                            </p>
-                            </div>
-                        </AniLink>
-                    </div>
-                </div>
-            </div>
-        </section>
-      {/* <ValueProps /> */}
-      {/* <Testimonials /> */}
+
+      <Testimonials />
+      <Portfolio />
       
       <About />
       <svg className="w-full" width="1200" height="3" viewBox="0 0 1200 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5h1200" stroke="url(#paint0_linear_1129_1425)" strokeWidth="3"/><defs><linearGradient id="paint0_linear_1129_1425" x1="0" y1="2.00435" x2="1182.95" y2="1.96651" gradientUnits="userSpaceOnUse"><stop stopColor="#A2A09D" stopOpacity="0"/><stop offset=".145833" stopColor="#FCE4A7"/><stop offset=".265625" stopColor="#CFA855"/><stop offset=".427083" stopColor="#FCE4A7"/><stop offset=".578125" stopColor="#F0D592"/><stop offset=".713542" stopColor="#FCE4A7"/><stop offset=".828125" stopColor="#CB9636"/><stop offset="1" stopColor="#A7A7A7" stopOpacity="0"/></linearGradient></defs></svg>

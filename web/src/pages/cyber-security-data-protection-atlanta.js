@@ -50,11 +50,11 @@ const Page = ({ data }) => {
   return (
     <Layout headerDarkMode={true}>
       <SearchEngineOptimization
-        title="Small Business Coaching & Advisory Services | Atlanta"
+        title="Small Business Cyber Security & Data Protection | Atlanta"
         description="Get an extra layer of protection to ensure you're safe from cyber attacks, breaches, and theft as a result of hackers. Book a call with High Echelon today.
         "
       />
-      <Portfolio/>
+
         <section className="hidden md:block mb-20 md:mb-32 mt-12">
             <div className="container ">
                 <div className="relative grid md:grid-cols-12 md:gap-x-10 lg:gap-x-16 gap-y-8 items-center">
@@ -113,9 +113,9 @@ const Page = ({ data }) => {
         </section>
 
         <section className="mt-12 flex justify-content items-center flex-col">
-            <div className="flex justify-content items-center flex-col md:mx-88 md:min-w-120 sm:mx-8 px-7">
+            <div className="flex justify-content items-center flex-col md:mx-24 md:min-w-120 sm:mx-8 px-7">
           <p className="text-4xl-x font-thin mb-6 text-center md:text-start">Make Sure What You’ve Built is Safe From Cyber Attacks</p>
-                <p className="text-xl font-light leading-7 text-center md:text-start mb-10 md:mb-0">
+                <p className="text-xl md:w-[760px] font-light leading-7 text-center md:text-start mb-10 md:mb-0">
             As an add-on service to what we do for you, add an extra layer of protection to ensure that you are safe from destructive cyber attacks, breaches, and theft as a result of hackers. 
                 </p>
             </div>
@@ -263,84 +263,8 @@ const Page = ({ data }) => {
         <CarouselForm />
       </section> */}
 
-        <section className="mb-20 md:mb-32">
-            <div className="container">
-                <div className="gap-y-8 md:gap-x-10 lg:gap-x-16">
-                    <div className="mb-8 flex text-center justify-center items-center flex-col">
-                        <h3 className="text-primary-700 text-4xl font-thin mb-12">
-                          Why do I need to invest in cybersecurity?
-                        </h3>
-                        <p className="md:w-2/3 sm:w-full text-xl md:text-base sm:text-base font-light mb-12">
-                Most businesses have not kept pace with mitigating the risks to their organization, particularly given that a cyber attack can now be a business-ending event. The pace at which attackers are able to attack and steal data has changed radically in the last 5 years, and risky activities like password re-use and not using two-factor authentication are dangerous.
-                        </p>
-                    </div>
-                    <div className="md:flex sm:block">
-                      <AniLink fade to="/payroll-management-services-atlanta/" className="mr-10 mb-6 w-1/3">
-                        <div className="max-w-140">
-                          <GatsbyImage
-                            image={
-                                data.payrollManagementImage.childImageSharp.gatsbyImageData
-                            }
-                            alt="Payroll Management"
-                            className="mb-6 rounded-[8px] h-60 w-full"
-                            />
-                          </div>
-                          <div className="justify-center flex-col py-2">
-                              <h3 className="text-lg mb-4 text-primary-700">
-                    What are the most effective things I can do to secure my data?
-                              </h3>
-                              <p className="text-base">
-                    Cybersecurity is not a one-and-done activity - it requires diligent attention month after month. As new employees join your team, they will need to be trained and brought up to speed on best practices. That said, the best place to start is to enable two-factor authentication on every account that has a password. 
-                              </p>    
-                          </div>
-                        </AniLink>
-                        <AniLink fade to="/small-business-tax-preparation-services-atlanta/" className="mr-10 mb-6 w-1/3 h-60">
-                          <div className="max-w-140">
-                            <GatsbyImage
-                            image={
-                                data.taxImage.childImageSharp
-                                .gatsbyImageData
-                            }
-                            alt="Income Tax Preparation"
-                            className="mb-6 rounded-[8px] h-60 max-w-140"
-                            />
-                          </div>
-                            <div className="justify-center flex-col py-2">
-                            <h3 className="text-lg mb-4 text-primary-700">
-                    How can I be sure I haven’t already been attacked?
-                            </h3>
-                            <p className="text-base">
-                    The short answer is - you can’t be sure, but there are a set of monitors that you can review to be 99.999% sure. You need to review recent logins and reporting on recent user activity and determine whether any of it is suspicious or fraudulent.
-                            </p>
-                            </div>
-                        </AniLink>
-                        <AniLink fade to="/small-business-consulting-services-atlanta/" className="mr-10 mb-6 w-1/3">
-                          <div className=" max-w-140">
-                            <GatsbyImage
-                            image={
-                                data.consultingImage.childImageSharp
-                                .gatsbyImageData
-                            }
-                            alt="Small Business Consulting"
-                            className="mb-6 rounded-[8px] h-60 max-w-140"
-                            />
-                          </div>
-                            <div className="justify-center flex-col py-2">
-                                <h3 className="text-lg mb-4 text-primary-700">
-                                  Small Business Consulting
-                                </h3>
-                                <p className="text-base">
-                                  Get wise advice on starting a new business or restructuring an existing one.
-                                </p>
-                            </div>
-                        </AniLink>
-                        
-                    </div>
-                </div>
-            </div>
-        </section>
-      {/* <ValueProps /> */}
-      {/* <Testimonials /> */}
+      <Testimonials />
+      <Portfolio />
       
       <About />
       <svg className="w-full" width="1200" height="3" viewBox="0 0 1200 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5h1200" stroke="url(#paint0_linear_1129_1425)" strokeWidth="3"/><defs><linearGradient id="paint0_linear_1129_1425" x1="0" y1="2.00435" x2="1182.95" y2="1.96651" gradientUnits="userSpaceOnUse"><stop stopColor="#A2A09D" stopOpacity="0"/><stop offset=".145833" stopColor="#FCE4A7"/><stop offset=".265625" stopColor="#CFA855"/><stop offset=".427083" stopColor="#FCE4A7"/><stop offset=".578125" stopColor="#F0D592"/><stop offset=".713542" stopColor="#FCE4A7"/><stop offset=".828125" stopColor="#CB9636"/><stop offset="1" stopColor="#A7A7A7" stopOpacity="0"/></linearGradient></defs></svg>

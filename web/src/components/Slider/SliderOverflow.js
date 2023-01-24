@@ -10,13 +10,13 @@ import "slick-carousel/slick/slick-theme.css";
 const StyledSlider = styled.div`
   .slick-list,
   .slick-slider {
-    position: inherit;
+    position: initail;
   }
   .slick-slide > div {
-    ${tw`md:mx-1.5`}
+    ${tw`mx-3`}
   }
   .slick-list {
-    ${tw`md:-mx-3 p-0! md:overflow-visible`}
+    ${tw`p-0`}
   }
 `;
 
@@ -31,15 +31,11 @@ const Slider = ({ children }) => {
   }
 
   const sliderSettings = {
-    dots: false,
     arrows: true,
-    speed: 750,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    centerMode: true,
     slidesToShow: 3,
-    initialSlide: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4500,
     infinite: true,
     swipeToSlide: true,
     responsive: [
@@ -55,9 +51,9 @@ const Slider = ({ children }) => {
   };
 
   return (
-    <StyledSlider className="relative -mr-4 md:mr-0">
+    <StyledSlider className="relative">
       <div className="container">
-        <div className="relative left-0 top-0 z-10 h-full w-full  transform bg-white"></div>
+        <div className="relative   transform bg-white"></div>
         <div className="relative">
           <Slick {...sliderSettings} ref={slider}>
             {children}
