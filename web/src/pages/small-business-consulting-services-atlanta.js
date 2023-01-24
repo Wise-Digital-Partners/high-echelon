@@ -1,28 +1,16 @@
 import { React, useState } from "react";
 import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
-import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 import Layout from "../components/Layout";
 import SearchEngineOptimization from "../components/SEO";
 import Testimonials from "../components/Repeating/Testimonials";
-import CarouselForm from "../components/Repeating/Carousel";
-import Accordian from "../components/Accordion/Accord";
 import Portfolio from "../components/Repeating/Portfolio";
 import About from "../components/Repeating/About";
 import CallToAction from "../components/Repeating/CTA";
-import ButtonSolid from "../components/Button/ButtonSolid";
 import ButtonSolidGold from "../components/Button/ButtonSolidGold";
 
-import OffCanvas from "../components/OffCanvas/OffCanvas";
 // import ButtonSolid from "../Button/ButtonSolid";
-// import ButtonGhost from "../Button/ButtonGhost";
-import {
-  Accordion,
-  AccordionItem,
-  AccordionItemButton,
-  AccordionItemPanel,
-} from "react-accessible-accordion";
 
 
 
