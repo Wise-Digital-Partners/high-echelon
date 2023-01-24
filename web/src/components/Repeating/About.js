@@ -30,7 +30,7 @@ const About = ({ className, headingLevel }) => {
     <section className={`${className || "mb-20 md:mb-32"}`}>
 <div className="container">
   <div className="w-full grid grid-cols-12">
-    <div className="relative col-span-5 ">
+          <div className="relative col-span-8 md:col-span-5 ">
       <div className="md:my-18 md:mt-16 absolute w-full bg-white shadow-xl z-[5] px-[25px] py-[50px] lg:p-[60px]">
         <h3 className="font-heading/50 heading-one font-thin">
                 Who We Are

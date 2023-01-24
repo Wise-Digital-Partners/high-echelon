@@ -181,15 +181,15 @@ const MainNav = ({
         </div>
         <div className="flex-auto flex justify-center lg:justify-start">
           <AniLink fade to="/">
-            <div className={`flex justify-between ${scrolled && "hidden"}`}>
-              <div className="hidden lg:block md:block">
+            <div className={`flex justify-between `}>
+              <div className="hidden lg:block">
                 <GatsbyImage
                   image={initialLogo}
                   alt="High Echelon P.C. Logo"
                   className="h-[64px] md:h-[64px] w-[310px] sm:h-[30] sm:w-[200]"
                 />
               </div>
-              <div className="lg:hidden">
+              <div className="lg:hidden p-3">
                 <GatsbyImage
                   image={data.mobileLogo.childImageSharp.gatsbyImageData}
                   alt="High Echelon P.C. Logo"
@@ -198,7 +198,7 @@ const MainNav = ({
               </div>
             </div>
 
-            <div className={`hidden ${scrolled && "!block"}`}>
+            {/* <div className={`hidden ${scrolled && "!block"}`}>
               <div className="hidden lg:block">
                 <GatsbyImage
                   image={initialLogo}
@@ -213,7 +213,7 @@ const MainNav = ({
                   className="md:h-[64px] md:w-[310px] sm:h-[30px] sm:w-[200px]"
                 />
               </div>
-            </div>
+            </div> */}
           </AniLink>
         </div>
         <div className="flex items-center justify-end">
