@@ -5,13 +5,12 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 import Layout from "../components/Layout";
 import SearchEngineOptimization from "../components/SEO";
-import Testimonials from "../components/Repeating/Testimonials";
-import CarouselForm from "../components/Repeating/Carousel";
-import Accordian from "../components/Accordion/Accord";
+// import Testimonials from "../components/Repeating/Testimonials";
+import Accordian from "../components/Accordion/TaxAccordion";
 import Portfolio from "../components/Repeating/Portfolio";
 import About from "../components/Repeating/About";
 import CallToAction from "../components/Repeating/CTA";
-import ButtonSolid from "../components/Button/ButtonSolid";
+
 import ButtonSolidGold from "../components/Button/ButtonSolidGold";
 
 import OffCanvas from "../components/OffCanvas/OffCanvas";
@@ -27,7 +26,6 @@ import {
 
 
 const Page = ({ data }) => {
-
   const [offcanvasOpen, setOffcanvasOpen] = useState(false);
   // const handleChange = (e) => {
   //   this.setState({ [e.target.name]: e.target.value });
@@ -171,16 +169,155 @@ const Page = ({ data }) => {
             </div>
         </section>
 
+        <section className="mb-20 md:mb-32 mt-12">
+            <div className="container">
+                <div className="lg:flex items-start md:block">
+                    <div className="md:hidden w-full mb-8">
+                      <GatsbyImage
+                          image={
+                              data.serviceImage.childImageSharp.gatsbyImageData
+                          }
+                          alt="Small Business Consulting"
+                          className="rounded-[8px]"
+                      />
+                    </div>
+                    <div className="flex justify-center flex-col lg:w-1/2 md:w-full md:mb-8 sm:mb-8">
+                        <div className="md:pl-10 pl-0">
+                            <p className="text-4xl font-thin mb-6">Our Services</p>
+                            <p className="text-base font-light  mb-6">
+                                At High Echelon, we prepare your returns and help you handle IRS notices and correspondence.
+                            </p>
+                            <p className="text-4xl font-thin mb-6">Business Tax Return Preparation</p>
+                            <div className="text-base font-light">
+                                <div className="flex">
+                                    <i className="fa fa-check text-primary-100 mr-3"></i>
+                                    <p className="text-base font-semibold mb-3">Corporate</p>
+                                </div>
+                                <div className="flex">
+                                    <i className="fa fa-check text-primary-100 mr-3"></i>
+                                    <p className="text-base font-semibold mb-3">S corporate</p>
+                                </div>
+                                <div className="flex">
+                                    <i className="fa fa-check text-primary-100 mr-3"></i>
+                                    <p className="text-base font-semibold mb-3">Partnership</p>
+                                </div>
+                                <div className="flex">
+                                    <i className="fa fa-check text-primary-100 mr-3"></i>
+                                    <p className="text-base font-semibold mb-3">Extension filing</p>
+                                </div>
+                                <div className="flex">
+                                    <i className="fa fa-check text-primary-100 mr-3"></i>
+                                    <p className="text-base font-semibold mb-3">Assistance with IRS tax notices</p>
+                                </div>
+                                <div className="flex">
+                                    <i className="fa fa-check text-primary-100 mr-3"></i>
+                                    <p className="text-base font-semibold mb-3">Correspondence with IRS</p>
+                                </div> 
+                            </div>
+                            <p className="text-4xl font-thin mb-6">Individual Tax Returns</p>
+                            <div className="text-base font-light">
+                                <div className="flex">
+                                    <i className="fa fa-check text-primary-100 mr-3"></i>
+                                    <p className="text-base font-semibold mb-3">Extension filing</p>
+                                </div>
+                                <div className="flex">
+                                    <i className="fa fa-check text-primary-100 mr-3"></i>
+                                    <p className="text-base font-semibold mb-3">Assistance with IRS tax notices</p>
+                                </div>
+                                <div className="flex">
+                                    <i className="fa fa-check text-primary-100 mr-3"></i>
+                                    <p className="text-base font-semibold mb-3">Correspondence with IRS</p>
+                                </div> 
+                            </div>
+                            <p className="text-4xl font-thin mb-6">Estates and Trusts</p>
+                            <div className="text-base font-light">
+                                <div className="flex">
+                                    <i className="fa fa-check text-primary-100 mr-3"></i>
+                                    <p className="text-base font-semibold mb-3">Income tax return for estates and trusts</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="hidden md:block md:w-1/2 mr-0 md:mr-20 md:mb-8 mb-8">
+                      <GatsbyImage
+                          image={
+                              data.taxPrepImage.childImageSharp.gatsbyImageData
+                          }
+                          alt="Small Business Consulting"
+                          className="rounded-[8px] w-full"
+                      />
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <Testimonials />
+        <section className="mb-20 md:mb-32 mt-12">
+            <div className="container">
+                <div className="lg:flex items-center md:block">
+                    <div className="lg:w-1/2 md:w-full mr-0 md:mr-20 md:mb-8 sm:mb-8">
+                        <GatsbyImage
+                            image={
+                  data.taxPrepImage.childImageSharp.gatsbyImageData
+                            }
+                            alt="Small Business Consulting"
+                            className="rounded-[8px] w-full"
+                        />
+                    </div>
+                    <div className="block md:flex justify-center flex-col lg:w-1/2 md:w-full mt-10 md:mt-0">
+                        <div className="px-0 md:px-10">
+                            <p className="text-4xl font-thin mb-6">How To Get Started</p>
+                            <p className="text-base font-light">
+                              First, we'll review your prior year tax return(s) and discuss any questions or concerns you might have.
+                              Next, we will discuss any significant changes that might've occurred during the most recent tax year,
+                              and give you an idea of how that change might (or might not) affect your income taxes. And finally,
+                              we will prepare a proposal denoting the scope of work and then once you sign we will get started.
+                            </p>
+                            <p>For the next steps, we:</p>
+                            <div className="mb-6">
+                                <li>Give you a draft to review, with questions</li>
+                                <li>Outline changes that we made</li>
+                                <li>Review, then sign off on the filing</li>
+                                <li>Provide you with a secure link for upload</li>
+                            </div>
+                            {/* <ButtonSolidGold
+                                className="font-light"
+                                onClick={()=>openContactModal()}
+                                text="Book a Call"
+                            /> */}
+                            <ButtonSolidGold
+                              data-modal-open="bottom-right-modal"
+                              onKeyDown={clickHandler}
+                              onClick={clickHandler}
+                              text="Book a Call"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section className="mb-20 md:mb-32 mt-0 md:mt-12">
+            <div className="container">
+                <p className="text-4xl-x mb-12">Answers To Frequently Asked Questions</p>
+                <Accordian />
+            </div>
+        </section>
+
+      {/* <section className="mb-20 md:mb-32 2xl:container 2xl:mx-auto 2xl:px-0 py-3 md:px-10">
+        <p className="text-4xl-x font-light mb-0 text-center">Our Clients Say Its Best</p>
+        <CarouselForm />
+      </section> */}
+
+
+      {/* <Testimonials /> */}
       <Portfolio />
       
       <About />
       <svg className="w-full" width="1200" height="3" viewBox="0 0 1200 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5h1200" stroke="url(#paint0_linear_1129_1425)" strokeWidth="3"/><defs><linearGradient id="paint0_linear_1129_1425" x1="0" y1="2.00435" x2="1182.95" y2="1.96651" gradientUnits="userSpaceOnUse"><stop stopColor="#A2A09D" stopOpacity="0"/><stop offset=".145833" stopColor="#FCE4A7"/><stop offset=".265625" stopColor="#CFA855"/><stop offset=".427083" stopColor="#FCE4A7"/><stop offset=".578125" stopColor="#F0D592"/><stop offset=".713542" stopColor="#FCE4A7"/><stop offset=".828125" stopColor="#CB9636"/><stop offset="1" stopColor="#A7A7A7" stopOpacity="0"/></linearGradient></defs></svg>
       <CallToAction />
       <svg className="w-full" width="1200" height="3" viewBox="0 0 1200 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5h1200" stroke="url(#paint0_linear_1129_1425)" strokeWidth="3"/><defs><linearGradient id="paint0_linear_1129_1425" x1="0" y1="2.00435" x2="1182.95" y2="1.96651" gradientUnits="userSpaceOnUse"><stop stopColor="#A2A09D" stopOpacity="0"/><stop offset=".145833" stopColor="#FCE4A7"/><stop offset=".265625" stopColor="#CFA855"/><stop offset=".427083" stopColor="#FCE4A7"/><stop offset=".578125" stopColor="#F0D592"/><stop offset=".713542" stopColor="#FCE4A7"/><stop offset=".828125" stopColor="#CB9636"/><stop offset="1" stopColor="#A7A7A7" stopOpacity="0"/></linearGradient></defs></svg>
+      
 
-   
     </Layout>
   );
 };
@@ -194,7 +331,7 @@ export const query = graphql`
         gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
       }
     }
-
+    
     consultingDesktop: file(
       relativePath: { eq: "2.0 Business Consulting/1.0 Hero desktop.jpg" }
   ) {
