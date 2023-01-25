@@ -28,7 +28,7 @@ function BlogPostPreviewGrid(props) {
             <>
               {props.categories.slice(0, 1).map((category) => (
                 <div
-                  className="text-primary-600 tracking-widest uppercase mb-2"
+                  className="text-primary-400 tracking-widest uppercase mb-2"
                   key={category._id}
                 >
                   {category.title}

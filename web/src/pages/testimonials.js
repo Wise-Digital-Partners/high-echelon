@@ -36,7 +36,7 @@ const Page = ({ data }) => {
             </div>
           </Hero>
         </section>
-        <section className="block md:hidden bg-primary-700 px-4">
+        <section className="block md:hidden bg-secondary-400 px-4">
 
           <div className="flex justify-center items-center flex-col text-white pt-10 pb-14">
             <h1 className="mb-6 font-light text-white">Testimonials</h1>
@@ -51,7 +51,7 @@ const Page = ({ data }) => {
             <section className="pt-16 md:pt-20 pb-20 md:pb-32">
                 <div className="container">
                     <div >
-                        <ReviewCards class="grid" />
+                        <ReviewCards className="grid" />
                     </div>
                 </div>
             </section>

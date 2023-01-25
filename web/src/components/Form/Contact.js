@@ -204,7 +204,7 @@ const StyledForm = styled.div`
                   </button>
                   <button className={bookCall==0 ? "w-full md:w-1/2 block md:flex justify-center items-center border-black bg-primary-100 py-2 text-white mb-3 md:mb-0" : "block w-full md:w-1/2 md:flex justify-center items-center bg-gray-200 py-2 mb-3 md:mb-0"} onClick={()=>setBookCall(0)}>
                     <div className="flex justify-center items-center">
-                      <i class="fal fa-envelope mr-2 text-xl"></i>
+                      <i className="fal fa-envelope mr-2 text-xl"></i>
                       <p className="m-0">Contact Us</p>
                     </div>
                   </button>
@@ -231,7 +231,7 @@ const StyledForm = styled.div`
                         <div className="mb-8">
                           <div className="mb-5">
                             <label
-                              className="font-body text-sm font-semibold text-gray-900 block mb-1 text-base"
+                              className="font-body text-sm font-semibold text-gray-900 block mb-1"
                               htmlFor="first-name"
                             >
                               Name
@@ -247,7 +247,7 @@ const StyledForm = styled.div`
                           <div className="block md:flex">
                             <div className="mb-5 w-full md:w-1/2 mr-3">
                               <label
-                                className="font-body text-sm font-semibold text-gray-900 block mb-1 text-base"
+                                className="font-body text-sm font-semibold text-gray-900 block mb-1"
                                 htmlFor="phone-number"
                               >
                                 Phone Number
@@ -262,7 +262,7 @@ const StyledForm = styled.div`
                             </div>
                             <div className="mb-5 md:w-1/2">
                               <label
-                                className="font-body text-sm font-semibold text-gray-900 block mb-1 text-base"
+                                className="font-body text-sm font-semibold text-gray-900 block mb-1"
                                 htmlFor="email-address"
                               >
                                 Email Address
@@ -278,7 +278,7 @@ const StyledForm = styled.div`
                           </div>
                           <div className="mb-5">
                             <label
-                              className="font-body text-sm font-semibold text-gray-900 block mb-1 text-base"
+                              className="font-body text-sm font-semibold text-gray-900 block mb-1"
                               htmlFor="first-name"
                             >
                               What Can We Help You With ?
@@ -294,7 +294,7 @@ const StyledForm = styled.div`
                           </div>
                           <div className="mb-5">
                             <label
-                              className="font-body text-sm font-semibold text-gray-900 block mb-1 text-base"
+                              className="font-body text-sm font-semibold text-gray-900 block mb-1"
                               htmlFor="first-name"
                             >
                               Message(Optional)
@@ -313,7 +313,7 @@ const StyledForm = styled.div`
                             type="submit"
                             text="Send"
                             altStyle={true}
-                            className="bg-primary-700 min-w-0 text-base w-1/3"
+                            className="bg-secondary-400 min-w-0 text-base w-1/3"
                           />
                         </div>
                     </form>

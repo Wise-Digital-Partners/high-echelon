@@ -68,7 +68,7 @@ const Modal = ({ slideIndex, children }) => {
                 ref={slider}
               />
               <i
-                className="fal fa-times absolute top-0 right-0 left-auto transform translate-x-1/2md:translate-x-0 mb-0 mr-8 md:mr-10 mt-4 md:mt-10 text-gray-900 hover:text-primary-800 text-2xl cursor-pointer transition-all duration-300 ease-linear z-10"
+                className="fal fa-times absolute top-0 right-0 left-auto transform translate-x-1/2md:translate-x-0 mb-0 mr-8 md:mr-10 mt-4 md:mt-10 text-gray-900 hover:text-secondary-400 text-2xl cursor-pointer transition-all duration-300 ease-linear z-10"
                 data-modal-close
               ></i>
             </div>

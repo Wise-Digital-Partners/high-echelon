@@ -60,7 +60,7 @@ const Modal = () => {
           >
             <div className="group flex justify-end items-center pt-12 pb-4 md:py-4 px-5">
               <i
-                className="close fal fa-times text-xl text-gray-900 hover:text-primary-800 cursor-pointer transition-all duration-300 ease-linear"
+                className="close fal fa-times text-xl text-gray-900 hover:text-secondary-400 cursor-pointer transition-all duration-300 ease-linear"
                 data-modal-close
               ></i>
             </div>

@@ -16,7 +16,7 @@ import RecentBlogPosts from "../Repeating/RecentBlogPosts";
 
 const StyledContent = styled.div`
   a {
-    ${tw`underline text-primary-400 hover:text-primary-800`}
+    ${tw`underline text-primary-400 hover:text-secondary-400`}
   }
   /* p,
   span,
