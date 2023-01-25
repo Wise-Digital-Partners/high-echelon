@@ -134,17 +134,18 @@ const MainNav = ({
     ],
     about: [
       {
-        name: "About",
+        name: "Financial Advisors | CPA Referral Program",
+        href: "/financial-advisor-cpa/",
+      },
+      {
+        name: "About High Echelon",
         href: "/about/",
       },
       {
         name: "Reviews",
         href: "/testimonials/",
       },     
-      {
-        name: "Financial Advisor | CPA Referral Program",
-        href: "/financial-advisor-cpa/",
-      },
+
     ],
   };
 
@@ -281,7 +282,7 @@ const MainNav = ({
                   } ${scrolled && "text-gray-900"} ${headerLinkColor === "white" ? "text-gray-900" : "text-white"
                   } ${headerDarkMode && "lg:!text-gray-900"}`}
               >
-                Financial Advisors
+                About
               </AniLink>
               <div
                 className={`absolute top-0 bg-white shadow-3xl w-auto transform -translate-x-8 p-10 z-10 transition-all duration-300 ease-linear ${subMenuHovering2
@@ -405,7 +406,7 @@ const MainNav = ({
                       <AccordionItem uuid={2}>
                         <AccordionItemButton className="flex items-center focus:outline-none">
                           <p className="text-lg text-primary-200 hover:text-primary-100 no-underline mb-4 transition-colors duration-300 ease-linear">
-                            Financial Advisor
+                            About
                           </p>
                         </AccordionItemButton>
 
