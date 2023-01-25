@@ -192,7 +192,7 @@ const Page = ({ data }) => {
                 We are Here To Make Your Business Better
               </h3>
               <p className="md:w-2/3 sm:w-full text-xl md:text-base mt-6">
-                Get streamlined, end-to-end services for everything from your busines entity formation to accounting, payroll, and income tax needs.
+                Get streamlined, end-to-end services for everything from your business entity formation to accounting, payroll, and income tax needs.
               </p>
             </div>
             <div className="block w-full md:flex lg:flex md:mb-5 mb-4">
