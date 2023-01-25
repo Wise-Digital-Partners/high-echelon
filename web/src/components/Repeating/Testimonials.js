@@ -27,14 +27,14 @@ const Testimonial = ({ className, category }) => {
         relativePath: { eq: "common/0.0_repeating_testimonial_desktop.jpg" }
       ) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(layout: CONSTRAINED)
         }
       }
       mobileBg: file(
         relativePath: { eq: "common/0.0_repeating_testimonial-bkg-mobile.jpg" }
       ) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, width: 74)
+          gatsbyImageData(layout:  CONSTRAINED)
         }
       }
       yelp: file(relativePath: { eq: "repeating/testimonials/Yelp-alt.png" }) {
@@ -93,12 +93,15 @@ const Testimonial = ({ className, category }) => {
         ? mapEdgesToNodes(data.testimonials).filter((items) => items.featured)
         : []);
   return (
-    <section className={`pb-20 md:pb-32 ${className}`}>
+    <section className={`pb-20 md:pb-32  ${className}`}>
 
       <div className="container relative">
-        <div>
-          <div className="px-20 absolute left-0 top-0 mx-auto w-full h-full">
-            <GatsbyImage className="w-full" image={data.desktopBg.childImageSharp.gatsbyImageData} />
+        <div className="">
+          <div className="hidden md:block md:px-20  absolute left-0 top-0 mx-auto w-full h-full">
+            <GatsbyImage className="w-full h-full" image={data.desktopBg.childImageSharp.gatsbyImageData} />
+          </div>          
+          <div className="md:px-20 md:hidden  absolute left-0 top-0 mx-auto w-full h-full">
+            <GatsbyImage className="w-full h-full" image={data.mobileBg.childImageSharp.gatsbyImageData} />
           </div>
           <div className="rounded-4xl bg-transparent  pt-6 pb-8 text-center  md:pt-12 md:pb-10 ">
             <StyledSlider className="relative">

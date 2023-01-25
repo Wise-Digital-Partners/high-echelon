@@ -81,7 +81,7 @@ const ValueProps = ({ className, headingLevel, heading }) => {
                 />
                 <div className="text-center">
                   <h3 className="text-primary-200 heading-five mb-2">{content.heading}</h3>
-                  <p className="text-primary-500 text-base mb-0">{content.text}</p>
+                  <p className="text-white text-base mb-0">{content.text}</p>
                 </div>
               </div>
               </Background>

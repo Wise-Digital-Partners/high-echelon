@@ -11,6 +11,7 @@ import CallToAction from "../components/Repeating/CTA";
 import ButtonSolid from "../components/Button/ButtonSolid";
 import ButtonSolidGold from "../components/Button/ButtonSolidGold";
 import ButtonGhost from "../components/Button/ButtonGhost";
+import Portfolio from "../components/Repeating/Portfolio";
 
 
 const Page = ({ data }) => {
@@ -38,14 +39,14 @@ const Page = ({ data }) => {
       <SearchEngineOptimization
         title="About Us | Small Business CPA Firm | Atlanta | High Echelon"
         description="High Echelon is a nationwide CPA firm based in Atlanta, Georgia. Learn more about us and our focus on small businesses here!"
-      /><Testimonials/>
+      />
         <section className="hidden md:block mb-20 md:mb-32">
             <div className="container">
                 <div className="relative grid md:grid-cols-12 md:gap-x-10 lg:gap-x-16 gap-y-8 items-center">
                     <div className="md:col-start-1 md:col-span-10">
                         <GatsbyImage image={data.aboutProfileImage.childImageSharp.gatsbyImageData} />
                     </div>
-                    <div className="md:absolute bg-secondary-400 shadow-inner md:col-start-6 md:col-span-7 p-20">
+                    <div className="md:absolute bg-secondary-400 shadow-inner md:col-start-6 md:col-span-7 p-12">
                         <h2 className="font-light text-4xl text-primary-200 mb-6">
                           About High Echelon
                         </h2>
@@ -311,11 +312,8 @@ Michelle named the company after her grandfather Jerry Fendrick's Thoroughbred h
           </div>
           </div>         
         </section>
-      {/* <Testimonials /> */}
-      {/* <section className="mb-20 md:mb-32 2xl:container 2xl:mx-auto 2xl:px-0 py-3 md:px-10">
-        <p className="text-4xl-x font-light mb-0 text-center">Our Clients Say Its Best</p>
-        <CarouselForm />
-      </section> */}
+      <Testimonials />
+     <Portfolio/>
       <svg className="w-full" width="1200" height="3" viewBox="0 0 1200 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5h1200" stroke="url(#paint0_linear_1129_1425)" strokeWidth="3"/><defs><linearGradient id="paint0_linear_1129_1425" x1="0" y1="2.00435" x2="1182.95" y2="1.96651" gradientUnits="userSpaceOnUse"><stop stopColor="#A2A09D" stopOpacity="0"/><stop offset=".145833" stopColor="#FCE4A7"/><stop offset=".265625" stopColor="#CFA855"/><stop offset=".427083" stopColor="#FCE4A7"/><stop offset=".578125" stopColor="#F0D592"/><stop offset=".713542" stopColor="#FCE4A7"/><stop offset=".828125" stopColor="#CB9636"/><stop offset="1" stopColor="#A7A7A7" stopOpacity="0"/></linearGradient></defs></svg>
       <CallToAction />
       <svg className="w-full" width="1200" height="3" viewBox="0 0 1200 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5h1200" stroke="url(#paint0_linear_1129_1425)" strokeWidth="3"/><defs><linearGradient id="paint0_linear_1129_1425" x1="0" y1="2.00435" x2="1182.95" y2="1.96651" gradientUnits="userSpaceOnUse"><stop stopColor="#A2A09D" stopOpacity="0"/><stop offset=".145833" stopColor="#FCE4A7"/><stop offset=".265625" stopColor="#CFA855"/><stop offset=".427083" stopColor="#FCE4A7"/><stop offset=".578125" stopColor="#F0D592"/><stop offset=".713542" stopColor="#FCE4A7"/><stop offset=".828125" stopColor="#CB9636"/><stop offset="1" stopColor="#A7A7A7" stopOpacity="0"/></linearGradient></defs></svg>

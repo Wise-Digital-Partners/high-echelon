@@ -17,6 +17,9 @@ const StyledSlider = styled.div`
   }
   .slick-list {
     ${tw`p-0`}
+  }  
+  .slick-dots {
+    ${tw`bottom-10 md:bottom-0`}
   }
 `;
 
@@ -38,6 +41,8 @@ const Slider = ({ children }) => {
     autoplaySpeed: 4500,
     infinite: true,
     swipeToSlide: true,
+    appendDots: ".dot-wrapper",
+    dotsClass: ".dot-nav",
     responsive: [
       {
         breakpoint: 767,
@@ -59,7 +64,7 @@ const Slider = ({ children }) => {
             {children}
           </Slick>
 
-          <div className="relative left-0 bottom-0  flex h-12 w-[160px] items-center justify-around bg-white md:flex">
+          <div className="relative left-0 bottom-10 md:bottom-0 flex h-12 w-[160px] items-center justify-around bg-white md:flex">
             <button onClick={prevSlide} className="focus:outline-none">
               <i className="fal fa-arrow-left text-2xl text-typography-body transition-colors duration-300 ease-linear hover:text-blue focus:no-underline md:text-3xl"></i>
             </button>

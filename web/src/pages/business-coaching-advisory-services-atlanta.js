@@ -61,7 +61,7 @@ const Page = ({ data }) => {
                     <div className="md:col-start-1 md:col-span-10">
               <GatsbyImage image={data.startImage.childImageSharp.gatsbyImageData} />
                     </div>
-                    <div className="md:absolute bg-secondary-400 shadow-inner md:col-start-6 md:col-span-7 p-20">
+                    <div className="md:absolute bg-secondary-400 shadow-inner md:col-start-6 md:col-span-7 p-12">
                         <h1 className="font-light text-4xl text-primary-200 mb-6">
                 Atlanta Small Business Coaching and Advisory Services
                         </h1>

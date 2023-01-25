@@ -173,11 +173,11 @@ mb-6 w-[600px]">
               <GatsbyImage image={data.image6.childImageSharp.gatsbyImageData} />
 
               <h3 className="heading-four">
-                Business Coaching and Advisory
+                  Cybersecurity and Data Protection
               </h3>
               <div className="block">
                 <p className="text-sm mb-4">
-                  We provide a sounding board for what you want to accomplish and help you get there.
+                    We help ensure you’re safe from destructive cyber attacks, breaches, and theft as a result of hackers.
 
                 </p>
               </div>

@@ -52,7 +52,7 @@ const Page = ({ data }) => {
           image={data.heroMobile.childImageSharp.gatsbyImageData}
           className="md:hidden w-full"
         />
-        <div className="absolute top-0 px-6 pt-32 pb-14 text-center">
+        <div className="absolute top-0 px-6 pt-32 pb-14 text-center mx-auto w-full">
           <p className="font-heading text-white text-5xl tracking-wider mb-6">
             WE ARE HIGH ECHELON
           </p>
