@@ -113,11 +113,7 @@ const Testimonial = ({ className, category }) => {
                               <div className="heading-three mb-0 text-gray-800">
                                 {testimonial.name}
                               </div>
-                              {/* {testimonial.businessNameTitle && (
-                                  <div className="text-sm font-medium uppercase tracking-wide text-primary-100">
-                                    {testimonial.businessNameTitle}
-                                  </div>
-                                )} */}
+   
                             </cite>
                           </div>
                         </footer>
@@ -126,29 +122,7 @@ const Testimonial = ({ className, category }) => {
                         </q>
 
                         <div className="mb-14 flex justify-center">
-                          {testimonial.platform === "Google" && (
-                            <GatsbyImage
-                              image={
-                                data.google.childImageSharp.gatsbyImageData
-                              }
-                            />
-                          )}
-
-                          {testimonial.platform === "Yelp" && (
-                            <GatsbyImage
-                              image={
-                                data.yelp.childImageSharp.gatsbyImageData
-                              }
-                            />
-                          )}
-
-                          {testimonial.platform === "Facebook" && (
-                            <GatsbyImage
-                              image={
-                                data.facebook.childImageSharp.gatsbyImageData
-                              }
-                            />
-                          )}
+     
                         </div>
                       </blockquote>
                     </div>
