@@ -184,11 +184,11 @@ const Page = ({ data }) => {
           </div>
         </div>
       </section>
-      <section className="lg:mt-80 md:mt-120 mb-20 md:mb-32 md:pt-24">
+      <section className=" lg:mt-80 md:mt-120 mb-20 md:mb-32 md:pt-24">
         <div className="container">
           <div className="gap-y-8 md:gap-x-10 lg:gap-x-16 items-center mt-8">
             <div className="mb-8">
-              <h3 className="md:w-2/3 text-primary-700 text-4xl font-light md:text-4xl-x md:font-normal">
+              <h3 className=" mt-[33rem] lg5:mt-[0] md:w-2/3 text-primary-700 text-4xl font-light md:text-4xl-x md:font-normal">
                 We are Here To Make Your Business Better
               </h3>
               <p className="md:w-2/3 sm:w-full text-xl md:text-base mt-6">

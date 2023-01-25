@@ -48,17 +48,18 @@ const Footer = ({ hideFooter }) => {
             </div>
 
             <div className="w-full lg:col-end-13 md:col-span-9 md:pt-5 pt-0 mt-10">
-              <ul className="grid-cols-3 grid-rows-2 grid text-white lg:justify-end lg:gap-x-5 justify-around items-stretch">
+              <ul className="grid-cols-4 grid-rows-2 grid text-white lg:justify-end lg:gap-x-5 justify-around items-stretch">
+                <li class=" text-center">
+                  <AniLink
+                    fade
+                    to="/small-business-consulting-services-atlanta/"
+                    className="text-sm font-heading hover:text-primary-100"
+                  >
+                    Small Business Consulting
+                  </AniLink>
+                </li>
                   <li class = " text-center">
-                    <AniLink
-                        fade
-                        to="/small-business-consulting-services-atlanta/"
-                        className="text-sm font-heading hover:text-primary-100"
-                      >
-                      Small Business Consulting
-                    </AniLink>                
-                  </li>
-                  <li class = " text-center">
+   
                     <AniLink
                         fade
                         to="/small-business-accounting-services-atlanta/"
@@ -76,6 +77,7 @@ const Footer = ({ hideFooter }) => {
                       Payroll Management
                     </AniLink>                
                   </li>
+
                   <li class = " text-center">
                     <AniLink
                         fade
@@ -84,23 +86,34 @@ const Footer = ({ hideFooter }) => {
                       >
                       Tax Preparation
                     </AniLink>                
-                  </li>                  
+                  </li>  
+              
                   <li class = " text-center">
                     <AniLink
                         fade
                       to="/business-coaching-advisory-services-atlanta/"
                         className="text-sm font-heading hover:text-primary-100"
                       >
-                    Business Coaching & Advisory Services
+                    Business Coaching & <br></br> Advisory Services
                     </AniLink>                
-                  </li>                  
+                  </li>
+                <li class=" text-center">
+                  <AniLink
+                    fade
+                    to="/financial-advisor-cpa/"
+                    className="text-sm font-heading group text-primary-200 hover:text-primary-100"
+                  >
+                    <span className="text-primary-200
+group-hover:text-primary-400 transition-all linear duration-[300ms]">Financial Advisor</span><br></br> <span className="group-hover:before:bg-primary-200/50 before:transition-all before:linear before:duration-300 relative before:absolute transition-all linear duration-[300ms] text-primary-200 before:bg-primary-500 before:rotate-180  before:top-[-3px]  before:right-0 group-hover:text-primary-400 before:w-[70%]  before:mx-auto before:h-[.04rem] before:left-0">CPA Referral Program</span> 
+                  </AniLink>
+                </li>                    
                   <li class = " text-center">
                     <AniLink
                         fade
                       to="/cyber-security-data-protection-atlanta/"
                         className="text-sm font-heading hover:text-primary-100"
                       >
-                    Cybersecurity & Data Protection
+                    Cybersecurity & <br></br> Data Protection
                     </AniLink>                
                   </li>
                 </ul>
