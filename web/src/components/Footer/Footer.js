@@ -69,7 +69,7 @@ const Footer = ({ hideFooter }) => {
                 <div className="md:grid md:grid-cols-2 md:gap-8">
                   <div>
                     <h3 className="text-lg font-semibold text-primary-200 tracking-wider uppercase">
-                      Servies
+                      Services
                     </h3>
                     <ul role="list" className="mt-4 space-y-4">
                       <li>
