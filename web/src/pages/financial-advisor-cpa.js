@@ -24,15 +24,6 @@ const Page = ({ data }) => {
     setOffcanvasOpen(!offcanvasOpen);
     document.getElementById("bottom-right-modal").style.display = "block";
   };
-  // const openContactModal = () => {
-  //   document.getElementById("bottom-right-modal").style.display = "block";
-  // }
-
-  // const closeContactModal = () => {
-  //   document.getElementById("bottom-right-modal").style.display = "none"; 
-  // }
-
-  // const [bookCall, setBookCall] = useState(0);
 
   return (
     <Layout headerDarkMode={true}>
