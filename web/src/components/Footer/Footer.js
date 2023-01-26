@@ -25,138 +25,273 @@ const Footer = ({ hideFooter }) => {
 
   return (
     <>
-      <footer
-        className={`bg-secondary-400 pb-12 lg:pb-6 ${
-          hideFooter && "hidden"
-        }`}
-      >
-
-        <div className="container pt-20">
-          <div className="grid lg:grid-cols-12 lg:justify-between space-y-16 lg:space-y-0 mb-10 md:mb-16">
-            <div className="lg:col-start-1 lg:col-span-3">
-              <div className="grid md:grid-cols-2 md:flex md:flex-col items-end md:items-start">
+      <>
+        {/*
+     This example requires Tailwind CSS v2.0+ 
+     
+     This example requires some changes to your config:
+     
+     ```
+     // tailwind.config.js
+     module.exports = {
+       // ...
+       plugins: [
+         // ...
+         require('@tailwindcss/forms'),
+       ],
+     }
+     ```
+   */}
+        <footer className="bg-secondary-400" aria-labelledby="footer-heading">
+          <h2 id="footer-heading" className="sr-only">
+            Footer
+          </h2>
+          <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 ">
+            <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+              <div className="mt-8 xl:mt-0">
                 <AniLink fade to="/" className="flex justify-center md:block">
                   <img src={Logo} alt="logo" />
                 </AniLink>
-                <div className="md:flex md:items-center pl-4 md:pt-6 pt-10">
-                  <ul className="text-white text-sm list-none flex justify-center items-center flex-col md:block">
-                    <li><a href="tel:404-446-9338" className="hover:text-primary-100">(404) 446-9338</a></li> 
-                    <li><a href="mailto:info@highecheloncpa.com" className="hover:text-primary-100">info@highecheloncpa.com</a></li>
+
+                <p className=" mt-4 text-base text-center md:text-left text-white hover:text-primary-400">
+                  <a href="tel:404-446-9338">(404) 446-9338</a>
+                </p>
+                <p className="mt-4 text-base text-center md:text-left text-white hover:text-primary-400 ">
+                  <a
+                    href="mailto:info@highecheloncpa.com"
+                    
+                  >
+                    info@highecheloncpa.com
+                  </a>
+                </p>
+              </div>
+              <div className="grid  gap-8 xl:col-span-2 mt-8">
+                <div className="md:grid md:grid-cols-2 md:gap-8">
+                  <div>
+                    <h3 className="text-lg font-semibold text-primary-200 tracking-wider uppercase">
+                      Servies
+                    </h3>
+                    <ul role="list" className="mt-4 space-y-4">
+                      <li>
+                        <a
+                          href="/small-business-consulting-services-atlanta/"
+                          className="text-sm text-white hover:text-primary-400"
+                        >
+                          Small Business Consulting
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="/small-business-accounting-services-atlanta/"
+                          className="text-sm text-white hover:text-primary-400"
+                        >
+                          Accounting Services
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="/payroll-management-services-atlanta/"
+                          className="text-sm text-white hover:text-primary-400"
+                        >
+                          Payroll Management
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="/small-business-tax-preparation-services-atlanta/"
+                          className="text-sm text-white hover:text-primary-400"
+                        >
+                          Income Tax Preparation
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="/business-coaching-advisory-services-atlanta/"
+                          className="text-sm text-white hover:text-primary-400"
+                        >
+                          Business Coaching & Advisory Services
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/cyber-security-data-protection-atlanta/"
+                          className="text-sm text-white hover:text-primary-400"
+                        >
+                          Cybersecurity & Data Protection
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="mt-12 md:mt-0">
+                    <h3 className="text-lg font-semibold text-primary-200 tracking-wider uppercase">
+                      About
+                    </h3>
+                    <ul role="list" className="mt-4 space-y-4">
+                      <li>
+                        <a
+                          href="/testimonials/"
+                          className="text-sm text-white hover:text-primary-400"
+                        >
+                          Reviews
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="/about/"
+                          className="text-sm text-white hover:text-primary-400"
+                        >
+                          About High Echelon
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="/financial-advisor-cpa/"
+                          className="text-sm text-white hover:text-primary-400"
+                        >
+                          Financial Advisors | CPA Referral Program
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                {/* <div className="md:grid md:grid-cols-2 md:gap-8">
+                  <div>
+                    <h3 className="text-lg font-semibold text-primary-200 tracking-wider uppercase">
+                      Company
+                    </h3>
+                    <ul role="list" className="mt-4 space-y-4">
+                      <li>
+                        <a
+                          href="#"
+                          className="text-sm text-white hover:text-primary-400"
+                        >
+                          {" "}
+                          About{" "}
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="#"
+                          className="text-sm text-white hover:text-primary-400"
+                        >
+                          {" "}
+                          Blog{" "}
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="#"
+                          className="text-sm text-white hover:text-primary-400"
+                        >
+                          {" "}
+                          Jobs{" "}
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="#"
+                          className="text-sm text-white hover:text-primary-400"
+                        >
+                          {" "}
+                          Press{" "}
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="#"
+                          className="text-sm text-white hover:text-primary-400"
+                        >
+                          {" "}
+                          Partners{" "}
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="mt-12 md:mt-0">
+                    <h3 className="text-lg font-semibold text-primary-200 tracking-wider uppercase">
+                      Legal
+                    </h3>
+                    <ul role="list" className="mt-4 space-y-4">
+                      <li>
+                        <a
+                          href="#"
+                          className="text-sm text-white hover:text-primary-400"
+                        >
+                          {" "}
+                          Claim{" "}
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="#"
+                          className="text-sm text-white hover:text-primary-400"
+                        >
+                          {" "}
+                          Privacy{" "}
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="#"
+                          className="text-sm text-white hover:text-primary-400"
+                        >
+                          {" "}
+                          Terms{" "}
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div> */}
+              </div>
+            </div>
+            <div className="mt-8 border-t border-gray-200 pt-8 md:flex md:items-center justify-center">
+              <div className="flex flex-wrap lg:flex-nowrap flex-col lg:flex-row justify-items-center lg:justify-between lg:items-center lg:pt-4">
+                <div className="lg:flex lg:items-center mb-8 lg:mb-0 text-sm">
+                  <ul className="block md:flex md:items-center md:flex-wrap space-x-4 justify-center text-center lg:justify-start">
+                    <li className="text-gray-50">© {getYear()} High Echelon</li>
+                    <div className="flex justify-center mt-6 md:mt-0">
+                      <li className="">
+                        <AniLink
+                          fade
+                          to="/privacy-policy/"
+                          className="text-gray-50 hover:text-primary-100 no-underline"
+                        >
+                          Privacy Policy
+                        </AniLink>
+                      </li>
+                    </div>
+                    <li className="block md:flex w-full md:w-auto mt-6 md:mt-0">
+                      <a
+                        className="no-underline text-gray-50 hover:text-primary-100 flex items-center justify-center lg:justify-start space-x-1"
+                        href="https://www.wisedigitalpartners.com/nest-by-wise/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <p className="text-primary-200 mb-0 text-sm">
+                          Powered by
+                        </p>{" "}
+                        <img src={nestLogo} alt="NEST logo" />
+                      </a>
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
-
-            <div className="w-full lg:col-end-13 md:col-span-9 md:pt-5 pt-0 mt-10">
-              <ul className="grid-cols-4 grid-rows-2 grid text-white lg:justify-end lg:gap-x-5 justify-around items-stretch">
-                <li class=" text-center">
-                  <AniLink
-                    fade
-                    to="/small-business-consulting-services-atlanta/"
-                    className="text-sm font-heading hover:text-primary-100"
-                  >
-                    Small Business Consulting
-                  </AniLink>
-                </li>
-                  <li class = " text-center">
-   
-                    <AniLink
-                        fade
-                        to="/small-business-accounting-services-atlanta/"
-                        className="text-sm font-heading hover:text-primary-100"
-                      >
-                      Accounting
-                    </AniLink>                
-                  </li>
-                  <li class = " text-center">
-                    <AniLink
-                        fade
-                        to="/payroll-management-services-atlanta/"
-                        className="text-sm font-heading hover:text-primary-100"
-                      >
-                      Payroll Management
-                    </AniLink>                
-                  </li>
-
-                  <li class = " text-center">
-                    <AniLink
-                        fade
-                        to="/small-business-tax-preparation-services-atlanta/"
-                        className="text-sm font-heading hover:text-primary-100"
-                      >
-                      Tax Preparation
-                    </AniLink>                
-                  </li>  
-              
-                  <li class = " text-center">
-                    <AniLink
-                        fade
-                      to="/business-coaching-advisory-services-atlanta/"
-                        className="text-sm font-heading hover:text-primary-100"
-                      >
-                    Business Coaching & <br></br> Advisory Services
-                    </AniLink>                
-                  </li>
-                <li class=" text-center">
-                  <AniLink
-                    fade
-                    to="/financial-advisor-cpa/"
-                    className="text-sm font-heading group text-primary-200 hover:text-primary-100"
-                  >
-                    <span className="text-primary-200
-group-hover:text-primary-400 transition-all linear duration-[300ms]">Financial Advisor</span><br></br> <span className="group-hover:before:bg-primary-200/50 before:transition-all before:linear before:duration-300 relative before:absolute transition-all linear duration-[300ms] text-primary-200 before:bg-primary-500 before:rotate-180  before:top-[-3px]  before:right-0 group-hover:text-primary-400 before:w-[70%]  before:mx-auto before:h-[.04rem] before:left-0">CPA Referral Program</span> 
-                  </AniLink>
-                </li>                    
-                  <li class = " text-center">
-                    <AniLink
-                        fade
-                      to="/cyber-security-data-protection-atlanta/"
-                        className="text-sm font-heading hover:text-primary-100"
-                      >
-                    Cybersecurity & <br></br> Data Protection
-                    </AniLink>                
-                  </li>
-                </ul>
-            </div>
           </div>
-
-          <div className="flex flex-wrap lg:flex-nowrap flex-col lg:flex-row justify-items-center lg:justify-between lg:items-center lg:pt-4">
- 
-            <div className="lg:flex lg:items-center mb-8 lg:mb-0 text-sm">
-              <ul className="block md:flex md:items-center md:flex-wrap space-x-4 justify-center text-center lg:justify-start">
-                <li className="text-gray-50">
-                  © {getYear()} High Echelon
-                </li>
-                <div className="flex justify-center mt-6 md:mt-0">
-                  <li className="">
-                    <AniLink
-                      fade
-                      to="/privacy-policy/"
-                      className="text-gray-50 hover:text-primary-100 no-underline"
-                    >
-                      Privacy Policy
-                    </AniLink>
-                  </li>
-
-                </div>
-                <li className="block md:flex w-full md:w-auto mt-6 md:mt-0">
-                  <a
-                    className="no-underline text-gray-50 hover:text-primary-100 flex items-center justify-center lg:justify-start space-x-1"
-                    href="https://www.wisedigitalpartners.com/nest-by-wise/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <p className="text-primary-200 mb-0 text-sm">Powered by</p>{" "}
-                    <img src={nestLogo} alt="NEST logo" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-
-          </div>
-        </div>
-      </footer>
+        </footer>
+      </>
 
       <ModalContact />
     </>
