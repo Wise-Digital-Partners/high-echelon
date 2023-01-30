@@ -296,7 +296,7 @@ const Page = ({ data }) => {
         </div>
       </section>
 
-      <Portfolio />
+      <Portfolio className="hidden lg:block" />
       <Testimonials />
 
       <About />

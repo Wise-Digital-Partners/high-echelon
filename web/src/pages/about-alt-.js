@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
@@ -13,7 +13,8 @@ import ButtonSolidGold from "../components/Button/ButtonSolidGold";
 import ButtonGhost from "../components/Button/ButtonGhost";
 import Portfolio from "../components/Repeating/Portfolio";
 
-import goldStripe from "../images/global/goldStripe.svg";
+import goldStripe from "../images/global/goldStripe.svg"
+
 
 const Page = ({ data }) => {
   const [offcanvasOpen, setOffcanvasOpen] = useState(false);
@@ -29,9 +30,9 @@ const Page = ({ data }) => {
   //   document.getElementById("bottom-right-modal").style.display = "block";
   // }
 
-  // const closeContactModal = () => {
-  //   document.getElementById("bottom-right-modal").style.display = "none";
-  // }
+  const closeContactModal = () => {
+    document.getElementById("bottom-right-modal").style.display = "none"; 
+  }
 
   // const [bookCall, setBookCall] = useState(0);
 
@@ -200,58 +201,58 @@ const Page = ({ data }) => {
 
       {/* ABOUT */}
       <section>
-        {/* PART 1 */}
-        <div className="container">
-          <div className="gap-8 flex flex-col-reverse gap-x-5 my-12 md:grid  lg:grid-cols-12  ">
-            {/* TEXT COL */}
-            <div className="col-start-2 lg:col-end-7 h-full">
-              <h3 className="text-4xl md:text-4xl-x font-thin mb-6">
-                Meet Michelle Frank
-              </h3>
-              <p className="mb-3">
-                Michelle is sharp and fiercely determined, bringing those
-                attributes to all elements of the firm and her life. Previously,
-                she was a partner at Fendrick & Associates before joining the
-                team at Peachtree Capital, then later starting her own business,
-                High Echelon.
-              </p>
-              <p className="mb-3">
-                Michelle received her undergraduate degree at Emory and
-                postgraduate at Georgia State University. When she isn’t being a
-                top Atlanta CPA, she’s running marathons, hosting a podcast, and
-                raising three girls.
-              </p>
-              <ButtonSolidGold
-                data-modal-open="bottom-right-modal"
-                onKeyDown={clickHandler}
-                onClick={clickHandler}
-                text="Book a Call"
-                className=" mb-14 lg:mb-0"
-              />
-            </div>
-            {/* END OF TEXT COL */}
-            <div className="col-start-7  md:col-end-12">
-              <div className=" grid md:col-span-4 lg:col-span-5 ">
-                <div className="md:place-self-end  ">
-                  <GatsbyImage
-                    image={
-                      data.michellProfileImage.childImageSharp.gatsbyImageData
-                    }
-                    alt="Small Business Consulting"
-                    className="rounded-[8px]"
-                  />
-                </div>
+        {/* MICH */}
+        <div className="container mx-auto">
+          <div className="flex-col-reverse gap-8 flex gap-x-5 my-12 md:grid grid-cols-1  md:grid-cols-12 justify-around">
+            <div className="col-start-1 col-span-6 lg:col-start-2 h-full">
+              <div className="lg:max-w-[550px] mr-0">
+                <h3 className="text-4xl md:text-4xl-x font-thin mb-6">
+                  Meet Michelle Frank
+                </h3>
+                <p className="text-base mb-2">
+                  Michelle is sharp and fiercely determined, bringing those
+                  attributes to all elements of the firm and her life.
+                  Previously, she was a partner at Fendrick & Associates before
+                  joining the team at Peachtree Capital, then later starting her
+                  own business, High Echelon.
+                </p>
+                <p className="text-base mb-4">
+                  Michelle received her undergraduate degree at Emory and
+                  postgraduate at Georgia State University. When she isn’t being
+                  a top Atlanta CPA, she’s running marathons, hosting a podcast,
+                  and raising three girls.
+                </p>
+                <ButtonSolidGold
+                  data-modal-open="bottom-right-modal"
+                  onKeyDown={clickHandler}
+                  onClick={clickHandler}
+                  text="Book a Call"
+                />
               </div>
             </div>
+            {/* IMAGE COL */}
+            <div className="grid !sm:order-2 sm:col-span-4 col-span-auto md:col-span-4 lg:col-span-5 ">
+              <div className="place-self-start">
+                <GatsbyImage
+                  image={
+                    data.michellProfileImage.childImageSharp.gatsbyImageData
+                  }
+                  alt="Small Business Consulting"
+                  className="rounded-[8px]"
+                />
+              </div>
+            </div>
+            {/* END OF IMAGE COL */}
           </div>
         </div>
-        {/* END OF PART 1 */}
+        {/* END OF MICH */}
+
         {/* ROB */}
         <div className="container">
           <div className="gap-8 flex flex-wrap gap-x-5 my-12 md:grid  lg:grid-cols-12  ">
-            <div className="col-span-4 col-start-1 md:col-start-2  lg:col-end-6 h-full">
+            <div className="col-span-4 md:col-start-1  lg:col-end-6 h-full">
               <div className=" grid md:col-span-4 lg:col-span-5 ">
-                <div className="place-self-start">
+                <div className="place-self-end">
                   <GatsbyImage
                     image={
                       data.robertProfileImage.childImageSharp.gatsbyImageData
@@ -263,7 +264,7 @@ const Page = ({ data }) => {
               </div>
             </div>
             {/* TEXT COL */}
-            <div className="col-span-5  xl:col-start-6  md:col-end-12 md:pl-7 2xl:pl-0">
+            <div className="col-start-6  md:col-end-12">
               <h3 className="text-4xl md:text-4xl-x font-thin mb-6">
                 Meet Robert Fendrick
               </h3>
@@ -320,12 +321,87 @@ const Page = ({ data }) => {
           </div>
         </div>
         {/* END OF ROB */}
+        
+        <div className="container">
+          <div className="gap-8 flex flex-wrap gap-x-5 my-12 md:grid  lg:grid-cols-12  ">
+            <div className="col-span-4 md:col-start-1  lg:col-end-6 h-full">
+              <div className=" grid md:col-span-4 lg:col-span-5 ">
+                <div className="place-self-end">
+                  <GatsbyImage
+                    image={
+                      data.robertProfileImage.childImageSharp.gatsbyImageData
+                    }
+                    alt="Small Business Consulting"
+                    className="rounded-[8px]"
+                  />
+                </div>
+              </div>
+            </div>
+            {/* TEXT COL */}
+            <div className="col-start-6  md:col-end-12">
+              <h3 className="text-4xl md:text-4xl-x font-thin mb-6">
+                Meet Robert Fendrick
+              </h3>
+              <p className="text-sm mb-3">
+                Robert Bob Fendrick comes to High Echelon with over 50 years of
+                experience in the public accounting industry. He has a wide
+                breadth of knowledge in all business matters, both nationally
+                and internationally. He is a business consultant and an expert
+                in payroll, accounting, and taxation matters. The majority of
+                his career was spent as the founder and CEO of his own
+                accounting firm, Fendrick & Associates. He joins High Echelon in
+                an advisory role.
+              </p>
+              <p className="text-sm mb-3">
+                Bob is a 1970 graduate of Miami University in Oxford, Ohio, with
+                a Bachelor of Science in accounting. He was admitted to the
+                State Board of Accountancy in New York in 1973 and has been an
+                active CPA in Georgia since 1989. He spent the first part of his
+                career in Manhattan working for Arthur Andersen. When he moved
+                to Georgia, he went to work for an Atlanta-based chemical
+                company as the European Controller and lived in Rome, Italy, for
+                three years. Upon returning to Atlanta and prior to starting
+                Fendrick & Associates, he was a founding member of Novartis
+                (Ciba Vision Care), and then he helped start up an additional
+                vision company. Bob founded Fendrick & Associates in 1987 and
+                spent 30 years running his own public accounting firm before
+                selling it.
+              </p>
+              <p className="text-sm">
+                When Bob isn t in a CPA role, he can be found either playing
+                bridge or tennis. He is a national champion and Grand Life
+                Master of the American Contract Bridge League and has won
+                numerous city and state championships in his ALTA and USTA
+                tennis leagues. Bob is a father to two daughters, Michelle and
+                Laura, and grandfather to five granddaughters. He and his wife,
+                Judy, have been married for 25 years and reside in Marietta,
+                Georgia.
+              </p>
+              <ButtonSolidGold
+                data-modal-open="bottom-right-modal"
+                onKeyDown={clickHandler}
+                onClick={clickHandler}
+                text="Book a Call"
+              />
+              {/* <ButtonSolidGold
+                data-modal-open="bottom-right-modal"
+                onKeyDown={clickHandler}
+                onClick={clickHandler}
+                text="Book a Call"
+              className="md:mt-2"
+              /> */}
+            </div>
+            {/* END OF TEXT COL */}
+          </div>
+        </div>
       </section>
       {/* END OF ABOUT */}
+
       <Testimonials />
     </Layout>
   );
 };
+
 
 export const query = graphql`
   {
@@ -343,22 +419,18 @@ export const query = graphql`
         gatsbyImageData(layout: FULL_WIDTH, width: 350)
       }
     }
-    michellProfileImage: file(relativePath: { eq: "common/mich.jpg" }) {
+    michellProfileImage: file(
+      relativePath: { eq: "common/mich.jpg" }
+    ) {
       childImageSharp {
-        gatsbyImageData(
-          layout: FIXED
-          width: 350
-          transformOptions: { fit: FILL }
-        )
+      gatsbyImageData(layout: FIXED, width: 350, transformOptions: {fit: FILL})
       }
-    }
-    robertProfileImage: file(relativePath: { eq: "common/rob.jpg" }) {
+    }    
+    robertProfileImage: file(
+      relativePath: { eq: "common/rob.jpg" }
+    ) {
       childImageSharp {
-        gatsbyImageData(
-          layout: FIXED
-          width: 350
-          transformOptions: { fit: FILL }
-        )
+      gatsbyImageData(layout: FIXED, width: 350, transformOptions: {fit: FILL})
       }
     }
     aboutTheFirm: file(

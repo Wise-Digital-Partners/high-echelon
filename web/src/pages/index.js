@@ -65,7 +65,6 @@ const Page = ({ data }) => {
         </Hero>
       </section>
 
-      {/* SERVICE CARDS */}
       <section className="bg-white w-full block 2xl:hidden relative">
         <GatsbyImage
           image={data.heroMobile.childImageSharp.gatsbyImageData}
@@ -147,7 +146,7 @@ const Page = ({ data }) => {
       {/* SERVICE CARDS */}
       <section className="  mb-20 md:mb-32 md:pt-24">
         <div className="container">
-          <div className="mx-auto pt-[12rem]">
+          <div className="mx-auto md:pt-[12rem] pt-[15rem]">
             <div className="md:w-[850px] sm:w-full mx-auto lg:mx-0">
               <h3 className="md:mt-24  mt-[8rem] mx-auto md:mx-0 text-primary-700 text-4xl font-light md:text-4xl-x md:font-normal">
                 We are Here To Make Your Business Better
@@ -173,13 +172,16 @@ const Page = ({ data }) => {
                   />
                 </div>
                 <div className="h-full">
-                  <h3 className="mb-3 text-gray-900 text-xl">
+                  <h3 className="my-4 lg:my-3 text-secondary-400 text-xl">
                     Small Business Consulting
                   </h3>
-                  <p>
+                  <p className="lg:text-base mb-0 lg:mb-[inherit] text-sm ">
                     Need advice or help in navigating the best way to form your
                     business? The small business consulting experts at High
                     Echelon are here to help.
+                  </p>
+                  <p className="pt-[15px] mb-20 lg:hidden inline-block w-[95px] background-[linear-gradient(180deg, #CFA750 1.04%, #D2B15E 29.69%, #D0AB55 46.88%, #D1AD58 65.1%, #CFA64D 100%);] bg-clip-text border-b-[3px] border-b-primary-400 border-b-solid">
+                    Learn More
                   </p>
                 </div>
               </AniLink>
@@ -198,13 +200,16 @@ const Page = ({ data }) => {
                   />
                 </div>
                 <div className="h-full">
-                  <h3 className="mb-3 text-gray-900 text-xl">
+                  <h3 className="my-4 lg:my-3 text-secondary-400 text-xl">
                     Payroll Management
                   </h3>
-                  <p>
+                  <p className="text-sm lg:text-base ">
                     Get lightweight, user-friendly, cost-efficient payroll
                     processing, complete with automated hiring and termination
                     of employees.
+                  </p>
+                  <p className="pt-[15px] mb-20 lg:hidden inline-block w-[95px] background-[linear-gradient(180deg, #CFA750 1.04%, #D2B15E 29.69%, #D0AB55 46.88%, #D1AD58 65.1%, #CFA64D 100%);] bg-clip-text border-b-[3px] border-b-primary-400 border-b-solid">
+                    Learn More
                   </p>
                 </div>
               </AniLink>
@@ -222,12 +227,15 @@ const Page = ({ data }) => {
                   />
                 </div>
                 <div className="h-full">
-                  <h3 className="mb-3 text-gray-900 text-xl">
+                  <h3 className="my-4 lg:my-3 text-secondary-400 text-xl">
                     Accounting Services
                   </h3>
-                  <p>
+                  <p className="text-sm lg:text-base ">
                     Preparation of monthly, quarterly, or annual financial
                     statements for your business.
+                  </p>
+                  <p className="pt-[15px] mb-20 lg:hidden inline-block w-[95px] background-[linear-gradient(180deg, #CFA750 1.04%, #D2B15E 29.69%, #D0AB55 46.88%, #D1AD58 65.1%, #CFA64D 100%);] bg-clip-text border-b-[3px] border-b-primary-400 border-b-solid">
+                    Learn More
                   </p>
                 </div>
               </AniLink>
@@ -243,10 +251,15 @@ const Page = ({ data }) => {
                   />
                 </div>
                 <div className="h-full">
-                  <h3 className="mb-3 text-gray-900 text-xl">
+                  <h3 className="my-4 lg:my-3 text-secondary-400 text-xl">
                     <p>Tax Preparation</p>
                   </h3>
-                  <p>Get tax preparation for yourself or your business.</p>
+                  <p className="text-sm lg:text-base ">
+                    Get tax preparation for yourself or your business.
+                  </p>
+                  <p className="pt-[15px] mb-20 lg:hidden inline-block w-[95px] background-[linear-gradient(180deg, #CFA750 1.04%, #D2B15E 29.69%, #D0AB55 46.88%, #D1AD58 65.1%, #CFA64D 100%);] bg-clip-text border-b-[3px] border-b-primary-400 border-b-solid">
+                    Learn More
+                  </p>
                 </div>
               </AniLink>
 
@@ -262,15 +275,16 @@ const Page = ({ data }) => {
                     />
                   </div>
                   <div className="h-full">
-                    <h3 className="mb-3 text-gray-900 text-xl">
+                    <h3 className="my-4 lg:my-3 text-secondary-400 text-xl">
                       Business Coaching and Advisory
                     </h3>
-                    <p></p>
-                    <p>
+                    <p className="text-sm lg:text-base ">
                       We provide a sounding board for what you want to
                       accomplish and help you get there.
                     </p>
-                    <p></p>
+                    <p className="pt-[15px] mb-20 lg:hidden inline-block w-[95px] background-[linear-gradient(180deg, #CFA750 1.04%, #D2B15E 29.69%, #D0AB55 46.88%, #D1AD58 65.1%, #CFA64D 100%);] bg-clip-text border-b-[3px] border-b-primary-400 border-b-solid">
+                      Learn More
+                    </p>
                   </div>
                 </div>
               </AniLink>
@@ -289,12 +303,15 @@ const Page = ({ data }) => {
                 </div>
                 <div className="h-full">
                   <a href="#" className="hover:text-blue-600"></a>
-                  <h3 className="mb-3 text-gray-900 text-xl">
+                  <h3 className="my-4 lg:my-3 text-secondary-400 text-xl">
                     <p>Cybersecurity and Data Protection</p>
                   </h3>
                   <p>
                     We help ensure you&rsquo;re safe from destructive cyber
                     attacks, breaches, and theft as a result of hackers.
+                  </p>
+                  <p className="pt-[15px] mb-20 lg:hidden inline-block w-[95px] background-[linear-gradient(180deg, #CFA750 1.04%, #D2B15E 29.69%, #D0AB55 46.88%, #D1AD58 65.1%, #CFA64D 100%);] bg-clip-text border-b-[3px] border-b-primary-400 border-b-solid">
+                    Learn More
                   </p>
                 </div>
               </AniLink>

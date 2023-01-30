@@ -55,7 +55,6 @@ const Slider = ({ slideIndex, children }) => {
         aria-label="Next Slide"
       >
         <img className="group-hover:scale-[2.5] scale-[2] ease transition-all duration-300" src={arrowNext}></img>
-        {/* <i className="far fa-arrow-right text-primary-100"></i> */}
       </button>
     );
   }

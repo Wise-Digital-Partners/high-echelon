@@ -276,7 +276,7 @@ const Page = ({ data }) => {
         </section> */}
 
       <Testimonials />
-      <Portfolio />
+      <Portfolio className="hidden lg:block" />
 
       <About />
       <svg

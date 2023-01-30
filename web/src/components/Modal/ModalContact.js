@@ -36,7 +36,7 @@ const Modal = () => {
       openTrigger: "data-modal-open",
       closeTrigger: "data-modal-close",
       disableFocus: true,
-      disableScroll: true,
+      disableScroll: false,
       awaitOpenAnimation: true,
       awaitCloseAnimation: true,
     });
@@ -91,7 +91,7 @@ const closeContactModal = () => {
         </div>
       </div> */}
 
-      <div id="bottom-right-modal" data-modal-placement="bottom-right" tabindex="-1" className="modal h-full hidden z-50 fade overflow-y-auto overflow-x-hidden bg-white fixed top-0 right-0 right-0 w-full md:w-1/2 h-modal md:h-full" aria-hidden="false">
+      <div id="bottom-right-modal" data-modal-placement="bottom-right" tabindex="-1" className="modal h-full hidden z-50 fade overflow-y-auto overflow-x-hidden bg-white fixed top-0  right-0 w-full md:w-1/2 h-modal md:h-full" aria-hidden="false">
         <div className="relative w-full h-full md:h-auto">
             <div className=" bg-white dark:bg-gray-700">
                 <div className="flex justify-between items-center p-5 border-b dark:border-primary-500">

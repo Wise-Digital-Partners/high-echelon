@@ -61,13 +61,13 @@ const MainNav = ({
     {
       darkLogo: file(relativePath: { eq: "global/Logo desktop.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH, width: 310, placeholder: NONE)
+          gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
         }
       }
 
-      mobileLogo: file(relativePath: {eq: "global/Logo desktop.png" }) {
+      mobileLogo: file(relativePath: { eq: "global/logo-mobile.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH, width: 200, placeholder: NONE)
+          gatsbyImageData(layout: CONSTRAINED, width: 200, placeholder: NONE)
         }
       }
     }
@@ -105,7 +105,7 @@ const MainNav = ({
     loanPrograms: [
       {
         name: "Services",
-        href: "#"
+        href: "#",
       },
       {
         name: "Small Business Consulting",
@@ -122,7 +122,7 @@ const MainNav = ({
       {
         name: "Income Tax Preparation",
         href: "/small-business-tax-preparation-services-atlanta/",
-      },      
+      },
       {
         name: "Business Coaching & Advisory Services",
         href: "/business-coaching-advisory-services-atlanta/",
@@ -134,28 +134,30 @@ const MainNav = ({
     ],
     about: [
       {
-        name: "Financial Advisors | CPA Referral Program",
-        href: "/financial-advisor-cpa/",
-      },
-      {
         name: "About High Echelon",
         href: "/about/",
       },
       {
         name: "Reviews",
         href: "/testimonials/",
-      },     
-
+      },
+      {
+        name: "Financial Advisors | CPA Referral Program",
+        href: "/financial-advisor-cpa/",
+      },
     ],
   };
 
   return (
     <nav
       id="main-navigation"
-      className={`py-0 lg:py-2 bg-white shadow-5xl lg:shadow-none w-full transition duration-300 ease-linear ${headerStyle === "overlap" ? "lg:bg-transparent" : "lg:bg-black"
-        } ${headerHasBorder && "lg:border-b lg:border-solid lg:border-gray-300"
-        } ${offcanvasOpen ? "" : ""} ${headerDarkMode && "lg:!bg-white"} ${scrolled && "!fixed !bg-white top-0 left-0 w-full !shadow-5xl z-50"
-        } ${className}`}
+      className={`py-0 lg:py-2 bg-white shadow-5xl lg:shadow-none w-full transition duration-300 ease-linear ${
+        headerStyle === "overlap" ? "lg:bg-transparent" : "lg:bg-black"
+      } ${
+        headerHasBorder && "lg:border-b lg:border-solid lg:border-gray-300"
+      } ${offcanvasOpen ? "" : ""} ${headerDarkMode && "lg:!bg-white"} ${
+        scrolled && "!fixed !bg-white top-0 left-0 w-full !shadow-5xl z-50"
+      } ${className}`}
       role="navigation"
       aria-label="main-navigation"
       offcanvas-open={offcanvasOpen}
@@ -166,59 +168,20 @@ const MainNav = ({
             href="tel:440-469-9338"
             className="text-sm font-semibold text-white hover:text-primary-100"
           >
-            {/* <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="mr-1.5"
-            >
-              <path
-                d="M1.08124.769072L4.33117.019088c.35312-.081249.71561.103122.85936.434365L6.6905 3.95338c.13125.30624.04375.66561-.21562.87498L4.58117 6.37833c1.12498 2.39682 3.09056 4.39057 5.53743 5.53737l1.5499-1.8937c.2125-.25937.5688-.34687.875-.21562l3.4999 1.49992c.3344.1469.5188.5094.4375.8625l-.75 3.25c-.0781.3375-.3781.5812-.7312.5812C6.99674 16 .5 9.51576.5 1.50031c0-.35.240621-.653115.58124-.731238z"
-                fill="#000000"
-              />
-            </svg> */}
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M17.2571 19.75H17.1296C2.39215 18.9025 0.299644 6.4675 0.00714362 2.6725C-0.0164249 2.37744 0.0184601 2.08062 0.1098 1.79906C0.20114 1.5175 0.347139 1.25673 0.539432 1.03169C0.731725 0.80665 0.966533 0.621766 1.2304 0.48763C1.49427 0.353493 1.78201 0.272741 2.07714 0.250001H6.20964C6.51006 0.24971 6.80365 0.339633 7.05237 0.508122C7.30109 0.676611 7.49349 0.915903 7.60464 1.195L8.74464 4C8.85441 4.27266 8.88165 4.57156 8.82298 4.85957C8.76431 5.14758 8.62232 5.412 8.41464 5.62L6.81714 7.2325C7.06668 8.65056 7.74578 9.95775 8.76257 10.9772C9.77935 11.9967 11.0847 12.6792 12.5021 12.9325L14.1296 11.32C14.3408 11.1146 14.6077 10.9759 14.8971 10.9213C15.1865 10.8666 15.4856 10.8983 15.7571 11.0125L18.5846 12.145C18.8595 12.2597 19.0941 12.4536 19.2584 12.702C19.4226 12.9504 19.5093 13.2422 19.5071 13.54V17.5C19.5071 18.0967 19.2701 18.669 18.8481 19.091C18.4262 19.5129 17.8539 19.75 17.2571 19.75ZM2.25714 1.75C2.05823 1.75 1.86747 1.82902 1.72681 1.96967C1.58616 2.11032 1.50714 2.30109 1.50714 2.5V2.56C1.85214 7 4.06464 17.5 17.2121 18.25C17.3107 18.2561 17.4094 18.2427 17.5028 18.2105C17.5961 18.1783 17.6822 18.1281 17.756 18.0626C17.8299 17.9971 17.8901 17.9176 17.9332 17.8288C17.9763 17.74 18.0014 17.6436 18.0071 17.545V13.54L15.1796 12.4075L13.0271 14.545L12.6671 14.5C6.14214 13.6825 5.25714 7.1575 5.25714 7.09L5.21214 6.73L7.34214 4.5775L6.21714 1.75H2.25714Z" fill="#152636" />
-            </svg>
+            <i className="text-xl fal fa-rotate-90 fa-phone text-secondary-400 hover:text-primary-400 transition-all linear duration-300" />
           </a>
         </div>
         <div className="flex-auto flex justify-center lg:justify-start">
           <AniLink fade to="/">
-            <div className={`flex justify-between `}>
-              <div className="hidden lg:block">
+            <div class  Name={`flex justify-between `}>
+              <div className="p-2">
                 <GatsbyImage
                   image={initialLogo}
                   alt="High Echelon P.C. Logo"
-                  className="h-[64px] md:h-[64px] w-[310px] sm:h-[30] sm:w-[200]"
-                />
-              </div>
-              <div className="lg:hidden p-3">
-                <GatsbyImage
-                  image={data.mobileLogo.childImageSharp.gatsbyImageData}
-                  alt="High Echelon P.C. Logo"
-                  className="md:h-[64px] md:w-[310px] sm:h-[30px] sm:w-[200px]"
+                  className="  w-[250px] lg:w-[310px] h-[44px]  "
                 />
               </div>
             </div>
-
-            {/* <div className={`hidden ${scrolled && "!block"}`}>
-              <div className="hidden lg:block">
-                <GatsbyImage
-                  image={initialLogo}
-                  alt="High Echelon P.C. Logo"
-                  className=" md:h-[64px] md:w-[310px] sm:h-[30px] sm:w-[200px]"
-                />
-              </div>
-              <div className="lg:hidden">
-                <GatsbyImage
-                  image={data.mobileLogo.childImageSharp.gatsbyImageData}
-                  alt="High Echelon P.C. Logo"
-                  className="md:h-[64px] md:w-[310px] sm:h-[30px] sm:w-[200px]"
-                />
-              </div>
-            </div> */}
           </AniLink>
         </div>
         <div className="flex items-center justify-end">
@@ -235,19 +198,22 @@ const MainNav = ({
               <AniLink
                 fade
                 to="#"
-                className={`font-body relative text-base font-semibold pb-8 after:absolute after:bottom-6 after:h-1 after:bg-primary-100 after:transition-all after:duration-300 after:ease-linear ${subMenuHovering1
+                className={`font-body relative text-base font-semibold pb-8 after:absolute after:bottom-6 after:h-1 after:bg-primary-100 after:transition-all after:duration-300 after:ease-linear ${
+                  subMenuHovering1
                     ? "after:w-full after:left-0 after:right-auto"
                     : "after:w-0 after:left-auto after:right-0"
-                  } ${scrolled && "text-gray-900"} ${headerLinkColor === "white" ? "text-gray-900" : "text-white"
-                  } ${headerDarkMode && "lg:!text-gray-900"}`}
+                } ${scrolled && "text-gray-900"} ${
+                  headerLinkColor === "white" ? "text-gray-900" : "text-white"
+                } ${headerDarkMode && "lg:!text-gray-900"}`}
               >
                 Services
               </AniLink>
               <div
-                className={`absolute top-0 bg-white shadow-3xl w-auto transform -translate-x-8 p-10 z-10 transition-all duration-300 ease-linear ${subMenuHovering1
+                className={`absolute top-0 bg-white shadow-3xl w-auto transform -translate-x-8 p-10 z-10 transition-all duration-300 ease-linear ${
+                  subMenuHovering1
                     ? " visible translate-y-14 opacity-100"
                     : "invisible translate-y-20 opacity-0"
-                  }`}
+                }`}
               >
                 <div>
                   <ul className="flex flex-col space-y-5">
@@ -276,19 +242,22 @@ const MainNav = ({
               <AniLink
                 fade
                 to="/about/"
-                className={`font-body relative text-base font-semibold pb-8 after:absolute after:bottom-6 after:h-1 after:bg-primary-100 after:transition-all after:duration-300 after:ease-linear ${subMenuHovering2
+                className={`font-body relative text-base font-semibold pb-8 after:absolute after:bottom-6 after:h-1 after:bg-primary-100 after:transition-all after:duration-300 after:ease-linear ${
+                  subMenuHovering2
                     ? "after:w-full after:left-0 after:right-auto"
                     : "after:w-0 after:left-auto after:right-0"
-                  } ${scrolled && "text-gray-900"} ${headerLinkColor === "white" ? "text-gray-900" : "text-white"
-                  } ${headerDarkMode && "lg:!text-gray-900"}`}
+                } ${scrolled && "text-gray-900"} ${
+                  headerLinkColor === "white" ? "text-gray-900" : "text-white"
+                } ${headerDarkMode && "lg:!text-gray-900"}`}
               >
                 About
               </AniLink>
               <div
-                className={`absolute top-0 bg-white shadow-3xl w-auto transform -translate-x-8 p-10 z-10 transition-all duration-300 ease-linear ${subMenuHovering2
+                className={`absolute top-0 bg-white shadow-3xl w-auto transform -translate-x-8 p-10 z-10 transition-all duration-300 ease-linear ${
+                  subMenuHovering2
                     ? " visible translate-y-14 opacity-100"
                     : "invisible translate-y-20 opacity-0"
-                  }`}
+                }`}
               >
                 <div>
                   <ul className="flex flex-col space-y-5">
@@ -309,32 +278,6 @@ const MainNav = ({
               </div>
             </li>
 
-            {/* <li className="group">
-              <AniLink
-                fade
-                to="/about/"
-                className={`font-body relative text-base font-semibold pb-8 after:absolute after:bottom-6 after:left-auto hover:after:left-0 after:right-0 hover:after:right-auto after:w-0 hover:after:w-full after:h-1 after:bg-primary-100 after:transition-all after:duration-300 after:ease-linear ${scrolled && "text-gray-900"
-                  } ${headerLinkColor === "white" ? "text-white" : "text-gray-900"
-                  } ${headerDarkMode && "lg:!text-gray-900"}`}
-              >
-                About
-              </AniLink>
-            </li> */}
-
-            {/* <li className="group">
-              <AniLink
-                fade
-                to="/reviews/"
-                className={`font-body relative text-base font-semibold pb-8 after:absolute after:bottom-6 after:left-auto hover:after:left-0 after:right-0 hover:after:right-auto after:w-0 hover:after:w-full after:h-1 after:bg-primary-100 after:transition-all after:duration-300 after:ease-linear ${
-                  scrolled && "text-gray-900"
-                } ${
-                  headerLinkColor === "white" ? "text-white" : "text-gray-900"
-                } ${headerDarkMode && "lg:!text-gray-900"}`}
-              >
-                Reviews
-              </AniLink>
-            </li> */}
-
             <li className="group">
               <ButtonSolid
                 onClick={clickHandler}
@@ -345,17 +288,6 @@ const MainNav = ({
                 className="bg-secondary-400 min-w-0 text-base"
               />
             </li>
-            {/* <li>
-              <AniLink
-                data-modal-open="bottom-right-modal"
-                onKeyDown={clickHandler}
-                onClick={clickHandler}
-                className="font-heading text-3xl text-primary-100 hover:text-primary-700 font-bold no-underline cursor-pointer transition-colors duration-300 ease-linear"
-              >
-                Contact
-              </AniLink>
-            </li> */}
-
           </ul>
 
           <div className="lg:hidden" ref={node}>
@@ -369,7 +301,11 @@ const MainNav = ({
             />
 
             {/* Mobile Nav  */}
-            <OffCanvas offcanvasOpen={offcanvasOpen} id="offcanvas-navigation" className=" bg-secondary-400">
+            <OffCanvas
+              offcanvasOpen={offcanvasOpen}
+              id="offcanvas-navigation"
+              className=" bg-secondary-400"
+            >
               <div className="px-7 py-12">
                 <ul id="navigation-mobile" className="mb-12">
                   <Accordion
@@ -428,34 +364,8 @@ const MainNav = ({
                       </AccordionItem>
                     </li>
 
-                    {/* <li>
-                      <AniLink
-                        fade
-                        to="/about/"
-                        onKeyDown={clickHandler}
-                        onClick={clickHandler}
-                        className="text-lg text-primary-200 hover:text-primary-100 no-underline transition-colors duration-300 ease-linear pt-3"
-                      >
-                        About
-                      </AniLink>
-                    </li> */}
-
-                    {/* <li>
-                      <AniLink
-                        fade
-                        to="/reviews/"
-                        onKeyDown={clickHandler}
-                        onClick={clickHandler}
-                        className="text-lg text-primary-200 hover:text-primary-100 no-underline transition-colors duration-300 ease-linear"
-                      >
-                        Reviews
-                      </AniLink>
-                    </li> */}
-
                     <li>
-                      <button
-                        className="text-lg text-primary-200 hover:text-primary-100 no-underline cursor-pointer transition-colors duration-300 ease-linear"
-                      >
+                      <button className="text-lg text-primary-200 hover:text-primary-100 no-underline cursor-pointer transition-colors duration-300 ease-linear">
                         <a href="https://highecheloncpa.smartvault.com">
                           <i className="fa fa-sign-in mr-2"></i>
                           Client Portal
@@ -463,9 +373,7 @@ const MainNav = ({
                       </button>
                     </li>
                     <li>
-                      <button
-                        className="text-lg text-primary-200 hover:text-primary-100 no-underline cursor-pointer transition-colors duration-300 ease-linear"
-                      >
+                      <button className="text-lg text-primary-200 hover:text-primary-100 no-underline cursor-pointer transition-colors duration-300 ease-linear">
                         <a href="https://app02.us.bill.com/p/highecheloncpa">
                           <i className="fa fa-sign-in mr-2"></i>
                           Pay Your Invoice
@@ -489,12 +397,10 @@ const MainNav = ({
                   className="w-full text-primary-100 mb-4"
                   text="Book a Call"
                 />
-
               </div>
             </OffCanvas>
           </div>
         </div>
-
       </div>
     </nav>
   );

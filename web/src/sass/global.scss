@@ -61,6 +61,11 @@ button a {
   }
 }
 
+ul.slick-dots{
+  max-width: 85px;    
+  bottom: -10px;
+}
+
 .slick-dots li {
   margin: 5px auto 0  auto !important;
   display: flex !important;
@@ -90,14 +95,17 @@ button a {
   line-height: 0;
   outline: none;
   margin: 0 auto !important;
-  background-color: #CCCCCC;
+  background-color: #D2B15E;
   border-radius: 999px;
-  width: 20px;
-  height: 20px;
+  width: 8px;
+  height: 8px;
 }
+
 .slick-dots li.slick-active button{
-  background-color:#CEA13C ;
-  width: 30px !important;
+  background: linear-gradient(90deg, #D2B15E -2.38%, #CB9636 94.84%);
+  width: 38px !important;
+  border-radius: 8px;
+
 }
 
 .slick-dots li button::before {

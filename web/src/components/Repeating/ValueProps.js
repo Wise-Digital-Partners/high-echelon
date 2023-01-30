@@ -58,9 +58,11 @@ const ValueProps = ({ className, headingLevel, heading }) => {
 
   return (
     <section className={`${className || "bg-secondary-400 mb-20 md:mb-32"}`}>
-      <div className="container">
-        <header className=" md:max-w-2xl md:mx-auto text-center pt-24 mb-10">
-          <HeadingTag className="text-primary-200 font-light text-4xl pb-5 lg:pb-0">{heading || "Why US?"}</HeadingTag>
+      <div className="container py-24 md:pt-24 md:pb-8 ">
+        <header className=" md:max-w-2xl md:mx-auto text-center mb-10">
+          <HeadingTag className="text-primary-200 font-light text-4xl pb-5 lg:pb-0">
+            {heading || "Why US?"}
+          </HeadingTag>
         </header>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-x-10 md:text-center ">
           {content.map((content, i) => {
@@ -68,28 +70,31 @@ const ValueProps = ({ className, headingLevel, heading }) => {
               <Background
                 backgroundImages={content.bg}
                 padding="pt-0 md:pt-18"
-                className={`relative overflow-x-hidden ${className || "mb-8 md:mb-32"}`}
+                className={`relative overflow-x-hidden ${
+                  className || "mb-8 md:mb-32"
+                }`}
               >
-              <div
-                key={i}
-                className="flex flex-col md:block items-center space-x-6 md:space-x-0"
-              >
-                <img
-                  src={content.icon}
-                  alt={content.heading}
-                  className="md:mx-auto md:mb-2 mb-3"
-                />
-                <div className="text-center">
-                  <h3 className="text-primary-200 heading-five mb-2">{content.heading}</h3>
-                  <p className="text-white text-base mb-0">{content.text}</p>
+                <div
+                  key={i}
+                  className="flex flex-col md:block items-center space-x-6 md:space-x-0"
+                >
+                  <img
+                    src={content.icon}
+                    alt={content.heading}
+                    className="md:mx-auto md:mb-2 mb-3"
+                  />
+                  <div className="text-center">
+                    <h3 className="text-primary-200 heading-five mb-2">
+                      {content.heading}
+                    </h3>
+                    <p className="text-white text-base mb-0">{content.text}</p>
+                  </div>
                 </div>
-              </div>
               </Background>
             );
           })}
         </div>
       </div>
-      
     </section>
   );
 };

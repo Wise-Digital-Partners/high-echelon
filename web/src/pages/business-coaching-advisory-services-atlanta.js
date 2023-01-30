@@ -263,7 +263,7 @@ const Page = ({ data }) => {
         <CarouselForm />
       </section> */}
       <Testimonials />
-      <Portfolio />
+      <Portfolio className="hidden lg:block" />
       
       <About />
       <svg className="w-full" width="1200" height="3" viewBox="0 0 1200 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5h1200" stroke="url(#paint0_linear_1129_1425)" strokeWidth="3"/><defs><linearGradient id="paint0_linear_1129_1425" x1="0" y1="2.00435" x2="1182.95" y2="1.96651" gradientUnits="userSpaceOnUse"><stop stopColor="#A2A09D" stopOpacity="0"/><stop offset=".145833" stopColor="#FCE4A7"/><stop offset=".265625" stopColor="#CFA855"/><stop offset=".427083" stopColor="#FCE4A7"/><stop offset=".578125" stopColor="#F0D592"/><stop offset=".713542" stopColor="#FCE4A7"/><stop offset=".828125" stopColor="#CB9636"/><stop offset="1" stopColor="#A7A7A7" stopOpacity="0"/></linearGradient></defs></svg>

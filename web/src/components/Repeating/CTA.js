@@ -37,12 +37,14 @@ const CTA = ({ heading, headingLevel, subtext, className }) => {
     //     className || ""
     //   }`}
     // >
-    <section class = "bg-no-repeat bg-cover bg-center md:pb-18" style={{backgroundImage: `url('${houseImg}')`}}>
-      
-      <div className="container pt-20">
+    <section
+      class="bg-no-repeat bg-cover bg-center md:py-4"
+      style={{ backgroundImage: `url('${houseImg}')` }}
+    >
+      <div className="container pt-32 pb-18 md:py-14 md:pt-8 md:pb-4 ">
         <div className="flex flex-col md:flex-row md:justify-between items-start md:items-end md:mb-8">
-          <header className="max-w-2xl md:text-left">          
-            <HeadingTag class = "text-primary-100 text-4xl-x mb-3 font-light">
+          <header className="max-w-2xl md:text-left">
+            <HeadingTag class="text-primary-100 text-4xl-x mb-3 font-light">
               {heading || ["Get a Free Consultation"]}
             </HeadingTag>
 
@@ -58,19 +60,17 @@ const CTA = ({ heading, headingLevel, subtext, className }) => {
                 text="Book a Call"
                 className="w-full md:w-auto mb-28 md:mb-0"
               /> */}
-              <ButtonSolidGold
-                  data-modal-open="bottom-right-modal"
-                  onKeyDown={clickHandler}
-                  onClick={clickHandler}
-                  className="w-full text-primary-100 mb-4"
-                  text="Book a Call"
-                />
+            <ButtonSolidGold
+              data-modal-open="bottom-right-modal"
+              onKeyDown={clickHandler}
+              onClick={clickHandler}
+              className="w-full text-primary-100 mb-4"
+              text="Book a Call"
+            />
           </div>
         </div>
-      
       </div>
-      <div className="text-center justify-center flex">
-      </div>
+      <div className="text-center justify-center flex"></div>
       {/* <div id="bottom-right-modal" data-modal-placement="bottom-right" tabindex="-1" className="h-full fade hidden overflow-y-auto overflow-x-hidden bg-white fixed top-0 right-0 right-0 z-50 w-full md:w-1/2 h-modal md:h-full">
         <div className="relative w-full h-full md:h-auto">
             <div className=" bg-white dark:bg-gray-700">

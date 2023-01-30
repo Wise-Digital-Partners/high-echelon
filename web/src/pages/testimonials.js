@@ -12,11 +12,11 @@ import CallToAction from "../components/Repeating/CTA";
 const Page = ({ data }) => {
     return (
       <Layout headerDarkMode={true}>
-            <SearchEngineOptimization
-                title="Reviews | High Echelon CPA"
-                openGraphImage={data.openGraphImage.publicURL}
-                twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
-            />
+        <SearchEngineOptimization
+          title="Reviews | High Echelon CPA"
+          openGraphImage={data.openGraphImage.publicURL}
+          twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
+        />
 
         <section className="hidden md:block">
           <Hero
@@ -29,7 +29,8 @@ const Page = ({ data }) => {
             <div className="flex justify-center items-center flex-col text-white">
               <h1 className="mb-6 text-white font-light">Testimonials</h1>
               <p className="text-base ">
-                Don’t just take our word for it—hear feedback directly from our clients.
+                Don’t just take our word for it—hear feedback directly from our
+                clients.
               </p>
 
               <ButtonSolidGold href="/review-us/" text="Leave a Review" />
@@ -37,27 +38,27 @@ const Page = ({ data }) => {
           </Hero>
         </section>
         <section className="block md:hidden bg-secondary-400 px-4">
-
           <div className="flex justify-center items-center flex-col text-white pt-10 pb-14">
             <h1 className="mb-6 font-light text-white">Testimonials</h1>
             <p className="text-base text-center">
-              Don’t just take our word for it—hear feedback directly from our clients.
+              Don’t just take our word for it—hear feedback directly from our
+              clients.
             </p>
 
             <ButtonSolidGold href="/reviews/" text="Leave a Review" />
           </div>
         </section>
 
-            <section className="pt-16 md:pt-20 pb-20 md:pb-32">
-                <div className="container">
-                    <div >
-                        <ReviewCards className="grid" />
-                    </div>
-                </div>
-            </section>
+        <section className="pt-16 md:pt-20 pb-20 md:pb-32">
+          <div className="container">
+            <div >
+              <ReviewCards className="grid" />
+            </div>
+          </div>
+        </section>
 
-            <CallToAction />
-        </Layout>
+        <CallToAction />
+      </Layout>
     );
 };
 
