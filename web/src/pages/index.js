@@ -4,6 +4,9 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 import React, { useState } from "react";
 import "../sass/global.scss";
 
+import styled from "@emotion/styled";
+import tw from "twin.macro";
+
 import ButtonGhost from "../components/Button/ButtonGhost";
 import ButtonSolidGold from "../components/Button/ButtonSolidGold";
 import Hero from "../components/Hero/HeroFullWidth";
@@ -15,6 +18,19 @@ import ValueProps from "../components/Repeating/ValueProps";
 import SearchEngineOptimization from "../components/SEO";
 import mark from "../images/1.0 Homepage/1.0 Homepage/2.0 HE seal.png";
 
+// const StyledContent = styled.div`
+//   .card {
+//     ${tw`transition-all ease duration-300`}
+//     img {
+//       ${tw`bg-primary-500`}
+//     }  
+//     .card:hover {
+//     ${tw`transition-all ease duration-[260ms]`}
+//     img {
+//       ${tw`bg-primary-500`}
+//     }
+//   }
+// `;
 const Page = ({ data }) => {
   const [offcanvasOpen, setOffcanvasOpen] = useState(false);
 
@@ -157,7 +173,8 @@ const Page = ({ data }) => {
                 needs.
               </p>
             </div>
-            <div className="flex-wrap gap-x-4 grid p-6 sm:grid-cols-2 md:grid-cols-2 md:p-0">
+            {/* MOBILE LAYOUT */}
+            <div className="md:hidden flex-wrap gap-x-4 grid p-6 sm:grid-cols-2 md:grid-cols-2 md:p-0">
               <AniLink
                 to="small-business-consulting-services-atlanta/"
                 className="pb-4 md:gap-6 md:grid md:grid-cols-2"
@@ -173,7 +190,7 @@ const Page = ({ data }) => {
                 </div>
                 <div className="h-full">
                   <h3 className="my-4 lg:my-3 text-secondary-400 text-xl">
-                    Small Business Consulting
+                    <p>Small Business Consulting</p>
                   </h3>
                   <p className="lg:text-base mb-0 lg:mb-[inherit] text-sm ">
                     Need advice or help in navigating the best way to form your
@@ -201,7 +218,7 @@ const Page = ({ data }) => {
                 </div>
                 <div className="h-full">
                   <h3 className="my-4 lg:my-3 text-secondary-400 text-xl">
-                    Payroll Management
+                    <p>Payroll Management</p>
                   </h3>
                   <p className="text-sm lg:text-base ">
                     Get lightweight, user-friendly, cost-efficient payroll
@@ -228,7 +245,7 @@ const Page = ({ data }) => {
                 </div>
                 <div className="h-full">
                   <h3 className="my-4 lg:my-3 text-secondary-400 text-xl">
-                    Accounting Services
+                    <p>Accounting Services</p>
                   </h3>
                   <p className="text-sm lg:text-base ">
                     Preparation of monthly, quarterly, or annual financial
@@ -276,7 +293,7 @@ const Page = ({ data }) => {
                   </div>
                   <div className="h-full">
                     <h3 className="my-4 lg:my-3 text-secondary-400 text-xl">
-                      Business Coaching and Advisory
+                      <p>Business Coaching and Advisory</p>
                     </h3>
                     <p className="text-sm lg:text-base ">
                       We provide a sounding board for what you want to
@@ -316,6 +333,193 @@ const Page = ({ data }) => {
                 </div>
               </AniLink>
             </div>
+            {/* END OF MOBILE LAYOUT */}
+            {/* DESKTOP */}
+            <div className="container">
+              <div className="grid grid-cols-12 gap-y-[30px]">
+                <div className="col-span-6">
+                  <AniLink
+                    to="small-business-consulting-services-atlanta/"
+                    className="group card"
+                  >
+                    <div className="md:grid p-0 hidden grid-cols-12 gap-x-[24px]">
+                      <div className="col-span-4 overflow-hidden rounded-xl max-h-[150px] h-[150px]">
+                        <GatsbyImage
+                          image={
+                            data.smallBusinessConsultingImage.childImageSharp
+                              .gatsbyImageData
+                          }
+                          imgClassName=""
+                          className=" h-full block mx-auto rounded-xl transition-all linear duration-300 scale-100 group-hover:scale-110 "
+                        />
+                      </div>
+                      <div className="col-span-8">
+                        <div className="flex-col flex">
+                          <h3 className="text-lg font-semibold mb-4">
+                            Small Business Consulting
+                          </h3>
+                          <p className="lg:max-w-[350px] ml-0">
+                            Need advice or help in navigating the best way to
+                            form your business? Talk with the experts.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </AniLink>
+                </div>
+                <div className="col-span-6">
+                  <AniLink
+                    to="small-business-consulting-services-atlanta/"
+                    className="group card"
+                  >
+                    <div className="md:grid p-0 hidden grid-cols-12 gap-x-[24px]">
+                      <div className="col-span-4 overflow-hidden rounded-xl max-h-[150px] h-[150px]">
+                        <GatsbyImage
+                          image={
+                            data.payrollManagementImage.childImageSharp
+                              .gatsbyImageData
+                          }
+                          imgClassName=""
+                          className=" h-full block mx-auto rounded-xl transition-all linear duration-300 scale-100 group-hover:scale-110 "
+                        />
+                      </div>
+                      <div className="col-span-8">
+                        <div className="flex-col flex">
+                          <h3 className="text-lg font-semibold mb-4">
+                            Payroll Management
+                          </h3>
+                          <p className="lg:max-w-[350px] ml-0">
+                            Get lightweight, user-friendly, cost-efficient
+                            payroll processing, complete with automated hiring
+                            and termination of employees.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </AniLink>
+                </div>
+                <div className="col-span-6">
+                  <AniLink
+                    to="small-business-consulting-services-atlanta/"
+                    className="group card"
+                  >
+                    <div className="md:grid p-0 hidden grid-cols-12 gap-x-[24px]">
+                      <div className="col-span-4 overflow-hidden rounded-xl max-h-[150px] h-[150px]">
+                        <GatsbyImage
+                          image={
+                            data.accountServicesImage.childImageSharp
+                              .gatsbyImageData
+                          }
+                          imgClassName=""
+                          className=" h-full block mx-auto rounded-xl transition-all linear duration-300 scale-100 group-hover:scale-110 "
+                        />
+                      </div>
+                      <div className="col-span-8">
+                        <div className="flex-col flex">
+                          <h3 className="text-lg font-semibold mb-4">
+                            Accounting Services
+                          </h3>
+                          <p className="lg:max-w-[350px] ml-0">
+                            Preparation of monthly, quarterly, or annual
+                            financial statements for your business.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </AniLink>
+                </div>
+                <div className="col-span-6">
+                  <AniLink
+                    to="small-business-consulting-services-atlanta/"
+                    className="group card"
+                  >
+                    <div className="md:grid p-0 hidden grid-cols-12 gap-x-[24px]">
+                      <div className="col-span-4 overflow-hidden rounded-xl max-h-[150px] h-[150px]">
+                        <GatsbyImage
+                          image={
+                            data.incomeTaxPreparationMobileImage.childImageSharp
+                              .gatsbyImageData
+                          }
+                          imgClassName=""
+                          className=" h-full block mx-auto rounded-xl transition-all linear duration-300 scale-100 group-hover:scale-110 "
+                        />
+                      </div>
+                      <div className="col-span-8">
+                        <div className="flex-col flex">
+                          <h3 className="text-lg font-semibold mb-4">
+                            Tax Preparation
+                          </h3>
+                          <p className="lg:max-w-[350px] ml-0">
+                            Get tax preparation for yourself or your business.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </AniLink>
+                </div>
+                <div className="col-span-6">
+                  <AniLink
+                    to="small-business-consulting-services-atlanta/"
+                    className="group card"
+                  >
+                    <div className="md:grid p-0 hidden grid-cols-12 gap-x-[24px]">
+                      <div className="col-span-4 overflow-hidden rounded-xl max-h-[150px] h-[150px]">
+                        <GatsbyImage
+                          image={
+                            data.coachBusinessConsultingImage.childImageSharp
+                              .gatsbyImageData
+                          }
+                          imgClassName=""
+                          className=" h-full block mx-auto rounded-xl transition-all linear duration-300 scale-100 group-hover:scale-110 "
+                        />
+                      </div>
+                      <div className="col-span-8">
+                        <div className="flex-col flex">
+                          <h3 className="text-lg font-semibold mb-4">
+                            Business Coaching and Advisory
+                          </h3>
+                          <p className="lg:max-w-[350px] ml-0">
+                            We provide a sounding board for what you want to
+                            accomplish and help you get there.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </AniLink>
+                </div>
+                <div className="col-span-6">
+                  <AniLink
+                    to="small-business-consulting-services-atlanta/"
+                    className="group card"
+                  >
+                    <div className="md:grid p-0 hidden grid-cols-12 gap-x-[24px]">
+                      <div className="col-span-4 overflow-hidden rounded-xl max-h-[150px] h-[150px] max-h-[150px] h-[150px]">
+                        <GatsbyImage
+                          image={
+                            data.cyberServicesImage.childImageSharp
+                              .gatsbyImageData
+                          }
+                          imgClassName=""
+                          className=" h-full block mx-auto rounded-xl transition-all linear duration-300 scale-100 group-hover:scale-110 "
+                        />
+                      </div>
+                      <div className="col-span-8">
+                        <div className="flex-col flex">
+                          <h3 className="text-lg font-semibold mb-4">
+                            Cybersecurity and Data Protection
+                          </h3>
+                          <p className="lg:max-w-[350px] ml-0">
+                            We help ensure you’re safe from destructive cyber
+                            attacks, breaches, and theft as a result of hackers.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </AniLink>
+                </div>
+              </div>
+            </div>
+            {/* END OF DESKTOP */}
           </div>
         </div>
       </section>
