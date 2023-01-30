@@ -369,7 +369,7 @@ const Page = ({ data }) => {
                 </div>
                 <div className="col-span-6">
                   <AniLink
-                    to="small-business-consulting-services-atlanta/"
+                    to="/payroll-management-services-atlanta/"
                     className="group card"
                   >
                     <div className="md:grid p-0 hidden grid-cols-12 gap-x-[24px]">
@@ -430,7 +430,7 @@ const Page = ({ data }) => {
                 </div>
                 <div className="col-span-6">
                   <AniLink
-                    to="small-business-consulting-services-atlanta/"
+                    to="/small-business-tax-preparation-services-atlanta/"
                     className="group card"
                   >
                     <div className="md:grid p-0 hidden grid-cols-12 gap-x-[24px]">
@@ -459,7 +459,7 @@ const Page = ({ data }) => {
                 </div>
                 <div className="col-span-6">
                   <AniLink
-                    to="small-business-consulting-services-atlanta/"
+                    to="/business-coaching-advisory-services-atlanta/"
                     className="group card"
                   >
                     <div className="md:grid p-0 hidden grid-cols-12 gap-x-[24px]">
@@ -489,11 +489,11 @@ const Page = ({ data }) => {
                 </div>
                 <div className="col-span-6">
                   <AniLink
-                    to="small-business-consulting-services-atlanta/"
+                    to="/cyber-security-data-protection-atlanta/"
                     className="group card"
                   >
                     <div className="md:grid p-0 hidden grid-cols-12 gap-x-[24px]">
-                      <div className="col-span-4 overflow-hidden rounded-xl max-h-[150px] h-[150px] max-h-[150px] h-[150px]">
+                      <div className="col-span-4 overflow-hidden rounded-xl max-h-[150px] h-[150px] ">
                         <GatsbyImage
                           image={
                             data.cyberServicesImage.childImageSharp
